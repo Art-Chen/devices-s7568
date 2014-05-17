@@ -1,0 +1,352 @@
+import init.sp8810.usb.rc
+import init.bt.rc
+on init
+    export EXTERNAL_STORAGE /mnt/sdcard
+
+# pipe
+    mkdir /dev/pipe 0775 system system
+    pipe 666 /dev/pipe/ril.audio.0
+    pipe 666 /dev/pipe/ril.audio.1
+    pipe 666 /dev/pipe/ril.audio.2
+    pipe 666 /dev/pipe/ril.audio.3
+    pipe 666 /dev/pipe/mmi.audio.ctrl
+    pipe 666 /dev/pipe/ril.vt.0
+    pipe 666 /dev/pipe/ipc.0.0
+    pipe 666 /dev/pipe/ipc.0.1
+    pipe 666 /dev/pipe/ipc.1.0
+    pipe 666 /dev/pipe/ipc.1.1
+
+    mkdir /mnt/sdcard 0000 system system
+    # Backward compatibility
+    symlink /mnt/sdcard /sdcard
+    export EXTERNAL_STORAGE /mnt/sdcard
+
+    symlink /efs /factory
+
+    export SECONDARY_STORAGE /mnt/extSdCard
+    mkdir /mnt/extSdCard 0000 system system
+
+on post-fs
+    insmod /system/lib/modules/ump.ko
+    insmod /system/lib/modules/mali.ko
+    insmod /system/lib/modules/kernel/kernel/sound/drivers/snd-dummy.ko enable=1 pcm_devs=2 pcm_substreams=1 id=snddummy
+
+on post-fs-data
+    symlink /system/opl /opl
+    mkdir /data/misc/vpn/profiles 0770 system system
+
+#DHCP
+    mkdir /data/misc/dhcp 0777 dhcp dhcp
+    chown dhcp dhcp /data/misc/dhcp
+    chmod 0777 /data/misc/dhcp
+
+# for adb
+    chmod 0775 /system/etc/usbdev.sh
+    chmod 0775 /system/etc/startadb.sh
+
+# make mps_code.dat file for storing sales code
+    mkdir /efs/imei 0775 radio system 
+    touch /efs/imei/mps_code.dat
+    chmod 0664 /efs/imei/mps_code.dat
+    chown radio radio /efs/imei/mps_code.dat
+
+on boot
+    chown system system /sys/class/backlight/sprd_backlight/brightness
+
+   
+    chown media audio /sys/class/vbc_param_config/vbc_param_store
+    chown media audio /sys/class/modem/status
+    chown media audio /sys/class/modem/mode
+    chown media audio /sys/class/modem/sim
+    chown media audio /sys/class/modem/regs
+    chown media audio /sys/class/modem/switch
+    chown media audio /sys/class/modem/codec
+
+    chmod 777 /dev/ttyS0
+    chmod 666 /proc/bluetooth/sleep/proto
+    chmod 660 /sys/class/rfkill/rfkill0/state
+    chmod 660 /sys/class/rfkill/rfkill0/type
+    chown bluetooth bluetooth /sys/class/rfkill/rfkill0/state
+    chown bluetooth bluetooth /sys/class/rfkill/rfkill0/type
+
+    mkdir /data/misc/wifi/sockets 0770 wifi wifi
+    mkdir /data/system 0770 system system
+    mkdir /etc/wifi 0770 wifi wifi
+    mkdir /data/system/wpa_supplicant 0770 wifi wifi
+    mkdir /data/misc/dhcp 0775 dhcp dhcp
+    setprop wifi.interface wlan0
+
+    setprop persist.sys.sprd.modemreset 1
+
+    chmod 666 /dev/mxdspidev
+
+
+    mount debugfs debugfs /sys/kernel/debug
+    chmod 220 /sys/kernel/debug/system/dopanic
+    chown system system /sys/kernel/debug/system/dopanic
+
+    #start logs4android
+
+# Set permission for Widevine DRM temporarily
+    chmod 0777 /dev/s5p-smem
+    rm /data/app/tlcd_sock
+
+#for bluetooth. permission for host interface
+    chown root bluetooth /dev/ttyS0
+    chmod 0777 /dev/ttyS0
+    
+#for fm radio    
+    copy /system/etc/local.prop /data/local.prop
+    chown system bluetooth /data/local.prop
+    chmod 0660 /data/local.prop
+#    setprop service.brcm.bt.patchfile /system/bin/BCM2076B1_xxx.hcd
+# permissions for FMRadio of Broadcom
+    chmod 0777 /system/bin/btld
+
+#for maxscend CMMB driver
+     chmod 0777 /dev/mxdspidev
+
+# Change permission for sensor
+# on property:ro.yas-selftest.enable=true
+    chown system system /dev/i2c-0
+    chmod 660 /dev/i2c-0
+# on property:ro.yas.enable=true
+    chmod 755 /system/bin/geomagneticd
+    chown system input /sys/class/input/input0/enable
+    chown system input /sys/class/input/input0/delay
+    chown system input /sys/class/input/input0/wake
+
+    chown system input /sys/class/input/input1/enable
+    chown system input /sys/class/input/input1/delay
+    chown system input /sys/class/input/input1/wake
+
+    chown system input /sys/class/input/input2/enable
+    chown system input /sys/class/input/input2/delay
+    chown system input /sys/class/input/input2/wake
+
+    chown system input /sys/class/input/input3/enable
+    chown system input /sys/class/input/input3/delay
+    chown system input /sys/class/input/input3/wake
+
+    chown system input /sys/class/input/input4/enable
+    chown system input /sys/class/input/input4/delay
+    chown system input /sys/class/input/input4/wake
+
+    chown system input /sys/class/input/input0/offsets
+    chown system input /sys/class/input/input0/dynamic_matrix
+
+    chown system input /sys/class/input/input1/offsets
+    chown system input /sys/class/input/input1/dynamic_matrix
+
+    chown system input /sys/class/input/input2/offsets
+    chown system input /sys/class/input/input2/dynamic_matrix
+
+    chown system input /sys/class/input/input3/offsets
+    chown system input /sys/class/input/input3/dynamic_matrix
+
+# on property:ro.yas_softiron.enable=true
+	write /sys/class/input/input2/ellipsoid_mode 1
+	write /sys/class/input/input1/static_matrix 8791 1420 4 705 11187 238 -1491 925 10193
+
+# permissions for sensors ( proximity)
+    chown root system /dev/proximity    
+    chmod 0660 /dev/proximity
+    
+    chmod 0660 /proc/nk/resume  
+    chmod 0660 /proc/nk/restart   
+    chmod 0660 /proc/nk/guest-02/dsp_bank
+    chmod 0660 /proc/nk/guest-02/guestOS_2_bank
+  
+    chown system root /proc/nk/resume  
+    chown system root /proc/nk/restart   
+    chown system root /proc/nk/guest-02/dsp_bank
+    chown system root /proc/nk/guest-02/guestOS_2_bank
+
+
+service orientationd /system/bin/orientationd
+    class main
+    user system
+#    group system input
+#    disabled
+
+service geomagneticd /system/bin/geomagneticd
+    class main
+    user system
+#    group system input
+#    disabled
+    
+service logs4android /system/bin/logwrapper /system/xbin/logs4android.sh
+    class main
+    disabled
+
+###############################################################
+# redirect logs(LOGE, LOGI...) to linux console
+###############################################################
+service logcat /system/bin/logcat -f /dev/kmsg *:W
+    disabled
+    oneshot
+
+#####################################
+###### calibration mode #############
+#####################################
+service calibration /system/bin/calibration
+    user root
+    oneshot
+    console
+
+#start rawdata daemon.
+service rawdatad /bin/rawdatad
+    class core
+    user root
+    oneshot
+
+#start nvitem daemon.
+service nvitem /system/bin/nvitemd
+    class core
+    user system
+    group system radio shell
+    oneshot
+
+#telephony service
+service sprd_monitor /system/bin/sprd_monitor
+    class core
+    user system
+    group system radio
+    oneshot
+
+service modemd /system/bin/modemd
+    class core
+    socket modem stream 660 system system
+    user system
+    group system radio
+    oneshot
+
+service mfserial /system/bin/mfserial ts0710mux11 ttyS1 1
+    class main
+    user system
+    group system radio
+
+service engpcclient /system/bin/engpcclient
+    class core
+    #aijun
+    disabled
+    user system
+    group system radio shell
+    oneshot
+
+service engservice /system/bin/engservice
+    #class main
+    class core
+    disabled
+    user system
+    group system radio
+    oneshot
+
+service engmodemclient /system/bin/engmodemclient
+    class core
+    disabled
+    user system
+    group system radio
+    oneshot
+
+service engtest /system/bin/engtest
+    user root
+    oneshot
+
+service start_ttyNK /system/bin/open_ttyNK 3
+    class core
+    disabled
+    user system
+    group system radio
+    oneshot
+
+service phoneserver /system/bin/phoneserver
+    class core
+    disabled
+    user system
+    group system radio
+    oneshot
+
+service phoneserver_2sim /system/bin/phoneserver_2sim
+    class core
+    disabled
+    user system
+    group system radio
+    oneshot
+
+
+#service bootlogo /system/bin/bootlogo /system/media/bootlogo
+#    user root
+#    oneshot
+
+##rild service
+#service ril-daemon /system/bin/rild_sp  -l /system/lib/libreference-ril_sp.so -- -n 0
+#    class main
+#    socket rild stream 660 root radio
+#    socket rild-debug stream 660 radio system
+#    user root
+#    group radio cache inet misc audio sdcard_rw log
+
+#service ril-daemon1 /system/bin/rild_sp  -l /system/lib/libreference-ril_sp.so -- -n 1
+#    class main
+#    socket rild1 stream 660 root radio
+#    socket rild-debug1 stream 660 radio system
+#    disabled
+#    user root
+#    group radio cache inet misc audio sdcard_rw log
+
+#on property:persist.msms.phone_count=2
+#    start ril-daemon1
+
+#service bootsound /system/bin/mplayer /system/media/bootsound
+#    user media
+#    group audio
+#    oneshot
+
+#service startupsound /system/bin/mplayer /system/media/startupsound
+#    user media
+#    group audio
+#    disabled
+#    oneshot
+
+#service shutdownsound /system/bin/mplayer /system/media/shutdownsound
+#    user media
+#    group audio
+#    disabled
+#    oneshot
+
+# umts_router
+service d_symlink  /system/bin/ext_symlink.sh -d
+    oneshot
+
+on property:sys.symlink.data_router=*
+    start d_symlink
+
+#phoneserver
+service c_symlink  /system/bin/ext_symlink.sh  -c
+    oneshot
+
+on property:sys.symlink.chnpty=*
+    start c_symlink
+
+
+# adb
+service startadb /system/etc/startadb.sh
+    oneshot
+
+#modem log catch service
+service cplogd /system/bin/cplogd.sh
+    class core
+    disabled
+    oneshot
+
+on property:persist.sys.cplog.config=on
+    start cplogd
+
+on property:persist.sys.cplog.config=off
+    stop cplogd
+
+service atcmm /system/bin/atcmm
+    disabled
+    oneshot
+
