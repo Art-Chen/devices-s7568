@@ -1104,8 +1104,6 @@
     <public type="attr" name="keyCode" id="0x0101044d" />
     <public type="attr" name="keyRepeat" id="0x0101044e" />
     <public type="attr" name="glowBackground" id="0x0101044f" />
-    <public type="attr" name="pointOn" id="0x01010450" />
-    <public type="attr" name="pointOff" id="0x01010451" />
     <public type="id" name="background" id="0x01020000" />
     <public type="id" name="checkbox" id="0x01020001" />
     <public type="id" name="content" id="0x01020002" />

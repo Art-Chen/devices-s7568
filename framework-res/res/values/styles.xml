@@ -3926,8 +3926,6 @@
         <item name="switchMinWidth">96.0dip</item>
         <item name="switchPadding">16.0dip</item>
         <item name="thumbTextPadding">12.0dip</item>
-        <item name="pointOn">@drawable/switch_thumb_light_on_point</item>
-        <item name="pointOff">@drawable/switch_thumb_light_off_point</item>
     </style>
     <style name="Animation.Holo" parent="@style/Animation" />
     <style name="Animation.Holo.Activity" parent="@style/Animation.Activity" />

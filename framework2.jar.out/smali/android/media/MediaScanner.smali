@@ -87,6 +87,8 @@
 
 .field private static final VOICE_RECORDS_DIR_INTERNAL:Ljava/lang/String; = "/mnt/sdcard/Sounds/"
 
+.field private static mCheckingDefaultSounds:Z
+
 .field public static sCscFeature:Lcom/sec/android/app/CscFeature;
 
 
@@ -5392,6 +5394,106 @@
 
 
 # virtual methods
+.method public checkDefaultSounds()V
+    .locals 6
+
+    .prologue
+    .line 2203
+    sget-boolean v0, Landroid/media/MediaScanner;->mCheckingDefaultSounds:Z
+
+    if-eqz v0, :cond_0
+
+    .line 2204
+    const-string v0, "MediaScanner"
+
+    const-string v4, "checkDefaultSounds"
+
+    invoke-static {v0, v4}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 2206
+    const-string v0, "content://media/internal/audio/media"
+
+    invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v3
+
+    .line 2207
+    .local v3, URIdefaultSound:Landroid/net/Uri;
+    const-string v0, "content://settings/system"
+
+    invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v2
+
+    .line 2208
+    .local v2, URIsetting:Landroid/net/Uri;
+    iget-object v0, p0, Landroid/media/MediaScanner;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v1
+
+    .line 2210
+    .local v1, cr:Landroid/content/ContentResolver;
+    if-nez v1, :cond_1
+
+    .line 2211
+    const-string v0, "MediaScanner"
+
+    const-string v4, "Context resolver is null!!!"
+
+    invoke-static {v0, v4}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 2233
+    .end local v1           #cr:Landroid/content/ContentResolver;
+    .end local v2           #URIsetting:Landroid/net/Uri;
+    .end local v3           #URIdefaultSound:Landroid/net/Uri;
+    :cond_0
+    :goto_0
+    return-void
+
+    .line 2215
+    .restart local v1       #cr:Landroid/content/ContentResolver;
+    .restart local v2       #URIsetting:Landroid/net/Uri;
+    .restart local v3       #URIdefaultSound:Landroid/net/Uri;
+    :cond_1
+    invoke-direct {p0}, Landroid/media/MediaScanner;->setDefaultRingtoneFileNames()V
+
+    .line 2218
+    const-string v4, "alarm_alert"
+
+    iget-object v5, p0, Landroid/media/MediaScanner;->mDefaultAlarmAlertFilename:Ljava/lang/String;
+
+    move-object v0, p0
+
+    invoke-direct/range {v0 .. v5}, Landroid/media/MediaScanner;->SettingDefaultSoundAgain(Landroid/content/ContentResolver;Landroid/net/Uri;Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 2221
+    const-string v4, "notification_sound"
+
+    iget-object v5, p0, Landroid/media/MediaScanner;->mDefaultNotificationFilename:Ljava/lang/String;
+
+    move-object v0, p0
+
+    invoke-direct/range {v0 .. v5}, Landroid/media/MediaScanner;->SettingDefaultSoundAgain(Landroid/content/ContentResolver;Landroid/net/Uri;Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 2224
+    const-string v4, "ringtone"
+
+    iget-object v5, p0, Landroid/media/MediaScanner;->mDefaultRingtoneFilename:Ljava/lang/String;
+
+    move-object v0, p0
+
+    invoke-direct/range {v0 .. v5}, Landroid/media/MediaScanner;->SettingDefaultSoundAgain(Landroid/content/ContentResolver;Landroid/net/Uri;Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 2231
+    const/4 v0, 0x0
+
+    sput-boolean v0, Landroid/media/MediaScanner;->mCheckingDefaultSounds:Z
+
+    goto :goto_0
+.end method
+
 .method public native extractAlbumArt(Ljava/io/FileDescriptor;)[B
 .end method
 
