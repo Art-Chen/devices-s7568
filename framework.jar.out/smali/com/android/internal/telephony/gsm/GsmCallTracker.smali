@@ -1200,7 +1200,7 @@
 
     .line 1226
     .local v1, mcc:Ljava/lang/String;
-    const-string v6, "gsm.operator.numeric"
+    const-string/jumbo v6, "gsm.operator.numeric"
 
     invoke-static {v6}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -4259,7 +4259,7 @@
     if-eqz v2, :cond_8
 
     .line 967
-    const-string v2, "hangup all conns in background call"
+    const-string/jumbo v2, "hangup all conns in background call"
 
     invoke-virtual {p0, v2}, Lcom/android/internal/telephony/gsm/GsmCallTracker;->log(Ljava/lang/String;)V
 
@@ -4368,7 +4368,7 @@
     if-ne p1, v1, :cond_1
 
     .line 870
-    const-string v1, "hangup: set hangupPendingMO to true"
+    const-string/jumbo v1, "hangup: set hangupPendingMO to true"
 
     invoke-virtual {p0, v1}, Lcom/android/internal/telephony/gsm/GsmCallTracker;->log(Ljava/lang/String;)V
 
@@ -4505,7 +4505,7 @@
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v6, "hangupConnectionByIndex caught "
+    const-string/jumbo v6, "hangupConnectionByIndex caught "
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -4605,7 +4605,7 @@
 
     .prologue
     .line 1009
-    const-string v0, "hangupForegroundResumeBackground"
+    const-string/jumbo v0, "hangupForegroundResumeBackground"
 
     invoke-virtual {p0, v0}, Lcom/android/internal/telephony/gsm/GsmCallTracker;->log(Ljava/lang/String;)V
 
@@ -4627,7 +4627,7 @@
 
     .prologue
     .line 1003
-    const-string v0, "hangupWaitingOrBackground"
+    const-string/jumbo v0, "hangupWaitingOrBackground"
 
     invoke-virtual {p0, v0}, Lcom/android/internal/telephony/gsm/GsmCallTracker;->log(Ljava/lang/String;)V
 

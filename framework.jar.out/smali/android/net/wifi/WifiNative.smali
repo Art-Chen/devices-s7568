@@ -2517,7 +2517,7 @@
 
     .line 428
     .local v5, token:Ljava/lang/String;
-    const-string v8, "intended_addr="
+    const-string/jumbo v8, "intended_addr="
 
     invoke-virtual {v5, v8}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 

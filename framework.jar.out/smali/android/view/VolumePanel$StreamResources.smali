@@ -73,11 +73,11 @@
 
     const/4 v3, 0x6
 
-    const v4, #string@volume_icon_description_bluetooth#t
+    const v4, 0x10404b9
 
-    const v5, #drawable@ic_audio_bt#t
+    const v5, 0x10802ca
 
-    const v6, #drawable@ic_audio_bt#t
+    const v6, 0x10802ca
 
     move v7, v2
 
@@ -90,11 +90,11 @@
 
     const-string v4, "RingerStream"
 
-    const v7, #string@volume_icon_description_ringer#t
+    const v7, 0x10404ba
 
-    const v8, #drawable@ic_audio_ring_notif#t
+    const v8, 0x10802d0
 
-    const v9, #drawable@ic_audio_ring_notif_mute#t
+    const v9, 0x10802d1
 
     move v5, v11
 
@@ -111,11 +111,11 @@
 
     const-string v4, "VoiceStream"
 
-    const v7, #string@volume_icon_description_incall#t
+    const v7, 0x10404bb
 
-    const v8, #drawable@ic_audio_phone#t
+    const v8, 0x10802cf
 
-    const v9, #drawable@ic_audio_phone#t
+    const v9, 0x10802cf
 
     move v5, v12
 
@@ -132,11 +132,11 @@
 
     const-string v4, "AlarmStream"
 
-    const v7, #string@volume_alarm#t
+    const v7, 0x10404b6
 
-    const v8, #drawable@ic_audio_alarm#t
+    const v8, 0x10802c8
 
-    const v9, #drawable@ic_audio_alarm_mute#t
+    const v9, 0x10802c9
 
     move v5, v13
 
@@ -153,11 +153,11 @@
 
     const-string v4, "MediaStream"
 
-    const v7, #string@volume_icon_description_media#t
+    const v7, 0x10404bc
 
-    const v8, #drawable@ic_audio_vol#t
+    const v8, 0x10802d6
 
-    const v9, #drawable@ic_audio_vol_mute#t
+    const v9, 0x10802d7
 
     move v5, v14
 
@@ -178,11 +178,11 @@
 
     const/4 v6, 0x5
 
-    const v7, #string@volume_icon_description_notification#t
+    const v7, 0x10404bd
 
-    const v8, #drawable@ic_audio_notification#t
+    const v8, 0x10802cc
 
-    const v9, #drawable@ic_audio_notification_mute#t
+    const v9, 0x10802cd
 
     move v10, v11
 

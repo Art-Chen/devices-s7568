@@ -113,7 +113,7 @@
     .line 99
     new-instance v0, Ljava/lang/RuntimeException;
 
-    const-string v1, "internal error: native bitmap is 0"
+    const-string/jumbo v1, "internal error: native bitmap is 0"
 
     invoke-direct {v0, v1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 
@@ -254,7 +254,7 @@
     .line 966
     new-instance v2, Ljava/lang/IllegalArgumentException;
 
-    const-string v3, "height must be >= 0"
+    const-string/jumbo v3, "height must be >= 0"
 
     invoke-direct {v2, v3}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -401,7 +401,7 @@
     .line 243
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
-    const-string v1, "height must be > 0"
+    const-string/jumbo v1, "height must be > 0"
 
     invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 

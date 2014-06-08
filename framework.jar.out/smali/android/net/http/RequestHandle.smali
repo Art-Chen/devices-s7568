@@ -1500,7 +1500,7 @@
     :cond_0
     iget-object v4, p0, Landroid/net/http/RequestHandle;->mUrl:Ljava/lang/String;
 
-    const-string v5, "https:"
+    const-string/jumbo v5, "https:"
 
     invoke-virtual {v4, v5}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
@@ -1508,7 +1508,7 @@
 
     if-eqz v4, :cond_1
 
-    const-string v4, "http:"
+    const-string/jumbo v4, "http:"
 
     invoke-virtual {p1, v4}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 

@@ -4604,7 +4604,7 @@
     .line 197
     const-string v2, "Gsm/SmsMessage"
 
-    const-string v3, "hyunjoo newFromCMT"
+    const-string/jumbo v3, "hyunjoo newFromCMT"
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -5345,7 +5345,7 @@
 
     invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v9, "hasUserDataHeader : "
+    const-string/jumbo v9, "hasUserDataHeader : "
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -6022,6 +6022,8 @@
     goto/16 :goto_3
 
     .line 1937
+    nop
+
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_4

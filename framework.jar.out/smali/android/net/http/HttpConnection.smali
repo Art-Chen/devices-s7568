@@ -66,7 +66,7 @@
 
     .prologue
     .line 93
-    const-string v0, "http"
+    const-string/jumbo v0, "http"
 
     return-object v0
 .end method
@@ -128,7 +128,7 @@
 
     .line 59
     .local v3, sock:Ljava/net/Socket;
-    const-string v4, "http.socket.buffer-size"
+    const-string/jumbo v4, "http.socket.buffer-size"
 
     const/16 v5, 0x2000
 

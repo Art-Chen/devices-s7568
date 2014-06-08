@@ -113,7 +113,7 @@
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v4, "handleQueuedMotionEvent "
+    const-string/jumbo v4, "handleQueuedMotionEvent "
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -182,7 +182,7 @@
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v4, "handleQueuedMotionEvent  detector.isInProgress() = "
+    const-string/jumbo v4, "handleQueuedMotionEvent  detector.isInProgress() = "
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -309,7 +309,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "handleQueuedTouch qt.mSequence = "
+    const-string/jumbo v2, "handleQueuedTouch qt.mSequence = "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -385,7 +385,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "handleQueuedTouchEventData ted.mReprocess ="
+    const-string/jumbo v3, "handleQueuedTouchEventData ted.mReprocess ="
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -499,7 +499,7 @@
     .line 13384
     const-string/jumbo v1, "webview"
 
-    const-string v2, "handleQueuedTouchEventData : handling events before mPreventDefault, do nothing"
+    const-string/jumbo v2, "handleQueuedTouchEventData : handling events before mPreventDefault, do nothing"
 
     invoke-static {v1, v2}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -627,7 +627,7 @@
     .line 13427
     const-string/jumbo v1, "webview"
 
-    const-string v2, "handleQueuedTouchEventData : mPreventDefault has been changed to PREVENT_DEFAULT_YES"
+    const-string/jumbo v2, "handleQueuedTouchEventData : mPreventDefault has been changed to PREVENT_DEFAULT_YES"
 
     invoke-static {v1, v2}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -880,7 +880,7 @@
     .line 13456
     const-string/jumbo v1, "webview"
 
-    const-string v2, "handleQueuedTouchEventData : handling events before mPreventDefault, just call handleMultiTouchInWebView"
+    const-string/jumbo v2, "handleQueuedTouchEventData : handling events before mPreventDefault, just call handleMultiTouchInWebView"
 
     invoke-static {v1, v2}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -955,7 +955,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "handleQueuedTouchEventData : We don\'t need to handle this ted event because it was already handled ted.mAction= "
+    const-string/jumbo v3, "handleQueuedTouchEventData : We don\'t need to handle this ted event because it was already handled ted.mAction= "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1606,6 +1606,8 @@
     goto/16 :goto_0
 
     .line 13490
+    nop
+
     :sswitch_data_0
     .sparse-switch
         0x0 -> :sswitch_0
@@ -1634,7 +1636,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "handleTouchEventsBeforePreventDefault  mPreventDefault = "
+    const-string/jumbo v2, "handleTouchEventsBeforePreventDefault  mPreventDefault = "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

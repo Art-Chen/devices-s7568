@@ -391,7 +391,7 @@
 
     .line 511
     :cond_0
-    const-string v2, "input_method"
+    const-string/jumbo v2, "input_method"
 
     invoke-static {v2}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
 

@@ -42,8 +42,6 @@
 
 .field private mIsVoiceMail:Z
 
-.field public mPhotoHeight:I
-
 .field public mMapUserData:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -55,6 +53,8 @@
         }
     .end annotation
 .end field
+
+.field public mPhotoHeight:I
 
 .field public mPhotoID:I
 
@@ -617,7 +617,7 @@
 
     iput-boolean v4, v1, Lcom/android/internal/telephony/CallerInfo;->contactExists:Z
 
-    const-string v3, "width"
+    const-string/jumbo v3, "width"
 
     invoke-interface {p2, v3}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
@@ -629,7 +629,7 @@
 
     iput v3, v1, Lcom/android/internal/telephony/CallerInfo;->mPhotoWidth:I
 
-    const-string v3, "height"
+    const-string/jumbo v3, "height"
 
     invoke-interface {p2, v3}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
@@ -641,7 +641,7 @@
 
     iput v3, v1, Lcom/android/internal/telephony/CallerInfo;->mPhotoHeight:I
 
-    const-string v3, "photo_id"
+    const-string/jumbo v3, "photo_id"
 
     invoke-interface {p2, v3}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
@@ -653,7 +653,7 @@
 
     iput v3, v1, Lcom/android/internal/telephony/CallerInfo;->mPhotoID:I
 
-    const-string v3, "view_mode"
+    const-string/jumbo v3, "view_mode"
 
     invoke-interface {p2, v3}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
@@ -1822,7 +1822,7 @@
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v4, "updateGeoDescritionAndLabel(\'"
+    const-string/jumbo v4, "updateGeoDescritionAndLabel(\'"
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

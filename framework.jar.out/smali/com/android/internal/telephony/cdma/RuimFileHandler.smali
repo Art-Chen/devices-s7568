@@ -129,7 +129,7 @@
 
     const/16 v1, 0xc0
 
-    const-string v3, "img"
+    const-string/jumbo v3, "img"
 
     move v2, p1
 

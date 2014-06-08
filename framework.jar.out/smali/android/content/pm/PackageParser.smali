@@ -3295,7 +3295,7 @@
 
     move-result-object v2
 
-    const-string v3, "intent-filter"
+    const-string/jumbo v3, "intent-filter"
 
     invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -4234,7 +4234,7 @@
 
     move-result-object v2
 
-    const-string v3, "intent-filter"
+    const-string/jumbo v3, "intent-filter"
 
     invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -6436,7 +6436,7 @@
     if-eqz v13, :cond_5
 
     .line 2840
-    const-string v13, "http://schemas.android.com/apk/res/android"
+    const-string/jumbo v13, "http://schemas.android.com/apk/res/android"
 
     const-string/jumbo v14, "name"
 
@@ -6496,7 +6496,7 @@
     if-eqz v13, :cond_8
 
     .line 2850
-    const-string v13, "http://schemas.android.com/apk/res/android"
+    const-string/jumbo v13, "http://schemas.android.com/apk/res/android"
 
     const-string/jumbo v14, "name"
 
@@ -8619,7 +8619,7 @@
     .line 1142
     .end local v20           #name:Ljava/lang/String;
     :cond_26
-    const-string v3, "instrumentation"
+    const-string/jumbo v3, "instrumentation"
 
     move-object/from16 v0, v33
 
@@ -9548,7 +9548,7 @@
 
     .line 786
     .local v0, attr:Ljava/lang/String;
-    const-string v9, "installLocation"
+    const-string/jumbo v9, "installLocation"
 
     invoke-virtual {v0, v9}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -10135,14 +10135,13 @@
 
     if-nez v4, :cond_6
 
-    const-string v4, "yi"
+    const-string/jumbo v4, "yi"
 
     invoke-virtual {v4, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
 
     if-nez v4, :cond_6
-
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -12343,7 +12342,7 @@
 
     move-result-object v2
 
-    const-string v3, "intent-filter"
+    const-string/jumbo v3, "intent-filter"
 
     invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

@@ -735,7 +735,7 @@
     .line 314
     const-string v0, "JPG"
 
-    const-string v1, "image/jpg"
+    const-string/jumbo v1, "image/jpg"
 
     const/16 v2, 0x3801
 
@@ -744,7 +744,7 @@
     .line 315
     const-string v0, "JPEG"
 
-    const-string v1, "image/jpg"
+    const-string/jumbo v1, "image/jpg"
 
     const/16 v2, 0x3801
 
@@ -753,7 +753,7 @@
     .line 316
     const-string v0, "JPG"
 
-    const-string v1, "image/jpeg"
+    const-string/jumbo v1, "image/jpeg"
 
     const/16 v2, 0x3801
 
@@ -762,7 +762,7 @@
     .line 317
     const-string v0, "JPEG"
 
-    const-string v1, "image/jpeg"
+    const-string/jumbo v1, "image/jpeg"
 
     const/16 v2, 0x3801
 
@@ -773,7 +773,7 @@
 
     const/16 v1, 0x20
 
-    const-string v2, "image/gif"
+    const-string/jumbo v2, "image/gif"
 
     const/16 v3, 0x3807
 
@@ -784,7 +784,7 @@
 
     const/16 v1, 0x21
 
-    const-string v2, "image/png"
+    const-string/jumbo v2, "image/png"
 
     const/16 v3, 0x380b
 
@@ -795,7 +795,7 @@
 
     const/16 v1, 0x22
 
-    const-string v2, "image/x-ms-bmp"
+    const-string/jumbo v2, "image/x-ms-bmp"
 
     const/16 v3, 0x3804
 
@@ -806,7 +806,7 @@
 
     const/16 v1, 0x23
 
-    const-string v2, "image/vnd.wap.wbmp"
+    const-string/jumbo v2, "image/vnd.wap.wbmp"
 
     invoke-static {v0, v1, v2}, Landroid/media/MediaFile;->addFileType(Ljava/lang/String;ILjava/lang/String;)V
 
@@ -815,7 +815,7 @@
 
     const/16 v1, 0x24
 
-    const-string v2, "image/webp"
+    const-string/jumbo v2, "image/webp"
 
     invoke-static {v0, v1, v2}, Landroid/media/MediaFile;->addFileType(Ljava/lang/String;ILjava/lang/String;)V
 

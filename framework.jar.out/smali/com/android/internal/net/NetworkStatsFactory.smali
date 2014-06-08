@@ -1032,7 +1032,7 @@
 
     const/4 v11, 0x0
 
-    const-string v12, "iface"
+    const-string/jumbo v12, "iface"
 
     aput-object v12, v10, v11
 
@@ -1147,7 +1147,7 @@
     invoke-static {v3, v9, v5}, Lcom/android/internal/net/NetworkStatsFactory;->parseLine(Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/HashMap;)V
 
     .line 129
-    const-string v10, "iface"
+    const-string/jumbo v10, "iface"
 
     invoke-virtual {v5, v10}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1680,7 +1680,7 @@
 
     invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v9, "inconsistent idx="
+    const-string/jumbo v9, "inconsistent idx="
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

@@ -4605,7 +4605,7 @@
     .line 627
     iget-object v0, p0, Lcom/android/internal/telephony/IccCard;->mPhone:Lcom/android/internal/telephony/PhoneBase;
 
-    const-string v1, "gsm.sim.state"
+    const-string/jumbo v1, "gsm.sim.state"
 
     invoke-virtual {p0}, Lcom/android/internal/telephony/IccCard;->getState()Lcom/android/internal/telephony/IccCard$State;
 

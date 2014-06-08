@@ -105,7 +105,7 @@
     sput-object v1, Landroid/view/HardwareRenderer$GlRenderer;->sEglContextStorage:Ljava/lang/ThreadLocal;
 
     .line 437
-    const-string v1, "hwui.render_dirty_regions"
+    const-string/jumbo v1, "hwui.render_dirty_regions"
 
     const-string/jumbo v2, "true"
 
@@ -162,7 +162,7 @@
     iput-boolean p2, p0, Landroid/view/HardwareRenderer$GlRenderer;->mTranslucent:Z
 
     .line 457
-    const-string v1, "hwui.disable_vsync"
+    const-string/jumbo v1, "hwui.disable_vsync"
 
     const-string v2, "false"
 
@@ -224,7 +224,7 @@
 
     .line 594
     .local v4, configSpec:[I
-    const-string v2, "hwui.print_config"
+    const-string/jumbo v2, "hwui.print_config"
 
     const-string v3, ""
 
@@ -1789,7 +1789,7 @@
     .line 500
     const-string v3, "GlRenderer"
 
-    const-string v4, "initialize"
+    const-string/jumbo v4, "initialize"
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -1910,7 +1910,7 @@
     .line 541
     const-string v2, "GlRenderer"
 
-    const-string v3, "initializeEgl"
+    const-string/jumbo v3, "initializeEgl"
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 

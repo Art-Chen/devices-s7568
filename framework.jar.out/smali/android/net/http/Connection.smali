@@ -248,7 +248,7 @@
 
     move-result-object v0
 
-    const-string v1, "http"
+    const-string/jumbo v1, "http"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -326,7 +326,7 @@
     .line 450
     iget-object v3, p0, Landroid/net/http/Connection;->mHttpContext:Lorg/apache/http/protocol/HttpContext;
 
-    const-string v4, "http.connection"
+    const-string/jumbo v4, "http.connection"
 
     invoke-interface {v3, v4}, Lorg/apache/http/protocol/HttpContext;->removeAttribute(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -373,7 +373,7 @@
     const/4 v2, 0x0
 
     .line 465
-    const-string v3, "http.connection"
+    const-string/jumbo v3, "http.connection"
 
     invoke-interface {p4, v3}, Lorg/apache/http/protocol/HttpContext;->getAttribute(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -514,7 +514,7 @@
     .line 361
     iget-object v7, p0, Landroid/net/http/Connection;->mHttpContext:Lorg/apache/http/protocol/HttpContext;
 
-    const-string v8, "http.connection"
+    const-string/jumbo v8, "http.connection"
 
     iget-object v9, p0, Landroid/net/http/Connection;->mHttpClientConnection:Landroid/net/http/AndroidHttpClientConnection;
 
@@ -1163,7 +1163,7 @@
     .line 312
     iget-object v12, p0, Landroid/net/http/Connection;->mHttpContext:Lorg/apache/http/protocol/HttpContext;
 
-    const-string v13, "http.connection"
+    const-string/jumbo v13, "http.connection"
 
     invoke-interface {v12, v13}, Lorg/apache/http/protocol/HttpContext;->removeAttribute(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -1237,6 +1237,8 @@
     return-void
 
     .line 183
+    nop
+
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0

@@ -956,7 +956,7 @@
     const/4 v0, 0x1
 
     .line 94
-    const-string v1, "http://xmlpull.org/v1/doc/features.html#process-namespaces"
+    const-string/jumbo v1, "http://xmlpull.org/v1/doc/features.html#process-namespaces"
 
     invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -971,7 +971,7 @@
 
     .line 97
     :cond_1
-    const-string v1, "http://xmlpull.org/v1/doc/features.html#report-namespace-prefixes"
+    const-string/jumbo v1, "http://xmlpull.org/v1/doc/features.html#report-namespace-prefixes"
 
     invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1030,7 +1030,7 @@
     .line 436
     const/4 v0, 0x0
 
-    const-string v1, "id"
+    const-string/jumbo v1, "id"
 
     invoke-virtual {p0, v0, v1, p1}, Landroid/content/res/XmlBlock$Parser;->getAttributeResourceValue(Ljava/lang/String;Ljava/lang/String;I)I
 
@@ -1879,7 +1879,7 @@
 
     .prologue
     .line 85
-    const-string v0, "http://xmlpull.org/v1/doc/features.html#process-namespaces"
+    const-string/jumbo v0, "http://xmlpull.org/v1/doc/features.html#process-namespaces"
 
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1895,7 +1895,7 @@
 
     .line 88
     :cond_1
-    const-string v0, "http://xmlpull.org/v1/doc/features.html#report-namespace-prefixes"
+    const-string/jumbo v0, "http://xmlpull.org/v1/doc/features.html#report-namespace-prefixes"
 
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

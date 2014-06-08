@@ -968,7 +968,7 @@
 
     .line 512
     :cond_8
-    const-string v0, "i"
+    const-string/jumbo v0, "i"
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
@@ -1490,7 +1490,7 @@
 
     .line 462
     :cond_8
-    const-string v0, "i"
+    const-string/jumbo v0, "i"
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
@@ -1759,7 +1759,7 @@
 
     .line 488
     :cond_13
-    const-string v0, "img"
+    const-string/jumbo v0, "img"
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
@@ -1824,7 +1824,7 @@
     .line 669
     const-string v2, ""
 
-    const-string v3, "href"
+    const-string/jumbo v3, "href"
 
     invoke-interface {p1, v2, v3}, Lorg/xml/sax/Attributes;->getValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 

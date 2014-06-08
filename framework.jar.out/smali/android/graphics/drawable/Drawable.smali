@@ -567,7 +567,7 @@
     .line 852
     .end local v0           #drawable:Landroid/graphics/drawable/Drawable;
     :cond_b
-    const-string v2, "inset"
+    const-string/jumbo v2, "inset"
 
     invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

@@ -15,7 +15,19 @@
 
 
 # static fields
+.field public static final animals:I = 0x1070050
+
 .field public static final carrier_properties:I = 0x1070049
+
+.field public static final chineseDay:I = 0x107004d
+
+.field public static final chineseNumber:I = 0x107004c
+
+.field public static final chineseTen:I = 0x1070051
+
+.field public static final chineseTimeSection:I = 0x1070054
+
+.field public static final chineseYear:I = 0x1070053
 
 .field public static final common_nicknames:I = 0x1070047
 
@@ -91,6 +103,8 @@
 
 .field public static final emailAddressTypes:I = 0x1070000
 
+.field public static final gan:I = 0x107004e
+
 .field public static final hideApnBlackList:I = 0x1070045
 
 .field public static final imAddressTypes:I = 0x1070048
@@ -127,7 +141,15 @@
 
 .field public static final preloaded_drawables:I = 0x1070007
 
+.field public static final quickboot_info_week_set:I = 0x1070055
+
 .field public static final radioAttributes:I = 0x1070028
+
+.field public static final shutdown_reboot_actions:I = 0x107004a
+
+.field public static final shutdown_reboot_options:I = 0x107004b
+
+.field public static final solar_terms:I = 0x1070052
 
 .field public static final special_locale_codes:I = 0x107000b
 
@@ -136,6 +158,8 @@
 .field public static final telephony_provider_3lm:I = 0x1070005
 
 .field public static final telephony_provider_oem:I = 0x1070006
+
+.field public static final zhi:I = 0x107004f
 
 .field public static final zzz_tts_lockscreen_1_missed_call:I = 0x107001e
 

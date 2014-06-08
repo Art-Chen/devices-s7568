@@ -538,6 +538,19 @@
     return-void
 .end method
 
+.method private setSimIdAndInfoType(IJ)V
+    .locals 0
+    .parameter "type"
+    .parameter "id"
+
+    .prologue
+    iput p1, p0, Landroid/app/Notification;->simInfoType:I
+
+    iput-wide p2, p0, Landroid/app/Notification;->simId:J
+
+    return-void
+.end method
+
 
 # virtual methods
 .method public clone()Landroid/app/Notification;
@@ -1300,7 +1313,7 @@
     :cond_5
     invoke-virtual {p1, v2}, Landroid/os/Parcel;->writeInt(I)V
 
-    goto :goto_5
+    goto/16 :goto_5
 
     :cond_6
     invoke-virtual {p1, v2}, Landroid/os/Parcel;->writeInt(I)V
@@ -1316,17 +1329,4 @@
     invoke-virtual {p1, v2}, Landroid/os/Parcel;->writeInt(I)V
 
     goto :goto_8
-.end method
-
-.method private setSimIdAndInfoType(IJ)V
-    .locals 0
-    .parameter "type"
-    .parameter "id"
-
-    .prologue
-    iput p1, p0, Landroid/app/Notification;->simInfoType:I
-
-    iput-wide p2, p0, Landroid/app/Notification;->simId:J
-
-    return-void
 .end method

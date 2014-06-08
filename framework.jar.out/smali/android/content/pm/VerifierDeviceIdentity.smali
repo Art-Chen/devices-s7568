@@ -232,7 +232,7 @@
     .line 174
     new-instance v7, Ljava/lang/IllegalArgumentException;
 
-    const-string v8, "illegal start character; will overflow"
+    const-string/jumbo v8, "illegal start character; will overflow"
 
     invoke-direct {v7, v8}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 

@@ -297,6 +297,17 @@
     return-wide v0
 .end method
 
+.method static synthetic access$100(Landroid/content/res/AssetManager;)V
+    .locals 0
+    .parameter "x0"
+
+    .prologue
+    .line 52
+    invoke-direct {p0}, Landroid/content/res/AssetManager;->readChannelPkgsBackgroud()V
+
+    return-void
+.end method
+
 .method static synthetic access$200(Landroid/content/res/AssetManager;I)I
     .locals 1
     .parameter "x0"
@@ -309,6 +320,17 @@
     move-result v0
 
     return v0
+.end method
+
+.method static synthetic access$200(Landroid/content/res/AssetManager;)V
+    .locals 0
+    .parameter "x0"
+
+    .prologue
+    .line 52
+    invoke-direct {p0}, Landroid/content/res/AssetManager;->readChannelPkgs()V
+
+    return-void
 .end method
 
 .method static synthetic access$300(Landroid/content/res/AssetManager;I)J
@@ -375,127 +397,6 @@
 
     .prologue
     .line 35
-    invoke-direct {p0, p1, p2, p3, p4}, Landroid/content/res/AssetManager;->readAsset(I[BII)I
-
-    move-result v0
-
-    return v0
-.end method
-
-.method static synthetic access$bd_100(Landroid/content/res/AssetManager;)V
-    .locals 0
-    .parameter "x0"
-
-    .prologue
-    .line 52
-    invoke-direct {p0}, Landroid/content/res/AssetManager;->readChannelPkgsBackgroud()V
-
-    return-void
-.end method
-
-.method static synthetic access$bd_200(Landroid/content/res/AssetManager;)V
-    .locals 0
-    .parameter "x0"
-
-    .prologue
-    .line 52
-    invoke-direct {p0}, Landroid/content/res/AssetManager;->readChannelPkgs()V
-
-    return-void
-.end method
-
-.method static synthetic access$bd_300(Landroid/content/res/AssetManager;I)J
-    .locals 2
-    .parameter "x0"
-    .parameter "x1"
-
-    .prologue
-    .line 52
-    invoke-direct {p0, p1}, Landroid/content/res/AssetManager;->getAssetLength(I)J
-
-    move-result-wide v0
-
-    return-wide v0
-.end method
-
-.method static synthetic access$bd_400(Landroid/content/res/AssetManager;I)I
-    .locals 1
-    .parameter "x0"
-    .parameter "x1"
-
-    .prologue
-    .line 52
-    invoke-direct {p0, p1}, Landroid/content/res/AssetManager;->readAssetChar(I)I
-
-    move-result v0
-
-    return v0
-.end method
-
-.method static synthetic access$bd_500(Landroid/content/res/AssetManager;I)J
-    .locals 2
-    .parameter "x0"
-    .parameter "x1"
-
-    .prologue
-    .line 52
-    invoke-direct {p0, p1}, Landroid/content/res/AssetManager;->getAssetRemainingLength(I)J
-
-    move-result-wide v0
-
-    return-wide v0
-.end method
-
-.method static synthetic access$bd_600(Landroid/content/res/AssetManager;I)V
-    .locals 0
-    .parameter "x0"
-    .parameter "x1"
-
-    .prologue
-    .line 52
-    invoke-direct {p0, p1}, Landroid/content/res/AssetManager;->destroyAsset(I)V
-
-    return-void
-.end method
-
-.method static synthetic access$bd_700(Landroid/content/res/AssetManager;I)V
-    .locals 0
-    .parameter "x0"
-    .parameter "x1"
-
-    .prologue
-    .line 52
-    invoke-direct {p0, p1}, Landroid/content/res/AssetManager;->decRefsLocked(I)V
-
-    return-void
-.end method
-
-.method static synthetic access$bd_800(Landroid/content/res/AssetManager;IJI)J
-    .locals 2
-    .parameter "x0"
-    .parameter "x1"
-    .parameter "x2"
-    .parameter "x3"
-
-    .prologue
-    .line 52
-    invoke-direct {p0, p1, p2, p3, p4}, Landroid/content/res/AssetManager;->seekAsset(IJI)J
-
-    move-result-wide v0
-
-    return-wide v0
-.end method
-
-.method static synthetic access$bd_900(Landroid/content/res/AssetManager;I[BII)I
-    .locals 1
-    .parameter "x0"
-    .parameter "x1"
-    .parameter "x2"
-    .parameter "x3"
-    .parameter "x4"
-
-    .prologue
-    .line 52
     invoke-direct {p0, p1, p2, p3, p4}, Landroid/content/res/AssetManager;->readAsset(I[BII)I
 
     move-result v0

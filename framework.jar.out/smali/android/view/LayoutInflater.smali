@@ -2201,7 +2201,7 @@
 
     .line 725
     :cond_2
-    const-string v6, "include"
+    const-string/jumbo v6, "include"
 
     invoke-virtual {v6, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

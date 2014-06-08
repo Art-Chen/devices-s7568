@@ -138,7 +138,7 @@
 
     move-result-object v0
 
-    const-string v1, "info: "
+    const-string/jumbo v1, "info: "
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

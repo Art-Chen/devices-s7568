@@ -2387,7 +2387,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "handleIncomingConnection:"
+    const-string/jumbo v3, "handleIncomingConnection:"
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2637,6 +2637,8 @@
     goto/16 :goto_0
 
     .line 1197
+    nop
+
     nop
 
     :pswitch_data_0

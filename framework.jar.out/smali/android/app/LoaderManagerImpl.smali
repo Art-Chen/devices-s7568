@@ -584,7 +584,7 @@
     .line 746
     new-instance v0, Ljava/lang/RuntimeException;
 
-    const-string v2, "here"
+    const-string/jumbo v2, "here"
 
     invoke-direct {v0, v2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 
@@ -701,7 +701,7 @@
     .line 713
     new-instance v0, Ljava/lang/RuntimeException;
 
-    const-string v2, "here"
+    const-string/jumbo v2, "here"
 
     invoke-direct {v0, v2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 
@@ -813,7 +813,7 @@
     .line 731
     new-instance v0, Ljava/lang/RuntimeException;
 
-    const-string v2, "here"
+    const-string/jumbo v2, "here"
 
     invoke-direct {v0, v2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 
@@ -1360,7 +1360,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "initLoader in "
+    const-string/jumbo v3, "initLoader in "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

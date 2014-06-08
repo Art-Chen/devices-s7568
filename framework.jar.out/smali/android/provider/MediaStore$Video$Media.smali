@@ -33,7 +33,7 @@
 
     .prologue
     .line 1903
-    const-string v0, "internal"
+    const-string/jumbo v0, "internal"
 
     invoke-static {v0}, Landroid/provider/MediaStore$Video$Media;->getContentUri(Ljava/lang/String;)Landroid/net/Uri;
 

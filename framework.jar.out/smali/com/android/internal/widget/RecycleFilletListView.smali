@@ -97,7 +97,7 @@
 
     .line 49
     .local v0, resource:Landroid/content/res/Resources;
-    const v1, #drawable@cld_list_selector_baidu_light#t
+    const v1, 0x1080a82
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -106,7 +106,7 @@
     iput-object v1, p0, Lcom/android/internal/widget/RecycleFilletListView;->mNormalSelector:Landroid/graphics/drawable/Drawable;
 
     .line 50
-    const v1, #drawable@cld_list_top_selector_baidu_light#t
+    const v1, 0x1080a86
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -115,7 +115,7 @@
     iput-object v1, p0, Lcom/android/internal/widget/RecycleFilletListView;->mTopSelector:Landroid/graphics/drawable/Drawable;
 
     .line 51
-    const v1, #drawable@cld_list_bottom_selector_baidu_light#t
+    const v1, 0x1080a80
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -124,7 +124,7 @@
     iput-object v1, p0, Lcom/android/internal/widget/RecycleFilletListView;->mBottomSelector:Landroid/graphics/drawable/Drawable;
 
     .line 52
-    const v1, #drawable@cld_list_single_selector_baidu_light#t
+    const v1, 0x1080a84
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 

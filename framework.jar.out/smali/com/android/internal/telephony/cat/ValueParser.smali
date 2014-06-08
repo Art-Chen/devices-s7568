@@ -2936,7 +2936,7 @@
     invoke-static/range {v32 .. v33}, Lcom/android/internal/telephony/cat/CatLog;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 528
-    const-string v32, "gsm.sim.operator.numeric"
+    const-string/jumbo v32, "gsm.sim.operator.numeric"
 
     const-string v33, ""
 

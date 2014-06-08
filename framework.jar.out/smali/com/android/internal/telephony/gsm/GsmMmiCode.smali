@@ -1609,7 +1609,7 @@
 
     .line 837
     .local v0, mcc:Ljava/lang/String;
-    const-string v3, "gsm.operator.numeric"
+    const-string/jumbo v3, "gsm.operator.numeric"
 
     invoke-static {v3}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -1641,7 +1641,7 @@
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v5, "isCroatiaShortCode mcc"
+    const-string/jumbo v5, "isCroatiaShortCode mcc"
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1710,7 +1710,7 @@
     :cond_0
     const-string v2, "GSM"
 
-    const-string v3, "isCroatiaShortCode Returning true"
+    const-string/jumbo v3, "isCroatiaShortCode Returning true"
 
     invoke-static {v2, v3}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -1725,7 +1725,7 @@
     :cond_1
     const-string v3, "GSM"
 
-    const-string v4, "isCroatiaShortCode Returning false"
+    const-string/jumbo v4, "isCroatiaShortCode Returning false"
 
     invoke-static {v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -1735,7 +1735,7 @@
     :cond_2
     const-string v3, "GSM"
 
-    const-string v4, "isCroatiaShortCode Returning false"
+    const-string/jumbo v4, "isCroatiaShortCode Returning false"
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -2170,7 +2170,7 @@
 
     .line 558
     .local v1, mcc:Ljava/lang/String;
-    const-string v5, "gsm.operator.numeric"
+    const-string/jumbo v5, "gsm.operator.numeric"
 
     invoke-static {v5}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -2467,7 +2467,7 @@
     if-lt v5, v6, :cond_2
 
     .line 605
-    const-string v5, "gsmmmi"
+    const-string/jumbo v5, "gsmmmi"
 
     const-string/jumbo v6, "isMMICodeSupport 4"
 
@@ -2491,7 +2491,7 @@
 
     .line 866
     .local v0, mcc:Ljava/lang/String;
-    const-string v3, "gsm.operator.numeric"
+    const-string/jumbo v3, "gsm.operator.numeric"
 
     invoke-static {v3}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -2638,7 +2638,7 @@
 
     .line 505
     .local v0, mcc:Ljava/lang/String;
-    const-string v4, "gsm.operator.numeric"
+    const-string/jumbo v4, "gsm.operator.numeric"
 
     invoke-static {v4}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -3283,7 +3283,7 @@
 
     .line 794
     .local v0, mcc:Ljava/lang/String;
-    const-string v3, "gsm.operator.numeric"
+    const-string/jumbo v3, "gsm.operator.numeric"
 
     invoke-static {v3}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -6341,7 +6341,7 @@
     .line 668
     new-instance v0, Ljava/lang/RuntimeException;
 
-    const-string v1, "invalid call barring sc"
+    const-string/jumbo v1, "invalid call barring sc"
 
     invoke-direct {v0, v1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 
@@ -6473,7 +6473,7 @@
     :cond_8
     new-instance v0, Ljava/lang/RuntimeException;
 
-    const-string v1, "invalid call barring sc"
+    const-string/jumbo v1, "invalid call barring sc"
 
     invoke-direct {v0, v1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 
@@ -6491,7 +6491,7 @@
     .line 410
     new-instance v0, Ljava/lang/RuntimeException;
 
-    const-string v1, "invalid call forward sc"
+    const-string/jumbo v1, "invalid call forward sc"
 
     invoke-direct {v0, v1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 
@@ -6593,7 +6593,7 @@
     :cond_6
     new-instance v0, Ljava/lang/RuntimeException;
 
-    const-string v1, "invalid call forward sc"
+    const-string/jumbo v1, "invalid call forward sc"
 
     invoke-direct {v0, v1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 
@@ -8157,7 +8157,7 @@
     .line 1073
     const-string v4, "GSM"
 
-    const-string v10, "is CLIP"
+    const-string/jumbo v10, "is CLIP"
 
     invoke-static {v4, v10}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -8222,7 +8222,7 @@
     .line 1081
     const-string v4, "GSM"
 
-    const-string v10, "is CLIR"
+    const-string/jumbo v10, "is CLIR"
 
     invoke-static {v4, v10}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -8341,7 +8341,7 @@
     .line 1095
     const-string v4, "GSM"
 
-    const-string v10, "is CF"
+    const-string/jumbo v10, "is CF"
 
     invoke-static {v4, v10}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -8458,7 +8458,7 @@
     :goto_3
     const-string v4, "GSM"
 
-    const-string v10, "is CF setCallForward"
+    const-string/jumbo v10, "is CF setCallForward"
 
     invoke-static {v4, v10}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -8539,7 +8539,7 @@
     :cond_10
     new-instance v4, Ljava/lang/RuntimeException;
 
-    const-string v10, "invalid action"
+    const-string/jumbo v10, "invalid action"
 
     invoke-direct {v4, v10}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 

@@ -134,7 +134,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "invalid DTMF char: "
+    const-string/jumbo v3, "invalid DTMF char: "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -194,6 +194,8 @@
     goto :goto_0
 
     .line 554
+    nop
+
     :sswitch_data_0
     .sparse-switch
         0x23 -> :sswitch_1
@@ -661,7 +663,7 @@
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v7, "hang up call: "
+    const-string/jumbo v7, "hang up call: "
 
     invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -787,7 +789,7 @@
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v7, "hang up dead call: "
+    const-string/jumbo v7, "hang up dead call: "
 
     invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

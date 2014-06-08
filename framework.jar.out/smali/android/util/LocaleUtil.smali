@@ -214,7 +214,7 @@
 
     if-nez v2, :cond_2
 
-    const-string v2, "he"
+    const-string/jumbo v2, "he"
 
     invoke-virtual {v2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

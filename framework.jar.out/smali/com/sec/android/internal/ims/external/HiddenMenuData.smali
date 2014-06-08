@@ -588,7 +588,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "isLGT >>> "
+    const-string/jumbo v3, "isLGT >>> "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -613,7 +613,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "isKTT >>> "
+    const-string/jumbo v3, "isKTT >>> "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1013,7 +1013,7 @@
     if-eqz v0, :cond_7
 
     .line 517
-    const-string v0, "https://221.148.247.125/VoLTE/Config"
+    const-string/jumbo v0, "https://221.148.247.125/VoLTE/Config"
 
     iput-object v0, p0, Lcom/sec/android/internal/ims/external/HiddenMenuData;->mConfigServerUrl:Ljava/lang/String;
 
@@ -1386,7 +1386,7 @@
     sput-object v0, Lcom/sec/android/internal/ims/external/HiddenMenuData;->DefaultmPrefCscfIp:Ljava/lang/String;
 
     .line 453
-    const-string v0, "ims.kt.com"
+    const-string/jumbo v0, "ims.kt.com"
 
     sput-object v0, Lcom/sec/android/internal/ims/external/HiddenMenuData;->DefaultmPrefCscfDomain:Ljava/lang/String;
 
@@ -1454,7 +1454,7 @@
     if-eqz v0, :cond_1
 
     .line 520
-    const-string v0, "https://211.115.15.211/VoLTE/Config"
+    const-string/jumbo v0, "https://211.115.15.211/VoLTE/Config"
 
     iput-object v0, p0, Lcom/sec/android/internal/ims/external/HiddenMenuData;->mConfigServerUrl:Ljava/lang/String;
 

@@ -469,9 +469,9 @@
     .local v1, fgCallState:Lcom/android/internal/telephony/Call$State;
     const/4 v8, 0x3
 
-    if-eq v5, v8, :cond_3
+    if-eq v5, v8, :cond_2
 
-    if-nez v4, :cond_3
+    if-nez v4, :cond_2
 
     sget-object v8, Lcom/android/internal/telephony/Call$State;->ACTIVE:Lcom/android/internal/telephony/Call$State;
 
@@ -487,7 +487,7 @@
 
     sget-object v8, Lcom/android/internal/telephony/Call$State;->ALERTING:Lcom/android/internal/telephony/Call$State;
 
-    if-ne v1, v8, :cond_3
+    if-ne v1, v8, :cond_2
 
     :cond_0
     :goto_1
@@ -503,7 +503,7 @@
 
     .restart local v0       #allLinesTaken:Z
     .restart local v1       #fgCallState:Lcom/android/internal/telephony/Call$State;
-    :cond_3
+    :cond_2
     move v6, v7
 
     .line 977
@@ -844,6 +844,64 @@
 
     :cond_0
     const/4 v0, 0x0
+
+    goto :goto_0
+.end method
+
+.method private isSipPhoneActive()Z
+    .locals 4
+
+    .prologue
+    iget-object v2, p0, Lcom/android/internal/telephony/CallManager;->mPhones:Ljava/util/ArrayList;
+
+    invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    .local v0, i$:Ljava/util/Iterator;
+    :cond_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_2
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/android/internal/telephony/Phone;
+
+    .local v1, phone:Lcom/android/internal/telephony/Phone;
+    instance-of v2, v1, Lcom/android/internal/telephony/sip/SipPhone;
+
+    if-nez v2, :cond_1
+
+    instance-of v2, v1, Lcom/baidu/internal/telephony/sip/SipPhone;
+
+    if-eqz v2, :cond_0
+
+    :cond_1
+    sget-object v2, Lcom/android/internal/telephony/Call$State;->ACTIVE:Lcom/android/internal/telephony/Call$State;
+
+    invoke-interface {v1}, Lcom/android/internal/telephony/Phone;->getForegroundCall()Lcom/android/internal/telephony/Call;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Lcom/android/internal/telephony/Call;->getState()Lcom/android/internal/telephony/Call$State;
+
+    move-result-object v3
+
+    if-ne v2, v3, :cond_0
+
+    const/4 v2, 0x1
+
+    .end local v1           #phone:Lcom/android/internal/telephony/Phone;
+    :goto_0
+    return v2
+
+    :cond_2
+    const/4 v2, 0x0
 
     goto :goto_0
 .end method
@@ -1684,7 +1742,7 @@
 
     invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v12, "hasBgCall: "
+    const-string/jumbo v12, "hasBgCall: "
 
     invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1815,7 +1873,7 @@
     :cond_0
     const-string v2, "CallManager"
 
-    const-string v3, "inside dialVideoCall - Invalid phone or dial String"
+    const-string/jumbo v3, "inside dialVideoCall - Invalid phone or dial String"
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -3534,13 +3592,13 @@
 
     sget-object v5, Lcom/android/internal/telephony/Call$State;->IDLE:Lcom/android/internal/telephony/Call$State;
 
-    if-ne v4, v5, :cond_2
+    if-ne v4, v5, :cond_7
 
     invoke-virtual {p0}, Lcom/android/internal/telephony/CallManager;->getBgPhone()Lcom/android/internal/telephony/Phone;
 
     move-result-object v3
 
-    :cond_32
+    :cond_7
     invoke-direct {p0}, Lcom/android/internal/telephony/CallManager;->isSipPhoneActive()Z
 
     move-result v4
@@ -4770,64 +4828,6 @@
     check-cast v1, Lcom/android/internal/telephony/Phone;
 
     iput-object v1, p0, Lcom/android/internal/telephony/CallManager;->mDefaultPhone:Lcom/android/internal/telephony/Phone;
-
-    goto :goto_0
-.end method
-
-.method private isSipPhoneActive()Z
-    .locals 4
-
-    .prologue
-    iget-object v2, p0, Lcom/android/internal/telephony/CallManager;->mPhones:Ljava/util/ArrayList;
-
-    invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
-
-    move-result-object v0
-
-    .local v0, i$:Ljava/util/Iterator;
-    :cond_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_2
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lcom/android/internal/telephony/Phone;
-
-    .local v1, phone:Lcom/android/internal/telephony/Phone;
-    instance-of v2, v1, Lcom/android/internal/telephony/sip/SipPhone;
-
-    if-nez v2, :cond_1
-
-    instance-of v2, v1, Lcom/baidu/internal/telephony/sip/SipPhone;
-
-    if-eqz v2, :cond_0
-
-    :cond_1
-    sget-object v2, Lcom/android/internal/telephony/Call$State;->ACTIVE:Lcom/android/internal/telephony/Call$State;
-
-    invoke-interface {v1}, Lcom/android/internal/telephony/Phone;->getForegroundCall()Lcom/android/internal/telephony/Call;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Lcom/android/internal/telephony/Call;->getState()Lcom/android/internal/telephony/Call$State;
-
-    move-result-object v3
-
-    if-ne v2, v3, :cond_0
-
-    const/4 v2, 0x1
-
-    .end local v1           #phone:Lcom/android/internal/telephony/Phone;
-    :goto_0
-    return v2
-
-    :cond_2
-    const/4 v2, 0x0
 
     goto :goto_0
 .end method

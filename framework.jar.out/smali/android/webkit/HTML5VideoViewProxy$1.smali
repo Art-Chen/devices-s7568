@@ -76,7 +76,7 @@
 
     .line 647
     .local v4, width:Ljava/lang/Integer;
-    const-string v5, "height"
+    const-string/jumbo v5, "height"
 
     invoke-interface {v2, v5}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -196,6 +196,8 @@
     goto :goto_0
 
     .line 642
+    nop
+
     nop
 
     :sswitch_data_0

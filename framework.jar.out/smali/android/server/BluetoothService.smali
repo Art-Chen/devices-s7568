@@ -8247,7 +8247,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v1, "isDiscovering() = "
+    const-string/jumbo v1, "isDiscovering() = "
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -16860,7 +16860,7 @@
 
     move-result-object v3
 
-    const-string v4, "ignoring. Maybe the PasskeyAgent Request was cancelled by the remote device"
+    const-string/jumbo v4, "ignoring. Maybe the PasskeyAgent Request was cancelled by the remote device"
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -17008,7 +17008,7 @@
 
     move-result-object v3
 
-    const-string v4, "ignoring. Maybe the PasskeyAgent Request was cancelled by the remote device"
+    const-string/jumbo v4, "ignoring. Maybe the PasskeyAgent Request was cancelled by the remote device"
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -17162,7 +17162,7 @@
 
     move-result-object v5
 
-    const-string v6, "ignoring. Maybe the PasskeyAgent Request was cancelled by the remote device"
+    const-string/jumbo v6, "ignoring. Maybe the PasskeyAgent Request was cancelled by the remote device"
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -17400,7 +17400,7 @@
 
     move-result-object v6
 
-    const-string v7, "ignoring. Maybe the PasskeyAgent Request was cancelled by the remote device"
+    const-string/jumbo v7, "ignoring. Maybe the PasskeyAgent Request was cancelled by the remote device"
 
     invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

@@ -2786,7 +2786,7 @@
     .line 3574
     .end local v49           #tty_mode:Ljava/lang/String;
     :pswitch_9
-    const-string v49, "hco"
+    const-string/jumbo v49, "hco"
 
     .line 3575
     .restart local v49       #tty_mode:Ljava/lang/String;
@@ -4305,6 +4305,8 @@
     goto/16 :goto_6
 
     .line 3241
+    nop
+
     nop
 
     :pswitch_data_0

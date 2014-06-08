@@ -990,7 +990,7 @@
 
     invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v9, "illegal duplicate subparameter ("
+    const-string/jumbo v9, "illegal duplicate subparameter ("
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1360,6 +1360,8 @@
     .line 2341
     nop
 
+    nop
+
     :sswitch_data_0
     .sparse-switch
         0x0 -> :sswitch_0
@@ -1442,7 +1444,7 @@
 
     invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v8, "insufficient data (wanted "
+    const-string/jumbo v8, "insufficient data (wanted "
 
     invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -4384,7 +4386,7 @@
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v5, "invalid SMS address DTMF code ("
+    const-string/jumbo v5, "invalid SMS address DTMF code ("
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -6218,7 +6220,7 @@
     .local v0, ex:Ljava/io/UnsupportedEncodingException;
     new-instance v1, Lcom/android/internal/telephony/cdma/sms/BearerData$CodingException;
 
-    const-string v2, "invalid ASCII user data code"
+    const-string/jumbo v2, "invalid ASCII user data code"
 
     invoke-direct {v1, v2}, Lcom/android/internal/telephony/cdma/sms/BearerData$CodingException;-><init>(Ljava/lang/String;)V
 
@@ -7114,7 +7116,7 @@
     .local v0, ex:Ljava/io/UnsupportedEncodingException;
     new-instance v1, Lcom/android/internal/telephony/cdma/sms/BearerData$CodingException;
 
-    const-string v2, "invalid SMS address ASCII code"
+    const-string/jumbo v2, "invalid SMS address ASCII code"
 
     invoke-direct {v1, v2}, Lcom/android/internal/telephony/cdma/sms/BearerData$CodingException;-><init>(Ljava/lang/String;)V
 
@@ -8983,7 +8985,7 @@
     .local v0, ex:Ljava/io/UnsupportedEncodingException;
     new-instance v1, Lcom/android/internal/telephony/cdma/sms/BearerData$CodingException;
 
-    const-string v2, "invalid SMS address, cannot convert to ASCII"
+    const-string/jumbo v2, "invalid SMS address, cannot convert to ASCII"
 
     invoke-direct {v1, v2}, Lcom/android/internal/telephony/cdma/sms/BearerData$CodingException;-><init>(Ljava/lang/String;)V
 
@@ -9703,7 +9705,7 @@
     .line 1814
     const-string v1, "SMS"
 
-    const-string v2, "in encodeServiceCategoryProgResult"
+    const-string/jumbo v2, "in encodeServiceCategoryProgResult"
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 

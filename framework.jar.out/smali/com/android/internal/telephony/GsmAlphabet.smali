@@ -6743,7 +6743,7 @@
 
     invoke-direct {v14}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v15, "gsm8BitUnpackedToString : Exception - index("
+    const-string/jumbo v15, "gsm8BitUnpackedToString : Exception - index("
 
     invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

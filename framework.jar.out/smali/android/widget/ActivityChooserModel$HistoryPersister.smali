@@ -144,7 +144,7 @@
     .line 1128
     const/4 v11, 0x0
 
-    const-string v12, "historical-records"
+    const-string/jumbo v12, "historical-records"
 
     invoke-interface {v10, v11, v12}, Lorg/xmlpull/v1/XmlSerializer;->startTag(Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
@@ -174,7 +174,7 @@
     .local v6, record:Landroid/widget/ActivityChooserModel$HistoricalRecord;
     const/4 v11, 0x0
 
-    const-string v12, "historical-record"
+    const-string/jumbo v12, "historical-record"
 
     invoke-interface {v10, v11, v12}, Lorg/xmlpull/v1/XmlSerializer;->startTag(Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
@@ -220,7 +220,7 @@
     .line 1137
     const/4 v11, 0x0
 
-    const-string v12, "historical-record"
+    const-string/jumbo v12, "historical-record"
 
     invoke-interface {v10, v11, v12}, Lorg/xmlpull/v1/XmlSerializer;->endTag(Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
     :try_end_3
@@ -305,7 +305,7 @@
     const/4 v11, 0x0
 
     :try_start_5
-    const-string v12, "historical-records"
+    const-string/jumbo v12, "historical-records"
 
     invoke-interface {v10, v11, v12}, Lorg/xmlpull/v1/XmlSerializer;->endTag(Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 

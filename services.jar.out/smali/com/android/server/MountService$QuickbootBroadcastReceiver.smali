@@ -206,7 +206,7 @@
     iget-object v11, p0, Lcom/android/server/MountService$QuickbootBroadcastReceiver;->this$0:Lcom/android/server/MountService;
 
     #getter for: Lcom/android/server/MountService;->mExternalStoragePath:Ljava/lang/String;
-    invoke-static {v11}, Lcom/android/server/MountService;->access$1800(Lcom/android/server/MountService;)Ljava/lang/String;
+    invoke-static {v11}, Lcom/android/server/MountService;->access$2000(Lcom/android/server/MountService;)Ljava/lang/String;
 
     move-result-object v11
 
@@ -252,7 +252,7 @@
     const/4 v14, 0x4
 
     #calls: Lcom/android/server/MountService;->notifyVolumeStateChange(Ljava/lang/String;Ljava/lang/String;II)V
-    invoke-static {v10, v11, v12, v13, v14}, Lcom/android/server/MountService;->access$bd_600(Lcom/android/server/MountService;Ljava/lang/String;Ljava/lang/String;II)V
+    invoke-static {v10, v11, v12, v13, v14}, Lcom/android/server/MountService;->access$800(Lcom/android/server/MountService;Ljava/lang/String;Ljava/lang/String;II)V
 
     goto :goto_0
 

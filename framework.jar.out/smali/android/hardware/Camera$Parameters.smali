@@ -1948,7 +1948,7 @@
 
     .prologue
     .line 2810
-    const-string v0, "horizontal-view-angle"
+    const-string/jumbo v0, "horizontal-view-angle"
 
     invoke-virtual {p0, v0}, Landroid/hardware/Camera$Parameters;->get(Ljava/lang/String;)Ljava/lang/String;
 

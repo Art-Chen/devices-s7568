@@ -548,7 +548,7 @@
     .line 73
     new-instance v0, Lcom/android/internal/telephony/CallStateException;
 
-    const-string v1, "hangupAllCalls: Unsupported Action"
+    const-string/jumbo v1, "hangupAllCalls: Unsupported Action"
 
     invoke-direct {v0, v1}, Lcom/android/internal/telephony/CallStateException;-><init>(Ljava/lang/String;)V
 

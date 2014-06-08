@@ -540,7 +540,7 @@
 
     .line 591
     :pswitch_d
-    const-string v0, "iDEN"
+    const-string/jumbo v0, "iDEN"
 
     goto :goto_0
 
@@ -551,6 +551,8 @@
     goto :goto_0
 
     .line 563
+    nop
+
     nop
 
     :pswitch_data_0
@@ -610,7 +612,7 @@
 
     .prologue
     .line 372
-    const-string v1, "gsm.current.phone-type"
+    const-string/jumbo v1, "gsm.current.phone-type"
 
     invoke-direct {p0}, Landroid/telephony/TelephonyManager;->getPhoneTypeFromNetworkType()I
 
@@ -870,7 +872,7 @@
 
     .prologue
     .line 960
-    const-string v0, "iphonesubinfo"
+    const-string/jumbo v0, "iphonesubinfo"
 
     invoke-static {v0}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
 
@@ -1201,7 +1203,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuffer;->setCharAt(IC)V
 
     .line 1217
-    const-string v28, "gsm.operator.numeric"
+    const-string/jumbo v28, "gsm.operator.numeric"
 
     invoke-static/range {v28 .. v28}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -1912,7 +1914,7 @@
 
     .prologue
     .line 1093
-    const-string v1, "gsm.wifiConnected.active"
+    const-string/jumbo v1, "gsm.wifiConnected.active"
 
     invoke-static {v1}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -2507,6 +2509,15 @@
     .line 218
     .local v0, ex:Ljava/lang/NullPointerException;
     goto :goto_0
+.end method
+
+.method public getIccCardType()Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    const/4 v0, 0x0
+
+    return-object v0
 .end method
 
 .method public getImeiInCDMAGSMPhone()Ljava/lang/String;
@@ -3949,7 +3960,7 @@
     invoke-virtual {v3, v4, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 1514
-    const-string v4, "ip"
+    const-string/jumbo v4, "ip"
 
     const/16 v5, 0x10
 
@@ -4103,7 +4114,7 @@
 
     .prologue
     .line 434
-    const-string v0, "gsm.operator.iso-country"
+    const-string/jumbo v0, "gsm.operator.iso-country"
 
     invoke-static {v0}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -4117,7 +4128,7 @@
 
     .prologue
     .line 412
-    const-string v0, "gsm.operator.numeric"
+    const-string/jumbo v0, "gsm.operator.numeric"
 
     invoke-static {v0}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -4131,7 +4142,7 @@
 
     .prologue
     .line 401
-    const-string v0, "gsm.operator.alpha"
+    const-string/jumbo v0, "gsm.operator.alpha"
 
     invoke-static {v0}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -4245,7 +4256,7 @@
 
     .prologue
     .line 694
-    const-string v0, "gsm.sim.operator.iso-country"
+    const-string/jumbo v0, "gsm.sim.operator.iso-country"
 
     invoke-static {v0}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -4259,7 +4270,7 @@
 
     .prologue
     .line 676
-    const-string v0, "gsm.sim.operator.numeric"
+    const-string/jumbo v0, "gsm.sim.operator.numeric"
 
     invoke-static {v0}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -4273,7 +4284,7 @@
 
     .prologue
     .line 687
-    const-string v0, "gsm.sim.operator.alpha"
+    const-string/jumbo v0, "gsm.sim.operator.alpha"
 
     invoke-static {v0}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -4328,7 +4339,7 @@
 
     .prologue
     .line 651
-    const-string v1, "gsm.sim.state"
+    const-string/jumbo v1, "gsm.sim.state"
 
     invoke-static {v1}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -4763,7 +4774,7 @@
     .line 422
     const-string/jumbo v0, "true"
 
-    const-string v1, "gsm.operator.isroaming"
+    const-string/jumbo v1, "gsm.operator.isroaming"
 
     invoke-static {v1}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -5053,13 +5064,4 @@
     .line 1540
     .local v0, ex:Ljava/lang/NullPointerException;
     goto :goto_0
-.end method
-
-.method public getIccCardType()Ljava/lang/String;
-    .locals 1
-
-    .prologue
-    const/4 v0, 0x0
-
-    return-object v0
 .end method

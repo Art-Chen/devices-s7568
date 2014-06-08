@@ -738,7 +738,7 @@
 
     move-result-object v25
 
-    const v26, #string@addToDictionary#t
+    const v26, 0x104047e
 
     invoke-virtual/range {v25 .. v26}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -849,7 +849,7 @@
 
     move-result-object v25
 
-    const v26, #string@deleteText#t
+    const v26, 0x104047f
 
     invoke-virtual/range {v25 .. v26}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1090,7 +1090,7 @@
 
     move-result-object v1
 
-    const v2, #attr@textSuggestionsWindowStyle#t
+    const v2, 0x1010373
 
     invoke-direct {v0, p0, v1, v2}, Landroid/widget/TextView$SuggestionsPopupWindow$CustomPopupWindow;-><init>(Landroid/widget/TextView$SuggestionsPopupWindow;Landroid/content/Context;I)V
 
@@ -1669,7 +1669,7 @@
     invoke-virtual {v5, v0, v9}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 10216
-    const-string v25, "locale"
+    const-string/jumbo v25, "locale"
 
     move-object/from16 v0, p0
 

@@ -199,7 +199,7 @@
     .local v8, ex:Landroid/os/RemoteException;
     const-string v0, "LocationManager"
 
-    const-string v1, "requestLocationUpdates: RemoteException"
+    const-string/jumbo v1, "requestLocationUpdates: RemoteException"
 
     invoke-static {v0, v1, v8}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
@@ -960,7 +960,7 @@
 
     new-instance v1, Ljava/lang/IllegalArgumentException;
 
-    const-string v2, "provider==null"
+    const-string/jumbo v2, "provider==null"
 
     invoke-direct {v1, v2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -1002,7 +1002,7 @@
 
     new-instance v2, Ljava/lang/IllegalArgumentException;
 
-    const-string v3, "name==null"
+    const-string/jumbo v3, "name==null"
 
     invoke-direct {v2, v3}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -1154,7 +1154,7 @@
 
     const-string v2, "gps"
 
-    const-string v3, "request_running"
+    const-string/jumbo v3, "request_running"
 
     new-instance v4, Landroid/os/Bundle;
 
@@ -1221,7 +1221,7 @@
     .local v0, ex:Landroid/os/RemoteException;
     const-string v1, "LocationManager"
 
-    const-string v2, "isProviderEnabled: RemoteException"
+    const-string/jumbo v2, "isProviderEnabled: RemoteException"
 
     invoke-static {v1, v2, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
@@ -1334,7 +1334,7 @@
     .local v0, ex:Landroid/os/RemoteException;
     const-string v1, "LocationManager"
 
-    const-string v2, "removeProximityAlert: RemoteException"
+    const-string/jumbo v2, "removeProximityAlert: RemoteException"
 
     invoke-static {v1, v2, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
@@ -1362,7 +1362,7 @@
     .local v0, ex:Landroid/os/RemoteException;
     const-string v1, "LocationManager"
 
-    const-string v2, "removeTestProvider: RemoteException"
+    const-string/jumbo v2, "removeTestProvider: RemoteException"
 
     invoke-static {v1, v2, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
@@ -1380,7 +1380,7 @@
     .line 357
     new-instance v1, Ljava/lang/IllegalArgumentException;
 
-    const-string v2, "intent==null"
+    const-string/jumbo v2, "intent==null"
 
     invoke-direct {v1, v2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -1404,7 +1404,7 @@
     .local v0, ex:Landroid/os/RemoteException;
     const-string v1, "LocationManager"
 
-    const-string v2, "removeUpdates: RemoteException"
+    const-string/jumbo v2, "removeUpdates: RemoteException"
 
     invoke-static {v1, v2, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
@@ -1420,7 +1420,7 @@
 
     new-instance v2, Ljava/lang/IllegalArgumentException;
 
-    const-string v3, "listener==null"
+    const-string/jumbo v3, "listener==null"
 
     invoke-direct {v2, v3}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -1456,7 +1456,7 @@
     .local v0, ex:Landroid/os/RemoteException;
     const-string v2, "LocationManager"
 
-    const-string v3, "removeUpdates: DeadObjectException"
+    const-string/jumbo v3, "removeUpdates: DeadObjectException"
 
     invoke-static {v2, v3, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
@@ -1486,7 +1486,7 @@
 
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
-    const-string v1, "intent==null"
+    const-string/jumbo v1, "intent==null"
 
     invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -1536,7 +1536,7 @@
 
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
-    const-string v1, "listener==null"
+    const-string/jumbo v1, "listener==null"
 
     invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -1576,7 +1576,7 @@
 
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
-    const-string v1, "provider==null"
+    const-string/jumbo v1, "provider==null"
 
     invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -1587,7 +1587,7 @@
 
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
-    const-string v1, "intent==null"
+    const-string/jumbo v1, "intent==null"
 
     invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -1627,7 +1627,7 @@
 
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
-    const-string v1, "provider==null"
+    const-string/jumbo v1, "provider==null"
 
     invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -1638,7 +1638,7 @@
 
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
-    const-string v1, "listener==null"
+    const-string/jumbo v1, "listener==null"
 
     invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -1677,7 +1677,7 @@
 
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
-    const-string v1, "provider==null"
+    const-string/jumbo v1, "provider==null"
 
     invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -1688,7 +1688,7 @@
 
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
-    const-string v1, "listener==null"
+    const-string/jumbo v1, "listener==null"
 
     invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -1737,7 +1737,7 @@
 
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
-    const-string v1, "intent==null"
+    const-string/jumbo v1, "intent==null"
 
     invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -1785,7 +1785,7 @@
 
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
-    const-string v1, "listener==null"
+    const-string/jumbo v1, "listener==null"
 
     invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -1823,7 +1823,7 @@
 
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
-    const-string v1, "provider==null"
+    const-string/jumbo v1, "provider==null"
 
     invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -1834,7 +1834,7 @@
 
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
-    const-string v1, "intent==null"
+    const-string/jumbo v1, "intent==null"
 
     invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -1871,7 +1871,7 @@
 
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
-    const-string v1, "provider==null"
+    const-string/jumbo v1, "provider==null"
 
     invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -1882,7 +1882,7 @@
 
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
-    const-string v1, "listener==null"
+    const-string/jumbo v1, "listener==null"
 
     invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -2004,7 +2004,7 @@
     .local v0, ex:Landroid/os/RemoteException;
     const-string v1, "LocationManager"
 
-    const-string v2, "setTestProviderEnabled: RemoteException"
+    const-string/jumbo v2, "setTestProviderEnabled: RemoteException"
 
     invoke-static {v1, v2, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
@@ -2034,7 +2034,7 @@
     .local v0, ex:Landroid/os/RemoteException;
     const-string v1, "LocationManager"
 
-    const-string v2, "setTestProviderLocation: RemoteException"
+    const-string/jumbo v2, "setTestProviderLocation: RemoteException"
 
     invoke-static {v1, v2, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 

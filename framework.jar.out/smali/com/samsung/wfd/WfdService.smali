@@ -1994,7 +1994,7 @@
     .line 1049
     const-string v0, "WfdService"
 
-    const-string v2, "isHotspotOn >> No wifiManager."
+    const-string/jumbo v2, "isHotspotOn >> No wifiManager."
 
     invoke-static {v0, v2}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -2040,6 +2040,8 @@
     goto :goto_0
 
     .line 1053
+    nop
+
     :pswitch_data_0
     .packed-switch 0xc
         :pswitch_0
@@ -3427,7 +3429,7 @@
     invoke-virtual {v0, v1, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     .line 1912
-    const-string v1, "height"
+    const-string/jumbo v1, "height"
 
     invoke-virtual {v0, v1, p3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 

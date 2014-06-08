@@ -333,7 +333,7 @@
 
     const/16 v1, 0x8
 
-    const-string v2, "hint"
+    const-string/jumbo v2, "hint"
 
     aput-object v2, v0, v1
 
@@ -1472,7 +1472,7 @@
     :cond_0
     new-instance v3, Ljava/lang/IllegalArgumentException;
 
-    const-string v4, "input param \'ids\' can\'t be null"
+    const-string/jumbo v4, "input param \'ids\' can\'t be null"
 
     invoke-direct {v3, v4}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -2030,7 +2030,7 @@
     :cond_0
     new-instance v1, Ljava/lang/IllegalArgumentException;
 
-    const-string v2, "input param \'ids\' can\'t be null"
+    const-string/jumbo v2, "input param \'ids\' can\'t be null"
 
     invoke-direct {v1, v2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -2127,7 +2127,7 @@
     :cond_0
     new-instance v3, Ljava/lang/IllegalArgumentException;
 
-    const-string v4, "input param \'ids\' can\'t be null"
+    const-string/jumbo v4, "input param \'ids\' can\'t be null"
 
     invoke-direct {v3, v4}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 

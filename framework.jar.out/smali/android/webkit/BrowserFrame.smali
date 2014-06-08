@@ -889,7 +889,7 @@
     .line 1400
     const-string/jumbo v0, "webkit"
 
-    const-string v1, "isDownLoadableContent is true"
+    const-string/jumbo v1, "isDownLoadableContent is true"
 
     invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 

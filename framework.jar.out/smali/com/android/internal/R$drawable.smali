@@ -83,9 +83,285 @@
 
 .field public static final background_holo_light:I = 0x10800ce
 
+.field public static final baidu_keyguard_axis_x:I = 0x10809eb
+
+.field public static final baidu_keyguard_axis_x_repeat:I = 0x10809ec
+
+.field public static final baidu_keyguard_axis_y:I = 0x10809ed
+
+.field public static final baidu_keyguard_axis_y_repeat:I = 0x10809ee
+
+.field public static final baidu_keyguard_camera:I = 0x10809ef
+
+.field public static final baidu_keyguard_camera_normal:I = 0x10809f0
+
+.field public static final baidu_keyguard_camera_pressed:I = 0x10809f1
+
+.field public static final baidu_keyguard_constellation_01:I = 0x10809f2
+
+.field public static final baidu_keyguard_constellation_02:I = 0x10809f3
+
+.field public static final baidu_keyguard_constellation_03:I = 0x10809f4
+
+.field public static final baidu_keyguard_constellation_04:I = 0x10809f5
+
+.field public static final baidu_keyguard_constellation_05:I = 0x10809f6
+
+.field public static final baidu_keyguard_constellation_06:I = 0x10809f7
+
+.field public static final baidu_keyguard_constellation_07:I = 0x10809f8
+
+.field public static final baidu_keyguard_constellation_08:I = 0x10809f9
+
+.field public static final baidu_keyguard_constellation_09:I = 0x10809fa
+
+.field public static final baidu_keyguard_constellation_10:I = 0x10809fb
+
+.field public static final baidu_keyguard_constellation_star:I = 0x10809fc
+
+.field public static final baidu_keyguard_handle:I = 0x10809fd
+
+.field public static final baidu_keyguard_handle_normal:I = 0x10809fe
+
+.field public static final baidu_keyguard_handle_pressed:I = 0x10809ff
+
+.field public static final baidu_keyguard_message:I = 0x1080a00
+
+.field public static final baidu_keyguard_message_normal:I = 0x1080a01
+
+.field public static final baidu_keyguard_message_pressed:I = 0x1080a02
+
+.field public static final baidu_keyguard_missed_count_bg:I = 0x1080a03
+
+.field public static final baidu_keyguard_phone_normal:I = 0x1080a04
+
+.field public static final baidu_keyguard_phone_pressed:I = 0x1080a05
+
+.field public static final baidu_keyguard_refresh:I = 0x1080a06
+
+.field public static final baidu_keyguard_refresh_normal:I = 0x1080a07
+
+.field public static final baidu_keyguard_refresh_pressed:I = 0x1080a08
+
+.field public static final baidu_keyguard_search:I = 0x1080a09
+
+.field public static final baidu_keyguard_search_normal:I = 0x1080a0a
+
+.field public static final baidu_keyguard_search_pressed:I = 0x1080a0b
+
+.field public static final baidu_keyguard_search_up_pressed:I = 0x1080a0c
+
+.field public static final baidu_keyguard_slide_album_default:I = 0x1080a0d
+
+.field public static final baidu_keyguard_slide_bg_circle:I = 0x1080a0e
+
+.field public static final baidu_keyguard_slide_camera:I = 0x1080a0f
+
+.field public static final baidu_keyguard_slide_dot_l:I = 0x1080a10
+
+.field public static final baidu_keyguard_slide_dot_m:I = 0x1080a11
+
+.field public static final baidu_keyguard_slide_dot_s:I = 0x1080a12
+
+.field public static final baidu_keyguard_slide_down:I = 0x1080a13
+
+.field public static final baidu_keyguard_slide_fade:I = 0x1080a14
+
+.field public static final baidu_keyguard_slide_handle:I = 0x1080a15
+
+.field public static final baidu_keyguard_slide_handle_charge:I = 0x1080a16
+
+.field public static final baidu_keyguard_slide_handle_chargging:I = 0x1080a17
+
+.field public static final baidu_keyguard_slide_handle_normal:I = 0x1080a18
+
+.field public static final baidu_keyguard_slide_handle_pressed:I = 0x1080a19
+
+.field public static final baidu_keyguard_slide_idle_alarm:I = 0x1080a1a
+
+.field public static final baidu_keyguard_slide_iqiyi:I = 0x1080a1b
+
+.field public static final baidu_keyguard_slide_iqiyi_bg:I = 0x1080a1c
+
+.field public static final baidu_keyguard_slide_iqiyi_edu:I = 0x1080a1d
+
+.field public static final baidu_keyguard_slide_iqiyi_normal:I = 0x1080a1e
+
+.field public static final baidu_keyguard_slide_iqiyi_pressed:I = 0x1080a1f
+
+.field public static final baidu_keyguard_slide_iqiyi_pushmsg_icon:I = 0x1080a20
+
+.field public static final baidu_keyguard_slide_message:I = 0x1080a21
+
+.field public static final baidu_keyguard_slide_miss_bg:I = 0x1080a22
+
+.field public static final baidu_keyguard_slide_misscall_bot:I = 0x1080a23
+
+.field public static final baidu_keyguard_slide_misssms_bot:I = 0x1080a24
+
+.field public static final baidu_keyguard_slide_music_bg:I = 0x1080a25
+
+.field public static final baidu_keyguard_slide_music_covermask:I = 0x1080a26
+
+.field public static final baidu_keyguard_slide_music_covermask_front:I = 0x1080a27
+
+.field public static final baidu_keyguard_slide_next:I = 0x1080a28
+
+.field public static final baidu_keyguard_slide_next_normal:I = 0x1080a29
+
+.field public static final baidu_keyguard_slide_next_pressed:I = 0x1080a2a
+
+.field public static final baidu_keyguard_slide_pause:I = 0x1080a2b
+
+.field public static final baidu_keyguard_slide_pause_normal:I = 0x1080a2c
+
+.field public static final baidu_keyguard_slide_pause_pressed:I = 0x1080a2d
+
+.field public static final baidu_keyguard_slide_phone:I = 0x1080a2e
+
+.field public static final baidu_keyguard_slide_play:I = 0x1080a2f
+
+.field public static final baidu_keyguard_slide_play_normal:I = 0x1080a30
+
+.field public static final baidu_keyguard_slide_play_pressed:I = 0x1080a31
+
+.field public static final baidu_keyguard_slide_prev:I = 0x1080a32
+
+.field public static final baidu_keyguard_slide_previous_normal:I = 0x1080a33
+
+.field public static final baidu_keyguard_slide_previous_pressed:I = 0x1080a34
+
+.field public static final baidu_keyguard_slide_ring:I = 0x1080a35
+
+.field public static final baidu_keyguard_slide_unlock:I = 0x1080a36
+
+.field public static final baidu_keyguard_space_camera_normal:I = 0x1080a37
+
+.field public static final baidu_keyguard_space_camera_pressed:I = 0x1080a38
+
+.field public static final baidu_keyguard_space_handle_normal:I = 0x1080a39
+
+.field public static final baidu_keyguard_space_handle_pressed:I = 0x1080a3a
+
+.field public static final baidu_keyguard_space_message_normal:I = 0x1080a3b
+
+.field public static final baidu_keyguard_space_message_pressed:I = 0x1080a3c
+
+.field public static final baidu_keyguard_space_miss_call:I = 0x1080a3d
+
+.field public static final baidu_keyguard_space_miss_message:I = 0x1080a3e
+
+.field public static final baidu_keyguard_space_phone_normal:I = 0x1080a3f
+
+.field public static final baidu_keyguard_space_phone_pressed:I = 0x1080a40
+
+.field public static final baidu_keyguard_space_shake_background:I = 0x1080a41
+
+.field public static final baidu_keyguard_space_shake_layer0:I = 0x1080a42
+
+.field public static final baidu_keyguard_space_shake_layer1:I = 0x1080a43
+
+.field public static final baidu_keyguard_space_shake_layer2:I = 0x1080a44
+
+.field public static final baidu_keyguard_space_shake_layer3:I = 0x1080a45
+
+.field public static final baidu_keyguard_space_shake_layer4:I = 0x1080a46
+
+.field public static final baidu_keyguard_space_unlock_normal:I = 0x1080a47
+
+.field public static final baidu_keyguard_space_unlock_pressed:I = 0x1080a48
+
+.field public static final baidu_keyguard_target_ring:I = 0x1080a49
+
+.field public static final baidu_keyguard_target_small_ring:I = 0x1080a4a
+
+.field public static final baidu_keyguard_unlock:I = 0x1080a4b
+
+.field public static final baidu_keyguard_unlock_normal:I = 0x1080a4c
+
+.field public static final baidu_keyguard_unlock_pressed:I = 0x1080a4d
+
+.field public static final baidu_keyguard_water_camera_normal:I = 0x1080a4e
+
+.field public static final baidu_keyguard_water_camera_pressed:I = 0x1080a4f
+
+.field public static final baidu_keyguard_water_handle_normal:I = 0x1080a50
+
+.field public static final baidu_keyguard_water_handle_pressed:I = 0x1080a51
+
+.field public static final baidu_keyguard_water_message_normal:I = 0x1080a52
+
+.field public static final baidu_keyguard_water_message_pressed:I = 0x1080a53
+
+.field public static final baidu_keyguard_water_miss_call:I = 0x1080a54
+
+.field public static final baidu_keyguard_water_miss_message:I = 0x1080a55
+
+.field public static final baidu_keyguard_water_phone_normal:I = 0x1080a56
+
+.field public static final baidu_keyguard_water_phone_pressed:I = 0x1080a57
+
+.field public static final baidu_keyguard_water_shake_background:I = 0x1080a58
+
+.field public static final baidu_keyguard_water_shake_layer0:I = 0x1080a59
+
+.field public static final baidu_keyguard_water_shake_layer1:I = 0x1080a5a
+
+.field public static final baidu_keyguard_water_shake_layer2:I = 0x1080a5b
+
+.field public static final baidu_keyguard_water_shake_layer3:I = 0x1080a5c
+
+.field public static final baidu_keyguard_water_shake_layer4:I = 0x1080a5d
+
+.field public static final baidu_keyguard_water_shake_layer5:I = 0x1080a5e
+
+.field public static final baidu_keyguard_water_shake_layer6:I = 0x1080a5f
+
+.field public static final baidu_keyguard_water_shake_layer7:I = 0x1080a60
+
+.field public static final baidu_keyguard_water_unlock_normal:I = 0x1080a61
+
+.field public static final baidu_keyguard_water_unlock_pressed:I = 0x1080a62
+
+.field public static final baidu_p001_small:I = 0x1080a63
+
+.field public static final baidu_p002_small:I = 0x1080a64
+
+.field public static final baidu_p003_small:I = 0x1080a65
+
+.field public static final baidu_p004_small:I = 0x1080a66
+
+.field public static final baidu_p005_small:I = 0x1080a67
+
+.field public static final baidu_p006_small:I = 0x1080a68
+
+.field public static final baidu_p007_small:I = 0x1080a69
+
+.field public static final baidu_p008_small:I = 0x1080a6a
+
+.field public static final battery_0:I = 0x1080a6b
+
+.field public static final battery_1:I = 0x1080a6c
+
+.field public static final battery_2:I = 0x1080a6d
+
+.field public static final battery_3:I = 0x1080a6e
+
+.field public static final battery_4:I = 0x1080a6f
+
+.field public static final battery_5:I = 0x1080a70
+
+.field public static final battery_apps_button:I = 0x1080a71
+
+.field public static final battery_charge:I = 0x1080a72
+
 .field public static final battery_charge_background:I = 0x10800cf
 
+.field public static final battery_fail:I = 0x1080a73
+
 .field public static final blank_tile:I = 0x10800d0
+
+.field public static final boat:I = 0x1080a74
 
 .field public static final bottom_bar:I = 0x108009a
 
@@ -345,7 +621,15 @@
 
 .field public static final btn_group_pressed_holo_light:I = 0x108014c
 
+.field public static final btn_hot_newmusic_view:I = 0x1080a75
+
+.field public static final btn_hotmusic_view:I = 0x1080a76
+
 .field public static final btn_keyboard_key:I = 0x108014d
+
+.field public static final btn_keyboard_key_background_normal:I = 0x1080a77
+
+.field public static final btn_keyboard_key_background_pressed:I = 0x1080a78
 
 .field public static final btn_keyboard_key_dark_normal_holo:I = 0x108014e
 
@@ -374,6 +658,12 @@
 .field public static final btn_keyboard_key_fulltrans_pressed_on:I = 0x108015a
 
 .field public static final btn_keyboard_key_ics:I = 0x108015b
+
+.field public static final btn_keyboard_key_ics_normal_repeat:I = 0x1080a79
+
+.field public static final btn_keyboard_key_ics_password:I = 0x1080a7a
+
+.field public static final btn_keyboard_key_ics_pressed_repeat:I = 0x1080a7b
 
 .field public static final btn_keyboard_key_light_normal_holo:I = 0x108015c
 
@@ -436,6 +726,8 @@
 .field public static final btn_minus_pressed:I = 0x1080178
 
 .field public static final btn_minus_selected:I = 0x1080179
+
+.field public static final btn_newmusic_view:I = 0x1080a7c
 
 .field public static final btn_plus:I = 0x1080008
 
@@ -580,6 +872,8 @@
 .field public static final btn_search_dialog_voice_pressed:I = 0x10801be
 
 .field public static final btn_search_dialog_voice_selected:I = 0x10801bf
+
+.field public static final btn_search_view:I = 0x1080a7d
 
 .field public static final btn_square_overlay:I = 0x10801c0
 
@@ -765,9 +1059,27 @@
 
 .field public static final call_contact:I = 0x1080216
 
+.field public static final charge_circle:I = 0x1080a7e
+
 .field public static final checkbox_off_background:I = 0x108000f
 
 .field public static final checkbox_on_background:I = 0x1080010
+
+.field public static final cld_list_bottom_selector_background_transition_baidu_light:I = 0x1080a7f
+
+.field public static final cld_list_bottom_selector_baidu_light:I = 0x1080a80
+
+.field public static final cld_list_selector_background_transition_baidu_light:I = 0x1080a81
+
+.field public static final cld_list_selector_baidu_light:I = 0x1080a82
+
+.field public static final cld_list_single_selector_background_transition_baidu_light:I = 0x1080a83
+
+.field public static final cld_list_single_selector_baidu_light:I = 0x1080a84
+
+.field public static final cld_list_top_selector_background_transition_baidu_light:I = 0x1080a85
+
+.field public static final cld_list_top_selector_baidu_light:I = 0x1080a86
 
 .field public static final clock_dial:I = 0x1080217
 
@@ -895,6 +1207,22 @@
 
 .field public static final divider_vertical_holo_light:I = 0x108024d
 
+.field public static final dot_l_h:I = 0x1080a87
+
+.field public static final dot_l_n:I = 0x1080a88
+
+.field public static final dot_m_h:I = 0x1080a89
+
+.field public static final dot_m_n:I = 0x1080a8a
+
+.field public static final dot_s_h:I = 0x1080a8b
+
+.field public static final dot_s_n:I = 0x1080a8c
+
+.field public static final down_h:I = 0x1080a8d
+
+.field public static final down_n:I = 0x1080a8e
+
 .field public static final dropdown_disabled_focused_holo_dark:I = 0x108024e
 
 .field public static final dropdown_disabled_focused_holo_light:I = 0x108024f
@@ -934,6 +1262,8 @@
 .field public static final dropdown_pressed_holo_dark:I = 0x1080260
 
 .field public static final dropdown_pressed_holo_light:I = 0x1080261
+
+.field public static final dynamic_dialog_bottom_medium_baidu_light:I = 0x1080a8f
 
 .field public static final edit_query:I = 0x1080262
 
@@ -1189,6 +1519,8 @@
 
 .field public static final ic_backward_holo_dark_press:I = 0x10802da
 
+.field public static final ic_baidu_sound:I = 0x1080a90
+
 .field public static final ic_bright:I = 0x10802db
 
 .field public static final ic_btn_round_more:I = 0x10802dc
@@ -1301,6 +1633,10 @@
 
 .field public static final ic_input_get:I = 0x108002d
 
+.field public static final ic_input_ok:I = 0x1080a91
+
+.field public static final ic_install_prompt_warning:I = 0x1080a92
+
 .field public static final ic_jog_dial_answer:I = 0x1080309
 
 .field public static final ic_jog_dial_answer_and_end:I = 0x108030a
@@ -1317,7 +1653,89 @@
 
 .field public static final ic_jog_dial_vibrate_on:I = 0x1080310
 
+.field public static final ic_launcher_360:I = 0x1080a93
+
+.field public static final ic_launcher_360launcher:I = 0x1080a94
+
+.field public static final ic_launcher_aliwangwang:I = 0x1080a95
+
 .field public static final ic_launcher_android:I = 0x1080311
+
+.field public static final ic_launcher_baidubrowser:I = 0x1080a96
+
+.field public static final ic_launcher_baidugamecenter:I = 0x1080a97
+
+.field public static final ic_launcher_baidumap:I = 0x1080a98
+
+.field public static final ic_launcher_baidumarket:I = 0x1080a99
+
+.field public static final ic_launcher_baidunetdisk:I = 0x1080a9a
+
+.field public static final ic_launcher_baidureader:I = 0x1080a9b
+
+.field public static final ic_launcher_baidusearch:I = 0x1080a9c
+
+.field public static final ic_launcher_baiduvoiceassistant:I = 0x1080a9d
+
+.field public static final ic_launcher_dolby:I = 0x1080a9e
+
+.field public static final ic_launcher_huluxia_gametools:I = 0x1080a9f
+
+.field public static final ic_launcher_ireader:I = 0x1080aa0
+
+.field public static final ic_launcher_iyqiyi:I = 0x1080aa1
+
+.field public static final ic_launcher_kugou_music:I = 0x1080aa2
+
+.field public static final ic_launcher_kuwo_player:I = 0x1080aa3
+
+.field public static final ic_launcher_moji_weather:I = 0x1080aa4
+
+.field public static final ic_launcher_momo:I = 0x1080aa5
+
+.field public static final ic_launcher_pplive:I = 0x1080aa6
+
+.field public static final ic_launcher_qq:I = 0x1080aa7
+
+.field public static final ic_launcher_qqmusic:I = 0x1080aa8
+
+.field public static final ic_launcher_qvodplayer:I = 0x1080aa9
+
+.field public static final ic_launcher_qzone:I = 0x1080aaa
+
+.field public static final ic_launcher_renren:I = 0x1080aab
+
+.field public static final ic_launcher_security:I = 0x1080aac
+
+.field public static final ic_launcher_shuqi:I = 0x1080aad
+
+.field public static final ic_launcher_sim:I = 0x1080aae
+
+.field public static final ic_launcher_sogou_input:I = 0x1080aaf
+
+.field public static final ic_launcher_taobao:I = 0x1080ab0
+
+.field public static final ic_launcher_tencent_news:I = 0x1080ab1
+
+.field public static final ic_launcher_tencent_qqlive:I = 0x1080ab2
+
+.field public static final ic_launcher_ucmobile:I = 0x1080ab3
+
+.field public static final ic_launcher_wandoujia:I = 0x1080ab4
+
+.field public static final ic_launcher_wechat:I = 0x1080ab5
+
+.field public static final ic_launcher_weibo:I = 0x1080ab6
+
+.field public static final ic_launcher_wifiwnys:I = 0x1080ab7
+
+.field public static final ic_launcher_yixin:I = 0x1080ab8
+
+.field public static final ic_launcher_youdao:I = 0x1080ab9
+
+.field public static final ic_launcher_youku:I = 0x1080aba
+
+.field public static final ic_launcher_zhifubao:I = 0x1080abb
 
 .field public static final ic_lock_airplane_mode:I = 0x1080312
 
@@ -1335,9 +1753,13 @@
 
 .field public static final ic_lock_power_off:I = 0x1080030
 
+.field public static final ic_lock_reboot:I = 0x1080abc
+
 .field public static final ic_lock_ringer_off:I = 0x1080314
 
 .field public static final ic_lock_ringer_on:I = 0x1080315
+
+.field public static final ic_lock_screenshot:I = 0x1080abd
 
 .field public static final ic_lock_silent_mode:I = 0x1080031
 
@@ -1375,6 +1797,8 @@
 
 .field public static final ic_lockscreen_decline_normal:I = 0x1080325
 
+.field public static final ic_lockscreen_emergency_call:I = 0x1080abe
+
 .field public static final ic_lockscreen_emergencycall_normal:I = 0x1080326
 
 .field public static final ic_lockscreen_emergencycall_pressed:I = 0x1080327
@@ -1386,6 +1810,8 @@
 .field public static final ic_lockscreen_handle:I = 0x108032a
 
 .field public static final ic_lockscreen_handle_normal:I = 0x108032b
+
+.field public static final ic_lockscreen_handle_press:I = 0x1080abf
 
 .field public static final ic_lockscreen_handle_pressed:I = 0x108032c
 
@@ -1429,6 +1855,80 @@
 
 .field public static final ic_lockscreen_unlock_normal:I = 0x1080340
 
+.field public static final ic_main_unlock_charging_10:I = 0x1080ac0
+
+.field public static final ic_main_unlock_charging_100:I = 0x1080ac1
+
+.field public static final ic_main_unlock_charging_10_1:I = 0x1080ac2
+
+.field public static final ic_main_unlock_charging_10_2:I = 0x1080ac3
+
+.field public static final ic_main_unlock_charging_10_3:I = 0x1080ac4
+
+.field public static final ic_main_unlock_charging_10_4:I = 0x1080ac5
+
+.field public static final ic_main_unlock_charging_20_1:I = 0x1080ac6
+
+.field public static final ic_main_unlock_charging_20_2:I = 0x1080ac7
+
+.field public static final ic_main_unlock_charging_20_3:I = 0x1080ac8
+
+.field public static final ic_main_unlock_charging_20_4:I = 0x1080ac9
+
+.field public static final ic_main_unlock_charging_20_5:I = 0x1080aca
+
+.field public static final ic_main_unlock_charging_40_1:I = 0x1080acb
+
+.field public static final ic_main_unlock_charging_40_2:I = 0x1080acc
+
+.field public static final ic_main_unlock_charging_40_3:I = 0x1080acd
+
+.field public static final ic_main_unlock_charging_40_4:I = 0x1080ace
+
+.field public static final ic_main_unlock_charging_40_5:I = 0x1080acf
+
+.field public static final ic_main_unlock_charging_60_1:I = 0x1080ad0
+
+.field public static final ic_main_unlock_charging_60_2:I = 0x1080ad1
+
+.field public static final ic_main_unlock_charging_60_3:I = 0x1080ad2
+
+.field public static final ic_main_unlock_charging_60_4:I = 0x1080ad3
+
+.field public static final ic_main_unlock_charging_60_5:I = 0x1080ad4
+
+.field public static final ic_main_unlock_charging_80_1:I = 0x1080ad5
+
+.field public static final ic_main_unlock_charging_80_2:I = 0x1080ad6
+
+.field public static final ic_main_unlock_charging_80_3:I = 0x1080ad7
+
+.field public static final ic_main_unlock_charging_80_4:I = 0x1080ad8
+
+.field public static final ic_main_unlock_charging_80_5:I = 0x1080ad9
+
+.field public static final ic_main_unlock_charging_99_1:I = 0x1080ada
+
+.field public static final ic_main_unlock_charging_99_2:I = 0x1080adb
+
+.field public static final ic_main_unlock_charging_99_3:I = 0x1080adc
+
+.field public static final ic_main_unlock_charging_99_4:I = 0x1080add
+
+.field public static final ic_main_unlock_charging_99_5:I = 0x1080ade
+
+.field public static final ic_main_unlock_hidden:I = 0x1080adf
+
+.field public static final ic_main_unlock_homescreen_background:I = 0x1080ae0
+
+.field public static final ic_main_unlock_indicator_0:I = 0x1080ae1
+
+.field public static final ic_main_unlock_indicator_1:I = 0x1080ae2
+
+.field public static final ic_main_unlock_normal:I = 0x1080ae3
+
+.field public static final ic_main_unlock_pressed:I = 0x1080ae4
+
 .field public static final ic_maps_indicator_current_position:I = 0x1080341
 
 .field public static final ic_maps_indicator_current_position_anim:I = 0x1080342
@@ -1447,11 +1947,19 @@
 
 .field public static final ic_media_next:I = 0x1080022
 
+.field public static final ic_media_next_pressed:I = 0x1080ae5
+
 .field public static final ic_media_pause:I = 0x1080023
+
+.field public static final ic_media_pause_pressed:I = 0x1080ae6
 
 .field public static final ic_media_play:I = 0x1080024
 
+.field public static final ic_media_play_pressed:I = 0x1080ae7
+
 .field public static final ic_media_previous:I = 0x1080025
+
+.field public static final ic_media_previous_pressed:I = 0x1080ae8
 
 .field public static final ic_media_rew:I = 0x1080026
 
@@ -1724,6 +2232,12 @@
 .field public static final ic_sysbar_quicksettings:I = 0x108039c
 
 .field public static final ic_text_dot:I = 0x108039d
+
+.field public static final ic_unlock_call_background:I = 0x1080ae9
+
+.field public static final ic_unlock_call_background_normal:I = 0x1080aea
+
+.field public static final ic_unlock_call_background_pressed:I = 0x1080aeb
 
 .field public static final ic_vibrate:I = 0x108039e
 
@@ -2487,6 +3001,8 @@
 
 .field public static final loading_tile_android:I = 0x1080517
 
+.field public static final lock_music_covermask_front:I = 0x1080aec
+
 .field public static final lockscreen_emergency_button:I = 0x1080518
 
 .field public static final lockscreen_forgot_password_button:I = 0x1080519
@@ -2498,6 +3014,16 @@
 .field public static final lockscreen_missed_event_ic_mms_press:I = 0x108051c
 
 .field public static final lockscreen_password_field_dark:I = 0x108051d
+
+.field public static final longpress_select_magnifier:I = 0x1080aed
+
+.field public static final longpress_select_magnifier_mask:I = 0x1080aee
+
+.field public static final luck_arrows_selected_01:I = 0x1080aef
+
+.field public static final luck_arrows_selected_02:I = 0x1080af0
+
+.field public static final luck_arrows_selected_03:I = 0x1080af1
 
 .field public static final maps_google_logo:I = 0x108051e
 
@@ -2602,6 +3128,8 @@
 .field public static final no_tile_128:I = 0x108054d
 
 .field public static final no_tile_256:I = 0x108054e
+
+.field public static final notification_bg_normal_pressed:I = 0x1080af2
 
 .field public static final notify_panel_notification_icon_bg:I = 0x108054f
 
@@ -2725,6 +3253,30 @@
 
 .field public static final picture_frame:I = 0x1080066
 
+.field public static final pin_0_normal:I = 0x1080af3
+
+.field public static final pin_1_normal:I = 0x1080af4
+
+.field public static final pin_2_normal:I = 0x1080af5
+
+.field public static final pin_3_normal:I = 0x1080af6
+
+.field public static final pin_4_normal:I = 0x1080af7
+
+.field public static final pin_5_normal:I = 0x1080af8
+
+.field public static final pin_6_normal:I = 0x1080af9
+
+.field public static final pin_7_normal:I = 0x1080afa
+
+.field public static final pin_8_normal:I = 0x1080afb
+
+.field public static final pin_9_normal:I = 0x1080afc
+
+.field public static final pin_inputbox_background:I = 0x1080afd
+
+.field public static final pin_ok_normal:I = 0x1080afe
+
 .field public static final platlogo:I = 0x108058b
 
 .field public static final pointer_arrow:I = 0x108058c
@@ -2750,6 +3302,8 @@
 .field public static final pointer_spot_touch:I = 0x1080596
 
 .field public static final pointer_spot_touch_icon:I = 0x1080597
+
+.field public static final popup_bottom_bar:I = 0x1080aff
 
 .field public static final popup_bottom_bright:I = 0x1080598
 
@@ -2855,6 +3409,22 @@
 
 .field public static final progressbar_indeterminate3:I = 0x10805be
 
+.field public static final progressbar_indeterminate_baidu1:I = 0x1080b00
+
+.field public static final progressbar_indeterminate_baidu2:I = 0x1080b01
+
+.field public static final progressbar_indeterminate_baidu3:I = 0x1080b02
+
+.field public static final progressbar_indeterminate_baidu4:I = 0x1080b03
+
+.field public static final progressbar_indeterminate_baidu5:I = 0x1080b04
+
+.field public static final progressbar_indeterminate_baidu6:I = 0x1080b05
+
+.field public static final progressbar_indeterminate_baidu7:I = 0x1080b06
+
+.field public static final progressbar_indeterminate_baidu8:I = 0x1080b07
+
 .field public static final progressbar_indeterminate_holo1:I = 0x10805bf
 
 .field public static final progressbar_indeterminate_holo2:I = 0x10805c0
@@ -2870,6 +3440,56 @@
 .field public static final progressbar_indeterminate_holo7:I = 0x10805c5
 
 .field public static final progressbar_indeterminate_holo8:I = 0x10805c6
+
+.field public static final puk_0_normal:I = 0x1080b08
+
+.field public static final puk_0_pressed:I = 0x1080b09
+
+.field public static final puk_1_normal:I = 0x1080b0a
+
+.field public static final puk_1_pressed:I = 0x1080b0b
+
+.field public static final puk_2_normal:I = 0x1080b0c
+
+.field public static final puk_2_pressed:I = 0x1080b0d
+
+.field public static final puk_3_normal:I = 0x1080b0e
+
+.field public static final puk_3_pressed:I = 0x1080b0f
+
+.field public static final puk_4_normal:I = 0x1080b10
+
+.field public static final puk_4_pressed:I = 0x1080b11
+
+.field public static final puk_5_normal:I = 0x1080b12
+
+.field public static final puk_5_pressed:I = 0x1080b13
+
+.field public static final puk_6_normal:I = 0x1080b14
+
+.field public static final puk_6_pressed:I = 0x1080b15
+
+.field public static final puk_7_normal:I = 0x1080b16
+
+.field public static final puk_7_pressed:I = 0x1080b17
+
+.field public static final puk_8_normal:I = 0x1080b18
+
+.field public static final puk_8_pressed:I = 0x1080b19
+
+.field public static final puk_9_normal:I = 0x1080b1a
+
+.field public static final puk_9_pressed:I = 0x1080b1b
+
+.field public static final puk_affrim_normal:I = 0x1080b1c
+
+.field public static final puk_affrim_pressed:I = 0x1080b1d
+
+.field public static final puk_cancel_normal:I = 0x1080b1e
+
+.field public static final puk_cancel_pressed:I = 0x1080b1f
+
+.field public static final qb_boot_notice:I = 0x1080b20
 
 .field public static final quickactions_arrowdown_left_holo_dark:I = 0x10805c7
 
@@ -2888,6 +3508,8 @@
 .field public static final quickactions_arrowup_right_holo_light:I = 0x10805ce
 
 .field public static final quickcontact_badge_overlay_dark:I = 0x10805cf
+
+.field public static final quickcontact_badge_overlay_disable_light:I = 0x1080b21
 
 .field public static final quickcontact_badge_overlay_focused_dark:I = 0x10805d0
 
@@ -3005,6 +3627,16 @@
 
 .field public static final reticle:I = 0x1080607
 
+.field public static final rice_expander_ic_maximized:I = 0x1080b22
+
+.field public static final rice_expander_ic_minimized:I = 0x1080b23
+
+.field public static final rice_ic_element_arrow_indicator_normal:I = 0x1080b24
+
+.field public static final rice_ic_lock_background:I = 0x1080b25
+
+.field public static final rice_text_select_magnifier:I = 0x1080b26
+
 .field public static final safe_mode_background:I = 0x10809e5
 
 .field public static final screen_background_dark:I = 0x1080098
@@ -3108,6 +3740,30 @@
 .field public static final search_plate_global:I = 0x1080632
 
 .field public static final search_spinner:I = 0x1080633
+
+.field public static final searchbox_hottop50_normal:I = 0x1080b27
+
+.field public static final searchbox_hotwords_normal:I = 0x1080b28
+
+.field public static final searchbox_hotwords_pressed:I = 0x1080b29
+
+.field public static final searchbox_hotwords_selected:I = 0x1080b2a
+
+.field public static final searchbox_music_normal:I = 0x1080b2b
+
+.field public static final searchbox_music_pressed:I = 0x1080b2c
+
+.field public static final searchbox_music_selected:I = 0x1080b2d
+
+.field public static final searchbox_newmusic_normal:I = 0x1080b2e
+
+.field public static final searchbox_newtop50_normal:I = 0x1080b2f
+
+.field public static final searchbox_normal:I = 0x1080b30
+
+.field public static final searchbox_pressed:I = 0x1080b31
+
+.field public static final searchbox_selected:I = 0x1080b32
 
 .field public static final seek_thumb:I = 0x1080634
 
@@ -3255,6 +3911,8 @@
 
 .field public static final stat_ecb_mode:I = 0x1080675
 
+.field public static final stat_lockscreen_battery_charge:I = 0x1080b33
+
 .field public static final stat_notify_allsharecast:I = 0x1080676
 
 .field public static final stat_notify_call_mute:I = 0x1080076
@@ -3391,9 +4049,15 @@
 
 .field public static final stat_sys_download_anim5:I = 0x10806ac
 
+.field public static final stat_sys_download_anim6:I = 0x1080b34
+
+.field public static final stat_sys_download_anim7:I = 0x1080b35
+
 .field public static final stat_sys_download_done:I = 0x1080082
 
 .field public static final stat_sys_download_done_static:I = 0x10806ad
+
+.field public static final stat_sys_download_success:I = 0x1080b36
 
 .field public static final stat_sys_gps_on:I = 0x10806b0
 
@@ -3522,7 +4186,15 @@
 
 .field public static final stat_sys_upload_anim5:I = 0x10806e8
 
+.field public static final stat_sys_upload_anim6:I = 0x1080b37
+
+.field public static final stat_sys_upload_anim7:I = 0x1080b38
+
 .field public static final stat_sys_upload_done:I = 0x1080089
+
+.field public static final stat_sys_upload_done_static:I = 0x1080b39
+
+.field public static final stat_sys_upload_success:I = 0x1080b3a
 
 .field public static final stat_sys_vp_phone_call:I = 0x10800a7
     .annotation runtime Ljava/lang/Deprecated;
@@ -3598,6 +4270,10 @@
 
 .field public static final switch_thumb_activated_holo_light:I = 0x1080703
 
+.field public static final switch_thumb_dark_off_point:I = 0x1080b3b
+
+.field public static final switch_thumb_dark_on_point:I = 0x1080b3c
+
 .field public static final switch_thumb_disabled_holo_dark:I = 0x1080704
 
 .field public static final switch_thumb_disabled_holo_light:I = 0x1080705
@@ -3605,6 +4281,10 @@
 .field public static final switch_thumb_holo_dark:I = 0x1080706
 
 .field public static final switch_thumb_holo_light:I = 0x1080707
+
+.field public static final switch_thumb_light_off_point:I = 0x1080b3d
+
+.field public static final switch_thumb_light_on_point:I = 0x1080b3e
 
 .field public static final switch_thumb_pressed_holo_dark:I = 0x1080708
 
@@ -4979,6 +5659,1076 @@
 .field public static final weather_38:I = 0x10809a1
 
 .field public static final window_titlebar:I = 0x10809a2
+
+.field public static final yi_ab_bottom_shadow_light_baidu:I = 0x1080b3f
+
+.field public static final yi_ab_bottom_solid_dark_baidu:I = 0x1080b40
+
+.field public static final yi_ab_bottom_solid_inverse_baidu:I = 0x1080b41
+
+.field public static final yi_ab_bottom_solid_light_baidu:I = 0x1080b42
+
+.field public static final yi_ab_bottom_transparent_dark_baidu:I = 0x1080b43
+
+.field public static final yi_ab_bottom_transparent_light_baidu:I = 0x1080b44
+
+.field public static final yi_ab_item_background_baidu_light:I = 0x1080b45
+
+.field public static final yi_ab_item_focused_baidu:I = 0x1080b46
+
+.field public static final yi_ab_item_pressed_baidu_light:I = 0x1080b47
+
+.field public static final yi_ab_pressed_light_baidu:I = 0x1080b48
+
+.field public static final yi_ab_share_pack_baidu_dark:I = 0x1080b49
+
+.field public static final yi_ab_share_pack_baidu_light:I = 0x1080b4a
+
+.field public static final yi_ab_solid_dark_baidu:I = 0x1080b4b
+
+.field public static final yi_ab_solid_light_baidu:I = 0x1080b4c
+
+.field public static final yi_ab_solid_shadow_baidu:I = 0x1080b4d
+
+.field public static final yi_ab_stacked_solid_dark_baidu:I = 0x1080b4e
+
+.field public static final yi_ab_stacked_solid_inverse_baidu:I = 0x1080b4f
+
+.field public static final yi_ab_stacked_solid_light_baidu:I = 0x1080b50
+
+.field public static final yi_ab_stacked_transparent_dark_baidu:I = 0x1080b51
+
+.field public static final yi_ab_stacked_transparent_dark_baidu1:I = 0x1080b52
+
+.field public static final yi_ab_stacked_transparent_light_baidu:I = 0x1080b53
+
+.field public static final yi_ab_stacked_transparent_light_baidu1:I = 0x1080b54
+
+.field public static final yi_ab_transparent_dark_baidu:I = 0x1080b55
+
+.field public static final yi_ab_transparent_light_baidu:I = 0x1080b56
+
+.field public static final yi_action_bar_bottom_pressed:I = 0x1080b57
+
+.field public static final yi_activated_background_baidu_dark:I = 0x1080b58
+
+.field public static final yi_activated_background_baidu_light:I = 0x1080b59
+
+.field public static final yi_btn_cab_done_baidu_dark:I = 0x1080b5a
+
+.field public static final yi_btn_cab_done_baidu_light:I = 0x1080b5b
+
+.field public static final yi_btn_cab_done_default_baidu_dark:I = 0x1080b5c
+
+.field public static final yi_btn_cab_done_default_baidu_light:I = 0x1080b5d
+
+.field public static final yi_btn_cab_done_focused_baidu_dark:I = 0x1080b5e
+
+.field public static final yi_btn_cab_done_focused_baidu_light:I = 0x1080b5f
+
+.field public static final yi_btn_cab_done_pressed_baidu_dark:I = 0x1080b60
+
+.field public static final yi_btn_cab_done_pressed_baidu_light:I = 0x1080b61
+
+.field public static final yi_btn_check_baidu_dark:I = 0x1080b62
+
+.field public static final yi_btn_check_baidu_light:I = 0x1080b63
+
+.field public static final yi_btn_check_off_baidu:I = 0x1080b64
+
+.field public static final yi_btn_check_off_baidu_dark:I = 0x1080b65
+
+.field public static final yi_btn_check_off_baidu_light:I = 0x1080b66
+
+.field public static final yi_btn_check_off_disable_baidu_light:I = 0x1080b67
+
+.field public static final yi_btn_check_off_disable_focused_baidu_light:I = 0x1080b68
+
+.field public static final yi_btn_check_off_disabled_baidu_dark:I = 0x1080b69
+
+.field public static final yi_btn_check_off_disabled_baidu_light:I = 0x1080b6a
+
+.field public static final yi_btn_check_off_disabled_focused_baidu_dark:I = 0x1080b6b
+
+.field public static final yi_btn_check_off_disabled_focused_baidu_light:I = 0x1080b6c
+
+.field public static final yi_btn_check_off_focused_baidu_dark:I = 0x1080b6d
+
+.field public static final yi_btn_check_off_focused_baidu_light:I = 0x1080b6e
+
+.field public static final yi_btn_check_off_normal_baidu_light:I = 0x1080b6f
+
+.field public static final yi_btn_check_off_pressed_baidu_dark:I = 0x1080b70
+
+.field public static final yi_btn_check_off_pressed_baidu_light:I = 0x1080b71
+
+.field public static final yi_btn_check_on_baidu:I = 0x1080b72
+
+.field public static final yi_btn_check_on_baidu_dark:I = 0x1080b73
+
+.field public static final yi_btn_check_on_baidu_light:I = 0x1080b74
+
+.field public static final yi_btn_check_on_disable_baidu_light:I = 0x1080b75
+
+.field public static final yi_btn_check_on_disable_focused_baidu_light:I = 0x1080b76
+
+.field public static final yi_btn_check_on_disabled_baidu_dark:I = 0x1080b77
+
+.field public static final yi_btn_check_on_disabled_baidu_light:I = 0x1080b78
+
+.field public static final yi_btn_check_on_disabled_focused_baidu_dark:I = 0x1080b79
+
+.field public static final yi_btn_check_on_disabled_focused_baidu_light:I = 0x1080b7a
+
+.field public static final yi_btn_check_on_focused_baidu_dark:I = 0x1080b7b
+
+.field public static final yi_btn_check_on_focused_baidu_light:I = 0x1080b7c
+
+.field public static final yi_btn_check_on_pressed_baidu_dark:I = 0x1080b7d
+
+.field public static final yi_btn_check_on_pressed_baidu_light:I = 0x1080b7e
+
+.field public static final yi_btn_default_baidu_dark:I = 0x1080b7f
+
+.field public static final yi_btn_default_baidu_light:I = 0x1080b80
+
+.field public static final yi_btn_default_disabled_baidu_dark:I = 0x1080b81
+
+.field public static final yi_btn_default_disabled_baidu_holo_dark:I = 0x1080b82
+
+.field public static final yi_btn_default_disabled_baidu_light:I = 0x1080b83
+
+.field public static final yi_btn_default_disabled_focused_baidu_dark:I = 0x1080b84
+
+.field public static final yi_btn_default_disabled_focused_baidu_light:I = 0x1080b85
+
+.field public static final yi_btn_default_focused_baidu_dark:I = 0x1080b86
+
+.field public static final yi_btn_default_focused_baidu_light:I = 0x1080b87
+
+.field public static final yi_btn_default_normal_baidu_dark:I = 0x1080b88
+
+.field public static final yi_btn_default_normal_baidu_light:I = 0x1080b89
+
+.field public static final yi_btn_default_pressed_baidu_dark:I = 0x1080b8a
+
+.field public static final yi_btn_default_pressed_baidu_light:I = 0x1080b8b
+
+.field public static final yi_btn_group_baidu_dark:I = 0x1080b8c
+
+.field public static final yi_btn_group_baidu_light:I = 0x1080b8d
+
+.field public static final yi_btn_group_disabled_baidu_dark:I = 0x1080b8e
+
+.field public static final yi_btn_group_disabled_baidu_light:I = 0x1080b8f
+
+.field public static final yi_btn_group_normal_baidu_dark:I = 0x1080b90
+
+.field public static final yi_btn_group_normal_baidu_light:I = 0x1080b91
+
+.field public static final yi_btn_keyboard_key_dark_normal_baidu:I = 0x1080b92
+
+.field public static final yi_btn_keyboard_key_dark_normal_off_baidu:I = 0x1080b93
+
+.field public static final yi_btn_keyboard_key_dark_normal_on_baidu:I = 0x1080b94
+
+.field public static final yi_btn_keyboard_key_dark_pressed_baidu:I = 0x1080b95
+
+.field public static final yi_btn_keyboard_key_dark_pressed_off_baidu:I = 0x1080b96
+
+.field public static final yi_btn_keyboard_key_dark_pressed_on_baidu:I = 0x1080b97
+
+.field public static final yi_btn_keyboard_key_ics:I = 0x1080b98
+
+.field public static final yi_btn_keyboard_key_light_normal_baidu:I = 0x1080b99
+
+.field public static final yi_btn_keyboard_key_light_pressed_baidu:I = 0x1080b9a
+
+.field public static final yi_btn_lockscreen_unlock:I = 0x1080b9b
+
+.field public static final yi_btn_puk_cancel:I = 0x1080b9c
+
+.field public static final yi_btn_puk_eight:I = 0x1080b9d
+
+.field public static final yi_btn_puk_five:I = 0x1080b9e
+
+.field public static final yi_btn_puk_four:I = 0x1080b9f
+
+.field public static final yi_btn_puk_nine:I = 0x1080ba0
+
+.field public static final yi_btn_puk_ok:I = 0x1080ba1
+
+.field public static final yi_btn_puk_one:I = 0x1080ba2
+
+.field public static final yi_btn_puk_seven:I = 0x1080ba3
+
+.field public static final yi_btn_puk_six:I = 0x1080ba4
+
+.field public static final yi_btn_puk_three:I = 0x1080ba5
+
+.field public static final yi_btn_puk_two:I = 0x1080ba6
+
+.field public static final yi_btn_puk_zero:I = 0x1080ba7
+
+.field public static final yi_btn_radio_baidu_dark:I = 0x1080ba8
+
+.field public static final yi_btn_radio_baidu_light:I = 0x1080ba9
+
+.field public static final yi_btn_radio_off_baidu_dark:I = 0x1080baa
+
+.field public static final yi_btn_radio_off_baidu_light:I = 0x1080bab
+
+.field public static final yi_btn_radio_off_disabled_baidu_dark:I = 0x1080bac
+
+.field public static final yi_btn_radio_off_disabled_baidu_light:I = 0x1080bad
+
+.field public static final yi_btn_radio_off_disabled_focused_baidu_dark:I = 0x1080bae
+
+.field public static final yi_btn_radio_off_disabled_focused_baidu_light:I = 0x1080baf
+
+.field public static final yi_btn_radio_off_focused_baidu_dark:I = 0x1080bb0
+
+.field public static final yi_btn_radio_off_focused_baidu_light:I = 0x1080bb1
+
+.field public static final yi_btn_radio_off_pressed_baidu_dark:I = 0x1080bb2
+
+.field public static final yi_btn_radio_off_pressed_baidu_light:I = 0x1080bb3
+
+.field public static final yi_btn_radio_on_baidu_dark:I = 0x1080bb4
+
+.field public static final yi_btn_radio_on_baidu_light:I = 0x1080bb5
+
+.field public static final yi_btn_radio_on_disabled_baidu_dark:I = 0x1080bb6
+
+.field public static final yi_btn_radio_on_disabled_baidu_light:I = 0x1080bb7
+
+.field public static final yi_btn_radio_on_disabled_focused_baidu_dark:I = 0x1080bb8
+
+.field public static final yi_btn_radio_on_disabled_focused_baidu_light:I = 0x1080bb9
+
+.field public static final yi_btn_radio_on_focused_baidu_dark:I = 0x1080bba
+
+.field public static final yi_btn_radio_on_focused_baidu_light:I = 0x1080bbb
+
+.field public static final yi_btn_radio_on_pressed_baidu_dark:I = 0x1080bbc
+
+.field public static final yi_btn_radio_on_pressed_baidu_light:I = 0x1080bbd
+
+.field public static final yi_btn_radio_on_pressed_dark:I = 0x1080bbe
+
+.field public static final yi_btn_rating_star_off_disabled_baidu_light:I = 0x1080bbf
+
+.field public static final yi_btn_rating_star_off_disabled_focused_baidu_light:I = 0x1080bc0
+
+.field public static final yi_btn_rating_star_off_focused_baidu_dark:I = 0x1080bc1
+
+.field public static final yi_btn_rating_star_off_focused_baidu_light:I = 0x1080bc2
+
+.field public static final yi_btn_rating_star_off_normal_baidu_dark:I = 0x1080bc3
+
+.field public static final yi_btn_rating_star_off_normal_baidu_light:I = 0x1080bc4
+
+.field public static final yi_btn_rating_star_off_pressed_baidu_dark:I = 0x1080bc5
+
+.field public static final yi_btn_rating_star_off_pressed_baidu_light:I = 0x1080bc6
+
+.field public static final yi_btn_rating_star_on_disabled_baidu_light:I = 0x1080bc7
+
+.field public static final yi_btn_rating_star_on_disabled_focused_baidu_light:I = 0x1080bc8
+
+.field public static final yi_btn_rating_star_on_focused_baidu_dark:I = 0x1080bc9
+
+.field public static final yi_btn_rating_star_on_focused_baidu_light:I = 0x1080bca
+
+.field public static final yi_btn_rating_star_on_normal_baidu_dark:I = 0x1080bcb
+
+.field public static final yi_btn_rating_star_on_normal_baidu_light:I = 0x1080bcc
+
+.field public static final yi_btn_rating_star_on_pressed_baidu_dark:I = 0x1080bcd
+
+.field public static final yi_btn_rating_star_on_pressed_baidu_light:I = 0x1080bce
+
+.field public static final yi_btn_star_baidu_dark:I = 0x1080bcf
+
+.field public static final yi_btn_star_baidu_light:I = 0x1080bd0
+
+.field public static final yi_btn_star_off_disabled_baidu_dark:I = 0x1080bd1
+
+.field public static final yi_btn_star_off_disabled_baidu_light:I = 0x1080bd2
+
+.field public static final yi_btn_star_off_disabled_focused_baidu_dark:I = 0x1080bd3
+
+.field public static final yi_btn_star_off_disabled_focused_baidu_light:I = 0x1080bd4
+
+.field public static final yi_btn_star_off_focused_baidu_dark:I = 0x1080bd5
+
+.field public static final yi_btn_star_off_focused_baidu_light:I = 0x1080bd6
+
+.field public static final yi_btn_star_off_normal_baidu_dark:I = 0x1080bd7
+
+.field public static final yi_btn_star_off_normal_baidu_light:I = 0x1080bd8
+
+.field public static final yi_btn_star_off_pressed_baidu_dark:I = 0x1080bd9
+
+.field public static final yi_btn_star_off_pressed_baidu_light:I = 0x1080bda
+
+.field public static final yi_btn_star_on_disabled_baidu_dark:I = 0x1080bdb
+
+.field public static final yi_btn_star_on_disabled_baidu_light:I = 0x1080bdc
+
+.field public static final yi_btn_star_on_disabled_focused_baidu_dark:I = 0x1080bdd
+
+.field public static final yi_btn_star_on_disabled_focused_baidu_light:I = 0x1080bde
+
+.field public static final yi_btn_star_on_focused_baidu_dark:I = 0x1080bdf
+
+.field public static final yi_btn_star_on_focused_baidu_light:I = 0x1080be0
+
+.field public static final yi_btn_star_on_normal_baidu_dark:I = 0x1080be1
+
+.field public static final yi_btn_star_on_normal_baidu_light:I = 0x1080be2
+
+.field public static final yi_btn_star_on_pressed_baidu_dark:I = 0x1080be3
+
+.field public static final yi_btn_star_on_pressed_baidu_light:I = 0x1080be4
+
+.field public static final yi_btn_toggle_baidu_dark:I = 0x1080be5
+
+.field public static final yi_btn_toggle_baidu_light:I = 0x1080be6
+
+.field public static final yi_btn_toggle_off_disabled_baidu_dark:I = 0x1080be7
+
+.field public static final yi_btn_toggle_off_disabled_baidu_light:I = 0x1080be8
+
+.field public static final yi_btn_toggle_off_disabled_focused_baidu_dark:I = 0x1080be9
+
+.field public static final yi_btn_toggle_off_disabled_focused_baidu_light:I = 0x1080bea
+
+.field public static final yi_btn_toggle_off_focused_baidu_dark:I = 0x1080beb
+
+.field public static final yi_btn_toggle_off_focused_baidu_light:I = 0x1080bec
+
+.field public static final yi_btn_toggle_off_normal_baidu_dark:I = 0x1080bed
+
+.field public static final yi_btn_toggle_off_normal_baidu_light:I = 0x1080bee
+
+.field public static final yi_btn_toggle_off_pressed_baidu_dark:I = 0x1080bef
+
+.field public static final yi_btn_toggle_off_pressed_baidu_light:I = 0x1080bf0
+
+.field public static final yi_btn_toggle_on_disabled_baidu_dark:I = 0x1080bf1
+
+.field public static final yi_btn_toggle_on_disabled_baidu_light:I = 0x1080bf2
+
+.field public static final yi_btn_toggle_on_disabled_focused_baidu_dark:I = 0x1080bf3
+
+.field public static final yi_btn_toggle_on_disabled_focused_baidu_light:I = 0x1080bf4
+
+.field public static final yi_btn_toggle_on_focused_baidu_dark:I = 0x1080bf5
+
+.field public static final yi_btn_toggle_on_focused_baidu_light:I = 0x1080bf6
+
+.field public static final yi_btn_toggle_on_normal_baidu_dark:I = 0x1080bf7
+
+.field public static final yi_btn_toggle_on_normal_baidu_light:I = 0x1080bf8
+
+.field public static final yi_btn_toggle_on_pressed_baidu_dark:I = 0x1080bf9
+
+.field public static final yi_btn_toggle_on_pressed_baidu_light:I = 0x1080bfa
+
+.field public static final yi_cab_background_bottom_baidu_dark:I = 0x1080bfb
+
+.field public static final yi_cab_background_bottom_baidu_light:I = 0x1080bfc
+
+.field public static final yi_cab_background_bottom_inverse_baidu:I = 0x1080bfd
+
+.field public static final yi_cab_background_top_baidu_dark:I = 0x1080bfe
+
+.field public static final yi_cab_background_top_baidu_light:I = 0x1080bff
+
+.field public static final yi_cab_background_top_inverse_baidu:I = 0x1080c00
+
+.field public static final yi_day_picker_week_view_dayline_baidu:I = 0x1080c01
+
+.field public static final yi_dialog_baidu_dark_frame:I = 0x1080d51
+
+.field public static final yi_dialog_baidu_light_frame:I = 0x1080d52
+
+.field public static final yi_dialog_bottom_baidu_dark:I = 0x1080c02
+
+.field public static final yi_dialog_bottom_baidu_light:I = 0x1080c03
+
+.field public static final yi_dialog_bottom_medium_baidu_light:I = 0x1080c04
+
+.field public static final yi_dialog_full_baidu_dark:I = 0x1080c05
+
+.field public static final yi_dialog_full_baidu_light:I = 0x1080c06
+
+.field public static final yi_dialog_full_light:I = 0x1080c07
+
+.field public static final yi_dialog_middle_baidu_dark:I = 0x1080c08
+
+.field public static final yi_dialog_middle_baidu_light:I = 0x1080c09
+
+.field public static final yi_dialog_middle_custom_baidu_light:I = 0x1080c0a
+
+.field public static final yi_dialog_top_baidu_dark:I = 0x1080c0b
+
+.field public static final yi_dialog_top_baidu_light:I = 0x1080c0c
+
+.field public static final yi_divider_vertical_baidu_light:I = 0x1080c0d
+
+.field public static final yi_divider_vertical_tab_baidu_light:I = 0x1080c0e
+
+.field public static final yi_edit_text_baidu_dark:I = 0x1080c0f
+
+.field public static final yi_edit_text_baidu_light:I = 0x1080c10
+
+.field public static final yi_expander_close_baidu_dark:I = 0x1080c11
+
+.field public static final yi_expander_close_baidu_light:I = 0x1080c12
+
+.field public static final yi_expander_group_baidu_dark:I = 0x1080c13
+
+.field public static final yi_expander_group_baidu_light:I = 0x1080c14
+
+.field public static final yi_expander_open_baidu_dark:I = 0x1080c15
+
+.field public static final yi_expander_open_baidu_light:I = 0x1080c16
+
+.field public static final yi_fastscroll_label_left_baidu_dark:I = 0x1080c17
+
+.field public static final yi_fastscroll_label_left_baidu_light:I = 0x1080c18
+
+.field public static final yi_fastscroll_label_right_baidu_dark:I = 0x1080c19
+
+.field public static final yi_fastscroll_label_right_baidu_light:I = 0x1080c1a
+
+.field public static final yi_fastscroll_thumb_baidu:I = 0x1080c1b
+
+.field public static final yi_fastscroll_thumb_default_baidu:I = 0x1080c1c
+
+.field public static final yi_fastscroll_thumb_pressed_baidu:I = 0x1080c1d
+
+.field public static final yi_fastscroll_track_baidu_dark:I = 0x1080c1e
+
+.field public static final yi_fastscroll_track_baidu_light:I = 0x1080c1f
+
+.field public static final yi_fastscroll_track_default_baidu_dark:I = 0x1080c20
+
+.field public static final yi_fastscroll_track_default_baidu_light:I = 0x1080c21
+
+.field public static final yi_fastscroll_track_pressed_baidu_dark:I = 0x1080c22
+
+.field public static final yi_fastscroll_track_pressed_baidu_light:I = 0x1080c23
+
+.field public static final yi_filter_dropdown_panel_baidu_light:I = 0x1080c24
+
+.field public static final yi_ic_ab_back_baidu_dark:I = 0x1080c25
+
+.field public static final yi_ic_ab_back_baidu_light:I = 0x1080c26
+
+.field public static final yi_ic_ab_back_pressed_baidu_dark:I = 0x1080c27
+
+.field public static final yi_ic_ab_back_pressed_baidu_light:I = 0x1080c28
+
+.field public static final yi_ic_cab_done_baidu:I = 0x1080c29
+
+.field public static final yi_ic_cab_done_baidu_dark:I = 0x1080c2a
+
+.field public static final yi_ic_cab_done_baidu_light:I = 0x1080c2b
+
+.field public static final yi_ic_checkmark_baidu_light:I = 0x1080c2c
+
+.field public static final yi_ic_clear_baidu_dark:I = 0x1080c2d
+
+.field public static final yi_ic_clear_baidu_light:I = 0x1080c2e
+
+.field public static final yi_ic_clear_search_api_baidu_light:I = 0x1080c2f
+
+.field public static final yi_ic_clear_search_api_disabled_baidu_light:I = 0x1080c30
+
+.field public static final yi_ic_commit_search_api_baidu_light:I = 0x1080c31
+
+.field public static final yi_ic_dialog_alert_baidu_dark:I = 0x1080c32
+
+.field public static final yi_ic_dialog_alert_baidu_light:I = 0x1080c33
+
+.field public static final yi_ic_dialog_alert_baidudark:I = 0x1080c34
+
+.field public static final yi_ic_dialog_alert_baidulight:I = 0x1080c35
+
+.field public static final yi_ic_element_btn_radio_label_background:I = 0x1080c36
+
+.field public static final yi_ic_find_next_baidu_dark:I = 0x1080c37
+
+.field public static final yi_ic_find_previous_baidu_dark:I = 0x1080c38
+
+.field public static final yi_ic_go_search_api_baidu_light:I = 0x1080c39
+
+.field public static final yi_ic_menu_cancel_baidu:I = 0x1080c3a
+
+.field public static final yi_ic_menu_cancel_disable_baidu:I = 0x1080c3b
+
+.field public static final yi_ic_menu_copy_baidu_dark:I = 0x1080c3c
+
+.field public static final yi_ic_menu_cut_baidu_dark:I = 0x1080c3d
+
+.field public static final yi_ic_menu_cut_baidu_pdark:I = 0x1080c3e
+
+.field public static final yi_ic_menu_done_baidu:I = 0x1080c3f
+
+.field public static final yi_ic_menu_find_baidu_dark:I = 0x1080c40
+
+.field public static final yi_ic_menu_moreoverflow_baidu_dark:I = 0x1080c41
+
+.field public static final yi_ic_menu_moreoverflow_baidu_light:I = 0x1080c42
+
+.field public static final yi_ic_menu_moreoverflow_normal_baidu_dark:I = 0x1080c43
+
+.field public static final yi_ic_menu_moreoverflow_normal_baidu_light:I = 0x1080c44
+
+.field public static final yi_ic_menu_paste_baidu_dark:I = 0x1080c45
+
+.field public static final yi_ic_menu_search_baidu_dark:I = 0x1080c46
+
+.field public static final yi_ic_menu_selectall_baidu_dark:I = 0x1080c47
+
+.field public static final yi_ic_menu_share_baidu_dark:I = 0x1080c48
+
+.field public static final yi_ic_menu_trash_baidu_dark:I = 0x1080c49
+
+.field public static final yi_ic_menu_trash_baidu_light:I = 0x1080c4a
+
+.field public static final yi_ic_more:I = 0x1080c4b
+
+.field public static final yi_ic_search:I = 0x1080c4c
+
+.field public static final yi_ic_search_api_baidu_light:I = 0x1080c4d
+
+.field public static final yi_ic_voice_search_api_baidu_light:I = 0x1080c4e
+
+.field public static final yi_ic_yellow_pages_holo_light:I = 0x1080c4f
+
+.field public static final yi_input_method_fullscreen_background_baidu:I = 0x1080d53
+
+.field public static final yi_item_background_baidu_dark:I = 0x1080c50
+
+.field public static final yi_item_background_baidu_light:I = 0x1080c51
+
+.field public static final yi_list_activated_baidu:I = 0x1080c52
+
+.field public static final yi_list_bg_baidu:I = 0x1080c53
+
+.field public static final yi_list_bg_baidu_light:I = 0x1080c54
+
+.field public static final yi_list_bottom_longpressed_baidu:I = 0x1080c55
+
+.field public static final yi_list_bottom_longpressed_baidu_light:I = 0x1080c56
+
+.field public static final yi_list_bottom_pressed_baidu_light:I = 0x1080c57
+
+.field public static final yi_list_divider_baidu_dark:I = 0x1080c58
+
+.field public static final yi_list_divider_baidu_holo_dark:I = 0x1080c59
+
+.field public static final yi_list_divider_baidu_holo_light:I = 0x1080c5a
+
+.field public static final yi_list_divider_baidu_light:I = 0x1080c5b
+
+.field public static final yi_list_focused_baidu:I = 0x1080c5c
+
+.field public static final yi_list_focused_baidu_light:I = 0x1080c5d
+
+.field public static final yi_list_longpressed_baidu:I = 0x1080c5e
+
+.field public static final yi_list_longpressed_baidu_light:I = 0x1080c5f
+
+.field public static final yi_list_pressed_baidu_dark:I = 0x1080c60
+
+.field public static final yi_list_pressed_baidu_light:I = 0x1080c61
+
+.field public static final yi_list_section_divider_baidu_dark:I = 0x1080c62
+
+.field public static final yi_list_section_divider_baidu_light:I = 0x1080c63
+
+.field public static final yi_list_selector_background_transition_baidu_dark:I = 0x1080c64
+
+.field public static final yi_list_selector_background_transition_baidu_light:I = 0x1080c65
+
+.field public static final yi_list_selector_baidu_dark:I = 0x1080c66
+
+.field public static final yi_list_selector_baidu_light:I = 0x1080c67
+
+.field public static final yi_list_single_longpressed_baidu:I = 0x1080c68
+
+.field public static final yi_list_single_longpressed_baidu_light:I = 0x1080c69
+
+.field public static final yi_list_single_pressed_baidu_light:I = 0x1080c6a
+
+.field public static final yi_list_top_longpressed_baidu:I = 0x1080c6b
+
+.field public static final yi_list_top_longpressed_baidu_light:I = 0x1080c6c
+
+.field public static final yi_list_top_pressed_baidu_light:I = 0x1080c6d
+
+.field public static final yi_menu_dropdown_panel_baidu_dark:I = 0x1080c6e
+
+.field public static final yi_menu_dropdown_panel_baidu_light:I = 0x1080c6f
+
+.field public static final yi_menu_dropdown_panel_baidu_light_up:I = 0x1080c70
+
+.field public static final yi_menu_hardkey_panel_baidu_dark:I = 0x1080c71
+
+.field public static final yi_menu_hardkey_panel_baidu_light:I = 0x1080c72
+
+.field public static final yi_menu_hardkey_panel_baidu_light_up:I = 0x1080c73
+
+.field public static final yi_number_picker_bg_day:I = 0x1080c74
+
+.field public static final yi_number_picker_bg_left:I = 0x1080c75
+
+.field public static final yi_number_picker_bg_middle:I = 0x1080c76
+
+.field public static final yi_number_picker_bg_month:I = 0x1080c77
+
+.field public static final yi_number_picker_bg_right:I = 0x1080c78
+
+.field public static final yi_number_picker_bg_year:I = 0x1080c79
+
+.field public static final yi_numberpicker_down_btn_baidu_dark:I = 0x1080c7a
+
+.field public static final yi_numberpicker_down_btn_baidu_light:I = 0x1080c7b
+
+.field public static final yi_numberpicker_down_disabled_baidu_dark:I = 0x1080c7c
+
+.field public static final yi_numberpicker_down_disabled_baidu_light:I = 0x1080c7d
+
+.field public static final yi_numberpicker_down_disabled_focused_baidu_dark:I = 0x1080c7e
+
+.field public static final yi_numberpicker_down_disabled_focused_baidu_light:I = 0x1080c7f
+
+.field public static final yi_numberpicker_down_focused_baidu_dark:I = 0x1080c80
+
+.field public static final yi_numberpicker_down_focused_baidu_light:I = 0x1080c81
+
+.field public static final yi_numberpicker_down_longpressed_baidu_light:I = 0x1080c82
+
+.field public static final yi_numberpicker_down_normal_baidu_dark:I = 0x1080c83
+
+.field public static final yi_numberpicker_down_normal_baidu_light:I = 0x1080c84
+
+.field public static final yi_numberpicker_down_pressed_baidu_dark:I = 0x1080c85
+
+.field public static final yi_numberpicker_down_pressed_baidu_light:I = 0x1080c86
+
+.field public static final yi_numberpicker_selection_divider:I = 0x1080c87
+
+.field public static final yi_numberpicker_up_btn_baidu_dark:I = 0x1080c88
+
+.field public static final yi_numberpicker_up_btn_baidu_light:I = 0x1080c89
+
+.field public static final yi_numberpicker_up_disabled_baidu_dark:I = 0x1080c8a
+
+.field public static final yi_numberpicker_up_disabled_baidu_light:I = 0x1080c8b
+
+.field public static final yi_numberpicker_up_disabled_focused_baidu_dark:I = 0x1080c8c
+
+.field public static final yi_numberpicker_up_disabled_focused_baidu_light:I = 0x1080c8d
+
+.field public static final yi_numberpicker_up_focused_baidu_dark:I = 0x1080c8e
+
+.field public static final yi_numberpicker_up_focused_baidu_light:I = 0x1080c8f
+
+.field public static final yi_numberpicker_up_longpressed_baidu_light:I = 0x1080c90
+
+.field public static final yi_numberpicker_up_normal_baidu_dark:I = 0x1080c91
+
+.field public static final yi_numberpicker_up_normal_baidu_light:I = 0x1080c92
+
+.field public static final yi_numberpicker_up_pressed_baidu_dark:I = 0x1080c93
+
+.field public static final yi_numberpicker_up_pressed_baidu_light:I = 0x1080c94
+
+.field public static final yi_popup_arrow_down:I = 0x1080c95
+
+.field public static final yi_popup_arrow_up:I = 0x1080c96
+
+.field public static final yi_popup_inline_error_above_baidu_dark:I = 0x1080c97
+
+.field public static final yi_popup_inline_error_above_baidu_light:I = 0x1080c98
+
+.field public static final yi_popup_inline_error_baidu_dark:I = 0x1080c99
+
+.field public static final yi_popup_inline_error_baidu_light:I = 0x1080c9a
+
+.field public static final yi_progress_bg_baidu_dark:I = 0x1080c9b
+
+.field public static final yi_progress_bg_baidu_light:I = 0x1080c9c
+
+.field public static final yi_progress_horizontal_baidu_dark:I = 0x1080c9d
+
+.field public static final yi_progress_horizontal_baidu_light:I = 0x1080c9e
+
+.field public static final yi_progress_indeterminate_horizontal_baidu:I = 0x1080c9f
+
+.field public static final yi_progress_large_baidu_dark:I = 0x1080ca0
+
+.field public static final yi_progress_large_baidu_light:I = 0x1080ca1
+
+.field public static final yi_progress_medium_baidu_dark:I = 0x1080ca2
+
+.field public static final yi_progress_medium_baidu_light:I = 0x1080ca3
+
+.field public static final yi_progress_primary_baidu_dark:I = 0x1080ca4
+
+.field public static final yi_progress_primary_baidu_light:I = 0x1080ca5
+
+.field public static final yi_progress_secondary_baidu_dark:I = 0x1080ca6
+
+.field public static final yi_progress_secondary_baidu_light:I = 0x1080ca7
+
+.field public static final yi_progress_small_baidu_dark:I = 0x1080ca8
+
+.field public static final yi_progress_small_baidu_light:I = 0x1080ca9
+
+.field public static final yi_progressbar_indeterminate_baidu1:I = 0x1080caa
+
+.field public static final yi_progressbar_indeterminate_baidu2:I = 0x1080cab
+
+.field public static final yi_progressbar_indeterminate_baidu3:I = 0x1080cac
+
+.field public static final yi_progressbar_indeterminate_baidu4:I = 0x1080cad
+
+.field public static final yi_progressbar_indeterminate_baidu5:I = 0x1080cae
+
+.field public static final yi_progressbar_indeterminate_baidu6:I = 0x1080caf
+
+.field public static final yi_progressbar_indeterminate_baidu7:I = 0x1080cb0
+
+.field public static final yi_progressbar_indeterminate_baidu8:I = 0x1080cb1
+
+.field public static final yi_rate_star_big_half_baidu_dark:I = 0x1080cb2
+
+.field public static final yi_rate_star_big_half_baidu_light:I = 0x1080cb3
+
+.field public static final yi_rate_star_big_off_baidu_dark:I = 0x1080cb4
+
+.field public static final yi_rate_star_big_off_baidu_light:I = 0x1080cb5
+
+.field public static final yi_rate_star_big_on_baidu_dark:I = 0x1080cb6
+
+.field public static final yi_rate_star_big_on_baidu_light:I = 0x1080cb7
+
+.field public static final yi_rate_star_med_half_baidu_light:I = 0x1080cb8
+
+.field public static final yi_rate_star_med_off_baidu_light:I = 0x1080cb9
+
+.field public static final yi_rate_star_med_on_baidu_light:I = 0x1080cba
+
+.field public static final yi_rate_star_small_half_baidu_dark:I = 0x1080cbb
+
+.field public static final yi_rate_star_small_half_baidu_light:I = 0x1080cbc
+
+.field public static final yi_rate_star_small_off_baidu_dark:I = 0x1080cbd
+
+.field public static final yi_rate_star_small_off_baidu_light:I = 0x1080cbe
+
+.field public static final yi_rate_star_small_on_baidu_dark:I = 0x1080cbf
+
+.field public static final yi_rate_star_small_on_baidu_light:I = 0x1080cc0
+
+.field public static final yi_ratingbar_baidu_dark:I = 0x1080cc1
+
+.field public static final yi_ratingbar_baidu_light:I = 0x1080cc2
+
+.field public static final yi_ratingbar_full_baidu_dark:I = 0x1080cc3
+
+.field public static final yi_ratingbar_full_baidu_light:I = 0x1080cc4
+
+.field public static final yi_ratingbar_full_empty_baidu_dark:I = 0x1080cc5
+
+.field public static final yi_ratingbar_full_empty_baidu_light:I = 0x1080cc6
+
+.field public static final yi_ratingbar_full_filled_baidu_dark:I = 0x1080cc7
+
+.field public static final yi_ratingbar_full_filled_baidu_light:I = 0x1080cc8
+
+.field public static final yi_ratingbar_small_baidu_dark:I = 0x1080cc9
+
+.field public static final yi_ratingbar_small_baidu_light:I = 0x1080cca
+
+.field public static final yi_screen_background_baidu_dark:I = 0x1080d55
+
+.field public static final yi_screen_background_baidu_light:I = 0x1080d54
+
+.field public static final yi_scrollbar_handle_baidu_dark:I = 0x1080ccb
+
+.field public static final yi_scrollbar_handle_baidu_light:I = 0x1080ccc
+
+.field public static final yi_scrubber_control_disabled_baidu:I = 0x1080ccd
+
+.field public static final yi_scrubber_control_focused_baidu:I = 0x1080cce
+
+.field public static final yi_scrubber_control_normal_baidu:I = 0x1080ccf
+
+.field public static final yi_scrubber_control_pressed_baidu:I = 0x1080cd0
+
+.field public static final yi_scrubber_control_selector_baidu:I = 0x1080cd1
+
+.field public static final yi_scrubber_primary_baidu:I = 0x1080cd2
+
+.field public static final yi_scrubber_progress_horizontal_baidu_dark:I = 0x1080cd3
+
+.field public static final yi_scrubber_progress_horizontal_baidu_light:I = 0x1080cd4
+
+.field public static final yi_scrubber_secondary_baidu:I = 0x1080cd5
+
+.field public static final yi_scrubber_track_baidu_dark:I = 0x1080cd6
+
+.field public static final yi_scrubber_track_baidu_light:I = 0x1080cd7
+
+.field public static final yi_search_view_background:I = 0x1080cd8
+
+.field public static final yi_spinner_16_inner_dark_baidu:I = 0x1080cd9
+
+.field public static final yi_spinner_16_inner_light_baidu:I = 0x1080cda
+
+.field public static final yi_spinner_16_inner_light_baidulo:I = 0x1080cdb
+
+.field public static final yi_spinner_16_outer_baidu:I = 0x1080cdc
+
+.field public static final yi_spinner_16_outer_dark_baidu:I = 0x1080cdd
+
+.field public static final yi_spinner_16_outer_light_baidu:I = 0x1080cde
+
+.field public static final yi_spinner_20_outer_baidu:I = 0x1080cdf
+
+.field public static final yi_spinner_48_inner_dark_baidu:I = 0x1080ce0
+
+.field public static final yi_spinner_48_inner_light_baidu:I = 0x1080ce1
+
+.field public static final yi_spinner_48_outer_baidu:I = 0x1080ce2
+
+.field public static final yi_spinner_48_outer_dark_baidu:I = 0x1080ce3
+
+.field public static final yi_spinner_48_outer_light_baidu:I = 0x1080ce4
+
+.field public static final yi_spinner_76_inner_dark_baidu:I = 0x1080ce5
+
+.field public static final yi_spinner_76_inner_light_baidu:I = 0x1080ce6
+
+.field public static final yi_spinner_76_outer_baidu:I = 0x1080ce7
+
+.field public static final yi_spinner_76_outer_dark_baidu:I = 0x1080ce8
+
+.field public static final yi_spinner_76_outer_light_baidu:I = 0x1080ce9
+
+.field public static final yi_spinner_ab_baidu_dark:I = 0x1080cea
+
+.field public static final yi_spinner_ab_baidu_light:I = 0x1080ceb
+
+.field public static final yi_spinner_ab_default_baidu_dark:I = 0x1080cec
+
+.field public static final yi_spinner_ab_default_baidu_light:I = 0x1080ced
+
+.field public static final yi_spinner_ab_disabled_baidu_dark:I = 0x1080cee
+
+.field public static final yi_spinner_ab_disabled_baidu_light:I = 0x1080cef
+
+.field public static final yi_spinner_ab_focused_baidu_dark:I = 0x1080cf0
+
+.field public static final yi_spinner_ab_focused_baidu_light:I = 0x1080cf1
+
+.field public static final yi_spinner_ab_pressed_baidu_dark:I = 0x1080cf2
+
+.field public static final yi_spinner_ab_pressed_baidu_light:I = 0x1080cf3
+
+.field public static final yi_spinner_background_baidu_dark:I = 0x1080cf4
+
+.field public static final yi_spinner_background_baidu_light:I = 0x1080cf5
+
+.field public static final yi_spinner_default_baidu_dark:I = 0x1080cf6
+
+.field public static final yi_spinner_default_baidu_light:I = 0x1080cf7
+
+.field public static final yi_spinner_disabled_baidu_dark:I = 0x1080cf8
+
+.field public static final yi_spinner_disabled_baidu_light:I = 0x1080cf9
+
+.field public static final yi_spinner_focused_baidu_dark:I = 0x1080cfa
+
+.field public static final yi_spinner_focused_baidu_light:I = 0x1080cfb
+
+.field public static final yi_spinner_popup_backgroud_baidu_light:I = 0x1080cfc
+
+.field public static final yi_spinner_pressed_baidu_dark:I = 0x1080cfd
+
+.field public static final yi_spinner_pressed_baidu_light:I = 0x1080cfe
+
+.field public static final yi_switch_bg_baidu_dark:I = 0x1080cff
+
+.field public static final yi_switch_bg_disabled_baidu_dark:I = 0x1080d00
+
+.field public static final yi_switch_bg_focused_baidu_dark:I = 0x1080d01
+
+.field public static final yi_switch_bg_off_baidu_light:I = 0x1080d02
+
+.field public static final yi_switch_bg_off_disabled_baidu_light:I = 0x1080d03
+
+.field public static final yi_switch_bg_on_baidu_light:I = 0x1080d04
+
+.field public static final yi_switch_bg_on_disabled_baidu_light:I = 0x1080d05
+
+.field public static final yi_switch_inner_baidu_dark:I = 0x1080d06
+
+.field public static final yi_switch_inner_baidu_light:I = 0x1080d07
+
+.field public static final yi_switch_thumb_activated_baidu_dark:I = 0x1080d08
+
+.field public static final yi_switch_thumb_activated_baidu_light:I = 0x1080d09
+
+.field public static final yi_switch_thumb_activated_disabled_baidu_light:I = 0x1080d0a
+
+.field public static final yi_switch_thumb_actived_pressed_baidu_light:I = 0x1080d0b
+
+.field public static final yi_switch_thumb_baidu_dark:I = 0x1080d0c
+
+.field public static final yi_switch_thumb_baidu_light:I = 0x1080d0d
+
+.field public static final yi_switch_thumb_disabled_baidu_dark:I = 0x1080d0e
+
+.field public static final yi_switch_thumb_disabled_baidu_light:I = 0x1080d0f
+
+.field public static final yi_switch_thumb_pressed_baidu_dark:I = 0x1080d10
+
+.field public static final yi_switch_thumb_pressed_baidu_light:I = 0x1080d11
+
+.field public static final yi_switch_track_baidu_dark:I = 0x1080d12
+
+.field public static final yi_switch_track_baidu_light:I = 0x1080d13
+
+.field public static final yi_tab_indicator_ab_baidu:I = 0x1080d14
+
+.field public static final yi_tab_indicator_baidu:I = 0x1080d15
+
+.field public static final yi_tab_selected_baidu:I = 0x1080d16
+
+.field public static final yi_tab_selected_focused_baidu:I = 0x1080d17
+
+.field public static final yi_tab_selected_pressed_baidu:I = 0x1080d18
+
+.field public static final yi_tab_top_selected_baidu:I = 0x1080d19
+
+.field public static final yi_tab_top_selected_focused_baidu:I = 0x1080d1a
+
+.field public static final yi_tab_top_selected_pressed_baidu:I = 0x1080d1b
+
+.field public static final yi_tab_top_unselected_baidu:I = 0x1080d1c
+
+.field public static final yi_tab_top_unselected_focused_baidu:I = 0x1080d1d
+
+.field public static final yi_tab_top_unselected_pressed_baidu:I = 0x1080d1e
+
+.field public static final yi_tab_unselected_baidu:I = 0x1080d1f
+
+.field public static final yi_tab_unselected_focused_baidu:I = 0x1080d20
+
+.field public static final yi_tab_unselected_pressed_baidu:I = 0x1080d21
+
+.field public static final yi_text_edit_item_background:I = 0x1080d22
+
+.field public static final yi_text_edit_item_left_background:I = 0x1080d23
+
+.field public static final yi_text_edit_item_middle_background:I = 0x1080d24
+
+.field public static final yi_text_edit_item_right_background:I = 0x1080d25
+
+.field public static final yi_text_edit_item_single_background:I = 0x1080d26
+
+.field public static final yi_text_edit_paste_window:I = 0x1080d27
+
+.field public static final yi_text_edit_paste_window_left_pressed:I = 0x1080d28
+
+.field public static final yi_text_edit_paste_window_middle_pressed:I = 0x1080d29
+
+.field public static final yi_text_edit_paste_window_right_pressed:I = 0x1080d2a
+
+.field public static final yi_text_edit_paste_window_single_pressed:I = 0x1080d2b
+
+.field public static final yi_text_select_handle_left:I = 0x1080d2c
+
+.field public static final yi_text_select_handle_middle:I = 0x1080d2d
+
+.field public static final yi_text_select_handle_right:I = 0x1080d2e
+
+.field public static final yi_textfield_activated_baidu_dark:I = 0x1080d2f
+
+.field public static final yi_textfield_activated_baidu_light:I = 0x1080d30
+
+.field public static final yi_textfield_default_baidu_dark:I = 0x1080d31
+
+.field public static final yi_textfield_default_baidu_light:I = 0x1080d32
+
+.field public static final yi_textfield_disabled_baidu_dark:I = 0x1080d33
+
+.field public static final yi_textfield_disabled_baidu_light:I = 0x1080d34
+
+.field public static final yi_textfield_disabled_focused_baidu_dark:I = 0x1080d35
+
+.field public static final yi_textfield_disabled_focused_baidu_light:I = 0x1080d36
+
+.field public static final yi_textfield_focused_baidu_dark:I = 0x1080d37
+
+.field public static final yi_textfield_focused_baidu_light:I = 0x1080d38
+
+.field public static final yi_textfield_multiline_activated_baidu_dark:I = 0x1080d39
+
+.field public static final yi_textfield_multiline_activated_baidu_light:I = 0x1080d3a
+
+.field public static final yi_textfield_multiline_default_baidu_dark:I = 0x1080d3b
+
+.field public static final yi_textfield_multiline_default_baidu_light:I = 0x1080d3c
+
+.field public static final yi_textfield_multiline_disabled_baidu_dark:I = 0x1080d3d
+
+.field public static final yi_textfield_multiline_disabled_baidu_light:I = 0x1080d3e
+
+.field public static final yi_textfield_multiline_disabled_focused_baidu_dark:I = 0x1080d3f
+
+.field public static final yi_textfield_multiline_disabled_focused_baidu_light:I = 0x1080d40
+
+.field public static final yi_textfield_multiline_focused_baidu_dark:I = 0x1080d41
+
+.field public static final yi_textfield_multiline_focused_baidu_light:I = 0x1080d42
+
+.field public static final yi_textfield_search_default_baidu_dark:I = 0x1080d43
+
+.field public static final yi_textfield_search_default_baidu_light:I = 0x1080d44
+
+.field public static final yi_textfield_search_right_default_baidu_dark:I = 0x1080d45
+
+.field public static final yi_textfield_search_right_default_baidu_light:I = 0x1080d46
+
+.field public static final yi_textfield_search_right_selected_baidu_dark:I = 0x1080d47
+
+.field public static final yi_textfield_search_right_selected_baidu_light:I = 0x1080d48
+
+.field public static final yi_textfield_search_selected_baidu_dark:I = 0x1080d49
+
+.field public static final yi_textfield_search_selected_baidu_light:I = 0x1080d4a
+
+.field public static final yi_textfield_searchview_baidu_dark:I = 0x1080d4b
+
+.field public static final yi_textfield_searchview_baidu_light:I = 0x1080d4c
+
+.field public static final yi_textfield_searchview_right_baidu_dark:I = 0x1080d4d
+
+.field public static final yi_textfield_searchview_right_baidu_light:I = 0x1080d4e
+
+.field public static final yi_toast_frame_baidu:I = 0x1080d4f
+
+.field public static final yi_window_bg_baidu:I = 0x1080d50
 
 .field public static final zoom_plate:I = 0x1080097
 

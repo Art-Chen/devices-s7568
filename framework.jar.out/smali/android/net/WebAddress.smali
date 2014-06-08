@@ -233,7 +233,7 @@
     if-eqz v3, :cond_a
 
     .line 113
-    const-string v3, "https"
+    const-string/jumbo v3, "https"
 
     iput-object v3, p0, Landroid/net/WebAddress;->mScheme:Ljava/lang/String;
 
@@ -250,7 +250,7 @@
 
     if-eqz v3, :cond_7
 
-    const-string v3, "http"
+    const-string/jumbo v3, "http"
 
     iput-object v3, p0, Landroid/net/WebAddress;->mScheme:Ljava/lang/String;
 
@@ -318,7 +318,7 @@
     .line 115
     iget-object v3, p0, Landroid/net/WebAddress;->mScheme:Ljava/lang/String;
 
-    const-string v4, "https"
+    const-string/jumbo v4, "https"
 
     invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -469,7 +469,7 @@
 
     iget-object v2, p0, Landroid/net/WebAddress;->mScheme:Ljava/lang/String;
 
-    const-string v3, "https"
+    const-string/jumbo v3, "https"
 
     invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -486,7 +486,7 @@
 
     iget-object v2, p0, Landroid/net/WebAddress;->mScheme:Ljava/lang/String;
 
-    const-string v3, "http"
+    const-string/jumbo v3, "http"
 
     invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

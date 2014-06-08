@@ -768,7 +768,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "handleEcmTimer, unsupported action "
+    const-string/jumbo v2, "handleEcmTimer, unsupported action "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -805,6 +805,8 @@
     goto :goto_0
 
     .line 1240
+    nop
+
     nop
 
     :pswitch_data_0
@@ -2485,7 +2487,7 @@
     .line 1173
     const-string v0, "CDMA"
 
-    const-string v1, "isEmergencyCall false 02!!!"
+    const-string/jumbo v1, "isEmergencyCall false 02!!!"
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -2629,6 +2631,8 @@
     goto/16 :goto_0
 
     .line 1103
+    nop
+
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_1
@@ -4406,7 +4410,7 @@
     if-eqz v0, :cond_4
 
     .line 968
-    const-string v0, "hangup all conns in background call"
+    const-string/jumbo v0, "hangup all conns in background call"
 
     invoke-virtual {p0, v0}, Lcom/android/internal/telephony/cdma/CdmaCallTracker;->log(Ljava/lang/String;)V
 
@@ -4515,7 +4519,7 @@
     if-ne p1, v1, :cond_1
 
     .line 881
-    const-string v1, "hangup: set hangupPendingMO to true"
+    const-string/jumbo v1, "hangup: set hangupPendingMO to true"
 
     invoke-virtual {p0, v1}, Lcom/android/internal/telephony/cdma/CdmaCallTracker;->log(Ljava/lang/String;)V
 
@@ -4686,7 +4690,7 @@
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v6, "hangupConnectionByIndex caught "
+    const-string/jumbo v6, "hangupConnectionByIndex caught "
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -4786,7 +4790,7 @@
 
     .prologue
     .line 991
-    const-string v0, "hangupForegroundResumeBackground"
+    const-string/jumbo v0, "hangupForegroundResumeBackground"
 
     invoke-virtual {p0, v0}, Lcom/android/internal/telephony/cdma/CdmaCallTracker;->log(Ljava/lang/String;)V
 
@@ -4808,7 +4812,7 @@
 
     .prologue
     .line 985
-    const-string v0, "hangupWaitingOrBackground"
+    const-string/jumbo v0, "hangupWaitingOrBackground"
 
     invoke-virtual {p0, v0}, Lcom/android/internal/telephony/cdma/CdmaCallTracker;->log(Ljava/lang/String;)V
 

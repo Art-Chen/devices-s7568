@@ -2194,6 +2194,25 @@
     goto :goto_0
 .end method
 
+.method private getUidRulesBaidu(II)I
+    .locals 2
+    .parameter "uidPolicy"
+    .parameter "orgUidRules"
+
+    .prologue
+    move v0, p2
+
+    .local v0, uidRules:I
+    and-int/lit8 v1, p1, 0x2
+
+    if-eqz v1, :cond_0
+
+    const/4 v0, 0x1
+
+    :cond_0
+    return v0
+.end method
+
 .method private isTemplateRelevant(Landroid/net/NetworkTemplate;)Z
     .locals 2
     .parameter "template"
@@ -6095,23 +6114,4 @@
 
     .line 1139
     return-void
-.end method
-
-.method private getUidRulesBaidu(II)I
-    .locals 2
-    .parameter "uidPolicy"
-    .parameter "orgUidRules"
-
-    .prologue
-    move v0, p2
-
-    .local v0, uidRules:I
-    and-int/lit8 v1, p1, 0x2
-
-    if-eqz v1, :cond_0
-
-    const/4 v0, 0x1
-
-    :cond_0
-    return v0
 .end method

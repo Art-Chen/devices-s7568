@@ -33,7 +33,7 @@
 
     .prologue
     .line 876
-    const-string v0, "internal"
+    const-string/jumbo v0, "internal"
 
     invoke-static {v0}, Landroid/provider/MediaStore$Images$Media;->getContentUri(Ljava/lang/String;)Landroid/net/Uri;
 
@@ -142,7 +142,7 @@
     invoke-virtual {v15, v2, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
     .line 782
-    const-string v2, "image_id"
+    const-string/jumbo v2, "image_id"
 
     move-wide/from16 v0, p2
 
@@ -155,7 +155,7 @@
     invoke-virtual {v15, v2, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
     .line 783
-    const-string v2, "height"
+    const-string/jumbo v2, "height"
 
     invoke-virtual {v12}, Landroid/graphics/Bitmap;->getHeight()I
 
@@ -336,7 +336,7 @@
     .line 818
     const-string/jumbo v0, "mime_type"
 
-    const-string v4, "image/jpeg"
+    const-string/jumbo v4, "image/jpeg"
 
     invoke-virtual {v11, v0, v4}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 

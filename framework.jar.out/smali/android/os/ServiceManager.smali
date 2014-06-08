@@ -51,7 +51,7 @@
 
     .prologue
     .line 156
-    const-string v2, "gsm.gsm.dataservice"
+    const-string/jumbo v2, "gsm.gsm.dataservice"
 
     invoke-static {v2}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 

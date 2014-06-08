@@ -252,7 +252,7 @@
     if-nez v8, :cond_1
 
     .line 121
-    const v8, #string@search_baidu_web#t
+    const v8, 0x104072e
 
     const/4 v9, 0x1
 
@@ -270,7 +270,7 @@
 
     .line 123
     .local v6, url:Ljava/lang/String;
-    const v8, #string@search_baidu_web#t
+    const v8, 0x104072e
 
     const/4 v9, 0x1
 

@@ -996,7 +996,7 @@
     .line 640
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
-    const-string v1, "invoking app search on a different package not associated with this search manager"
+    const-string/jumbo v1, "invoking app search on a different package not associated with this search manager"
 
     invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 

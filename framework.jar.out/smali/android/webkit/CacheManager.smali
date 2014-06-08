@@ -1059,7 +1059,7 @@
     if-eqz v4, :cond_8
 
     .line 434
-    const-string v4, "if-none-match"
+    const-string/jumbo v4, "if-none-match"
 
     iget-object v5, v2, Landroid/webkit/CacheManager$CacheResult;->etag:Ljava/lang/String;
 
@@ -1072,7 +1072,7 @@
     if-eqz v4, :cond_0
 
     .line 437
-    const-string v4, "if-modified-since"
+    const-string/jumbo v4, "if-modified-since"
 
     iget-object v5, v2, Landroid/webkit/CacheManager$CacheResult;->lastModified:Ljava/lang/String;
 
@@ -1595,7 +1595,7 @@
 
     invoke-direct/range {v19 .. v19}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v20, "illegal expires: "
+    const-string/jumbo v20, "illegal expires: "
 
     invoke-virtual/range {v19 .. v20}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2021,7 +2021,7 @@
 
     invoke-direct/range {v19 .. v19}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v20, "illegal lastModified: "
+    const-string/jumbo v20, "illegal lastModified: "
 
     invoke-virtual/range {v19 .. v20}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

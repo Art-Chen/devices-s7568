@@ -344,7 +344,7 @@
     .line 843
     .restart local v10       #scheme:Ljava/lang/String;
     :cond_2
-    const-string v0, "http"
+    const-string/jumbo v0, "http"
 
     invoke-virtual {v10, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1473,7 +1473,7 @@
 
     move-result-object v1
 
-    const-string v2, "is not valid"
+    const-string/jumbo v2, "is not valid"
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

@@ -133,7 +133,7 @@
 
     .line 261
     .local v6, width:I
-    const-string v7, "height"
+    const-string/jumbo v7, "height"
 
     const/4 v9, 0x0
 

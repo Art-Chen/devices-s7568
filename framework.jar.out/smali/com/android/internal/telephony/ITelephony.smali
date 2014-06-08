@@ -223,6 +223,14 @@
     .end annotation
 .end method
 
+.method public abstract getIccPinPukRetryTimes()I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
 .method public abstract getLastError()I
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -240,14 +248,6 @@
 .end method
 
 .method public abstract getLgtOzStartPage()Ljava/lang/String;
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
-.end method
-
-.method public abstract getIccPinPukRetryTimes()I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -289,7 +289,7 @@
     .end annotation
 .end method
 
-.method public abstract setScAddress(Ljava/lang/String;)V
+.method public abstract getPhoneServiceState()I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -297,7 +297,7 @@
     .end annotation
 .end method
 
-.method public abstract getPhoneServiceState()I
+.method public abstract getScAddress()Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -465,6 +465,14 @@
     .end annotation
 .end method
 
+.method public abstract setScAddress(Ljava/lang/String;)V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
 .method public abstract showCallScreen()Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -530,14 +538,6 @@
 .end method
 
 .method public abstract updateServiceLocation()V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
-.end method
-
-.method public abstract getScAddress()Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

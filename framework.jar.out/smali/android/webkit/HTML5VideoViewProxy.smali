@@ -542,7 +542,7 @@
 
     invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v8, "handleMessage : PLAY - videoLayerID = "
+    const-string/jumbo v8, "handleMessage : PLAY - videoLayerID = "
 
     invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -572,7 +572,7 @@
     :cond_2
     const-string v6, "HTML5VideoViewProxy"
 
-    const-string v7, "handleMessage : PLAY - client == null"
+    const-string/jumbo v7, "handleMessage : PLAY - client == null"
 
     invoke-static {v6, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -586,7 +586,7 @@
     :sswitch_1
     const-string v6, "HTML5VideoViewProxy"
 
-    const-string v7, "handleMessage : SEEK"
+    const-string/jumbo v7, "handleMessage : SEEK"
 
     invoke-static {v6, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -621,7 +621,7 @@
     .line 407
     const-string v6, "HTML5VideoViewProxy"
 
-    const-string v7, "handleMessage : PAUSE"
+    const-string/jumbo v7, "handleMessage : PAUSE"
 
     invoke-static {v6, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -661,7 +661,7 @@
     .line 422
     const-string v6, "HTML5VideoViewProxy"
 
-    const-string v7, "handleMessage : ENDED"
+    const-string/jumbo v7, "handleMessage : ENDED"
 
     invoke-static {v6, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -686,7 +686,7 @@
     :cond_4
     const-string v6, "HTML5VideoViewProxy"
 
-    const-string v7, "handleMessage : ERROR"
+    const-string/jumbo v7, "handleMessage : ERROR"
 
     invoke-static {v6, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -736,7 +736,7 @@
     .line 447
     const-string v6, "HTML5VideoViewProxy"
 
-    const-string v7, "handleMessage : BUFFERING_START"
+    const-string/jumbo v7, "handleMessage : BUFFERING_START"
 
     invoke-static {v6, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -750,7 +750,7 @@
     .line 452
     const-string v6, "HTML5VideoViewProxy"
 
-    const-string v7, "handleMessage : BUFFERING_END"
+    const-string/jumbo v7, "handleMessage : BUFFERING_END"
 
     invoke-static {v6, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -1051,7 +1051,7 @@
     invoke-interface {v0, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 318
-    const-string v2, "height"
+    const-string/jumbo v2, "height"
 
     new-instance v3, Ljava/lang/Integer;
 

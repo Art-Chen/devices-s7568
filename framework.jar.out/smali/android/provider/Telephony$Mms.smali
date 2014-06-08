@@ -188,7 +188,7 @@
 
     .line 1899
     :pswitch_1
-    const-string v0, "inbox"
+    const-string/jumbo v0, "inbox"
 
     goto :goto_0
 
@@ -211,6 +211,8 @@
     goto :goto_0
 
     .line 1895
+    nop
+
     nop
 
     :pswitch_data_0

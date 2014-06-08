@@ -254,11 +254,3 @@
         }
     .end annotation
 .end method
-
-.method public abstract shutdown(ZZ)V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
-.end method

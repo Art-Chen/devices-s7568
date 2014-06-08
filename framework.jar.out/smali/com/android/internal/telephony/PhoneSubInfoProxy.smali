@@ -20,7 +20,7 @@
     iput-object p1, p0, Lcom/android/internal/telephony/PhoneSubInfoProxy;->mPhoneSubInfo:Lcom/android/internal/telephony/PhoneSubInfo;
 
     .line 32
-    const-string v0, "iphonesubinfo"
+    const-string/jumbo v0, "iphonesubinfo"
 
     invoke-static {v0}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
 
@@ -29,7 +29,7 @@
     if-nez v0, :cond_0
 
     .line 33
-    const-string v0, "iphonesubinfo"
+    const-string/jumbo v0, "iphonesubinfo"
 
     invoke-static {v0, p0}, Landroid/os/ServiceManager;->addService(Ljava/lang/String;Landroid/os/IBinder;)V
 

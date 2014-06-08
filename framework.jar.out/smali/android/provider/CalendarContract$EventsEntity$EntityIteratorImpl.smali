@@ -309,14 +309,14 @@
     invoke-static {v0, v8, v1}, Landroid/database/DatabaseUtils;->cursorIntToContentValuesIfPresent(Landroid/database/Cursor;Landroid/content/ContentValues;Ljava/lang/String;)V
 
     .line 1262
-    const-string v1, "hasAlarm"
+    const-string/jumbo v1, "hasAlarm"
 
     move-object/from16 v0, p1
 
     invoke-static {v0, v8, v1}, Landroid/database/DatabaseUtils;->cursorStringToContentValuesIfPresent(Landroid/database/Cursor;Landroid/content/ContentValues;Ljava/lang/String;)V
 
     .line 1263
-    const-string v1, "hasExtendedProperties"
+    const-string/jumbo v1, "hasExtendedProperties"
 
     move-object/from16 v0, p1
 
@@ -386,28 +386,28 @@
     invoke-static {v0, v8, v1}, Landroid/database/DatabaseUtils;->cursorLongToContentValuesIfPresent(Landroid/database/Cursor;Landroid/content/ContentValues;Ljava/lang/String;)V
 
     .line 1275
-    const-string v1, "hasAttendeeData"
+    const-string/jumbo v1, "hasAttendeeData"
 
     move-object/from16 v0, p1
 
     invoke-static {v0, v8, v1}, Landroid/database/DatabaseUtils;->cursorIntToContentValuesIfPresent(Landroid/database/Cursor;Landroid/content/ContentValues;Ljava/lang/String;)V
 
     .line 1276
-    const-string v1, "guestsCanInviteOthers"
+    const-string/jumbo v1, "guestsCanInviteOthers"
 
     move-object/from16 v0, p1
 
     invoke-static {v0, v8, v1}, Landroid/database/DatabaseUtils;->cursorIntToContentValuesIfPresent(Landroid/database/Cursor;Landroid/content/ContentValues;Ljava/lang/String;)V
 
     .line 1278
-    const-string v1, "guestsCanModify"
+    const-string/jumbo v1, "guestsCanModify"
 
     move-object/from16 v0, p1
 
     invoke-static {v0, v8, v1}, Landroid/database/DatabaseUtils;->cursorIntToContentValuesIfPresent(Landroid/database/Cursor;Landroid/content/ContentValues;Ljava/lang/String;)V
 
     .line 1279
-    const-string v1, "guestsCanSeeGuests"
+    const-string/jumbo v1, "guestsCanSeeGuests"
 
     move-object/from16 v0, p1
 

@@ -64,7 +64,6 @@
     .local v3, isPending:Ljava/lang/Boolean;
     iget-object v5, p0, Lcom/android/server/MountService$4;->this$0:Lcom/android/server/MountService;
 
-    #getter for: Lcom/android/server/MountService;->mVolumePendingStates:Ljava/util/LinkedHashMap;
     invoke-static {v5}, Lcom/android/server/MountService;->access$2100(Lcom/android/server/MountService;)Ljava/util/LinkedHashMap;
 
     move-result-object v6
@@ -77,7 +76,6 @@
     :try_start_1
     iget-object v5, p0, Lcom/android/server/MountService$4;->this$0:Lcom/android/server/MountService;
 
-    #getter for: Lcom/android/server/MountService;->mVolumePendingStates:Ljava/util/LinkedHashMap;
     invoke-static {v5}, Lcom/android/server/MountService;->access$2100(Lcom/android/server/MountService;)Ljava/util/LinkedHashMap;
 
     move-result-object v5

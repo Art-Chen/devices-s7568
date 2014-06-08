@@ -485,7 +485,7 @@
     .restart local v16       #stream:Ljava/io/InputStream;
     :cond_2
     :try_start_3
-    const-string v19, "image/"
+    const-string/jumbo v19, "image/"
 
     move-object/from16 v0, v19
 

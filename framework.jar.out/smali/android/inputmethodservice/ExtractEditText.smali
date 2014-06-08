@@ -140,8 +140,6 @@
 
     .prologue
     .line 206
-    invoke-super {p0}, Landroid/widget/EditText;->hideControllers()V
-
     .line 207
     return-void
 .end method

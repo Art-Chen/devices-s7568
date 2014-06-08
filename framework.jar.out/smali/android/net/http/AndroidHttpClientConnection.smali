@@ -265,7 +265,7 @@
     iput-object v2, p0, Landroid/net/http/AndroidHttpClientConnection;->outbuffer:Lorg/apache/http/io/SessionOutputBuffer;
 
     .line 117
-    const-string v2, "http.connection.max-header-count"
+    const-string/jumbo v2, "http.connection.max-header-count"
 
     invoke-interface {p2, v2, v4}, Lorg/apache/http/params/HttpParams;->getIntParameter(Ljava/lang/String;I)I
 
@@ -274,7 +274,7 @@
     iput v2, p0, Landroid/net/http/AndroidHttpClientConnection;->maxHeaderCount:I
 
     .line 119
-    const-string v2, "http.connection.max-line-length"
+    const-string/jumbo v2, "http.connection.max-line-length"
 
     invoke-interface {p2, v2, v4}, Lorg/apache/http/params/HttpParams;->getIntParameter(Ljava/lang/String;I)I
 

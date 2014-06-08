@@ -362,7 +362,7 @@
     .line 131
     const/4 v0, 0x0
 
-    const-string v1, "id"
+    const-string/jumbo v1, "id"
 
     invoke-virtual {p0, v0, v1}, Landroid/util/XmlPullAttributes;->getAttributeValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
@@ -379,7 +379,7 @@
     .line 139
     const/4 v0, 0x0
 
-    const-string v1, "id"
+    const-string/jumbo v1, "id"
 
     invoke-virtual {p0, v0, v1, p1}, Landroid/util/XmlPullAttributes;->getAttributeResourceValue(Ljava/lang/String;Ljava/lang/String;I)I
 

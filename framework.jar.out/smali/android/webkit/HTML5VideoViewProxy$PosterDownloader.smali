@@ -496,7 +496,7 @@
 
     .line 513
     .local v7, protocol:Ljava/lang/String;
-    const-string v0, "http"
+    const-string/jumbo v0, "http"
 
     invoke-virtual {v0, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -504,7 +504,7 @@
 
     if-nez v0, :cond_2
 
-    const-string v0, "https"
+    const-string/jumbo v0, "https"
 
     invoke-virtual {v0, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

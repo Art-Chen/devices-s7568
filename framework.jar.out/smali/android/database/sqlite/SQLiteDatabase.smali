@@ -300,7 +300,7 @@
 
     aput-object v3, v0, v1
 
-    const-string v3, "internal.db"
+    const-string/jumbo v3, "internal.db"
 
     aput-object v3, v0, v5
 

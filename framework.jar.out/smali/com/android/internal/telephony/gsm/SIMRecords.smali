@@ -1405,7 +1405,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "isAvailableCFIS is "
+    const-string/jumbo v3, "isAvailableCFIS is "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1619,7 +1619,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "isAvailableCHV1 is "
+    const-string/jumbo v3, "isAvailableCHV1 is "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1910,7 +1910,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "isEnabledPNN is "
+    const-string/jumbo v3, "isEnabledPNN is "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1935,7 +1935,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "isEnabledOPL is "
+    const-string/jumbo v3, "isEnabledOPL is "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2159,7 +2159,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "isAvailableFDN is "
+    const-string/jumbo v3, "isAvailableFDN is "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2373,7 +2373,7 @@
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v4, "isAvailableMBDN is "
+    const-string/jumbo v4, "isAvailableMBDN is "
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2691,7 +2691,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "isAvailableMSISDN is "
+    const-string/jumbo v3, "isAvailableMSISDN is "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2909,7 +2909,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "isAvailableMWIS is "
+    const-string/jumbo v3, "isAvailableMWIS is "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -3121,7 +3121,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "isAvailableSMSP is "
+    const-string/jumbo v3, "isAvailableSMSP is "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -3333,7 +3333,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "isAvailableSMS is "
+    const-string/jumbo v3, "isAvailableSMS is "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -3545,7 +3545,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "isAvailableSPN is "
+    const-string/jumbo v3, "isAvailableSPN is "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -4228,7 +4228,7 @@
     :cond_1
     iget-object v1, p0, Lcom/android/internal/telephony/gsm/SIMRecords;->phone:Lcom/android/internal/telephony/PhoneBase;
 
-    const-string v2, "gsm.sim.operator.alpha"
+    const-string/jumbo v2, "gsm.sim.operator.alpha"
 
     iget-object v3, p0, Lcom/android/internal/telephony/gsm/SIMRecords;->spn:Ljava/lang/String;
 
@@ -4336,7 +4336,7 @@
     :cond_3
     iget-object v1, p0, Lcom/android/internal/telephony/gsm/SIMRecords;->phone:Lcom/android/internal/telephony/PhoneBase;
 
-    const-string v2, "gsm.sim.operator.alpha"
+    const-string/jumbo v2, "gsm.sim.operator.alpha"
 
     iget-object v3, p0, Lcom/android/internal/telephony/gsm/SIMRecords;->spn_cphs:Ljava/lang/String;
 
@@ -4444,7 +4444,7 @@
     :cond_5
     iget-object v1, p0, Lcom/android/internal/telephony/gsm/SIMRecords;->phone:Lcom/android/internal/telephony/PhoneBase;
 
-    const-string v2, "gsm.sim.operator.alpha"
+    const-string/jumbo v2, "gsm.sim.operator.alpha"
 
     iget-object v3, p0, Lcom/android/internal/telephony/gsm/SIMRecords;->spn_cphs:Ljava/lang/String;
 
@@ -4476,6 +4476,8 @@
     goto :goto_2
 
     .line 3345
+    nop
+
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0
@@ -5851,7 +5853,7 @@
 
     if-eqz v1, :cond_1
 
-    const-string v1, "handleSimRefresh without input"
+    const-string/jumbo v1, "handleSimRefresh without input"
 
     invoke-virtual {p0, v1}, Lcom/android/internal/telephony/gsm/SIMRecords;->log(Ljava/lang/String;)V
 
@@ -5874,7 +5876,7 @@
 
     if-eqz v1, :cond_1
 
-    const-string v1, "handleSimRefresh with unknown operation"
+    const-string/jumbo v1, "handleSimRefresh with unknown operation"
 
     invoke-virtual {p0, v1}, Lcom/android/internal/telephony/gsm/SIMRecords;->log(Ljava/lang/String;)V
 
@@ -5886,7 +5888,7 @@
 
     if-eqz v1, :cond_3
 
-    const-string v1, "handleSimRefresh with SIM_REFRESH_FILE_UPDATED"
+    const-string/jumbo v1, "handleSimRefresh with SIM_REFRESH_FILE_UPDATED"
 
     invoke-virtual {p0, v1}, Lcom/android/internal/telephony/gsm/SIMRecords;->log(Ljava/lang/String;)V
 
@@ -5907,7 +5909,7 @@
 
     if-eqz v1, :cond_4
 
-    const-string v1, "handleSimRefresh with SIM_REFRESH_INIT"
+    const-string/jumbo v1, "handleSimRefresh with SIM_REFRESH_INIT"
 
     invoke-virtual {p0, v1}, Lcom/android/internal/telephony/gsm/SIMRecords;->log(Ljava/lang/String;)V
 
@@ -5928,7 +5930,7 @@
 
     if-eqz v1, :cond_5
 
-    const-string v1, "handleSimRefresh with SIM_REFRESH_RESET"
+    const-string/jumbo v1, "handleSimRefresh with SIM_REFRESH_RESET"
 
     invoke-virtual {p0, v1}, Lcom/android/internal/telephony/gsm/SIMRecords;->log(Ljava/lang/String;)V
 
@@ -5946,7 +5948,7 @@
 
     if-eqz v1, :cond_6
 
-    const-string v1, "handleSimRefresh with SIM_REFRESH_RESET_FOR_SAP"
+    const-string/jumbo v1, "handleSimRefresh with SIM_REFRESH_RESET_FOR_SAP"
 
     invoke-virtual {p0, v1}, Lcom/android/internal/telephony/gsm/SIMRecords;->log(Ljava/lang/String;)V
 
@@ -8362,7 +8364,7 @@
     const/4 v4, 0x3
 
     .line 2932
-    const-string v1, "gsm.sim.operator.numeric"
+    const-string/jumbo v1, "gsm.sim.operator.numeric"
 
     invoke-static {v1}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -8503,7 +8505,7 @@
 
     .prologue
     .line 2948
-    const-string v1, "gsm.sim.operator.numeric"
+    const-string/jumbo v1, "gsm.sim.operator.numeric"
 
     invoke-static {v1}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -8571,7 +8573,7 @@
     const/4 v5, 0x1
 
     .line 3472
-    const-string v3, "gsm.sim.state"
+    const-string/jumbo v3, "gsm.sim.state"
 
     invoke-static {v3}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -8579,7 +8581,7 @@
 
     .line 3473
     .local v2, simState:Ljava/lang/String;
-    const-string v3, "gsm.sim.operator.numeric"
+    const-string/jumbo v3, "gsm.sim.operator.numeric"
 
     invoke-static {v3}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -8677,7 +8679,7 @@
     if-ne v3, v5, :cond_2
 
     .line 3481
-    const-string v3, "isAvailableO2PERSO is true"
+    const-string/jumbo v3, "isAvailableO2PERSO is true"
 
     invoke-virtual {p0, v3}, Lcom/android/internal/telephony/gsm/SIMRecords;->log(Ljava/lang/String;)V
 
@@ -8741,7 +8743,7 @@
 
     .line 3490
     :cond_2
-    const-string v3, "isAvailableO2PERSO is false. Check FDN"
+    const-string/jumbo v3, "isAvailableO2PERSO is false. Check FDN"
 
     invoke-virtual {p0, v3}, Lcom/android/internal/telephony/gsm/SIMRecords;->log(Ljava/lang/String;)V
 
@@ -10102,7 +10104,7 @@
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v5, "invalid IMSI "
+    const-string/jumbo v5, "invalid IMSI "
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -11540,7 +11542,7 @@
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v5, "iccid: "
+    const-string/jumbo v5, "iccid: "
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -13679,7 +13681,7 @@
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v5, "iccType ="
+    const-string/jumbo v5, "iccType ="
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -13892,7 +13894,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v4, "iCPHS: "
+    const-string/jumbo v4, "iCPHS: "
 
     invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -15651,7 +15653,7 @@
 
     iget-object v2, v0, Lcom/android/internal/telephony/gsm/SIMRecords;->phone:Lcom/android/internal/telephony/PhoneBase;
 
-    const-string v4, "gsm.sim.roaming"
+    const-string/jumbo v4, "gsm.sim.roaming"
 
     move-object/from16 v0, v30
 
@@ -15942,6 +15944,8 @@
     goto/16 :goto_10
 
     .line 1458
+    nop
+
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_2
@@ -16008,7 +16012,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "isAvailableMBDN: "
+    const-string/jumbo v2, "isAvailableMBDN: "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -16163,7 +16167,7 @@
     .local v1, operator:Ljava/lang/String;
     iget-object v3, p0, Lcom/android/internal/telephony/gsm/SIMRecords;->phone:Lcom/android/internal/telephony/PhoneBase;
 
-    const-string v4, "gsm.sim.operator.numeric"
+    const-string/jumbo v4, "gsm.sim.operator.numeric"
 
     invoke-virtual {v3, v4, v1}, Lcom/android/internal/telephony/PhoneBase;->setSystemProperty(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -16175,7 +16179,7 @@
     .line 2808
     iget-object v3, p0, Lcom/android/internal/telephony/gsm/SIMRecords;->phone:Lcom/android/internal/telephony/PhoneBase;
 
-    const-string v4, "gsm.sim.operator.iso-country"
+    const-string/jumbo v4, "gsm.sim.operator.iso-country"
 
     iget-object v5, p0, Lcom/android/internal/telephony/gsm/SIMRecords;->imsi:Ljava/lang/String;
 
@@ -16369,21 +16373,21 @@
     .line 493
     iget-object v0, p0, Lcom/android/internal/telephony/gsm/SIMRecords;->phone:Lcom/android/internal/telephony/PhoneBase;
 
-    const-string v1, "gsm.sim.operator.numeric"
+    const-string/jumbo v1, "gsm.sim.operator.numeric"
 
     invoke-virtual {v0, v1, v2}, Lcom/android/internal/telephony/PhoneBase;->setSystemProperty(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 494
     iget-object v0, p0, Lcom/android/internal/telephony/gsm/SIMRecords;->phone:Lcom/android/internal/telephony/PhoneBase;
 
-    const-string v1, "gsm.sim.operator.alpha"
+    const-string/jumbo v1, "gsm.sim.operator.alpha"
 
     invoke-virtual {v0, v1, v2}, Lcom/android/internal/telephony/PhoneBase;->setSystemProperty(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 495
     iget-object v0, p0, Lcom/android/internal/telephony/gsm/SIMRecords;->phone:Lcom/android/internal/telephony/PhoneBase;
 
-    const-string v1, "gsm.sim.operator.iso-country"
+    const-string/jumbo v1, "gsm.sim.operator.iso-country"
 
     invoke-virtual {v0, v1, v2}, Lcom/android/internal/telephony/PhoneBase;->setSystemProperty(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -17539,7 +17543,7 @@
     iput v9, p0, Lcom/android/internal/telephony/gsm/SIMRecords;->spnDisplayRuleOverride:I
 
     .line 2891
-    const-string v9, "gsm.sim.operator.numeric"
+    const-string/jumbo v9, "gsm.sim.operator.numeric"
 
     invoke-static {v9}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 

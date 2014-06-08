@@ -2665,60 +2665,20 @@
 .end method
 
 .method public performLongClick()Z
-    .locals 3
+    .locals 1
 
     .prologue
+    .line 820
     const/4 v0, 0x1
 
-    .line 942
     iput-boolean v0, p0, Landroid/webkit/WebTextView;->mHasPerformedLongClick:Z
 
-    .line 944
-    iget-object v1, p0, Landroid/webkit/WebTextView;->mWebView:Landroid/webkit/WebView;
-
-    invoke-virtual {v1}, Landroid/webkit/WebView;->getContext()Landroid/content/Context;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
-
-    move-result-object v1
-
-    const-string v2, "com.sec.pcw"
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    .line 955
-    :goto_0
-    return v0
-
-    .line 948
-    :cond_0
-    invoke-virtual {p0}, Landroid/webkit/WebTextView;->isTouchNotInitialized()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    .line 949
-    iget-object v1, p0, Landroid/webkit/WebTextView;->mWebView:Landroid/webkit/WebView;
-
-    invoke-virtual {v1}, Landroid/webkit/WebView;->initializeFakeTouch()V
-
-    .line 953
-    :cond_1
-    iput-boolean v0, p0, Landroid/webkit/WebTextView;->mKeepSelectionOnce:Z
-
-    .line 955
+    .line 821
     invoke-super {p0}, Landroid/widget/AutoCompleteTextView;->performLongClick()Z
 
     move-result v0
 
-    goto :goto_0
+    return v0
 .end method
 
 .method remove()V

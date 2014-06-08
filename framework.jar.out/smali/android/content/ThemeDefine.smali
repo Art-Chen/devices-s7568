@@ -276,7 +276,7 @@
 
     const-string v1, "/ic_launcher_shortcut_contact.png"
 
-    const-string v2, "ic_launcher_shortcut_contact"
+    const-string/jumbo v2, "ic_launcher_shortcut_contact"
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -285,7 +285,7 @@
 
     const-string v1, "/ic_launcher_shortcut_directdial.png"
 
-    const-string v2, "ic_launcher_shortcut_directdial"
+    const-string/jumbo v2, "ic_launcher_shortcut_directdial"
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -294,7 +294,7 @@
 
     const-string v1, "/ic_launcher_shortcut_directmessage.png"
 
-    const-string v2, "ic_launcher_shortcut_directmessage"
+    const-string/jumbo v2, "ic_launcher_shortcut_directmessage"
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -323,7 +323,7 @@
 
     const-string v1, "com.baidu.BaiduMap"
 
-    const v2, #drawable@ic_launcher_baidumap#t
+    const v2, 0x1080a98
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -336,7 +336,7 @@
 
     const-string v1, "com.baidu.netdisk"
 
-    const v2, #drawable@ic_launcher_baidunetdisk#t
+    const v2, 0x1080a9a
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -349,7 +349,7 @@
 
     const-string v1, "com.baidu.searchbox"
 
-    const v2, #drawable@ic_launcher_baidusearch#t
+    const v2, 0x1080a9c
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -362,7 +362,7 @@
 
     const-string v1, "com.baidu.browser.apps"
 
-    const v2, #drawable@ic_launcher_baidubrowser#t
+    const v2, 0x1080a96
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -375,7 +375,7 @@
 
     const-string v1, "com.baidu.appsearch"
 
-    const v2, #drawable@ic_launcher_baidumarket#t
+    const v2, 0x1080a99
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -388,7 +388,7 @@
 
     const-string v1, "com.baidu.voiceassistant"
 
-    const v2, #drawable@ic_launcher_baiduvoiceassistant#t
+    const v2, 0x1080a9d
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -401,7 +401,7 @@
 
     const-string v1, "com.duoku.coolreader"
 
-    const v2, #drawable@ic_launcher_baidureader#t
+    const v2, 0x1080a9b
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -414,7 +414,7 @@
 
     const-string v1, "com.qihoo360.launcher"
 
-    const v2, #drawable@ic_launcher_360launcher#t
+    const v2, 0x1080a94
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -427,7 +427,7 @@
 
     const-string v1, "com.qihoo360.mobilesafe_mtk6573"
 
-    const v2, #drawable@ic_launcher_360#t
+    const v2, 0x1080a93
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -440,7 +440,7 @@
 
     const-string v1, "com.alibaba.mobileim"
 
-    const v2, #drawable@ic_launcher_aliwangwang#t
+    const v2, 0x1080a95
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -453,7 +453,7 @@
 
     const-string v1, "com.huluxia.gametools"
 
-    const v2, #drawable@ic_launcher_huluxia_gametools#t
+    const v2, 0x1080a9f
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -466,7 +466,7 @@
 
     const-string v1, "com.chaozh.iReaderFree"
 
-    const v2, #drawable@ic_launcher_ireader#t
+    const v2, 0x1080aa0
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -479,7 +479,7 @@
 
     const-string v1, "com.kugou.android"
 
-    const v2, #drawable@ic_launcher_kugou_music#t
+    const v2, 0x1080aa2
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -492,7 +492,7 @@
 
     const-string v1, "cn.kuwo.player"
 
-    const v2, #drawable@ic_launcher_kuwo_player#t
+    const v2, 0x1080aa3
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -505,7 +505,7 @@
 
     const-string v1, "com.moji.mjweather"
 
-    const v2, #drawable@ic_launcher_moji_weather#t
+    const v2, 0x1080aa4
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -518,7 +518,7 @@
 
     const-string v1, "com.immomo.momo"
 
-    const v2, #drawable@ic_launcher_momo#t
+    const v2, 0x1080aa5
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -531,7 +531,7 @@
 
     const-string v1, "com.pplive.androidphone"
 
-    const v2, #drawable@ic_launcher_pplive#t
+    const v2, 0x1080aa6
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -544,7 +544,7 @@
 
     const-string v1, "com.tencent.qqmusic"
 
-    const v2, #drawable@ic_launcher_qqmusic#t
+    const v2, 0x1080aa8
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -557,7 +557,7 @@
 
     const-string v1, "com.tencent.mobileqq"
 
-    const v2, #drawable@ic_launcher_qq#t
+    const v2, 0x1080aa7
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -570,7 +570,7 @@
 
     const-string v1, "com.qvod.player"
 
-    const v2, #drawable@ic_launcher_qvodplayer#t
+    const v2, 0x1080aa9
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -583,7 +583,7 @@
 
     const-string v1, "com.qzone"
 
-    const v2, #drawable@ic_launcher_qzone#t
+    const v2, 0x1080aaa
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -596,7 +596,7 @@
 
     const-string v1, "com.renren.mobile.android"
 
-    const v2, #drawable@ic_launcher_renren#t
+    const v2, 0x1080aab
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -609,7 +609,7 @@
 
     const-string v1, "com.shuqi.controller"
 
-    const v2, #drawable@ic_launcher_shuqi#t
+    const v2, 0x1080aad
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -622,7 +622,7 @@
 
     const-string v1, "com.mediatek.StkSelection"
 
-    const v2, #drawable@ic_launcher_sim#t
+    const v2, 0x1080aae
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -635,7 +635,7 @@
 
     const-string v1, "com.sohu.inputmethod.sogou"
 
-    const v2, #drawable@ic_launcher_sogou_input#t
+    const v2, 0x1080aaf
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -648,7 +648,7 @@
 
     const-string v1, "com.taobao.taobao"
 
-    const v2, #drawable@ic_launcher_taobao#t
+    const v2, 0x1080ab0
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -661,7 +661,7 @@
 
     const-string v1, "com.tencent.news"
 
-    const v2, #drawable@ic_launcher_tencent_news#t
+    const v2, 0x1080ab1
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -674,7 +674,7 @@
 
     const-string v1, "com.tencent.qqlive"
 
-    const v2, #drawable@ic_launcher_tencent_qqlive#t
+    const v2, 0x1080ab2
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -687,7 +687,7 @@
 
     const-string v1, "com.UCMobile"
 
-    const v2, #drawable@ic_launcher_ucmobile#t
+    const v2, 0x1080ab3
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -700,7 +700,7 @@
 
     const-string v1, "com.wandoujia.phoenix2"
 
-    const v2, #drawable@ic_launcher_wandoujia#t
+    const v2, 0x1080ab4
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -713,7 +713,7 @@
 
     const-string v1, "com.tencent.mm"
 
-    const v2, #drawable@ic_launcher_wechat#t
+    const v2, 0x1080ab5
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -726,7 +726,7 @@
 
     const-string v1, "com.sina.weibo"
 
-    const v2, #drawable@ic_launcher_weibo#t
+    const v2, 0x1080ab6
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -739,7 +739,7 @@
 
     const-string v1, "com.snda.wifilocating"
 
-    const v2, #drawable@ic_launcher_wifiwnys#t
+    const v2, 0x1080ab7
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -750,9 +750,9 @@
     .line 170
     sget-object v0, Landroid/content/ThemeDefine;->iconReplaceMap:Ljava/util/HashMap;
 
-    const-string v1, "im.yixin"
+    const-string/jumbo v1, "im.yixin"
 
-    const v2, #drawable@ic_launcher_yixin#t
+    const v2, 0x1080ab8
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -765,7 +765,7 @@
 
     const-string v1, "com.youdao.dict"
 
-    const v2, #drawable@ic_launcher_youdao#t
+    const v2, 0x1080ab9
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -778,7 +778,7 @@
 
     const-string v1, "com.youku.phone"
 
-    const v2, #drawable@ic_launcher_youku#t
+    const v2, 0x1080aba
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -791,7 +791,7 @@
 
     const-string v1, "com.eg.android.AlipayGphone"
 
-    const v2, #drawable@ic_launcher_zhifubao#t
+    const v2, 0x1080abb
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -804,7 +804,7 @@
 
     const-string v1, "com.baidu.security"
 
-    const v2, #drawable@ic_launcher_security#t
+    const v2, 0x1080aac
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -817,7 +817,7 @@
 
     const-string v1, "com.dolby.ds1appUI"
 
-    const v2, #drawable@ic_launcher_dolby#t
+    const v2, 0x1080a9e
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -830,7 +830,7 @@
 
     const-string v1, "com.qiyi.video"
 
-    const v2, #drawable@ic_launcher_iyqiyi#t
+    const v2, 0x1080aa1
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -843,7 +843,7 @@
 
     const-string v1, "com.baiyi_mobile.gamecenter"
 
-    const v2, #drawable@ic_launcher_baidugamecenter#t
+    const v2, 0x1080a97
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -871,7 +871,7 @@
 
     const-string v1, "com.baidu.browser.apps"
 
-    const v2, #string@replace_browser_value#t
+    const v2, 0x10407a2
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -884,7 +884,7 @@
 
     const-string v1, "com.baidu.appsearch"
 
-    const v2, #string@replace_market_value#t
+    const v2, 0x10407a3
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -897,7 +897,7 @@
 
     const-string v1, "com.duoku.coolreader"
 
-    const v2, #string@replace_reader_value#t
+    const v2, 0x10407a4
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 

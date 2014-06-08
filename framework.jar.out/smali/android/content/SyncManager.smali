@@ -3055,11 +3055,13 @@
 
     .line 1185
     :pswitch_7
-    const-string v0, "internal error"
+    const-string/jumbo v0, "internal error"
 
     goto :goto_0
 
     .line 1162
+    nop
+
     nop
 
     :pswitch_data_0
@@ -3336,6 +3338,39 @@
 
     if-eqz v3, :cond_0
 
+    .line 409
+    const-string v3, "SyncManager"
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v5, "initializeSyncAdapter: "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    const-string v5, ", authority "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v3, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
+
     .line 411
     :cond_0
     iget-object v3, p1, Landroid/accounts/Account;->type:Ljava/lang/String;
@@ -3438,7 +3473,7 @@
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v5, "initializeSyncAdapter: failed to bind to "
+    const-string/jumbo v5, "initializeSyncAdapter: failed to bind to "
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -4247,7 +4282,7 @@
     invoke-virtual {v0, v1}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 1051
-    const-string v25, "in progress"
+    const-string/jumbo v25, "in progress"
 
     move-object/from16 v0, p1
 
@@ -5805,7 +5840,7 @@
     .local v14, operation:Landroid/content/SyncOperation;
     iget-object v1, v14, Landroid/content/SyncOperation;->extras:Landroid/os/Bundle;
 
-    const-string v2, "ignore_backoff"
+    const-string/jumbo v2, "ignore_backoff"
 
     const/4 v3, 0x0
 
@@ -5818,7 +5853,7 @@
     .line 845
     iget-object v1, v14, Landroid/content/SyncOperation;->extras:Landroid/os/Bundle;
 
-    const-string v2, "ignore_backoff"
+    const-string/jumbo v2, "ignore_backoff"
 
     invoke-virtual {v1, v2}, Landroid/os/Bundle;->remove(Ljava/lang/String;)V
 
@@ -5839,7 +5874,23 @@
     .line 855
     const-string v1, "SyncManager"
 
-    const-string/jumbo v2, "not retrying sync operation because SYNC_EXTRAS_DO_NOT_RETRY was specified "
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v3, "not retrying sync operation because SYNC_EXTRAS_DO_NOT_RETRY was specified "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -5877,7 +5928,23 @@
     .line 859
     const-string v1, "SyncManager"
 
-    const-string/jumbo v2, "retrying sync operation as a two-way sync because an upload-only sync encountered an error: "
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v3, "retrying sync operation as a two-way sync because an upload-only sync encountered an error: "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -5897,7 +5964,23 @@
     .line 863
     const-string v1, "SyncManager"
 
-    const-string/jumbo v2, "not retrying sync operation because it retried too many times: "
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v3, "not retrying sync operation because it retried too many times: "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -5941,7 +6024,23 @@
     .line 872
     const-string v1, "SyncManager"
 
-    const-string/jumbo v2, "retrying sync operation that failed because there was already a sync in progress: "
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v3, "retrying sync operation that failed because there was already a sync in progress: "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -5973,7 +6072,7 @@
 
     invoke-virtual {p0, v1}, Landroid/content/SyncManager;->scheduleSyncOperation(Landroid/content/SyncOperation;)V
 
-    goto :goto_0
+    goto/16 :goto_0
 
     .line 879
     :cond_8
@@ -5989,7 +6088,23 @@
     .line 881
     const-string v1, "SyncManager"
 
-    const-string/jumbo v2, "retrying sync operation because it encountered a soft error: "
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v3, "retrying sync operation because it encountered a soft error: "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -6003,7 +6118,23 @@
     :cond_a
     const-string v1, "SyncManager"
 
-    const-string/jumbo v2, "not retrying sync operation because the error is a hard error: "
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v3, "not retrying sync operation because the error is a hard error: "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -6287,7 +6418,7 @@
     if-eqz v39, :cond_4
 
     .line 541
-    const-string v2, "ignore_backoff"
+    const-string/jumbo v2, "ignore_backoff"
 
     const/4 v7, 0x1
 
@@ -6296,7 +6427,7 @@
     invoke-virtual {v0, v2, v7}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
     .line 542
-    const-string v2, "ignore_settings"
+    const-string/jumbo v2, "ignore_settings"
 
     const/4 v7, 0x1
 
@@ -6306,7 +6437,7 @@
 
     .line 544
     :cond_4
-    const-string v2, "ignore_settings"
+    const-string/jumbo v2, "ignore_settings"
 
     const/4 v7, 0x0
 
@@ -6672,7 +6803,46 @@
     .line 610
     if-eqz v36, :cond_e
 
-    goto :goto_4
+    .line 612
+    const-string v2, "SyncManager"
+
+    new-instance v7, Ljava/lang/StringBuilder;
+
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v8, "scheduleSync: sync of "
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    const-string v8, ", "
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    const-string v8, " is not allowed, dropping request"
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-static {v2, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto/16 :goto_4
 
     .line 604
     .end local v43           #syncAllowed:Z
@@ -6728,7 +6898,7 @@
 
     .line 622
     .local v6, newExtras:Landroid/os/Bundle;
-    const-string v2, "initialize"
+    const-string/jumbo v2, "initialize"
 
     const/4 v7, 0x1
 

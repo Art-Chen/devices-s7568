@@ -229,7 +229,7 @@
 
     move-result v5
 
-    const-string v6, "hi"
+    const-string/jumbo v6, "hi"
 
     move-object/from16 v2, p1
 
@@ -936,6 +936,8 @@
     goto/16 :goto_0
 
     .line 633
+    nop
+
     nop
 
     :sswitch_data_0

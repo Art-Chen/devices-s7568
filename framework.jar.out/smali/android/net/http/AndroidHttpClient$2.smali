@@ -47,7 +47,7 @@
 
     .line 178
     .local v0, context:Lorg/apache/http/protocol/HttpContext;
-    const-string v1, "http.authscheme-registry"
+    const-string/jumbo v1, "http.authscheme-registry"
 
     invoke-virtual {p0}, Landroid/net/http/AndroidHttpClient$2;->getAuthSchemes()Lorg/apache/http/auth/AuthSchemeRegistry;
 
@@ -56,7 +56,7 @@
     invoke-interface {v0, v1, v2}, Lorg/apache/http/protocol/HttpContext;->setAttribute(Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 181
-    const-string v1, "http.cookiespec-registry"
+    const-string/jumbo v1, "http.cookiespec-registry"
 
     invoke-virtual {p0}, Landroid/net/http/AndroidHttpClient$2;->getCookieSpecs()Lorg/apache/http/cookie/CookieSpecRegistry;
 
@@ -65,7 +65,7 @@
     invoke-interface {v0, v1, v2}, Lorg/apache/http/protocol/HttpContext;->setAttribute(Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 184
-    const-string v1, "http.auth.credentials-provider"
+    const-string/jumbo v1, "http.auth.credentials-provider"
 
     invoke-virtual {p0}, Landroid/net/http/AndroidHttpClient$2;->getCredentialsProvider()Lorg/apache/http/client/CredentialsProvider;
 

@@ -386,7 +386,7 @@
     invoke-virtual {p0, p0, v0, v7}, Lcom/android/internal/telephony/gsm/GSMPhone;->registerForServiceStateChanged(Landroid/os/Handler;ILjava/lang/Object;)V
 
     .line 247
-    const-string v0, "gsm.current.phone-type"
+    const-string/jumbo v0, "gsm.current.phone-type"
 
     new-instance v1, Ljava/lang/Integer;
 
@@ -915,7 +915,7 @@
     .local v3, e:Lcom/android/internal/telephony/CallStateException;
     const-string v7, "GSM"
 
-    const-string v8, "hangup failed"
+    const-string/jumbo v8, "hangup failed"
 
     invoke-static {v7, v8, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
@@ -1702,7 +1702,7 @@
     :cond_0
     const-string v6, "45205"
 
-    const-string v8, "gsm.sim.operator.numeric"
+    const-string/jumbo v8, "gsm.sim.operator.numeric"
 
     invoke-static {v8}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -1844,7 +1844,7 @@
 
     .prologue
     .line 854
-    const-string v1, "gsm.operator.iso-country"
+    const-string/jumbo v1, "gsm.operator.iso-country"
 
     invoke-static {v1}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -4693,7 +4693,7 @@
     invoke-static {v1, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 1772
-    const-string v3, "gsm.version.baseband"
+    const-string/jumbo v3, "gsm.version.baseband"
 
     iget-object v1, v7, Landroid/os/AsyncResult;->result:Ljava/lang/Object;
 
@@ -5370,6 +5370,8 @@
     goto/16 :goto_0
 
     .line 1730
+    nop
+
     nop
 
     :sswitch_data_0

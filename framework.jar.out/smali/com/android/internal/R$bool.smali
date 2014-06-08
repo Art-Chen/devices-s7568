@@ -69,6 +69,8 @@
 
 .field public static final config_closeDialogWhenTouchOutside:I = 0x111000a
 
+.field public static final config_close_button_backlight:I = 0x1110057
+
 .field public static final config_deskDockEnablesAccelerometer:I = 0x1110016
 
 .field public static final config_disableMenuKeyInLockScreen:I = 0x111001b
@@ -88,6 +90,8 @@
 .field public static final config_enable_puk_unlock_screen:I = 0x111001e
 
 .field public static final config_enabledEtiqueePause:I = 0x111003b
+
+.field public static final config_global_action_reboot:I = 0x1110054
 
 .field public static final config_intrusiveNotificationLed:I = 0x111001a
 
@@ -125,6 +129,12 @@
 
 .field public static final config_motion_turn_over:I = 0x1110041
 
+.field public static final config_pbap_support:I = 0x1110053
+
+.field public static final config_poweron_by_twice_press:I = 0x1110056
+
+.field public static final config_quickbootSupport:I = 0x1110055
+
 .field public static final config_reverseDefaultRotation:I = 0x1110015
 
 .field public static final config_sf_limitedAlpha:I = 0x1110006
@@ -156,6 +166,8 @@
 .field public static final config_use_strict_phone_number_comparation:I = 0x1110019
 
 .field public static final config_voice_capable:I = 0x1110029
+
+.field public static final config_wakeup_by_volume_key:I = 0x1110052
 
 .field public static final config_wifi_background_scan_support:I = 0x111000d
 

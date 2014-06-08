@@ -76,7 +76,7 @@
 
     aput-object v1, v0, v2
 
-    const-string v1, "lookup"
+    const-string/jumbo v1, "lookup"
 
     aput-object v1, v0, v3
 
@@ -89,7 +89,7 @@
 
     aput-object v1, v0, v2
 
-    const-string v1, "lookup"
+    const-string/jumbo v1, "lookup"
 
     aput-object v1, v0, v3
 
@@ -110,14 +110,14 @@
 
     :array_0
     .array-data 0x4
-        #drawable@baidu_p001_small#a
-        #drawable@baidu_p002_small#a
-        #drawable@baidu_p003_small#a
-        #drawable@baidu_p004_small#a
-        #drawable@baidu_p005_small#a
-        #drawable@baidu_p006_small#a
-        #drawable@baidu_p007_small#a
-        #drawable@baidu_p008_small#a
+        0x63t 0xat 0x8t 0x1t
+        0x64t 0xat 0x8t 0x1t
+        0x65t 0xat 0x8t 0x1t
+        0x66t 0xat 0x8t 0x1t
+        0x67t 0xat 0x8t 0x1t
+        0x68t 0xat 0x8t 0x1t
+        0x69t 0xat 0x8t 0x1t
+        0x6at 0xat 0x8t 0x1t
     .end array-data
 .end method
 
@@ -855,7 +855,7 @@
 
     move-result-object v0
 
-    const v1, #drawable@ic_contact_picture#t
+    const v1, 0x10802f5
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 

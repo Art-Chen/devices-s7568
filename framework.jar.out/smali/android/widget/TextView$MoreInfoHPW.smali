@@ -118,7 +118,6 @@
 
     iget-object v3, p0, Landroid/widget/TextView$MoreInfoHPW;->mParentTextView:Landroid/widget/TextView;
 
-    #calls: Landroid/widget/TextView;->canMarquee()Z
     invoke-static {v3}, Landroid/widget/TextView;->access$10700(Landroid/widget/TextView;)Z
 
     move-result v3
@@ -156,7 +155,6 @@
     .local v1, lineCount:I
     iget-object v3, p0, Landroid/widget/TextView$MoreInfoHPW;->mParentTextView:Landroid/widget/TextView;
 
-    #getter for: Landroid/widget/TextView;->mMaximum:I
     invoke-static {v3}, Landroid/widget/TextView;->access$10800(Landroid/widget/TextView;)I
 
     move-result v3

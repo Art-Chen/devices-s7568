@@ -1838,4 +1838,6 @@
     <attr name="keyCode" format="integer" />
     <attr name="keyRepeat" format="boolean" />
     <attr name="glowBackground" format="reference" />
+    <attr name="pointOn" format="reference" />
+    <attr name="pointOff" format="reference" />
 </resources>

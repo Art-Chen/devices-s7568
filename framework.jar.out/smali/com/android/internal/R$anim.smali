@@ -35,7 +35,11 @@
 
 .field public static final bounce_interpolator:I = 0x10a000a
 
+.field public static final charge_anim:I = 0x10a0056
+
 .field public static final cycle_interpolator:I = 0x10a000c
+
+.field public static final decelerate_custom:I = 0x10a0057
 
 .field public static final decelerate_interpolator:I = 0x10a0006
 
@@ -56,6 +60,14 @@
 .field public static final grow_fade_in_center:I = 0x10a0017
 
 .field public static final grow_fade_in_from_bottom:I = 0x10a0018
+
+.field public static final halfcycle_interpolator:I = 0x10a0058
+
+.field public static final hold:I = 0x10a0059
+
+.field public static final home_open_enter:I = 0x10a005a
+
+.field public static final home_open_exit:I = 0x10a005b
 
 .field public static final input_method_enter:I = 0x10a0019
 
@@ -129,6 +141,10 @@
 
 .field public static final shrink_fade_out_from_bottom:I = 0x10a003a
 
+.field public static final slide_down_down:I = 0x10a005c
+
+.field public static final slide_down_up:I = 0x10a005d
+
 .field public static final slide_in_child_bottom:I = 0x10a003b
 
 .field public static final slide_in_left:I = 0x10a0002
@@ -142,6 +158,10 @@
 .field public static final slide_out_left:I = 0x10a003f
 
 .field public static final slide_out_right:I = 0x10a0003
+
+.field public static final slide_up_down:I = 0x10a005e
+
+.field public static final slide_up_up:I = 0x10a005f
 
 .field public static final submenu_enter:I = 0x10a0040
 

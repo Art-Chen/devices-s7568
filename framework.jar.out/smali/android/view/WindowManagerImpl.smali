@@ -956,6 +956,129 @@
     throw v4
 .end method
 
+.method disablePopupWindow(Landroid/view/View;Landroid/view/WindowManager$LayoutParams;)Z
+    .locals 9
+    .parameter "view"
+    .parameter "wparams"
+
+    .prologue
+    const/4 v5, 0x1
+
+    const/4 v6, 0x0
+
+    .line 224
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    move-result-object v7
+
+    invoke-virtual {v7}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+
+    move-result-object v3
+
+    .line 225
+    .local v3, packageName:Ljava/lang/String;
+    if-eqz v3, :cond_2
+
+    const-string v7, "com.qihoo360"
+
+    invoke-virtual {v3, v7}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v7
+
+    if-nez v7, :cond_0
+
+    const-string v7, "cn.opda"
+
+    invoke-virtual {v3, v7}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_2
+
+    :cond_0
+    move v2, v5
+
+    .line 229
+    .local v2, needFilterPkg:Z
+    :goto_0
+    if-eqz v2, :cond_3
+
+    iget v7, p2, Landroid/view/WindowManager$LayoutParams;->type:I
+
+    const/16 v8, 0x7d7
+
+    if-le v7, v8, :cond_3
+
+    .line 230
+    const/4 v1, 0x0
+
+    .line 232
+    .local v1, incomingRinging:Z
+    :try_start_0
+    const-string/jumbo v7, "phone"
+
+    invoke-static {v7}, Landroid/os/ServiceManager;->checkService(Ljava/lang/String;)Landroid/os/IBinder;
+
+    move-result-object v7
+
+    invoke-static {v7}, Lcom/android/internal/telephony/ITelephony$Stub;->asInterface(Landroid/os/IBinder;)Lcom/android/internal/telephony/ITelephony;
+
+    move-result-object v4
+
+    .line 234
+    .local v4, telephonyService:Lcom/android/internal/telephony/ITelephony;
+    if-eqz v4, :cond_1
+
+    .line 235
+    invoke-interface {v4}, Lcom/android/internal/telephony/ITelephony;->isRinging()Z
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    move-result v1
+
+    .line 240
+    .end local v4           #telephonyService:Lcom/android/internal/telephony/ITelephony;
+    :cond_1
+    :goto_1
+    if-eqz v1, :cond_3
+
+    .line 244
+    .end local v1           #incomingRinging:Z
+    :goto_2
+    return v5
+
+    .end local v2           #needFilterPkg:Z
+    :cond_2
+    move v2, v6
+
+    .line 225
+    goto :goto_0
+
+    .line 237
+    .restart local v1       #incomingRinging:Z
+    .restart local v2       #needFilterPkg:Z
+    :catch_0
+    move-exception v0
+
+    .line 238
+    .local v0, ex:Landroid/os/RemoteException;
+    const-string v7, "WindowManager"
+
+    const-string v8, "RemoteException from getPhoneInterface()"
+
+    invoke-static {v7, v8, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    goto :goto_1
+
+    .end local v0           #ex:Landroid/os/RemoteException;
+    .end local v1           #incomingRinging:Z
+    :cond_3
+    move v5, v6
+
+    .line 244
+    goto :goto_2
+.end method
+
 .method public dumpGfxInfo(Ljava/io/FileDescriptor;)V
     .locals 14
     .parameter "fd"
@@ -2121,127 +2244,4 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     throw v3
-.end method
-
-.method disablePopupWindow(Landroid/view/View;Landroid/view/WindowManager$LayoutParams;)Z
-    .locals 9
-    .parameter "view"
-    .parameter "wparams"
-
-    .prologue
-    const/4 v5, 0x1
-
-    const/4 v6, 0x0
-
-    .line 224
-    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
-
-    move-result-object v7
-
-    invoke-virtual {v7}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
-
-    move-result-object v3
-
-    .line 225
-    .local v3, packageName:Ljava/lang/String;
-    if-eqz v3, :cond_2
-
-    const-string v7, "com.qihoo360"
-
-    invoke-virtual {v3, v7}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
-
-    move-result v7
-
-    if-nez v7, :cond_0
-
-    const-string v7, "cn.opda"
-
-    invoke-virtual {v3, v7}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
-
-    move-result v7
-
-    if-eqz v7, :cond_2
-
-    :cond_0
-    move v2, v5
-
-    .line 229
-    .local v2, needFilterPkg:Z
-    :goto_0
-    if-eqz v2, :cond_3
-
-    iget v7, p2, Landroid/view/WindowManager$LayoutParams;->type:I
-
-    const/16 v8, 0x7d7
-
-    if-le v7, v8, :cond_3
-
-    .line 230
-    const/4 v1, 0x0
-
-    .line 232
-    .local v1, incomingRinging:Z
-    :try_start_0
-    const-string/jumbo v7, "phone"
-
-    invoke-static {v7}, Landroid/os/ServiceManager;->checkService(Ljava/lang/String;)Landroid/os/IBinder;
-
-    move-result-object v7
-
-    invoke-static {v7}, Lcom/android/internal/telephony/ITelephony$Stub;->asInterface(Landroid/os/IBinder;)Lcom/android/internal/telephony/ITelephony;
-
-    move-result-object v4
-
-    .line 234
-    .local v4, telephonyService:Lcom/android/internal/telephony/ITelephony;
-    if-eqz v4, :cond_1
-
-    .line 235
-    invoke-interface {v4}, Lcom/android/internal/telephony/ITelephony;->isRinging()Z
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
-
-    move-result v1
-
-    .line 240
-    .end local v4           #telephonyService:Lcom/android/internal/telephony/ITelephony;
-    :cond_1
-    :goto_1
-    if-eqz v1, :cond_3
-
-    .line 244
-    .end local v1           #incomingRinging:Z
-    :goto_2
-    return v5
-
-    .end local v2           #needFilterPkg:Z
-    :cond_2
-    move v2, v6
-
-    .line 225
-    goto :goto_0
-
-    .line 237
-    .restart local v1       #incomingRinging:Z
-    .restart local v2       #needFilterPkg:Z
-    :catch_0
-    move-exception v0
-
-    .line 238
-    .local v0, ex:Landroid/os/RemoteException;
-    const-string v7, "WindowManager"
-
-    const-string v8, "RemoteException from getPhoneInterface()"
-
-    invoke-static {v7, v8, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
-
-    goto :goto_1
-
-    .end local v0           #ex:Landroid/os/RemoteException;
-    .end local v1           #incomingRinging:Z
-    :cond_3
-    move v5, v6
-
-    .line 244
-    goto :goto_2
 .end method

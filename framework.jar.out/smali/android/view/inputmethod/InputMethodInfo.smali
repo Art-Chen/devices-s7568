@@ -305,7 +305,7 @@
 
     .line 133
     .local v18, nodeName:Ljava/lang/String;
-    const-string v3, "input-method"
+    const-string/jumbo v3, "input-method"
 
     move-object/from16 v0, v18
 

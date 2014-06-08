@@ -461,7 +461,7 @@
 
     const/4 v1, 0x0
 
-    const-string v7, "imsi_subset"
+    const-string/jumbo v7, "imsi_subset"
 
     invoke-interface {v12, v1, v7}, Lorg/xmlpull/v1/XmlPullParser;->getAttributeValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 

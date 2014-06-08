@@ -1820,7 +1820,7 @@
 
     .line 1431
     .local v1, e:Ljava/lang/ClassCastException;
-    const-string v3, "int[]"
+    const-string/jumbo v3, "int[]"
 
     invoke-direct {p0, p1, v2, v3, v1}, Landroid/os/Bundle;->typeWarning(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/String;Ljava/lang/ClassCastException;)V
 

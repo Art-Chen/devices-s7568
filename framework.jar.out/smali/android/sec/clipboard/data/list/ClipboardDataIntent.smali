@@ -269,7 +269,7 @@
 
     const-string v4, "ClipboardServiceEx"
 
-    const-string v5, "intent equals"
+    const-string/jumbo v5, "intent equals"
 
     invoke-static {v4, v5}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 

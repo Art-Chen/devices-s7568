@@ -1104,6 +1104,8 @@
     <public type="attr" name="keyCode" id="0x0101044d" />
     <public type="attr" name="keyRepeat" id="0x0101044e" />
     <public type="attr" name="glowBackground" id="0x0101044f" />
+    <public type="attr" name="pointOn" id="0x01010450" />
+    <public type="attr" name="pointOff" id="0x01010451" />
     <public type="id" name="background" id="0x01020000" />
     <public type="id" name="checkbox" id="0x01020001" />
     <public type="id" name="content" id="0x01020002" />
@@ -2275,6 +2277,125 @@
     <public type="id" name="websearch" id="0x01020490" />
     <public type="id" name="find_prev" id="0x01020491" />
     <public type="id" name="find_next" id="0x01020492" />
+    <public type="id" name="permission_tablelayout" id="0x01020493" />
+    <public type="id" name="table_perm_icon" id="0x01020494" />
+    <public type="id" name="table_perm_text" id="0x01020495" />
+    <public type="id" name="table_perm_checkbox" id="0x01020496" />
+    <public type="id" name="axis_single_line" id="0x01020497" />
+    <public type="id" name="constellation_container" id="0x01020498" />
+    <public type="id" name="constellation_bg" id="0x01020499" />
+    <public type="id" name="hotword1" id="0x0102049a" />
+    <public type="id" name="hotword2" id="0x0102049b" />
+    <public type="id" name="hotword3" id="0x0102049c" />
+    <public type="id" name="hotword4" id="0x0102049d" />
+    <public type="id" name="hotword5" id="0x0102049e" />
+    <public type="id" name="clock" id="0x0102049f" />
+    <public type="id" name="gallery" id="0x010204a0" />
+    <public type="id" name="search_expand" id="0x010204a1" />
+    <public type="id" name="search" id="0x010204a2" />
+    <public type="id" name="expand_text" id="0x010204a3" />
+    <public type="id" name="hover_text" id="0x010204a4" />
+    <public type="id" name="slide_miss_call_and_mms" id="0x010204a5" />
+    <public type="id" name="miss_call" id="0x010204a6" />
+    <public type="id" name="miss_mms" id="0x010204a7" />
+    <public type="id" name="iqiyi_listview" id="0x010204a8" />
+    <public type="id" name="iqiyi_push_msg_layout" id="0x010204a9" />
+    <public type="id" name="push_msg_icon" id="0x010204aa" />
+    <public type="id" name="push_msg_text_layout" id="0x010204ab" />
+    <public type="id" name="iqiyi_push_msg_title" id="0x010204ac" />
+    <public type="id" name="iqiyi_push_msg_content" id="0x010204ad" />
+    <public type="id" name="iqiyi_push_msg_image" id="0x010204ae" />
+    <public type="id" name="music_view" id="0x010204af" />
+    <public type="id" name="music_bg" id="0x010204b0" />
+    <public type="id" name="album" id="0x010204b1" />
+    <public type="id" name="album_cover" id="0x010204b2" />
+    <public type="id" name="album_title" id="0x010204b3" />
+    <public type="id" name="target_view" id="0x010204b4" />
+    <public type="id" name="target_handle" id="0x010204b5" />
+    <public type="id" name="slide_guide_arrow" id="0x010204b6" />
+    <public type="id" name="targets" id="0x010204b7" />
+    <public type="id" name="bg_cicle" id="0x010204b8" />
+    <public type="id" name="handle_align" id="0x010204b9" />
+    <public type="id" name="target_camera" id="0x010204ba" />
+    <public type="id" name="target_phone" id="0x010204bb" />
+    <public type="id" name="miss_call_count" id="0x010204bc" />
+    <public type="id" name="target_unlock" id="0x010204bd" />
+    <public type="id" name="target_message" id="0x010204be" />
+    <public type="id" name="miss_message_count" id="0x010204bf" />
+    <public type="id" name="target_ring" id="0x010204c0" />
+    <public type="id" name="chargging_view" id="0x010204c1" />
+    <public type="id" name="chargging_tip" id="0x010204c2" />
+    <public type="id" name="power_percent" id="0x010204c3" />
+    <public type="id" name="chargging_progress" id="0x010204c4" />
+    <public type="id" name="chargging_circle_1" id="0x010204c5" />
+    <public type="id" name="chargging_circle_2" id="0x010204c6" />
+    <public type="id" name="chargging_circle_3" id="0x010204c7" />
+    <public type="id" name="chargging_circle_4" id="0x010204c8" />
+    <public type="id" name="water_layer_container" id="0x010204c9" />
+    <public type="id" name="miss_container" id="0x010204ca" />
+    <public type="id" name="target_handle_panel" id="0x010204cb" />
+    <public type="id" name="target_refresh" id="0x010204cc" />
+    <public type="id" name="target_refresh2" id="0x010204cd" />
+    <public type="id" name="axis_left" id="0x010204ce" />
+    <public type="id" name="axis_right" id="0x010204cf" />
+    <public type="id" name="axis_top" id="0x010204d0" />
+    <public type="id" name="axis_bottom" id="0x010204d1" />
+    <public type="id" name="dialog_title_image" id="0x010204d2" />
+    <public type="id" name="dialog_text" id="0x010204d3" />
+    <public type="id" name="dialog_phone_num_text" id="0x010204d4" />
+    <public type="id" name="dialog_sms_content_text" id="0x010204d5" />
+    <public type="id" name="remember_cbx" id="0x010204d6" />
+    <public type="id" name="remember_tips" id="0x010204d7" />
+    <public type="id" name="deny_btn" id="0x010204d8" />
+    <public type="id" name="permit_btn" id="0x010204d9" />
+    <public type="id" name="searchBox" id="0x010204da" />
+    <public type="id" name="hotMusicLayout" id="0x010204db" />
+    <public type="id" name="hotMusic1" id="0x010204dc" />
+    <public type="id" name="hotMusic2" id="0x010204dd" />
+    <public type="id" name="hotMusic3" id="0x010204de" />
+    <public type="id" name="hotMusic4" id="0x010204df" />
+    <public type="id" name="hotMusic5" id="0x010204e0" />
+    <public type="id" name="switchIcon" id="0x010204e1" />
+    <public type="id" name="unlockWidgetLayout" id="0x010204e2" />
+    <public type="id" name="moveView" id="0x010204e3" />
+    <public type="id" name="hiddenUnlockView" id="0x010204e4" />
+    <public type="id" name="hotspotLayout" id="0x010204e5" />
+    <public type="id" name="keyword3" id="0x010204e6" />
+    <public type="id" name="keyword6" id="0x010204e7" />
+    <public type="id" name="keyword5" id="0x010204e8" />
+    <public type="id" name="keyword2" id="0x010204e9" />
+    <public type="id" name="keyword7" id="0x010204ea" />
+    <public type="id" name="keyword1" id="0x010204eb" />
+    <public type="id" name="keyword4" id="0x010204ec" />
+    <public type="id" name="numeric_input" id="0x010204ed" />
+    <public type="id" name="unlock" id="0x010204ee" />
+    <public type="id" name="voiceunlock_tips" id="0x010204ef" />
+    <public type="id" name="voiceprint" id="0x010204f0" />
+    <public type="id" name="panel_content" id="0x010204f1" />
+    <public type="id" name="panel_header" id="0x010204f2" />
+    <public type="id" name="panel_header_top" id="0x010204f3" />
+    <public type="id" name="panel_header_icon" id="0x010204f4" />
+    <public type="id" name="panel_header_text" id="0x010204f5" />
+    <public type="id" name="panel_header_text1" id="0x010204f6" />
+    <public type="id" name="panel_header_text2" id="0x010204f7" />
+    <public type="id" name="panel_header_bottom" id="0x010204f8" />
+    <public type="id" name="panel_prompt" id="0x010204f9" />
+    <public type="id" name="panel_alwaysUse" id="0x010204fa" />
+    <public type="id" name="panel_text" id="0x010204fb" />
+    <public type="id" name="quickboot_dialog_text_info" id="0x010204fc" />
+    <public type="id" name="quickboot_dialog_checkbox" id="0x010204fd" />
+    <public type="id" name="quickboot_dialog_text_warn" id="0x010204fe" />
+    <public type="id" name="remember_or_not" id="0x010204ff" />
+    <public type="id" name="tips" id="0x01020500" />
+    <public type="id" name="battery_info" id="0x01020501" />
+    <public type="id" name="battery_apps_message" id="0x01020502" />
+    <public type="id" name="battery_apps_button" id="0x01020503" />
+    <public type="id" name="battery_apps" id="0x01020504" />
+    <public type="id" name="custom_list" id="0x01020505" />
+    <public type="id" name="button" id="0x01020506" />
+    <public type="id" name="voice_list" id="0x01020507" />
+    <public type="id" name="empty_text" id="0x01020508" />
+    <public type="id" name="ok_button" id="0x01020509" />
     <public type="style" name="Animation" id="0x01030000" />
     <public type="style" name="Animation.Activity" id="0x01030001" />
     <public type="style" name="Animation.Dialog" id="0x01030002" />
@@ -3084,6 +3205,11 @@
     <public type="style" name="Widget.DeviceDefault.TextView.HoverFulltext" id="0x01030326" />
     <public type="style" name="Widget.DeviceDefault.Light.TextView.HoverTooltip" id="0x01030327" />
     <public type="style" name="Widget.DeviceDefault.Light.TextView.HoverFulltext" id="0x01030328" />
+    <public type="style" name="Widget.DeviceDefault.ActivityChooserView" id="0x01030329" />
+    <public type="style" name="Widget.DeviceDefault.Light.Switch.TextAppearance" id="0x0103032a" />
+    <public type="style" name="Widget.DeviceDefault.Light.Spinner.DropDown.DarkActionBar" id="0x0103032b" />
+    <public type="style" name="Widget.DeviceDefault.Light.ActivityChooserView" id="0x0103032c" />
+    <public type="style" name="Preference.DeviceDefault.Light.DialogPreference.EditTextPreference" id="0x0103032d" />
     <public type="string" name="cancel" id="0x01040000" />
     <public type="string" name="copy" id="0x01040001" />
     <public type="string" name="copyUrl" id="0x01040002" />
@@ -4889,6 +5015,126 @@
     <public type="string" name="tw_ids_com_body_delete_from_clipboard" id="0x0104072b" />
     <public type="string" name="tw_ids_com_body_Lock_in_clipboard" id="0x0104072c" />
     <public type="string" name="tw_ids_com_body_unlock_in_clipboard" id="0x0104072d" />
+    <public type="string" name="search_baidu_web" id="0x0104072e" />
+    <public type="string" name="custom_ringtone_picker" id="0x0104072f" />
+    <public type="string" name="permission_dialog_title" id="0x01040730" />
+    <public type="string" name="permission_dialog_button_ok" id="0x01040731" />
+    <public type="string" name="permission_confirm_grant" id="0x01040732" />
+    <public type="string" name="permission_confirm_deny" id="0x01040733" />
+    <public type="string" name="permission_prompt" id="0x01040734" />
+    <public type="string" name="permission_desc_mms" id="0x01040735" />
+    <public type="string" name="permission_desc_phone" id="0x01040736" />
+    <public type="string" name="permission_desc_message" id="0x01040737" />
+    <public type="string" name="permission_settings" id="0x01040738" />
+    <public type="string" name="permission_dangrous_warning" id="0x01040739" />
+    <public type="string" name="permission_statusbar_show" id="0x0104073a" />
+    <public type="string" name="permission_statusbar_ignore" id="0x0104073b" />
+    <public type="string" name="permission_toast_deny" id="0x0104073c" />
+    <public type="string" name="permission_toast_eliminated" id="0x0104073d" />
+    <public type="string" name="permission_send_sms_message" id="0x0104073e" />
+    <public type="string" name="permission_call_phone_message" id="0x0104073f" />
+    <public type="string" name="internal_sd" id="0x01040740" />
+    <public type="string" name="external_sd" id="0x01040741" />
+    <public type="string" name="reboot_reboot" id="0x01040742" />
+    <public type="string" name="reboot_recovery" id="0x01040743" />
+    <public type="string" name="badPuk_one" id="0x01040744" />
+    <public type="string" name="simInvalidation" id="0x01040745" />
+    <public type="string" name="badPuk_noretrytime" id="0x01040746" />
+    <public type="string" name="invalidPinRemainTime" id="0x01040747" />
+    <public type="string" name="invalidPinOneRemainTime" id="0x01040748" />
+    <public type="string" name="invalidPuk_one" id="0x01040749" />
+    <public type="string" name="invalidPuk_noremaintime" id="0x0104074a" />
+    <public type="string" name="reboot" id="0x0104074b" />
+    <public type="string" name="reboot_progress" id="0x0104074c" />
+    <public type="string" name="reboot_confirm" id="0x0104074d" />
+    <public type="string" name="global_action_reboot" id="0x0104074e" />
+    <public type="string" name="global_actions_toggle_airplane_mode_off" id="0x0104074f" />
+    <public type="string" name="keyguard_password_wrong_pin_code_one" id="0x01040750" />
+    <public type="string" name="keyguard_password_wrong_pin_code_no_remain_time" id="0x01040751" />
+    <public type="string" name="lockscreen_interpretation" id="0x01040752" />
+    <public type="string" name="lockscreen_voiceprint_interpretation" id="0x01040753" />
+    <public type="string" name="lockscreen_statusbar_title" id="0x01040754" />
+    <public type="string" name="lockscreen_statusbar_msg" id="0x01040755" />
+    <public type="string" name="ringtone_picker_select_title" id="0x01040756" />
+    <public type="string" name="ringtone_picker_custom_title" id="0x01040757" />
+    <public type="string" name="ringtone_picker_sdcard_unmount" id="0x01040758" />
+    <public type="string" name="ringtone_picker_sdcard_busy" id="0x01040759" />
+    <public type="string" name="ringtone_picker_sdcard_empty" id="0x0104075a" />
+    <public type="string" name="ringtone_picker_nothing_selectecd" id="0x0104075b" />
+    <public type="string" name="baidu_account_verify_code_bind" id="0x0104075c" />
+    <public type="string" name="baidu_account_verify_code_password" id="0x0104075d" />
+    <public type="string" name="elapsed_time_long_format_h_mm_ss" id="0x0104075e" />
+    <public type="string" name="lunar_year" id="0x0104075f" />
+    <public type="string" name="lunar_month" id="0x01040760" />
+    <public type="string" name="lunar_day" id="0x01040761" />
+    <public type="string" name="lunar_leap" id="0x01040762" />
+    <public type="string" name="lunar_chushi" id="0x01040763" />
+    <public type="string" name="lunar_ershi" id="0x01040764" />
+    <public type="string" name="lunar_sanshi" id="0x01040765" />
+    <public type="string" name="eventTypeLunarBirthday" id="0x01040766" />
+    <public type="string" name="china_telecom" id="0x01040767" />
+    <public type="string" name="china_unicom" id="0x01040768" />
+    <public type="string" name="china_mobile" id="0x01040769" />
+    <public type="string" name="caller_info_or" id="0x0104076a" />
+    <public type="string" name="caller_info_or_other" id="0x0104076b" />
+    <public type="string" name="dynamic_perm_dialog_msg" id="0x0104076c" />
+    <public type="string" name="action_call" id="0x0104076d" />
+    <public type="string" name="action_sms" id="0x0104076e" />
+    <public type="string" name="action_mms" id="0x0104076f" />
+    <public type="string" name="action_access_call_log" id="0x01040770" />
+    <public type="string" name="action_access_sms" id="0x01040771" />
+    <public type="string" name="action_access_contacts" id="0x01040772" />
+    <public type="string" name="action_access_location" id="0x01040773" />
+    <public type="string" name="deny_btn_text" id="0x01040774" />
+    <public type="string" name="permit_btn_text" id="0x01040775" />
+    <public type="string" name="dynamic_perm_popup_dialog_title" id="0x01040776" />
+    <public type="string" name="remember_info_text" id="0x01040777" />
+    <public type="string" name="remember_tips_text" id="0x01040778" />
+    <public type="string" name="phone_call_info_msg" id="0x01040779" />
+    <public type="string" name="phone_sms_info_msg" id="0x0104077a" />
+    <public type="string" name="sms_info_msg" id="0x0104077b" />
+    <public type="string" name="data_sms_msg" id="0x0104077c" />
+    <public type="string" name="policy_name_battery_low" id="0x0104077d" />
+    <public type="string" name="policy_name_screen_off" id="0x0104077e" />
+    <public type="string" name="mode_name_normal" id="0x0104077f" />
+    <public type="string" name="mode_name_super" id="0x01040780" />
+    <public type="string" name="low_battery_toast" id="0x01040781" />
+    <public type="string" name="power_settings_notification_title" id="0x01040782" />
+    <public type="string" name="power_settings_notification_message" id="0x01040783" />
+    <public type="string" name="charge_complete" id="0x01040784" />
+    <public type="string" name="low_battery_dialog_title" id="0x01040785" />
+    <public type="string" name="low_battery_dialog_desc" id="0x01040786" />
+    <public type="string" name="low_battery_dialog_tips" id="0x01040787" />
+    <public type="string" name="remember_my_choice" id="0x01040788" />
+    <public type="string" name="network_invalid" id="0x01040789" />
+    <public type="string" name="switch_null_text" id="0x0104078a" />
+    <public type="string" name="web_baike" id="0x0104078b" />
+    <public type="string" name="web_translator" id="0x0104078c" />
+    <public type="string" name="global_action_screenshot" id="0x0104078d" />
+    <public type="string" name="voice_search_not_found" id="0x0104078e" />
+    <public type="string" name="voice_search_unavailable" id="0x0104078f" />
+    <public type="string" name="progress_unmounting_target" id="0x01040790" />
+    <public type="string" name="progress_erasing_target" id="0x01040791" />
+    <public type="string" name="baidu_keyguard_hotword_am" id="0x01040792" />
+    <public type="string" name="baidu_keyguard_hotword_pm" id="0x01040793" />
+    <public type="string" name="baidu_keyguard_hotword_date_format" id="0x01040794" />
+    <public type="string" name="ringtone_custom" id="0x01040795" />
+    <public type="string" name="battery_apps_message" id="0x01040796" />
+    <public type="string" name="battery_apps_button" id="0x01040797" />
+    <public type="string" name="power_off_alarm" id="0x01040798" />
+    <public type="string" name="quickboot_shutdown_info" id="0x01040799" />
+    <public type="string" name="chargging" id="0x0104079a" />
+    <public type="string" name="charge_finished" id="0x0104079b" />
+    <public type="string" name="quickboot_real_shutdown" id="0x0104079c" />
+    <public type="string" name="quick_boot_text_info" id="0x0104079d" />
+    <public type="string" name="quickboot_poweroff_alarm" id="0x0104079e" />
+    <public type="string" name="quickboot_schedule_pwonoff" id="0x0104079f" />
+    <public type="string" name="quickboot_lowbat_poweroff" id="0x010407a0" />
+    <public type="string" name="quickboot_lowbat_schedule_pwonoff" id="0x010407a1" />
+    <public type="string" name="replace_browser_value" id="0x010407a2" />
+    <public type="string" name="replace_market_value" id="0x010407a3" />
+    <public type="string" name="replace_reader_value" id="0x010407a4" />
+    <public type="string" name="hot_keywords" id="0x010407a5" />
     <public type="string" name="wifi_p2p_pbc_go_negotiation_request_message" id="0x010406e9" />
     <public type="string" name="wifi_p2p_pin_go_negotiation_request_message" id="0x010406ea" />
     <public type="string" name="wifi_p2p_pin_display_message" id="0x010406eb" />
@@ -5001,6 +5247,7 @@
     <public type="dimen" name="default_app_widget_padding_bottom" id="0x0105004c" />
     <public type="dimen" name="action_button_min_width" id="0x0105004d" />
     <public type="dimen" name="tw_searchview_text_size" id="0x0105004e" />
+    <public type="dimen" name="APKTOOL_DUMMY_004f" id="0x0105004f" />
     <public type="dimen" name="notification_icon_width_margin" id="0x01050052" />
     <public type="dimen" name="notification_icon_height_margin" id="0x01050053" />
     <public type="dimen" name="keyguard_lockscreen_application_shortcut_padding_width" id="0x01050054" />
@@ -5044,9 +5291,30 @@
     <public type="dimen" name="tw_clipboard_html_image_height_land" id="0x0105007a" />
     <public type="dimen" name="tw_progressbar_horizontal_height_size" id="0x0105007b" />
     <public type="dimen" name="tw_seekbar_height_size" id="0x0105007c" />
+    <public type="dimen" name="yi_preference_item_padding_side" id="0x0105007d" />
+    <public type="dimen" name="yi_action_bar_default_height" id="0x0105007e" />
+    <public type="dimen" name="yi_list_item_header_height" id="0x0105007f" />
+    <public type="dimen" name="yi_floating_bar_divider_padding" id="0x01050080" />
+    <public type="dimen" name="yi_magnifier_range_padding" id="0x01050081" />
+    <public type="dimen" name="yi_lockscreen_password_top_padding" id="0x01050082" />
+    <public type="dimen" name="yi_lockscreen_pin_top_padding" id="0x01050083" />
+    <public type="dimen" name="yi_lockscreen_hotword1_padding" id="0x01050084" />
+    <public type="dimen" name="yi_lockscreen_hotword2_padding" id="0x01050085" />
+    <public type="dimen" name="yi_lockscreen_hotword3_padding" id="0x01050086" />
+    <public type="dimen" name="yi_lockscreen_hotword4_padding" id="0x01050087" />
+    <public type="dimen" name="yi_lockscreen_hotword5_padding" id="0x01050088" />
+    <public type="dimen" name="yi_lockscreen_hotword6_padding" id="0x01050089" />
+    <public type="dimen" name="yi_lockscreen_hotword7_padding" id="0x0105008a" />
+    <public type="dimen" name="yi_alert_dialog_title_height" id="0x0105008b" />
+    <public type="dimen" name="yi_alert_dialog_button_height" id="0x0105008c" />
+    <public type="dimen" name="yi_lockscreen_unlockwidget_margintop" id="0x0105008d" />
+    <public type="dimen" name="yi_lockscreen_password_height" id="0x0105008e" />
+    <public type="dimen" name="yi_lockscreen_voiceprint_height" id="0x0105008f" />
+    <public type="dimen" name="yi_lockscreen_pattern_top_margin" id="0x01050090" />
     <public type="dimen" name="keyguard_pattern_unlock_clock_font_size" id="0x01050050" />
     <public type="dimen" name="keyguard_pattern_unlock_status_line_font_size" id="0x01050051" />
-    <public type="dimen" name="APKTOOL_DUMMY_004f" id="0x0105004f" />
+    <public type="dimen" name="yi_lockscreen_unlockWidget_height" id="0x01050091" />
+    <public type="dimen" name="zz_lockscreen_flipper_width" id="0x01050092" />
     <public type="color" name="darker_gray" id="0x01060000" />
     <public type="color" name="primary_text_dark" id="0x01060001" />
     <public type="color" name="primary_text_dark_nodisable" id="0x01060002" />
@@ -5220,6 +5488,62 @@
     <public type="color" name="tw_textfield_searchview_text_holo_light" id="0x010600aa" />
     <public type="color" name="zzzz_btn_text_color" id="0x010600ab" />
     <public type="color" name="zzzzzzzzz_pcw_actionbutton_selector" id="0x010600ac" />
+    <public type="color" name="yi_background_baidu_dark" id="0x010600ad" />
+    <public type="color" name="yi_background_baidu_light" id="0x010600ae" />
+    <public type="color" name="yi_bright_foreground_baidu_dark" id="0x010600af" />
+    <public type="color" name="yi_bright_foreground_baidu_light" id="0x010600b0" />
+    <public type="color" name="yi_bright_foreground_disabled_baidu_dark" id="0x010600b1" />
+    <public type="color" name="yi_bright_foreground_disabled_baidu_light" id="0x010600b2" />
+    <public type="color" name="yi_bright_foreground_inverse_baidu_dark" id="0x010600b3" />
+    <public type="color" name="yi_bright_foreground_inverse_baidu_light" id="0x010600b4" />
+    <public type="color" name="yi_dim_foreground_baidu_dark" id="0x010600b5" />
+    <public type="color" name="yi_dim_foreground_disabled_baidu_dark" id="0x010600b6" />
+    <public type="color" name="yi_dim_foreground_inverse_baidu_dark" id="0x010600b7" />
+    <public type="color" name="yi_dim_foreground_inverse_disabled_baidu_dark" id="0x010600b8" />
+    <public type="color" name="yi_hint_foreground_baidu_dark" id="0x010600b9" />
+    <public type="color" name="yi_dim_foreground_baidu_light" id="0x010600ba" />
+    <public type="color" name="yi_dim_foreground_disabled_baidu_light" id="0x010600bb" />
+    <public type="color" name="yi_dim_foreground_inverse_baidu_light" id="0x010600bc" />
+    <public type="color" name="yi_dim_foreground_inverse_disabled_baidu_light" id="0x010600bd" />
+    <public type="color" name="yi_hint_foreground_baidu_light" id="0x010600be" />
+    <public type="color" name="yi_highlighted_text_baidu_dark" id="0x010600bf" />
+    <public type="color" name="yi_highlighted_text_baidu_light" id="0x010600c0" />
+    <public type="color" name="yi_link_text_baidu_dark" id="0x010600c1" />
+    <public type="color" name="yi_link_text_baidu_light" id="0x010600c2" />
+    <public type="color" name="yi_blue_header_text_baidu_light" id="0x010600c3" />
+    <public type="color" name="yi_group_button_dialog_pressed_baidu_dark" id="0x010600c4" />
+    <public type="color" name="yi_group_button_dialog_focused_baidu_dark" id="0x010600c5" />
+    <public type="color" name="yi_group_button_dialog_pressed_baidu_light" id="0x010600c6" />
+    <public type="color" name="yi_group_button_dialog_focused_baidu_light" id="0x010600c7" />
+    <public type="color" name="yi_baidu_blue_light" id="0x010600c8" />
+    <public type="color" name="yi_baidu_green_light" id="0x010600c9" />
+    <public type="color" name="yi_baidu_red_light" id="0x010600ca" />
+    <public type="color" name="yi_baidu_blue_dark" id="0x010600cb" />
+    <public type="color" name="yi_baidu_green_dark" id="0x010600cc" />
+    <public type="color" name="yi_baidu_red_dark" id="0x010600cd" />
+    <public type="color" name="yi_baidu_purple" id="0x010600ce" />
+    <public type="color" name="yi_baidu_orange_light" id="0x010600cf" />
+    <public type="color" name="yi_baidu_orange_dark" id="0x010600d0" />
+    <public type="color" name="yi_baidu_blue_bright" id="0x010600d1" />
+    <public type="color" name="yi_dark_action_bar_title" id="0x010600d2" />
+    <public type="color" name="yi_list_section_divider_text_light" id="0x010600d3" />
+    <public type="color" name="yi_action_tab_text_selected_baidu_light" id="0x010600d4" />
+    <public type="color" name="yi_status_bar_event_content" id="0x010600d5" />
+    <public type="color" name="yi_status_bar_event_content_title" id="0x010600d6" />
+    <public type="color" name="yi_action_bar_title_shadow" id="0x010600d7" />
+    <public type="color" name="yi_edit_text_color_baidu_light" id="0x010600d8" />
+    <public type="color" name="yi_primary_text_baidu_dark" id="0x010600d9" />
+    <public type="color" name="yi_primary_text_baidu_light" id="0x010600da" />
+    <public type="color" name="yi_primary_text_disable_only_baidu_dark" id="0x010600db" />
+    <public type="color" name="yi_primary_text_disable_only_baidu_light" id="0x010600dc" />
+    <public type="color" name="yi_primary_text_nodisable_baidu_dark" id="0x010600dd" />
+    <public type="color" name="yi_primary_text_nodisable_baidu_light" id="0x010600de" />
+    <public type="color" name="yi_secondary_text_baidu_dark" id="0x010600df" />
+    <public type="color" name="yi_secondary_text_baidu_light" id="0x010600e0" />
+    <public type="color" name="yi_secondary_text_nodisable_baidu_dark" id="0x010600e1" />
+    <public type="color" name="yi_secondary_text_nodisable_baidu_light" id="0x010600e2" />
+    <public type="color" name="yi_tertiary_text_baidu_dark" id="0x010600e3" />
+    <public type="color" name="yi_tertiary_text_baidu_light" id="0x010600e4" />
     <public type="array" name="emailAddressTypes" id="0x01070000" />
     <public type="array" name="imProtocols" id="0x01070001" />
     <public type="array" name="organizationTypes" id="0x01070002" />
@@ -5294,10 +5618,23 @@
     <public type="array" name="common_nicknames" id="0x01070047" />
     <public type="array" name="imAddressTypes" id="0x01070048" />
     <public type="array" name="carrier_properties" id="0x01070049" />
+    <public type="array" name="shutdown_reboot_actions" id="0x0107004a" />
+    <public type="array" name="shutdown_reboot_options" id="0x0107004b" />
+    <public type="array" name="chineseNumber" id="0x0107004c" />
+    <public type="array" name="chineseDay" id="0x0107004d" />
+    <public type="array" name="gan" id="0x0107004e" />
+    <public type="array" name="zhi" id="0x0107004f" />
+    <public type="array" name="animals" id="0x01070050" />
+    <public type="array" name="chineseTen" id="0x01070051" />
+    <public type="array" name="solar_terms" id="0x01070052" />
+    <public type="array" name="chineseYear" id="0x01070053" />
+    <public type="array" name="chineseTimeSection" id="0x01070054" />
+    <public type="array" name="quickboot_info_week_set" id="0x01070055" />
     <public type="drawable" name="tw_action_popup_toast_frame_holo_dark" id="0x010800b4" />
     <public type="drawable" name="background_holo_dark" id="0x010800cd" />
     <public type="drawable" name="background_holo_light" id="0x010800ce" />
     <public type="drawable" name="blank_tile" id="0x010800d0" />
+    <public type="drawable" name="default_wallpaper" id="0x0108022d" />
     <public type="drawable" name="indicator_code_lock_drag_direction_green_up" id="0x010803ad" />
     <public type="drawable" name="loading_tile" id="0x01080516" />
     <public type="drawable" name="loading_tile_android" id="0x01080517" />
@@ -5497,6 +5834,8 @@
     <public type="drawable" name="lockscreen_emergency_button" id="0x01080518" />
     <public type="drawable" name="lockscreen_forgot_password_button" id="0x01080519" />
     <public type="drawable" name="lockscreen_help_overlay_btn" id="0x0108051a" />
+    <public type="drawable" name="APKTOOL_DUMMY_051b" id="0x0108051b" />
+    <public type="drawable" name="APKTOOL_DUMMY_051c" id="0x0108051c" />
     <public type="drawable" name="lockscreen_password_field_dark" id="0x0108051d" />
     <public type="drawable" name="media_button_background" id="0x0108051f" />
     <public type="drawable" name="menu_popup_ic_switch_windows_holo_light" id="0x01080526" />
@@ -5596,6 +5935,7 @@
     <public type="drawable" name="switch_inner_holo_light" id="0x01080701" />
     <public type="drawable" name="switch_track_holo_dark" id="0x0108070a" />
     <public type="drawable" name="switch_track_holo_light" id="0x0108070b" />
+    <public type="drawable" name="APKTOOL_DUMMY_0710" id="0x01080710" />
     <public type="drawable" name="tab_bottom_left" id="0x01080728" />
     <public type="drawable" name="tab_bottom_left_v4" id="0x01080729" />
     <public type="drawable" name="tab_bottom_right" id="0x0108072a" />
@@ -5604,6 +5944,9 @@
     <public type="drawable" name="tab_indicator_ab_holo" id="0x01080730" />
     <public type="drawable" name="tab_indicator_holo" id="0x01080731" />
     <public type="drawable" name="tab_indicator_v4" id="0x01080732" />
+    <public type="drawable" name="APKTOOL_DUMMY_074d" id="0x0108074d" />
+    <public type="drawable" name="APKTOOL_DUMMY_074e" id="0x0108074e" />
+    <public type="drawable" name="APKTOOL_DUMMY_074f" id="0x0108074f" />
     <public type="drawable" name="textfield_search" id="0x0108076f" />
     <public type="drawable" name="textfield_search_empty" id="0x01080773" />
     <public type="drawable" name="textfield_searchview_holo_dark" id="0x0108077f" />
@@ -5616,7 +5959,23 @@
     <public type="drawable" name="tw_action_item_selector_background_transition_holo_light" id="0x01080794" />
     <public type="drawable" name="tw_btn_cab_done_holo_dark" id="0x0108079e" />
     <public type="drawable" name="tw_btn_cab_done_holo_light" id="0x0108079f" />
+    <public type="drawable" name="APKTOOL_DUMMY_07c0" id="0x010807c0" />
+    <public type="drawable" name="APKTOOL_DUMMY_07c1" id="0x010807c1" />
+    <public type="drawable" name="APKTOOL_DUMMY_07e2" id="0x010807e2" />
+    <public type="drawable" name="APKTOOL_DUMMY_07e3" id="0x010807e3" />
     <public type="drawable" name="tw_clipboard_top_bg" id="0x010807ec" />
+    <public type="drawable" name="APKTOOL_DUMMY_07ee" id="0x010807ee" />
+    <public type="drawable" name="APKTOOL_DUMMY_07f2" id="0x010807f2" />
+    <public type="drawable" name="APKTOOL_DUMMY_07f3" id="0x010807f3" />
+    <public type="drawable" name="APKTOOL_DUMMY_07f6" id="0x010807f6" />
+    <public type="drawable" name="APKTOOL_DUMMY_07f7" id="0x010807f7" />
+    <public type="drawable" name="APKTOOL_DUMMY_07fa" id="0x010807fa" />
+    <public type="drawable" name="APKTOOL_DUMMY_07fb" id="0x010807fb" />
+    <public type="drawable" name="APKTOOL_DUMMY_07fe" id="0x010807fe" />
+    <public type="drawable" name="APKTOOL_DUMMY_0801" id="0x01080801" />
+    <public type="drawable" name="APKTOOL_DUMMY_0804" id="0x01080804" />
+    <public type="drawable" name="APKTOOL_DUMMY_0805" id="0x01080805" />
+    <public type="drawable" name="APKTOOL_DUMMY_0808" id="0x01080808" />
     <public type="drawable" name="tw_expander_group_holo_dark" id="0x01080819" />
     <public type="drawable" name="tw_expander_group_holo_light" id="0x0108081a" />
     <public type="drawable" name="tw_ic_clear" id="0x01080822" />
@@ -5638,6 +5997,7 @@
     <public type="drawable" name="tw_numberpicker_down_btn_holo_light" id="0x0108087a" />
     <public type="drawable" name="tw_numberpicker_up_btn_holo_dark" id="0x01080885" />
     <public type="drawable" name="tw_numberpicker_up_btn_holo_light" id="0x01080886" />
+    <public type="drawable" name="APKTOOL_DUMMY_088f" id="0x0108088f" />
     <public type="drawable" name="tw_popup_button_background_holo_dark" id="0x010808a5" />
     <public type="drawable" name="tw_popup_button_background_holo_light" id="0x010808a6" />
     <public type="drawable" name="tw_popup_button_holo_dark" id="0x010808a7" />
@@ -5653,10 +6013,14 @@
     <public type="drawable" name="tw_scrubber_control_selector_holo" id="0x010808d3" />
     <public type="drawable" name="tw_scrubber_control_selector_holo_red" id="0x010808d4" />
     <public type="drawable" name="tw_scrubber_progress_horizontal_holo_dark" id="0x010808d5" />
+    <public type="drawable" name="APKTOOL_DUMMY_08dc" id="0x010808dc" />
+    <public type="drawable" name="APKTOOL_DUMMY_08dd" id="0x010808dd" />
     <public type="drawable" name="tw_spinner_ab_holo_dark" id="0x010808e2" />
     <public type="drawable" name="tw_spinner_ab_holo_light" id="0x010808e3" />
     <public type="drawable" name="tw_spinner_background_holo_dark" id="0x010808ea" />
     <public type="drawable" name="tw_spinner_background_holo_light" id="0x010808eb" />
+    <public type="drawable" name="APKTOOL_DUMMY_08ee" id="0x010808ee" />
+    <public type="drawable" name="APKTOOL_DUMMY_08ef" id="0x010808ef" />
     <public type="drawable" name="tw_spinner_dropdown_background" id="0x010808f2" />
     <public type="drawable" name="tw_spinner_dropdown_background_light" id="0x010808f6" />
     <public type="drawable" name="tw_switch_inner_holo_dark" id="0x0108090d" />
@@ -5673,6 +6037,7 @@
     <public type="drawable" name="window_titlebar" id="0x010809a2" />
     <public type="drawable" name="zzzz_webselect_btn_bg" id="0x010809b4" />
     <public type="drawable" name="zzzz_webselect_btn_radio" id="0x010809b5" />
+    <public type="drawable" name="APKTOOL_DUMMY_09c0" id="0x010809c0" />
     <public type="drawable" name="zzzz_webselect_topbar_key_bg_option_xml" id="0x010809c1" />
     <public type="drawable" name="zzzzzzzzz_pcw_button_selector" id="0x010809cf" />
     <public type="drawable" name="zzzzzzzzz_pcw_call_icon_selector" id="0x010809d0" />
@@ -5688,6 +6053,158 @@
     <public type="drawable" name="selected_day_background" id="0x010809e8" />
     <public type="drawable" name="screen_background_holo_light" id="0x010809e9" />
     <public type="drawable" name="screen_background_holo_dark" id="0x010809ea" />
+    <public type="drawable" name="baidu_keyguard_axis_x_repeat" id="0x010809ec" />
+    <public type="drawable" name="baidu_keyguard_axis_y_repeat" id="0x010809ee" />
+    <public type="drawable" name="baidu_keyguard_camera" id="0x010809ef" />
+    <public type="drawable" name="baidu_keyguard_handle" id="0x010809fd" />
+    <public type="drawable" name="baidu_keyguard_message" id="0x01080a00" />
+    <public type="drawable" name="baidu_keyguard_refresh" id="0x01080a06" />
+    <public type="drawable" name="baidu_keyguard_search" id="0x01080a09" />
+    <public type="drawable" name="baidu_keyguard_slide_dot_l" id="0x01080a10" />
+    <public type="drawable" name="baidu_keyguard_slide_dot_m" id="0x01080a11" />
+    <public type="drawable" name="baidu_keyguard_slide_dot_s" id="0x01080a12" />
+    <public type="drawable" name="baidu_keyguard_slide_down" id="0x01080a13" />
+    <public type="drawable" name="baidu_keyguard_slide_fade" id="0x01080a14" />
+    <public type="drawable" name="baidu_keyguard_slide_handle" id="0x01080a15" />
+    <public type="drawable" name="baidu_keyguard_slide_handle_chargging" id="0x01080a17" />
+    <public type="drawable" name="baidu_keyguard_slide_iqiyi" id="0x01080a1b" />
+    <public type="drawable" name="baidu_keyguard_slide_iqiyi_bg" id="0x01080a1c" />
+    <public type="drawable" name="baidu_keyguard_slide_next" id="0x01080a28" />
+    <public type="drawable" name="baidu_keyguard_slide_pause" id="0x01080a2b" />
+    <public type="drawable" name="baidu_keyguard_slide_play" id="0x01080a2f" />
+    <public type="drawable" name="baidu_keyguard_slide_prev" id="0x01080a32" />
+    <public type="drawable" name="baidu_keyguard_unlock" id="0x01080a4b" />
+    <public type="drawable" name="baidu_p001_small" id="0x01080a63" />
+    <public type="drawable" name="baidu_p002_small" id="0x01080a64" />
+    <public type="drawable" name="baidu_p003_small" id="0x01080a65" />
+    <public type="drawable" name="baidu_p004_small" id="0x01080a66" />
+    <public type="drawable" name="baidu_p005_small" id="0x01080a67" />
+    <public type="drawable" name="baidu_p006_small" id="0x01080a68" />
+    <public type="drawable" name="baidu_p007_small" id="0x01080a69" />
+    <public type="drawable" name="baidu_p008_small" id="0x01080a6a" />
+    <public type="drawable" name="btn_hot_newmusic_view" id="0x01080a75" />
+    <public type="drawable" name="btn_hotmusic_view" id="0x01080a76" />
+    <public type="drawable" name="btn_keyboard_key_ics_normal_repeat" id="0x01080a79" />
+    <public type="drawable" name="btn_keyboard_key_ics_password" id="0x01080a7a" />
+    <public type="drawable" name="btn_keyboard_key_ics_pressed_repeat" id="0x01080a7b" />
+    <public type="drawable" name="btn_newmusic_view" id="0x01080a7c" />
+    <public type="drawable" name="btn_search_view" id="0x01080a7d" />
+    <public type="drawable" name="cld_list_bottom_selector_background_transition_baidu_light" id="0x01080a7f" />
+    <public type="drawable" name="cld_list_bottom_selector_baidu_light" id="0x01080a80" />
+    <public type="drawable" name="cld_list_selector_background_transition_baidu_light" id="0x01080a81" />
+    <public type="drawable" name="cld_list_selector_baidu_light" id="0x01080a82" />
+    <public type="drawable" name="cld_list_single_selector_background_transition_baidu_light" id="0x01080a83" />
+    <public type="drawable" name="cld_list_single_selector_baidu_light" id="0x01080a84" />
+    <public type="drawable" name="cld_list_top_selector_background_transition_baidu_light" id="0x01080a85" />
+    <public type="drawable" name="cld_list_top_selector_baidu_light" id="0x01080a86" />
+    <public type="drawable" name="rice_ic_lock_background" id="0x01080b25" />
+    <public type="drawable" name="stat_lockscreen_battery_charge" id="0x01080b33" />
+    <public type="drawable" name="stat_sys_upload_done_static" id="0x01080b39" />
+    <public type="drawable" name="yi_ab_item_background_baidu_light" id="0x01080b45" />
+    <public type="drawable" name="yi_activated_background_baidu_dark" id="0x01080b58" />
+    <public type="drawable" name="yi_activated_background_baidu_light" id="0x01080b59" />
+    <public type="drawable" name="yi_btn_cab_done_baidu_dark" id="0x01080b5a" />
+    <public type="drawable" name="yi_btn_cab_done_baidu_light" id="0x01080b5b" />
+    <public type="drawable" name="yi_btn_check_baidu_dark" id="0x01080b62" />
+    <public type="drawable" name="yi_btn_check_baidu_light" id="0x01080b63" />
+    <public type="drawable" name="yi_btn_default_baidu_dark" id="0x01080b7f" />
+    <public type="drawable" name="yi_btn_default_baidu_light" id="0x01080b80" />
+    <public type="drawable" name="yi_btn_group_baidu_dark" id="0x01080b8c" />
+    <public type="drawable" name="yi_btn_group_baidu_light" id="0x01080b8d" />
+    <public type="drawable" name="yi_btn_keyboard_key_ics" id="0x01080b98" />
+    <public type="drawable" name="yi_btn_lockscreen_unlock" id="0x01080b9b" />
+    <public type="drawable" name="yi_btn_puk_cancel" id="0x01080b9c" />
+    <public type="drawable" name="yi_btn_puk_eight" id="0x01080b9d" />
+    <public type="drawable" name="yi_btn_puk_five" id="0x01080b9e" />
+    <public type="drawable" name="yi_btn_puk_four" id="0x01080b9f" />
+    <public type="drawable" name="yi_btn_puk_nine" id="0x01080ba0" />
+    <public type="drawable" name="yi_btn_puk_ok" id="0x01080ba1" />
+    <public type="drawable" name="yi_btn_puk_one" id="0x01080ba2" />
+    <public type="drawable" name="yi_btn_puk_seven" id="0x01080ba3" />
+    <public type="drawable" name="yi_btn_puk_six" id="0x01080ba4" />
+    <public type="drawable" name="yi_btn_puk_three" id="0x01080ba5" />
+    <public type="drawable" name="yi_btn_puk_two" id="0x01080ba6" />
+    <public type="drawable" name="yi_btn_puk_zero" id="0x01080ba7" />
+    <public type="drawable" name="yi_btn_radio_baidu_dark" id="0x01080ba8" />
+    <public type="drawable" name="yi_btn_radio_baidu_light" id="0x01080ba9" />
+    <public type="drawable" name="yi_btn_star_baidu_dark" id="0x01080bcf" />
+    <public type="drawable" name="yi_btn_star_baidu_light" id="0x01080bd0" />
+    <public type="drawable" name="yi_btn_toggle_baidu_dark" id="0x01080be5" />
+    <public type="drawable" name="yi_btn_toggle_baidu_light" id="0x01080be6" />
+    <public type="drawable" name="yi_edit_text_baidu_dark" id="0x01080c0f" />
+    <public type="drawable" name="yi_edit_text_baidu_light" id="0x01080c10" />
+    <public type="drawable" name="yi_expander_group_baidu_dark" id="0x01080c13" />
+    <public type="drawable" name="yi_expander_group_baidu_light" id="0x01080c14" />
+    <public type="drawable" name="yi_fastscroll_thumb_baidu" id="0x01080c1b" />
+    <public type="drawable" name="yi_fastscroll_track_baidu_dark" id="0x01080c1e" />
+    <public type="drawable" name="yi_fastscroll_track_baidu_light" id="0x01080c1f" />
+    <public type="drawable" name="yi_ic_clear_baidu_dark" id="0x01080c2d" />
+    <public type="drawable" name="yi_ic_clear_baidu_light" id="0x01080c2e" />
+    <public type="drawable" name="yi_ic_menu_moreoverflow_baidu_dark" id="0x01080c41" />
+    <public type="drawable" name="yi_ic_menu_moreoverflow_baidu_light" id="0x01080c42" />
+    <public type="drawable" name="yi_item_background_baidu_dark" id="0x01080c50" />
+    <public type="drawable" name="yi_item_background_baidu_light" id="0x01080c51" />
+    <public type="drawable" name="yi_list_selector_background_transition_baidu_dark" id="0x01080c64" />
+    <public type="drawable" name="yi_list_selector_background_transition_baidu_light" id="0x01080c65" />
+    <public type="drawable" name="yi_list_selector_baidu_dark" id="0x01080c66" />
+    <public type="drawable" name="yi_list_selector_baidu_light" id="0x01080c67" />
+    <public type="drawable" name="yi_numberpicker_down_btn_baidu_dark" id="0x01080c7a" />
+    <public type="drawable" name="yi_numberpicker_down_btn_baidu_light" id="0x01080c7b" />
+    <public type="drawable" name="yi_numberpicker_up_btn_baidu_dark" id="0x01080c88" />
+    <public type="drawable" name="yi_numberpicker_up_btn_baidu_light" id="0x01080c89" />
+    <public type="drawable" name="yi_progress_horizontal_baidu_dark" id="0x01080c9d" />
+    <public type="drawable" name="yi_progress_horizontal_baidu_light" id="0x01080c9e" />
+    <public type="drawable" name="yi_progress_indeterminate_horizontal_baidu" id="0x01080c9f" />
+    <public type="drawable" name="yi_progress_large_baidu_dark" id="0x01080ca0" />
+    <public type="drawable" name="yi_progress_large_baidu_light" id="0x01080ca1" />
+    <public type="drawable" name="yi_progress_medium_baidu_dark" id="0x01080ca2" />
+    <public type="drawable" name="yi_progress_medium_baidu_light" id="0x01080ca3" />
+    <public type="drawable" name="yi_progress_small_baidu_dark" id="0x01080ca8" />
+    <public type="drawable" name="yi_progress_small_baidu_light" id="0x01080ca9" />
+    <public type="drawable" name="yi_ratingbar_baidu_dark" id="0x01080cc1" />
+    <public type="drawable" name="yi_ratingbar_baidu_light" id="0x01080cc2" />
+    <public type="drawable" name="yi_ratingbar_full_baidu_dark" id="0x01080cc3" />
+    <public type="drawable" name="yi_ratingbar_full_baidu_light" id="0x01080cc4" />
+    <public type="drawable" name="yi_ratingbar_full_empty_baidu_dark" id="0x01080cc5" />
+    <public type="drawable" name="yi_ratingbar_full_empty_baidu_light" id="0x01080cc6" />
+    <public type="drawable" name="yi_ratingbar_full_filled_baidu_dark" id="0x01080cc7" />
+    <public type="drawable" name="yi_ratingbar_full_filled_baidu_light" id="0x01080cc8" />
+    <public type="drawable" name="yi_ratingbar_small_baidu_dark" id="0x01080cc9" />
+    <public type="drawable" name="yi_ratingbar_small_baidu_light" id="0x01080cca" />
+    <public type="drawable" name="yi_scrubber_control_selector_baidu" id="0x01080cd1" />
+    <public type="drawable" name="yi_scrubber_progress_horizontal_baidu_dark" id="0x01080cd3" />
+    <public type="drawable" name="yi_scrubber_progress_horizontal_baidu_light" id="0x01080cd4" />
+    <public type="drawable" name="yi_spinner_ab_baidu_dark" id="0x01080cea" />
+    <public type="drawable" name="yi_spinner_ab_baidu_light" id="0x01080ceb" />
+    <public type="drawable" name="yi_spinner_background_baidu_dark" id="0x01080cf4" />
+    <public type="drawable" name="yi_spinner_background_baidu_light" id="0x01080cf5" />
+    <public type="drawable" name="yi_spinner_popup_backgroud_baidu_light" id="0x01080cfc" />
+    <public type="drawable" name="yi_switch_inner_baidu_dark" id="0x01080d06" />
+    <public type="drawable" name="yi_switch_inner_baidu_light" id="0x01080d07" />
+    <public type="drawable" name="yi_switch_track_baidu_dark" id="0x01080d12" />
+    <public type="drawable" name="yi_switch_track_baidu_light" id="0x01080d13" />
+    <public type="drawable" name="yi_tab_indicator_ab_baidu" id="0x01080d14" />
+    <public type="drawable" name="yi_tab_indicator_baidu" id="0x01080d15" />
+    <public type="drawable" name="yi_text_edit_item_background" id="0x01080d22" />
+    <public type="drawable" name="yi_text_edit_item_left_background" id="0x01080d23" />
+    <public type="drawable" name="yi_text_edit_item_middle_background" id="0x01080d24" />
+    <public type="drawable" name="yi_text_edit_item_right_background" id="0x01080d25" />
+    <public type="drawable" name="yi_text_edit_item_single_background" id="0x01080d26" />
+    <public type="drawable" name="yi_textfield_searchview_baidu_dark" id="0x01080d4b" />
+    <public type="drawable" name="yi_textfield_searchview_baidu_light" id="0x01080d4c" />
+    <public type="drawable" name="yi_textfield_searchview_right_baidu_dark" id="0x01080d4d" />
+    <public type="drawable" name="yi_textfield_searchview_right_baidu_light" id="0x01080d4e" />
+    <public type="drawable" name="yi_dialog_baidu_dark_frame" id="0x01080d51" />
+    <public type="drawable" name="yi_dialog_baidu_light_frame" id="0x01080d52" />
+    <public type="drawable" name="yi_input_method_fullscreen_background_baidu" id="0x01080d53" />
+    <public type="drawable" name="yi_screen_background_baidu_light" id="0x01080d54" />
+    <public type="drawable" name="yi_screen_background_baidu_dark" id="0x01080d55" />
+    <public type="drawable" name="usb_android" id="0x01080975" />
+    <public type="drawable" name="usb_android_connected" id="0x01080976" />
+    <public type="drawable" name="rice_expander_ic_maximized" id="0x01080b22" />
+    <public type="drawable" name="rice_expander_ic_minimized" id="0x01080b23" />
+    <public type="drawable" name="rice_ic_element_arrow_indicator_normal" id="0x01080b24" />
+    <public type="drawable" name="yi_ic_yellow_pages_holo_light" id="0x01080c4f" />
     <public type="drawable" name="arrow_down_float" id="0x01080002" />
     <public type="drawable" name="arrow_up_float" id="0x01080003" />
     <public type="drawable" name="btn_star_big_off" id="0x0108000b" />
@@ -6145,7 +6662,6 @@
     <public type="drawable" name="contact_header_bg" id="0x01080221" />
     <public type="drawable" name="create_contact" id="0x01080222" />
     <public type="drawable" name="day_picker_week_view_dayline_holo" id="0x01080224" />
-    <public type="drawable" name="default_wallpaper" id="0x0108022d" />
     <public type="drawable" name="device_options_mute" id="0x0108022e" />
     <public type="drawable" name="device_options_sound" id="0x0108022f" />
     <public type="drawable" name="device_options_vibrate" id="0x01080230" />
@@ -7618,8 +8134,6 @@
     <public type="drawable" name="tw_widget_progressbar_small" id="0x01080962" />
     <public type="drawable" name="tw_widget_progressbar_small_2" id="0x01080963" />
     <public type="drawable" name="unknown_image" id="0x0108096e" />
-    <public type="drawable" name="usb_android" id="0x01080975" />
-    <public type="drawable" name="usb_android_connected" id="0x01080976" />
     <public type="drawable" name="usb_bluetooth_fail" id="0x01080977" />
     <public type="drawable" name="vpn_connected" id="0x01080978" />
     <public type="drawable" name="vpn_disconnected" id="0x01080979" />
@@ -7656,6 +8170,636 @@
     <public type="drawable" name="zzzzzzzzz_pcw_icon_call_press" id="0x010809d7" />
     <public type="drawable" name="zzzzzzzzz_pcw_line" id="0x010809d8" />
     <public type="drawable" name="zzzzzzzzz_pcw_list_pressed_dark" id="0x010809d9" />
+    <public type="drawable" name="baidu_keyguard_axis_x" id="0x010809eb" />
+    <public type="drawable" name="baidu_keyguard_axis_y" id="0x010809ed" />
+    <public type="drawable" name="baidu_keyguard_camera_normal" id="0x010809f0" />
+    <public type="drawable" name="baidu_keyguard_camera_pressed" id="0x010809f1" />
+    <public type="drawable" name="baidu_keyguard_constellation_01" id="0x010809f2" />
+    <public type="drawable" name="baidu_keyguard_constellation_02" id="0x010809f3" />
+    <public type="drawable" name="baidu_keyguard_constellation_03" id="0x010809f4" />
+    <public type="drawable" name="baidu_keyguard_constellation_04" id="0x010809f5" />
+    <public type="drawable" name="baidu_keyguard_constellation_05" id="0x010809f6" />
+    <public type="drawable" name="baidu_keyguard_constellation_06" id="0x010809f7" />
+    <public type="drawable" name="baidu_keyguard_constellation_07" id="0x010809f8" />
+    <public type="drawable" name="baidu_keyguard_constellation_08" id="0x010809f9" />
+    <public type="drawable" name="baidu_keyguard_constellation_09" id="0x010809fa" />
+    <public type="drawable" name="baidu_keyguard_constellation_10" id="0x010809fb" />
+    <public type="drawable" name="baidu_keyguard_constellation_star" id="0x010809fc" />
+    <public type="drawable" name="baidu_keyguard_handle_normal" id="0x010809fe" />
+    <public type="drawable" name="baidu_keyguard_handle_pressed" id="0x010809ff" />
+    <public type="drawable" name="baidu_keyguard_message_normal" id="0x01080a01" />
+    <public type="drawable" name="baidu_keyguard_message_pressed" id="0x01080a02" />
+    <public type="drawable" name="baidu_keyguard_missed_count_bg" id="0x01080a03" />
+    <public type="drawable" name="baidu_keyguard_phone_normal" id="0x01080a04" />
+    <public type="drawable" name="baidu_keyguard_phone_pressed" id="0x01080a05" />
+    <public type="drawable" name="baidu_keyguard_refresh_normal" id="0x01080a07" />
+    <public type="drawable" name="baidu_keyguard_refresh_pressed" id="0x01080a08" />
+    <public type="drawable" name="baidu_keyguard_search_normal" id="0x01080a0a" />
+    <public type="drawable" name="baidu_keyguard_search_pressed" id="0x01080a0b" />
+    <public type="drawable" name="baidu_keyguard_search_up_pressed" id="0x01080a0c" />
+    <public type="drawable" name="baidu_keyguard_slide_album_default" id="0x01080a0d" />
+    <public type="drawable" name="baidu_keyguard_slide_bg_circle" id="0x01080a0e" />
+    <public type="drawable" name="baidu_keyguard_slide_camera" id="0x01080a0f" />
+    <public type="drawable" name="baidu_keyguard_slide_handle_charge" id="0x01080a16" />
+    <public type="drawable" name="baidu_keyguard_slide_handle_normal" id="0x01080a18" />
+    <public type="drawable" name="baidu_keyguard_slide_handle_pressed" id="0x01080a19" />
+    <public type="drawable" name="baidu_keyguard_slide_idle_alarm" id="0x01080a1a" />
+    <public type="drawable" name="baidu_keyguard_slide_iqiyi_edu" id="0x01080a1d" />
+    <public type="drawable" name="baidu_keyguard_slide_iqiyi_normal" id="0x01080a1e" />
+    <public type="drawable" name="baidu_keyguard_slide_iqiyi_pressed" id="0x01080a1f" />
+    <public type="drawable" name="baidu_keyguard_slide_iqiyi_pushmsg_icon" id="0x01080a20" />
+    <public type="drawable" name="baidu_keyguard_slide_message" id="0x01080a21" />
+    <public type="drawable" name="baidu_keyguard_slide_miss_bg" id="0x01080a22" />
+    <public type="drawable" name="baidu_keyguard_slide_misscall_bot" id="0x01080a23" />
+    <public type="drawable" name="baidu_keyguard_slide_misssms_bot" id="0x01080a24" />
+    <public type="drawable" name="baidu_keyguard_slide_music_bg" id="0x01080a25" />
+    <public type="drawable" name="baidu_keyguard_slide_music_covermask" id="0x01080a26" />
+    <public type="drawable" name="baidu_keyguard_slide_music_covermask_front" id="0x01080a27" />
+    <public type="drawable" name="baidu_keyguard_slide_next_normal" id="0x01080a29" />
+    <public type="drawable" name="baidu_keyguard_slide_next_pressed" id="0x01080a2a" />
+    <public type="drawable" name="baidu_keyguard_slide_pause_normal" id="0x01080a2c" />
+    <public type="drawable" name="baidu_keyguard_slide_pause_pressed" id="0x01080a2d" />
+    <public type="drawable" name="baidu_keyguard_slide_phone" id="0x01080a2e" />
+    <public type="drawable" name="baidu_keyguard_slide_play_normal" id="0x01080a30" />
+    <public type="drawable" name="baidu_keyguard_slide_play_pressed" id="0x01080a31" />
+    <public type="drawable" name="baidu_keyguard_slide_previous_normal" id="0x01080a33" />
+    <public type="drawable" name="baidu_keyguard_slide_previous_pressed" id="0x01080a34" />
+    <public type="drawable" name="baidu_keyguard_slide_ring" id="0x01080a35" />
+    <public type="drawable" name="baidu_keyguard_slide_unlock" id="0x01080a36" />
+    <public type="drawable" name="baidu_keyguard_space_camera_normal" id="0x01080a37" />
+    <public type="drawable" name="baidu_keyguard_space_camera_pressed" id="0x01080a38" />
+    <public type="drawable" name="baidu_keyguard_space_handle_normal" id="0x01080a39" />
+    <public type="drawable" name="baidu_keyguard_space_handle_pressed" id="0x01080a3a" />
+    <public type="drawable" name="baidu_keyguard_space_message_normal" id="0x01080a3b" />
+    <public type="drawable" name="baidu_keyguard_space_message_pressed" id="0x01080a3c" />
+    <public type="drawable" name="baidu_keyguard_space_miss_call" id="0x01080a3d" />
+    <public type="drawable" name="baidu_keyguard_space_miss_message" id="0x01080a3e" />
+    <public type="drawable" name="baidu_keyguard_space_phone_normal" id="0x01080a3f" />
+    <public type="drawable" name="baidu_keyguard_space_phone_pressed" id="0x01080a40" />
+    <public type="drawable" name="baidu_keyguard_space_shake_background" id="0x01080a41" />
+    <public type="drawable" name="baidu_keyguard_space_shake_layer0" id="0x01080a42" />
+    <public type="drawable" name="baidu_keyguard_space_shake_layer1" id="0x01080a43" />
+    <public type="drawable" name="baidu_keyguard_space_shake_layer2" id="0x01080a44" />
+    <public type="drawable" name="baidu_keyguard_space_shake_layer3" id="0x01080a45" />
+    <public type="drawable" name="baidu_keyguard_space_shake_layer4" id="0x01080a46" />
+    <public type="drawable" name="baidu_keyguard_space_unlock_normal" id="0x01080a47" />
+    <public type="drawable" name="baidu_keyguard_space_unlock_pressed" id="0x01080a48" />
+    <public type="drawable" name="baidu_keyguard_target_ring" id="0x01080a49" />
+    <public type="drawable" name="baidu_keyguard_target_small_ring" id="0x01080a4a" />
+    <public type="drawable" name="baidu_keyguard_unlock_normal" id="0x01080a4c" />
+    <public type="drawable" name="baidu_keyguard_unlock_pressed" id="0x01080a4d" />
+    <public type="drawable" name="baidu_keyguard_water_camera_normal" id="0x01080a4e" />
+    <public type="drawable" name="baidu_keyguard_water_camera_pressed" id="0x01080a4f" />
+    <public type="drawable" name="baidu_keyguard_water_handle_normal" id="0x01080a50" />
+    <public type="drawable" name="baidu_keyguard_water_handle_pressed" id="0x01080a51" />
+    <public type="drawable" name="baidu_keyguard_water_message_normal" id="0x01080a52" />
+    <public type="drawable" name="baidu_keyguard_water_message_pressed" id="0x01080a53" />
+    <public type="drawable" name="baidu_keyguard_water_miss_call" id="0x01080a54" />
+    <public type="drawable" name="baidu_keyguard_water_miss_message" id="0x01080a55" />
+    <public type="drawable" name="baidu_keyguard_water_phone_normal" id="0x01080a56" />
+    <public type="drawable" name="baidu_keyguard_water_phone_pressed" id="0x01080a57" />
+    <public type="drawable" name="baidu_keyguard_water_shake_background" id="0x01080a58" />
+    <public type="drawable" name="baidu_keyguard_water_shake_layer0" id="0x01080a59" />
+    <public type="drawable" name="baidu_keyguard_water_shake_layer1" id="0x01080a5a" />
+    <public type="drawable" name="baidu_keyguard_water_shake_layer2" id="0x01080a5b" />
+    <public type="drawable" name="baidu_keyguard_water_shake_layer3" id="0x01080a5c" />
+    <public type="drawable" name="baidu_keyguard_water_shake_layer4" id="0x01080a5d" />
+    <public type="drawable" name="baidu_keyguard_water_shake_layer5" id="0x01080a5e" />
+    <public type="drawable" name="baidu_keyguard_water_shake_layer6" id="0x01080a5f" />
+    <public type="drawable" name="baidu_keyguard_water_shake_layer7" id="0x01080a60" />
+    <public type="drawable" name="baidu_keyguard_water_unlock_normal" id="0x01080a61" />
+    <public type="drawable" name="baidu_keyguard_water_unlock_pressed" id="0x01080a62" />
+    <public type="drawable" name="battery_0" id="0x01080a6b" />
+    <public type="drawable" name="battery_1" id="0x01080a6c" />
+    <public type="drawable" name="battery_2" id="0x01080a6d" />
+    <public type="drawable" name="battery_3" id="0x01080a6e" />
+    <public type="drawable" name="battery_4" id="0x01080a6f" />
+    <public type="drawable" name="battery_5" id="0x01080a70" />
+    <public type="drawable" name="battery_apps_button" id="0x01080a71" />
+    <public type="drawable" name="battery_charge" id="0x01080a72" />
+    <public type="drawable" name="battery_fail" id="0x01080a73" />
+    <public type="drawable" name="boat" id="0x01080a74" />
+    <public type="drawable" name="btn_keyboard_key_background_normal" id="0x01080a77" />
+    <public type="drawable" name="btn_keyboard_key_background_pressed" id="0x01080a78" />
+    <public type="drawable" name="charge_circle" id="0x01080a7e" />
+    <public type="drawable" name="dot_l_h" id="0x01080a87" />
+    <public type="drawable" name="dot_l_n" id="0x01080a88" />
+    <public type="drawable" name="dot_m_h" id="0x01080a89" />
+    <public type="drawable" name="dot_m_n" id="0x01080a8a" />
+    <public type="drawable" name="dot_s_h" id="0x01080a8b" />
+    <public type="drawable" name="dot_s_n" id="0x01080a8c" />
+    <public type="drawable" name="down_h" id="0x01080a8d" />
+    <public type="drawable" name="down_n" id="0x01080a8e" />
+    <public type="drawable" name="dynamic_dialog_bottom_medium_baidu_light" id="0x01080a8f" />
+    <public type="drawable" name="ic_baidu_sound" id="0x01080a90" />
+    <public type="drawable" name="ic_input_ok" id="0x01080a91" />
+    <public type="drawable" name="ic_install_prompt_warning" id="0x01080a92" />
+    <public type="drawable" name="ic_launcher_360" id="0x01080a93" />
+    <public type="drawable" name="ic_launcher_360launcher" id="0x01080a94" />
+    <public type="drawable" name="ic_launcher_aliwangwang" id="0x01080a95" />
+    <public type="drawable" name="ic_launcher_baidubrowser" id="0x01080a96" />
+    <public type="drawable" name="ic_launcher_baidugamecenter" id="0x01080a97" />
+    <public type="drawable" name="ic_launcher_baidumap" id="0x01080a98" />
+    <public type="drawable" name="ic_launcher_baidumarket" id="0x01080a99" />
+    <public type="drawable" name="ic_launcher_baidunetdisk" id="0x01080a9a" />
+    <public type="drawable" name="ic_launcher_baidureader" id="0x01080a9b" />
+    <public type="drawable" name="ic_launcher_baidusearch" id="0x01080a9c" />
+    <public type="drawable" name="ic_launcher_baiduvoiceassistant" id="0x01080a9d" />
+    <public type="drawable" name="ic_launcher_dolby" id="0x01080a9e" />
+    <public type="drawable" name="ic_launcher_huluxia_gametools" id="0x01080a9f" />
+    <public type="drawable" name="ic_launcher_ireader" id="0x01080aa0" />
+    <public type="drawable" name="ic_launcher_iyqiyi" id="0x01080aa1" />
+    <public type="drawable" name="ic_launcher_kugou_music" id="0x01080aa2" />
+    <public type="drawable" name="ic_launcher_kuwo_player" id="0x01080aa3" />
+    <public type="drawable" name="ic_launcher_moji_weather" id="0x01080aa4" />
+    <public type="drawable" name="ic_launcher_momo" id="0x01080aa5" />
+    <public type="drawable" name="ic_launcher_pplive" id="0x01080aa6" />
+    <public type="drawable" name="ic_launcher_qq" id="0x01080aa7" />
+    <public type="drawable" name="ic_launcher_qqmusic" id="0x01080aa8" />
+    <public type="drawable" name="ic_launcher_qvodplayer" id="0x01080aa9" />
+    <public type="drawable" name="ic_launcher_qzone" id="0x01080aaa" />
+    <public type="drawable" name="ic_launcher_renren" id="0x01080aab" />
+    <public type="drawable" name="ic_launcher_security" id="0x01080aac" />
+    <public type="drawable" name="ic_launcher_shuqi" id="0x01080aad" />
+    <public type="drawable" name="ic_launcher_sim" id="0x01080aae" />
+    <public type="drawable" name="ic_launcher_sogou_input" id="0x01080aaf" />
+    <public type="drawable" name="ic_launcher_taobao" id="0x01080ab0" />
+    <public type="drawable" name="ic_launcher_tencent_news" id="0x01080ab1" />
+    <public type="drawable" name="ic_launcher_tencent_qqlive" id="0x01080ab2" />
+    <public type="drawable" name="ic_launcher_ucmobile" id="0x01080ab3" />
+    <public type="drawable" name="ic_launcher_wandoujia" id="0x01080ab4" />
+    <public type="drawable" name="ic_launcher_wechat" id="0x01080ab5" />
+    <public type="drawable" name="ic_launcher_weibo" id="0x01080ab6" />
+    <public type="drawable" name="ic_launcher_wifiwnys" id="0x01080ab7" />
+    <public type="drawable" name="ic_launcher_yixin" id="0x01080ab8" />
+    <public type="drawable" name="ic_launcher_youdao" id="0x01080ab9" />
+    <public type="drawable" name="ic_launcher_youku" id="0x01080aba" />
+    <public type="drawable" name="ic_launcher_zhifubao" id="0x01080abb" />
+    <public type="drawable" name="ic_lock_reboot" id="0x01080abc" />
+    <public type="drawable" name="ic_lock_screenshot" id="0x01080abd" />
+    <public type="drawable" name="ic_lockscreen_emergency_call" id="0x01080abe" />
+    <public type="drawable" name="ic_lockscreen_handle_press" id="0x01080abf" />
+    <public type="drawable" name="ic_main_unlock_hidden" id="0x01080adf" />
+    <public type="drawable" name="ic_main_unlock_homescreen_background" id="0x01080ae0" />
+    <public type="drawable" name="ic_main_unlock_indicator_0" id="0x01080ae1" />
+    <public type="drawable" name="ic_main_unlock_indicator_1" id="0x01080ae2" />
+    <public type="drawable" name="ic_main_unlock_normal" id="0x01080ae3" />
+    <public type="drawable" name="ic_main_unlock_pressed" id="0x01080ae4" />
+    <public type="drawable" name="ic_media_next_pressed" id="0x01080ae5" />
+    <public type="drawable" name="ic_media_pause_pressed" id="0x01080ae6" />
+    <public type="drawable" name="ic_media_play_pressed" id="0x01080ae7" />
+    <public type="drawable" name="ic_media_previous_pressed" id="0x01080ae8" />
+    <public type="drawable" name="ic_unlock_call_background" id="0x01080ae9" />
+    <public type="drawable" name="ic_unlock_call_background_normal" id="0x01080aea" />
+    <public type="drawable" name="ic_unlock_call_background_pressed" id="0x01080aeb" />
+    <public type="drawable" name="lock_music_covermask_front" id="0x01080aec" />
+    <public type="drawable" name="longpress_select_magnifier" id="0x01080aed" />
+    <public type="drawable" name="longpress_select_magnifier_mask" id="0x01080aee" />
+    <public type="drawable" name="luck_arrows_selected_01" id="0x01080aef" />
+    <public type="drawable" name="luck_arrows_selected_02" id="0x01080af0" />
+    <public type="drawable" name="luck_arrows_selected_03" id="0x01080af1" />
+    <public type="drawable" name="notification_bg_normal_pressed" id="0x01080af2" />
+    <public type="drawable" name="pin_0_normal" id="0x01080af3" />
+    <public type="drawable" name="pin_1_normal" id="0x01080af4" />
+    <public type="drawable" name="pin_2_normal" id="0x01080af5" />
+    <public type="drawable" name="pin_3_normal" id="0x01080af6" />
+    <public type="drawable" name="pin_4_normal" id="0x01080af7" />
+    <public type="drawable" name="pin_5_normal" id="0x01080af8" />
+    <public type="drawable" name="pin_6_normal" id="0x01080af9" />
+    <public type="drawable" name="pin_7_normal" id="0x01080afa" />
+    <public type="drawable" name="pin_8_normal" id="0x01080afb" />
+    <public type="drawable" name="pin_9_normal" id="0x01080afc" />
+    <public type="drawable" name="pin_inputbox_background" id="0x01080afd" />
+    <public type="drawable" name="pin_ok_normal" id="0x01080afe" />
+    <public type="drawable" name="popup_bottom_bar" id="0x01080aff" />
+    <public type="drawable" name="puk_0_normal" id="0x01080b08" />
+    <public type="drawable" name="puk_0_pressed" id="0x01080b09" />
+    <public type="drawable" name="puk_1_normal" id="0x01080b0a" />
+    <public type="drawable" name="puk_1_pressed" id="0x01080b0b" />
+    <public type="drawable" name="puk_2_normal" id="0x01080b0c" />
+    <public type="drawable" name="puk_2_pressed" id="0x01080b0d" />
+    <public type="drawable" name="puk_3_normal" id="0x01080b0e" />
+    <public type="drawable" name="puk_3_pressed" id="0x01080b0f" />
+    <public type="drawable" name="puk_4_normal" id="0x01080b10" />
+    <public type="drawable" name="puk_4_pressed" id="0x01080b11" />
+    <public type="drawable" name="puk_5_normal" id="0x01080b12" />
+    <public type="drawable" name="puk_5_pressed" id="0x01080b13" />
+    <public type="drawable" name="puk_6_normal" id="0x01080b14" />
+    <public type="drawable" name="puk_6_pressed" id="0x01080b15" />
+    <public type="drawable" name="puk_7_normal" id="0x01080b16" />
+    <public type="drawable" name="puk_7_pressed" id="0x01080b17" />
+    <public type="drawable" name="puk_8_normal" id="0x01080b18" />
+    <public type="drawable" name="puk_8_pressed" id="0x01080b19" />
+    <public type="drawable" name="puk_9_normal" id="0x01080b1a" />
+    <public type="drawable" name="puk_9_pressed" id="0x01080b1b" />
+    <public type="drawable" name="puk_affrim_normal" id="0x01080b1c" />
+    <public type="drawable" name="puk_affrim_pressed" id="0x01080b1d" />
+    <public type="drawable" name="puk_cancel_normal" id="0x01080b1e" />
+    <public type="drawable" name="puk_cancel_pressed" id="0x01080b1f" />
+    <public type="drawable" name="qb_boot_notice" id="0x01080b20" />
+    <public type="drawable" name="quickcontact_badge_overlay_disable_light" id="0x01080b21" />
+    <public type="drawable" name="rice_text_select_magnifier" id="0x01080b26" />
+    <public type="drawable" name="searchbox_hottop50_normal" id="0x01080b27" />
+    <public type="drawable" name="searchbox_hotwords_normal" id="0x01080b28" />
+    <public type="drawable" name="searchbox_hotwords_pressed" id="0x01080b29" />
+    <public type="drawable" name="searchbox_hotwords_selected" id="0x01080b2a" />
+    <public type="drawable" name="searchbox_music_pressed" id="0x01080b2c" />
+    <public type="drawable" name="searchbox_music_selected" id="0x01080b2d" />
+    <public type="drawable" name="searchbox_newmusic_normal" id="0x01080b2e" />
+    <public type="drawable" name="searchbox_newtop50_normal" id="0x01080b2f" />
+    <public type="drawable" name="stat_sys_download_anim6" id="0x01080b34" />
+    <public type="drawable" name="stat_sys_download_anim7" id="0x01080b35" />
+    <public type="drawable" name="stat_sys_download_success" id="0x01080b36" />
+    <public type="drawable" name="stat_sys_upload_anim6" id="0x01080b37" />
+    <public type="drawable" name="stat_sys_upload_anim7" id="0x01080b38" />
+    <public type="drawable" name="stat_sys_upload_success" id="0x01080b3a" />
+    <public type="drawable" name="switch_thumb_dark_off_point" id="0x01080b3b" />
+    <public type="drawable" name="switch_thumb_dark_on_point" id="0x01080b3c" />
+    <public type="drawable" name="switch_thumb_light_off_point" id="0x01080b3d" />
+    <public type="drawable" name="switch_thumb_light_on_point" id="0x01080b3e" />
+    <public type="drawable" name="yi_ab_bottom_solid_dark_baidu" id="0x01080b40" />
+    <public type="drawable" name="yi_ab_bottom_solid_inverse_baidu" id="0x01080b41" />
+    <public type="drawable" name="yi_ab_bottom_solid_light_baidu" id="0x01080b42" />
+    <public type="drawable" name="yi_ab_bottom_transparent_dark_baidu" id="0x01080b43" />
+    <public type="drawable" name="yi_ab_bottom_transparent_light_baidu" id="0x01080b44" />
+    <public type="drawable" name="yi_ab_item_focused_baidu" id="0x01080b46" />
+    <public type="drawable" name="yi_ab_item_pressed_baidu_light" id="0x01080b47" />
+    <public type="drawable" name="yi_ab_share_pack_baidu_dark" id="0x01080b49" />
+    <public type="drawable" name="yi_ab_share_pack_baidu_light" id="0x01080b4a" />
+    <public type="drawable" name="yi_ab_solid_dark_baidu" id="0x01080b4b" />
+    <public type="drawable" name="yi_ab_solid_light_baidu" id="0x01080b4c" />
+    <public type="drawable" name="yi_ab_solid_shadow_baidu" id="0x01080b4d" />
+    <public type="drawable" name="yi_ab_stacked_solid_dark_baidu" id="0x01080b4e" />
+    <public type="drawable" name="yi_ab_stacked_solid_inverse_baidu" id="0x01080b4f" />
+    <public type="drawable" name="yi_ab_stacked_solid_light_baidu" id="0x01080b50" />
+    <public type="drawable" name="yi_ab_stacked_transparent_dark_baidu" id="0x01080b51" />
+    <public type="drawable" name="yi_ab_stacked_transparent_light_baidu" id="0x01080b53" />
+    <public type="drawable" name="yi_ab_transparent_dark_baidu" id="0x01080b55" />
+    <public type="drawable" name="yi_ab_transparent_light_baidu" id="0x01080b56" />
+    <public type="drawable" name="yi_btn_cab_done_default_baidu_dark" id="0x01080b5c" />
+    <public type="drawable" name="yi_btn_cab_done_default_baidu_light" id="0x01080b5d" />
+    <public type="drawable" name="yi_btn_cab_done_focused_baidu_dark" id="0x01080b5e" />
+    <public type="drawable" name="yi_btn_cab_done_focused_baidu_light" id="0x01080b5f" />
+    <public type="drawable" name="yi_btn_cab_done_pressed_baidu_dark" id="0x01080b60" />
+    <public type="drawable" name="yi_btn_cab_done_pressed_baidu_light" id="0x01080b61" />
+    <public type="drawable" name="yi_btn_check_off_baidu" id="0x01080b64" />
+    <public type="drawable" name="yi_btn_check_off_baidu_dark" id="0x01080b65" />
+    <public type="drawable" name="yi_btn_check_off_baidu_light" id="0x01080b66" />
+    <public type="drawable" name="yi_btn_check_off_disabled_baidu_dark" id="0x01080b69" />
+    <public type="drawable" name="yi_btn_check_off_disabled_baidu_light" id="0x01080b6a" />
+    <public type="drawable" name="yi_btn_check_off_disabled_focused_baidu_dark" id="0x01080b6b" />
+    <public type="drawable" name="yi_btn_check_off_disabled_focused_baidu_light" id="0x01080b6c" />
+    <public type="drawable" name="yi_btn_check_off_focused_baidu_dark" id="0x01080b6d" />
+    <public type="drawable" name="yi_btn_check_off_focused_baidu_light" id="0x01080b6e" />
+    <public type="drawable" name="yi_btn_check_off_pressed_baidu_dark" id="0x01080b70" />
+    <public type="drawable" name="yi_btn_check_off_pressed_baidu_light" id="0x01080b71" />
+    <public type="drawable" name="yi_btn_check_on_baidu" id="0x01080b72" />
+    <public type="drawable" name="yi_btn_check_on_baidu_dark" id="0x01080b73" />
+    <public type="drawable" name="yi_btn_check_on_baidu_light" id="0x01080b74" />
+    <public type="drawable" name="yi_btn_check_on_disabled_baidu_dark" id="0x01080b77" />
+    <public type="drawable" name="yi_btn_check_on_disabled_baidu_light" id="0x01080b78" />
+    <public type="drawable" name="yi_btn_check_on_disabled_focused_baidu_dark" id="0x01080b79" />
+    <public type="drawable" name="yi_btn_check_on_disabled_focused_baidu_light" id="0x01080b7a" />
+    <public type="drawable" name="yi_btn_check_on_focused_baidu_dark" id="0x01080b7b" />
+    <public type="drawable" name="yi_btn_check_on_focused_baidu_light" id="0x01080b7c" />
+    <public type="drawable" name="yi_btn_check_on_pressed_baidu_dark" id="0x01080b7d" />
+    <public type="drawable" name="yi_btn_check_on_pressed_baidu_light" id="0x01080b7e" />
+    <public type="drawable" name="yi_btn_default_disabled_baidu_dark" id="0x01080b81" />
+    <public type="drawable" name="yi_btn_default_disabled_baidu_light" id="0x01080b83" />
+    <public type="drawable" name="yi_btn_default_disabled_focused_baidu_dark" id="0x01080b84" />
+    <public type="drawable" name="yi_btn_default_disabled_focused_baidu_light" id="0x01080b85" />
+    <public type="drawable" name="yi_btn_default_focused_baidu_dark" id="0x01080b86" />
+    <public type="drawable" name="yi_btn_default_focused_baidu_light" id="0x01080b87" />
+    <public type="drawable" name="yi_btn_default_normal_baidu_dark" id="0x01080b88" />
+    <public type="drawable" name="yi_btn_default_normal_baidu_light" id="0x01080b89" />
+    <public type="drawable" name="yi_btn_default_pressed_baidu_dark" id="0x01080b8a" />
+    <public type="drawable" name="yi_btn_default_pressed_baidu_light" id="0x01080b8b" />
+    <public type="drawable" name="yi_btn_group_disabled_baidu_dark" id="0x01080b8e" />
+    <public type="drawable" name="yi_btn_group_disabled_baidu_light" id="0x01080b8f" />
+    <public type="drawable" name="yi_btn_group_normal_baidu_dark" id="0x01080b90" />
+    <public type="drawable" name="yi_btn_group_normal_baidu_light" id="0x01080b91" />
+    <public type="drawable" name="yi_btn_keyboard_key_dark_normal_baidu" id="0x01080b92" />
+    <public type="drawable" name="yi_btn_keyboard_key_dark_normal_off_baidu" id="0x01080b93" />
+    <public type="drawable" name="yi_btn_keyboard_key_dark_normal_on_baidu" id="0x01080b94" />
+    <public type="drawable" name="yi_btn_keyboard_key_dark_pressed_baidu" id="0x01080b95" />
+    <public type="drawable" name="yi_btn_keyboard_key_dark_pressed_off_baidu" id="0x01080b96" />
+    <public type="drawable" name="yi_btn_keyboard_key_dark_pressed_on_baidu" id="0x01080b97" />
+    <public type="drawable" name="yi_btn_keyboard_key_light_normal_baidu" id="0x01080b99" />
+    <public type="drawable" name="yi_btn_keyboard_key_light_pressed_baidu" id="0x01080b9a" />
+    <public type="drawable" name="yi_btn_radio_off_baidu_dark" id="0x01080baa" />
+    <public type="drawable" name="yi_btn_radio_off_baidu_light" id="0x01080bab" />
+    <public type="drawable" name="yi_btn_radio_off_disabled_baidu_dark" id="0x01080bac" />
+    <public type="drawable" name="yi_btn_radio_off_disabled_baidu_light" id="0x01080bad" />
+    <public type="drawable" name="yi_btn_radio_off_disabled_focused_baidu_dark" id="0x01080bae" />
+    <public type="drawable" name="yi_btn_radio_off_disabled_focused_baidu_light" id="0x01080baf" />
+    <public type="drawable" name="yi_btn_radio_off_focused_baidu_dark" id="0x01080bb0" />
+    <public type="drawable" name="yi_btn_radio_off_focused_baidu_light" id="0x01080bb1" />
+    <public type="drawable" name="yi_btn_radio_off_pressed_baidu_dark" id="0x01080bb2" />
+    <public type="drawable" name="yi_btn_radio_off_pressed_baidu_light" id="0x01080bb3" />
+    <public type="drawable" name="yi_btn_radio_on_baidu_dark" id="0x01080bb4" />
+    <public type="drawable" name="yi_btn_radio_on_baidu_light" id="0x01080bb5" />
+    <public type="drawable" name="yi_btn_radio_on_disabled_baidu_dark" id="0x01080bb6" />
+    <public type="drawable" name="yi_btn_radio_on_disabled_baidu_light" id="0x01080bb7" />
+    <public type="drawable" name="yi_btn_radio_on_disabled_focused_baidu_dark" id="0x01080bb8" />
+    <public type="drawable" name="yi_btn_radio_on_disabled_focused_baidu_light" id="0x01080bb9" />
+    <public type="drawable" name="yi_btn_radio_on_focused_baidu_dark" id="0x01080bba" />
+    <public type="drawable" name="yi_btn_radio_on_focused_baidu_light" id="0x01080bbb" />
+    <public type="drawable" name="yi_btn_radio_on_pressed_baidu_dark" id="0x01080bbc" />
+    <public type="drawable" name="yi_btn_radio_on_pressed_baidu_light" id="0x01080bbd" />
+    <public type="drawable" name="yi_btn_rating_star_off_focused_baidu_dark" id="0x01080bc1" />
+    <public type="drawable" name="yi_btn_rating_star_off_focused_baidu_light" id="0x01080bc2" />
+    <public type="drawable" name="yi_btn_rating_star_off_normal_baidu_dark" id="0x01080bc3" />
+    <public type="drawable" name="yi_btn_rating_star_off_normal_baidu_light" id="0x01080bc4" />
+    <public type="drawable" name="yi_btn_rating_star_off_pressed_baidu_dark" id="0x01080bc5" />
+    <public type="drawable" name="yi_btn_rating_star_off_pressed_baidu_light" id="0x01080bc6" />
+    <public type="drawable" name="yi_btn_rating_star_on_focused_baidu_dark" id="0x01080bc9" />
+    <public type="drawable" name="yi_btn_rating_star_on_focused_baidu_light" id="0x01080bca" />
+    <public type="drawable" name="yi_btn_rating_star_on_normal_baidu_dark" id="0x01080bcb" />
+    <public type="drawable" name="yi_btn_rating_star_on_normal_baidu_light" id="0x01080bcc" />
+    <public type="drawable" name="yi_btn_rating_star_on_pressed_baidu_dark" id="0x01080bcd" />
+    <public type="drawable" name="yi_btn_rating_star_on_pressed_baidu_light" id="0x01080bce" />
+    <public type="drawable" name="yi_btn_star_off_disabled_baidu_dark" id="0x01080bd1" />
+    <public type="drawable" name="yi_btn_star_off_disabled_baidu_light" id="0x01080bd2" />
+    <public type="drawable" name="yi_btn_star_off_disabled_focused_baidu_dark" id="0x01080bd3" />
+    <public type="drawable" name="yi_btn_star_off_disabled_focused_baidu_light" id="0x01080bd4" />
+    <public type="drawable" name="yi_btn_star_off_focused_baidu_dark" id="0x01080bd5" />
+    <public type="drawable" name="yi_btn_star_off_focused_baidu_light" id="0x01080bd6" />
+    <public type="drawable" name="yi_btn_star_off_normal_baidu_dark" id="0x01080bd7" />
+    <public type="drawable" name="yi_btn_star_off_normal_baidu_light" id="0x01080bd8" />
+    <public type="drawable" name="yi_btn_star_off_pressed_baidu_dark" id="0x01080bd9" />
+    <public type="drawable" name="yi_btn_star_off_pressed_baidu_light" id="0x01080bda" />
+    <public type="drawable" name="yi_btn_star_on_disabled_baidu_dark" id="0x01080bdb" />
+    <public type="drawable" name="yi_btn_star_on_disabled_baidu_light" id="0x01080bdc" />
+    <public type="drawable" name="yi_btn_star_on_disabled_focused_baidu_dark" id="0x01080bdd" />
+    <public type="drawable" name="yi_btn_star_on_disabled_focused_baidu_light" id="0x01080bde" />
+    <public type="drawable" name="yi_btn_star_on_focused_baidu_dark" id="0x01080bdf" />
+    <public type="drawable" name="yi_btn_star_on_focused_baidu_light" id="0x01080be0" />
+    <public type="drawable" name="yi_btn_star_on_normal_baidu_dark" id="0x01080be1" />
+    <public type="drawable" name="yi_btn_star_on_normal_baidu_light" id="0x01080be2" />
+    <public type="drawable" name="yi_btn_star_on_pressed_baidu_dark" id="0x01080be3" />
+    <public type="drawable" name="yi_btn_star_on_pressed_baidu_light" id="0x01080be4" />
+    <public type="drawable" name="yi_btn_toggle_off_disabled_baidu_dark" id="0x01080be7" />
+    <public type="drawable" name="yi_btn_toggle_off_disabled_baidu_light" id="0x01080be8" />
+    <public type="drawable" name="yi_btn_toggle_off_disabled_focused_baidu_dark" id="0x01080be9" />
+    <public type="drawable" name="yi_btn_toggle_off_disabled_focused_baidu_light" id="0x01080bea" />
+    <public type="drawable" name="yi_btn_toggle_off_focused_baidu_dark" id="0x01080beb" />
+    <public type="drawable" name="yi_btn_toggle_off_focused_baidu_light" id="0x01080bec" />
+    <public type="drawable" name="yi_btn_toggle_off_normal_baidu_dark" id="0x01080bed" />
+    <public type="drawable" name="yi_btn_toggle_off_normal_baidu_light" id="0x01080bee" />
+    <public type="drawable" name="yi_btn_toggle_off_pressed_baidu_dark" id="0x01080bef" />
+    <public type="drawable" name="yi_btn_toggle_off_pressed_baidu_light" id="0x01080bf0" />
+    <public type="drawable" name="yi_btn_toggle_on_disabled_baidu_dark" id="0x01080bf1" />
+    <public type="drawable" name="yi_btn_toggle_on_disabled_baidu_light" id="0x01080bf2" />
+    <public type="drawable" name="yi_btn_toggle_on_disabled_focused_baidu_dark" id="0x01080bf3" />
+    <public type="drawable" name="yi_btn_toggle_on_disabled_focused_baidu_light" id="0x01080bf4" />
+    <public type="drawable" name="yi_btn_toggle_on_focused_baidu_dark" id="0x01080bf5" />
+    <public type="drawable" name="yi_btn_toggle_on_focused_baidu_light" id="0x01080bf6" />
+    <public type="drawable" name="yi_btn_toggle_on_normal_baidu_dark" id="0x01080bf7" />
+    <public type="drawable" name="yi_btn_toggle_on_normal_baidu_light" id="0x01080bf8" />
+    <public type="drawable" name="yi_btn_toggle_on_pressed_baidu_dark" id="0x01080bf9" />
+    <public type="drawable" name="yi_btn_toggle_on_pressed_baidu_light" id="0x01080bfa" />
+    <public type="drawable" name="yi_cab_background_bottom_baidu_dark" id="0x01080bfb" />
+    <public type="drawable" name="yi_cab_background_bottom_baidu_light" id="0x01080bfc" />
+    <public type="drawable" name="yi_cab_background_bottom_inverse_baidu" id="0x01080bfd" />
+    <public type="drawable" name="yi_cab_background_top_baidu_dark" id="0x01080bfe" />
+    <public type="drawable" name="yi_cab_background_top_baidu_light" id="0x01080bff" />
+    <public type="drawable" name="yi_cab_background_top_inverse_baidu" id="0x01080c00" />
+    <public type="drawable" name="yi_day_picker_week_view_dayline_baidu" id="0x01080c01" />
+    <public type="drawable" name="yi_dialog_bottom_baidu_dark" id="0x01080c02" />
+    <public type="drawable" name="yi_dialog_bottom_baidu_light" id="0x01080c03" />
+    <public type="drawable" name="yi_dialog_bottom_medium_baidu_light" id="0x01080c04" />
+    <public type="drawable" name="yi_dialog_full_baidu_dark" id="0x01080c05" />
+    <public type="drawable" name="yi_dialog_full_baidu_light" id="0x01080c06" />
+    <public type="drawable" name="yi_dialog_full_light" id="0x01080c07" />
+    <public type="drawable" name="yi_dialog_middle_baidu_dark" id="0x01080c08" />
+    <public type="drawable" name="yi_dialog_middle_baidu_light" id="0x01080c09" />
+    <public type="drawable" name="yi_dialog_middle_custom_baidu_light" id="0x01080c0a" />
+    <public type="drawable" name="yi_dialog_top_baidu_dark" id="0x01080c0b" />
+    <public type="drawable" name="yi_dialog_top_baidu_light" id="0x01080c0c" />
+    <public type="drawable" name="yi_divider_vertical_baidu_light" id="0x01080c0d" />
+    <public type="drawable" name="yi_divider_vertical_tab_baidu_light" id="0x01080c0e" />
+    <public type="drawable" name="yi_expander_close_baidu_dark" id="0x01080c11" />
+    <public type="drawable" name="yi_expander_close_baidu_light" id="0x01080c12" />
+    <public type="drawable" name="yi_expander_open_baidu_dark" id="0x01080c15" />
+    <public type="drawable" name="yi_expander_open_baidu_light" id="0x01080c16" />
+    <public type="drawable" name="yi_fastscroll_label_left_baidu_dark" id="0x01080c17" />
+    <public type="drawable" name="yi_fastscroll_label_left_baidu_light" id="0x01080c18" />
+    <public type="drawable" name="yi_fastscroll_label_right_baidu_dark" id="0x01080c19" />
+    <public type="drawable" name="yi_fastscroll_label_right_baidu_light" id="0x01080c1a" />
+    <public type="drawable" name="yi_fastscroll_thumb_default_baidu" id="0x01080c1c" />
+    <public type="drawable" name="yi_fastscroll_thumb_pressed_baidu" id="0x01080c1d" />
+    <public type="drawable" name="yi_fastscroll_track_default_baidu_dark" id="0x01080c20" />
+    <public type="drawable" name="yi_fastscroll_track_default_baidu_light" id="0x01080c21" />
+    <public type="drawable" name="yi_fastscroll_track_pressed_baidu_dark" id="0x01080c22" />
+    <public type="drawable" name="yi_fastscroll_track_pressed_baidu_light" id="0x01080c23" />
+    <public type="drawable" name="yi_filter_dropdown_panel_baidu_light" id="0x01080c24" />
+    <public type="drawable" name="yi_ic_ab_back_baidu_dark" id="0x01080c25" />
+    <public type="drawable" name="yi_ic_ab_back_baidu_light" id="0x01080c26" />
+    <public type="drawable" name="yi_ic_cab_done_baidu" id="0x01080c29" />
+    <public type="drawable" name="yi_ic_cab_done_baidu_dark" id="0x01080c2a" />
+    <public type="drawable" name="yi_ic_cab_done_baidu_light" id="0x01080c2b" />
+    <public type="drawable" name="yi_ic_checkmark_baidu_light" id="0x01080c2c" />
+    <public type="drawable" name="yi_ic_clear_search_api_baidu_light" id="0x01080c2f" />
+    <public type="drawable" name="yi_ic_clear_search_api_disabled_baidu_light" id="0x01080c30" />
+    <public type="drawable" name="yi_ic_commit_search_api_baidu_light" id="0x01080c31" />
+    <public type="drawable" name="yi_ic_dialog_alert_baidu_dark" id="0x01080c32" />
+    <public type="drawable" name="yi_ic_dialog_alert_baidu_light" id="0x01080c33" />
+    <public type="drawable" name="yi_ic_find_next_baidu_dark" id="0x01080c37" />
+    <public type="drawable" name="yi_ic_find_previous_baidu_dark" id="0x01080c38" />
+    <public type="drawable" name="yi_ic_go_search_api_baidu_light" id="0x01080c39" />
+    <public type="drawable" name="yi_ic_menu_cancel_baidu" id="0x01080c3a" />
+    <public type="drawable" name="yi_ic_menu_cancel_disable_baidu" id="0x01080c3b" />
+    <public type="drawable" name="yi_ic_menu_copy_baidu_dark" id="0x01080c3c" />
+    <public type="drawable" name="yi_ic_menu_cut_baidu_dark" id="0x01080c3d" />
+    <public type="drawable" name="yi_ic_menu_done_baidu" id="0x01080c3f" />
+    <public type="drawable" name="yi_ic_menu_find_baidu_dark" id="0x01080c40" />
+    <public type="drawable" name="yi_ic_menu_moreoverflow_normal_baidu_dark" id="0x01080c43" />
+    <public type="drawable" name="yi_ic_menu_moreoverflow_normal_baidu_light" id="0x01080c44" />
+    <public type="drawable" name="yi_ic_menu_paste_baidu_dark" id="0x01080c45" />
+    <public type="drawable" name="yi_ic_menu_search_baidu_dark" id="0x01080c46" />
+    <public type="drawable" name="yi_ic_menu_selectall_baidu_dark" id="0x01080c47" />
+    <public type="drawable" name="yi_ic_menu_share_baidu_dark" id="0x01080c48" />
+    <public type="drawable" name="yi_ic_menu_trash_baidu_light" id="0x01080c4a" />
+    <public type="drawable" name="yi_ic_search" id="0x01080c4c" />
+    <public type="drawable" name="yi_ic_search_api_baidu_light" id="0x01080c4d" />
+    <public type="drawable" name="yi_ic_voice_search_api_baidu_light" id="0x01080c4e" />
+    <public type="drawable" name="yi_list_activated_baidu" id="0x01080c52" />
+    <public type="drawable" name="yi_list_bg_baidu_light" id="0x01080c54" />
+    <public type="drawable" name="yi_list_bottom_longpressed_baidu_light" id="0x01080c56" />
+    <public type="drawable" name="yi_list_bottom_pressed_baidu_light" id="0x01080c57" />
+    <public type="drawable" name="yi_list_divider_baidu_dark" id="0x01080c58" />
+    <public type="drawable" name="yi_list_divider_baidu_light" id="0x01080c5b" />
+    <public type="drawable" name="yi_list_focused_baidu" id="0x01080c5c" />
+    <public type="drawable" name="yi_list_focused_baidu_light" id="0x01080c5d" />
+    <public type="drawable" name="yi_list_longpressed_baidu" id="0x01080c5e" />
+    <public type="drawable" name="yi_list_longpressed_baidu_light" id="0x01080c5f" />
+    <public type="drawable" name="yi_list_pressed_baidu_dark" id="0x01080c60" />
+    <public type="drawable" name="yi_list_pressed_baidu_light" id="0x01080c61" />
+    <public type="drawable" name="yi_list_section_divider_baidu_dark" id="0x01080c62" />
+    <public type="drawable" name="yi_list_section_divider_baidu_light" id="0x01080c63" />
+    <public type="drawable" name="yi_list_single_longpressed_baidu_light" id="0x01080c69" />
+    <public type="drawable" name="yi_list_single_pressed_baidu_light" id="0x01080c6a" />
+    <public type="drawable" name="yi_list_top_longpressed_baidu_light" id="0x01080c6c" />
+    <public type="drawable" name="yi_list_top_pressed_baidu_light" id="0x01080c6d" />
+    <public type="drawable" name="yi_menu_dropdown_panel_baidu_dark" id="0x01080c6e" />
+    <public type="drawable" name="yi_menu_dropdown_panel_baidu_light" id="0x01080c6f" />
+    <public type="drawable" name="yi_menu_dropdown_panel_baidu_light_up" id="0x01080c70" />
+    <public type="drawable" name="yi_menu_hardkey_panel_baidu_dark" id="0x01080c71" />
+    <public type="drawable" name="yi_menu_hardkey_panel_baidu_light" id="0x01080c72" />
+    <public type="drawable" name="yi_number_picker_bg_left" id="0x01080c75" />
+    <public type="drawable" name="yi_number_picker_bg_middle" id="0x01080c76" />
+    <public type="drawable" name="yi_number_picker_bg_right" id="0x01080c78" />
+    <public type="drawable" name="yi_numberpicker_down_disabled_baidu_dark" id="0x01080c7c" />
+    <public type="drawable" name="yi_numberpicker_down_disabled_baidu_light" id="0x01080c7d" />
+    <public type="drawable" name="yi_numberpicker_down_disabled_focused_baidu_dark" id="0x01080c7e" />
+    <public type="drawable" name="yi_numberpicker_down_disabled_focused_baidu_light" id="0x01080c7f" />
+    <public type="drawable" name="yi_numberpicker_down_focused_baidu_dark" id="0x01080c80" />
+    <public type="drawable" name="yi_numberpicker_down_focused_baidu_light" id="0x01080c81" />
+    <public type="drawable" name="yi_numberpicker_down_normal_baidu_dark" id="0x01080c83" />
+    <public type="drawable" name="yi_numberpicker_down_normal_baidu_light" id="0x01080c84" />
+    <public type="drawable" name="yi_numberpicker_down_pressed_baidu_dark" id="0x01080c85" />
+    <public type="drawable" name="yi_numberpicker_down_pressed_baidu_light" id="0x01080c86" />
+    <public type="drawable" name="yi_numberpicker_selection_divider" id="0x01080c87" />
+    <public type="drawable" name="yi_numberpicker_up_disabled_baidu_dark" id="0x01080c8a" />
+    <public type="drawable" name="yi_numberpicker_up_disabled_focused_baidu_dark" id="0x01080c8c" />
+    <public type="drawable" name="yi_numberpicker_up_disabled_focused_baidu_light" id="0x01080c8d" />
+    <public type="drawable" name="yi_numberpicker_up_focused_baidu_dark" id="0x01080c8e" />
+    <public type="drawable" name="yi_numberpicker_up_focused_baidu_light" id="0x01080c8f" />
+    <public type="drawable" name="yi_numberpicker_up_normal_baidu_dark" id="0x01080c91" />
+    <public type="drawable" name="yi_numberpicker_up_normal_baidu_light" id="0x01080c92" />
+    <public type="drawable" name="yi_numberpicker_up_pressed_baidu_dark" id="0x01080c93" />
+    <public type="drawable" name="yi_numberpicker_up_pressed_baidu_light" id="0x01080c94" />
+    <public type="drawable" name="yi_popup_arrow_down" id="0x01080c95" />
+    <public type="drawable" name="yi_popup_arrow_up" id="0x01080c96" />
+    <public type="drawable" name="yi_popup_inline_error_above_baidu_dark" id="0x01080c97" />
+    <public type="drawable" name="yi_popup_inline_error_above_baidu_light" id="0x01080c98" />
+    <public type="drawable" name="yi_popup_inline_error_baidu_dark" id="0x01080c99" />
+    <public type="drawable" name="yi_popup_inline_error_baidu_light" id="0x01080c9a" />
+    <public type="drawable" name="yi_progress_bg_baidu_dark" id="0x01080c9b" />
+    <public type="drawable" name="yi_progress_bg_baidu_light" id="0x01080c9c" />
+    <public type="drawable" name="yi_progress_primary_baidu_dark" id="0x01080ca4" />
+    <public type="drawable" name="yi_progress_primary_baidu_light" id="0x01080ca5" />
+    <public type="drawable" name="yi_progress_secondary_baidu_dark" id="0x01080ca6" />
+    <public type="drawable" name="yi_progress_secondary_baidu_light" id="0x01080ca7" />
+    <public type="drawable" name="yi_progressbar_indeterminate_baidu1" id="0x01080caa" />
+    <public type="drawable" name="yi_progressbar_indeterminate_baidu2" id="0x01080cab" />
+    <public type="drawable" name="yi_progressbar_indeterminate_baidu3" id="0x01080cac" />
+    <public type="drawable" name="yi_progressbar_indeterminate_baidu4" id="0x01080cad" />
+    <public type="drawable" name="yi_progressbar_indeterminate_baidu5" id="0x01080cae" />
+    <public type="drawable" name="yi_progressbar_indeterminate_baidu6" id="0x01080caf" />
+    <public type="drawable" name="yi_progressbar_indeterminate_baidu7" id="0x01080cb0" />
+    <public type="drawable" name="yi_progressbar_indeterminate_baidu8" id="0x01080cb1" />
+    <public type="drawable" name="yi_rate_star_big_half_baidu_dark" id="0x01080cb2" />
+    <public type="drawable" name="yi_rate_star_big_half_baidu_light" id="0x01080cb3" />
+    <public type="drawable" name="yi_rate_star_big_off_baidu_dark" id="0x01080cb4" />
+    <public type="drawable" name="yi_rate_star_big_off_baidu_light" id="0x01080cb5" />
+    <public type="drawable" name="yi_rate_star_big_on_baidu_dark" id="0x01080cb6" />
+    <public type="drawable" name="yi_rate_star_big_on_baidu_light" id="0x01080cb7" />
+    <public type="drawable" name="yi_rate_star_small_half_baidu_dark" id="0x01080cbb" />
+    <public type="drawable" name="yi_rate_star_small_half_baidu_light" id="0x01080cbc" />
+    <public type="drawable" name="yi_rate_star_small_off_baidu_dark" id="0x01080cbd" />
+    <public type="drawable" name="yi_rate_star_small_off_baidu_light" id="0x01080cbe" />
+    <public type="drawable" name="yi_rate_star_small_on_baidu_dark" id="0x01080cbf" />
+    <public type="drawable" name="yi_rate_star_small_on_baidu_light" id="0x01080cc0" />
+    <public type="drawable" name="yi_scrollbar_handle_baidu_dark" id="0x01080ccb" />
+    <public type="drawable" name="yi_scrollbar_handle_baidu_light" id="0x01080ccc" />
+    <public type="drawable" name="yi_scrubber_control_disabled_baidu" id="0x01080ccd" />
+    <public type="drawable" name="yi_scrubber_control_focused_baidu" id="0x01080cce" />
+    <public type="drawable" name="yi_scrubber_control_normal_baidu" id="0x01080ccf" />
+    <public type="drawable" name="yi_scrubber_control_pressed_baidu" id="0x01080cd0" />
+    <public type="drawable" name="yi_scrubber_primary_baidu" id="0x01080cd2" />
+    <public type="drawable" name="yi_scrubber_secondary_baidu" id="0x01080cd5" />
+    <public type="drawable" name="yi_scrubber_track_baidu_dark" id="0x01080cd6" />
+    <public type="drawable" name="yi_scrubber_track_baidu_light" id="0x01080cd7" />
+    <public type="drawable" name="yi_spinner_16_inner_dark_baidu" id="0x01080cd9" />
+    <public type="drawable" name="yi_spinner_16_inner_light_baidu" id="0x01080cda" />
+    <public type="drawable" name="yi_spinner_16_outer_dark_baidu" id="0x01080cdd" />
+    <public type="drawable" name="yi_spinner_16_outer_light_baidu" id="0x01080cde" />
+    <public type="drawable" name="yi_spinner_48_inner_dark_baidu" id="0x01080ce0" />
+    <public type="drawable" name="yi_spinner_48_inner_light_baidu" id="0x01080ce1" />
+    <public type="drawable" name="yi_spinner_48_outer_dark_baidu" id="0x01080ce3" />
+    <public type="drawable" name="yi_spinner_48_outer_light_baidu" id="0x01080ce4" />
+    <public type="drawable" name="yi_spinner_76_inner_dark_baidu" id="0x01080ce5" />
+    <public type="drawable" name="yi_spinner_76_inner_light_baidu" id="0x01080ce6" />
+    <public type="drawable" name="yi_spinner_76_outer_dark_baidu" id="0x01080ce8" />
+    <public type="drawable" name="yi_spinner_76_outer_light_baidu" id="0x01080ce9" />
+    <public type="drawable" name="yi_spinner_ab_default_baidu_dark" id="0x01080cec" />
+    <public type="drawable" name="yi_spinner_ab_default_baidu_light" id="0x01080ced" />
+    <public type="drawable" name="yi_spinner_ab_disabled_baidu_dark" id="0x01080cee" />
+    <public type="drawable" name="yi_spinner_ab_disabled_baidu_light" id="0x01080cef" />
+    <public type="drawable" name="yi_spinner_ab_focused_baidu_dark" id="0x01080cf0" />
+    <public type="drawable" name="yi_spinner_ab_focused_baidu_light" id="0x01080cf1" />
+    <public type="drawable" name="yi_spinner_ab_pressed_baidu_dark" id="0x01080cf2" />
+    <public type="drawable" name="yi_spinner_ab_pressed_baidu_light" id="0x01080cf3" />
+    <public type="drawable" name="yi_spinner_default_baidu_dark" id="0x01080cf6" />
+    <public type="drawable" name="yi_spinner_default_baidu_light" id="0x01080cf7" />
+    <public type="drawable" name="yi_spinner_disabled_baidu_dark" id="0x01080cf8" />
+    <public type="drawable" name="yi_spinner_disabled_baidu_light" id="0x01080cf9" />
+    <public type="drawable" name="yi_spinner_focused_baidu_dark" id="0x01080cfa" />
+    <public type="drawable" name="yi_spinner_focused_baidu_light" id="0x01080cfb" />
+    <public type="drawable" name="yi_spinner_pressed_baidu_dark" id="0x01080cfd" />
+    <public type="drawable" name="yi_spinner_pressed_baidu_light" id="0x01080cfe" />
+    <public type="drawable" name="yi_switch_bg_baidu_dark" id="0x01080cff" />
+    <public type="drawable" name="yi_switch_bg_disabled_baidu_dark" id="0x01080d00" />
+    <public type="drawable" name="yi_switch_bg_focused_baidu_dark" id="0x01080d01" />
+    <public type="drawable" name="yi_switch_bg_off_baidu_light" id="0x01080d02" />
+    <public type="drawable" name="yi_switch_bg_off_disabled_baidu_light" id="0x01080d03" />
+    <public type="drawable" name="yi_switch_bg_on_baidu_light" id="0x01080d04" />
+    <public type="drawable" name="yi_switch_bg_on_disabled_baidu_light" id="0x01080d05" />
+    <public type="drawable" name="yi_switch_thumb_activated_baidu_dark" id="0x01080d08" />
+    <public type="drawable" name="yi_switch_thumb_activated_baidu_light" id="0x01080d09" />
+    <public type="drawable" name="yi_switch_thumb_activated_disabled_baidu_light" id="0x01080d0a" />
+    <public type="drawable" name="yi_switch_thumb_actived_pressed_baidu_light" id="0x01080d0b" />
+    <public type="drawable" name="yi_switch_thumb_baidu_dark" id="0x01080d0c" />
+    <public type="drawable" name="yi_switch_thumb_baidu_light" id="0x01080d0d" />
+    <public type="drawable" name="yi_switch_thumb_disabled_baidu_dark" id="0x01080d0e" />
+    <public type="drawable" name="yi_switch_thumb_disabled_baidu_light" id="0x01080d0f" />
+    <public type="drawable" name="yi_switch_thumb_pressed_baidu_dark" id="0x01080d10" />
+    <public type="drawable" name="yi_switch_thumb_pressed_baidu_light" id="0x01080d11" />
+    <public type="drawable" name="yi_tab_selected_baidu" id="0x01080d16" />
+    <public type="drawable" name="yi_tab_selected_focused_baidu" id="0x01080d17" />
+    <public type="drawable" name="yi_tab_selected_pressed_baidu" id="0x01080d18" />
+    <public type="drawable" name="yi_tab_unselected_baidu" id="0x01080d1f" />
+    <public type="drawable" name="yi_tab_unselected_focused_baidu" id="0x01080d20" />
+    <public type="drawable" name="yi_tab_unselected_pressed_baidu" id="0x01080d21" />
+    <public type="drawable" name="yi_text_edit_paste_window" id="0x01080d27" />
+    <public type="drawable" name="yi_text_edit_paste_window_left_pressed" id="0x01080d28" />
+    <public type="drawable" name="yi_text_edit_paste_window_middle_pressed" id="0x01080d29" />
+    <public type="drawable" name="yi_text_edit_paste_window_right_pressed" id="0x01080d2a" />
+    <public type="drawable" name="yi_text_edit_paste_window_single_pressed" id="0x01080d2b" />
+    <public type="drawable" name="yi_text_select_handle_left" id="0x01080d2c" />
+    <public type="drawable" name="yi_text_select_handle_middle" id="0x01080d2d" />
+    <public type="drawable" name="yi_text_select_handle_right" id="0x01080d2e" />
+    <public type="drawable" name="yi_textfield_activated_baidu_dark" id="0x01080d2f" />
+    <public type="drawable" name="yi_textfield_activated_baidu_light" id="0x01080d30" />
+    <public type="drawable" name="yi_textfield_default_baidu_dark" id="0x01080d31" />
+    <public type="drawable" name="yi_textfield_default_baidu_light" id="0x01080d32" />
+    <public type="drawable" name="yi_textfield_disabled_baidu_dark" id="0x01080d33" />
+    <public type="drawable" name="yi_textfield_disabled_baidu_light" id="0x01080d34" />
+    <public type="drawable" name="yi_textfield_disabled_focused_baidu_dark" id="0x01080d35" />
+    <public type="drawable" name="yi_textfield_disabled_focused_baidu_light" id="0x01080d36" />
+    <public type="drawable" name="yi_textfield_focused_baidu_dark" id="0x01080d37" />
+    <public type="drawable" name="yi_textfield_focused_baidu_light" id="0x01080d38" />
+    <public type="drawable" name="yi_textfield_multiline_activated_baidu_dark" id="0x01080d39" />
+    <public type="drawable" name="yi_textfield_multiline_activated_baidu_light" id="0x01080d3a" />
+    <public type="drawable" name="yi_textfield_multiline_default_baidu_dark" id="0x01080d3b" />
+    <public type="drawable" name="yi_textfield_multiline_default_baidu_light" id="0x01080d3c" />
+    <public type="drawable" name="yi_textfield_multiline_disabled_baidu_dark" id="0x01080d3d" />
+    <public type="drawable" name="yi_textfield_multiline_disabled_baidu_light" id="0x01080d3e" />
+    <public type="drawable" name="yi_textfield_multiline_disabled_focused_baidu_dark" id="0x01080d3f" />
+    <public type="drawable" name="yi_textfield_multiline_disabled_focused_baidu_light" id="0x01080d40" />
+    <public type="drawable" name="yi_textfield_multiline_focused_baidu_dark" id="0x01080d41" />
+    <public type="drawable" name="yi_textfield_multiline_focused_baidu_light" id="0x01080d42" />
+    <public type="drawable" name="yi_textfield_search_default_baidu_dark" id="0x01080d43" />
+    <public type="drawable" name="yi_textfield_search_default_baidu_light" id="0x01080d44" />
+    <public type="drawable" name="yi_textfield_search_right_default_baidu_dark" id="0x01080d45" />
+    <public type="drawable" name="yi_textfield_search_right_default_baidu_light" id="0x01080d46" />
+    <public type="drawable" name="yi_textfield_search_right_selected_baidu_dark" id="0x01080d47" />
+    <public type="drawable" name="yi_textfield_search_right_selected_baidu_light" id="0x01080d48" />
+    <public type="drawable" name="yi_textfield_search_selected_baidu_dark" id="0x01080d49" />
+    <public type="drawable" name="yi_textfield_search_selected_baidu_light" id="0x01080d4a" />
+    <public type="drawable" name="yi_toast_frame_baidu" id="0x01080d4f" />
+    <public type="drawable" name="yi_window_bg_baidu" id="0x01080d50" />
     <public type="drawable" name="tw_wifioffload_buttonbarbutton_selector_default_dark" id="0x01080964" />
     <public type="drawable" name="tw_wifioffload_buttonbarbutton_selector_disabled_dark" id="0x01080965" />
     <public type="drawable" name="tw_wifioffload_buttonbarbutton_selector_focused_dark" id="0x01080966" />
@@ -7805,34 +8949,101 @@
     <public type="drawable" name="zzzzzzzzz_stat_sys_ims_vt_lgt" id="0x010809df" />
     <public type="drawable" name="zzzzzzzzz_stat_sys_ims_vt_lgt_noregi" id="0x010809e0" />
     <public type="drawable" name="zzzzzzzzz_stat_sys_ims_vt_skt" id="0x010809e1" />
-    <public type="drawable" name="APKTOOL_DUMMY_051b" id="0x0108051b" />
-    <public type="drawable" name="APKTOOL_DUMMY_051c" id="0x0108051c" />
-    <public type="drawable" name="APKTOOL_DUMMY_0710" id="0x01080710" />
-    <public type="drawable" name="APKTOOL_DUMMY_074d" id="0x0108074d" />
-    <public type="drawable" name="APKTOOL_DUMMY_074e" id="0x0108074e" />
-    <public type="drawable" name="APKTOOL_DUMMY_074f" id="0x0108074f" />
-    <public type="drawable" name="APKTOOL_DUMMY_07c0" id="0x010807c0" />
-    <public type="drawable" name="APKTOOL_DUMMY_07c1" id="0x010807c1" />
-    <public type="drawable" name="APKTOOL_DUMMY_07e2" id="0x010807e2" />
-    <public type="drawable" name="APKTOOL_DUMMY_07e3" id="0x010807e3" />
-    <public type="drawable" name="APKTOOL_DUMMY_07ee" id="0x010807ee" />
-    <public type="drawable" name="APKTOOL_DUMMY_07f2" id="0x010807f2" />
-    <public type="drawable" name="APKTOOL_DUMMY_07f3" id="0x010807f3" />
-    <public type="drawable" name="APKTOOL_DUMMY_07f6" id="0x010807f6" />
-    <public type="drawable" name="APKTOOL_DUMMY_07f7" id="0x010807f7" />
-    <public type="drawable" name="APKTOOL_DUMMY_07fa" id="0x010807fa" />
-    <public type="drawable" name="APKTOOL_DUMMY_07fb" id="0x010807fb" />
-    <public type="drawable" name="APKTOOL_DUMMY_07fe" id="0x010807fe" />
-    <public type="drawable" name="APKTOOL_DUMMY_0801" id="0x01080801" />
-    <public type="drawable" name="APKTOOL_DUMMY_0804" id="0x01080804" />
-    <public type="drawable" name="APKTOOL_DUMMY_0805" id="0x01080805" />
-    <public type="drawable" name="APKTOOL_DUMMY_0808" id="0x01080808" />
-    <public type="drawable" name="APKTOOL_DUMMY_088f" id="0x0108088f" />
-    <public type="drawable" name="APKTOOL_DUMMY_08dc" id="0x010808dc" />
-    <public type="drawable" name="APKTOOL_DUMMY_08dd" id="0x010808dd" />
-    <public type="drawable" name="APKTOOL_DUMMY_08ee" id="0x010808ee" />
-    <public type="drawable" name="APKTOOL_DUMMY_08ef" id="0x010808ef" />
-    <public type="drawable" name="APKTOOL_DUMMY_09c0" id="0x010809c0" />
+    <public type="drawable" name="ic_main_unlock_charging_10" id="0x01080ac0" />
+    <public type="drawable" name="ic_main_unlock_charging_100" id="0x01080ac1" />
+    <public type="drawable" name="ic_main_unlock_charging_10_1" id="0x01080ac2" />
+    <public type="drawable" name="ic_main_unlock_charging_10_2" id="0x01080ac3" />
+    <public type="drawable" name="ic_main_unlock_charging_10_3" id="0x01080ac4" />
+    <public type="drawable" name="ic_main_unlock_charging_10_4" id="0x01080ac5" />
+    <public type="drawable" name="ic_main_unlock_charging_20_1" id="0x01080ac6" />
+    <public type="drawable" name="ic_main_unlock_charging_20_2" id="0x01080ac7" />
+    <public type="drawable" name="ic_main_unlock_charging_20_3" id="0x01080ac8" />
+    <public type="drawable" name="ic_main_unlock_charging_20_4" id="0x01080ac9" />
+    <public type="drawable" name="ic_main_unlock_charging_20_5" id="0x01080aca" />
+    <public type="drawable" name="ic_main_unlock_charging_40_1" id="0x01080acb" />
+    <public type="drawable" name="ic_main_unlock_charging_40_2" id="0x01080acc" />
+    <public type="drawable" name="ic_main_unlock_charging_40_3" id="0x01080acd" />
+    <public type="drawable" name="ic_main_unlock_charging_40_4" id="0x01080ace" />
+    <public type="drawable" name="ic_main_unlock_charging_40_5" id="0x01080acf" />
+    <public type="drawable" name="ic_main_unlock_charging_60_1" id="0x01080ad0" />
+    <public type="drawable" name="ic_main_unlock_charging_60_2" id="0x01080ad1" />
+    <public type="drawable" name="ic_main_unlock_charging_60_3" id="0x01080ad2" />
+    <public type="drawable" name="ic_main_unlock_charging_60_4" id="0x01080ad3" />
+    <public type="drawable" name="ic_main_unlock_charging_60_5" id="0x01080ad4" />
+    <public type="drawable" name="ic_main_unlock_charging_80_1" id="0x01080ad5" />
+    <public type="drawable" name="ic_main_unlock_charging_80_2" id="0x01080ad6" />
+    <public type="drawable" name="ic_main_unlock_charging_80_3" id="0x01080ad7" />
+    <public type="drawable" name="ic_main_unlock_charging_80_4" id="0x01080ad8" />
+    <public type="drawable" name="ic_main_unlock_charging_80_5" id="0x01080ad9" />
+    <public type="drawable" name="ic_main_unlock_charging_99_1" id="0x01080ada" />
+    <public type="drawable" name="ic_main_unlock_charging_99_2" id="0x01080adb" />
+    <public type="drawable" name="ic_main_unlock_charging_99_3" id="0x01080adc" />
+    <public type="drawable" name="ic_main_unlock_charging_99_4" id="0x01080add" />
+    <public type="drawable" name="ic_main_unlock_charging_99_5" id="0x01080ade" />
+    <public type="drawable" name="progressbar_indeterminate_baidu1" id="0x01080b00" />
+    <public type="drawable" name="progressbar_indeterminate_baidu2" id="0x01080b01" />
+    <public type="drawable" name="progressbar_indeterminate_baidu3" id="0x01080b02" />
+    <public type="drawable" name="progressbar_indeterminate_baidu4" id="0x01080b03" />
+    <public type="drawable" name="progressbar_indeterminate_baidu5" id="0x01080b04" />
+    <public type="drawable" name="progressbar_indeterminate_baidu6" id="0x01080b05" />
+    <public type="drawable" name="progressbar_indeterminate_baidu7" id="0x01080b06" />
+    <public type="drawable" name="progressbar_indeterminate_baidu8" id="0x01080b07" />
+    <public type="drawable" name="searchbox_music_normal" id="0x01080b2b" />
+    <public type="drawable" name="searchbox_normal" id="0x01080b30" />
+    <public type="drawable" name="searchbox_pressed" id="0x01080b31" />
+    <public type="drawable" name="searchbox_selected" id="0x01080b32" />
+    <public type="drawable" name="yi_ab_stacked_transparent_dark_baidu1" id="0x01080b52" />
+    <public type="drawable" name="yi_ab_stacked_transparent_light_baidu1" id="0x01080b54" />
+    <public type="drawable" name="yi_btn_default_disabled_baidu_holo_dark" id="0x01080b82" />
+    <public type="drawable" name="yi_btn_radio_on_pressed_dark" id="0x01080bbe" />
+    <public type="drawable" name="yi_ic_dialog_alert_baidudark" id="0x01080c34" />
+    <public type="drawable" name="yi_ic_dialog_alert_baidulight" id="0x01080c35" />
+    <public type="drawable" name="yi_ic_element_btn_radio_label_background" id="0x01080c36" />
+    <public type="drawable" name="yi_ic_menu_cut_baidu_pdark" id="0x01080c3e" />
+    <public type="drawable" name="yi_ic_menu_trash_baidu_dark" id="0x01080c49" />
+    <public type="drawable" name="yi_list_bottom_longpressed_baidu" id="0x01080c55" />
+    <public type="drawable" name="yi_list_divider_baidu_holo_dark" id="0x01080c59" />
+    <public type="drawable" name="yi_list_divider_baidu_holo_light" id="0x01080c5a" />
+    <public type="drawable" name="yi_list_single_longpressed_baidu" id="0x01080c68" />
+    <public type="drawable" name="yi_list_top_longpressed_baidu" id="0x01080c6b" />
+    <public type="drawable" name="yi_menu_hardkey_panel_baidu_light_up" id="0x01080c73" />
+    <public type="drawable" name="yi_spinner_16_inner_light_baidulo" id="0x01080cdb" />
+    <public type="drawable" name="yi_spinner_16_outer_baidu" id="0x01080cdc" />
+    <public type="drawable" name="yi_spinner_20_outer_baidu" id="0x01080cdf" />
+    <public type="drawable" name="yi_spinner_48_outer_baidu" id="0x01080ce2" />
+    <public type="drawable" name="yi_spinner_76_outer_baidu" id="0x01080ce7" />
+    <public type="drawable" name="yi_ab_bottom_shadow_light_baidu" id="0x01080b3f" />
+    <public type="drawable" name="yi_ab_pressed_light_baidu" id="0x01080b48" />
+    <public type="drawable" name="yi_action_bar_bottom_pressed" id="0x01080b57" />
+    <public type="drawable" name="yi_btn_check_off_disable_baidu_light" id="0x01080b67" />
+    <public type="drawable" name="yi_btn_check_off_disable_focused_baidu_light" id="0x01080b68" />
+    <public type="drawable" name="yi_btn_check_off_normal_baidu_light" id="0x01080b6f" />
+    <public type="drawable" name="yi_btn_check_on_disable_baidu_light" id="0x01080b75" />
+    <public type="drawable" name="yi_btn_check_on_disable_focused_baidu_light" id="0x01080b76" />
+    <public type="drawable" name="yi_btn_rating_star_off_disabled_baidu_light" id="0x01080bbf" />
+    <public type="drawable" name="yi_btn_rating_star_off_disabled_focused_baidu_light" id="0x01080bc0" />
+    <public type="drawable" name="yi_btn_rating_star_on_disabled_baidu_light" id="0x01080bc7" />
+    <public type="drawable" name="yi_btn_rating_star_on_disabled_focused_baidu_light" id="0x01080bc8" />
+    <public type="drawable" name="yi_ic_ab_back_pressed_baidu_dark" id="0x01080c27" />
+    <public type="drawable" name="yi_ic_ab_back_pressed_baidu_light" id="0x01080c28" />
+    <public type="drawable" name="yi_ic_more" id="0x01080c4b" />
+    <public type="drawable" name="yi_list_bg_baidu" id="0x01080c53" />
+    <public type="drawable" name="yi_number_picker_bg_day" id="0x01080c74" />
+    <public type="drawable" name="yi_number_picker_bg_month" id="0x01080c77" />
+    <public type="drawable" name="yi_number_picker_bg_year" id="0x01080c79" />
+    <public type="drawable" name="yi_numberpicker_down_longpressed_baidu_light" id="0x01080c82" />
+    <public type="drawable" name="yi_numberpicker_up_disabled_baidu_light" id="0x01080c8b" />
+    <public type="drawable" name="yi_numberpicker_up_longpressed_baidu_light" id="0x01080c90" />
+    <public type="drawable" name="yi_rate_star_med_half_baidu_light" id="0x01080cb8" />
+    <public type="drawable" name="yi_rate_star_med_off_baidu_light" id="0x01080cb9" />
+    <public type="drawable" name="yi_rate_star_med_on_baidu_light" id="0x01080cba" />
+    <public type="drawable" name="yi_search_view_background" id="0x01080cd8" />
+    <public type="drawable" name="yi_tab_top_selected_baidu" id="0x01080d19" />
+    <public type="drawable" name="yi_tab_top_selected_focused_baidu" id="0x01080d1a" />
+    <public type="drawable" name="yi_tab_top_selected_pressed_baidu" id="0x01080d1b" />
+    <public type="drawable" name="yi_tab_top_unselected_baidu" id="0x01080d1c" />
+    <public type="drawable" name="yi_tab_top_unselected_focused_baidu" id="0x01080d1d" />
+    <public type="drawable" name="yi_tab_top_unselected_pressed_baidu" id="0x01080d1e" />
     <public type="layout" name="activity_list_item" id="0x01090000" />
     <public type="layout" name="expandable_list_content" id="0x01090001" />
     <public type="layout" name="preference_category" id="0x01090002" />
@@ -8145,10 +9356,59 @@
     <public type="layout" name="zzzz_webselect_dialog_listview" id="0x01090139" />
     <public type="layout" name="zzzz_webselect_dialog_multichoice" id="0x0109013a" />
     <public type="layout" name="zzzz_webselect_dialog_singlechoice" id="0x0109013b" />
+    <public type="layout" name="app_permission_table_item" id="0x0109013c" />
+    <public type="layout" name="baidu_keyguard_axis_single_line" id="0x0109013d" />
+    <public type="layout" name="baidu_keyguard_hotword" id="0x01090148" />
+    <public type="layout" name="baidu_keyguard_search" id="0x01090149" />
+    <public type="layout" name="baidu_keyguard_slide" id="0x0109014a" />
+    <public type="layout" name="baidu_keyguard_slide_iqiyi_list_item" id="0x0109014b" />
+    <public type="layout" name="baidu_keyguard_slide_music_view" id="0x0109014c" />
+    <public type="layout" name="baidu_keyguard_slide_target_view" id="0x0109014d" />
+    <public type="layout" name="baidu_keyguard_space" id="0x0109014e" />
+    <public type="layout" name="baidu_keyguard_space_target_view" id="0x0109014f" />
+    <public type="layout" name="baidu_keyguard_target" id="0x01090150" />
+    <public type="layout" name="baidu_keyguard_water" id="0x01090151" />
+    <public type="layout" name="baidu_keyguard_water_target_view" id="0x01090152" />
+    <public type="layout" name="dynamic_perm_dialog" id="0x01090153" />
+    <public type="layout" name="keyguard_screen_hot_music" id="0x01090154" />
+    <public type="layout" name="keyguard_screen_hotspot" id="0x01090155" />
+    <public type="layout" name="permission_prompt" id="0x01090156" />
+    <public type="layout" name="permission_prompt_item" id="0x01090157" />
+    <public type="layout" name="quickboot_dialog_confirm" id="0x01090158" />
+    <public type="layout" name="ringtone_custom_item" id="0x01090159" />
+    <public type="layout" name="super_mode_dialog" id="0x0109015a" />
+    <public type="layout" name="yi_alert_dialog_baidu" id="0x0109015b" />
+    <public type="layout" name="yi_alert_dialog_baidu_light" id="0x0109015c" />
+    <public type="layout" name="yi_date_picker_baidu" id="0x0109015d" />
+    <public type="layout" name="yi_dialog_custom_title_baidu" id="0x0109015e" />
+    <public type="layout" name="yi_dialog_title_baidu" id="0x0109015f" />
+    <public type="layout" name="yi_dialog_title_icons_baidu" id="0x01090160" />
+    <public type="layout" name="yi_preference_baidu" id="0x01090161" />
+    <public type="layout" name="yi_preference_category_baidu" id="0x01090162" />
+    <public type="layout" name="yi_preference_child_baidu" id="0x01090163" />
+    <public type="layout" name="yi_preference_dialog_edittext_light" id="0x01090164" />
+    <public type="layout" name="yi_ringtone" id="0x01090165" />
+    <public type="layout" name="yi_select_dialog_baidu_light" id="0x01090166" />
+    <public type="layout" name="yi_select_dialog_item_baidu_light" id="0x01090167" />
+    <public type="layout" name="yi_select_dialog_multichoice_baidu_light" id="0x01090168" />
+    <public type="layout" name="yi_select_dialog_singlechoice_baidu_light" id="0x01090169" />
+    <public type="layout" name="yi_tab_indicator_baidu" id="0x0109016a" />
+    <public type="layout" name="yi_text_edit_action_popup_text" id="0x0109016b" />
+    <public type="layout" name="yi_time_picker_baidu" id="0x0109016c" />
     <public type="layout" name="keyguard_screen_status_land" id="0x01090082" />
     <public type="layout" name="keyguard_screen_status_port" id="0x01090083" />
     <public type="layout" name="status_bar_latest_event_ticker" id="0x010900dd" />
     <public type="layout" name="status_bar_latest_event_ticker_large_icon" id="0x010900de" />
+    <public type="layout" name="baidu_keyguard_constellation01" id="0x0109013e" />
+    <public type="layout" name="baidu_keyguard_constellation02" id="0x0109013f" />
+    <public type="layout" name="baidu_keyguard_constellation03" id="0x01090140" />
+    <public type="layout" name="baidu_keyguard_constellation04" id="0x01090141" />
+    <public type="layout" name="baidu_keyguard_constellation05" id="0x01090142" />
+    <public type="layout" name="baidu_keyguard_constellation06" id="0x01090143" />
+    <public type="layout" name="baidu_keyguard_constellation07" id="0x01090144" />
+    <public type="layout" name="baidu_keyguard_constellation08" id="0x01090145" />
+    <public type="layout" name="baidu_keyguard_constellation09" id="0x01090146" />
+    <public type="layout" name="baidu_keyguard_constellation10" id="0x01090147" />
     <public type="anim" name="fade_in" id="0x010a0000" />
     <public type="anim" name="fade_out" id="0x010a0001" />
     <public type="anim" name="slide_in_left" id="0x010a0002" />
@@ -8235,6 +9495,16 @@
     <public type="anim" name="wallpaper_open_enter" id="0x010a0053" />
     <public type="anim" name="wallpaper_open_exit" id="0x010a0054" />
     <public type="anim" name="window_move_from_decor" id="0x010a0055" />
+    <public type="anim" name="charge_anim" id="0x010a0056" />
+    <public type="anim" name="decelerate_custom" id="0x010a0057" />
+    <public type="anim" name="halfcycle_interpolator" id="0x010a0058" />
+    <public type="anim" name="hold" id="0x010a0059" />
+    <public type="anim" name="home_open_enter" id="0x010a005a" />
+    <public type="anim" name="home_open_exit" id="0x010a005b" />
+    <public type="anim" name="slide_down_down" id="0x010a005c" />
+    <public type="anim" name="slide_down_up" id="0x010a005d" />
+    <public type="anim" name="slide_up_down" id="0x010a005e" />
+    <public type="anim" name="slide_up_up" id="0x010a005f" />
     <public type="animator" name="fade_in" id="0x010b0000" />
     <public type="animator" name="fade_out" id="0x010b0001" />
     <public type="animator" name="fragment_close_enter" id="0x010b0002" />
@@ -8310,6 +9580,7 @@
     <public type="integer" name="preferences_right_pane_weight" id="0x010e0031" />
     <public type="integer" name="preference_screen_header_scrollbarStyle" id="0x010e0032" />
     <public type="integer" name="preference_fragment_scrollbarStyle" id="0x010e0033" />
+    <public type="integer" name="config_automatic_rotate_delay" id="0x010e0034" />
     <public type="xml" name="apns" id="0x010f0000" />
     <public type="xml" name="autotext" id="0x010f0001" />
     <public type="xml" name="eri" id="0x010f0002" />
@@ -8324,6 +9595,8 @@
     <public type="xml" name="preferred_time_zones" id="0x010f000b" />
     <public type="xml" name="storage_list" id="0x010f000c" />
     <public type="xml" name="time_zones_by_country" id="0x010f000d" />
+    <public type="xml" name="modes" id="0x010f000e" />
+    <public type="xml" name="policys" id="0x010f000f" />
     <public type="raw" name="down" id="0x01100000" />
     <public type="raw" name="fallbacknotification" id="0x01100001" />
     <public type="raw" name="fallbackring" id="0x01100002" />
@@ -8415,6 +9688,12 @@
     <public type="bool" name="config_mirrorLinkDockEnablesAccelerometer" id="0x0111004f" />
     <public type="bool" name="config_bluetooth_hid_capable" id="0x01110050" />
     <public type="bool" name="lockscreen_isPortrait" id="0x01110051" />
+    <public type="bool" name="config_wakeup_by_volume_key" id="0x01110052" />
+    <public type="bool" name="config_pbap_support" id="0x01110053" />
+    <public type="bool" name="config_global_action_reboot" id="0x01110054" />
+    <public type="bool" name="config_quickbootSupport" id="0x01110055" />
+    <public type="bool" name="config_poweron_by_twice_press" id="0x01110056" />
+    <public type="bool" name="config_close_button_backlight" id="0x01110057" />
     <public type="fraction" name="config_dimBehindFadeDuration" id="0x01120000" />
     <public type="plurals" name="num_seconds_ago" id="0x01130000" />
     <public type="plurals" name="num_minutes_ago" id="0x01130001" />

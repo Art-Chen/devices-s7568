@@ -65,7 +65,7 @@
 
     invoke-direct/range {v19 .. v19}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v20, "intent recieved "
+    const-string/jumbo v20, "intent recieved "
 
     invoke-virtual/range {v19 .. v20}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -868,7 +868,7 @@
     .line 421
     const-string v18, "WFDSourceService"
 
-    const-string v19, "headset out"
+    const-string/jumbo v19, "headset out"
 
     invoke-static/range {v18 .. v19}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -920,7 +920,7 @@
     .line 424
     const-string v18, "WFDSourceService"
 
-    const-string v19, "headset in"
+    const-string/jumbo v19, "headset in"
 
     invoke-static/range {v18 .. v19}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -1107,7 +1107,7 @@
     .line 437
     const-string v18, "WFDSourceService"
 
-    const-string v19, "isBluetoothA2dpOn()"
+    const-string/jumbo v19, "isBluetoothA2dpOn()"
 
     invoke-static/range {v18 .. v19}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -1229,7 +1229,7 @@
 
     move-result-object v19
 
-    const-string v20, "isBluetoothA2dpOn() : "
+    const-string/jumbo v20, "isBluetoothA2dpOn() : "
 
     invoke-virtual/range {v19 .. v20}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

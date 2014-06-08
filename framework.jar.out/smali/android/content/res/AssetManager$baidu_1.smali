@@ -44,7 +44,7 @@
     iget-object v0, p0, Landroid/content/res/AssetManager$baidu_1;->this$0:Landroid/content/res/AssetManager;
 
     #calls: Landroid/content/res/AssetManager;->readChannelPkgsBackgroud()V
-    invoke-static {v0}, Landroid/content/res/AssetManager;->access$bd_100(Landroid/content/res/AssetManager;)V
+    invoke-static {v0}, Landroid/content/res/AssetManager;->access$100(Landroid/content/res/AssetManager;)V
 
     .line 809
     return-void

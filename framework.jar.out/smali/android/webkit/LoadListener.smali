@@ -3080,7 +3080,7 @@
     iput-object v3, p0, Landroid/webkit/LoadListener;->mCacheLoader:Landroid/webkit/CacheLoader;
 
     .line 795
-    const-string v3, "if-none-match"
+    const-string/jumbo v3, "if-none-match"
 
     invoke-interface {p1, v3}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
@@ -3088,7 +3088,7 @@
 
     if-nez v3, :cond_1
 
-    const-string v3, "if-modified-since"
+    const-string/jumbo v3, "if-modified-since"
 
     invoke-interface {p1, v3}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 

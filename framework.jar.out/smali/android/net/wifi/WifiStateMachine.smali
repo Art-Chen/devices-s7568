@@ -8119,7 +8119,7 @@
     .line 2595
     const-string v2, "WifiStateMachine"
 
-    const-string v3, "handleMessage: CW_SISO :MESSAGE_DISABLE_WIFI: is CW !!"
+    const-string/jumbo v3, "handleMessage: CW_SISO :MESSAGE_DISABLE_WIFI: is CW !!"
 
     invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -8140,7 +8140,7 @@
     :goto_0
     const-string v1, "WifiStateMachine"
 
-    const-string v2, "handleMessage: CW_SISO :MESSAGE_DISABLE_WIFI: is Done !!"
+    const-string/jumbo v2, "handleMessage: CW_SISO :MESSAGE_DISABLE_WIFI: is Done !!"
 
     invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -8180,7 +8180,7 @@
     .line 2608
     const-string v1, "WifiStateMachine"
 
-    const-string v2, "handleMessage: CW_SISO :Airplanemode is on set persist wifi enabled to true!!"
+    const-string/jumbo v2, "handleMessage: CW_SISO :Airplanemode is on set persist wifi enabled to true!!"
 
     invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -8195,7 +8195,7 @@
     :cond_3
     const-string v1, "WifiStateMachine"
 
-    const-string v2, "handleMessage: CW_SISO : Else Case NOT Handled!"
+    const-string/jumbo v2, "handleMessage: CW_SISO : Else Case NOT Handled!"
 
     invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 

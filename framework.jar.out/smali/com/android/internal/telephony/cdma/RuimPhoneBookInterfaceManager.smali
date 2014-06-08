@@ -179,7 +179,7 @@
     .line 95
     .local v0, e:Ljava/lang/InterruptedException;
     :try_start_3
-    const-string v2, "interrupted while trying to load from the SIM"
+    const-string/jumbo v2, "interrupted while trying to load from the SIM"
 
     invoke-virtual {p0, v2}, Lcom/android/internal/telephony/cdma/RuimPhoneBookInterfaceManager;->logd(Ljava/lang/String;)V
 
@@ -299,7 +299,7 @@
     .line 135
     .local v0, e:Ljava/lang/InterruptedException;
     :try_start_3
-    const-string v2, "interrupted while trying to load from the SIM"
+    const-string/jumbo v2, "interrupted while trying to load from the SIM"
 
     invoke-virtual {p0, v2}, Lcom/android/internal/telephony/cdma/RuimPhoneBookInterfaceManager;->logd(Ljava/lang/String;)V
 
@@ -491,7 +491,7 @@
     .line 117
     .local v0, e:Ljava/lang/InterruptedException;
     :try_start_3
-    const-string v2, "interrupted while trying to load from the SIM"
+    const-string/jumbo v2, "interrupted while trying to load from the SIM"
 
     invoke-virtual {p0, v2}, Lcom/android/internal/telephony/cdma/RuimPhoneBookInterfaceManager;->logd(Ljava/lang/String;)V
 

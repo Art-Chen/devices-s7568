@@ -510,7 +510,7 @@
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v4, "handleEnterEmergencyCallbackMode,mIsPhoneInEcmState= "
+    const-string/jumbo v4, "handleEnterEmergencyCallbackMode,mIsPhoneInEcmState= "
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -592,7 +592,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "handleExitEmergencyCallbackMode,ar.exception , mIsPhoneInEcmState "
+    const-string/jumbo v3, "handleExitEmergencyCallbackMode,ar.exception , mIsPhoneInEcmState "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -729,7 +729,7 @@
 
     invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v9, "isCarrierOtaSpNum,schema"
+    const-string/jumbo v9, "isCarrierOtaSpNum,schema"
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -807,7 +807,7 @@
     :cond_1
     const-string v7, "CDMA"
 
-    const-string v8, "isCarrierOtaSpNum,sysSelCodeInt is invalid"
+    const-string/jumbo v8, "isCarrierOtaSpNum,sysSelCodeInt is invalid"
 
     invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -865,7 +865,7 @@
     :cond_3
     const-string v7, "CDMA"
 
-    const-string v8, "isCarrierOtaSpNum,not otasp number"
+    const-string/jumbo v8, "isCarrierOtaSpNum,not otasp number"
 
     invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -881,7 +881,7 @@
 
     invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v9, "isCarrierOtaSpNum,ota schema not supported"
+    const-string/jumbo v9, "isCarrierOtaSpNum,ota schema not supported"
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -910,7 +910,7 @@
 
     invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v9, "isCarrierOtaSpNum,ota schema pattern not right"
+    const-string/jumbo v9, "isCarrierOtaSpNum,ota schema pattern not right"
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -935,7 +935,7 @@
     :cond_6
     const-string v7, "CDMA"
 
-    const-string v8, "isCarrierOtaSpNum,ota schema pattern empty"
+    const-string/jumbo v8, "isCarrierOtaSpNum,ota schema pattern empty"
 
     invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -1099,7 +1099,7 @@
     if-eqz v2, :cond_0
 
     .line 1570
-    const-string v2, "gsm.sim.operator.iso-country"
+    const-string/jumbo v2, "gsm.sim.operator.iso-country"
 
     const-string v3, ""
 
@@ -1137,7 +1137,7 @@
 
     .line 1582
     :goto_1
-    const-string v2, "gsm.sim.operator.iso-country"
+    const-string/jumbo v2, "gsm.sim.operator.iso-country"
 
     invoke-virtual {p0, v2, v1}, Lcom/android/internal/telephony/cdma/CDMAPhone;->setSystemProperty(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -2532,18 +2532,6 @@
     return-object v0
 .end method
 
-.method public getForegroundCall()Lcom/android/internal/telephony/cdma/CdmaCall;
-    .locals 1
-
-    .prologue
-    .line 557
-    iget-object v0, p0, Lcom/android/internal/telephony/cdma/CDMAPhone;->mCT:Lcom/android/internal/telephony/cdma/CdmaCallTracker;
-
-    iget-object v0, v0, Lcom/android/internal/telephony/cdma/CdmaCallTracker;->foregroundCall:Lcom/android/internal/telephony/cdma/CdmaCall;
-
-    return-object v0
-.end method
-
 .method public getHandsetInfo(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
     .parameter "ID"
@@ -2806,18 +2794,6 @@
 
     .line 562
     return-void
-.end method
-
-.method public bridge synthetic getRingingCall()Lcom/android/internal/telephony/Call;
-    .locals 1
-
-    .prologue
-    .line 83
-    invoke-virtual {p0}, Lcom/android/internal/telephony/cdma/CDMAPhone;->getRingingCall()Lcom/android/internal/telephony/cdma/CdmaCall;
-
-    move-result-object v0
-
-    return-object v0
 .end method
 
 .method public getRingingCall()Lcom/android/internal/telephony/cdma/CdmaCall;
@@ -3200,7 +3176,7 @@
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 1142
-    const-string v4, "gsm.version.baseband"
+    const-string/jumbo v4, "gsm.version.baseband"
 
     iget-object v3, v0, Landroid/os/AsyncResult;->result:Ljava/lang/Object;
 
@@ -3412,6 +3388,8 @@
     .line 1126
     nop
 
+    nop
+
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_1
@@ -3528,7 +3506,7 @@
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v4, "handleTimerInEmergencyCallbackMode, unsupported action "
+    const-string/jumbo v4, "handleTimerInEmergencyCallbackMode, unsupported action "
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -3589,6 +3567,8 @@
     goto :goto_0
 
     .line 1048
+    nop
+
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_1
@@ -3799,7 +3779,7 @@
     iput-object v0, p0, Lcom/android/internal/telephony/cdma/CDMAPhone;->mWakeLock:Landroid/os/PowerManager$WakeLock;
 
     .line 194
-    const-string v0, "gsm.current.phone-type"
+    const-string/jumbo v0, "gsm.current.phone-type"
 
     const/4 v1, 0x2
 
@@ -3873,7 +3853,7 @@
     .line 216
     .local v8, operatorAlpha:Ljava/lang/String;
     :goto_0
-    const-string v0, "gsm.sim.operator.alpha"
+    const-string/jumbo v0, "gsm.sim.operator.alpha"
 
     invoke-virtual {p0, v0, v8}, Lcom/android/internal/telephony/cdma/CDMAPhone;->setSystemProperty(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -3886,7 +3866,7 @@
 
     .line 220
     .local v9, operatorNumeric:Ljava/lang/String;
-    const-string v0, "gsm.sim.operator.numeric"
+    const-string/jumbo v0, "gsm.sim.operator.numeric"
 
     invoke-virtual {p0, v0, v9}, Lcom/android/internal/telephony/cdma/CDMAPhone;->setSystemProperty(Ljava/lang/String;Ljava/lang/String;)V
 

@@ -18,7 +18,7 @@
 
 
 # static fields
-.field private static final POPUP_TEXT_LAYOUT:I = #layout@text_edit_action_popup_text#t
+.field private static final POPUP_TEXT_LAYOUT:I = 0x10900e3
 
 
 # instance fields
@@ -82,7 +82,7 @@
 
     const/4 v2, 0x0
 
-    const v3, #attr@textSelectHandleWindowStyle#t
+    const v3, 0x10102c8
 
     invoke-direct {v0, v1, v2, v3}, Landroid/widget/PopupWindow;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -177,7 +177,7 @@
     .line 8055
     iget-object v3, p0, Landroid/widget/TextView$PinnedPopupWindow;->mContentView:Landroid/view/ViewGroup;
 
-    const v4, #drawable@text_edit_side_paste_window#t
+    const v4, 0x1080748
 
     invoke-virtual {v3, v4}, Landroid/view/ViewGroup;->setBackgroundResource(I)V
 
@@ -189,7 +189,7 @@
 
     move-result-object v3
 
-    const-string v4, "layout_inflater"
+    const-string/jumbo v4, "layout_inflater"
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -205,7 +205,7 @@
 
     .line 8064
     .local v2, wrapContent:Landroid/view/ViewGroup$LayoutParams;
-    const v3, #layout@text_edit_action_popup_text#t
+    const v3, 0x10900e3
 
     const/4 v4, 0x0
 
@@ -225,7 +225,7 @@
     .line 8066
     iget-object v3, p0, Landroid/widget/TextView$EasyEditPopupWindow;->mDeleteTextView:Landroid/widget/TextView;
 
-    const v4, #string@delete#t
+    const v4, 0x104047c
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(I)V
 

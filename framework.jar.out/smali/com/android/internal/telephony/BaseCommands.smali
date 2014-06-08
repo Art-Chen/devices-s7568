@@ -2384,7 +2384,7 @@
     .line 378
     const-string v0, "RILB"
 
-    const-string v1, "hyunjoo setOnNewGsmSms"
+    const-string/jumbo v1, "hyunjoo setOnNewGsmSms"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 

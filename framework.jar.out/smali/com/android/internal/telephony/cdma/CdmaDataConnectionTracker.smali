@@ -80,7 +80,7 @@
 
     aput-object v1, v0, v4
 
-    const-string v1, "hipri"
+    const-string/jumbo v1, "hipri"
 
     aput-object v1, v0, v5
 
@@ -97,7 +97,7 @@
 
     aput-object v1, v0, v3
 
-    const-string v1, "hipri"
+    const-string/jumbo v1, "hipri"
 
     aput-object v1, v0, v4
 

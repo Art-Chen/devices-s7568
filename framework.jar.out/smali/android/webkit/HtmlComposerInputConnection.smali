@@ -4285,7 +4285,7 @@
     if-nez v9, :cond_b
 
     .line 587
-    const-string v1, "image"
+    const-string/jumbo v1, "image"
 
     goto :goto_3
 

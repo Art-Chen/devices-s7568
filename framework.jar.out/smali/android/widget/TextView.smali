@@ -69,15 +69,15 @@
 
 .field static final HANDLE_HEIGHT:I = 0x28
 
-.field private static final ID_COPY:I = #id@copy#t
+.field private static final ID_COPY:I = 0x1020021
 
-.field private static final ID_CUT:I = #id@cut#t
+.field private static final ID_CUT:I = 0x1020020
 
-.field private static final ID_MORE:I = #id@overflow_menu_presenter#t
+.field private static final ID_MORE:I = 0x102024a
 
-.field private static final ID_PASTE:I = #id@paste#t
+.field private static final ID_PASTE:I = 0x1020022
 
-.field private static final ID_SELECT_ALL:I = #id@selectAll#t
+.field private static final ID_SELECT_ALL:I = 0x102001f
 
 .field private static final LINES:I = 0x1
 
@@ -116,6 +116,8 @@
 .field private static final UNKNOWN_BORING:Landroid/text/BoringLayout$Metrics; = null
 
 .field private static final VERY_WIDE:I = 0x100000
+
+.field public static mText_char_type:Z
 
 .field private static sLastCutOrCopyTime:J
 
@@ -455,7 +457,7 @@
     .line 12566
     new-array v1, v4, [I
 
-    const v2, #attr@state_multiline#t
+    const v2, 0x101034d
 
     aput v2, v1, v3
 
@@ -485,7 +487,7 @@
 
     .prologue
     .line 453
-    const v0, #attr@textViewStyle#t
+    const v0, 0x1010084
 
     invoke-direct {p0, p1, p2, v0}, Landroid/widget/TextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -2530,7 +2532,7 @@
 
     .line 867
     :pswitch_49
-    const v63, #drawable@yi_text_select_handle_left#t
+    const v63, 0x1080d2c
 
     move/from16 v0, v63
 
@@ -2542,7 +2544,7 @@
 
     .line 872
     :pswitch_4a
-    const v63, #drawable@yi_text_select_handle_right#t
+    const v63, 0x1080d2e
 
     move/from16 v0, v63
 
@@ -2554,7 +2556,7 @@
 
     .line 877
     :pswitch_4b
-    const v63, #drawable@yi_text_select_handle_middle#t
+    const v63, 0x1080d2d
 
     move/from16 v0, v63
 
@@ -6289,7 +6291,7 @@
 
     move-result-object v1
 
-    const v2, #dimen@textview_error_popup_default_width#t
+    const v2, 0x1050047
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -8426,7 +8428,7 @@
 
     move-result-object v1
 
-    const v2, #attr@actionModeWebSearchDrawable#t
+    const v2, 0x10103c9
 
     const/4 v3, 0x1
 
@@ -8562,7 +8564,7 @@
     .line 9418
     iget-object v2, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
-    const v3, #layout@text_drag_thumbnail#t
+    const v3, 0x10900e2
 
     const/4 v4, 0x0
 
@@ -14202,7 +14204,7 @@
 
     .line 4016
     .local v1, inflater:Landroid/view/LayoutInflater;
-    const v4, #layout@textview_hint#t
+    const v4, 0x10900ea
 
     const/4 v5, 0x0
 
@@ -14749,6 +14751,88 @@
 
     :cond_2
     const/4 v0, 0x1
+
+    goto :goto_0
+.end method
+
+.method public static textViewCharType(C)Z
+    .locals 1
+    .parameter "c"
+
+    .prologue
+    .line 6711
+    const/16 v0, 0x621
+
+    if-lt p0, v0, :cond_0
+
+    const/16 v0, 0x65f
+
+    if-le p0, v0, :cond_6
+
+    :cond_0
+    const/16 v0, 0x66a
+
+    if-lt p0, v0, :cond_1
+
+    const/16 v0, 0x6ff
+
+    if-le p0, v0, :cond_6
+
+    :cond_1
+    const/16 v0, 0x590
+
+    if-lt p0, v0, :cond_2
+
+    const/16 v0, 0x5ff
+
+    if-le p0, v0, :cond_6
+
+    :cond_2
+    const v0, 0xfb00
+
+    if-lt p0, v0, :cond_3
+
+    const v0, 0xfb4f
+
+    if-le p0, v0, :cond_6
+
+    :cond_3
+    const v0, 0xfb50
+
+    if-lt p0, v0, :cond_4
+
+    const v0, 0xfdff
+
+    if-le p0, v0, :cond_6
+
+    :cond_4
+    const v0, 0xfe70
+
+    if-lt p0, v0, :cond_5
+
+    const v0, 0xfefe
+
+    if-le p0, v0, :cond_6
+
+    :cond_5
+    const/16 v0, 0x61f
+
+    if-eq p0, v0, :cond_6
+
+    const/16 v0, 0x61b
+
+    if-ne p0, v0, :cond_7
+
+    .line 6715
+    :cond_6
+    const/4 v0, 0x1
+
+    .line 6717
+    :goto_0
+    return v0
+
+    :cond_7
+    const/4 v0, 0x0
 
     goto :goto_0
 .end method
@@ -22847,7 +22931,7 @@
     .line 4816
     aget v4, v0, v1
 
-    const v5, #attr@state_pressed#t
+    const v5, 0x10100a7
 
     if-ne v4, v5, :cond_1
 
@@ -25989,7 +26073,7 @@
     if-eqz v1, :cond_0
 
     .line 8886
-    const v1, #id@selectAll#t
+    const v1, 0x102001f
 
     invoke-virtual {p0, v1}, Landroid/widget/TextView;->onTextContextMenuItem(I)Z
 
@@ -26006,7 +26090,7 @@
     if-eqz v1, :cond_0
 
     .line 8891
-    const v1, #id@cut#t
+    const v1, 0x1020020
 
     invoke-virtual {p0, v1}, Landroid/widget/TextView;->onTextContextMenuItem(I)Z
 
@@ -26023,7 +26107,7 @@
     if-eqz v1, :cond_0
 
     .line 8896
-    const v1, #id@copy#t
+    const v1, 0x1020021
 
     invoke-virtual {p0, v1}, Landroid/widget/TextView;->onTextContextMenuItem(I)Z
 
@@ -26040,7 +26124,7 @@
     if-eqz v1, :cond_0
 
     .line 8901
-    const v1, #id@paste#t
+    const v1, 0x1020022
 
     invoke-virtual {p0, v1}, Landroid/widget/TextView;->onTextContextMenuItem(I)Z
 
@@ -28197,11 +28281,11 @@
     .line 9332
     :sswitch_data_0
     .sparse-switch
-        #id@selectAll#t -> :sswitch_0
-        #id@cut#t -> :sswitch_2
-        #id@copy#t -> :sswitch_3
-        #id@paste#t -> :sswitch_1
-        #id@overflow_menu_presenter#t -> :sswitch_4
+        0x102001f -> :sswitch_0
+        0x1020020 -> :sswitch_2
+        0x1020021 -> :sswitch_3
+        0x1020022 -> :sswitch_1
+        0x102024a -> :sswitch_4
     .end sparse-switch
 .end method
 
@@ -31289,7 +31373,7 @@
 
     move-result-object v1
 
-    const v2, #drawable@indicator_input_error#t
+    const v2, 0x10803b7
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 

@@ -527,7 +527,7 @@
     if-eqz v6, :cond_5
 
     .line 190
-    const-string v6, "infinite"
+    const-string/jumbo v6, "infinite"
 
     aget-object v9, v3, v8
 

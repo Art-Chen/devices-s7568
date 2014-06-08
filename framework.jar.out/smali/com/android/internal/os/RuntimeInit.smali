@@ -235,7 +235,7 @@
 
     .line 207
     .local v2, userAgent:Ljava/lang/String;
-    const-string v3, "http.agent"
+    const-string/jumbo v3, "http.agent"
 
     invoke-static {v3, v2}, Ljava/lang/System;->setProperty(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 

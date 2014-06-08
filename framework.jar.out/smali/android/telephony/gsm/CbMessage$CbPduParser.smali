@@ -238,7 +238,7 @@
     .restart local v1       #ret:Ljava/lang/String;
     const-string v2, "GSM"
 
-    const-string v3, "implausible UnsupportedEncodingException"
+    const-string/jumbo v3, "implausible UnsupportedEncodingException"
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 

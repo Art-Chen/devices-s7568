@@ -203,7 +203,7 @@
 
     const/4 v3, 0x4
 
-    const-string v4, "httpauth"
+    const-string/jumbo v4, "httpauth"
 
     aput-object v4, v0, v3
 
@@ -535,7 +535,7 @@
     :try_start_1
     const-string/jumbo v0, "webviewdatabase"
 
-    const-string v1, "hasEntries"
+    const-string/jumbo v1, "hasEntries"
 
     invoke-static {v0, v1, v9}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
     :try_end_1
@@ -876,7 +876,7 @@
     .line 331
     sget-object v1, Landroid/webkit/WebViewDatabase;->mCacheInserter:Landroid/database/DatabaseUtils$InsertHelper;
 
-    const-string v2, "httpstatus"
+    const-string/jumbo v2, "httpstatus"
 
     invoke-virtual {v1, v2}, Landroid/database/DatabaseUtils$InsertHelper;->getColumnIndex(Ljava/lang/String;)I
 
@@ -1553,7 +1553,7 @@
 
     move-result-object v2
 
-    const-string v3, "host"
+    const-string/jumbo v3, "host"
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1607,7 +1607,7 @@
 
     move-result-object v2
 
-    const-string v3, "host"
+    const-string/jumbo v3, "host"
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2163,7 +2163,7 @@
 
     move-result-object v2
 
-    const-string v3, "host"
+    const-string/jumbo v3, "host"
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2217,7 +2217,7 @@
 
     move-result-object v2
 
-    const-string v3, "host"
+    const-string/jumbo v3, "host"
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2286,7 +2286,7 @@
 
     move-result-object v2
 
-    const-string v3, "host"
+    const-string/jumbo v3, "host"
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2328,7 +2328,7 @@
 
     move-result-object v2
 
-    const-string v3, "host"
+    const-string/jumbo v3, "host"
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -4939,7 +4939,7 @@
     :try_start_1
     const-string/jumbo v0, "webviewdatabase"
 
-    const-string v1, "hasCache"
+    const-string/jumbo v1, "hasCache"
 
     invoke-static {v0, v1, v9}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
     :try_end_1
@@ -5484,7 +5484,7 @@
 
     .line 1070
     .local v0, c:Landroid/content/ContentValues;
-    const-string v1, "host"
+    const-string/jumbo v1, "host"
 
     invoke-virtual {v0, v1, p1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -5512,7 +5512,7 @@
 
     aget-object v3, v3, v4
 
-    const-string v4, "host"
+    const-string/jumbo v4, "host"
 
     invoke-virtual {v1, v3, v4, v0}, Landroid/database/sqlite/SQLiteDatabase;->insert(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)J
 
@@ -5567,7 +5567,7 @@
 
     .line 977
     .local v0, c:Landroid/content/ContentValues;
-    const-string v1, "host"
+    const-string/jumbo v1, "host"
 
     invoke-virtual {v0, v1, p1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -5590,7 +5590,7 @@
 
     aget-object v3, v3, v4
 
-    const-string v4, "host"
+    const-string/jumbo v4, "host"
 
     invoke-virtual {v1, v3, v4, v0}, Landroid/database/sqlite/SQLiteDatabase;->insert(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)J
 

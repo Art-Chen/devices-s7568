@@ -74,7 +74,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "illegal call state:"
+    const-string/jumbo v2, "illegal call state:"
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -131,6 +131,8 @@
     goto :goto_0
 
     .line 43
+    nop
+
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0

@@ -6,6 +6,8 @@
 # instance fields
 .field private mClipExMgr:Landroid/sec/clipboard/ClipboardExManager;
 
+.field private mPasteEvent:Landroid/widget/TextView$IClipboardDataPasteEventImpl;
+
 
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
@@ -368,19 +370,5 @@
     invoke-super {p0, p1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;Landroid/widget/TextView$BufferType;)V
 
     .line 100
-    return-void
-.end method
-
-.method private hideControllers()V
-    .locals 0
-
-    .prologue
-    .line 12106
-    invoke-direct {p0}, Landroid/widget/TextView;->hideCursorControllers()V
-
-    .line 12107
-    invoke-direct {p0}, Landroid/widget/TextView;->hideSpanControllers()V
-
-    .line 12108
     return-void
 .end method

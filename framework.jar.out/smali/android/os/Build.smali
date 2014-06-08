@@ -172,7 +172,7 @@
     sput-object v2, Landroid/os/Build;->BOOTLOADER:Ljava/lang/String;
 
     .line 70
-    const-string v2, "gsm.version.baseband"
+    const-string/jumbo v2, "gsm.version.baseband"
 
     invoke-static {v2}, Landroid/os/Build;->getString(Ljava/lang/String;)Ljava/lang/String;
 
@@ -337,7 +337,7 @@
 
     .prologue
     .line 345
-    const-string v0, "gsm.version.baseband"
+    const-string/jumbo v0, "gsm.version.baseband"
 
     const/4 v1, 0x0
 

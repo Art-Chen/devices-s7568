@@ -111,7 +111,7 @@
 
     move-result-object v1
 
-    const v2, #drawable@rice_text_select_magnifier#t
+    const v2, 0x1080b26
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -192,7 +192,7 @@
 
     move-result-object v1
 
-    const v2, #dimen@yi_magnifier_range_padding#t
+    const v2, 0x1050081
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimension(I)F
 

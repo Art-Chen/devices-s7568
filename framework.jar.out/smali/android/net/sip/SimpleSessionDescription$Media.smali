@@ -45,7 +45,7 @@
 
     .prologue
     .line 244
-    const-string v0, "icbka"
+    const-string/jumbo v0, "icbka"
 
     invoke-direct {p0, v0}, Landroid/net/sip/SimpleSessionDescription$Fields;-><init>(Ljava/lang/String;)V
 

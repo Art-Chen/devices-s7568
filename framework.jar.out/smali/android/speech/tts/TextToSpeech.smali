@@ -1410,7 +1410,7 @@
 
     move-result-object v1
 
-    const-string v2, "isLanguageAvailable"
+    const-string/jumbo v2, "isLanguageAvailable"
 
     invoke-direct {p0, v0, v1, v2}, Landroid/speech/tts/TextToSpeech;->runAction(Landroid/speech/tts/TextToSpeech$Action;Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 

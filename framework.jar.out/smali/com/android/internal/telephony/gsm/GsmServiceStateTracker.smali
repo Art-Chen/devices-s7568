@@ -2087,7 +2087,7 @@
 
     invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v9, "isFakeRoamingBetweenOperators - r["
+    const-string/jumbo v9, "isFakeRoamingBetweenOperators - r["
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2179,7 +2179,7 @@
 
     .prologue
     .line 2307
-    const-string v14, "gsm.sim.operator.alpha"
+    const-string/jumbo v14, "gsm.sim.operator.alpha"
 
     const-string v15, "empty"
 
@@ -2227,7 +2227,7 @@
     .line 2315
     .local v4, equalsOnss:Z
     :goto_1
-    const-string v14, "gsm.sim.operator.numeric"
+    const-string/jumbo v14, "gsm.sim.operator.numeric"
 
     const-string v15, ""
 
@@ -4533,7 +4533,7 @@
 
     move-object/from16 v34, v0
 
-    const-string v35, "gsm.network.type"
+    const-string/jumbo v35, "gsm.network.type"
 
     move-object/from16 v0, p0
 
@@ -4558,7 +4558,7 @@
 
     move-result-object v34
 
-    const-string v35, "gsm.network.type"
+    const-string/jumbo v35, "gsm.network.type"
 
     invoke-static/range {v35 .. v35}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -4609,7 +4609,7 @@
 
     .line 1513
     :cond_5
-    const-string v34, "gsm.network.type"
+    const-string/jumbo v34, "gsm.network.type"
 
     invoke-static/range {v34 .. v34}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -4653,7 +4653,7 @@
 
     move-result-object v34
 
-    const-string v35, "gsm.network.type"
+    const-string/jumbo v35, "gsm.network.type"
 
     invoke-static/range {v35 .. v35}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -4763,7 +4763,7 @@
 
     move-result-object v34
 
-    const-string v35, "gsm.operator.isroaming"
+    const-string/jumbo v35, "gsm.operator.isroaming"
 
     invoke-static/range {v35 .. v35}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -4814,7 +4814,7 @@
 
     .line 1687
     :cond_9
-    const-string v34, "gsm.operator.isroaming"
+    const-string/jumbo v34, "gsm.operator.isroaming"
 
     invoke-static/range {v34 .. v34}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -4867,7 +4867,7 @@
 
     move-result-object v34
 
-    const-string v35, "gsm.operator.isroaming"
+    const-string/jumbo v35, "gsm.operator.isroaming"
 
     invoke-static/range {v35 .. v35}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -5037,7 +5037,7 @@
 
     move-object/from16 v34, v0
 
-    const-string v35, "gsm.operator.alpha"
+    const-string/jumbo v35, "gsm.operator.alpha"
 
     move-object/from16 v0, p0
 
@@ -5070,7 +5070,7 @@
 
     move-object/from16 v34, v0
 
-    const-string v35, "gsm.operator.numeric"
+    const-string/jumbo v35, "gsm.operator.numeric"
 
     move-object/from16 v0, v34
 
@@ -5126,7 +5126,7 @@
 
     .line 1741
     .local v24, operatorMccMnc:Ljava/lang/String;
-    const-string v34, "gsm.sim.operator.numeric"
+    const-string/jumbo v34, "gsm.sim.operator.numeric"
 
     const-string v35, ""
 
@@ -5181,7 +5181,7 @@
 
     move-object/from16 v34, v0
 
-    const-string v35, "gsm.operator.alpha"
+    const-string/jumbo v35, "gsm.operator.alpha"
 
     const-string/jumbo v36, "vtr"
 
@@ -5241,7 +5241,7 @@
 
     move-object/from16 v34, v0
 
-    const-string v35, "gsm.operator.alpha"
+    const-string/jumbo v35, "gsm.operator.alpha"
 
     const-string v36, "Gtd_Telsur"
 
@@ -5291,7 +5291,7 @@
 
     move-object/from16 v34, v0
 
-    const-string v35, "gsm.operator.iso-country"
+    const-string/jumbo v35, "gsm.operator.iso-country"
 
     const-string v36, ""
 
@@ -5315,7 +5315,7 @@
 
     move-object/from16 v35, v0
 
-    const-string v36, "gsm.operator.isroaming"
+    const-string/jumbo v36, "gsm.operator.isroaming"
 
     move-object/from16 v0, p0
 
@@ -5351,7 +5351,7 @@
 
     move-result-object v34
 
-    const-string v35, "gsm.operator.isroaming"
+    const-string/jumbo v35, "gsm.operator.isroaming"
 
     invoke-static/range {v35 .. v35}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -5402,7 +5402,7 @@
 
     .line 1862
     :cond_11
-    const-string v34, "gsm.operator.isroaming"
+    const-string/jumbo v34, "gsm.operator.isroaming"
 
     invoke-static/range {v34 .. v34}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -5455,7 +5455,7 @@
 
     move-result-object v34
 
-    const-string v35, "gsm.operator.isroaming"
+    const-string/jumbo v35, "gsm.operator.isroaming"
 
     invoke-static/range {v35 .. v35}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -5638,7 +5638,7 @@
     .line 1911
     const-string v34, "GSM"
 
-    const-string v35, "hasRadioTechnologyChanged sendMessage(obtainMessage(0x00042003, Phone.REASON_NW_TYPE_CHANGED))"
+    const-string/jumbo v35, "hasRadioTechnologyChanged sendMessage(obtainMessage(0x00042003, Phone.REASON_NW_TYPE_CHANGED))"
 
     invoke-static/range {v34 .. v35}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -6011,7 +6011,7 @@
 
     move-object/from16 v34, v0
 
-    const-string v35, "gsm.operator.alpha"
+    const-string/jumbo v35, "gsm.operator.alpha"
 
     const-string v36, "Virgin"
 
@@ -6040,7 +6040,7 @@
 
     move-object/from16 v34, v0
 
-    const-string v35, "gsm.operator.alpha"
+    const-string/jumbo v35, "gsm.operator.alpha"
 
     const-string v36, "GTEL Netline"
 
@@ -6117,7 +6117,7 @@
 
     move-object/from16 v34, v0
 
-    const-string v35, "gsm.operator.iso-country"
+    const-string/jumbo v35, "gsm.operator.iso-country"
 
     move-object/from16 v0, v34
 
@@ -8243,7 +8243,7 @@
 
     move-object/from16 v32, v0
 
-    const-string v33, "gsm.operator.iso-country"
+    const-string/jumbo v33, "gsm.operator.iso-country"
 
     move-object/from16 v0, v32
 
@@ -8277,7 +8277,7 @@
     .end local v29           #tzname:Ljava/lang/String;
     :cond_7
     :goto_8
-    const-string v32, "gsm.operator.iso-country"
+    const-string/jumbo v32, "gsm.operator.iso-country"
 
     invoke-static/range {v32 .. v32}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -8505,7 +8505,7 @@
 
     .line 2659
     :cond_c
-    const-string v32, "gsm.ignore-nitz"
+    const-string/jumbo v32, "gsm.ignore-nitz"
 
     invoke-static/range {v32 .. v32}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -9076,7 +9076,7 @@
     .line 2716
     .end local v15           #millisSinceNitzReceived:J
     :cond_19
-    const-string v32, "gsm.nitz.time"
+    const-string/jumbo v32, "gsm.nitz.time"
 
     invoke-virtual {v6}, Ljava/util/Calendar;->getTimeInMillis()J
 
@@ -9379,7 +9379,7 @@
     :cond_0
     new-instance v2, Ljava/lang/RuntimeException;
 
-    const-string v3, "invalid format"
+    const-string/jumbo v3, "invalid format"
 
     invoke-direct {v2, v3}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 
@@ -9408,7 +9408,7 @@
 
     .line 3178
     .local v1, mPlmn:Ljava/lang/String;
-    const-string v4, "gsm.sim.operator.numeric"
+    const-string/jumbo v4, "gsm.sim.operator.numeric"
 
     const-string v5, ""
 
@@ -9522,7 +9522,7 @@
     if-nez v4, :cond_7
 
     .line 3194
-    const-string v4, "gsm.network.type"
+    const-string/jumbo v4, "gsm.network.type"
 
     const-string v5, ""
 
@@ -12716,7 +12716,7 @@
     .line 2396
     const-string v1, "GSM"
 
-    const-string v2, "isConcurrentVoiceAndDataAllowed : support DTM, return true"
+    const-string/jumbo v2, "isConcurrentVoiceAndDataAllowed : support DTM, return true"
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -13188,7 +13188,7 @@
 
     .line 898
     .local v9, operatorMccMnc:Ljava/lang/String;
-    const-string v18, "gsm.sim.operator.numeric"
+    const-string/jumbo v18, "gsm.sim.operator.numeric"
 
     const-string v19, ""
 
@@ -13456,7 +13456,7 @@
 
     .line 1029
     :cond_5
-    const-string v18, "gsm.sim.operator.numeric"
+    const-string/jumbo v18, "gsm.sim.operator.numeric"
 
     const-string v19, ""
 
@@ -13767,7 +13767,7 @@
     .line 1072
     const-string v18, "GSM"
 
-    const-string v19, "if(plmn != null && plmn.length() == 0)"
+    const-string/jumbo v19, "if(plmn != null && plmn.length() == 0)"
 
     invoke-static/range {v18 .. v19}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 

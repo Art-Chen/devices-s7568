@@ -21,6 +21,8 @@
 
 .field public static final eri:I = 0x10f0002
 
+.field public static final modes:I = 0x10f000e
+
 .field public static final password_kbd_extension:I = 0x10f0003
 
 .field public static final password_kbd_numeric:I = 0x10f0004
@@ -34,6 +36,8 @@
 .field public static final password_kbd_symbols:I = 0x10f0008
 
 .field public static final password_kbd_symbols_shift:I = 0x10f0009
+
+.field public static final policys:I = 0x10f000f
 
 .field public static final power_profile:I = 0x10f000a
 

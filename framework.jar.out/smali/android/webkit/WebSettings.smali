@@ -848,13 +848,13 @@
     if-eqz v0, :cond_2
 
     .line 538
-    const-string p0, "he"
+    const-string/jumbo p0, "he"
 
     goto :goto_0
 
     .line 539
     :cond_2
-    const-string v0, "in"
+    const-string/jumbo v0, "in"
 
     invoke-virtual {v0, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -863,7 +863,7 @@
     if-eqz v0, :cond_3
 
     .line 541
-    const-string p0, "id"
+    const-string/jumbo p0, "id"
 
     goto :goto_0
 

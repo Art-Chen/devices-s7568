@@ -1267,7 +1267,7 @@
 
     .prologue
     .line 280
-    const-string v0, "http://xmlpull.org/v1/doc/features.html#indent-output"
+    const-string/jumbo v0, "http://xmlpull.org/v1/doc/features.html#indent-output"
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

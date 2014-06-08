@@ -10624,7 +10624,7 @@
 
     .prologue
     .line 4959
-    const-string v2, "gsm.sim.userEvent"
+    const-string/jumbo v2, "gsm.sim.userEvent"
 
     const/4 v3, 0x0
 

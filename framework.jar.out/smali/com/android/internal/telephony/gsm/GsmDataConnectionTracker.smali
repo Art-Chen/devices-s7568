@@ -1338,7 +1338,7 @@
 
     .line 3489
     .local v11, values:Landroid/content/ContentValues;
-    const-string v0, "internet.lguplus.co.kr"
+    const-string/jumbo v0, "internet.lguplus.co.kr"
 
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1359,7 +1359,7 @@
     .line 3494
     const-string v0, "apn"
 
-    const-string v1, "internet.lguplus.co.kr"
+    const-string/jumbo v1, "internet.lguplus.co.kr"
 
     invoke-virtual {v11, v0, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -1495,7 +1495,7 @@
     if-eqz v0, :cond_3
 
     .line 3501
-    const-string v9, "internet.lguplus.co.kr"
+    const-string/jumbo v9, "internet.lguplus.co.kr"
 
     .line 3503
     const-string/jumbo v0, "name"
@@ -1521,7 +1521,7 @@
     .line 3506
     const-string/jumbo v0, "mmsc"
 
-    const-string v1, "http://omammsc.uplus.co.kr:9084"
+    const-string/jumbo v1, "http://omammsc.uplus.co.kr:9084"
 
     invoke-virtual {v11, v0, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -2141,7 +2141,7 @@
 
     .line 2217
     :cond_a
-    const-string v9, "gsm.sim.operator.numeric"
+    const-string/jumbo v9, "gsm.sim.operator.numeric"
 
     const-string v10, ""
 
@@ -2323,7 +2323,7 @@
 
     const-string v0, "45006"
 
-    const-string v1, "gsm.operator.numeric"
+    const-string/jumbo v1, "gsm.operator.numeric"
 
     invoke-static {v1}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -3903,7 +3903,7 @@
     invoke-virtual {p0, v1}, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->log(Ljava/lang/String;)V
 
     .line 1650
-    const-string v1, "gsm.radioreset"
+    const-string/jumbo v1, "gsm.radioreset"
 
     const-string/jumbo v2, "true"
 
@@ -3933,6 +3933,8 @@
     goto :goto_1
 
     .line 1608
+    nop
+
     nop
 
     :pswitch_data_0
@@ -5130,7 +5132,7 @@
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v5, "isDataAllowedOnDataDisabled: not allowed due to"
+    const-string/jumbo v5, "isDataAllowedOnDataDisabled: not allowed due to"
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -9896,7 +9898,7 @@
     if-eqz p2, :cond_7
 
     .line 3257
-    const-string v5, "ims.lguplus.co.kr"
+    const-string/jumbo v5, "ims.lguplus.co.kr"
 
     invoke-direct {p0, v5, v3}, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->setCarrierEnabledField(Ljava/lang/String;Z)Z
 
@@ -9954,7 +9956,7 @@
 
     .line 3247
     :cond_6
-    const-string v5, "internet.lguplus.co.kr"
+    const-string/jumbo v5, "internet.lguplus.co.kr"
 
     invoke-direct {p0, v5}, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->changeApnFieldTo(Ljava/lang/String;)Z
 
@@ -9969,7 +9971,7 @@
 
     .line 3264
     :cond_7
-    const-string v3, "ims.lguplus.co.kr"
+    const-string/jumbo v3, "ims.lguplus.co.kr"
 
     invoke-direct {p0, v3, v4}, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->setCarrierEnabledField(Ljava/lang/String;Z)Z
 
@@ -10780,7 +10782,7 @@
 
     .prologue
     .line 3087
-    const-string v0, "ims"
+    const-string/jumbo v0, "ims"
 
     invoke-static {p1, v0}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
@@ -10842,7 +10844,7 @@
 
     .line 3095
     :cond_3
-    const-string v0, "hipri"
+    const-string/jumbo v0, "hipri"
 
     invoke-static {p1, v0}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
@@ -11342,7 +11344,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "handleMessage msg="
+    const-string/jumbo v3, "handleMessage msg="
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -11371,7 +11373,7 @@
 
     .line 2994
     :cond_0
-    const-string v1, "handleMessage: Ignore GSM msgs since GSM phone is inactive"
+    const-string/jumbo v1, "handleMessage: Ignore GSM msgs since GSM phone is inactive"
 
     invoke-virtual {p0, v1}, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->loge(Ljava/lang/String;)V
 
@@ -11809,7 +11811,7 @@
 
     .line 400
     :pswitch_5
-    const-string v9, "hipri"
+    const-string/jumbo v9, "hipri"
 
     invoke-direct {p0, v9}, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->addApnContext(Ljava/lang/String;)Lcom/android/internal/telephony/ApnContext;
 
@@ -11857,7 +11859,7 @@
 
     .line 413
     :pswitch_7
-    const-string v9, "ims"
+    const-string/jumbo v9, "ims"
 
     invoke-direct {p0, v9}, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->addApnContext(Ljava/lang/String;)Lcom/android/internal/telephony/ApnContext;
 
@@ -12553,7 +12555,7 @@
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v6, "isDataAllowed: not allowed due to"
+    const-string/jumbo v6, "isDataAllowed: not allowed due to"
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -12682,7 +12684,7 @@
 
     .line 346
     :cond_2
-    const-string v8, "isDataPossible(%s): possible=%b isDataAllowed=%b apnTypePossible=%b apnContextisEnabled=%b apnContextState()=%s"
+    const-string/jumbo v8, "isDataPossible(%s): possible=%b isDataAllowed=%b apnTypePossible=%b apnContextisEnabled=%b apnContextState()=%s"
 
     const/4 v9, 0x6
 
@@ -13574,7 +13576,7 @@
     if-eqz v14, :cond_6
 
     .line 2418
-    const-string v14, "gsm.defaultpdpcontext.active"
+    const-string/jumbo v14, "gsm.defaultpdpcontext.active"
 
     const-string/jumbo v15, "true"
 
@@ -14331,7 +14333,7 @@
     if-eqz v1, :cond_2
 
     .line 2551
-    const-string v1, "gsm.defaultpdpcontext.active"
+    const-string/jumbo v1, "gsm.defaultpdpcontext.active"
 
     const-string v2, "false"
 
@@ -15082,7 +15084,7 @@
 
     .prologue
     .line 2099
-    const-string v1, "hipri"
+    const-string/jumbo v1, "hipri"
 
     invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -15168,7 +15170,7 @@
     .line 2110
     iget-object v1, p0, Lcom/android/internal/telephony/DataConnectionTracker;->mApnContexts:Ljava/util/concurrent/ConcurrentHashMap;
 
-    const-string v2, "hipri"
+    const-string/jumbo v2, "hipri"
 
     invoke-virtual {v1, v2}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 

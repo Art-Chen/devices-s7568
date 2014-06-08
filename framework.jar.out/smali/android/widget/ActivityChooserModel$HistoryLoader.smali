@@ -145,7 +145,7 @@
     .restart local v12       #parser:Lorg/xmlpull/v1/XmlPullParser;
     .restart local v17       #type:I
     :cond_1
-    const-string v21, "historical-records"
+    const-string/jumbo v21, "historical-records"
 
     invoke-interface {v12}, Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
 
@@ -370,7 +370,7 @@
 
     .line 1029
     .local v11, nodeName:Ljava/lang/String;
-    const-string v21, "historical-record"
+    const-string/jumbo v21, "historical-record"
 
     move-object/from16 v0, v21
 

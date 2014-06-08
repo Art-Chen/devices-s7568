@@ -4674,7 +4674,7 @@
 
     goto :goto_33
 
-    .end local v145           #pn:Ljava/lang/String;
+    .end local v144
     .end local v173           #wfd:Z
     :pswitch_4b
     const-string v5, "android.app.IActivityManager"
@@ -6330,7 +6330,7 @@
     goto/16 :goto_0
 
     .line 1392
-    :pswitch_91
+    :pswitch_74
     const-string v5, "android.app.IActivityManager"
 
     move-object/from16 v0, p2
@@ -6399,8 +6399,8 @@
     .end local v87           #uri:Landroid/net/Uri;
     .end local v100           #callingUid:I
     .end local v132           #modeFlags:I
-    .end local v155           #res:I
-    :pswitch_74
+    .end local v154           #requestedOrientation:I
+    :pswitch_75
     const-string v5, "android.app.IActivityManager"
 
     move-object/from16 v0, p2
@@ -6502,8 +6502,8 @@
     .end local v78           #path:Ljava/lang/String;
     .end local v79           #fd:Landroid/os/ParcelFileDescriptor;
     .end local v126           #managed:Z
-    .end local v155           #res:Z
-    :pswitch_75
+    .end local v154           #requestedOrientation:I
+    :pswitch_76
     const-string v5, "android.app.IActivityManager"
 
     move-object/from16 v0, p2
@@ -6566,9 +6566,9 @@
     .end local v11           #resultTo:Landroid/os/IBinder;
     .end local v82           #uid:I
     .end local v116           #intents:[Landroid/content/Intent;
+    .end local v155           #res:Z
     .end local v156           #resolvedTypes:[Ljava/lang/String;
-    .end local v157           #result:I
-    :pswitch_76
+    :pswitch_77
     const-string v5, "android.app.IActivityManager"
 
     move-object/from16 v0, p2
@@ -6636,9 +6636,9 @@
     .end local v11           #resultTo:Landroid/os/IBinder;
     .end local v95           #b:Landroid/os/IBinder;
     .end local v116           #intents:[Landroid/content/Intent;
+    .end local v155           #res:Z
     .end local v156           #resolvedTypes:[Ljava/lang/String;
-    .end local v157           #result:I
-    :pswitch_77
+    :pswitch_78
     const-string v5, "android.app.IActivityManager"
 
     move-object/from16 v0, p2
@@ -6663,7 +6663,7 @@
     goto/16 :goto_1
 
     .end local v88           #mode:I
-    :pswitch_78
+    :pswitch_79
     const-string v5, "android.app.IActivityManager"
 
     move-object/from16 v0, p2
@@ -6696,7 +6696,7 @@
     goto/16 :goto_1
 
     .end local v88           #mode:I
-    :pswitch_79
+    :pswitch_7a
     const-string v5, "android.app.IActivityManager"
 
     move-object/from16 v0, p2
@@ -6730,8 +6730,8 @@
     goto/16 :goto_1
 
     .end local v88           #mode:I
-    .end local v144           #pkg:Ljava/lang/String;
-    :pswitch_7a
+    .end local v143           #pids:[I
+    :pswitch_7b
     const-string v5, "android.app.IActivityManager"
 
     move-object/from16 v0, p2
@@ -6763,8 +6763,8 @@
     goto/16 :goto_1
 
     .end local v88           #mode:I
-    .end local v144           #pkg:Ljava/lang/String;
-    :pswitch_7b
+    .end local v143           #pids:[I
+    :pswitch_7c
     const-string v5, "android.app.IActivityManager"
 
     move-object/from16 v0, p2
@@ -6805,9 +6805,9 @@
 
     goto :goto_45
 
-    .end local v157           #result:Z
-    .end local v169           #userid:I
-    :pswitch_7c
+    .end local v156           #resolvedTypes:[Ljava/lang/String;
+    .end local v168           #thumbnail:Landroid/graphics/Bitmap;
+    :pswitch_7d
     const-string v5, "android.app.IActivityManager"
 
     move-object/from16 v0, p2
@@ -6855,10 +6855,10 @@
 
     goto :goto_46
 
-    .end local v157           #result:Z
-    .end local v163           #subTaskIndex:I
-    .end local v167           #taskId:I
-    :pswitch_7d
+    .end local v156           #resolvedTypes:[Ljava/lang/String;
+    .end local v162           #stopProfiling:Z
+    .end local v166           #task:I
+    :pswitch_7e
     const-string v5, "android.app.IActivityManager"
 
     move-object/from16 v0, p2
@@ -6907,9 +6907,9 @@
     goto :goto_47
 
     .end local v60           #fl:I
-    .end local v157           #result:Z
-    .end local v167           #taskId:I
-    :pswitch_7e
+    .end local v156           #resolvedTypes:[Ljava/lang/String;
+    .end local v166           #task:I
+    :pswitch_7f
     const-string v5, "android.app.IActivityManager"
 
     move-object/from16 v0, p2
@@ -6938,7 +6938,7 @@
     goto/16 :goto_1
 
     .end local v136           #observer:Landroid/app/IProcessObserver;
-    :pswitch_7f
+    :pswitch_80
     const-string v5, "android.app.IActivityManager"
 
     move-object/from16 v0, p2
@@ -6967,7 +6967,7 @@
     goto/16 :goto_1
 
     .end local v136           #observer:Landroid/app/IProcessObserver;
-    :pswitch_80
+    :pswitch_81
     const-string v5, "android.app.IActivityManager"
 
     move-object/from16 v0, p2
@@ -7011,8 +7011,8 @@
     goto :goto_48
 
     .end local v94           #ask:Z
-    .end local v144           #pkg:Ljava/lang/String;
-    :pswitch_81
+    .end local v143           #pids:[I
+    :pswitch_82
     const-string v5, "android.app.IActivityManager"
 
     move-object/from16 v0, p2
@@ -7055,8 +7055,8 @@
 
     goto :goto_49
 
-    .end local v144           #pkg:Ljava/lang/String;
-    :pswitch_82
+    .end local v143           #pids:[I
+    :pswitch_83
     const-string v5, "android.app.IActivityManager"
 
     move-object/from16 v0, p2
@@ -7102,9 +7102,9 @@
 
     goto :goto_4a
 
-    .end local v149           #r:Landroid/content/IIntentSender;
-    .end local v155           #res:Z
-    :pswitch_83
+    .end local v148
+    .end local v154           #requestedOrientation:I
+    :pswitch_84
     const-string v5, "android.app.IActivityManager"
 
     move-object/from16 v0, p2
@@ -7137,7 +7137,7 @@
     goto/16 :goto_1
 
     .end local v30           #config:Landroid/content/res/Configuration;
-    :pswitch_84
+    :pswitch_85
     const-string v5, "android.app.IActivityManager"
 
     move-object/from16 v0, p2
@@ -7170,9 +7170,9 @@
 
     goto/16 :goto_1
 
-    .end local v143           #pids:[I
-    .end local v148           #pss:[J
-    :pswitch_85
+    .end local v142           #pid:I
+    .end local v147           #providers:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Landroid/app/IActivityManager$ContentProviderHolder;>;"
+    :pswitch_86
     const-string v5, "android.app.IActivityManager"
 
     move-object/from16 v0, p2
@@ -7224,7 +7224,7 @@
     goto :goto_4b
 
     .end local v133           #msg:Ljava/lang/CharSequence;
-    :pswitch_86
+    :pswitch_87
     const-string v5, "android.app.IActivityManager"
 
     move-object/from16 v0, p2
@@ -7239,7 +7239,7 @@
 
     goto/16 :goto_1
 
-    :pswitch_87
+    :pswitch_88
     const-string v5, "android.app.IActivityManager"
 
     move-object/from16 v0, p2
@@ -7403,28 +7403,29 @@
         :pswitch_70
         :pswitch_71
         :pswitch_72
-        :pswitch_73
         :pswitch_74
-        :pswitch_76
         :pswitch_75
-        :pswitch_12
         :pswitch_77
+        :pswitch_76
+        :pswitch_12
         :pswitch_78
         :pswitch_79
         :pswitch_7a
-        :pswitch_80
-        :pswitch_81
         :pswitch_7b
+        :pswitch_81
+        :pswitch_82
         :pswitch_7c
         :pswitch_7d
         :pswitch_7e
         :pswitch_7f
-        :pswitch_82
+        :pswitch_80
         :pswitch_83
         :pswitch_84
         :pswitch_85
         :pswitch_86
-        :pswitch_56
         :pswitch_87
+        :pswitch_56
+        :pswitch_73
+        :pswitch_88
     .end packed-switch
 .end method

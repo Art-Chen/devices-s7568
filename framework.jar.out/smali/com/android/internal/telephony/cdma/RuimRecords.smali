@@ -256,7 +256,7 @@
 
     if-eqz v0, :cond_1
 
-    const-string v0, "handleRuimRefresh without input"
+    const-string/jumbo v0, "handleRuimRefresh without input"
 
     invoke-virtual {p0, v0}, Lcom/android/internal/telephony/cdma/RuimRecords;->log(Ljava/lang/String;)V
 
@@ -276,7 +276,7 @@
 
     if-eqz v0, :cond_1
 
-    const-string v0, "handleRuimRefresh with unknown operation"
+    const-string/jumbo v0, "handleRuimRefresh with unknown operation"
 
     invoke-virtual {p0, v0}, Lcom/android/internal/telephony/cdma/RuimRecords;->log(Ljava/lang/String;)V
 
@@ -288,7 +288,7 @@
 
     if-eqz v0, :cond_3
 
-    const-string v0, "handleRuimRefresh with SIM_REFRESH_FILE_UPDATED"
+    const-string/jumbo v0, "handleRuimRefresh with SIM_REFRESH_FILE_UPDATED"
 
     invoke-virtual {p0, v0}, Lcom/android/internal/telephony/cdma/RuimRecords;->log(Ljava/lang/String;)V
 
@@ -309,7 +309,7 @@
 
     if-eqz v0, :cond_4
 
-    const-string v0, "handleRuimRefresh with SIM_REFRESH_INIT"
+    const-string/jumbo v0, "handleRuimRefresh with SIM_REFRESH_INIT"
 
     invoke-virtual {p0, v0}, Lcom/android/internal/telephony/cdma/RuimRecords;->log(Ljava/lang/String;)V
 
@@ -325,7 +325,7 @@
 
     if-eqz v0, :cond_5
 
-    const-string v0, "handleRuimRefresh with SIM_REFRESH_RESET"
+    const-string/jumbo v0, "handleRuimRefresh with SIM_REFRESH_RESET"
 
     invoke-virtual {p0, v0}, Lcom/android/internal/telephony/cdma/RuimRecords;->log(Ljava/lang/String;)V
 
@@ -342,6 +342,8 @@
     goto :goto_0
 
     .line 543
+    nop
+
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0
@@ -774,7 +776,7 @@
 
     invoke-direct {v10}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v11, "invalid IMSI "
+    const-string/jumbo v11, "invalid IMSI "
 
     invoke-virtual {v10, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -997,7 +999,7 @@
 
     invoke-direct {v10}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v11, "iccid: "
+    const-string/jumbo v11, "iccid: "
 
     invoke-virtual {v10, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1797,7 +1799,7 @@
 
     .line 413
     :cond_a
-    const-string v9, "gsm.sim.roaming"
+    const-string/jumbo v9, "gsm.sim.roaming"
 
     invoke-static {v9, v8}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
     :try_end_a
@@ -1807,6 +1809,8 @@
     goto/16 :goto_0
 
     .line 232
+    nop
+
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_1
@@ -1931,7 +1935,7 @@
 
     .line 449
     .local v0, operator:Ljava/lang/String;
-    const-string v1, "gsm.sim.operator.numeric"
+    const-string/jumbo v1, "gsm.sim.operator.numeric"
 
     invoke-static {v1, v0}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -1941,7 +1945,7 @@
     if-eqz v1, :cond_0
 
     .line 452
-    const-string v1, "gsm.sim.operator.iso-country"
+    const-string/jumbo v1, "gsm.sim.operator.iso-country"
 
     iget-object v2, p0, Lcom/android/internal/telephony/cdma/RuimRecords;->mImsi:Ljava/lang/String;
 

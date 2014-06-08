@@ -4,8 +4,8 @@
     <integer name="config_mediumAnimTime">400</integer>
     <integer name="config_longAnimTime">500</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
-    <integer name="config_activityShortDur">150</integer>
-    <integer name="config_activityDefaultDur">220</integer>
+    <integer name="config_activityShortDur">130</integer>
+    <integer name="config_activityDefaultDur">330</integer>
     <integer name="config_radioScanningTimeout">0</integer>
     <integer name="config_networkTransitionTimeout">60000</integer>
     <integer name="config_max_pan_devices">5</integer>
@@ -52,4 +52,5 @@
     <integer name="preferences_right_pane_weight">6</integer>
     <integer name="preference_screen_header_scrollbarStyle">0x2000000</integer>
     <integer name="preference_fragment_scrollbarStyle">0x2000000</integer>
+    <integer name="config_automatic_rotate_delay">2</integer>
 </resources>

@@ -745,7 +745,7 @@
     .line 220
     new-instance v1, Ljava/lang/NullPointerException;
 
-    const-string v2, "incomingCallPendingIntent cannot be null"
+    const-string/jumbo v2, "incomingCallPendingIntent cannot be null"
 
     invoke-direct {v1, v2}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
 

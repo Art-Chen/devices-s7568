@@ -271,7 +271,7 @@
     invoke-super {p0, p1}, Landroid/app/AlertDialog;->onRestoreInstanceState(Landroid/os/Bundle;)V
 
     .line 146
-    const-string v2, "hour"
+    const-string/jumbo v2, "hour"
 
     invoke-virtual {p1, v2}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
 
@@ -289,7 +289,7 @@
     .local v1, minute:I
     iget-object v2, p0, Landroid/app/TimePickerDialog;->mTimePicker:Landroid/widget/TimePicker;
 
-    const-string v3, "is24hour"
+    const-string/jumbo v3, "is24hour"
 
     invoke-virtual {p1, v3}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;)Z
 
@@ -334,7 +334,7 @@
 
     .line 137
     .local v0, state:Landroid/os/Bundle;
-    const-string v1, "hour"
+    const-string/jumbo v1, "hour"
 
     iget-object v2, p0, Landroid/app/TimePickerDialog;->mTimePicker:Landroid/widget/TimePicker;
 
@@ -364,7 +364,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     .line 139
-    const-string v1, "is24hour"
+    const-string/jumbo v1, "is24hour"
 
     iget-object v2, p0, Landroid/app/TimePickerDialog;->mTimePicker:Landroid/widget/TimePicker;
 

@@ -51,11 +51,57 @@
 
 .field public static final app_permission_item:I = 0x1090028
 
+.field public static final app_permission_table_item:I = 0x109013c
+
 .field public static final app_perms_summary:I = 0x1090029
 
 .field public static final appoverwifidialog:I = 0x109002a
 
 .field public static final auto_complete_list:I = 0x109002b
+
+.field public static final baidu_keyguard_axis_single_line:I = 0x109013d
+
+.field public static final baidu_keyguard_constellation01:I = 0x109013e
+
+.field public static final baidu_keyguard_constellation02:I = 0x109013f
+
+.field public static final baidu_keyguard_constellation03:I = 0x1090140
+
+.field public static final baidu_keyguard_constellation04:I = 0x1090141
+
+.field public static final baidu_keyguard_constellation05:I = 0x1090142
+
+.field public static final baidu_keyguard_constellation06:I = 0x1090143
+
+.field public static final baidu_keyguard_constellation07:I = 0x1090144
+
+.field public static final baidu_keyguard_constellation08:I = 0x1090145
+
+.field public static final baidu_keyguard_constellation09:I = 0x1090146
+
+.field public static final baidu_keyguard_constellation10:I = 0x1090147
+
+.field public static final baidu_keyguard_hotword:I = 0x1090148
+
+.field public static final baidu_keyguard_search:I = 0x1090149
+
+.field public static final baidu_keyguard_slide:I = 0x109014a
+
+.field public static final baidu_keyguard_slide_iqiyi_list_item:I = 0x109014b
+
+.field public static final baidu_keyguard_slide_music_view:I = 0x109014c
+
+.field public static final baidu_keyguard_slide_target_view:I = 0x109014d
+
+.field public static final baidu_keyguard_space:I = 0x109014e
+
+.field public static final baidu_keyguard_space_target_view:I = 0x109014f
+
+.field public static final baidu_keyguard_target:I = 0x1090150
+
+.field public static final baidu_keyguard_water:I = 0x1090151
+
+.field public static final baidu_keyguard_water_target_view:I = 0x1090152
 
 .field public static final breadcrumbs_in_fragment:I = 0x109002c
 
@@ -98,6 +144,8 @@
 .field public static final dialog_title_icons:I = 0x109003e
 
 .field public static final dialog_title_icons_holo:I = 0x109003f
+
+.field public static final dynamic_perm_dialog:I = 0x1090153
 
 .field public static final expandable_list_content:I = 0x1090001
 
@@ -209,6 +257,10 @@
 
 .field public static final keyguard_screen_glogin_unlock:I = 0x1090075
 
+.field public static final keyguard_screen_hot_music:I = 0x1090154
+
+.field public static final keyguard_screen_hotspot:I = 0x1090155
+
 .field public static final keyguard_screen_lawmo_lock_landscape:I = 0x1090076
 
 .field public static final keyguard_screen_lawmo_lock_portrait:I = 0x1090077
@@ -307,6 +359,10 @@
 
 .field public static final pen_detachment_alert_dialog:I = 0x10900a5
 
+.field public static final permission_prompt:I = 0x1090156
+
+.field public static final permission_prompt_item:I = 0x1090157
+
 .field public static final permissions_account_and_authtokentype:I = 0x10900a6
 
 .field public static final permissions_package_list_item:I = 0x10900a7
@@ -353,6 +409,8 @@
 
 .field public static final progress_dialog_holo:I = 0x10900bb
 
+.field public static final quickboot_dialog_confirm:I = 0x1090158
+
 .field public static final recent_apps_dialog:I = 0x10900bc
 
 .field public static final recent_apps_icon:I = 0x10900bd
@@ -360,6 +418,8 @@
 .field public static final remote_views_adapter_default_loading_view:I = 0x10900be
 
 .field public static final resolve_list_item:I = 0x10900bf
+
+.field public static final ringtone_custom_item:I = 0x1090159
 
 .field public static final safe_mode:I = 0x10900c0
 
@@ -456,6 +516,8 @@
 .field public static final status_bar_latest_event_ticker:I = 0x10900dd
 
 .field public static final status_bar_latest_event_ticker_large_icon:I = 0x10900de
+
+.field public static final super_mode_dialog:I = 0x109015a
 
 .field public static final tab_content:I = 0x10900df
 
@@ -616,6 +678,42 @@
 .field public static final wifi_p2p_dialog_row:I = 0x109012b
 
 .field public static final wifi_p2p_go_negotiation_request_alert:I = 0x109012c
+
+.field public static final yi_alert_dialog_baidu:I = 0x109015b
+
+.field public static final yi_alert_dialog_baidu_light:I = 0x109015c
+
+.field public static final yi_date_picker_baidu:I = 0x109015d
+
+.field public static final yi_dialog_custom_title_baidu:I = 0x109015e
+
+.field public static final yi_dialog_title_baidu:I = 0x109015f
+
+.field public static final yi_dialog_title_icons_baidu:I = 0x1090160
+
+.field public static final yi_preference_baidu:I = 0x1090161
+
+.field public static final yi_preference_category_baidu:I = 0x1090162
+
+.field public static final yi_preference_child_baidu:I = 0x1090163
+
+.field public static final yi_preference_dialog_edittext_light:I = 0x1090164
+
+.field public static final yi_ringtone:I = 0x1090165
+
+.field public static final yi_select_dialog_baidu_light:I = 0x1090166
+
+.field public static final yi_select_dialog_item_baidu_light:I = 0x1090167
+
+.field public static final yi_select_dialog_multichoice_baidu_light:I = 0x1090168
+
+.field public static final yi_select_dialog_singlechoice_baidu_light:I = 0x1090169
+
+.field public static final yi_tab_indicator_baidu:I = 0x109016a
+
+.field public static final yi_text_edit_action_popup_text:I = 0x109016b
+
+.field public static final yi_time_picker_baidu:I = 0x109016c
 
 .field public static final zoom_browser_accessory_buttons:I = 0x109012d
 

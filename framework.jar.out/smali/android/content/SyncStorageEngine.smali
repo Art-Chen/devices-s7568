@@ -1421,7 +1421,7 @@
     const/4 v8, 0x0
 
     :try_start_0
-    const-string v11, "id"
+    const-string/jumbo v11, "id"
 
     invoke-interface {p1, v8, v11}, Lorg/xmlpull/v1/XmlPullParser;->getAttributeValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
@@ -1760,7 +1760,7 @@
 
     .line 1620
     :cond_1
-    const-string v6, "integer"
+    const-string/jumbo v6, "integer"
 
     invoke-virtual {v6, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -4822,7 +4822,7 @@
     invoke-interface {v10, v13, v14}, Lorg/xmlpull/v1/XmlSerializer;->startDocument(Ljava/lang/String;Ljava/lang/Boolean;)V
 
     .line 1652
-    const-string v13, "http://xmlpull.org/v1/doc/features.html#indent-output"
+    const-string/jumbo v13, "http://xmlpull.org/v1/doc/features.html#indent-output"
 
     const/4 v14, 0x1
 
@@ -4919,7 +4919,7 @@
     .line 1665
     const/4 v13, 0x0
 
-    const-string v14, "id"
+    const-string/jumbo v14, "id"
 
     iget v15, v2, Landroid/content/SyncStorageEngine$AuthorityInfo;->ident:I
 
@@ -5207,7 +5207,7 @@
 
     const-string/jumbo v14, "type"
 
-    const-string v15, "integer"
+    const-string/jumbo v15, "integer"
 
     invoke-interface {v10, v13, v14, v15}, Lorg/xmlpull/v1/XmlSerializer;->attribute(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
@@ -8447,7 +8447,7 @@
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v6, "insertIntoPending: account="
+    const-string/jumbo v6, "insertIntoPending: account="
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -8639,7 +8639,7 @@
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v7, "insertStartSyncEvent: account="
+    const-string/jumbo v7, "insertStartSyncEvent: account="
 
     invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -8677,7 +8677,7 @@
 
     .line 968
     :cond_0
-    const-string v4, "insertStartSyncEvent"
+    const-string/jumbo v4, "insertStartSyncEvent"
 
     invoke-direct {p0, p1, p2, v4}, Landroid/content/SyncStorageEngine;->getAuthorityLocked(Landroid/accounts/Account;Ljava/lang/String;Ljava/lang/String;)Landroid/content/SyncStorageEngine$AuthorityInfo;
 

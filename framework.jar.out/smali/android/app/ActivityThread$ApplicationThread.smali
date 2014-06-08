@@ -2224,7 +2224,7 @@
 
     const/16 v46, 0x0
 
-    const-string v47, "heap:"
+    const-string/jumbo v47, "heap:"
 
     aput-object v47, v45, v46
 

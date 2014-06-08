@@ -1864,7 +1864,7 @@
 
     move-result-object v20
 
-    const-string v21, "intelligent_rotation_mode"
+    const-string/jumbo v21, "intelligent_rotation_mode"
 
     const/16 v22, 0x0
 
@@ -1889,7 +1889,7 @@
 
     move-result-object v20
 
-    const-string v21, "intelligent_screen_mode"
+    const-string/jumbo v21, "intelligent_screen_mode"
 
     const/16 v22, 0x0
 

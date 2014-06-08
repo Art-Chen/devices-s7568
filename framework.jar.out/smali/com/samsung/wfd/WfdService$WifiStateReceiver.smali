@@ -65,7 +65,7 @@
 
     invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v12, "intent recieved "
+    const-string/jumbo v12, "intent recieved "
 
     invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2099,6 +2099,8 @@
     goto/16 :goto_0
 
     .line 580
+    nop
+
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_1

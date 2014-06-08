@@ -768,7 +768,7 @@
 
     if-eqz v3, :cond_0
 
-    const-string v1, "held; "
+    const-string/jumbo v1, "held; "
 
     .line 1861
     .local v1, s2:Ljava/lang/String;

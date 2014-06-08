@@ -967,7 +967,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "invokeEnterMethods: "
+    const-string/jumbo v3, "invokeEnterMethods: "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1062,7 +1062,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "invokeExitMethods: "
+    const-string/jumbo v3, "invokeExitMethods: "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1400,7 +1400,7 @@
 
     const-string v3, "StateMachine"
 
-    const-string v4, "handleMessage: new destination call exit"
+    const-string/jumbo v4, "handleMessage: new destination call exit"
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -2011,7 +2011,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "handleMessage: E msg.what="
+    const-string/jumbo v2, "handleMessage: E msg.what="
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2080,7 +2080,7 @@
 
     const-string v0, "StateMachine"
 
-    const-string v1, "handleMessage: X"
+    const-string/jumbo v1, "handleMessage: X"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 

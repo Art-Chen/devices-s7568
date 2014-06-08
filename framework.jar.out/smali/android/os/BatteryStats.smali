@@ -265,25 +265,25 @@
 
     const/16 v1, 0x8
 
-    const-string v2, "hsdpa"
+    const-string/jumbo v2, "hsdpa"
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x9
 
-    const-string v2, "hsupa"
+    const-string/jumbo v2, "hsupa"
 
     aput-object v2, v0, v1
 
     const/16 v1, 0xa
 
-    const-string v2, "hspa"
+    const-string/jumbo v2, "hspa"
 
     aput-object v2, v0, v1
 
     const/16 v1, 0xb
 
-    const-string v2, "iden"
+    const-string/jumbo v2, "iden"
 
     aput-object v2, v0, v1
 
@@ -528,7 +528,7 @@
 
     new-array v6, v6, [Ljava/lang/String;
 
-    const-string v7, "in"
+    const-string/jumbo v7, "in"
 
     aput-object v7, v6, v8
 
@@ -1056,7 +1056,7 @@
     invoke-virtual {p0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     .line 1040
-    const-string v8, "h "
+    const-string/jumbo v8, "h "
 
     invoke-virtual {p0, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -3785,7 +3785,7 @@
     .line 2197
     const/16 v20, 0x0
 
-    const-string v21, "i"
+    const-string/jumbo v21, "i"
 
     const-string/jumbo v22, "uid"
 

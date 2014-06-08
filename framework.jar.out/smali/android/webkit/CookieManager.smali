@@ -124,7 +124,7 @@
     sput v0, Landroid/webkit/CookieManager;->SECURE_LENGTH:I
 
     .line 83
-    const-string v0, "httponly"
+    const-string/jumbo v0, "httponly"
 
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
@@ -183,7 +183,7 @@
 
     const/16 v1, 0x8
 
-    const-string v2, "info"
+    const-string/jumbo v2, "info"
 
     aput-object v2, v0, v1
 
@@ -1145,7 +1145,7 @@
 
     move-result-object v20
 
-    const-string v21, "httponly"
+    const-string/jumbo v21, "httponly"
 
     invoke-virtual/range {v20 .. v21}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
@@ -1436,7 +1436,7 @@
 
     invoke-direct/range {v21 .. v21}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v22, "illegal format for expires: "
+    const-string/jumbo v22, "illegal format for expires: "
 
     invoke-virtual/range {v21 .. v22}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1547,7 +1547,7 @@
 
     invoke-direct/range {v21 .. v21}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v22, "illegal format for max-age: "
+    const-string/jumbo v22, "illegal format for max-age: "
 
     invoke-virtual/range {v21 .. v22}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2426,7 +2426,7 @@
 
     .line 552
     .local v6, now:J
-    const-string v11, "https"
+    const-string/jumbo v11, "https"
 
     invoke-virtual/range {p1 .. p1}, Landroid/net/WebAddress;->getScheme()Ljava/lang/String;
 
@@ -3481,7 +3481,7 @@
 
     if-eqz v21, :cond_7
 
-    const-string v21, "https"
+    const-string/jumbo v21, "https"
 
     invoke-virtual/range {p1 .. p1}, Landroid/net/WebAddress;->getScheme()Ljava/lang/String;
 

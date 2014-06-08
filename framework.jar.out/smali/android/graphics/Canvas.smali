@@ -252,8 +252,6 @@
 
     .prologue
     .line 1646
-    invoke-static {}, Landroid/graphics/Canvas;->freeTextLayoutCachesJNI()V
-
     .line 1647
     return-void
 .end method
@@ -914,7 +912,7 @@
     .line 1175
     new-instance v1, Ljava/lang/IllegalArgumentException;
 
-    const-string v2, "height must be >= 0"
+    const-string/jumbo v2, "height must be >= 0"
 
     invoke-direct {v1, v2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 

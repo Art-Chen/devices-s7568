@@ -157,23 +157,23 @@
 
     aput-object v1, v0, v3
 
-    const-string v1, "http://www."
+    const-string/jumbo v1, "http://www."
 
     aput-object v1, v0, v4
 
-    const-string v1, "https://www."
+    const-string/jumbo v1, "https://www."
 
     aput-object v1, v0, v2
 
     const/4 v1, 0x3
 
-    const-string v2, "http://"
+    const-string/jumbo v2, "http://"
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x4
 
-    const-string v2, "https://"
+    const-string/jumbo v2, "https://"
 
     aput-object v2, v0, v1
 
@@ -251,7 +251,7 @@
 
     const/16 v1, 0x11
 
-    const-string v2, "imap:"
+    const-string/jumbo v2, "imap:"
 
     aput-object v2, v0, v1
 
@@ -317,7 +317,7 @@
 
     const/16 v1, 0x1c
 
-    const-string v2, "irdaobex://"
+    const-string/jumbo v2, "irdaobex://"
 
     aput-object v2, v0, v1
 

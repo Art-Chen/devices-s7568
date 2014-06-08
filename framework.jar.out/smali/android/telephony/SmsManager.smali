@@ -236,80 +236,6 @@
 
 
 # virtual methods
-.method public copyMessageToIcc([B[BI)Z
-    .locals 3
-    .parameter "smsc"
-    .parameter "pdu"
-    .parameter "status"
-
-    .prologue
-    .line 248
-    const/4 v1, 0x0
-
-    .line 251
-    .local v1, success:Z
-    :try_start_0
-    const-string v2, "isms"
-
-    invoke-static {v2}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
-
-    move-result-object v2
-
-    invoke-static {v2}, Lcom/android/internal/telephony/ISms$Stub;->asInterface(Landroid/os/IBinder;)Lcom/android/internal/telephony/ISms;
-
-    move-result-object v0
-
-    .line 252
-    .local v0, iccISms:Lcom/android/internal/telephony/ISms;
-    if-eqz v0, :cond_0
-
-    .line 253
-    invoke-interface {v0, p3, p2, p1}, Lcom/android/internal/telephony/ISms;->copyMessageToIccEf(I[B[B)Z
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
-
-    move-result v1
-
-    .line 259
-    .end local v0           #iccISms:Lcom/android/internal/telephony/ISms;
-    :cond_0
-    :goto_0
-    return v1
-
-    .line 255
-    :catch_0
-    move-exception v2
-
-    goto :goto_0
-.end method
-
-.method public copyTextMessageToIccCard(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;IJ)I
-    .locals 1
-    .parameter "scAddress"
-    .parameter "address"
-    .parameter
-    .parameter "status"
-    .parameter "timeStamp"
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            "Ljava/util/ArrayList",
-            "<",
-            "Ljava/lang/String;",
-            ">;IJ)I"
-        }
-    .end annotation
-
-    .prologue
-    .line 268
-    .local p3, msgs:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Ljava/lang/String;>;"
-    const/4 v0, -0x1
-
-    return v0
-.end method
-
 .method public MakeSimPdu(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)I
     .locals 10
     .parameter "body"
@@ -590,6 +516,33 @@
     move-exception v2
 
     goto :goto_0
+.end method
+
+.method public copyTextMessageToIccCard(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;IJ)I
+    .locals 1
+    .parameter "scAddress"
+    .parameter "address"
+    .parameter
+    .parameter "status"
+    .parameter "timeStamp"
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            "Ljava/util/ArrayList",
+            "<",
+            "Ljava/lang/String;",
+            ">;IJ)I"
+        }
+    .end annotation
+
+    .prologue
+    .line 268
+    .local p3, msgs:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Ljava/lang/String;>;"
+    const/4 v0, -0x1
+
+    return v0
 .end method
 
 .method public deleteMessageFromIcc(I)Z

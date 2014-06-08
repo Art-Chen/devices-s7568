@@ -879,7 +879,7 @@
 
     move-result-object v15
 
-    const-string v16, "gw"
+    const-string/jumbo v16, "gw"
 
     invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

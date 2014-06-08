@@ -50,7 +50,7 @@
 
     .line 192
     .local v0, apnName:Ljava/lang/String;
-    const-string v2, "internet.lguplus.co.kr"
+    const-string/jumbo v2, "internet.lguplus.co.kr"
 
     invoke-virtual {v2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -86,7 +86,7 @@
 
     const-string v2, "45006"
 
-    const-string v3, "gsm.operator.numeric"
+    const-string/jumbo v3, "gsm.operator.numeric"
 
     invoke-static {v3}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -146,7 +146,7 @@
     .end local v1           #apnName:Ljava/lang/String;
     .restart local v0       #apnName:Ljava/lang/String;
     :cond_1
-    const-string v0, "internet.lguplus.co.kr"
+    const-string/jumbo v0, "internet.lguplus.co.kr"
 
     goto :goto_1
 .end method
@@ -497,7 +497,7 @@
 
     .line 156
     :cond_0
-    const-string v2, "isDnsOk: return false apn.types[0]=%s APN_TYPE_MMS=%s isIpAddress(%s)=%s"
+    const-string/jumbo v2, "isDnsOk: return false apn.types[0]=%s APN_TYPE_MMS=%s isIpAddress(%s)=%s"
 
     const/4 v3, 0x4
 

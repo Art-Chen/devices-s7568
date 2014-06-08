@@ -1310,7 +1310,7 @@
     :goto_0
     if-eqz v0, :cond_0
 
-    const-string v1, "in_progress"
+    const-string/jumbo v1, "in_progress"
 
     invoke-virtual {v0, v1}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;)Z
 

@@ -999,7 +999,7 @@
 
     .line 267
     .local v6, compareString:Ljava/lang/String;
-    const-string v0, "http://"
+    const-string/jumbo v0, "http://"
 
     invoke-virtual {v6, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
@@ -1054,7 +1054,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v1, "https://"
+    const-string/jumbo v1, "https://"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1078,7 +1078,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v1, "https://www."
+    const-string/jumbo v1, "https://www."
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1131,7 +1131,7 @@
     .line 269
     .end local v8           #whereClause:Ljava/lang/StringBuilder;
     :cond_2
-    const-string v0, "https://"
+    const-string/jumbo v0, "https://"
 
     invoke-virtual {v6, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
@@ -1199,7 +1199,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v1, "http://"
+    const-string/jumbo v1, "http://"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1223,7 +1223,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v1, "http://"
+    const-string/jumbo v1, "http://"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

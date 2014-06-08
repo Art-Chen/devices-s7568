@@ -4289,170 +4289,203 @@
 .end method
 
 .method protected onDestroy()V
-    .locals 8
+    .locals 9
 
     .prologue
-    const/4 v7, 0x0
+    const/4 v8, 0x1
 
-    .line 1365
-    const/4 v5, 0x1
+    .line 1426
+    iput-boolean v8, p0, Landroid/app/Activity;->mCalled:Z
 
-    iput-boolean v5, p0, Landroid/app/Activity;->mCalled:Z
+    .line 1429
+    iget-object v6, p0, Landroid/app/Activity;->mManagedDialogs:Landroid/util/SparseArray;
 
-    .line 1368
-    iget-object v5, p0, Landroid/app/Activity;->mManagedDialogs:Landroid/util/SparseArray;
+    if-eqz v6, :cond_2
 
-    if-eqz v5, :cond_2
+    .line 1430
+    iget-object v6, p0, Landroid/app/Activity;->mManagedDialogs:Landroid/util/SparseArray;
 
-    .line 1369
-    iget-object v5, p0, Landroid/app/Activity;->mManagedDialogs:Landroid/util/SparseArray;
+    invoke-virtual {v6}, Landroid/util/SparseArray;->size()I
 
-    invoke-virtual {v5}, Landroid/util/SparseArray;->size()I
+    move-result v5
 
-    move-result v4
-
-    .line 1370
-    .local v4, numDialogs:I
+    .line 1431
+    .local v5, numDialogs:I
     const/4 v1, 0x0
 
     .local v1, i:I
     :goto_0
-    if-ge v1, v4, :cond_1
+    if-ge v1, v5, :cond_1
 
-    .line 1371
-    iget-object v5, p0, Landroid/app/Activity;->mManagedDialogs:Landroid/util/SparseArray;
+    .line 1432
+    iget-object v6, p0, Landroid/app/Activity;->mManagedDialogs:Landroid/util/SparseArray;
 
-    invoke-virtual {v5, v1}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
+    invoke-virtual {v6, v1}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Landroid/app/Activity$ManagedDialog;
 
-    .line 1372
+    .line 1433
     .local v2, md:Landroid/app/Activity$ManagedDialog;
-    iget-object v5, v2, Landroid/app/Activity$ManagedDialog;->mDialog:Landroid/app/Dialog;
+    iget-object v6, v2, Landroid/app/Activity$ManagedDialog;->mDialog:Landroid/app/Dialog;
 
-    invoke-virtual {v5}, Landroid/app/Dialog;->isShowing()Z
+    invoke-virtual {v6}, Landroid/app/Dialog;->isShowing()Z
 
-    move-result v5
+    move-result v6
 
-    if-eqz v5, :cond_0
+    if-eqz v6, :cond_0
 
-    .line 1373
-    iget-object v5, v2, Landroid/app/Activity$ManagedDialog;->mDialog:Landroid/app/Dialog;
+    iget-object v6, v2, Landroid/app/Activity$ManagedDialog;->mDialog:Landroid/app/Dialog;
 
-    invoke-virtual {v5}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {v6}, Landroid/app/Dialog;->dismiss()V
 
-    .line 1370
     :cond_0
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 1376
     .end local v2           #md:Landroid/app/Activity$ManagedDialog;
     :cond_1
-    iput-object v7, p0, Landroid/app/Activity;->mManagedDialogs:Landroid/util/SparseArray;
+    const/4 v6, 0x0
 
-    .line 1380
+    iput-object v6, p0, Landroid/app/Activity;->mManagedDialogs:Landroid/util/SparseArray;
+
     .end local v1           #i:I
-    .end local v4           #numDialogs:I
+    .end local v5           #numDialogs:I
     :cond_2
+    iget-object v7, p0, Landroid/app/Activity;->mManagedCursors:Ljava/util/ArrayList;
+
+    monitor-enter v7
+
+    .line 1442
+    :try_start_0
     iget-object v6, p0, Landroid/app/Activity;->mManagedCursors:Ljava/util/ArrayList;
 
-    monitor-enter v6
+    invoke-virtual {v6}, Ljava/util/ArrayList;->size()I
 
-    .line 1381
-    :try_start_0
-    iget-object v5, p0, Landroid/app/Activity;->mManagedCursors:Ljava/util/ArrayList;
+    move-result v4
 
-    invoke-virtual {v5}, Ljava/util/ArrayList;->size()I
-
-    move-result v3
-
-    .line 1382
-    .local v3, numCursors:I
+    .line 1443
+    .local v4, numCursors:I
     const/4 v1, 0x0
 
     .restart local v1       #i:I
     :goto_1
-    if-ge v1, v3, :cond_4
+    if-ge v1, v4, :cond_4
 
-    .line 1383
-    iget-object v5, p0, Landroid/app/Activity;->mManagedCursors:Ljava/util/ArrayList;
+    .line 1444
+    iget-object v6, p0, Landroid/app/Activity;->mManagedCursors:Ljava/util/ArrayList;
 
-    invoke-virtual {v5, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    invoke-virtual {v6, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/app/Activity$ManagedCursor;
 
-    .line 1384
+    .line 1445
     .local v0, c:Landroid/app/Activity$ManagedCursor;
     if-eqz v0, :cond_3
 
-    .line 1385
+    .line 1446
     #getter for: Landroid/app/Activity$ManagedCursor;->mCursor:Landroid/database/Cursor;
     invoke-static {v0}, Landroid/app/Activity$ManagedCursor;->access$100(Landroid/app/Activity$ManagedCursor;)Landroid/database/Cursor;
 
-    move-result-object v5
+    move-result-object v6
 
-    invoke-interface {v5}, Landroid/database/Cursor;->close()V
+    invoke-interface {v6}, Landroid/database/Cursor;->close()V
 
-    .line 1382
+    .line 1443
     :cond_3
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_1
 
-    .line 1388
+    .line 1449
     .end local v0           #c:Landroid/app/Activity$ManagedCursor;
     :cond_4
-    iget-object v5, p0, Landroid/app/Activity;->mManagedCursors:Ljava/util/ArrayList;
+    iget-object v6, p0, Landroid/app/Activity;->mManagedCursors:Ljava/util/ArrayList;
 
-    invoke-virtual {v5}, Ljava/util/ArrayList;->clear()V
+    invoke-virtual {v6}, Ljava/util/ArrayList;->clear()V
 
-    .line 1389
-    monitor-exit v6
+    .line 1450
+    monitor-exit v7
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 1392
-    iget-object v5, p0, Landroid/app/Activity;->mSearchManager:Landroid/app/SearchManager;
+    .line 1453
+    iget-object v6, p0, Landroid/app/Activity;->mSearchManager:Landroid/app/SearchManager;
 
-    if-eqz v5, :cond_5
+    if-eqz v6, :cond_5
 
-    .line 1393
-    iget-object v5, p0, Landroid/app/Activity;->mSearchManager:Landroid/app/SearchManager;
+    .line 1454
+    iget-object v6, p0, Landroid/app/Activity;->mSearchManager:Landroid/app/SearchManager;
 
-    invoke-virtual {v5}, Landroid/app/SearchManager;->stopSearch()V
+    invoke-virtual {v6}, Landroid/app/SearchManager;->stopSearch()V
 
-    .line 1397
+    .line 1457
     :cond_5
     iput-object v7, p0, Landroid/app/Activity;->mTouchPadListener:Landroid/app/Activity$TouchPadListener;
 
-    .line 1399
     invoke-virtual {p0}, Landroid/app/Activity;->getApplication()Landroid/app/Application;
 
-    move-result-object v5
+    move-result-object v6
 
-    invoke-virtual {v5, p0}, Landroid/app/Application;->dispatchActivityDestroyed(Landroid/app/Activity;)V
+    invoke-virtual {v6, p0}, Landroid/app/Application;->dispatchActivityDestroyed(Landroid/app/Activity;)V
 
-    .line 1400
+    .line 1460
+    invoke-virtual {p0}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v6
+
+    invoke-static {v6}, Landroid/sec/multiwindow/MultiWindowManager;->isMultiWindowServiceEnabled(Landroid/content/Context;)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_7
+
+    .line 1461
+    invoke-virtual {p0}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v6
+
+    invoke-static {v6}, Landroid/sec/multiwindow/MultiWindowManager;->getInstance(Landroid/content/Context;)Landroid/sec/multiwindow/IMultiWindowManager;
+
+    move-result-object v3
+
+    .line 1462
+    .local v3, multiWindowManager:Landroid/sec/multiwindow/IMultiWindowManager;
+    iget-boolean v6, p0, Landroid/app/Activity;->isSendedFinishAction:Z
+
+    if-nez v6, :cond_6
+
+    .line 1463
+    invoke-interface {v3, p0}, Landroid/sec/multiwindow/IMultiWindowManager;->sendFinishAction(Landroid/app/Activity;)Z
+
+    .line 1464
+    iput-boolean v8, p0, Landroid/app/Activity;->isSendedFinishAction:Z
+
+    .line 1466
+    :cond_6
+    invoke-interface {v3, p0}, Landroid/sec/multiwindow/IMultiWindowManager;->sendDestroyAction(Landroid/app/Activity;)Z
+
+    .line 1469
+    .end local v3           #multiWindowManager:Landroid/sec/multiwindow/IMultiWindowManager;
+    :cond_7
     return-void
 
-    .line 1389
+    .line 1450
     .end local v1           #i:I
-    .end local v3           #numCursors:I
+    .end local v4           #numCursors:I
     :catchall_0
-    move-exception v5
+    move-exception v6
 
     :try_start_1
-    monitor-exit v6
+    monitor-exit v7
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    throw v5
+    throw v6
 .end method
 
 .method public onDetachedFromWindow()V
@@ -7717,6 +7750,16 @@
     return-void
 .end method
 
+.method public setTouchPadListener(Landroid/app/Activity$TouchPadListener;)V
+    .locals 0
+    .parameter "l"
+
+    .prologue
+    iput-object p1, p0, Landroid/app/Activity;->mTouchPadListener:Landroid/app/Activity$TouchPadListener;
+
+    return-void
+.end method
+
 .method public setVisible(Z)V
     .locals 2
     .parameter "visible"
@@ -8657,16 +8700,6 @@
     invoke-virtual {p1, v0}, Landroid/view/View;->setOnCreateContextMenuListener(Landroid/view/View$OnCreateContextMenuListener;)V
 
     .line 2813
-    return-void
-.end method
-
-.method public setTouchPadListener(Landroid/app/Activity$TouchPadListener;)V
-    .locals 0
-    .parameter "l"
-
-    .prologue
-    iput-object p1, p0, Landroid/app/Activity;->mTouchPadListener:Landroid/app/Activity$TouchPadListener;
-
     return-void
 .end method
 

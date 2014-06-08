@@ -4263,7 +4263,7 @@
     .local v17, sms:Landroid/telephony/SmsMessage;
     const-string v20, "RILJ"
 
-    const-string v21, "hyunjoo RIL_UNSOL_RESPONSE_NEW_SMS after newFromCMT"
+    const-string/jumbo v21, "hyunjoo RIL_UNSOL_RESPONSE_NEW_SMS after newFromCMT"
 
     invoke-static/range {v20 .. v21}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -4290,7 +4290,7 @@
     .line 3155
     const-string v20, "RILJ"
 
-    const-string v21, "hyunjoo acknowledgeLastIncomingGsmSms"
+    const-string/jumbo v21, "hyunjoo acknowledgeLastIncomingGsmSms"
 
     invoke-static/range {v20 .. v21}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -4334,7 +4334,7 @@
     .line 3160
     const-string v20, "RILJ"
 
-    const-string v21, "hyunjoo mGsmSmsRegistrant.notifyRegistrant"
+    const-string/jumbo v21, "hyunjoo mGsmSmsRegistrant.notifyRegistrant"
 
     invoke-static/range {v20 .. v21}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -4344,7 +4344,7 @@
     :cond_2
     const-string v20, "RILJ"
 
-    const-string v21, "hyunjoo mGsmSmsRegistrant == null"
+    const-string/jumbo v21, "hyunjoo mGsmSmsRegistrant == null"
 
     invoke-static/range {v20 .. v21}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -8621,7 +8621,7 @@
 
     .line 4070
     .local v6, response:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Landroid/telephony/NeighboringCellInfo;>;"
-    const-string v8, "gsm.network.type"
+    const-string/jumbo v8, "gsm.network.type"
 
     const-string/jumbo v9, "unknown"
 
@@ -9553,7 +9553,7 @@
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v6, "index = "
+    const-string/jumbo v6, "index = "
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -9589,7 +9589,7 @@
 
     move-result-object v5
 
-    const-string v6, "gsmAct="
+    const-string/jumbo v6, "gsmAct="
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -9601,7 +9601,7 @@
 
     move-result-object v5
 
-    const-string v6, "gsmCompactAct="
+    const-string/jumbo v6, "gsmCompactAct="
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -16759,7 +16759,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "hangupConnection: gsmIndex="
+    const-string/jumbo v2, "hangupConnection: gsmIndex="
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

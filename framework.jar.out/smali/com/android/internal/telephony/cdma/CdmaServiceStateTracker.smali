@@ -925,7 +925,7 @@
     const/4 v6, 0x0
 
     .line 1432
-    const-string v7, "gsm.sim.operator.alpha"
+    const-string/jumbo v7, "gsm.sim.operator.alpha"
 
     const-string v8, "empty"
 
@@ -1645,7 +1645,7 @@
     .line 1518
     .end local v30           #tzname:Ljava/lang/String;
     :cond_0
-    const-string v33, "gsm.operator.iso-country"
+    const-string/jumbo v33, "gsm.operator.iso-country"
 
     invoke-static/range {v33 .. v33}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -1773,7 +1773,7 @@
 
     .line 1555
     :cond_4
-    const-string v33, "gsm.ignore-nitz"
+    const-string/jumbo v33, "gsm.ignore-nitz"
 
     invoke-static/range {v33 .. v33}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -2421,7 +2421,7 @@
     invoke-virtual {v0, v1}, Lcom/android/internal/telephony/cdma/CdmaServiceStateTracker;->log(Ljava/lang/String;)V
 
     .line 1626
-    const-string v33, "gsm.nitz.time"
+    const-string/jumbo v33, "gsm.nitz.time"
 
     invoke-virtual {v5}, Ljava/util/Calendar;->getTimeInMillis()J
 
@@ -3059,7 +3059,7 @@
 
     .prologue
     .line 1767
-    const-string v1, "gsm.sim.operator.numeric"
+    const-string/jumbo v1, "gsm.sim.operator.numeric"
 
     const-string v2, ""
 
@@ -3296,7 +3296,7 @@
 
     .line 358
     :pswitch_1
-    const-string v3, "handleMessage: EVENT_RADIO_AVAILABLE"
+    const-string/jumbo v3, "handleMessage: EVENT_RADIO_AVAILABLE"
 
     move-object/from16 v0, p0
 
@@ -3366,7 +3366,7 @@
     invoke-interface {v3, v0}, Lcom/android/internal/telephony/CommandsInterface;->getCDMASubscription(Landroid/os/Message;)V
 
     .line 375
-    const-string v3, "handleMessage: EVENT_RUIM_READY, Send Request getCDMASubscription."
+    const-string/jumbo v3, "handleMessage: EVENT_RUIM_READY, Send Request getCDMASubscription."
 
     move-object/from16 v0, p0
 
@@ -3389,7 +3389,7 @@
     iput-boolean v3, v0, Lcom/android/internal/telephony/cdma/CdmaServiceStateTracker;->isSubscriptionFromRuim:Z
 
     .line 392
-    const-string v3, "handleMessage: EVENT_NV_READY, Send Request getCDMASubscription."
+    const-string/jumbo v3, "handleMessage: EVENT_NV_READY, Send Request getCDMASubscription."
 
     move-object/from16 v0, p0
 
@@ -4160,6 +4160,8 @@
     goto/16 :goto_0
 
     .line 356
+    nop
+
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_4
@@ -4295,7 +4297,7 @@
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v6, "handlePollStateResult: RIL returned an error where it must succeed"
+    const-string/jumbo v6, "handlePollStateResult: RIL returned an error where it must succeed"
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -4579,7 +4581,7 @@
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v6, "handlePollStateResult: Exception while polling service state. Probably malformed RIL response."
+    const-string/jumbo v6, "handlePollStateResult: Exception while polling service state. Probably malformed RIL response."
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -4700,7 +4702,7 @@
     packed-switch p1, :pswitch_data_0
 
     .line 856
-    const-string v3, "handlePollStateResultMessage: RIL response handle in wrong phone! Expected CDMA RIL request and get GSM RIL request."
+    const-string/jumbo v3, "handlePollStateResultMessage: RIL response handle in wrong phone! Expected CDMA RIL request and get GSM RIL request."
 
     move-object/from16 v0, p0
 
@@ -5540,6 +5542,8 @@
     goto/16 :goto_0
 
     .line 703
+    nop
+
     nop
 
     :pswitch_data_0
@@ -6903,7 +6907,7 @@
 
     move-object/from16 v19, v0
 
-    const-string v20, "gsm.network.type"
+    const-string/jumbo v20, "gsm.network.type"
 
     move-object/from16 v0, p0
 
@@ -6997,7 +7001,7 @@
 
     move-object/from16 v19, v0
 
-    const-string v20, "gsm.operator.alpha"
+    const-string/jumbo v20, "gsm.operator.alpha"
 
     move-object/from16 v0, p0
 
@@ -7030,7 +7034,7 @@
 
     move-object/from16 v19, v0
 
-    const-string v20, "gsm.operator.numeric"
+    const-string/jumbo v20, "gsm.operator.numeric"
 
     move-object/from16 v0, v19
 
@@ -7050,7 +7054,7 @@
 
     move-object/from16 v19, v0
 
-    const-string v20, "gsm.operator.iso-country"
+    const-string/jumbo v20, "gsm.operator.iso-country"
 
     const-string v21, ""
 
@@ -7074,7 +7078,7 @@
 
     move-object/from16 v20, v0
 
-    const-string v21, "gsm.operator.isroaming"
+    const-string/jumbo v21, "gsm.operator.isroaming"
 
     move-object/from16 v0, p0
 
@@ -7356,7 +7360,7 @@
 
     move-object/from16 v19, v0
 
-    const-string v20, "gsm.operator.iso-country"
+    const-string/jumbo v20, "gsm.operator.iso-country"
 
     move-object/from16 v0, v19
 

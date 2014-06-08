@@ -105,7 +105,7 @@
 
     move-result-object v3
 
-    const-string v4, "host"
+    const-string/jumbo v4, "host"
 
     invoke-virtual {v3, v4}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
@@ -159,7 +159,7 @@
 
     move-result-object v3
 
-    const-string v4, "host"
+    const-string/jumbo v4, "host"
 
     invoke-virtual {v3, v4}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 

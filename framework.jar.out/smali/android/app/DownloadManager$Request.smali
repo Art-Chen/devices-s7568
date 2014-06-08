@@ -170,7 +170,7 @@
     .local v0, scheme:Ljava/lang/String;
     if-eqz v0, :cond_1
 
-    const-string v1, "http"
+    const-string/jumbo v1, "http"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -178,7 +178,7 @@
 
     if-nez v1, :cond_2
 
-    const-string v1, "https"
+    const-string/jumbo v1, "https"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -341,7 +341,7 @@
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v5, "http_header_"
+    const-string/jumbo v5, "http_header_"
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -440,7 +440,7 @@
     .line 657
     new-instance v0, Ljava/lang/NullPointerException;
 
-    const-string v1, "header cannot be null"
+    const-string/jumbo v1, "header cannot be null"
 
     invoke-direct {v0, v1}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
 
@@ -459,7 +459,7 @@
     .line 660
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
-    const-string v1, "header may not contain \':\'"
+    const-string/jumbo v1, "header may not contain \':\'"
 
     invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -559,7 +559,7 @@
     if-eqz v1, :cond_1
 
     .line 843
-    const-string v1, "hint"
+    const-string/jumbo v1, "hint"
 
     iget-object v2, p0, Landroid/app/DownloadManager$Request;->mDestinationUri:Landroid/net/Uri;
 
@@ -1145,7 +1145,7 @@
     invoke-virtual {v0, v1, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
     .line 801
-    const-string v1, "hint"
+    const-string/jumbo v1, "hint"
 
     iget-object v3, p0, Landroid/app/DownloadManager$Request;->mDestinationUri:Landroid/net/Uri;
 

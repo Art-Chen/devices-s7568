@@ -929,7 +929,7 @@
 
     move-result-object v1
 
-    const-string v2, "http://"
+    const-string/jumbo v2, "http://"
 
     invoke-virtual {v1, v2}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
@@ -967,7 +967,7 @@
 
     move-result-object v1
 
-    const-string v2, "https://"
+    const-string/jumbo v2, "https://"
 
     invoke-virtual {v1, v2}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 

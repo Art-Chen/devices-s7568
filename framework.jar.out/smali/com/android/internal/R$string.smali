@@ -211,13 +211,27 @@
 
 .field public static final accessibility_binding_label:I = 0x1040563
 
+.field public static final action_access_call_log:I = 0x1040770
+
+.field public static final action_access_contacts:I = 0x1040772
+
+.field public static final action_access_location:I = 0x1040773
+
+.field public static final action_access_sms:I = 0x1040771
+
 .field public static final action_bar_home_description:I = 0x10405d4
 
 .field public static final action_bar_up_description:I = 0x10405d5
 
+.field public static final action_call:I = 0x104076d
+
 .field public static final action_menu_overflow_description:I = 0x10405d6
 
+.field public static final action_mms:I = 0x104076f
+
 .field public static final action_mode_done:I = 0x1040587
+
+.field public static final action_sms:I = 0x104076e
 
 .field public static final activity_chooser_view_dialog_title_default:I = 0x10405f8
 
@@ -401,6 +415,24 @@
 
 .field public static final badPuk:I = 0x10400e9
 
+.field public static final badPuk_noretrytime:I = 0x1040746
+
+.field public static final badPuk_one:I = 0x1040744
+
+.field public static final baidu_account_verify_code_bind:I = 0x104075c
+
+.field public static final baidu_account_verify_code_password:I = 0x104075d
+
+.field public static final baidu_keyguard_hotword_am:I = 0x1040792
+
+.field public static final baidu_keyguard_hotword_date_format:I = 0x1040794
+
+.field public static final baidu_keyguard_hotword_pm:I = 0x1040793
+
+.field public static final battery_apps_button:I = 0x1040797
+
+.field public static final battery_apps_message:I = 0x1040796
+
 .field public static final beforeOneMonthDurationPast:I = 0x1040462
 
 .field public static final bluetooth_security_mode_disable:I = 0x1040354
@@ -424,6 +456,10 @@
 .field public static final callControlSSModification:I = 0x104056e
 
 .field public static final callFailed_fdn_only:I = 0x1040570
+
+.field public static final caller_info_or:I = 0x104076a
+
+.field public static final caller_info_or_other:I = 0x104076b
 
 .field public static final callsettings_callwaiting_notsubscribed:I = 0x104013b
 
@@ -465,11 +501,23 @@
 
 .field public static final cfTemplateRegisteredTime:I = 0x104014e
 
+.field public static final charge_complete:I = 0x1040784
+
+.field public static final charge_finished:I = 0x104079b
+
+.field public static final chargging:I = 0x104079a
+
 .field public static final checkbox_checked:I = 0x10405b6
 
 .field public static final checkbox_description:I = 0x10406a6
 
 .field public static final checkbox_not_checked:I = 0x10405b7
+
+.field public static final china_mobile:I = 0x1040769
+
+.field public static final china_telecom:I = 0x1040767
+
+.field public static final china_unicom:I = 0x1040768
 
 .field public static final chooseActivity:I = 0x104048c
 
@@ -615,6 +663,8 @@
 
 .field public static final cu_operator_name:I = 0x104068a
 
+.field public static final custom_ringtone_picker:I = 0x104072f
+
 .field public static final cut:I = 0x1040003
 
 .field public static final cutAll:I = 0x1040708
@@ -624,6 +674,8 @@
 .field public static final data_encrypt_convert_diag:I = 0x104001f
 
 .field public static final data_encrypt_notify_title:I = 0x104001e
+
+.field public static final data_sms_msg:I = 0x104077c
 
 .field public static final data_usage_3g_limit_snoozed_title:I = 0x10405e2
 
@@ -761,6 +813,8 @@
 
 .field public static final deny:I = 0x104055e
 
+.field public static final deny_btn_text:I = 0x1040774
+
 .field public static final description_direction_down:I = 0x10405ca
 
 .field public static final description_direction_left:I = 0x10405cb
@@ -823,7 +877,13 @@
 
 .field public static final dpm_wifi_user_profiles_denied:I = 0x10401c8
 
+.field public static final dynamic_perm_dialog_msg:I = 0x104076c
+
+.field public static final dynamic_perm_popup_dialog_title:I = 0x1040776
+
 .field public static final editTextMenuTitle:I = 0x1040481
+
+.field public static final elapsed_time_long_format_h_mm_ss:I = 0x104075e
 
 .field public static final elapsed_time_short_format_h_mm_ss:I = 0x104047a
 
@@ -856,6 +916,8 @@
 .field public static final eventTypeBirthday:I = 0x104036c
 
 .field public static final eventTypeCustom:I = 0x104036b
+
+.field public static final eventTypeLunarBirthday:I = 0x1040766
 
 .field public static final eventTypeOther:I = 0x104036e
 
@@ -912,6 +974,8 @@
 .field public static final ext_media_unmountable_notification_title:I = 0x1040536
 
 .field public static final ext_media_unmountable_notification_title_sd:I = 0x1040537
+
+.field public static final external_sd:I = 0x1040741
 
 .field public static final extmedia_format_button_format:I = 0x1040525
 
@@ -991,7 +1055,11 @@
 
 .field public static final global_action_power_off_disabled:I = 0x10401db
 
+.field public static final global_action_reboot:I = 0x104074e
+
 .field public static final global_action_restart:I = 0x104017d
+
+.field public static final global_action_screenshot:I = 0x104078d
 
 .field public static final global_action_silent_mode_off_status:I = 0x1040180
 
@@ -1016,6 +1084,8 @@
 .field public static final global_actions_airplane_mode_on_status_confirm:I = 0x1040186
 
 .field public static final global_actions_toggle_airplane_mode:I = 0x1040183
+
+.field public static final global_actions_toggle_airplane_mode_off:I = 0x104074f
 
 .field public static final gpsNotifMessage:I = 0x104059a
 
@@ -1054,6 +1124,8 @@
 .field public static final heavy_weight_switcher_text:I = 0x10404a9
 
 .field public static final heavy_weight_switcher_title:I = 0x10404a8
+
+.field public static final hot_keywords:I = 0x10407a5
 
 .field public static final hour:I = 0x104046a
 
@@ -1151,9 +1223,19 @@
 
 .field public static final install_notify_title:I = 0x1040028
 
+.field public static final internal_sd:I = 0x1040740
+
 .field public static final invalidPin:I = 0x10400eb
 
+.field public static final invalidPinOneRemainTime:I = 0x1040748
+
+.field public static final invalidPinRemainTime:I = 0x1040747
+
 .field public static final invalidPuk:I = 0x10400ec
+
+.field public static final invalidPuk_noremaintime:I = 0x104074a
+
+.field public static final invalidPuk_one:I = 0x1040749
 
 .field public static final invalid_sim_notification_text:I = 0x1040161
 
@@ -1220,6 +1302,10 @@
 .field public static final keyguard_password_puk_failed:I = 0x10403a7
 
 .field public static final keyguard_password_wrong_pin_code:I = 0x10403a5
+
+.field public static final keyguard_password_wrong_pin_code_no_remain_time:I = 0x1040751
+
+.field public static final keyguard_password_wrong_pin_code_one:I = 0x1040750
 
 .field public static final keyguard_password_wrong_puk_code:I = 0x10403a8
 
@@ -1339,6 +1425,8 @@
 
 .field public static final lockscreen_instructions_when_pattern_enabled:I = 0x10403ae
 
+.field public static final lockscreen_interpretation:I = 0x1040752
+
 .field public static final lockscreen_low_battery:I = 0x10403b9
 
 .field public static final lockscreen_messaging:I = 0x104065b
@@ -1407,6 +1495,10 @@
 
 .field public static final lockscreen_sound_on_label:I = 0x10403ec
 
+.field public static final lockscreen_statusbar_msg:I = 0x1040755
+
+.field public static final lockscreen_statusbar_title:I = 0x1040754
+
 .field public static final lockscreen_swipe_voice_unlock_guide_text:I = 0x1040651
 
 .field public static final lockscreen_ticker_connection_failed:I = 0x1040641
@@ -1461,6 +1553,8 @@
 
 .field public static final lockscreen_unlock_label:I = 0x10403eb
 
+.field public static final lockscreen_voiceprint_interpretation:I = 0x1040753
+
 .field public static final lockscreen_voiceunlock_dialog_title_text:I = 0x10406b1
 
 .field public static final lockscreen_voiceunlock_failed_to_recognise_voice_text:I = 0x10406ad
@@ -1489,6 +1583,14 @@
 
 .field public static final lockscrenn_glanceview_new_messages:I = 0x104065e
 
+.field public static final low_battery_dialog_desc:I = 0x1040786
+
+.field public static final low_battery_dialog_tips:I = 0x1040787
+
+.field public static final low_battery_dialog_title:I = 0x1040785
+
+.field public static final low_battery_toast:I = 0x1040781
+
 .field public static final low_internal_storage_view_text:I = 0x1040483
 
 .field public static final low_internal_storage_view_text_data:I = 0x1040682
@@ -1500,6 +1602,20 @@
 .field public static final low_internal_storage_view_title:I = 0x1040482
 
 .field public static final low_memory:I = 0x1040168
+
+.field public static final lunar_chushi:I = 0x1040763
+
+.field public static final lunar_day:I = 0x1040761
+
+.field public static final lunar_ershi:I = 0x1040764
+
+.field public static final lunar_leap:I = 0x1040762
+
+.field public static final lunar_month:I = 0x1040760
+
+.field public static final lunar_sanshi:I = 0x1040765
+
+.field public static final lunar_year:I = 0x104075f
 
 .field public static final managed_roaming_dialog_cancel_button:I = 0x1040557
 
@@ -1558,6 +1674,10 @@
 .field public static final mmiError_unknown:I = 0x104011a
 
 .field public static final mmiFdnError:I = 0x10400da
+
+.field public static final mode_name_normal:I = 0x104077f
+
+.field public static final mode_name_super:I = 0x1040780
 
 .field public static final month:I = 0x104009d
 
@@ -1688,6 +1808,8 @@
 .field public static final needPuk:I = 0x10400ed
 
 .field public static final needPuk2:I = 0x10400ee
+
+.field public static final network_invalid:I = 0x1040789
 
 .field public static final network_locked_sim_notification_text:I = 0x1040163
 
@@ -2227,13 +2349,47 @@
 
 .field public static final permgrouplab_systemTools:I = 0x10401ed
 
+.field public static final permission_call_phone_message:I = 0x104073f
+
+.field public static final permission_confirm_deny:I = 0x1040733
+
+.field public static final permission_confirm_grant:I = 0x1040732
+
+.field public static final permission_dangrous_warning:I = 0x1040739
+
+.field public static final permission_desc_message:I = 0x1040737
+
+.field public static final permission_desc_mms:I = 0x1040735
+
+.field public static final permission_desc_phone:I = 0x1040736
+
+.field public static final permission_dialog_button_ok:I = 0x1040731
+
+.field public static final permission_dialog_title:I = 0x1040730
+
 .field public static final permission_notify_title:I = 0x1040022
+
+.field public static final permission_prompt:I = 0x1040734
 
 .field public static final permission_request_notification_title:I = 0x104055f
 
 .field public static final permission_request_notification_with_subtitle:I = 0x1040560
 
+.field public static final permission_send_sms_message:I = 0x104073e
+
+.field public static final permission_settings:I = 0x1040738
+
+.field public static final permission_statusbar_ignore:I = 0x104073b
+
+.field public static final permission_statusbar_show:I = 0x104073a
+
+.field public static final permission_toast_deny:I = 0x104073c
+
+.field public static final permission_toast_eliminated:I = 0x104073d
+
 .field public static final permissions_format:I = 0x10404f6
+
+.field public static final permit_btn_text:I = 0x1040775
 
 .field public static final permlab_accessCoarseLocation:I = 0x1040294
 
@@ -2661,9 +2817,17 @@
 
 .field public static final phoneTypeWorkPager:I = 0x1040368
 
+.field public static final phone_call_info_msg:I = 0x1040779
+
+.field public static final phone_sms_info_msg:I = 0x104077a
+
 .field public static final pinpuk_attempts:I = 0x10400f0
 
 .field public static final pm:I = 0x104008a
+
+.field public static final policy_name_battery_low:I = 0x104077d
+
+.field public static final policy_name_screen_off:I = 0x104077e
 
 .field public static final policydesc_allowAttachments:I = 0x10406ed
 
@@ -2817,6 +2981,12 @@
 
 .field public static final power_off:I = 0x104016f
 
+.field public static final power_off_alarm:I = 0x1040798
+
+.field public static final power_settings_notification_message:I = 0x1040783
+
+.field public static final power_settings_notification_title:I = 0x1040782
+
 .field public static final prepend_shortcut_label:I = 0x1040452
 
 .field public static final preposition_for_date:I = 0x1040465
@@ -2829,15 +2999,43 @@
 
 .field public static final progress_erasing_sd:I = 0x104058b
 
+.field public static final progress_erasing_target:I = 0x1040791
+
 .field public static final progress_unmounting:I = 0x1040588
 
 .field public static final progress_unmounting_sd:I = 0x1040589
 
+.field public static final progress_unmounting_target:I = 0x1040790
+
 .field public static final pwd_change_enforced:I = 0x10401d2
+
+.field public static final quick_boot_text_info:I = 0x104079d
+
+.field public static final quickboot_lowbat_poweroff:I = 0x10407a0
+
+.field public static final quickboot_lowbat_schedule_pwonoff:I = 0x10407a1
+
+.field public static final quickboot_poweroff_alarm:I = 0x104079e
+
+.field public static final quickboot_real_shutdown:I = 0x104079c
+
+.field public static final quickboot_schedule_pwonoff:I = 0x104079f
+
+.field public static final quickboot_shutdown_info:I = 0x1040799
 
 .field public static final radiobutton_not_selected:I = 0x10405b9
 
 .field public static final radiobutton_selected:I = 0x10405b8
+
+.field public static final reboot:I = 0x104074b
+
+.field public static final reboot_confirm:I = 0x104074d
+
+.field public static final reboot_progress:I = 0x104074c
+
+.field public static final reboot_reboot:I = 0x1040742
+
+.field public static final reboot_recovery:I = 0x1040743
 
 .field public static final recent_tasks_title:I = 0x1040178
 
@@ -2877,7 +3075,19 @@
 
 .field public static final relative_time:I = 0x1040474
 
+.field public static final remember_info_text:I = 0x1040777
+
+.field public static final remember_my_choice:I = 0x1040788
+
+.field public static final remember_tips_text:I = 0x1040778
+
 .field public static final replace:I = 0x104047b
+
+.field public static final replace_browser_value:I = 0x10407a2
+
+.field public static final replace_market_value:I = 0x10407a3
+
+.field public static final replace_reader_value:I = 0x10407a4
 
 .field public static final report:I = 0x1040498
 
@@ -2891,9 +3101,23 @@
 
 .field public static final restricts_use_of_external_sd_card_msg:I = 0x104052e
 
+.field public static final ringtone_custom:I = 0x1040795
+
 .field public static final ringtone_default:I = 0x10404be
 
 .field public static final ringtone_default_with_actual:I = 0x10404bf
+
+.field public static final ringtone_picker_custom_title:I = 0x1040757
+
+.field public static final ringtone_picker_nothing_selectecd:I = 0x104075b
+
+.field public static final ringtone_picker_sdcard_busy:I = 0x1040759
+
+.field public static final ringtone_picker_sdcard_empty:I = 0x104075a
+
+.field public static final ringtone_picker_sdcard_unmount:I = 0x1040758
+
+.field public static final ringtone_picker_select_title:I = 0x1040756
 
 .field public static final ringtone_picker_title:I = 0x10404c1
 
@@ -3009,6 +3233,8 @@
 
 .field public static final sdcard_encrypt_title_ongoing_second_storage:I = 0x1040679
 
+.field public static final search_baidu_web:I = 0x104072e
+
 .field public static final search_go:I = 0x104000c
 
 .field public static final searchview_description_clear:I = 0x104045e
@@ -3117,6 +3343,8 @@
 
 .field public static final silent_mode_vibrate:I = 0x1040171
 
+.field public static final simInvalidation:I = 0x1040745
+
 .field public static final simRefresh:I = 0x104056b
 
 .field public static final simReset:I = 0x104056c
@@ -3157,6 +3385,8 @@
 
 .field public static final sms_control_yes:I = 0x10404ea
 
+.field public static final sms_info_msg:I = 0x104077b
+
 .field public static final smv_application:I = 0x10404a0
 
 .field public static final smv_process:I = 0x10404a1
@@ -3196,6 +3426,8 @@
 .field public static final sum_hide_caller_id:I = 0x104069d
 
 .field public static final sum_show_caller_id:I = 0x104069e
+
+.field public static final switch_null_text:I = 0x104078a
 
 .field public static final switch_off:I = 0x10405bb
 
@@ -3441,6 +3673,10 @@
 
 .field public static final vibo_operator_name:I = 0x104068e
 
+.field public static final voice_search_not_found:I = 0x104078e
+
+.field public static final voice_search_unavailable:I = 0x104078f
+
 .field public static final volume_alarm:I = 0x10404b6
 
 .field public static final volume_bluetooth_call:I = 0x10404b4
@@ -3500,6 +3736,10 @@
 .field public static final wday1_date1_wday2_date2:I = 0x10400ad
 
 .field public static final wday_date:I = 0x10400b0
+
+.field public static final web_baike:I = 0x104078b
+
+.field public static final web_translator:I = 0x104078c
 
 .field public static final web_user_agent:I = 0x10403fb
 

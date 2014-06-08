@@ -278,7 +278,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "illegal presentation "
+    const-string/jumbo v2, "illegal presentation "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -323,6 +323,8 @@
     goto :goto_0
 
     .line 160
+    nop
+
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0
@@ -352,7 +354,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "illegal call state "
+    const-string/jumbo v2, "illegal call state "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -409,6 +411,8 @@
     goto :goto_0
 
     .line 145
+    nop
+
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0
@@ -476,7 +480,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v1, "id="
+    const-string/jumbo v1, "id="
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

@@ -649,6 +649,12 @@
 
 .field public static final alarm_status:I = 0x1020382
 
+.field public static final album:I = 0x10204b1
+
+.field public static final album_cover:I = 0x10204b2
+
+.field public static final album_title:I = 0x10204b3
+
 .field public static final albumart:I = 0x10203a3
 
 .field public static final alertTitle:I = 0x102025f
@@ -691,6 +697,16 @@
 
 .field public static final auto_fit:I = 0x10201af
 
+.field public static final axis_bottom:I = 0x10204d1
+
+.field public static final axis_left:I = 0x10204ce
+
+.field public static final axis_right:I = 0x10204cf
+
+.field public static final axis_single_line:I = 0x1020497
+
+.field public static final axis_top:I = 0x10204d0
+
 .field public static final back_button:I = 0x10203f3
 
 .field public static final background:I = 0x1020000
@@ -707,11 +723,21 @@
 
 .field public static final batteryInfoText:I = 0x1020378
 
+.field public static final battery_apps:I = 0x1020504
+
+.field public static final battery_apps_button:I = 0x1020503
+
+.field public static final battery_apps_message:I = 0x1020502
+
+.field public static final battery_info:I = 0x1020501
+
 .field public static final beforeDescendants:I = 0x102018c
 
 .field public static final beginning:I = 0x10201b7
 
 .field public static final behind:I = 0x1020212
+
+.field public static final bg_cicle:I = 0x10204b8
 
 .field public static final bitmap:I = 0x10201c3
 
@@ -738,6 +764,8 @@
 .field public static final btn_play:I = 0x10203a5
 
 .field public static final btn_prev:I = 0x10203a4
+
+.field public static final button:I = 0x1020506
 
 .field public static final button0:I = 0x10203fa
 
@@ -807,6 +835,20 @@
 
 .field public static final characters:I = 0x10201c1
 
+.field public static final chargging_circle_1:I = 0x10204c5
+
+.field public static final chargging_circle_2:I = 0x10204c6
+
+.field public static final chargging_circle_3:I = 0x10204c7
+
+.field public static final chargging_circle_4:I = 0x10204c8
+
+.field public static final chargging_progress:I = 0x10204c4
+
+.field public static final chargging_tip:I = 0x10204c2
+
+.field public static final chargging_view:I = 0x10204c1
+
 .field public static final check:I = 0x10203c2
 
 .field public static final checkBox1:I = 0x1020362
@@ -856,6 +898,8 @@
 .field public static final clipboard:I = 0x102024c
 
 .field public static final clipitemlayout:I = 0x1020446
+
+.field public static final clock:I = 0x102049f
 
 .field public static final clock_charge:I = 0x10202df
 
@@ -909,6 +953,10 @@
 
 .field public static final compat_checkbox:I = 0x102026d
 
+.field public static final constellation_bg:I = 0x1020499
+
+.field public static final constellation_container:I = 0x1020498
+
 .field public static final container:I = 0x10201f2
 
 .field public static final content:I = 0x1020002
@@ -922,6 +970,8 @@
 .field public static final custom:I = 0x102002b
 
 .field public static final customPanel:I = 0x1020266
+
+.field public static final custom_list:I = 0x1020505
 
 .field public static final cut:I = 0x1020020
 
@@ -953,11 +1003,21 @@
 
 .field public static final delete_from_clipboard:I = 0x1020489
 
+.field public static final deny_btn:I = 0x10204d8
+
 .field public static final deny_button:I = 0x10202a3
 
 .field public static final description:I = 0x1020288
 
 .field public static final dialog:I = 0x10201c7
+
+.field public static final dialog_phone_num_text:I = 0x10204d4
+
+.field public static final dialog_sms_content_text:I = 0x10204d5
+
+.field public static final dialog_text:I = 0x10204d3
+
+.field public static final dialog_title_image:I = 0x10204d2
 
 .field public static final disableHome:I = 0x1020206
 
@@ -995,6 +1055,8 @@
 
 .field public static final empty:I = 0x1020004
 
+.field public static final empty_text:I = 0x1020508
+
 .field public static final end:I = 0x1020046
 
 .field public static final enter_pin:I = 0x1020393
@@ -1010,6 +1072,8 @@
 .field public static final expand_button:I = 0x1020462
 
 .field public static final expand_button_divider:I = 0x1020461
+
+.field public static final expand_text:I = 0x10204a3
 
 .field public static final expand_volume_divider:I = 0x1020465
 
@@ -1105,6 +1169,8 @@
 
 .field public static final fullscreenArea:I = 0x10202b1
 
+.field public static final gallery:I = 0x10204a0
+
 .field public static final gestureImage1:I = 0x102035f
 
 .field public static final gestureText1:I = 0x102035e
@@ -1127,6 +1193,8 @@
 
 .field public static final gridViewColors:I = 0x102028a
 
+.field public static final handle_align:I = 0x10204b9
+
 .field public static final hardware:I = 0x1020182
 
 .field public static final hdpi:I = 0x102023a
@@ -1147,6 +1215,8 @@
 
 .field public static final hiddenButton:I = 0x10203e0
 
+.field public static final hiddenUnlockView:I = 0x10204e4
+
 .field public static final high:I = 0x102017c
 
 .field public static final hint:I = 0x1020005
@@ -1159,7 +1229,33 @@
 
 .field public static final horizontal:I = 0x1020085
 
+.field public static final hotMusic1:I = 0x10204dc
+
+.field public static final hotMusic2:I = 0x10204dd
+
+.field public static final hotMusic3:I = 0x10204de
+
+.field public static final hotMusic4:I = 0x10204df
+
+.field public static final hotMusic5:I = 0x10204e0
+
+.field public static final hotMusicLayout:I = 0x10204db
+
+.field public static final hotspotLayout:I = 0x10204e5
+
+.field public static final hotword1:I = 0x102049a
+
+.field public static final hotword2:I = 0x102049b
+
+.field public static final hotword3:I = 0x102049c
+
+.field public static final hotword4:I = 0x102049d
+
+.field public static final hotword5:I = 0x102049e
+
 .field public static final hour:I = 0x102043d
+
+.field public static final hover_text:I = 0x10204a4
 
 .field public static final html:I = 0x10201c4
 
@@ -1221,6 +1317,16 @@
 
 .field public static final invisible:I = 0x1020174
 
+.field public static final iqiyi_listview:I = 0x10204a8
+
+.field public static final iqiyi_push_msg_content:I = 0x10204ad
+
+.field public static final iqiyi_push_msg_image:I = 0x10204ae
+
+.field public static final iqiyi_push_msg_layout:I = 0x10204a9
+
+.field public static final iqiyi_push_msg_title:I = 0x10204ac
+
 .field public static final issued_on:I = 0x102042f
 
 .field public static final issued_on_header:I = 0x102042e
@@ -1240,6 +1346,20 @@
 .field public static final keyboardView:I = 0x1020026
 
 .field public static final keyguard:I = 0x10203e9
+
+.field public static final keyword1:I = 0x10204eb
+
+.field public static final keyword2:I = 0x10204e9
+
+.field public static final keyword3:I = 0x10204e6
+
+.field public static final keyword4:I = 0x10204ec
+
+.field public static final keyword5:I = 0x10204e8
+
+.field public static final keyword6:I = 0x10204e7
+
+.field public static final keyword7:I = 0x10204ea
 
 .field public static final label:I = 0x10202b6
 
@@ -1359,6 +1479,16 @@
 
 .field public static final mirror:I = 0x10201dc
 
+.field public static final miss_call:I = 0x10204a6
+
+.field public static final miss_call_count:I = 0x10204bc
+
+.field public static final miss_container:I = 0x10204ca
+
+.field public static final miss_message_count:I = 0x10204bf
+
+.field public static final miss_mms:I = 0x10204a7
+
 .field public static final missed_event_call_background_layout:I = 0x102030e
 
 .field public static final missed_event_call_image:I = 0x1020307
@@ -1405,6 +1535,8 @@
 
 .field public static final mount_button:I = 0x102045c
 
+.field public static final moveView:I = 0x10204e3
+
 .field public static final multiple:I = 0x10201cd
 
 .field public static final multipleChoice:I = 0x10201aa
@@ -1412,6 +1544,10 @@
 .field public static final multipleChoiceModal:I = 0x10201ab
 
 .field public static final music:I = 0x10201fe
+
+.field public static final music_bg:I = 0x10204b0
+
+.field public static final music_view:I = 0x10204af
 
 .field public static final musicwidget_root:I = 0x10202fa
 
@@ -1473,11 +1609,15 @@
 
 .field public static final numberpicker_input:I = 0x10203e5
 
+.field public static final numeric_input:I = 0x10204ed
+
 .field public static final off:I = 0x10203ea
 
 .field public static final ok:I = 0x1020369
 
 .field public static final ok1:I = 0x102036c
+
+.field public static final ok_button:I = 0x1020509
 
 .field public static final old_app_action:I = 0x10202aa
 
@@ -1521,6 +1661,28 @@
 
 .field public static final packages_list:I = 0x102029c
 
+.field public static final panel_alwaysUse:I = 0x10204fa
+
+.field public static final panel_content:I = 0x10204f1
+
+.field public static final panel_header:I = 0x10204f2
+
+.field public static final panel_header_bottom:I = 0x10204f8
+
+.field public static final panel_header_icon:I = 0x10204f4
+
+.field public static final panel_header_text:I = 0x10204f5
+
+.field public static final panel_header_text1:I = 0x10204f6
+
+.field public static final panel_header_text2:I = 0x10204f7
+
+.field public static final panel_header_top:I = 0x10204f3
+
+.field public static final panel_prompt:I = 0x10204f9
+
+.field public static final panel_text:I = 0x10204fb
+
 .field public static final parentPanel:I = 0x102025c
 
 .field public static final password:I = 0x1020368
@@ -1559,6 +1721,10 @@
 
 .field public static final permission_list:I = 0x1020272
 
+.field public static final permission_tablelayout:I = 0x1020493
+
+.field public static final permit_btn:I = 0x10204d9
+
 .field public static final phone:I = 0x1020063
 
 .field public static final pickers:I = 0x102028b
@@ -1578,6 +1744,8 @@
 .field public static final popup_submenu_presenter:I = 0x102024b
 
 .field public static final portrait:I = 0x1020210
+
+.field public static final power_percent:I = 0x10204c3
 
 .field public static final preferExternal:I = 0x1020233
 
@@ -1613,9 +1781,19 @@
 
 .field public static final pukDisplay:I = 0x1020394
 
+.field public static final push_msg_icon:I = 0x10204aa
+
+.field public static final push_msg_text_layout:I = 0x10204ab
+
 .field public static final queryRewriteFromData:I = 0x10201ed
 
 .field public static final queryRewriteFromText:I = 0x10201ee
+
+.field public static final quickboot_dialog_checkbox:I = 0x10204fd
+
+.field public static final quickboot_dialog_text_info:I = 0x10204fc
+
+.field public static final quickboot_dialog_text_warn:I = 0x10204fe
 
 .field public static final qwerty:I = 0x102022c
 
@@ -1634,6 +1812,12 @@
 .field public static final rectangle:I = 0x10201d1
 
 .field public static final redo:I = 0x102002f
+
+.field public static final remember_cbx:I = 0x10204d6
+
+.field public static final remember_or_not:I = 0x10204ff
+
+.field public static final remember_tips:I = 0x10204d7
 
 .field public static final repeat:I = 0x10201b8
 
@@ -1705,6 +1889,10 @@
 
 .field public static final sdcard_enc_text:I = 0x102040a
 
+.field public static final search:I = 0x10204a2
+
+.field public static final searchBox:I = 0x10204da
+
 .field public static final search_app_icon:I = 0x102040d
 
 .field public static final search_badge:I = 0x1020410
@@ -1716,6 +1904,8 @@
 .field public static final search_close_btn:I = 0x1020416
 
 .field public static final search_edit_frame:I = 0x1020412
+
+.field public static final search_expand:I = 0x10204a1
 
 .field public static final search_go_btn:I = 0x1020418
 
@@ -1837,6 +2027,10 @@
 
 .field public static final skip_button:I = 0x10203f4
 
+.field public static final slide_guide_arrow:I = 0x10204b6
+
+.field public static final slide_miss_call_and_mms:I = 0x10204a5
+
 .field public static final slider_group:I = 0x1020460
 
 .field public static final slidingdrawer:I = 0x1020443
@@ -1917,6 +2111,8 @@
 
 .field public static final sweep:I = 0x10201d7
 
+.field public static final switchIcon:I = 0x10204e1
+
 .field public static final switchInputMethod:I = 0x1020024
 
 .field public static final switchWidget:I = 0x10203f7
@@ -1935,7 +2131,35 @@
 
 .field public static final tabhost:I = 0x1020012
 
+.field public static final table_perm_checkbox:I = 0x1020496
+
+.field public static final table_perm_icon:I = 0x1020494
+
+.field public static final table_perm_text:I = 0x1020495
+
 .field public static final tabs:I = 0x1020013
+
+.field public static final target_camera:I = 0x10204ba
+
+.field public static final target_handle:I = 0x10204b5
+
+.field public static final target_handle_panel:I = 0x10204cb
+
+.field public static final target_message:I = 0x10204be
+
+.field public static final target_phone:I = 0x10204bb
+
+.field public static final target_refresh:I = 0x10204cc
+
+.field public static final target_refresh2:I = 0x10204cd
+
+.field public static final target_ring:I = 0x10204c0
+
+.field public static final target_unlock:I = 0x10204bd
+
+.field public static final target_view:I = 0x10204b4
+
+.field public static final targets:I = 0x10204b7
 
 .field public static final text:I = 0x1020048
 
@@ -2075,6 +2299,8 @@
 
 .field public static final time_current:I = 0x10203bf
 
+.field public static final tips:I = 0x1020500
+
 .field public static final title:I = 0x1020016
 
 .field public static final titleDivider:I = 0x1020260
@@ -2189,7 +2415,11 @@
 
 .field public static final undo:I = 0x102002e
 
+.field public static final unlock:I = 0x10204ee
+
 .field public static final unlockButton:I = 0x1020479
+
+.field public static final unlockWidgetLayout:I = 0x10204e2
 
 .field public static final unlock_widget:I = 0x1020399
 
@@ -2231,6 +2461,10 @@
 
 .field public static final voice:I = 0x10201fd
 
+.field public static final voice_list:I = 0x1020507
+
+.field public static final voiceprint:I = 0x10204f0
+
 .field public static final voiceunlock_icon:I = 0x10203ab
 
 .field public static final voiceunlock_level:I = 0x10203aa
@@ -2243,7 +2477,11 @@
 
 .field public static final voiceunlock_root:I = 0x10203a7
 
+.field public static final voiceunlock_tips:I = 0x10204ef
+
 .field public static final volume_title:I = 0x1020463
+
+.field public static final water_layer_container:I = 0x10204c9
 
 .field public static final weather_charge_total_info:I = 0x10202e6
 

@@ -499,7 +499,7 @@
 
     .line 594
     :pswitch_8
-    const-string v0, "hipri"
+    const-string/jumbo v0, "hipri"
 
     goto :goto_0
 
@@ -511,7 +511,7 @@
 
     .line 598
     :pswitch_a
-    const-string v0, "ims"
+    const-string/jumbo v0, "ims"
 
     goto :goto_0
 
@@ -928,28 +928,28 @@
 
     .line 334
     :pswitch_3
-    const-string v0, "hsdpa"
+    const-string/jumbo v0, "hsdpa"
 
     .line 335
     goto :goto_0
 
     .line 337
     :pswitch_4
-    const-string v0, "hsupa"
+    const-string/jumbo v0, "hsupa"
 
     .line 338
     goto :goto_0
 
     .line 340
     :pswitch_5
-    const-string v0, "hspa"
+    const-string/jumbo v0, "hspa"
 
     .line 341
     goto :goto_0
 
     .line 343
     :pswitch_6
-    const-string v0, "hspap"
+    const-string/jumbo v0, "hspap"
 
     .line 344
     goto :goto_0
@@ -991,7 +991,7 @@
 
     .line 361
     :pswitch_c
-    const-string v0, "iden"
+    const-string/jumbo v0, "iden"
 
     .line 362
     goto :goto_0
@@ -1011,6 +1011,8 @@
     goto :goto_0
 
     .line 323
+    nop
+
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0

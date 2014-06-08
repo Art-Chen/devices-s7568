@@ -1188,6 +1188,14 @@
     .end annotation
 .end method
 
+.method public abstract setPersistent(Landroid/content/pm/ApplicationInfo;Z)V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
 .method public abstract setProcessForeground(Landroid/os/IBinder;IZ)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -1472,14 +1480,6 @@
 .end method
 
 .method public abstract willActivityBeVisible(Landroid/os/IBinder;)Z
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
-.end method
-
-.method public abstract setPersistent(Landroid/content/pm/ApplicationInfo;Z)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

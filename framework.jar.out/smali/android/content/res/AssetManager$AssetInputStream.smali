@@ -41,7 +41,7 @@
 
     .line 545
     #calls: Landroid/content/res/AssetManager;->getAssetLength(I)J
-    invoke-static {p1, p2}, Landroid/content/res/AssetManager;->access$300(Landroid/content/res/AssetManager;I)J
+    invoke-static {p1, p2}, Landroid/content/res/AssetManager;->access$100(Landroid/content/res/AssetManager;I)J
 
     move-result-wide v0
 

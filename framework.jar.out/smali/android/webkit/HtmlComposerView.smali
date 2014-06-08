@@ -1589,7 +1589,7 @@
     iput-object v0, p0, Landroid/webkit/HtmlComposerView;->mPasteListener:Landroid/webkit/HtmlComposerView$SelectionUIPasteListener;
 
     .line 333
-    const-string v1, "htmlcomposer"
+    const-string/jumbo v1, "htmlcomposer"
 
     const-string/jumbo v4, "utf-8"
 
@@ -2073,7 +2073,7 @@
 
     move-result-object v3
 
-    const-string v4, "input_method"
+    const-string/jumbo v4, "input_method"
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -3504,7 +3504,7 @@
     .line 3631
     const-string v0, "HtmlComposerView"
 
-    const-string v1, "inside \"If outline\""
+    const-string/jumbo v1, "inside \"If outline\""
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -3877,7 +3877,7 @@
     :cond_8
     const-string v0, "HtmlComposerView"
 
-    const-string v1, "inside \"else outline\""
+    const-string/jumbo v1, "inside \"else outline\""
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -4420,7 +4420,7 @@
     .line 1871
     const-string v0, "HtmlComposerView"
 
-    const-string v1, "hide : Called."
+    const-string/jumbo v1, "hide : Called."
 
     invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -4637,7 +4637,7 @@
 
     invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v8, "isHoverPointWithinIconAreaForResizing getX = "
+    const-string/jumbo v8, "isHoverPointWithinIconAreaForResizing getX = "
 
     invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -4675,7 +4675,7 @@
 
     invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v8, "isHoverPointWithinIconAreaForResizing outLinePath re.left re.top re.right re.bottom "
+    const-string/jumbo v8, "isHoverPointWithinIconAreaForResizing outLinePath re.left re.top re.right re.bottom "
 
     invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -4814,7 +4814,7 @@
 
     const-string v4, "HtmlComposerView"
 
-    const-string v6, "isHoverPointWithinIconAreaForResizing Left-Top"
+    const-string/jumbo v6, "isHoverPointWithinIconAreaForResizing Left-Top"
 
     invoke-static {v4, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -4911,7 +4911,7 @@
 
     const-string v4, "HtmlComposerView"
 
-    const-string v6, "isHoverPointWithinIconAreaForResizing Right-Top"
+    const-string/jumbo v6, "isHoverPointWithinIconAreaForResizing Right-Top"
 
     invoke-static {v4, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -4994,7 +4994,7 @@
 
     const-string v4, "HtmlComposerView"
 
-    const-string v6, "isHoverPointWithinIconAreaForResizing Left-Bottom"
+    const-string/jumbo v6, "isHoverPointWithinIconAreaForResizing Left-Bottom"
 
     invoke-static {v4, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -5018,7 +5018,7 @@
 
     iput v4, p0, Landroid/webkit/HtmlComposerView;->mYCenter:I
 
-    goto :goto_0
+    goto/16 :goto_0
 
     .line 3381
     :cond_8
@@ -5077,7 +5077,7 @@
 
     const-string v4, "HtmlComposerView"
 
-    const-string v6, "isHoverPointWithinIconAreaForResizing Right-Bottom"
+    const-string/jumbo v6, "isHoverPointWithinIconAreaForResizing Right-Bottom"
 
     invoke-static {v4, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -5144,7 +5144,7 @@
 
     const-string v4, "HtmlComposerView"
 
-    const-string v6, "isHoverPointWithinIconAreaForResizing Top-Horizontal Center"
+    const-string/jumbo v6, "isHoverPointWithinIconAreaForResizing Top-Horizontal Center"
 
     invoke-static {v4, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -5205,7 +5205,7 @@
 
     const-string v4, "HtmlComposerView"
 
-    const-string v6, "isHoverPointWithinIconAreaForResizing Bottom-Horizontal Center"
+    const-string/jumbo v6, "isHoverPointWithinIconAreaForResizing Bottom-Horizontal Center"
 
     invoke-static {v4, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -5266,7 +5266,7 @@
 
     const-string v4, "HtmlComposerView"
 
-    const-string v6, "isHoverPointWithinIconAreaForResizing Left-Vertical Center"
+    const-string/jumbo v6, "isHoverPointWithinIconAreaForResizing Left-Vertical Center"
 
     invoke-static {v4, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -5329,7 +5329,7 @@
 
     const-string v4, "HtmlComposerView"
 
-    const-string v6, "isHoverPointWithinIconAreaForResizing Right-Vertical Center"
+    const-string/jumbo v6, "isHoverPointWithinIconAreaForResizing Right-Vertical Center"
 
     invoke-static {v4, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -5465,7 +5465,7 @@
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v4, "in \"If\" for Outline rectHandle left Top PositionX="
+    const-string/jumbo v4, "in \"If\" for Outline rectHandle left Top PositionX="
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -5528,7 +5528,7 @@
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v4, "in \"else\" for Outline rectHandle left Top PositionX="
+    const-string/jumbo v4, "in \"else\" for Outline rectHandle left Top PositionX="
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -7014,7 +7014,7 @@
 
     move-result-object v1
 
-    const-string v2, "input_method"
+    const-string/jumbo v2, "input_method"
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -9801,7 +9801,7 @@
     .line 2235
     const-string v0, "HtmlComposerView"
 
-    const-string v1, "htmlcomposer destroy() hide "
+    const-string/jumbo v1, "htmlcomposer destroy() hide "
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -11024,7 +11024,7 @@
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v6, "isCtrlPressed and keyCode = "
+    const-string/jumbo v6, "isCtrlPressed and keyCode = "
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -11061,7 +11061,7 @@
 
     move-result-object v4
 
-    const-string v5, "input_method"
+    const-string/jumbo v5, "input_method"
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -13759,7 +13759,7 @@
     invoke-direct {p0}, Landroid/webkit/HtmlComposerView;->restartIMEByHtmlComposerView()V
 
     .line 2584
-    const-string v1, "image inserted"
+    const-string/jumbo v1, "image inserted"
 
     iput-object v1, p0, Landroid/webkit/HtmlComposerView;->clpBrdStrg:Ljava/lang/String;
 
@@ -13846,7 +13846,7 @@
     invoke-direct {p0}, Landroid/webkit/HtmlComposerView;->restartIMEByHtmlComposerView()V
 
     .line 2566
-    const-string v1, "image inserted"
+    const-string/jumbo v1, "image inserted"
 
     iput-object v1, p0, Landroid/webkit/HtmlComposerView;->clpBrdStrg:Ljava/lang/String;
 
@@ -16369,7 +16369,7 @@
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v7, "htmlcompor onKeyDown "
+    const-string/jumbo v7, "htmlcompor onKeyDown "
 
     invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -16807,6 +16807,8 @@
     .line 1066
     nop
 
+    nop
+
     :sswitch_data_0
     .sparse-switch
         0x17 -> :sswitch_0
@@ -16979,7 +16981,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "htmlcompor onKeyUp "
+    const-string/jumbo v3, "htmlcompor onKeyUp "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -17077,7 +17079,7 @@
     if-eqz v1, :cond_2
 
     .line 1191
-    const-string v1, "image"
+    const-string/jumbo v1, "image"
 
     iput-object v1, p0, Landroid/webkit/HtmlComposerView;->textSelected:Ljava/lang/String;
 
@@ -17303,7 +17305,7 @@
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v5, "imm active  "
+    const-string/jumbo v5, "imm active  "
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -17474,7 +17476,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "imm active  "
+    const-string/jumbo v3, "imm active  "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

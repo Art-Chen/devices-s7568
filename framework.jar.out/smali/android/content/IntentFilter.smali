@@ -3089,7 +3089,7 @@
     if-eqz v7, :cond_7
 
     .line 1241
-    const-string v7, "host"
+    const-string/jumbo v7, "host"
 
     invoke-interface {p1, v10, v7}, Lorg/xmlpull/v1/XmlPullParser;->getAttributeValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
@@ -3709,7 +3709,7 @@
 
     .line 1179
     .local v1, ae:Landroid/content/IntentFilter$AuthorityEntry;
-    const-string v5, "host"
+    const-string/jumbo v5, "host"
 
     invoke-virtual {v1}, Landroid/content/IntentFilter$AuthorityEntry;->getHost()Ljava/lang/String;
 
@@ -3836,6 +3836,8 @@
     return-void
 
     .line 1189
+    nop
+
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0

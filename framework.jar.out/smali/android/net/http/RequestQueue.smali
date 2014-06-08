@@ -201,7 +201,7 @@
 
     if-eqz v0, :cond_0
 
-    const-string v0, "https"
+    const-string/jumbo v0, "https"
 
     invoke-virtual {p1}, Lorg/apache/http/HttpHost;->getSchemeName()Ljava/lang/String;
 
@@ -327,7 +327,7 @@
 
     .line 289
     .local v2, info:Landroid/net/NetworkInfo;
-    const-string v7, "gsm.sim.operator.numeric"
+    const-string/jumbo v7, "gsm.sim.operator.numeric"
 
     const-string v8, ""
 
@@ -639,7 +639,7 @@
 
     move-result v8
 
-    const-string v9, "http"
+    const-string/jumbo v9, "http"
 
     invoke-direct {v7, v1, v8, v9}, Lorg/apache/http/HttpHost;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
@@ -681,7 +681,7 @@
 
     const/16 v8, 0x50
 
-    const-string v9, "http"
+    const-string/jumbo v9, "http"
 
     invoke-direct {v7, v1, v8, v9}, Lorg/apache/http/HttpHost;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
@@ -747,7 +747,7 @@
 
     move-result v8
 
-    const-string v9, "http"
+    const-string/jumbo v9, "http"
 
     invoke-direct {v7, v1, v8, v9}, Lorg/apache/http/HttpHost;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
@@ -1312,7 +1312,7 @@
 
     .line 414
     .local v3, httpHost:Lorg/apache/http/HttpHost;
-    const-string v2, "gsm.sim.operator.numeric"
+    const-string/jumbo v2, "gsm.sim.operator.numeric"
 
     const-string v4, ""
 
@@ -1665,7 +1665,7 @@
 
     const/16 v5, 0x50
 
-    const-string v6, "http"
+    const-string/jumbo v6, "http"
 
     invoke-direct {v2, v4, v5, v6}, Lorg/apache/http/HttpHost;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
@@ -1680,7 +1680,7 @@
 
     invoke-static {v2, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    goto :goto_0
+    goto/16 :goto_0
 
     .line 443
     :cond_6

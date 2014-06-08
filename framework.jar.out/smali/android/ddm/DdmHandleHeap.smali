@@ -179,7 +179,7 @@
 
     .line 201
     .local v3, uoe:Ljava/lang/UnsupportedOperationException;
-    const-string v0, "hprof dumps not supported in this VM"
+    const-string/jumbo v0, "hprof dumps not supported in this VM"
 
     .line 204
     goto :goto_0
@@ -290,7 +290,7 @@
     .local v7, uoe:Ljava/lang/UnsupportedOperationException;
     const-string v8, "ddm-heap"
 
-    const-string v9, "hprof dumps not supported in this VM"
+    const-string/jumbo v9, "hprof dumps not supported in this VM"
 
     invoke-static {v8, v9}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 

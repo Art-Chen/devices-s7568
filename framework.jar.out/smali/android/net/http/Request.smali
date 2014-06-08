@@ -164,7 +164,7 @@
     .line 139
     const-string v0, "Accept-Encoding"
 
-    const-string v1, "gzip"
+    const-string/jumbo v1, "gzip"
 
     invoke-virtual {p0, v0, v1}, Landroid/net/http/Request;->addHeader(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -581,7 +581,7 @@
 
     if-eq v0, v2, :cond_0
 
-    const-string v2, "http"
+    const-string/jumbo v2, "http"
 
     invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -594,7 +594,7 @@
 
     if-eq v0, v2, :cond_2
 
-    const-string v2, "https"
+    const-string/jumbo v2, "https"
 
     invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -639,7 +639,7 @@
 
     move-result-object v0
 
-    const-string v1, "https"
+    const-string/jumbo v1, "https"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -916,7 +916,7 @@
 
     move-result-object v21
 
-    const-string v22, "gzip"
+    const-string/jumbo v22, "gzip"
 
     invoke-virtual/range {v21 .. v22}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

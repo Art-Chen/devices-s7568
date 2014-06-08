@@ -1425,7 +1425,7 @@
 
     .line 490
     .local v0, e:Ljava/lang/InterruptedException;
-    const-string v1, "interrupted while trying to update by search"
+    const-string/jumbo v1, "interrupted while trying to update by search"
 
     invoke-virtual {p0, v1}, Lcom/android/internal/telephony/IccPhoneBookInterfaceManager;->logd(Ljava/lang/String;)V
 

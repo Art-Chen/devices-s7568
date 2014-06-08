@@ -575,7 +575,7 @@
     if-gez v11, :cond_3
 
     .line 1072
-    const-string v11, "invalid stride"
+    const-string/jumbo v11, "invalid stride"
 
     invoke-virtual {p1, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -774,6 +774,8 @@
     goto/16 :goto_0
 
     .line 1086
+    nop
+
     nop
 
     :sswitch_data_0
@@ -5987,7 +5989,7 @@
     invoke-direct {p0, v1, p2}, Landroid/opengl/GLLogWrapper;->arg(Ljava/lang/String;I)V
 
     .line 1344
-    const-string v1, "internalformat"
+    const-string/jumbo v1, "internalformat"
 
     invoke-direct {p0, v1, p3}, Landroid/opengl/GLLogWrapper;->arg(Ljava/lang/String;I)V
 
@@ -5997,7 +5999,7 @@
     invoke-direct {p0, v1, p4}, Landroid/opengl/GLLogWrapper;->arg(Ljava/lang/String;I)V
 
     .line 1346
-    const-string v1, "height"
+    const-string/jumbo v1, "height"
 
     invoke-direct {p0, v1, p5}, Landroid/opengl/GLLogWrapper;->arg(Ljava/lang/String;I)V
 
@@ -6009,7 +6011,7 @@
     invoke-direct {p0, v1, v0}, Landroid/opengl/GLLogWrapper;->arg(Ljava/lang/String;I)V
 
     .line 1348
-    const-string v1, "imageSize"
+    const-string/jumbo v1, "imageSize"
 
     move/from16 v0, p7
 
@@ -6105,7 +6107,7 @@
     invoke-direct {p0, v1, v0}, Landroid/opengl/GLLogWrapper;->arg(Ljava/lang/String;I)V
 
     .line 1366
-    const-string v1, "height"
+    const-string/jumbo v1, "height"
 
     move/from16 v0, p6
 
@@ -6119,7 +6121,7 @@
     invoke-direct {p0, v1, v0}, Landroid/opengl/GLLogWrapper;->arg(Ljava/lang/String;I)V
 
     .line 1368
-    const-string v1, "imageSize"
+    const-string/jumbo v1, "imageSize"
 
     move/from16 v0, p8
 
@@ -6199,7 +6201,7 @@
     invoke-direct {p0, v1, p2}, Landroid/opengl/GLLogWrapper;->arg(Ljava/lang/String;I)V
 
     .line 1382
-    const-string v1, "internalformat"
+    const-string/jumbo v1, "internalformat"
 
     invoke-direct {p0, v1, p3}, Landroid/opengl/GLLogWrapper;->arg(Ljava/lang/String;I)V
 
@@ -6221,7 +6223,7 @@
     invoke-direct {p0, v1, v0}, Landroid/opengl/GLLogWrapper;->arg(Ljava/lang/String;I)V
 
     .line 1386
-    const-string v1, "height"
+    const-string/jumbo v1, "height"
 
     move/from16 v0, p7
 
@@ -6326,7 +6328,7 @@
     invoke-direct {p0, v1, v0}, Landroid/opengl/GLLogWrapper;->arg(Ljava/lang/String;I)V
 
     .line 1405
-    const-string v1, "height"
+    const-string/jumbo v1, "height"
 
     move/from16 v0, p8
 
@@ -7238,7 +7240,7 @@
     invoke-direct {p0, v0, p4}, Landroid/opengl/GLLogWrapper;->arg(Ljava/lang/String;F)V
 
     .line 2633
-    const-string v0, "height"
+    const-string/jumbo v0, "height"
 
     invoke-direct {p0, v0, p5}, Landroid/opengl/GLLogWrapper;->arg(Ljava/lang/String;F)V
 
@@ -7372,7 +7374,7 @@
     invoke-direct {p0, v0, p4}, Landroid/opengl/GLLogWrapper;->arg(Ljava/lang/String;I)V
 
     .line 2662
-    const-string v0, "height"
+    const-string/jumbo v0, "height"
 
     invoke-direct {p0, v0, p5}, Landroid/opengl/GLLogWrapper;->arg(Ljava/lang/String;I)V
 
@@ -7506,7 +7508,7 @@
     invoke-direct {p0, v0, p4}, Landroid/opengl/GLLogWrapper;->arg(Ljava/lang/String;I)V
 
     .line 2692
-    const-string v0, "height"
+    const-string/jumbo v0, "height"
 
     invoke-direct {p0, v0, p5}, Landroid/opengl/GLLogWrapper;->arg(Ljava/lang/String;I)V
 
@@ -7640,7 +7642,7 @@
     invoke-direct {p0, v0, p4}, Landroid/opengl/GLLogWrapper;->arg(Ljava/lang/String;I)V
 
     .line 2721
-    const-string v0, "height"
+    const-string/jumbo v0, "height"
 
     invoke-direct {p0, v0, p5}, Landroid/opengl/GLLogWrapper;->arg(Ljava/lang/String;I)V
 
@@ -13755,7 +13757,7 @@
     invoke-direct {p0, v0, p3}, Landroid/opengl/GLLogWrapper;->arg(Ljava/lang/String;I)V
 
     .line 2257
-    const-string v0, "height"
+    const-string/jumbo v0, "height"
 
     invoke-direct {p0, v0, p4}, Landroid/opengl/GLLogWrapper;->arg(Ljava/lang/String;I)V
 
@@ -13826,7 +13828,7 @@
     invoke-direct {p0, v0, p1}, Landroid/opengl/GLLogWrapper;->arg(Ljava/lang/String;I)V
 
     .line 3778
-    const-string v0, "internalformat"
+    const-string/jumbo v0, "internalformat"
 
     invoke-direct {p0, v0, p2}, Landroid/opengl/GLLogWrapper;->arg(Ljava/lang/String;I)V
 
@@ -13836,7 +13838,7 @@
     invoke-direct {p0, v0, p3}, Landroid/opengl/GLLogWrapper;->arg(Ljava/lang/String;I)V
 
     .line 3780
-    const-string v0, "height"
+    const-string/jumbo v0, "height"
 
     invoke-direct {p0, v0, p4}, Landroid/opengl/GLLogWrapper;->arg(Ljava/lang/String;I)V
 
@@ -13968,7 +13970,7 @@
     invoke-direct {p0, v0, p1}, Landroid/opengl/GLLogWrapper;->arg(Ljava/lang/String;F)V
 
     .line 2294
-    const-string v0, "invert"
+    const-string/jumbo v0, "invert"
 
     invoke-direct {p0, v0, p2}, Landroid/opengl/GLLogWrapper;->arg(Ljava/lang/String;Z)V
 
@@ -14004,7 +14006,7 @@
     invoke-direct {p0, v0, p1}, Landroid/opengl/GLLogWrapper;->arg(Ljava/lang/String;I)V
 
     .line 2304
-    const-string v0, "invert"
+    const-string/jumbo v0, "invert"
 
     invoke-direct {p0, v0, p2}, Landroid/opengl/GLLogWrapper;->arg(Ljava/lang/String;Z)V
 
@@ -14136,7 +14138,7 @@
     invoke-direct {p0, v0, p3}, Landroid/opengl/GLLogWrapper;->arg(Ljava/lang/String;I)V
 
     .line 2338
-    const-string v0, "height"
+    const-string/jumbo v0, "height"
 
     invoke-direct {p0, v0, p4}, Landroid/opengl/GLLogWrapper;->arg(Ljava/lang/String;I)V
 
@@ -15317,7 +15319,7 @@
     invoke-direct {p0, v1, p2}, Landroid/opengl/GLLogWrapper;->arg(Ljava/lang/String;I)V
 
     .line 2469
-    const-string v1, "internalformat"
+    const-string/jumbo v1, "internalformat"
 
     invoke-direct {p0, v1, p3}, Landroid/opengl/GLLogWrapper;->arg(Ljava/lang/String;I)V
 
@@ -15327,7 +15329,7 @@
     invoke-direct {p0, v1, p4}, Landroid/opengl/GLLogWrapper;->arg(Ljava/lang/String;I)V
 
     .line 2471
-    const-string v1, "height"
+    const-string/jumbo v1, "height"
 
     move/from16 v0, p5
 
@@ -15893,7 +15895,7 @@
     invoke-direct {p0, v1, v0}, Landroid/opengl/GLLogWrapper;->arg(Ljava/lang/String;I)V
 
     .line 2536
-    const-string v1, "height"
+    const-string/jumbo v1, "height"
 
     move/from16 v0, p6
 
@@ -16161,7 +16163,7 @@
     invoke-direct {p0, v0, p3}, Landroid/opengl/GLLogWrapper;->arg(Ljava/lang/String;I)V
 
     .line 2580
-    const-string v0, "height"
+    const-string/jumbo v0, "height"
 
     invoke-direct {p0, v0, p4}, Landroid/opengl/GLLogWrapper;->arg(Ljava/lang/String;I)V
 

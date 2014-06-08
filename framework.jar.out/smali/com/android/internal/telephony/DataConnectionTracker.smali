@@ -754,7 +754,7 @@
     .line 682
     iget-object v0, p0, Lcom/android/internal/telephony/DataConnectionTracker;->mApnTypesAllowedOnDataDisabled:Ljava/util/ArrayList;
 
-    const-string v1, "ims"
+    const-string/jumbo v1, "ims"
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -1045,13 +1045,13 @@
 
     .line 1012
     :pswitch_4
-    const-string v0, "hipri"
+    const-string/jumbo v0, "hipri"
 
     goto :goto_0
 
     .line 1014
     :pswitch_5
-    const-string v0, "ims"
+    const-string/jumbo v0, "ims"
 
     goto :goto_0
 
@@ -1170,7 +1170,7 @@
 
     .line 980
     :cond_3
-    const-string v0, "hipri"
+    const-string/jumbo v0, "hipri"
 
     invoke-static {p1, v0}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
@@ -1185,7 +1185,7 @@
 
     .line 982
     :cond_4
-    const-string v0, "ims"
+    const-string/jumbo v0, "ims"
 
     invoke-static {p1, v0}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
@@ -2797,7 +2797,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "isDataSetupCompleteOk return false, ar.result="
+    const-string/jumbo v2, "isDataSetupCompleteOk return false, ar.result="
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2826,7 +2826,7 @@
     if-gtz v1, :cond_1
 
     .line 585
-    const-string v0, "isDataSetupCompleteOk return true"
+    const-string/jumbo v0, "isDataSetupCompleteOk return true"
 
     invoke-virtual {p0, v0}, Lcom/android/internal/telephony/DataConnectionTracker;->log(Ljava/lang/String;)V
 
@@ -2846,7 +2846,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "isDataSetupCompleteOk return false mFailDataSetupCounter="
+    const-string/jumbo v2, "isDataSetupCompleteOk return false mFailDataSetupCounter="
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2931,7 +2931,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "isEmergency: result="
+    const-string/jumbo v2, "isEmergency: result="
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

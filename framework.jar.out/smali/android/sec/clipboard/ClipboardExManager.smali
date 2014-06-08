@@ -1075,7 +1075,7 @@
 
     const-string v4, "ClipboardServiceEx"
 
-    const-string v5, "hasData - Fail~ Service is null."
+    const-string/jumbo v5, "hasData - Fail~ Service is null."
 
     invoke-static {v4, v5}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 

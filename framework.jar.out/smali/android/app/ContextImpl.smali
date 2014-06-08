@@ -278,7 +278,7 @@
     invoke-static {v1, v2}, Landroid/app/ContextImpl;->registerService(Ljava/lang/String;Landroid/app/ContextImpl$ServiceFetcher;)V
 
     .line 373
-    const-string v1, "input_method"
+    const-string/jumbo v1, "input_method"
 
     new-instance v2, Landroid/app/ContextImpl$17;
 
@@ -587,7 +587,7 @@
     invoke-static {v1, v2}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 588
-    const-string v1, "irda"
+    const-string/jumbo v1, "irda"
 
     new-instance v2, Landroid/app/ContextImpl$46;
 
@@ -725,7 +725,7 @@
 
     .prologue
     .line 1800
-    const-string v2, "gsm.gsm.dataservice"
+    const-string/jumbo v2, "gsm.gsm.dataservice"
 
     invoke-static {v2}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -4434,6 +4434,15 @@
     return-void
 .end method
 
+.method refreshFontCache()V
+    .locals 0
+
+    .prologue
+    invoke-static {}, Landroid/graphics/Canvas;->freeCaches()V
+
+    return-void
+.end method
+
 .method public registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
     .locals 1
     .parameter "receiver"
@@ -5870,15 +5879,4 @@
     move-exception v1
 
     goto :goto_0
-.end method
-
-.method refreshFontCache()V
-    .locals 0
-
-    .prologue
-    invoke-static {}, Landroid/graphics/Canvas;->freeCaches()V
-
-    invoke-static {}, Landroid/graphics/Canvas;->freeTextLayoutCaches()V
-
-    return-void
 .end method

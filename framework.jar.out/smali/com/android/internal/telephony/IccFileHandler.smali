@@ -3722,7 +3722,7 @@
 
     const/16 v1, 0xc0
 
-    const-string v3, "img"
+    const-string/jumbo v3, "img"
 
     const/4 v5, 0x4
 
@@ -3767,7 +3767,7 @@
 
     const/16 v1, 0xc0
 
-    const-string v3, "img"
+    const-string/jumbo v3, "img"
 
     const/4 v5, 0x4
 
@@ -3811,7 +3811,7 @@
 
     const/16 v1, 0xb0
 
-    const-string v3, "img"
+    const-string/jumbo v3, "img"
 
     move v2, p1
 
@@ -3857,7 +3857,7 @@
 
     const/16 v1, 0xc0
 
-    const-string v3, "img"
+    const-string/jumbo v3, "img"
 
     const/16 v6, 0xf
 

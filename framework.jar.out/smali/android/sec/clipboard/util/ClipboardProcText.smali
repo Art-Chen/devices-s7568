@@ -171,7 +171,7 @@
 
     .line 128
     :cond_2
-    const-string v9, "gt;"
+    const-string/jumbo v9, "gt;"
 
     invoke-virtual {v7, v9}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -648,7 +648,7 @@
 
     .line 277
     :cond_8
-    const-string v3, "h1"
+    const-string/jumbo v3, "h1"
 
     invoke-static {p0, v3}, Landroid/sec/clipboard/util/ClipboardProcText;->isTag(Ljava/lang/String;Ljava/lang/String;)Z
 
@@ -656,7 +656,7 @@
 
     if-nez v3, :cond_9
 
-    const-string v3, "h2"
+    const-string/jumbo v3, "h2"
 
     invoke-static {p0, v3}, Landroid/sec/clipboard/util/ClipboardProcText;->isTag(Ljava/lang/String;Ljava/lang/String;)Z
 
@@ -664,7 +664,7 @@
 
     if-nez v3, :cond_9
 
-    const-string v3, "h3"
+    const-string/jumbo v3, "h3"
 
     invoke-static {p0, v3}, Landroid/sec/clipboard/util/ClipboardProcText;->isTag(Ljava/lang/String;Ljava/lang/String;)Z
 
@@ -672,7 +672,7 @@
 
     if-nez v3, :cond_9
 
-    const-string v3, "h4"
+    const-string/jumbo v3, "h4"
 
     invoke-static {p0, v3}, Landroid/sec/clipboard/util/ClipboardProcText;->isTag(Ljava/lang/String;Ljava/lang/String;)Z
 
@@ -680,7 +680,7 @@
 
     if-nez v3, :cond_9
 
-    const-string v3, "h5"
+    const-string/jumbo v3, "h5"
 
     invoke-static {p0, v3}, Landroid/sec/clipboard/util/ClipboardProcText;->isTag(Ljava/lang/String;Ljava/lang/String;)Z
 
@@ -688,7 +688,7 @@
 
     if-nez v3, :cond_9
 
-    const-string v3, "h6"
+    const-string/jumbo v3, "h6"
 
     invoke-static {p0, v3}, Landroid/sec/clipboard/util/ClipboardProcText;->isTag(Ljava/lang/String;Ljava/lang/String;)Z
 
@@ -696,7 +696,7 @@
 
     if-nez v3, :cond_9
 
-    const-string v3, "h7"
+    const-string/jumbo v3, "h7"
 
     invoke-static {p0, v3}, Landroid/sec/clipboard/util/ClipboardProcText;->isTag(Ljava/lang/String;Ljava/lang/String;)Z
 
@@ -866,7 +866,7 @@
 
     .line 298
     :cond_12
-    const-string v3, "hr"
+    const-string/jumbo v3, "hr"
 
     invoke-static {p0, v3}, Landroid/sec/clipboard/util/ClipboardProcText;->isTag(Ljava/lang/String;Ljava/lang/String;)Z
 
@@ -971,7 +971,7 @@
 
     .line 312
     :cond_19
-    const-string v3, "i"
+    const-string/jumbo v3, "i"
 
     invoke-static {p0, v3}, Landroid/sec/clipboard/util/ClipboardProcText;->isTag(Ljava/lang/String;Ljava/lang/String;)Z
 
@@ -1001,7 +1001,7 @@
 
     .line 316
     :cond_1b
-    const-string v3, "img"
+    const-string/jumbo v3, "img"
 
     invoke-static {p0, v3}, Landroid/sec/clipboard/util/ClipboardProcText;->isTag(Ljava/lang/String;Ljava/lang/String;)Z
 
@@ -1051,7 +1051,7 @@
     if-eqz v3, :cond_1e
 
     .line 324
-    const-string v3, "href=\""
+    const-string/jumbo v3, "href=\""
 
     invoke-virtual {p0, v3}, Ljava/lang/String;->indexOf(Ljava/lang/String;)I
 

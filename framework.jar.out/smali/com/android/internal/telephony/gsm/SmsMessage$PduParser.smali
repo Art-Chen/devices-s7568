@@ -452,7 +452,7 @@
     .local v2, tr:Ljava/lang/RuntimeException;
     const-string v3, "Gsm/SmsMessage"
 
-    const-string v4, "invalid SC address: "
+    const-string/jumbo v4, "invalid SC address: "
 
     invoke-static {v3, v4, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
@@ -764,7 +764,7 @@
     .restart local v1       #ret:Ljava/lang/String;
     const-string v2, "Gsm/SmsMessage"
 
-    const-string v3, "implausible UnsupportedEncodingException"
+    const-string/jumbo v3, "implausible UnsupportedEncodingException"
 
     invoke-static {v2, v3, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
@@ -825,7 +825,7 @@
     .restart local v1       #ret:Ljava/lang/String;
     const-string v2, "Gsm/SmsMessage"
 
-    const-string v3, "implausible UnsupportedEncodingException"
+    const-string/jumbo v3, "implausible UnsupportedEncodingException"
 
     invoke-static {v2, v3, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 

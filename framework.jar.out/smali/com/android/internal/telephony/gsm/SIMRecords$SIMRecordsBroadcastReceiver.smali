@@ -75,7 +75,7 @@
 
     move-result-object v3
 
-    const-string v4, "gsm.sim.unknownready"
+    const-string/jumbo v4, "gsm.sim.unknownready"
 
     const-string v5, "1"
 

@@ -148,7 +148,7 @@
 
     aput-object v2, v0, v1
 
-    const-string v1, "in"
+    const-string/jumbo v1, "in"
 
     aput-object v1, v0, v6
 
@@ -176,6 +176,8 @@
     return-void
 
     .line 191
+    nop
+
     nop
 
     :array_0

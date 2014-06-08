@@ -145,7 +145,7 @@
 
     const/4 v4, 0x0
 
-    const v5, #attr@textSelectHandleWindowStyle#t
+    const v5, 0x10102c8
 
     invoke-direct {v2, v3, v4, v5}, Landroid/widget/PopupWindow;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 

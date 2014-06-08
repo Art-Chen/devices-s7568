@@ -171,6 +171,8 @@
 
 .field public static final Preference_DeviceDefault_Information:I = 0x10302f4
 
+.field public static final Preference_DeviceDefault_Light_DialogPreference_EditTextPreference:I = 0x103032d
+
 .field public static final Preference_DeviceDefault_PreferenceScreen:I = 0x10302f5
 
 .field public static final Preference_DeviceDefault_RingtonePreference:I = 0x10302f6
@@ -829,6 +831,8 @@
 
 .field public static final Widget_DeviceDefault_ActionMode:I = 0x1030169
 
+.field public static final Widget_DeviceDefault_ActivityChooserView:I = 0x1030329
+
 .field public static final Widget_DeviceDefault_AutoCompleteTextView:I = 0x1030147
 
 .field public static final Widget_DeviceDefault_Button:I = 0x1030141
@@ -920,6 +924,8 @@
 .field public static final Widget_DeviceDefault_Light_ActionMode:I = 0x10301a1
 
 .field public static final Widget_DeviceDefault_Light_ActionMode_Inverse:I = 0x10301ac
+
+.field public static final Widget_DeviceDefault_Light_ActivityChooserView:I = 0x103032c
 
 .field public static final Widget_DeviceDefault_Light_AutoCompleteTextView:I = 0x103017b
 
@@ -1026,6 +1032,10 @@
 .field public static final Widget_DeviceDefault_Light_Spinner_DropDown:I = 0x10302d0
 
 .field public static final Widget_DeviceDefault_Light_Spinner_DropDown_ActionBar:I = 0x10302c3
+
+.field public static final Widget_DeviceDefault_Light_Spinner_DropDown_DarkActionBar:I = 0x103032b
+
+.field public static final Widget_DeviceDefault_Light_Switch_TextAppearance:I = 0x103032a
 
 .field public static final Widget_DeviceDefault_Light_Tab:I = 0x103019d
 

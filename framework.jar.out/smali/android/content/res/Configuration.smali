@@ -260,6 +260,58 @@
     return-void
 .end method
 
+.method private multiTheme_dealThemeChange(Landroid/content/res/Configuration;)I
+    .locals 3
+    .parameter "delta"
+
+    .prologue
+    const/4 v0, 0x0
+
+    .local v0, changed:I
+    iget v1, p1, Landroid/content/res/Configuration;->themeChanged:I
+
+    if-eqz v1, :cond_0
+
+    iget v1, p0, Landroid/content/res/Configuration;->themeChanged:I
+
+    iget v2, p1, Landroid/content/res/Configuration;->themeChanged:I
+
+    if-eq v1, v2, :cond_0
+
+    iget v1, p1, Landroid/content/res/Configuration;->themeChanged:I
+
+    iput v1, p0, Landroid/content/res/Configuration;->themeChanged:I
+
+    const/high16 v0, -0x8000
+
+    :cond_0
+    return v0
+.end method
+
+.method private multiTheme_dealThemeChange2(Landroid/content/res/Configuration;)I
+    .locals 3
+    .parameter "delta"
+
+    .prologue
+    const/4 v0, 0x0
+
+    .local v0, changed:I
+    iget v1, p1, Landroid/content/res/Configuration;->themeChanged:I
+
+    if-eqz v1, :cond_0
+
+    iget v1, p0, Landroid/content/res/Configuration;->themeChanged:I
+
+    iget v2, p1, Landroid/content/res/Configuration;->themeChanged:I
+
+    if-eq v1, v2, :cond_0
+
+    const/high16 v0, -0x8000
+
+    :cond_0
+    return v0
+.end method
+
 .method public static needNewResources(II)Z
     .locals 2
     .parameter "configChanges"
@@ -2470,7 +2522,7 @@
     .line 524
     iget-object v1, p1, Landroid/content/res/Configuration;->locale:Ljava/util/Locale;
 
-    if-eqz v1, :cond_19
+    if-eqz v1, :cond_18
 
     iget-object v1, p1, Landroid/content/res/Configuration;->locale:Ljava/util/Locale;
 
@@ -2828,31 +2880,31 @@
 
     .line 613
     :cond_17
-    iget v1, p1, Landroid/content/res/Configuration;->FlipFont:I
+    invoke-direct {p0, p1}, Landroid/content/res/Configuration;->multiTheme_dealThemeChange(Landroid/content/res/Configuration;)I
 
-    if-lez v1, :cond_18
-
-    iget v1, p0, Landroid/content/res/Configuration;->FlipFont:I
-
-    iget v2, p1, Landroid/content/res/Configuration;->FlipFont:I
-
-    if-eq v1, v2, :cond_18
-
-    const/high16 v1, 0x2000
+    move-result v1
 
     or-int/2addr v0, v1
 
-    iget v1, p1, Landroid/content/res/Configuration;->FlipFont:I
-
-    iput v1, p0, Landroid/content/res/Configuration;->FlipFont:I
-
-    :cond_18
     return v0
 
-    :cond_19
+    :cond_18
     const/4 v1, 0x0
 
     goto/16 :goto_0
+.end method
+
+.method public updateTheme()V
+    .locals 1
+
+    .prologue
+    iget v0, p0, Landroid/content/res/Configuration;->themeChanged:I
+
+    add-int/lit8 v0, v0, 0x1
+
+    iput v0, p0, Landroid/content/res/Configuration;->themeChanged:I
+
+    return-void
 .end method
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
@@ -2959,7 +3011,7 @@
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
-    iget v0, p0, Landroid/content/res/Configuration;->FlipFont:I
+    iget v0, p0, Landroid/content/res/Configuration;->themeChanged:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
@@ -3001,69 +3053,4 @@
     invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
 
     goto :goto_1
-.end method
-
-.method private multiTheme_dealThemeChange(Landroid/content/res/Configuration;)I
-    .locals 3
-    .parameter "delta"
-
-    .prologue
-    const/4 v0, 0x0
-
-    .local v0, changed:I
-    iget v1, p1, Landroid/content/res/Configuration;->themeChanged:I
-
-    if-eqz v1, :cond_0
-
-    iget v1, p0, Landroid/content/res/Configuration;->themeChanged:I
-
-    iget v2, p1, Landroid/content/res/Configuration;->themeChanged:I
-
-    if-eq v1, v2, :cond_0
-
-    iget v1, p1, Landroid/content/res/Configuration;->themeChanged:I
-
-    iput v1, p0, Landroid/content/res/Configuration;->themeChanged:I
-
-    const/high16 v0, -0x8000
-
-    :cond_0
-    return v0
-.end method
-
-.method private multiTheme_dealThemeChange2(Landroid/content/res/Configuration;)I
-    .locals 3
-    .parameter "delta"
-
-    .prologue
-    const/4 v0, 0x0
-
-    .local v0, changed:I
-    iget v1, p1, Landroid/content/res/Configuration;->themeChanged:I
-
-    if-eqz v1, :cond_0
-
-    iget v1, p0, Landroid/content/res/Configuration;->themeChanged:I
-
-    iget v2, p1, Landroid/content/res/Configuration;->themeChanged:I
-
-    if-eq v1, v2, :cond_0
-
-    const/high16 v0, -0x8000
-
-    :cond_0
-    return v0
-.end method
-
-.method public updateTheme()V
-    .locals 1
-
-    .prologue
-    iget v0, p0, Landroid/content/res/Configuration;->themeChanged:I
-
-    add-int/lit8 v0, v0, 0x1
-
-    iput v0, p0, Landroid/content/res/Configuration;->themeChanged:I
-
-    return-void
 .end method

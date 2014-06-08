@@ -689,7 +689,7 @@
 
     move-result-object v1
 
-    const-string v2, "image/*"
+    const-string/jumbo v2, "image/*"
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -702,7 +702,7 @@
 
     move-result-object v1
 
-    const-string v2, "image/gif"
+    const-string/jumbo v2, "image/gif"
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -715,7 +715,7 @@
 
     move-result-object v1
 
-    const-string v2, "image/jpeg"
+    const-string/jumbo v2, "image/jpeg"
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -728,7 +728,7 @@
 
     move-result-object v1
 
-    const-string v2, "image/tiff"
+    const-string/jumbo v2, "image/tiff"
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -741,7 +741,7 @@
 
     move-result-object v1
 
-    const-string v2, "image/png"
+    const-string/jumbo v2, "image/png"
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -754,7 +754,7 @@
 
     move-result-object v1
 
-    const-string v2, "image/vnd.wap.wbmp"
+    const-string/jumbo v2, "image/vnd.wap.wbmp"
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1573,7 +1573,7 @@
 
     move-result-object v1
 
-    const-string v2, "image/x-up-wpng"
+    const-string/jumbo v2, "image/x-up-wpng"
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -3702,7 +3702,7 @@
 
     invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v12, "int header found pos="
+    const-string/jumbo v12, "int header found pos="
 
     invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -5310,6 +5310,8 @@
     goto/16 :goto_2
 
     .line 970
+    nop
+
     nop
 
     :pswitch_data_0

@@ -299,7 +299,7 @@
 
     .line 149
     .local v3, funcname:Ljava/lang/String;
-    const-string v1, "input_method"
+    const-string/jumbo v1, "input_method"
 
     move-object/from16 v0, p0
 

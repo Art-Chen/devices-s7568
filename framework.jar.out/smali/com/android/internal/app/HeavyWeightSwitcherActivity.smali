@@ -87,7 +87,7 @@
 
     move-result-object v0
 
-    const-string v1, "intent"
+    const-string/jumbo v1, "intent"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->getParcelableExtra(Ljava/lang/String;)Landroid/os/Parcelable;
 
@@ -102,7 +102,7 @@
 
     move-result-object v0
 
-    const-string v1, "has_result"
+    const-string/jumbo v1, "has_result"
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->getBooleanExtra(Ljava/lang/String;Z)Z
 

@@ -4073,7 +4073,7 @@
     iput-object v2, v0, Lcom/android/internal/telephony/cat/CatService;->mMenuCmd:Lcom/android/internal/telephony/cat/CatCmdMessage;
 
     .line 938
-    const-string v2, "gsm.STK_SETUP_MENU"
+    const-string/jumbo v2, "gsm.STK_SETUP_MENU"
 
     const-string v3, ""
 
@@ -4178,7 +4178,7 @@
     if-le v2, v3, :cond_5
 
     .line 944
-    const-string v2, "gsm.STK_SETUP_MENU"
+    const-string/jumbo v2, "gsm.STK_SETUP_MENU"
 
     move-object/from16 v0, p0
 
@@ -4237,7 +4237,7 @@
     .line 946
     .end local v14           #intent:Landroid/content/Intent;
     :cond_5
-    const-string v2, "gsm.STK_SETUP_MENU"
+    const-string/jumbo v2, "gsm.STK_SETUP_MENU"
 
     move-object/from16 v0, p0
 
@@ -4262,7 +4262,7 @@
     invoke-static {v0, v2}, Lcom/android/internal/telephony/cat/CatLog;->d(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 957
-    const-string v2, "gsm.STK_SETUP_MENU"
+    const-string/jumbo v2, "gsm.STK_SETUP_MENU"
 
     const-string v3, "SIM Toolkit"
 
@@ -4316,7 +4316,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "here : "
+    const-string/jumbo v3, "here : "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -6359,6 +6359,8 @@
     goto/16 :goto_0
 
     .line 922
+    nop
+
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0
@@ -7347,7 +7349,7 @@
     .local v0, dcsCode:I
     const-string v3, "45205"
 
-    const-string v4, "gsm.sim.operator.numeric"
+    const-string/jumbo v4, "gsm.sim.operator.numeric"
 
     invoke-static {v4}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -9644,7 +9646,7 @@
     .end local v5           #destinationId:I
     .end local v6           #additionalInfo:[B
     :pswitch_8
-    const-string v2, "handleMsg : MSG_ID_RELEASE_COMPLETE_MESSAGE"
+    const-string/jumbo v2, "handleMsg : MSG_ID_RELEASE_COMPLETE_MESSAGE"
 
     move-object/from16 v0, p0
 
@@ -10449,7 +10451,7 @@
     .line 1933
     .end local v13           #ar:Landroid/os/AsyncResult;
     :pswitch_13
-    const-string v2, "handleMsg : MSG_ID_SEND_SMS_RESULT"
+    const-string/jumbo v2, "handleMsg : MSG_ID_SEND_SMS_RESULT"
 
     move-object/from16 v0, p0
 
@@ -10887,7 +10889,7 @@
     .line 1996
     .end local v20           #result:[I
     :pswitch_14
-    const-string v2, "handleMsg : MSG_ID_CALL_CONTROL_RESULT"
+    const-string/jumbo v2, "handleMsg : MSG_ID_CALL_CONTROL_RESULT"
 
     move-object/from16 v0, p0
 
@@ -11056,6 +11058,8 @@
     goto/16 :goto_0
 
     .line 1739
+    nop
+
     nop
 
     :pswitch_data_0

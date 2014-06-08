@@ -45,7 +45,7 @@
     iget-object v9, v9, Lcom/android/server/MountService$QuickbootBroadcastReceiver;->this$0:Lcom/android/server/MountService;
 
     #getter for: Lcom/android/server/MountService;->mVolumeStates:Ljava/util/HashMap;
-    invoke-static {v9}, Lcom/android/server/MountService;->access$700(Lcom/android/server/MountService;)Ljava/util/HashMap;
+    invoke-static {v9}, Lcom/android/server/MountService;->access$900(Lcom/android/server/MountService;)Ljava/util/HashMap;
 
     move-result-object v10
 
@@ -60,7 +60,7 @@
     iget-object v9, v9, Lcom/android/server/MountService$QuickbootBroadcastReceiver;->this$0:Lcom/android/server/MountService;
 
     #getter for: Lcom/android/server/MountService;->mVolumeStates:Ljava/util/HashMap;
-    invoke-static {v9}, Lcom/android/server/MountService;->access$700(Lcom/android/server/MountService;)Ljava/util/HashMap;
+    invoke-static {v9}, Lcom/android/server/MountService;->access$900(Lcom/android/server/MountService;)Ljava/util/HashMap;
 
     move-result-object v9
 
@@ -102,7 +102,7 @@
     iget-object v9, v9, Lcom/android/server/MountService$QuickbootBroadcastReceiver;->this$0:Lcom/android/server/MountService;
 
     #getter for: Lcom/android/server/MountService;->mVolumeStates:Ljava/util/HashMap;
-    invoke-static {v9}, Lcom/android/server/MountService;->access$700(Lcom/android/server/MountService;)Ljava/util/HashMap;
+    invoke-static {v9}, Lcom/android/server/MountService;->access$900(Lcom/android/server/MountService;)Ljava/util/HashMap;
 
     move-result-object v9
 
@@ -156,8 +156,7 @@
 
     iget-object v9, v9, Lcom/android/server/MountService$QuickbootBroadcastReceiver;->this$0:Lcom/android/server/MountService;
 
-    #calls: Lcom/android/server/MountService;->doMountVolume(Ljava/lang/String;)I
-    invoke-static {v9, v4}, Lcom/android/server/MountService;->access$800(Lcom/android/server/MountService;Ljava/lang/String;)I
+    invoke-static {v9, v4}, Lcom/android/server/MountService;->access$801(Lcom/android/server/MountService;Ljava/lang/String;)I
 
     move-result v6
 
@@ -267,7 +266,7 @@
     const/4 v12, 0x7
 
     #calls: Lcom/android/server/MountService;->notifyVolumeStateChange(Ljava/lang/String;Ljava/lang/String;II)V
-    invoke-static {v9, v10, v4, v11, v12}, Lcom/android/server/MountService;->access$600(Lcom/android/server/MountService;Ljava/lang/String;Ljava/lang/String;II)V
+    invoke-static {v9, v10, v4, v11, v12}, Lcom/android/server/MountService;->access$800(Lcom/android/server/MountService;Ljava/lang/String;Ljava/lang/String;II)V
 
     goto :goto_2
 
@@ -279,8 +278,7 @@
 
     iget-object v9, v9, Lcom/android/server/MountService$QuickbootBroadcastReceiver;->this$0:Lcom/android/server/MountService;
 
-    #getter for: Lcom/android/server/MountService;->mEmulateExternalStorage:Z
-    invoke-static {v9}, Lcom/android/server/MountService;->access$900(Lcom/android/server/MountService;)Z
+    invoke-static {v9}, Lcom/android/server/MountService;->access$901(Lcom/android/server/MountService;)Z
 
     move-result v9
 
@@ -306,7 +304,7 @@
     const/4 v13, 0x4
 
     #calls: Lcom/android/server/MountService;->notifyVolumeStateChange(Ljava/lang/String;Ljava/lang/String;II)V
-    invoke-static {v9, v10, v11, v12, v13}, Lcom/android/server/MountService;->access$600(Lcom/android/server/MountService;Ljava/lang/String;Ljava/lang/String;II)V
+    invoke-static {v9, v10, v11, v12, v13}, Lcom/android/server/MountService;->access$800(Lcom/android/server/MountService;Ljava/lang/String;Ljava/lang/String;II)V
 
     .line 2674
     :cond_5
@@ -315,7 +313,7 @@
     iget-object v9, v9, Lcom/android/server/MountService$QuickbootBroadcastReceiver;->this$0:Lcom/android/server/MountService;
 
     #getter for: Lcom/android/server/MountService;->mSendUmsConnectedOnBoot:Z
-    invoke-static {v9}, Lcom/android/server/MountService;->access$1000(Lcom/android/server/MountService;)Z
+    invoke-static {v9}, Lcom/android/server/MountService;->access$1200(Lcom/android/server/MountService;)Z
 
     move-result v9
 
@@ -329,7 +327,7 @@
     const/4 v10, 0x1
 
     #calls: Lcom/android/server/MountService;->sendUmsIntent(Z)V
-    invoke-static {v9, v10}, Lcom/android/server/MountService;->access$1100(Lcom/android/server/MountService;Z)V
+    invoke-static {v9, v10}, Lcom/android/server/MountService;->access$1300(Lcom/android/server/MountService;Z)V
 
     .line 2676
     iget-object v9, p0, Lcom/android/server/MountService$QuickbootBroadcastReceiver$1;->this$1:Lcom/android/server/MountService$QuickbootBroadcastReceiver;
@@ -339,7 +337,7 @@
     const/4 v10, 0x0
 
     #setter for: Lcom/android/server/MountService;->mSendUmsConnectedOnBoot:Z
-    invoke-static {v9, v10}, Lcom/android/server/MountService;->access$1002(Lcom/android/server/MountService;Z)Z
+    invoke-static {v9, v10}, Lcom/android/server/MountService;->access$1202(Lcom/android/server/MountService;Z)Z
     :try_end_5
     .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_0
 

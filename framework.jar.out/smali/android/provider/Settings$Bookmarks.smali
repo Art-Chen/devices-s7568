@@ -62,7 +62,7 @@
     .line 5999
     new-array v0, v3, [Ljava/lang/String;
 
-    const-string v1, "intent"
+    const-string/jumbo v1, "intent"
 
     aput-object v1, v0, v2
 
@@ -152,7 +152,7 @@
 
     .line 6071
     :cond_2
-    const-string v1, "intent"
+    const-string/jumbo v1, "intent"
 
     invoke-virtual {p1, v5}, Landroid/content/Intent;->toUri(I)Ljava/lang/String;
 
@@ -244,7 +244,7 @@
 
     .line 6024
     :try_start_1
-    const-string v0, "intent"
+    const-string/jumbo v0, "intent"
 
     invoke-interface {v6, v0}, Landroid/database/Cursor;->getColumnIndexOrThrow(Ljava/lang/String;)I
 
@@ -343,7 +343,7 @@
 
     .line 6105
     .local v7, titleColumn:I
-    const-string v8, "intent"
+    const-string/jumbo v8, "intent"
 
     invoke-interface {p1, v8}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 

@@ -2577,19 +2577,19 @@
 
     invoke-virtual {p0, v1}, Lcom/android/internal/widget/LockPatternUtils;->saveLockPattern(Ljava/util/List;)V
 
-    const-string v0, "lockscreen.password_type"
+    const-string/jumbo v0, "lockscreen.password_type"
 
     const-wide/32 v1, 0x10000
 
     invoke-direct {p0, v0, v1, v2}, Lcom/android/internal/widget/LockPatternUtils;->setLong(Ljava/lang/String;J)V
 
-    const-string v0, "lockscreen.lockmode_type"
+    const-string/jumbo v0, "lockscreen.lockmode_type"
 
     const-wide/16 v1, 0x2
 
     invoke-direct {p0, v0, v1, v2}, Lcom/android/internal/widget/LockPatternUtils;->setLong(Ljava/lang/String;J)V
 
-    const-string v0, "lockscreen.password_type_alternate"
+    const-string/jumbo v0, "lockscreen.password_type_alternate"
 
     const-wide/16 v1, 0x0
 
@@ -2601,7 +2601,7 @@
 
     move-result-object v0
 
-    const-string v1, "lock_pcw_enabled"
+    const-string/jumbo v1, "lock_pcw_enabled"
 
     const-string v2, "10"
 
@@ -2613,7 +2613,7 @@
 
     move-result-object v0
 
-    const-string v1, "lock_pcw_password"
+    const-string/jumbo v1, "lock_pcw_password"
 
     const-string v2, ""
 

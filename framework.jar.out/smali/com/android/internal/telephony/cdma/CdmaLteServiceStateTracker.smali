@@ -265,7 +265,7 @@
 
     .line 79
     :sswitch_0
-    const-string v2, "handleMessage EVENT_POLL_STATE_GPRS"
+    const-string/jumbo v2, "handleMessage EVENT_POLL_STATE_GPRS"
 
     invoke-virtual {p0, v2}, Lcom/android/internal/telephony/cdma/CdmaLteServiceStateTracker;->log(Ljava/lang/String;)V
 
@@ -285,7 +285,7 @@
     .line 84
     .end local v0           #ar:Landroid/os/AsyncResult;
     :sswitch_1
-    const-string v2, "handleMessage EVENT_SIM_READY"
+    const-string/jumbo v2, "handleMessage EVENT_SIM_READY"
 
     invoke-virtual {p0, v2}, Lcom/android/internal/telephony/cdma/CdmaLteServiceStateTracker;->log(Ljava/lang/String;)V
 
@@ -431,7 +431,7 @@
     if-ne p1, v4, :cond_1
 
     .line 142
-    const-string v4, "handlePollStateResultMessage: EVENT_POLL_STATE_GPRS"
+    const-string/jumbo v4, "handlePollStateResultMessage: EVENT_POLL_STATE_GPRS"
 
     invoke-virtual {p0, v4}, Lcom/android/internal/telephony/cdma/CdmaLteServiceStateTracker;->log(Ljava/lang/String;)V
 
@@ -528,7 +528,7 @@
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v5, "handlePollStateResultMessage: error parsing GprsRegistrationState: "
+    const-string/jumbo v5, "handlePollStateResultMessage: error parsing GprsRegistrationState: "
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2395,7 +2395,7 @@
 
     move-object/from16 v25, v0
 
-    const-string v26, "gsm.network.type"
+    const-string/jumbo v26, "gsm.network.type"
 
     move-object/from16 v0, p0
 
@@ -2605,7 +2605,7 @@
 
     move-object/from16 v25, v0
 
-    const-string v26, "gsm.operator.alpha"
+    const-string/jumbo v26, "gsm.operator.alpha"
 
     move-object/from16 v0, p0
 
@@ -2638,7 +2638,7 @@
 
     move-object/from16 v25, v0
 
-    const-string v26, "gsm.operator.numeric"
+    const-string/jumbo v26, "gsm.operator.numeric"
 
     move-object/from16 v0, v25
 
@@ -2658,7 +2658,7 @@
 
     move-object/from16 v25, v0
 
-    const-string v26, "gsm.operator.iso-country"
+    const-string/jumbo v26, "gsm.operator.iso-country"
 
     const-string v27, ""
 
@@ -2682,7 +2682,7 @@
 
     move-object/from16 v26, v0
 
-    const-string v27, "gsm.operator.isroaming"
+    const-string/jumbo v27, "gsm.operator.isroaming"
 
     move-object/from16 v0, p0
 
@@ -3075,7 +3075,7 @@
 
     move-object/from16 v25, v0
 
-    const-string v26, "gsm.operator.iso-country"
+    const-string/jumbo v26, "gsm.operator.iso-country"
 
     move-object/from16 v0, v25
 

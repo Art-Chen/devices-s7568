@@ -28,7 +28,7 @@
 
     .prologue
     .line 41
-    const-string v0, "http"
+    const-string/jumbo v0, "http"
 
     invoke-static {v0, p0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -42,7 +42,7 @@
 
     .prologue
     .line 37
-    const-string v0, "http"
+    const-string/jumbo v0, "http"
 
     new-instance v1, Ljava/lang/StringBuilder;
 

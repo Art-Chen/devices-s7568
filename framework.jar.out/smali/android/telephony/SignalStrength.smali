@@ -735,7 +735,7 @@
     iput v0, p0, Landroid/telephony/SignalStrength;->mLteCqi:I
 
     .line 873
-    const-string v0, "isGsm"
+    const-string/jumbo v0, "isGsm"
 
     invoke-virtual {p1, v0}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;)Z
 
@@ -1065,7 +1065,7 @@
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     .line 896
-    const-string v0, "isGsm"
+    const-string/jumbo v0, "isGsm"
 
     iget-boolean v1, p0, Landroid/telephony/SignalStrength;->isGsm:Z
 
@@ -2879,7 +2879,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "isDataSignalMarginal Result : "
+    const-string/jumbo v2, "isDataSignalMarginal Result : "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -3084,7 +3084,7 @@
 
     if-eqz v0, :cond_0
 
-    const-string v0, "gsm|lte"
+    const-string/jumbo v0, "gsm|lte"
 
     :goto_0
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;

@@ -265,6 +265,50 @@
 
 .field public static final webselect_port_content_height:I = 0x105005c
 
+.field public static final yi_action_bar_default_height:I = 0x105007e
+
+.field public static final yi_alert_dialog_button_height:I = 0x105008c
+
+.field public static final yi_alert_dialog_title_height:I = 0x105008b
+
+.field public static final yi_floating_bar_divider_padding:I = 0x1050080
+
+.field public static final yi_list_item_header_height:I = 0x105007f
+
+.field public static final yi_lockscreen_hotword1_padding:I = 0x1050084
+
+.field public static final yi_lockscreen_hotword2_padding:I = 0x1050085
+
+.field public static final yi_lockscreen_hotword3_padding:I = 0x1050086
+
+.field public static final yi_lockscreen_hotword4_padding:I = 0x1050087
+
+.field public static final yi_lockscreen_hotword5_padding:I = 0x1050088
+
+.field public static final yi_lockscreen_hotword6_padding:I = 0x1050089
+
+.field public static final yi_lockscreen_hotword7_padding:I = 0x105008a
+
+.field public static final yi_lockscreen_password_height:I = 0x105008e
+
+.field public static final yi_lockscreen_password_top_padding:I = 0x1050082
+
+.field public static final yi_lockscreen_pattern_top_margin:I = 0x1050090
+
+.field public static final yi_lockscreen_pin_top_padding:I = 0x1050083
+
+.field public static final yi_lockscreen_unlockWidget_height:I = 0x1050091
+
+.field public static final yi_lockscreen_unlockwidget_margintop:I = 0x105008d
+
+.field public static final yi_lockscreen_voiceprint_height:I = 0x105008f
+
+.field public static final yi_magnifier_range_padding:I = 0x1050081
+
+.field public static final yi_preference_item_padding_side:I = 0x105007d
+
+.field public static final zz_lockscreen_flipper_width:I = 0x1050092
+
 
 # direct methods
 .method public constructor <init>()V

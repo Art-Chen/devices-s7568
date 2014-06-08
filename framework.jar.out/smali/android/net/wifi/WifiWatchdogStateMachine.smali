@@ -1990,7 +1990,7 @@
 
     .line 580
     .local v0, intent:Landroid/content/Intent;
-    const-string v3, "info_type"
+    const-string/jumbo v3, "info_type"
 
     const/4 v4, 0x4
 
@@ -2512,7 +2512,7 @@
 
     const-string/jumbo v1, "wifi_watchdog_walled_garden_url"
 
-    const-string v2, "http://clients3.google.com/generate_204"
+    const-string/jumbo v2, "http://clients3.google.com/generate_204"
 
     invoke-static {v0, v1, v2}, Landroid/net/wifi/WifiWatchdogStateMachine;->getSettingsStr(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 

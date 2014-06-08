@@ -824,7 +824,7 @@
 
     aget-object v14, v7, v14
 
-    const-string v15, "id"
+    const-string/jumbo v15, "id"
 
     invoke-virtual {v14, v15}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1197,7 +1197,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "handleWpsEvent - event type ("
+    const-string/jumbo v3, "handleWpsEvent - event type ("
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1240,7 +1240,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "handleWpsEvent -There is no this event type ("
+    const-string/jumbo v3, "handleWpsEvent -There is no this event type ("
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

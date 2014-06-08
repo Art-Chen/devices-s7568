@@ -241,7 +241,7 @@
     .line 265
     sget-object v0, Lcom/android/internal/telephony/IccProvider;->URL_MATCHER:Landroid/content/UriMatcher;
 
-    const-string v2, "icc"
+    const-string/jumbo v2, "icc"
 
     const-string v3, "adn"
 
@@ -250,7 +250,7 @@
     .line 266
     sget-object v0, Lcom/android/internal/telephony/IccProvider;->URL_MATCHER:Landroid/content/UriMatcher;
 
-    const-string v1, "icc"
+    const-string/jumbo v1, "icc"
 
     const-string v2, "fdn"
 
@@ -259,7 +259,7 @@
     .line 267
     sget-object v0, Lcom/android/internal/telephony/IccProvider;->URL_MATCHER:Landroid/content/UriMatcher;
 
-    const-string v1, "icc"
+    const-string/jumbo v1, "icc"
 
     const-string/jumbo v2, "sdn"
 
@@ -268,7 +268,7 @@
     .line 268
     sget-object v0, Lcom/android/internal/telephony/IccProvider;->URL_MATCHER:Landroid/content/UriMatcher;
 
-    const-string v1, "icc"
+    const-string/jumbo v1, "icc"
 
     const-string/jumbo v2, "msisdn"
 
@@ -277,7 +277,7 @@
     .line 269
     sget-object v0, Lcom/android/internal/telephony/IccProvider;->URL_MATCHER:Landroid/content/UriMatcher;
 
-    const-string v1, "icc"
+    const-string/jumbo v1, "icc"
 
     const-string v2, "adn/from_contacts"
 
@@ -288,7 +288,7 @@
     .line 270
     sget-object v0, Lcom/android/internal/telephony/IccProvider;->URL_MATCHER:Landroid/content/UriMatcher;
 
-    const-string v1, "icc"
+    const-string/jumbo v1, "icc"
 
     const-string v2, "fdn/from_contacts"
 
@@ -299,7 +299,7 @@
     .line 271
     sget-object v0, Lcom/android/internal/telephony/IccProvider;->URL_MATCHER:Landroid/content/UriMatcher;
 
-    const-string v1, "icc"
+    const-string/jumbo v1, "icc"
 
     const-string/jumbo v2, "msisdn/from_contacts"
 
@@ -310,7 +310,7 @@
     .line 272
     sget-object v0, Lcom/android/internal/telephony/IccProvider;->URL_MATCHER:Landroid/content/UriMatcher;
 
-    const-string v1, "icc"
+    const-string/jumbo v1, "icc"
 
     const-string v2, "adn/emails"
 
@@ -321,7 +321,7 @@
     .line 273
     sget-object v0, Lcom/android/internal/telephony/IccProvider;->URL_MATCHER:Landroid/content/UriMatcher;
 
-    const-string v1, "icc"
+    const-string/jumbo v1, "icc"
 
     const-string v2, "capacity"
 
@@ -332,7 +332,7 @@
     .line 274
     sget-object v0, Lcom/android/internal/telephony/IccProvider;->URL_MATCHER:Landroid/content/UriMatcher;
 
-    const-string v1, "icc"
+    const-string/jumbo v1, "icc"
 
     const-string v2, "adn/expansion"
 
@@ -343,7 +343,7 @@
     .line 275
     sget-object v0, Lcom/android/internal/telephony/IccProvider;->URL_MATCHER:Landroid/content/UriMatcher;
 
-    const-string v1, "icc"
+    const-string/jumbo v1, "icc"
 
     const-string v2, "adn/init"
 
@@ -3791,7 +3791,7 @@
 
     if-eqz v2, :cond_0
 
-    const-string v2, "insert"
+    const-string/jumbo v2, "insert"
 
     move-object/from16 v0, p0
 
@@ -4083,7 +4083,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v12, "insert name : "
+    const-string/jumbo v12, "insert name : "
 
     invoke-virtual {v2, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -4116,7 +4116,7 @@
     if-eqz v22, :cond_f
 
     .line 523
-    const-string v2, "isFromContacts"
+    const-string/jumbo v2, "isFromContacts"
 
     move-object/from16 v0, p0
 
@@ -4535,6 +4535,8 @@
     goto :goto_5
 
     .line 436
+    nop
+
     nop
 
     :pswitch_data_0
@@ -5496,7 +5498,7 @@
     if-eqz v21, :cond_11
 
     .line 830
-    const-string v1, "isFromContacts"
+    const-string/jumbo v1, "isFromContacts"
 
     move-object/from16 v0, p0
 
@@ -5724,6 +5726,8 @@
     goto :goto_2
 
     .line 734
+    nop
+
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_1

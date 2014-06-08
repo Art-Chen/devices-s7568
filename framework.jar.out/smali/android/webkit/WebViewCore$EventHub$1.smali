@@ -534,7 +534,7 @@
 
     .line 1767
     .local v82, scheme:Ljava/lang/String;
-    const-string v2, "http"
+    const-string/jumbo v2, "http"
 
     move-object/from16 v0, v82
 
@@ -5503,6 +5503,8 @@
     goto/16 :goto_0
 
     .line 1686
+    nop
+
     :sswitch_data_0
     .sparse-switch
         0x60 -> :sswitch_0

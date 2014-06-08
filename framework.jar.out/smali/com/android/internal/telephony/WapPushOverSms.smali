@@ -369,7 +369,7 @@
     invoke-virtual {v5, v7, p3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     .line 791
-    const-string v7, "header"
+    const-string/jumbo v7, "header"
 
     invoke-virtual {v5, v7, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;[B)Landroid/content/Intent;
 
@@ -688,6 +688,8 @@
     goto/16 :goto_0
 
     .line 798
+    nop
+
     :sswitch_data_0
     .sparse-switch
         0x44 -> :sswitch_1
@@ -790,7 +792,7 @@
     invoke-virtual {v4, v5, p3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     .line 691
-    const-string v5, "header"
+    const-string/jumbo v5, "header"
 
     invoke-virtual {v4, v5, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;[B)Landroid/content/Intent;
 
@@ -853,7 +855,7 @@
     invoke-virtual {v1, v2, p3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     .line 659
-    const-string v2, "header"
+    const-string/jumbo v2, "header"
 
     invoke-virtual {v1, v2, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;[B)Landroid/content/Intent;
 
@@ -1046,7 +1048,7 @@
     invoke-virtual {v5, v7, p3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     .line 882
-    const-string v7, "header"
+    const-string/jumbo v7, "header"
 
     invoke-virtual {v5, v7, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;[B)Landroid/content/Intent;
 
@@ -2511,7 +2513,7 @@
     invoke-virtual {v0, v4, v7}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     .line 568
-    const-string v4, "header"
+    const-string/jumbo v4, "header"
 
     move-object/from16 v0, v40
 
@@ -2676,7 +2678,7 @@
     invoke-virtual {v0, v4, v7}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     .line 613
-    const-string v4, "header"
+    const-string/jumbo v4, "header"
 
     move-object/from16 v0, v40
 

@@ -357,6 +357,118 @@
 
 .field public static final widget_edittext_dark:I = 0x106000a
 
+.field public static final yi_action_bar_title_shadow:I = 0x10600d7
+
+.field public static final yi_action_tab_text_selected_baidu_light:I = 0x10600d4
+
+.field public static final yi_background_baidu_dark:I = 0x10600ad
+
+.field public static final yi_background_baidu_light:I = 0x10600ae
+
+.field public static final yi_baidu_blue_bright:I = 0x10600d1
+
+.field public static final yi_baidu_blue_dark:I = 0x10600cb
+
+.field public static final yi_baidu_blue_light:I = 0x10600c8
+
+.field public static final yi_baidu_green_dark:I = 0x10600cc
+
+.field public static final yi_baidu_green_light:I = 0x10600c9
+
+.field public static final yi_baidu_orange_dark:I = 0x10600d0
+
+.field public static final yi_baidu_orange_light:I = 0x10600cf
+
+.field public static final yi_baidu_purple:I = 0x10600ce
+
+.field public static final yi_baidu_red_dark:I = 0x10600cd
+
+.field public static final yi_baidu_red_light:I = 0x10600ca
+
+.field public static final yi_blue_header_text_baidu_light:I = 0x10600c3
+
+.field public static final yi_bright_foreground_baidu_dark:I = 0x10600af
+
+.field public static final yi_bright_foreground_baidu_light:I = 0x10600b0
+
+.field public static final yi_bright_foreground_disabled_baidu_dark:I = 0x10600b1
+
+.field public static final yi_bright_foreground_disabled_baidu_light:I = 0x10600b2
+
+.field public static final yi_bright_foreground_inverse_baidu_dark:I = 0x10600b3
+
+.field public static final yi_bright_foreground_inverse_baidu_light:I = 0x10600b4
+
+.field public static final yi_dark_action_bar_title:I = 0x10600d2
+
+.field public static final yi_dim_foreground_baidu_dark:I = 0x10600b5
+
+.field public static final yi_dim_foreground_baidu_light:I = 0x10600ba
+
+.field public static final yi_dim_foreground_disabled_baidu_dark:I = 0x10600b6
+
+.field public static final yi_dim_foreground_disabled_baidu_light:I = 0x10600bb
+
+.field public static final yi_dim_foreground_inverse_baidu_dark:I = 0x10600b7
+
+.field public static final yi_dim_foreground_inverse_baidu_light:I = 0x10600bc
+
+.field public static final yi_dim_foreground_inverse_disabled_baidu_dark:I = 0x10600b8
+
+.field public static final yi_dim_foreground_inverse_disabled_baidu_light:I = 0x10600bd
+
+.field public static final yi_edit_text_color_baidu_light:I = 0x10600d8
+
+.field public static final yi_group_button_dialog_focused_baidu_dark:I = 0x10600c5
+
+.field public static final yi_group_button_dialog_focused_baidu_light:I = 0x10600c7
+
+.field public static final yi_group_button_dialog_pressed_baidu_dark:I = 0x10600c4
+
+.field public static final yi_group_button_dialog_pressed_baidu_light:I = 0x10600c6
+
+.field public static final yi_highlighted_text_baidu_dark:I = 0x10600bf
+
+.field public static final yi_highlighted_text_baidu_light:I = 0x10600c0
+
+.field public static final yi_hint_foreground_baidu_dark:I = 0x10600b9
+
+.field public static final yi_hint_foreground_baidu_light:I = 0x10600be
+
+.field public static final yi_link_text_baidu_dark:I = 0x10600c1
+
+.field public static final yi_link_text_baidu_light:I = 0x10600c2
+
+.field public static final yi_list_section_divider_text_light:I = 0x10600d3
+
+.field public static final yi_primary_text_baidu_dark:I = 0x10600d9
+
+.field public static final yi_primary_text_baidu_light:I = 0x10600da
+
+.field public static final yi_primary_text_disable_only_baidu_dark:I = 0x10600db
+
+.field public static final yi_primary_text_disable_only_baidu_light:I = 0x10600dc
+
+.field public static final yi_primary_text_nodisable_baidu_dark:I = 0x10600dd
+
+.field public static final yi_primary_text_nodisable_baidu_light:I = 0x10600de
+
+.field public static final yi_secondary_text_baidu_dark:I = 0x10600df
+
+.field public static final yi_secondary_text_baidu_light:I = 0x10600e0
+
+.field public static final yi_secondary_text_nodisable_baidu_dark:I = 0x10600e1
+
+.field public static final yi_secondary_text_nodisable_baidu_light:I = 0x10600e2
+
+.field public static final yi_status_bar_event_content:I = 0x10600d5
+
+.field public static final yi_status_bar_event_content_title:I = 0x10600d6
+
+.field public static final yi_tertiary_text_baidu_dark:I = 0x10600e3
+
+.field public static final yi_tertiary_text_baidu_light:I = 0x10600e4
+
 .field public static final zzzz_btn_text_color:I = 0x10600ab
 
 .field public static final zzzzzzzzz_pcw_actionbutton_selector:I = 0x10600ac

@@ -164,7 +164,7 @@
 
     move-result-object v0
 
-    const-string v1, "inputType=0x"
+    const-string/jumbo v1, "inputType=0x"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -262,7 +262,7 @@
 
     move-result-object v0
 
-    const-string v1, "initialSelStart="
+    const-string/jumbo v1, "initialSelStart="
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -317,7 +317,7 @@
 
     move-result-object v0
 
-    const-string v1, "hintText="
+    const-string/jumbo v1, "hintText="
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

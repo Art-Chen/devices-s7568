@@ -7243,7 +7243,7 @@
     .line 6693
     new-instance v4, Ljava/lang/AssertionError;
 
-    const-string v5, "invalid parameter passed to didUpdateWebTextViewDimensions"
+    const-string/jumbo v5, "invalid parameter passed to didUpdateWebTextViewDimensions"
 
     invoke-direct {v4, v5}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V
 
@@ -7319,6 +7319,8 @@
     goto :goto_0
 
     .line 6682
+    nop
+
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0
@@ -7643,7 +7645,7 @@
 
     move-result-object v6
 
-    const-string v7, "input_method"
+    const-string/jumbo v7, "input_method"
 
     invoke-virtual {v6, v7}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -10110,7 +10112,7 @@
 
     move-result-object v3
 
-    const-string v4, "input_method"
+    const-string/jumbo v4, "input_method"
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -13530,7 +13532,7 @@
 
     .line 2122
     .local v4, isCMCC:Z
-    const-string v10, "gsm.sim.operator.numeric"
+    const-string/jumbo v10, "gsm.sim.operator.numeric"
 
     const-string v11, ""
 
@@ -13909,7 +13911,7 @@
 
     invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v9, "hitTestResult() mLastTouchX="
+    const-string/jumbo v9, "hitTestResult() mLastTouchX="
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -13970,7 +13972,7 @@
 
     invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v9, "hitTestResult() contentX="
+    const-string/jumbo v9, "hitTestResult() contentX="
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -14178,7 +14180,7 @@
     .line 3729
     const-string/jumbo v7, "webview"
 
-    const-string v8, "hitTestResult use fallback"
+    const-string/jumbo v8, "hitTestResult use fallback"
 
     invoke-static {v7, v8}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -17891,7 +17893,7 @@
 
     move-result-object v2
 
-    const-string v3, "input_method"
+    const-string/jumbo v3, "input_method"
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -18179,7 +18181,7 @@
 
     .line 5278
     .local v5, isCMCC:Z
-    const-string v10, "gsm.sim.operator.numeric"
+    const-string/jumbo v10, "gsm.sim.operator.numeric"
 
     const-string v11, ""
 
@@ -19479,7 +19481,7 @@
 
     move-result-object v6
 
-    const-string v7, "input_method"
+    const-string/jumbo v7, "input_method"
 
     invoke-virtual {v6, v7}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -29595,7 +29597,7 @@
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v7, "handleMultiTouchInWebView: "
+    const-string/jumbo v7, "handleMultiTouchInWebView: "
 
     invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -29728,7 +29730,7 @@
     .line 11336
     const-string/jumbo v5, "webview"
 
-    const-string v6, "handleMultiTouchInWebView  detector.execute() is called"
+    const-string/jumbo v6, "handleMultiTouchInWebView  detector.execute() is called"
 
     invoke-static {v5, v6}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -29912,7 +29914,7 @@
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v5, "handleTouchEventCommon "
+    const-string/jumbo v5, "handleTouchEventCommon "
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -35647,6 +35649,8 @@
     .line 10112
     nop
 
+    nop
+
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0
@@ -35879,7 +35883,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "invalidate() called mCallSuperInval = "
+    const-string/jumbo v2, "invalidate() called mCallSuperInval = "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -35968,7 +35972,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "invalidate(l,t,r,b) called, l = "
+    const-string/jumbo v2, "invalidate(l,t,r,b) called, l = "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -36121,7 +36125,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "invalidate(Rect) called, dirty = "
+    const-string/jumbo v2, "invalidate(Rect) called, dirty = "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -36222,7 +36226,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "invalidate(boolean) called, invalidateCache = "
+    const-string/jumbo v2, "invalidate(boolean) called, invalidateCache = "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -36311,7 +36315,7 @@
     .line 1587
     const-string/jumbo v0, "webview"
 
-    const-string v1, "invalidateExpired called"
+    const-string/jumbo v1, "invalidateExpired called"
 
     invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -42076,7 +42080,7 @@
 
     move-result-object v3
 
-    const-string v4, "host"
+    const-string/jumbo v4, "host"
 
     invoke-virtual {v3, v4, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -42116,7 +42120,7 @@
 
     move-result-object v3
 
-    const-string v4, "host"
+    const-string/jumbo v4, "host"
 
     invoke-virtual {v3, v4, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -46338,7 +46342,7 @@
 
     .line 3068
     :cond_0
-    const-string v9, "index"
+    const-string/jumbo v9, "index"
 
     invoke-virtual {p1, v9}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
 
@@ -46346,7 +46350,7 @@
 
     if-eqz v9, :cond_6
 
-    const-string v9, "history"
+    const-string/jumbo v9, "history"
 
     invoke-virtual {p1, v9}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
 
@@ -46376,7 +46380,7 @@
 
     .line 3073
     .local v5, list:Landroid/webkit/WebBackForwardList;
-    const-string v9, "index"
+    const-string/jumbo v9, "index"
 
     invoke-virtual {p1, v9}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
 
@@ -46388,7 +46392,7 @@
 
     .line 3078
     :try_start_0
-    const-string v9, "history"
+    const-string/jumbo v9, "history"
 
     invoke-virtual {p1, v9}, Landroid/os/Bundle;->getSerializable(Ljava/lang/String;)Ljava/io/Serializable;
 
@@ -46756,7 +46760,7 @@
 
     .line 2852
     :cond_2
-    const-string v8, "index"
+    const-string/jumbo v8, "index"
 
     invoke-virtual {p1, v8, v0}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
@@ -46822,7 +46826,7 @@
     .end local v1           #data:[B
     .end local v4           #item:Landroid/webkit/WebHistoryItem;
     :cond_5
-    const-string v7, "history"
+    const-string/jumbo v7, "history"
 
     invoke-virtual {p1, v7, v2}, Landroid/os/Bundle;->putSerializable(Ljava/lang/String;Ljava/io/Serializable;)V
 

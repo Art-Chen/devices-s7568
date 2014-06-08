@@ -95,7 +95,7 @@
 
     move-result-object v1
 
-    const v2, #drawable@battery_charge#t
+    const v2, 0x1080a72
 
     invoke-virtual {v1, v2}, Lcom/android/server/am/ActivityManagerService;->setQbBackgroundRes(I)V
 

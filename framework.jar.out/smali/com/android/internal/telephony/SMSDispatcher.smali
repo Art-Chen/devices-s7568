@@ -278,9 +278,14 @@
     .parameter "usageMonitor"
 
     .prologue
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
     const/4 v3, 0x0
 
     const/4 v2, 0x1
+
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
     new-instance v1, Ljava/util/ArrayList;
@@ -369,7 +374,7 @@
 
     iput-boolean v1, p0, Lcom/android/internal/telephony/SMSDispatcher;->mSmsCapable:Z
 
-    const-string v1, "telephony.sms.receive"
+    const-string/jumbo v1, "telephony.sms.receive"
 
     iget-boolean v4, p0, Lcom/android/internal/telephony/SMSDispatcher;->mSmsCapable:Z
 
@@ -384,7 +389,7 @@
     :goto_0
     iput-boolean v1, p0, Lcom/android/internal/telephony/SMSDispatcher;->mSmsReceiveDisabled:Z
 
-    const-string v1, "telephony.sms.send"
+    const-string/jumbo v1, "telephony.sms.send"
 
     iget-boolean v4, p0, Lcom/android/internal/telephony/SMSDispatcher;->mSmsCapable:Z
 
@@ -494,7 +499,7 @@
 
     iget-object v1, p0, Lcom/android/internal/telephony/SMSDispatcher;->mContext:Landroid/content/Context;
 
-    const-string v2, "power"
+    const-string/jumbo v2, "power"
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -635,7 +640,7 @@
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .local v0, intent:Landroid/content/Intent;
-    const-string v1, "result"
+    const-string/jumbo v1, "result"
 
     invoke-virtual {v0, v1, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
@@ -658,6 +663,118 @@
     return-void
 .end method
 
+.method private prehandleMsg(Lcom/android/internal/telephony/SmsMessageBase;[[B)Z
+    .locals 6
+    .parameter "sms"
+    .parameter "pdus"
+
+    .prologue
+    const/4 v1, 0x1
+
+    iget-object v2, p0, Lcom/android/internal/telephony/SMSDispatcher;->mContext:Landroid/content/Context;
+
+    invoke-static {v2, p1}, Lcom/baidu/internal/telephony/SMSPlugin;->baiduPrehandleMsg(Landroid/content/Context;Lcom/android/internal/telephony/SmsMessageBase;)Lcom/baidu/internal/telephony/DisturbPreventUtils$BlockResult;
+
+    move-result-object v0
+
+    .local v0, result:Lcom/baidu/internal/telephony/DisturbPreventUtils$BlockResult;
+    iget v2, v0, Lcom/baidu/internal/telephony/DisturbPreventUtils$BlockResult;->result:I
+
+    if-ne v2, v1, :cond_0
+
+    iget-object v2, p0, Lcom/android/internal/telephony/SMSDispatcher;->mContext:Landroid/content/Context;
+
+    invoke-virtual {p0}, Lcom/android/internal/telephony/SMSDispatcher;->getFormat()Ljava/lang/String;
+
+    move-result-object v3
+
+    iget v4, v0, Lcom/baidu/internal/telephony/DisturbPreventUtils$BlockResult;->reason:I
+
+    const/4 v5, -0x1
+
+    invoke-static {v2, p2, v3, v4, v5}, Lcom/baidu/internal/telephony/SMSPlugin;->dispatchDisturbSmsPdu(Landroid/content/Context;[[BLjava/lang/String;II)V
+
+    :goto_0
+    return v1
+
+    :cond_0
+    const/4 v1, 0x0
+
+    goto :goto_0
+.end method
+
+.method private prehandleMsg([B[[B)Z
+    .locals 7
+    .parameter "pdu"
+    .parameter "pdus"
+
+    .prologue
+    const/4 v2, 0x1
+
+    invoke-virtual {p0}, Lcom/android/internal/telephony/SMSDispatcher;->getFormat()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {p1, v3}, Landroid/telephony/SmsMessage;->createFromPdu([BLjava/lang/String;)Landroid/telephony/SmsMessage;
+
+    move-result-object v3
+
+    iget-object v1, v3, Landroid/telephony/SmsMessage;->mWrappedSmsMessage:Lcom/android/internal/telephony/SmsMessageBase;
+
+    .local v1, sms:Lcom/android/internal/telephony/SmsMessageBase;
+    iget-object v3, p0, Lcom/android/internal/telephony/SMSDispatcher;->mContext:Landroid/content/Context;
+
+    invoke-static {v3, v1}, Lcom/baidu/internal/telephony/SMSPlugin;->baiduPrehandleMsg(Landroid/content/Context;Lcom/android/internal/telephony/SmsMessageBase;)Lcom/baidu/internal/telephony/DisturbPreventUtils$BlockResult;
+
+    move-result-object v0
+
+    .local v0, result:Lcom/baidu/internal/telephony/DisturbPreventUtils$BlockResult;
+    iget v3, v0, Lcom/baidu/internal/telephony/DisturbPreventUtils$BlockResult;->result:I
+
+    if-ne v3, v2, :cond_0
+
+    iget-object v3, p0, Lcom/android/internal/telephony/SMSDispatcher;->mContext:Landroid/content/Context;
+
+    invoke-virtual {p0}, Lcom/android/internal/telephony/SMSDispatcher;->getFormat()Ljava/lang/String;
+
+    move-result-object v4
+
+    iget v5, v0, Lcom/baidu/internal/telephony/DisturbPreventUtils$BlockResult;->reason:I
+
+    const/4 v6, -0x1
+
+    invoke-static {v3, p2, v4, v5, v6}, Lcom/baidu/internal/telephony/SMSPlugin;->dispatchDisturbSmsPdu(Landroid/content/Context;[[BLjava/lang/String;II)V
+
+    :goto_0
+    return v2
+
+    :cond_0
+    const/4 v2, 0x0
+
+    goto :goto_0
+.end method
+
+.method private prehandleTrafficMonitorMsg(Landroid/content/Context;Lcom/android/internal/telephony/SmsMessageBase;[[BLjava/lang/String;)V
+    .locals 1
+    .parameter "mContext"
+    .parameter "sms"
+    .parameter "pdus"
+    .parameter "format"
+
+    .prologue
+    invoke-static {p1, p2}, Lcom/baidu/internal/telephony/SMSPlugin;->shouldFilterForTrafficMonitor(Landroid/content/Context;Lcom/android/internal/telephony/SmsMessageBase;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    invoke-static {p1, p3, p4}, Lcom/baidu/internal/telephony/SMSPlugin;->dispatchTrafficMonitorSmsPdu(Landroid/content/Context;[[BLjava/lang/String;)V
+
+    .line 2115
+    :cond_0
+    return-void
+.end method
+
 .method private sendMultipartSms(Lcom/android/internal/telephony/SMSDispatcher$SmsTracker;)V
     .locals 12
     .parameter "tracker"
@@ -677,7 +794,7 @@
     check-cast v1, Ljava/lang/String;
 
     .local v1, destinationAddress:Ljava/lang/String;
-    const-string v0, "scaddress"
+    const-string/jumbo v0, "scaddress"
 
     invoke-virtual {v8, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -686,7 +803,7 @@
     check-cast v2, Ljava/lang/String;
 
     .local v2, scAddress:Ljava/lang/String;
-    const-string v0, "parts"
+    const-string/jumbo v0, "parts"
 
     invoke-virtual {v8, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -695,7 +812,7 @@
     check-cast v3, Ljava/util/ArrayList;
 
     .local v3, parts:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Ljava/lang/String;>;"
-    const-string v0, "sentIntents"
+    const-string/jumbo v0, "sentIntents"
 
     invoke-virtual {v8, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -883,7 +1000,7 @@
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .local v0, intent:Landroid/content/Intent;
-    const-string v1, "pdus"
+    const-string/jumbo v1, "pdus"
 
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/io/Serializable;)Landroid/content/Intent;
 
@@ -933,7 +1050,7 @@
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .restart local v0       #intent:Landroid/content/Intent;
-    const-string v1, "pdus"
+    const-string/jumbo v1, "pdus"
 
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/io/Serializable;)Landroid/content/Intent;
 
@@ -1019,11 +1136,11 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    const-string v1, "pdus"
+    const-string/jumbo v1, "pdus"
 
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/io/Serializable;)Landroid/content/Intent;
 
-    const-string v1, "port_address"
+    const-string/jumbo v1, "port_address"
 
     invoke-virtual {v0, v1, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
@@ -1083,7 +1200,7 @@
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    const-string v1, "pdus"
+    const-string/jumbo v1, "pdus"
 
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/io/Serializable;)Landroid/content/Intent;
 
@@ -1128,7 +1245,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    const-string v1, "pdus"
+    const-string/jumbo v1, "pdus"
 
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/io/Serializable;)Landroid/content/Intent;
 
@@ -1243,7 +1360,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    const-string v1, "tid"
+    const-string/jumbo v1, "tid"
 
     invoke-virtual {v0, v1, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
@@ -1365,7 +1482,7 @@
     :goto_1
     new-instance v28, Ljava/lang/StringBuilder;
 
-    const-string v3, "reference_number ="
+    const-string/jumbo v3, "reference_number ="
 
     move-object/from16 v0, v28
 
@@ -1514,14 +1631,14 @@
 
     move-result-object v9
 
-    const-string v3, "pdu"
+    const-string/jumbo v3, "pdu"
 
     invoke-interface {v9, v3}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
     move-result v21
 
     .local v21, pduColumn:I
-    const-string v3, "sequence"
+    const-string/jumbo v3, "sequence"
 
     invoke-interface {v9, v3}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
@@ -1542,7 +1659,7 @@
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v5, "segment count in db!! : "
+    const-string/jumbo v5, "segment count in db!! : "
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1582,7 +1699,7 @@
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v5, "segment in db!! : "
+    const-string/jumbo v5, "segment in db!! : "
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1665,7 +1782,7 @@
 
     invoke-virtual {v0, v3, v4}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
-    const-string v3, "pdu"
+    const-string/jumbo v3, "pdu"
 
     move-object/from16 v0, p1
 
@@ -1693,7 +1810,7 @@
 
     invoke-virtual {v0, v3, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    const-string v3, "reference_number"
+    const-string/jumbo v3, "reference_number"
 
     invoke-static/range {p2 .. p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1713,7 +1830,7 @@
 
     invoke-virtual {v0, v3, v4}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    const-string v3, "sequence"
+    const-string/jumbo v3, "sequence"
 
     invoke-static/range {v23 .. v23}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2792,7 +2909,7 @@
 
     const-string v31, "SMS"
 
-    const-string v32, "missing MSISDN number."
+    const-string/jumbo v32, "missing MSISDN number."
 
     invoke-static/range {v31 .. v32}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -2851,7 +2968,7 @@
 
     invoke-direct/range {v32 .. v32}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v33, "msisdnNumber: "
+    const-string/jumbo v33, "msisdnNumber: "
 
     invoke-virtual/range {v32 .. v33}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2949,7 +3066,7 @@
 
     const-string v31, "SMS"
 
-    const-string v32, "send intent ACTION_LOCKPATTERN_CLEAR "
+    const-string/jumbo v32, "send intent ACTION_LOCKPATTERN_CLEAR "
 
     invoke-static/range {v31 .. v32}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -3010,7 +3127,7 @@
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .local v0, intent:Landroid/content/Intent;
-    const-string v1, "pdus"
+    const-string/jumbo v1, "pdus"
 
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/io/Serializable;)Landroid/content/Intent;
 
@@ -3042,11 +3159,11 @@
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .local v0, intent:Landroid/content/Intent;
-    const-string v1, "pdus"
+    const-string/jumbo v1, "pdus"
 
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/io/Serializable;)Landroid/content/Intent;
 
-    const-string v1, "reassembleTimeout"
+    const-string/jumbo v1, "reassembleTimeout"
 
     invoke-virtual {v0, v1, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
@@ -3067,7 +3184,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "sms://localhost:"
+    const-string/jumbo v3, "sms://localhost:"
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -3093,7 +3210,7 @@
     invoke-direct {v0, v2, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
     .local v0, intent:Landroid/content/Intent;
-    const-string v2, "pdus"
+    const-string/jumbo v2, "pdus"
 
     invoke-virtual {v0, v2, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/io/Serializable;)Landroid/content/Intent;
 
@@ -3242,7 +3359,7 @@
 
     invoke-static {v5, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    const-string v0, "msg_body"
+    const-string/jumbo v0, "msg_body"
 
     .local v0, FIELD_MSG_BODY:Ljava/lang/String;
     new-instance v2, Landroid/content/Intent;
@@ -3258,7 +3375,7 @@
 
     invoke-virtual {v2, v5, v6}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    const-string v5, "msg_body"
+    const-string/jumbo v5, "msg_body"
 
     new-instance v6, Ljava/lang/String;
 
@@ -3329,7 +3446,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    const-string v1, "pdus"
+    const-string/jumbo v1, "pdus"
 
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;[B)Landroid/content/Intent;
 
@@ -3533,7 +3650,7 @@
 
     invoke-direct {v12}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v13, "international even smsc = "
+    const-string/jumbo v13, "international even smsc = "
 
     invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -3571,7 +3688,7 @@
 
     invoke-direct {v12}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v13, "smsc = "
+    const-string/jumbo v13, "smsc = "
 
     invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -3698,7 +3815,7 @@
     check-cast v6, Landroid/os/AsyncResult;
 
     .local v6, ar:Landroid/os/AsyncResult;
-    const-string v21, "ril.sms.gcf-mode"
+    const-string/jumbo v21, "ril.sms.gcf-mode"
 
     invoke-static/range {v21 .. v21}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -4501,6 +4618,10 @@
 
     nop
 
+    nop
+
+    nop
+
     :sswitch_data_0
     .sparse-switch
         0x1 -> :sswitch_0
@@ -4695,7 +4816,7 @@
     :cond_0
     const-string v0, "SMS"
 
-    const-string v1, "it\'s not proper segmented message"
+    const-string/jumbo v1, "it\'s not proper segmented message"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -4706,7 +4827,7 @@
     :cond_2
     new-instance v12, Ljava/lang/StringBuilder;
 
-    const-string v0, "reference_number ="
+    const-string/jumbo v0, "reference_number ="
 
     invoke-direct {v12, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
@@ -4764,7 +4885,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "there is no segmented sms with reference number "
+    const-string/jumbo v2, "there is no segmented sms with reference number "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -4794,7 +4915,7 @@
 
     :cond_3
     :try_start_1
-    const-string v0, "pdu"
+    const-string/jumbo v0, "pdu"
 
     invoke-interface {v6, v0}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
@@ -5161,9 +5282,9 @@
     .locals 2
 
     .prologue
-    const-string v0, "trigger_restart_min_framework"
+    const-string/jumbo v0, "trigger_restart_min_framework"
 
-    const-string v1, "vold.decrypt"
+    const-string/jumbo v1, "vold.decrypt"
 
     invoke-static {v1}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -5177,7 +5298,7 @@
 
     const-string v0, "1"
 
-    const-string v1, "vold.decrypt"
+    const-string/jumbo v1, "vold.decrypt"
 
     invoke-static {v1}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -5265,7 +5386,7 @@
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v4, "isSMSBlocked="
+    const-string/jumbo v4, "isSMSBlocked="
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -6700,7 +6821,7 @@
     const-string v3, "000"
 
     .local v3, mcc:Ljava/lang/String;
-    const-string v9, "gsm.operator.numeric"
+    const-string/jumbo v9, "gsm.operator.numeric"
 
     invoke-static {v9}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -6777,11 +6898,11 @@
     invoke-direct {v2}, Ljava/util/HashMap;-><init>()V
 
     .local v2, map:Ljava/util/HashMap;,"Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/Object;>;"
-    const-string v9, "smsc"
+    const-string/jumbo v9, "smsc"
 
     invoke-virtual {v2, v9, p1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const-string v9, "pdu"
+    const-string/jumbo v9, "pdu"
 
     invoke-virtual {v2, v9, p2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -6864,7 +6985,7 @@
     const-string v2, "000"
 
     .local v2, mcc:Ljava/lang/String;
-    const-string v7, "gsm.operator.numeric"
+    const-string/jumbo v7, "gsm.operator.numeric"
 
     invoke-static {v7}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -6940,11 +7061,11 @@
     invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
 
     .local v1, map:Ljava/util/HashMap;,"Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/Object;>;"
-    const-string v7, "smsc"
+    const-string/jumbo v7, "smsc"
 
     invoke-virtual {v1, v7, p1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const-string v7, "pdu"
+    const-string/jumbo v7, "pdu"
 
     invoke-virtual {v1, v7, p2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -6956,7 +7077,7 @@
 
     invoke-virtual {v1, v7, v8}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const-string v7, "totalCnt"
+    const-string/jumbo v7, "totalCnt"
 
     invoke-static {p6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -6964,7 +7085,7 @@
 
     invoke-virtual {v1, v7, v8}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const-string v7, "prefMode"
+    const-string/jumbo v7, "prefMode"
 
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -7103,117 +7224,5 @@
 
     .line 381
     :cond_1
-    return-void
-.end method
-
-.method private prehandleMsg(Lcom/android/internal/telephony/SmsMessageBase;[[B)Z
-    .locals 6
-    .parameter "sms"
-    .parameter "pdus"
-
-    .prologue
-    const/4 v1, 0x1
-
-    iget-object v2, p0, Lcom/android/internal/telephony/SMSDispatcher;->mContext:Landroid/content/Context;
-
-    invoke-static {v2, p1}, Lcom/baidu/internal/telephony/SMSPlugin;->baiduPrehandleMsg(Landroid/content/Context;Lcom/android/internal/telephony/SmsMessageBase;)Lcom/baidu/internal/telephony/DisturbPreventUtils$BlockResult;
-
-    move-result-object v0
-
-    .local v0, result:Lcom/baidu/internal/telephony/DisturbPreventUtils$BlockResult;
-    iget v2, v0, Lcom/baidu/internal/telephony/DisturbPreventUtils$BlockResult;->result:I
-
-    if-ne v2, v1, :cond_0
-
-    iget-object v2, p0, Lcom/android/internal/telephony/SMSDispatcher;->mContext:Landroid/content/Context;
-
-    invoke-virtual {p0}, Lcom/android/internal/telephony/SMSDispatcher;->getFormat()Ljava/lang/String;
-
-    move-result-object v3
-
-    iget v4, v0, Lcom/baidu/internal/telephony/DisturbPreventUtils$BlockResult;->reason:I
-
-    const/4 v5, -0x1
-
-    invoke-static {v2, p2, v3, v4, v5}, Lcom/baidu/internal/telephony/SMSPlugin;->dispatchDisturbSmsPdu(Landroid/content/Context;[[BLjava/lang/String;II)V
-
-    :goto_0
-    return v1
-
-    :cond_0
-    const/4 v1, 0x0
-
-    goto :goto_0
-.end method
-
-.method private prehandleMsg([B[[B)Z
-    .locals 7
-    .parameter "pdu"
-    .parameter "pdus"
-
-    .prologue
-    const/4 v2, 0x1
-
-    invoke-virtual {p0}, Lcom/android/internal/telephony/SMSDispatcher;->getFormat()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-static {p1, v3}, Landroid/telephony/SmsMessage;->createFromPdu([BLjava/lang/String;)Landroid/telephony/SmsMessage;
-
-    move-result-object v3
-
-    iget-object v1, v3, Landroid/telephony/SmsMessage;->mWrappedSmsMessage:Lcom/android/internal/telephony/SmsMessageBase;
-
-    .local v1, sms:Lcom/android/internal/telephony/SmsMessageBase;
-    iget-object v3, p0, Lcom/android/internal/telephony/SMSDispatcher;->mContext:Landroid/content/Context;
-
-    invoke-static {v3, v1}, Lcom/baidu/internal/telephony/SMSPlugin;->baiduPrehandleMsg(Landroid/content/Context;Lcom/android/internal/telephony/SmsMessageBase;)Lcom/baidu/internal/telephony/DisturbPreventUtils$BlockResult;
-
-    move-result-object v0
-
-    .local v0, result:Lcom/baidu/internal/telephony/DisturbPreventUtils$BlockResult;
-    iget v3, v0, Lcom/baidu/internal/telephony/DisturbPreventUtils$BlockResult;->result:I
-
-    if-ne v3, v2, :cond_0
-
-    iget-object v3, p0, Lcom/android/internal/telephony/SMSDispatcher;->mContext:Landroid/content/Context;
-
-    invoke-virtual {p0}, Lcom/android/internal/telephony/SMSDispatcher;->getFormat()Ljava/lang/String;
-
-    move-result-object v4
-
-    iget v5, v0, Lcom/baidu/internal/telephony/DisturbPreventUtils$BlockResult;->reason:I
-
-    const/4 v6, -0x1
-
-    invoke-static {v3, p2, v4, v5, v6}, Lcom/baidu/internal/telephony/SMSPlugin;->dispatchDisturbSmsPdu(Landroid/content/Context;[[BLjava/lang/String;II)V
-
-    :goto_0
-    return v2
-
-    :cond_0
-    const/4 v2, 0x0
-
-    goto :goto_0
-.end method
-
-.method private prehandleTrafficMonitorMsg(Landroid/content/Context;Lcom/android/internal/telephony/SmsMessageBase;[[BLjava/lang/String;)V
-    .locals 1
-    .parameter "mContext"
-    .parameter "sms"
-    .parameter "pdus"
-    .parameter "format"
-
-    .prologue
-    invoke-static {p1, p2}, Lcom/baidu/internal/telephony/SMSPlugin;->shouldFilterForTrafficMonitor(Landroid/content/Context;Lcom/android/internal/telephony/SmsMessageBase;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    invoke-static {p1, p3, p4}, Lcom/baidu/internal/telephony/SMSPlugin;->dispatchTrafficMonitorSmsPdu(Landroid/content/Context;[[BLjava/lang/String;)V
-
-    .line 2115
-    :cond_0
     return-void
 .end method

@@ -1242,7 +1242,7 @@
 
     move-result-object v4
 
-    const-string v9, "host"
+    const-string/jumbo v9, "host"
 
     invoke-virtual {v4, v9}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
@@ -1312,7 +1312,7 @@
 
     move-object/from16 v19, v0
 
-    const-string v4, "handler"
+    const-string/jumbo v4, "handler"
 
     move-object/from16 v0, v52
 
@@ -1395,7 +1395,7 @@
 
     move-object/from16 v19, v0
 
-    const-string v4, "handler"
+    const-string/jumbo v4, "handler"
 
     move-object/from16 v0, v52
 
@@ -1405,7 +1405,7 @@
 
     check-cast v4, Landroid/webkit/ClientCertRequestHandler;
 
-    const-string v9, "host_and_port"
+    const-string/jumbo v9, "host_and_port"
 
     move-object/from16 v0, v52
 
@@ -1796,7 +1796,7 @@
 
     .line 495
     .local v36, bundle:Landroid/os/Bundle;
-    const-string v4, "host"
+    const-string/jumbo v4, "host"
 
     move-object/from16 v0, v36
 
@@ -2302,7 +2302,7 @@
 
     .line 609
     .restart local v52       #map:Ljava/util/HashMap;,"Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/Object;>;"
-    const-string v4, "iconUrl"
+    const-string/jumbo v4, "iconUrl"
 
     move-object/from16 v0, v52
 
@@ -3616,7 +3616,7 @@
 
     move-result-object v4
 
-    const-string v9, "host"
+    const-string/jumbo v9, "host"
 
     invoke-virtual {v4, v9}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
@@ -3906,7 +3906,7 @@
 
     move-result-object v9
 
-    const-string v10, "id"
+    const-string/jumbo v10, "id"
 
     invoke-virtual {v9, v10}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
 
@@ -5137,7 +5137,7 @@
 
     .line 1789
     .local v2, map:Ljava/util/HashMap;,"Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/Object;>;"
-    const-string v4, "iconUrl"
+    const-string/jumbo v4, "iconUrl"
 
     invoke-virtual {v2, v4, p1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -5598,12 +5598,12 @@
 
     .line 1262
     .local v0, map:Ljava/util/HashMap;,"Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/Object;>;"
-    const-string v2, "handler"
+    const-string/jumbo v2, "handler"
 
     invoke-virtual {v0, v2, p1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 1263
-    const-string v2, "host_and_port"
+    const-string/jumbo v2, "host_and_port"
 
     invoke-virtual {v0, v2, p2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -5689,7 +5689,7 @@
 
     move-result-object v1
 
-    const-string v2, "host"
+    const-string/jumbo v2, "host"
 
     invoke-virtual {v1, v2, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -5760,7 +5760,7 @@
 
     move-result-object v1
 
-    const-string v2, "host"
+    const-string/jumbo v2, "host"
 
     invoke-virtual {v1, v2, p2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -5907,7 +5907,7 @@
 
     .line 1238
     .local v0, map:Ljava/util/HashMap;,"Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/Object;>;"
-    const-string v2, "handler"
+    const-string/jumbo v2, "handler"
 
     invoke-virtual {v0, v2, p1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -6073,7 +6073,7 @@
 
     .line 1387
     .local v0, bundle:Landroid/os/Bundle;
-    const-string v3, "host"
+    const-string/jumbo v3, "host"
 
     invoke-virtual {v0, v3, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -6230,7 +6230,7 @@
 
     move-result-object v1
 
-    const-string v2, "id"
+    const-string/jumbo v2, "id"
 
     invoke-virtual {v1, v2, p2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 

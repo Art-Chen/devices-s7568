@@ -258,13 +258,13 @@
 
     const/4 v1, 0x0
 
-    const-string v4, "http://"
+    const-string/jumbo v4, "http://"
 
     aput-object v4, v3, v1
 
     const/4 v1, 0x1
 
-    const-string v4, "https://"
+    const-string/jumbo v4, "https://"
 
     aput-object v4, v3, v1
 
@@ -297,13 +297,13 @@
 
     const/4 v1, 0x0
 
-    const-string v4, "http://"
+    const-string/jumbo v4, "http://"
 
     aput-object v4, v3, v1
 
     const/4 v1, 0x1
 
-    const-string v4, "https://"
+    const-string/jumbo v4, "https://"
 
     aput-object v4, v3, v1
 
@@ -377,7 +377,7 @@
 
     if-nez v1, :cond_4
 
-    const-string v1, "http://"
+    const-string/jumbo v1, "http://"
 
     invoke-virtual {v10, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
@@ -385,7 +385,7 @@
 
     if-nez v1, :cond_4
 
-    const-string v1, "https://"
+    const-string/jumbo v1, "https://"
 
     invoke-virtual {v10, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 

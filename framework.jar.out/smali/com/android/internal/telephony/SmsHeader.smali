@@ -475,7 +475,7 @@
 
     invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v10, "id:"
+    const-string/jumbo v10, "id:"
 
     invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -535,6 +535,8 @@
     return-object v7
 
     .line 177
+    nop
+
     nop
 
     :sswitch_data_0

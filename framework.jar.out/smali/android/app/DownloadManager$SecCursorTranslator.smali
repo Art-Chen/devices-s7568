@@ -163,7 +163,7 @@
     if-nez v6, :cond_1
 
     .line 1989
-    const-string v5, "hint"
+    const-string/jumbo v5, "hint"
 
     invoke-direct {p0, v5}, Landroid/app/DownloadManager$SecCursorTranslator;->getUnderlyingString(Ljava/lang/String;)Ljava/lang/String;
 

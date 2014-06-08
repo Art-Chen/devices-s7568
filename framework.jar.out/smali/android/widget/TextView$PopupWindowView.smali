@@ -115,7 +115,7 @@
 
     move-result-object v1
 
-    const v2, #color@transparent#t
+    const v2, 0x106000d
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -186,7 +186,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "mBounds.left = "
+    const-string/jumbo v2, "mBounds.left = "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -213,7 +213,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "mBounds.right = "
+    const-string/jumbo v2, "mBounds.right = "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -240,7 +240,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "mBounds.top = "
+    const-string/jumbo v2, "mBounds.top = "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -267,7 +267,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "mBounds.bottom = "
+    const-string/jumbo v2, "mBounds.bottom = "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1104,7 +1104,7 @@
     .line 11693
     iget-object v0, p0, Landroid/widget/TextView$PopupWindowView;->mWindow:Landroid/widget/PopupWindow;
 
-    const v1, #style@Animation.OptionsPanel#t
+    const v1, 0x10301db
 
     invoke-virtual {v0, v1}, Landroid/widget/PopupWindow;->setAnimationStyle(I)V
 

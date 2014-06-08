@@ -51,7 +51,7 @@
     if-eqz v0, :cond_0
 
     .line 75
-    const-string v1, "hiresp"
+    const-string/jumbo v1, "hiresp"
 
     invoke-virtual {v0, v1}, Landroid/os/Bundle;->getByteArray(Ljava/lang/String;)[B
 
@@ -60,7 +60,7 @@
     iput-object v1, p0, Landroid/nfc/tech/IsoDep;->mHiLayerResponse:[B
 
     .line 76
-    const-string v1, "histbytes"
+    const-string/jumbo v1, "histbytes"
 
     invoke-virtual {v0, v1}, Landroid/os/Bundle;->getByteArray(Ljava/lang/String;)[B
 

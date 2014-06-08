@@ -421,6 +421,27 @@
     return v1
 .end method
 
+.method private static setOutputBaidu(II)I
+    .locals 3
+    .parameter "input"
+    .parameter "orgOutput"
+
+    .prologue
+    const/high16 v2, -0x8000
+
+    move v0, p1
+
+    .local v0, output:I
+    and-int v1, p0, v2
+
+    if-eqz v1, :cond_0
+
+    or-int/2addr v0, v2
+
+    :cond_0
+    return v0
+.end method
+
 
 # virtual methods
 .method public describeContents()I
@@ -871,25 +892,4 @@
 
     .line 541
     return-void
-.end method
-
-.method private static setOutputBaidu(II)I
-    .locals 3
-    .parameter "input"
-    .parameter "orgOutput"
-
-    .prologue
-    const/high16 v2, -0x8000
-
-    move v0, p1
-
-    .local v0, output:I
-    and-int v1, p0, v2
-
-    if-eqz v1, :cond_0
-
-    or-int/2addr v0, v2
-
-    :cond_0
-    return v0
 .end method

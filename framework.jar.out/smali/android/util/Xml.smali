@@ -22,7 +22,7 @@
 
     .prologue
     .line 47
-    const-string v0, "http://xmlpull.org/v1/doc/features.html#relaxed"
+    const-string/jumbo v0, "http://xmlpull.org/v1/doc/features.html#relaxed"
 
     sput-object v0, Landroid/util/Xml;->FEATURE_RELAXED:Ljava/lang/String;
 
@@ -141,14 +141,14 @@
 
     .line 93
     .local v1, parser:Lorg/kxml2/io/KXmlParser;
-    const-string v2, "http://xmlpull.org/v1/doc/features.html#process-docdecl"
+    const-string/jumbo v2, "http://xmlpull.org/v1/doc/features.html#process-docdecl"
 
     const/4 v3, 0x1
 
     invoke-virtual {v1, v2, v3}, Lorg/kxml2/io/KXmlParser;->setFeature(Ljava/lang/String;Z)V
 
     .line 94
-    const-string v2, "http://xmlpull.org/v1/doc/features.html#process-namespaces"
+    const-string/jumbo v2, "http://xmlpull.org/v1/doc/features.html#process-namespaces"
 
     const/4 v3, 0x1
 

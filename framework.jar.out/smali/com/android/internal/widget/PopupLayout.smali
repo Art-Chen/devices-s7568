@@ -37,12 +37,12 @@
     invoke-direct {p0, p1}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
     .line 20
-    const v1, #drawable@yi_popup_arrow_down#t
+    const v1, 0x1080c95
 
     iput v1, p0, Lcom/android/internal/widget/PopupLayout;->mArrowDown:I
 
     .line 21
-    const v1, #drawable@yi_popup_arrow_up#t
+    const v1, 0x1080c96
 
     iput v1, p0, Lcom/android/internal/widget/PopupLayout;->mArrowUp:I
 
@@ -96,12 +96,12 @@
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 20
-    const v1, #drawable@yi_popup_arrow_down#t
+    const v1, 0x1080c95
 
     iput v1, p0, Lcom/android/internal/widget/PopupLayout;->mArrowDown:I
 
     .line 21
-    const v1, #drawable@yi_popup_arrow_up#t
+    const v1, 0x1080c96
 
     iput v1, p0, Lcom/android/internal/widget/PopupLayout;->mArrowUp:I
 

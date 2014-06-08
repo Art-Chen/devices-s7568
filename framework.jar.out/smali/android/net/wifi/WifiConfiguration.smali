@@ -298,7 +298,7 @@
     .line 110
     new-instance v5, Landroid/net/wifi/WifiConfiguration$EnterpriseField;
 
-    const-string v6, "identity"
+    const-string/jumbo v6, "identity"
 
     invoke-direct {v5, p0, v6, v8}, Landroid/net/wifi/WifiConfiguration$EnterpriseField;-><init>(Landroid/net/wifi/WifiConfiguration;Ljava/lang/String;Landroid/net/wifi/WifiConfiguration$1;)V
 
@@ -620,7 +620,7 @@
     .line 110
     new-instance v1, Landroid/net/wifi/WifiConfiguration$EnterpriseField;
 
-    const-string v2, "identity"
+    const-string/jumbo v2, "identity"
 
     invoke-direct {v1, p0, v2, v3}, Landroid/net/wifi/WifiConfiguration$EnterpriseField;-><init>(Landroid/net/wifi/WifiConfiguration;Ljava/lang/String;Landroid/net/wifi/WifiConfiguration$1;)V
 

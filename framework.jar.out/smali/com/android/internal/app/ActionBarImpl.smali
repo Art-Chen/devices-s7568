@@ -181,7 +181,7 @@
     if-nez v2, :cond_0
 
     .line 139
-    const v2, #id@content#t
+    const v2, 0x1020002
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -562,7 +562,7 @@
     iput-object v0, p0, Lcom/android/internal/app/ActionBarImpl;->mContext:Landroid/content/Context;
 
     .line 150
-    const v0, #id@action_bar#t
+    const v0, 0x1020406
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -573,7 +573,7 @@
     iput-object v0, p0, Lcom/android/internal/app/ActionBarImpl;->mActionView:Lcom/android/internal/widget/ActionBarView;
 
     .line 151
-    const v0, #id@action_context_bar#t
+    const v0, 0x1020407
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -584,7 +584,7 @@
     iput-object v0, p0, Lcom/android/internal/app/ActionBarImpl;->mContextView:Lcom/android/internal/widget/ActionBarContextView;
 
     .line 153
-    const v0, #id@action_bar_container#t
+    const v0, 0x1020405
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -595,7 +595,7 @@
     iput-object v0, p0, Lcom/android/internal/app/ActionBarImpl;->mContainerView:Lcom/android/internal/widget/ActionBarContainer;
 
     .line 155
-    const v0, #id@split_action_bar#t
+    const v0, 0x1020408
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1380,7 +1380,7 @@
 
     .line 627
     .local v0, currentTheme:Landroid/content/res/Resources$Theme;
-    const v3, #attr@actionBarWidgetTheme#t
+    const v3, 0x1010397
 
     const/4 v4, 0x1
 

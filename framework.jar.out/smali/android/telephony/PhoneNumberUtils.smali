@@ -1801,7 +1801,7 @@
     if-eqz v2, :cond_0
 
     .line 2919
-    const-string v2, "gsm.operator.iso-country"
+    const-string/jumbo v2, "gsm.operator.iso-country"
 
     const-string v3, ""
 
@@ -1811,7 +1811,7 @@
 
     .line 2920
     .local v0, currIso:Ljava/lang/String;
-    const-string v2, "gsm.sim.operator.iso-country"
+    const-string/jumbo v2, "gsm.sim.operator.iso-country"
 
     const-string v3, ""
 
@@ -2103,7 +2103,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "invalid char for BCD "
+    const-string/jumbo v2, "invalid char for BCD "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -7256,7 +7256,7 @@
 
     .line 2519
     .local v3, currIso:Ljava/lang/String;
-    const-string v26, "gsm.sim.state"
+    const-string/jumbo v26, "gsm.sim.state"
 
     const-string v27, ""
 
@@ -7266,7 +7266,7 @@
 
     .line 2520
     .local v23, simstate:Ljava/lang/String;
-    const-string v26, "gsm.network.type"
+    const-string/jumbo v26, "gsm.network.type"
 
     const-string v27, ""
 
@@ -7330,7 +7330,7 @@
 
     invoke-direct/range {v26 .. v26}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v27, "isCdma = "
+    const-string/jumbo v27, "isCdma = "
 
     invoke-virtual/range {v26 .. v27}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

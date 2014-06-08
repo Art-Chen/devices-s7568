@@ -48,7 +48,7 @@ vendor_remove_files := bin/samsungani
 ##############################################################################
 # Vendor apks you want to use
 #-----------------------------------------------------------------------------
-vendor_saved_apps := BluetoothAvrcp BluetoothMap BluetoothTest SecBluetooth
+vendor_saved_apps := BluetoothAvrcp BluetoothMap BluetoothTest SecBluetooth MtpApplication SamsungCamera
 
 ##############################################################################
 # Apks build from current project root directory

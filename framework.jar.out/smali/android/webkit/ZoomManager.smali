@@ -4153,7 +4153,7 @@
     .line 1070
     const-string v1, "ZoomManager"
 
-    const-string v2, "handleDoubleTap start "
+    const-string/jumbo v2, "handleDoubleTap start "
 
     invoke-static {v1, v2}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -4240,7 +4240,7 @@
     .line 1139
     const-string v1, "ZoomManager"
 
-    const-string v2, "handleDoubleTap END "
+    const-string/jumbo v2, "handleDoubleTap END "
 
     invoke-static {v1, v2}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 

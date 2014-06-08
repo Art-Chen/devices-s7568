@@ -2303,7 +2303,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "isCMASMessage in SmsMessage.java from cdma, bIsCMAS = "
+    const-string/jumbo v2, "isCMASMessage in SmsMessage.java from cdma, bIsCMAS = "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -4643,7 +4643,7 @@
     .line 638
     const-string v0, "CDMA"
 
-    const-string v1, "isCphsMwiMessage: is not supported in CDMA mode."
+    const-string/jumbo v1, "isCphsMwiMessage: is not supported in CDMA mode."
 
     invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 

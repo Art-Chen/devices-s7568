@@ -143,7 +143,7 @@
 
     .line 186
     :goto_0
-    const-string v2, "if (window.chrome && window.chrome.searchBox && window.chrome.searchBox.on%1$s) {  window.chrome.searchBox.on%1$s();  window.searchBoxJavaBridge_.dispatchCompleteCallback(\'%1$s\', %2$d, true);} else {  window.searchBoxJavaBridge_.dispatchCompleteCallback(\'%1$s\', %2$d, false);}"
+    const-string/jumbo v2, "if (window.chrome && window.chrome.searchBox && window.chrome.searchBox.on%1$s) {  window.chrome.searchBox.on%1$s();  window.searchBoxJavaBridge_.dispatchCompleteCallback(\'%1$s\', %2$d, true);} else {  window.searchBoxJavaBridge_.dispatchCompleteCallback(\'%1$s\', %2$d, false);}"
 
     const/4 v3, 0x2
 
@@ -553,7 +553,7 @@
     iput-object p1, p0, Landroid/webkit/SearchBoxImpl;->mSupportedCallback:Landroid/webkit/SearchBox$IsSupportedCallback;
 
     .line 211
-    const-string v0, "if (window.searchBoxJavaBridge_) {  if (window.chrome && window.chrome.sv) {    window.searchBoxJavaBridge_.isSupportedCallback(true);  } else {    window.searchBoxJavaBridge_.isSupportedCallback(false);  }}"
+    const-string/jumbo v0, "if (window.searchBoxJavaBridge_) {  if (window.chrome && window.chrome.sv) {    window.searchBoxJavaBridge_.isSupportedCallback(true);  } else {    window.searchBoxJavaBridge_.isSupportedCallback(false);  }}"
 
     invoke-direct {p0, v0}, Landroid/webkit/SearchBoxImpl;->dispatchJs(Ljava/lang/String;)V
 
@@ -673,7 +673,7 @@
 
     .prologue
     .line 152
-    const-string v1, "if (window.chrome && window.chrome.searchBox) {   var f = window.chrome.searchBox;  f.x = %d;  f.y = %d;  f.width = %d;  f.height = %d;}"
+    const-string/jumbo v1, "if (window.chrome && window.chrome.searchBox) {   var f = window.chrome.searchBox;  f.x = %d;  f.y = %d;  f.width = %d;  f.height = %d;}"
 
     const/4 v2, 0x4
 
@@ -738,7 +738,7 @@
     if-eqz v0, :cond_0
 
     .line 132
-    const-string v2, "if (window.chrome && window.chrome.searchBox) {  window.chrome.searchBox.setValue(%s);}"
+    const-string/jumbo v2, "if (window.chrome && window.chrome.searchBox) {  window.chrome.searchBox.setValue(%s);}"
 
     const/4 v3, 0x1
 
@@ -769,7 +769,7 @@
 
     .prologue
     .line 146
-    const-string v1, "if (window.chrome && window.chrome.searchBox) {  var f = window.chrome.searchBox;  f.selectionStart = %d  f.selectionEnd = %d}"
+    const-string/jumbo v1, "if (window.chrome && window.chrome.searchBox) {  var f = window.chrome.searchBox;  f.selectionStart = %d  f.selectionEnd = %d}"
 
     const/4 v2, 0x2
 
@@ -951,7 +951,7 @@
 
     .prologue
     .line 139
-    const-string v1, "if (window.chrome && window.chrome.searchBox) {  window.chrome.searchBox.verbatim = %1$s;}"
+    const-string/jumbo v1, "if (window.chrome && window.chrome.searchBox) {  window.chrome.searchBox.verbatim = %1$s;}"
 
     const/4 v2, 0x1
 

@@ -953,7 +953,7 @@
 
     move-object/from16 v17, v0
 
-    const-string v18, "inputType=NumberPicker_edittext"
+    const-string/jumbo v18, "inputType=NumberPicker_edittext"
 
     invoke-virtual/range {v17 .. v18}, Landroid/widget/EditText;->setPrivateImeOptions(Ljava/lang/String;)V
 
@@ -1377,6 +1377,8 @@
     goto :goto_1
 
     .line 300
+    nop
+
     nop
 
     :array_0
@@ -5720,7 +5722,7 @@
     .line 2152
     iget-object v0, p0, Landroid/widget/NumberPicker;->mInputText:Landroid/widget/EditText;
 
-    const-string v1, "inputType=month_edittext"
+    const-string/jumbo v1, "inputType=month_edittext"
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setPrivateImeOptions(Ljava/lang/String;)V
 
@@ -5749,7 +5751,7 @@
     .line 2158
     iget-object v0, p0, Landroid/widget/NumberPicker;->mInputText:Landroid/widget/EditText;
 
-    const-string v1, "inputType=YearDateTime_edittext"
+    const-string/jumbo v1, "inputType=YearDateTime_edittext"
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setPrivateImeOptions(Ljava/lang/String;)V
 

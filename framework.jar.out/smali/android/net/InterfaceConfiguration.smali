@@ -157,7 +157,7 @@
 
     .line 41
     .local v0, str:Ljava/lang/StringBuffer;
-    const-string v1, "ipddress "
+    const-string/jumbo v1, "ipddress "
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 

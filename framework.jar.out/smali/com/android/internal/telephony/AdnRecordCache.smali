@@ -366,7 +366,7 @@
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v4, "iccType ="
+    const-string/jumbo v4, "iccType ="
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -414,6 +414,8 @@
     goto :goto_0
 
     .line 123
+    nop
+
     :sswitch_data_0
     .sparse-switch
         0x4f30 -> :sswitch_5

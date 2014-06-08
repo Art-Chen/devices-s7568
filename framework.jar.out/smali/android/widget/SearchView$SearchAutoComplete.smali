@@ -276,7 +276,7 @@
 
     move-result-object v4
 
-    const-string v5, "input_method"
+    const-string/jumbo v5, "input_method"
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -330,7 +330,7 @@
 
     move-result-object v4
 
-    const-string v5, "input_method"
+    const-string/jumbo v5, "input_method"
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 

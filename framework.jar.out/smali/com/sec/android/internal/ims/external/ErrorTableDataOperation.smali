@@ -264,7 +264,7 @@
     move-result-object v7
 
     .line 104
-    const-string v1, "insertDataIntoDB __________"
+    const-string/jumbo v1, "insertDataIntoDB __________"
 
     invoke-virtual {p0, v1}, Lcom/sec/android/internal/ims/external/ErrorTableDataOperation;->log(Ljava/lang/String;)V
 
@@ -433,7 +433,7 @@
     iput-object v2, v1, Lcom/sec/android/internal/ims/external/ErrorTableData;->mErrorString:Ljava/lang/String;
 
     .line 135
-    const-string v1, "insertDataIntoDB __________"
+    const-string/jumbo v1, "insertDataIntoDB __________"
 
     invoke-virtual {p0, v1}, Lcom/sec/android/internal/ims/external/ErrorTableDataOperation;->log(Ljava/lang/String;)V
 
@@ -788,7 +788,7 @@
 
     .line 183
     :cond_2
-    const-string v1, "insertDataIntoDB __"
+    const-string/jumbo v1, "insertDataIntoDB __"
 
     invoke-virtual {p0, v1}, Lcom/sec/android/internal/ims/external/ErrorTableDataOperation;->log(Ljava/lang/String;)V
 

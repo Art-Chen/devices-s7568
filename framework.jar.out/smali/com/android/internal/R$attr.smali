@@ -1318,6 +1318,10 @@
 
 .field public static final pivotY:I = 0x10101b6
 
+.field public static final pointOff:I = 0x1010451
+
+.field public static final pointOn:I = 0x1010450
+
 .field public static final pointerIconArrow:I = 0x1010429
 
 .field public static final pointerIconSpotAnchor:I = 0x101042c

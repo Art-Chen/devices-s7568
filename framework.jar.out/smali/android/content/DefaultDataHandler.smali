@@ -512,7 +512,7 @@
 
     invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v9, "insert to uri "
+    const-string/jumbo v9, "insert to uri "
 
     invoke-virtual {v7, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -625,7 +625,7 @@
 
     invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v9, "illegal attributes number "
+    const-string/jumbo v9, "illegal attributes number "
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -699,7 +699,7 @@
     :cond_7
     new-instance v7, Lorg/xml/sax/SAXException;
 
-    const-string v8, "illegal attributes value"
+    const-string/jumbo v8, "illegal attributes value"
 
     invoke-direct {v7, v8}, Lorg/xml/sax/SAXException;-><init>(Ljava/lang/String;)V
 

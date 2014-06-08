@@ -118,7 +118,7 @@
 
     invoke-direct {v15}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v16, "handleMessage: "
+    const-string/jumbo v16, "handleMessage: "
 
     invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2349,6 +2349,8 @@
     goto/16 :goto_0
 
     .line 1154
+    nop
+
     :sswitch_data_0
     .sparse-switch
         0x1 -> :sswitch_2

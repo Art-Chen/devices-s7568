@@ -154,7 +154,7 @@
     move-result-object v3
 
     .line 113
-    const-string v6, "intent"
+    const-string/jumbo v6, "intent"
 
     invoke-virtual {v6, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

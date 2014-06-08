@@ -78,12 +78,12 @@
     invoke-direct {p0, v2}, Landroid/content/SyncOperation;->removeFalseExtra(Ljava/lang/String;)V
 
     .line 50
-    const-string v2, "ignore_settings"
+    const-string/jumbo v2, "ignore_settings"
 
     invoke-direct {p0, v2}, Landroid/content/SyncOperation;->removeFalseExtra(Ljava/lang/String;)V
 
     .line 51
-    const-string v2, "ignore_backoff"
+    const-string/jumbo v2, "ignore_backoff"
 
     invoke-direct {p0, v2}, Landroid/content/SyncOperation;->removeFalseExtra(Ljava/lang/String;)V
 
@@ -651,7 +651,7 @@
     .line 117
     iget-object v0, p0, Landroid/content/SyncOperation;->extras:Landroid/os/Bundle;
 
-    const-string v1, "ignore_backoff"
+    const-string/jumbo v1, "ignore_backoff"
 
     const/4 v2, 0x0
 
@@ -669,7 +669,7 @@
     .line 113
     iget-object v0, p0, Landroid/content/SyncOperation;->extras:Landroid/os/Bundle;
 
-    const-string v1, "initialize"
+    const-string/jumbo v1, "initialize"
 
     const/4 v2, 0x0
 

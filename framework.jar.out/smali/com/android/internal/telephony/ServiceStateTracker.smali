@@ -207,13 +207,13 @@
 
     const/4 v1, 0x7
 
-    const-string v2, "gw"
+    const-string/jumbo v2, "gw"
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x8
 
-    const-string v2, "ie"
+    const-string/jumbo v2, "ie"
 
     aput-object v2, v0, v1
 
@@ -225,7 +225,7 @@
 
     const/16 v1, 0xa
 
-    const-string v2, "is"
+    const-string/jumbo v2, "is"
 
     aput-object v2, v0, v1
 

@@ -701,7 +701,7 @@
 
     .line 1995
     .restart local v3       #strValue:Ljava/lang/String;
-    const-string v5, "id"
+    const-string/jumbo v5, "id"
 
     invoke-static {v5, v3, p2}, Landroid/view/ViewDebug$DumpZ;->WriteProperty(Ljava/lang/String;Ljava/lang/String;Ljava/io/BufferedWriter;)V
 
@@ -731,7 +731,7 @@
     invoke-static {v5, v6, p2}, Landroid/view/ViewDebug$DumpZ;->WriteProperty(Ljava/lang/String;ILjava/io/BufferedWriter;)V
 
     .line 2007
-    const-string v5, "height"
+    const-string/jumbo v5, "height"
 
     invoke-virtual {v4}, Landroid/view/View;->getHeight()I
 
@@ -774,7 +774,7 @@
     if-ne v5, v7, :cond_0
 
     .line 2018
-    const-string v5, "hasfocus"
+    const-string/jumbo v5, "hasfocus"
 
     invoke-virtual {v4}, Landroid/view/View;->hasFocus()Z
 
@@ -914,7 +914,7 @@
     invoke-static {v3, v4, p2}, Landroid/view/ViewDebug$DumpZ;->WriteProperty(Ljava/lang/String;Ljava/lang/String;Ljava/io/BufferedWriter;)V
 
     .line 1967
-    const-string v3, "hash"
+    const-string/jumbo v3, "hash"
 
     invoke-virtual {p1}, Ljava/lang/Object;->hashCode()I
 

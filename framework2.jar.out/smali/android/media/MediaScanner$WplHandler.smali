@@ -65,7 +65,7 @@
     .line 2057
     new-instance v2, Landroid/sax/RootElement;
 
-    const-string v4, "smil"
+    const-string/jumbo v4, "smil"
 
     invoke-direct {v2, v4}, Landroid/sax/RootElement;-><init>(Ljava/lang/String;)V
 
@@ -79,7 +79,7 @@
 
     .line 2059
     .local v0, body:Landroid/sax/Element;
-    const-string v4, "seq"
+    const-string/jumbo v4, "seq"
 
     invoke-virtual {v0, v4}, Landroid/sax/Element;->getChild(Ljava/lang/String;)Landroid/sax/Element;
 
@@ -87,7 +87,7 @@
 
     .line 2060
     .local v3, seq:Landroid/sax/Element;
-    const-string v4, "media"
+    const-string/jumbo v4, "media"
 
     invoke-virtual {v3, v4}, Landroid/sax/Element;->getChild(Ljava/lang/String;)Landroid/sax/Element;
 
@@ -136,7 +136,7 @@
     .line 2067
     const-string v0, ""
 
-    const-string v2, "src"
+    const-string/jumbo v2, "src"
 
     invoke-interface {p1, v0, v2}, Lorg/xml/sax/Attributes;->getValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 

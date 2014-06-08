@@ -499,7 +499,7 @@
     add-int/2addr v8, v0
 
     .line 228
-    const-string v9, "hasThumbnail"
+    const-string/jumbo v9, "hasThumbnail"
 
     invoke-virtual {v1, v9}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1131,7 +1131,7 @@
     .local v5, size:I
     iget-object v7, p0, Landroid/media/ExifInterface;->mAttributes:Ljava/util/HashMap;
 
-    const-string v8, "hasThumbnail"
+    const-string/jumbo v8, "hasThumbnail"
 
     invoke-virtual {v7, v8}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
 
@@ -1200,7 +1200,7 @@
 
     .line 256
     .local v2, key:Ljava/lang/String;
-    const-string v7, "hasThumbnail"
+    const-string/jumbo v7, "hasThumbnail"
 
     invoke-virtual {v2, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

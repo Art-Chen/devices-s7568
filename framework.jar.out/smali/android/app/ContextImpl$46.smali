@@ -33,7 +33,7 @@
 
     .prologue
     .line 590
-    const-string v2, "irda"
+    const-string/jumbo v2, "irda"
 
     invoke-static {v2}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
 

@@ -42,7 +42,7 @@
     iget-object v0, p0, Landroid/content/res/AssetManager$baidu_2;->this$0:Landroid/content/res/AssetManager;
 
     #calls: Landroid/content/res/AssetManager;->readChannelPkgs()V
-    invoke-static {v0}, Landroid/content/res/AssetManager;->access$bd_200(Landroid/content/res/AssetManager;)V
+    invoke-static {v0}, Landroid/content/res/AssetManager;->access$200(Landroid/content/res/AssetManager;)V
 
     .line 834
     return-void

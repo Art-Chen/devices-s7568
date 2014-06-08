@@ -142,7 +142,6 @@
     .line 12108
     iget-object v0, p0, Landroid/widget/TextView$SelectionStartTopHandleView;->this$0:Landroid/widget/TextView;
 
-    #getter for: Landroid/widget/TextView;->mText:Ljava/lang/CharSequence;
     invoke-static {v0}, Landroid/widget/TextView;->access$900(Landroid/widget/TextView;)Ljava/lang/CharSequence;
 
     move-result-object v0

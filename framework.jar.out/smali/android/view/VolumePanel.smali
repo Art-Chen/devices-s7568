@@ -19,6 +19,10 @@
 # static fields
 .field private static final BEEP_DURATION:I = 0x96
 
+.field private static final EXTRA_BUTTON_OFF:I = 0x0
+
+.field private static final EXTRA_BUTTON_ON:I = 0x1
+
 .field private static final FREE_DELAY:I = 0x2710
 
 .field private static LOGD:Z = false
@@ -52,6 +56,8 @@
 .field public static final VIBRATE_DELAY:I = 0x12c
 
 .field private static final VIBRATE_DURATION:I = 0x12c
+
+.field static mIsLoadSoundPool:Z
 
 
 # instance fields
@@ -99,21 +105,8 @@
 
 .field private mVoiceCapable:Z
 
-.field static mIsLoadSoundPool:Z
-
 
 # direct methods
-.method public forceDismiss()V
-    .locals 0
-
-    .prologue
-    .line 1065
-    invoke-direct {p0}, Landroid/view/VolumePanel;->forceTimeout()V
-
-    .line 1066
-    return-void
-.end method
-
 .method static constructor <clinit>()V
     .locals 3
 
@@ -210,7 +203,7 @@
     iput-object p2, p0, Landroid/view/VolumePanel;->mAudioService:Landroid/media/AudioService;
 
     .line 204
-    const-string v4, "layout_inflater"
+    const-string/jumbo v4, "layout_inflater"
 
     invoke-virtual {p1, v4}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -220,7 +213,7 @@
 
     .line 206
     .local v0, inflater:Landroid/view/LayoutInflater;
-    const v4, #layout@volume_adjust#t
+    const v4, 0x1090124
 
     invoke-virtual {v0, v4, v9}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -241,7 +234,7 @@
     .line 213
     iget-object v4, p0, Landroid/view/VolumePanel;->mView:Landroid/view/View;
 
-    const v6, #id@visible_panel#t
+    const v6, 0x102045f
 
     invoke-virtual {v4, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -254,7 +247,7 @@
     .line 214
     iget-object v4, p0, Landroid/view/VolumePanel;->mView:Landroid/view/View;
 
-    const v6, #id@slider_group#t
+    const v6, 0x1020460
 
     invoke-virtual {v4, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -267,7 +260,7 @@
     .line 215
     iget-object v4, p0, Landroid/view/VolumePanel;->mView:Landroid/view/View;
 
-    const v6, #id@expand_button#t
+    const v6, 0x1020462
 
     invoke-virtual {v4, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -280,7 +273,7 @@
     .line 216
     iget-object v4, p0, Landroid/view/VolumePanel;->mView:Landroid/view/View;
 
-    const v6, #id@expand_button_divider#t
+    const v6, 0x1020461
 
     invoke-virtual {v4, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -293,7 +286,7 @@
     .line 218
     new-instance v4, Landroid/view/VolumePanel$2;
 
-    const v6, #style@Theme.Panel.Volume#t
+    const v6, 0x1030316
 
     invoke-direct {v4, p0, p1, v6}, Landroid/view/VolumePanel$2;-><init>(Landroid/view/VolumePanel;Landroid/content/Context;I)V
 
@@ -351,7 +344,7 @@
 
     move-result-object v4
 
-    const v6, #dimen@volume_panel_top#t
+    const v6, 0x1050048
 
     invoke-virtual {v4, v6}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
@@ -399,7 +392,7 @@
 
     move-result-object v4
 
-    const v6, #bool@config_voice_capable#t
+    const v6, 0x1110029
 
     invoke-virtual {v4, v6}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -652,7 +645,7 @@
     .line 292
     iget-object v7, p0, Landroid/view/VolumePanel;->mContext:Landroid/content/Context;
 
-    const-string v8, "layout_inflater"
+    const-string/jumbo v8, "layout_inflater"
 
     invoke-virtual {v7, v8}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -724,7 +717,7 @@
     iput v6, v4, Landroid/view/VolumePanel$StreamControl;->streamType:I
 
     .line 304
-    const v7, #layout@volume_adjust_item#t
+    const v7, 0x1090125
 
     invoke-virtual {v1, v7, v9}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -742,7 +735,7 @@
     .line 306
     iget-object v7, v4, Landroid/view/VolumePanel$StreamControl;->group:Landroid/view/ViewGroup;
 
-    const v8, #id@stream_icon#t
+    const v8, 0x1020464
 
     invoke-virtual {v7, v8}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -788,7 +781,7 @@
     .line 312
     iget-object v7, v4, Landroid/view/VolumePanel$StreamControl;->group:Landroid/view/ViewGroup;
 
-    const v8, #id@seekbar#t
+    const v8, 0x10203f6
 
     invoke-virtual {v7, v8}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -1322,7 +1315,7 @@
     .line 361
     iget-object v1, p1, Landroid/view/VolumePanel$StreamControl;->icon:Landroid/widget/ImageView;
 
-    const v2, #drawable@ic_audio_ring_notif_vibrate#t
+    const v2, 0x10802d2
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -1386,6 +1379,17 @@
 
 
 # virtual methods
+.method public forceDismiss()V
+    .locals 0
+
+    .prologue
+    .line 1065
+    invoke-direct {p0}, Landroid/view/VolumePanel;->forceTimeout()V
+
+    .line 1066
+    return-void
+.end method
+
 .method public handleMessage(Landroid/os/Message;)V
     .locals 2
     .parameter "msg"
@@ -1898,7 +1902,7 @@
 
     move-result-object v5
 
-    const v6, #drawable@yi_dialog_full_baidu_light#t
+    const v6, 0x1080c06
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -2030,9 +2034,9 @@
     if-eqz v4, :cond_b
 
     .line 471
-    const v4, #drawable@ic_audio_bt#t
+    const v4, 0x10802ca
 
-    const v5, #drawable@ic_audio_bt_mute#t
+    const v5, 0x10802cb
 
     invoke-direct {p0, v4, v5}, Landroid/view/VolumePanel;->setMusicIcon(II)V
 
@@ -2040,9 +2044,9 @@
 
     .line 473
     :cond_b
-    const v4, #drawable@ic_audio_vol#t
+    const v4, 0x10802d6
 
-    const v5, #drawable@ic_audio_vol_mute#t
+    const v5, 0x10802d7
 
     invoke-direct {p0, v4, v5}, Landroid/view/VolumePanel;->setMusicIcon(II)V
 

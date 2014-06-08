@@ -231,7 +231,7 @@
 
     move-result-object v5
 
-    const v6, #drawable@qb_boot_notice#t
+    const v6, 0x1080b20
 
     invoke-virtual {v5, v6}, Lcom/android/server/am/ActivityManagerService;->setQbBackgroundRes(I)V
 
@@ -302,7 +302,7 @@
 
     move-result-object v5
 
-    const v6, #drawable@battery_fail#t
+    const v6, 0x1080a73
 
     invoke-virtual {v5, v6}, Lcom/android/server/am/ActivityManagerService;->setQbBackgroundRes(I)V
 

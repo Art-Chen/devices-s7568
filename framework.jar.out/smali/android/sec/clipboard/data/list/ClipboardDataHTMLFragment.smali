@@ -510,7 +510,7 @@
 
     const-string v3, "ClipboardServiceEx"
 
-    const-string v4, "html equals"
+    const-string/jumbo v4, "html equals"
 
     invoke-static {v3, v4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -814,7 +814,7 @@
 
     move-result-object v4
 
-    const-string v5, "http://"
+    const-string/jumbo v5, "http://"
 
     invoke-virtual {v4, v5}, Ljava/lang/String;->compareTo(Ljava/lang/String;)I
 
@@ -1149,7 +1149,7 @@
 
     const-string v0, "ClipboardServiceEx"
 
-    const-string v1, "html write to parcel"
+    const-string/jumbo v1, "html write to parcel"
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 

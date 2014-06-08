@@ -1013,14 +1013,14 @@
     .line 851
     sget-object v0, Landroid/provider/Settings$System;->MOVED_TO_SECURE:Ljava/util/HashSet;
 
-    const-string v1, "http_proxy"
+    const-string/jumbo v1, "http_proxy"
 
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     .line 852
     sget-object v0, Landroid/provider/Settings$System;->MOVED_TO_SECURE:Ljava/util/HashSet;
 
-    const-string v1, "install_non_market_apps"
+    const-string/jumbo v1, "install_non_market_apps"
 
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
@@ -1556,69 +1556,69 @@
 
     sput-object v0, Landroid/provider/Settings$System;->DEFAULT_ALARM_ALERT_URI:Landroid/net/Uri;
 
-    const/16 v0, 0x49
+    const/16 v0, 0x40
 
     new-array v0, v0, [Ljava/lang/String;
 
-    const-string v1, "stay_on_while_plugged_in"
+    const-string/jumbo v1, "stay_on_while_plugged_in"
 
     aput-object v1, v0, v3
 
-    const-string v1, "wifi_auto_connection"
+    const-string/jumbo v1, "wifi_auto_connection"
 
     aput-object v1, v0, v4
 
-    const-string v1, "wifi_use_static_ip"
+    const-string/jumbo v1, "wifi_use_static_ip"
 
     aput-object v1, v0, v5
 
-    const-string v1, "wifi_static_ip"
+    const-string/jumbo v1, "wifi_static_ip"
 
     aput-object v1, v0, v6
 
-    const-string v1, "wifi_static_gateway"
+    const-string/jumbo v1, "wifi_static_gateway"
 
     aput-object v1, v0, v7
 
     const/4 v1, 0x5
 
-    const-string v2, "wifi_static_netmask"
+    const-string/jumbo v2, "wifi_static_netmask"
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x6
 
-    const-string v2, "wifi_static_dns1"
+    const-string/jumbo v2, "wifi_static_dns1"
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x7
 
-    const-string v2, "wifi_static_dns2"
+    const-string/jumbo v2, "wifi_static_dns2"
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x8
 
-    const-string v2, "wifi_static_use_wagip"
+    const-string/jumbo v2, "wifi_static_use_wagip"
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x9
 
-    const-string v2, "wifi_static_wagip"
+    const-string/jumbo v2, "wifi_static_wagip"
 
     aput-object v2, v0, v1
 
     const/16 v1, 0xa
 
-    const-string v2, "wifi_static_wagport"
+    const-string/jumbo v2, "wifi_static_wagport"
 
     aput-object v2, v0, v1
 
     const/16 v1, 0xb
 
-    const-string v2, "wifi_static_wagfqdn"
+    const-string/jumbo v2, "wifi_static_wagfqdn"
 
     aput-object v2, v0, v1
 
@@ -1858,7 +1858,7 @@
 
     const/16 v1, 0x33
 
-    const-string v2, "hearing_aid"
+    const-string/jumbo v2, "hearing_aid"
 
     aput-object v2, v0, v1
 
@@ -1876,7 +1876,7 @@
 
     const/16 v1, 0x36
 
-    const-string v2, "haptic_feedback_enabled"
+    const-string/jumbo v2, "haptic_feedback_enabled"
 
     aput-object v2, v0, v1
 
@@ -1894,49 +1894,49 @@
 
     const/16 v1, 0x39
 
-    const-string v2, "lockscreen_sounds_enabled"
+    const-string/jumbo v2, "lockscreen_sounds_enabled"
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x3a
 
-    const-string v2, "show_web_suggestions"
+    const-string/jumbo v2, "show_web_suggestions"
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x3b
 
-    const-string v2, "notification_light_pulse"
+    const-string/jumbo v2, "notification_light_pulse"
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x3c
 
-    const-string v2, "sip_call_options"
+    const-string/jumbo v2, "sip_call_options"
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x3d
 
-    const-string v2, "sip_receive_calls"
+    const-string/jumbo v2, "sip_receive_calls"
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x3e
 
-    const-string v2, "pointer_speed"
+    const-string/jumbo v2, "pointer_speed"
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x3a
 
-    const-string v2, "volume_revoke"
+    const-string/jumbo v2, "volume_revoke"
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x3b
 
-    const-string v2, "prevent_wakeup"
+    const-string/jumbo v2, "prevent_wakeup"
 
     aput-object v2, v0, v1
 

@@ -227,7 +227,7 @@
     .line 5093
     :cond_2
     :goto_0
-    const-string v0, "home_ap_mac"
+    const-string/jumbo v0, "home_ap_mac"
 
     .line 5094
     .local v0, HOME_AP_MAC:Ljava/lang/String;
@@ -242,7 +242,7 @@
 
     move-result-object v7
 
-    const-string v8, "home_ap_mac"
+    const-string/jumbo v8, "home_ap_mac"
 
     invoke-static {v7, v8}, Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
 

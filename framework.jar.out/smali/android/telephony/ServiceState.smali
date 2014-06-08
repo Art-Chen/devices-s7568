@@ -1880,7 +1880,7 @@
     return-object v1
 
     :cond_0
-    const-string v1, "home"
+    const-string/jumbo v1, "home"
 
     goto/16 :goto_0
 

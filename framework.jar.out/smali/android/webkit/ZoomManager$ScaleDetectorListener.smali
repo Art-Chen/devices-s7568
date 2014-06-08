@@ -111,7 +111,7 @@
     .line 1396
     const-string v2, "ZoomManager"
 
-    const-string v4, "handleScale mWebView.mPinchZoomListener.handleScale FALSE"
+    const-string/jumbo v4, "handleScale mWebView.mPinchZoomListener.handleScale FALSE"
 
     invoke-static {v2, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -463,7 +463,7 @@
     .line 1441
     const-string v2, "ZoomManager"
 
-    const-string v3, "handleScale return isScaleLimited !! Changed scale is too small"
+    const-string/jumbo v3, "handleScale return isScaleLimited !! Changed scale is too small"
 
     invoke-static {v2, v3}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -618,7 +618,7 @@
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v5, "handleScale return TRUE!! mFocusX = "
+    const-string/jumbo v5, "handleScale return TRUE!! mFocusX = "
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -683,7 +683,7 @@
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v4, "handleScale return isScaleLimited = "
+    const-string/jumbo v4, "handleScale return isScaleLimited = "
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

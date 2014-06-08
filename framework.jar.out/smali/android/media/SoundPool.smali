@@ -330,7 +330,7 @@
 
     .prologue
     .line 157
-    const-string v0, "http:"
+    const-string/jumbo v0, "http:"
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 

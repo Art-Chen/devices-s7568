@@ -214,7 +214,7 @@
 
     .line 312
     .restart local v1       #entity:Lorg/apache/http/entity/AbstractHttpEntity;
-    const-string v3, "gzip"
+    const-string/jumbo v3, "gzip"
 
     invoke-virtual {v1, v3}, Lorg/apache/http/entity/AbstractHttpEntity;->setContentEncoding(Ljava/lang/String;)V
 
@@ -299,7 +299,7 @@
     .end local v3           #responseStream:Ljava/io/InputStream;
     .restart local v2       #responseStream:Ljava/io/InputStream;
     :cond_2
-    const-string v4, "gzip"
+    const-string/jumbo v4, "gzip"
 
     invoke-virtual {v0, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
@@ -361,7 +361,7 @@
 
     .line 468
     .local v3, header:Lorg/apache/http/Header;
-    const-string v10, "gzip"
+    const-string/jumbo v10, "gzip"
 
     invoke-interface {v3}, Lorg/apache/http/Header;->getValue()Ljava/lang/String;
 
@@ -488,7 +488,7 @@
     .line 208
     const-string v0, "Accept-Encoding"
 
-    const-string v1, "gzip"
+    const-string/jumbo v1, "gzip"
 
     invoke-interface {p0, v0, v1}, Lorg/apache/http/HttpRequest;->addHeader(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -563,7 +563,7 @@
     .local v2, schemeRegistry:Lorg/apache/http/conn/scheme/SchemeRegistry;
     new-instance v4, Lorg/apache/http/conn/scheme/Scheme;
 
-    const-string v5, "http"
+    const-string/jumbo v5, "http"
 
     invoke-static {}, Lorg/apache/http/conn/scheme/PlainSocketFactory;->getSocketFactory()Lorg/apache/http/conn/scheme/PlainSocketFactory;
 
@@ -578,7 +578,7 @@
     .line 135
     new-instance v4, Lorg/apache/http/conn/scheme/Scheme;
 
-    const-string v5, "https"
+    const-string/jumbo v5, "https"
 
     invoke-static {v8, v3}, Landroid/net/SSLCertificateSocketFactory;->getHttpSocketFactory(ILandroid/net/SSLSessionCache;)Lorg/apache/http/conn/ssl/SSLSocketFactory;
 

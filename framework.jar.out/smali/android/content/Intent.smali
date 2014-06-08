@@ -2329,7 +2329,7 @@
 
     .line 3457
     :try_start_0
-    const-string v11, "intent:"
+    const-string/jumbo v11, "intent:"
 
     invoke-virtual {p0, v11}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
@@ -2394,7 +2394,7 @@
     .local v3, e:Ljava/lang/IndexOutOfBoundsException;
     new-instance v11, Ljava/net/URISyntaxException;
 
-    const-string v12, "illegal Intent URI format"
+    const-string/jumbo v12, "illegal Intent URI format"
 
     invoke-direct {v11, p0, v12, v5}, Ljava/net/URISyntaxException;-><init>(Ljava/lang/String;Ljava/lang/String;I)V
 
@@ -2848,7 +2848,7 @@
 
     .line 3549
     :cond_16
-    const-string v11, "i."
+    const-string/jumbo v11, "i."
 
     invoke-virtual {p0, v11, v5}, Ljava/lang/String;->startsWith(Ljava/lang/String;I)Z
 
@@ -2930,7 +2930,7 @@
     if-eqz v2, :cond_0
 
     .line 3566
-    const-string v11, "intent:"
+    const-string/jumbo v11, "intent:"
 
     invoke-virtual {v2, v11}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
@@ -7613,7 +7613,7 @@
     move-result-object v4
 
     .line 6186
-    const-string v6, "intent:"
+    const-string/jumbo v6, "intent:"
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -7679,7 +7679,7 @@
     if-eqz v6, :cond_5
 
     .line 6198
-    const-string v6, "intent:"
+    const-string/jumbo v6, "intent:"
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

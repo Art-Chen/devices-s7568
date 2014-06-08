@@ -2038,7 +2038,7 @@
 
     move-object/from16 v18, v0
 
-    const-string v19, "ignore dhcp renew"
+    const-string/jumbo v19, "ignore dhcp renew"
 
     #calls: Landroid/net/wifi/p2p/WifiP2pService$P2pStateMachine;->logd(Ljava/lang/String;)V
     invoke-static/range {v18 .. v19}, Landroid/net/wifi/p2p/WifiP2pService$P2pStateMachine;->access$800(Landroid/net/wifi/p2p/WifiP2pService$P2pStateMachine;Ljava/lang/String;)V
@@ -2532,7 +2532,7 @@
 
     move-object/from16 v18, v0
 
-    const-string v19, "initialize P2pStaticIpConfig"
+    const-string/jumbo v19, "initialize P2pStaticIpConfig"
 
     #calls: Landroid/net/wifi/p2p/WifiP2pService$P2pStateMachine;->logd(Ljava/lang/String;)V
     invoke-static/range {v18 .. v19}, Landroid/net/wifi/p2p/WifiP2pService$P2pStateMachine;->access$800(Landroid/net/wifi/p2p/WifiP2pService$P2pStateMachine;Ljava/lang/String;)V

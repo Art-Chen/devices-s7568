@@ -4698,7 +4698,7 @@
     .line 1027
     .restart local v11       #key:Ljava/lang/String;
     :try_start_7
-    const-string v19, "id"
+    const-string/jumbo v19, "id"
 
     move-object/from16 v0, v19
 
@@ -4717,7 +4717,7 @@
 
     .line 1029
     :cond_4
-    const-string v19, "ipAssignment"
+    const-string/jumbo v19, "ipAssignment"
 
     move-object/from16 v0, v19
 
@@ -7764,7 +7764,7 @@
     if-eqz v14, :cond_0
 
     .line 980
-    const-string v15, "id"
+    const-string/jumbo v15, "id"
 
     invoke-virtual {v11, v15}, Ljava/io/DataOutputStream;->writeUTF(Ljava/lang/String;)V
 
@@ -7846,7 +7846,7 @@
     .restart local v14       #writeToFile:Z
     :pswitch_2
     :try_start_8
-    const-string v15, "ipAssignment"
+    const-string/jumbo v15, "ipAssignment"
 
     invoke-virtual {v11, v15}, Ljava/io/DataOutputStream;->writeUTF(Ljava/lang/String;)V
 
@@ -8115,7 +8115,7 @@
     .line 941
     .end local v6           #i$:Ljava/util/Iterator;
     :pswitch_3
-    const-string v15, "ipAssignment"
+    const-string/jumbo v15, "ipAssignment"
 
     invoke-virtual {v11, v15}, Ljava/io/DataOutputStream;->writeUTF(Ljava/lang/String;)V
 
@@ -8320,6 +8320,8 @@
     goto/16 :goto_5
 
     .line 908
+    nop
+
     nop
 
     :pswitch_data_0

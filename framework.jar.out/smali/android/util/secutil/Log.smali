@@ -691,7 +691,7 @@
     .line 404
     new-instance v1, Ljava/lang/NullPointerException;
 
-    const-string v2, "handler == null"
+    const-string/jumbo v2, "handler == null"
 
     invoke-direct {v1, v2}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
 

@@ -487,7 +487,7 @@
 
     if-eqz v4, :cond_1
 
-    const-string v4, "hipri"
+    const-string/jumbo v4, "hipri"
 
     invoke-virtual {p1, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

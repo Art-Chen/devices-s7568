@@ -54,7 +54,7 @@
     .line 127
     .local v2, parser:Lorg/ccil/cowan/tagsoup/Parser;
     :try_start_0
-    const-string v3, "http://www.ccil.org/~cowan/tagsoup/properties/schema"
+    const-string/jumbo v3, "http://www.ccil.org/~cowan/tagsoup/properties/schema"
 
     invoke-static {}, Landroid/text/Html$HtmlParser;->access$000()Lorg/ccil/cowan/tagsoup/HTMLSchema;
 

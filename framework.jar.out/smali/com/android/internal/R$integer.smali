@@ -25,6 +25,8 @@
 
 .field public static final config_activityShortDur:I = 0x10e0004
 
+.field public static final config_automatic_rotate_delay:I = 0x10e0034
+
 .field public static final config_carDockKeepsScreenOn:I = 0x10e000f
 
 .field public static final config_carDockRotation:I = 0x10e000d

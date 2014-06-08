@@ -2545,7 +2545,7 @@
 
     move-object/from16 v31, v0
 
-    const-string v33, "ignore_settings"
+    const-string/jumbo v33, "ignore_settings"
 
     const/16 v34, 0x0
 
@@ -4743,7 +4743,7 @@
 
     invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v13, "handleSyncHandlerMessage: MESSAGE_SERVICE_CANCEL: "
+    const-string/jumbo v13, "handleSyncHandlerMessage: MESSAGE_SERVICE_CANCEL: "
 
     invoke-virtual {v11, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -4813,7 +4813,7 @@
     .line 1634
     const-string v11, "SyncManager"
 
-    const-string v12, "handleSyncHandlerMessage: MESSAGE_SYNC_FINISHED"
+    const-string/jumbo v12, "handleSyncHandlerMessage: MESSAGE_SYNC_FINISHED"
 
     invoke-static {v11, v12}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -4847,7 +4847,7 @@
 
     invoke-direct {v12}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v13, "handleSyncHandlerMessage: dropping since the sync is no longer active: "
+    const-string/jumbo v13, "handleSyncHandlerMessage: dropping since the sync is no longer active: "
 
     invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -4950,7 +4950,7 @@
 
     invoke-direct {v12}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v13, "handleSyncHandlerMessage: MESSAGE_SERVICE_CONNECTED: "
+    const-string/jumbo v13, "handleSyncHandlerMessage: MESSAGE_SERVICE_CONNECTED: "
 
     invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -5024,7 +5024,7 @@
 
     invoke-direct {v12}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v13, "handleSyncHandlerMessage: MESSAGE_SERVICE_DISCONNECTED: "
+    const-string/jumbo v13, "handleSyncHandlerMessage: MESSAGE_SERVICE_DISCONNECTED: "
 
     invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -5121,7 +5121,7 @@
     .line 1697
     const-string v11, "SyncManager"
 
-    const-string v12, "handleSyncHandlerMessage: MESSAGE_SYNC_ALARM"
+    const-string/jumbo v12, "handleSyncHandlerMessage: MESSAGE_SYNC_ALARM"
 
     invoke-static {v11, v12}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -5190,7 +5190,7 @@
     .line 1710
     const-string v11, "SyncManager"
 
-    const-string v12, "handleSyncHandlerMessage: MESSAGE_CHECK_ALARMS"
+    const-string/jumbo v12, "handleSyncHandlerMessage: MESSAGE_CHECK_ALARMS"
 
     invoke-static {v11, v12}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -5212,6 +5212,8 @@
     goto :goto_1
 
     .line 1620
+    nop
+
     nop
 
     :pswitch_data_0
