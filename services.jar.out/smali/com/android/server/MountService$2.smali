@@ -203,7 +203,7 @@
     iget-object v11, p0, Lcom/android/server/MountService$2;->this$0:Lcom/android/server/MountService;
 
     #getter for: Lcom/android/server/MountService;->mExternalStoragePath:Ljava/lang/String;
-    invoke-static {v11}, Lcom/android/server/MountService;->access$1600(Lcom/android/server/MountService;)Ljava/lang/String;
+    invoke-static {v11}, Lcom/android/server/MountService;->access$1800(Lcom/android/server/MountService;)Ljava/lang/String;
 
     move-result-object v11
 

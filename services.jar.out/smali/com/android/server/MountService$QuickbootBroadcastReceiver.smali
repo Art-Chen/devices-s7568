@@ -69,7 +69,7 @@
     iget-object v10, p0, Lcom/android/server/MountService$QuickbootBroadcastReceiver;->this$0:Lcom/android/server/MountService;
 
     #getter for: Lcom/android/server/MountService;->mConnector:Lcom/android/server/NativeDaemonConnector;
-    invoke-static {v10}, Lcom/android/server/MountService;->access$1600(Lcom/android/server/MountService;)Lcom/android/server/NativeDaemonConnector;
+    invoke-static {v10}, Lcom/android/server/MountService;->access$1800(Lcom/android/server/MountService;)Lcom/android/server/NativeDaemonConnector;
 
     move-result-object v10
 
@@ -140,7 +140,7 @@
     iget-object v10, p0, Lcom/android/server/MountService$QuickbootBroadcastReceiver;->this$0:Lcom/android/server/MountService;
 
     #calls: Lcom/android/server/MountService;->updatePublicVolumeState(Ljava/lang/String;Ljava/lang/String;)V
-    invoke-static {v10, v4, v6}, Lcom/android/server/MountService;->access$1700(Lcom/android/server/MountService;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v10, v4, v6}, Lcom/android/server/MountService;->access$1900(Lcom/android/server/MountService;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2576
     :cond_1
@@ -213,7 +213,7 @@
     const-string v12, "removed"
 
     #calls: Lcom/android/server/MountService;->updatePublicVolumeState(Ljava/lang/String;Ljava/lang/String;)V
-    invoke-static {v10, v11, v12}, Lcom/android/server/MountService;->access$1700(Lcom/android/server/MountService;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v10, v11, v12}, Lcom/android/server/MountService;->access$1900(Lcom/android/server/MountService;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2612
     .end local v1           #e:Ljava/lang/Exception;
@@ -223,7 +223,7 @@
     const/4 v11, 0x1
 
     #setter for: Lcom/android/server/MountService;->mReady:Z
-    invoke-static {v10, v11}, Lcom/android/server/MountService;->access$1902(Lcom/android/server/MountService;Z)Z
+    invoke-static {v10, v11}, Lcom/android/server/MountService;->access$2202(Lcom/android/server/MountService;Z)Z
 
     .line 2618
     const-string v10, "simulator"

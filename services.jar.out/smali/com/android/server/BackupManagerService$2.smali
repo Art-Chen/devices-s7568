@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 1381
+    .line 1414
     iput-object p1, p0, Lcom/android/server/BackupManagerService$2;->this$0:Lcom/android/server/BackupManagerService;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,7 +43,14 @@
     .parameter "service"
 
     .prologue
-    .line 1384
+    .line 1416
+    const-string v0, "BackupManagerService"
+
+    const-string v1, "Connected to Google transport"
+
+    invoke-static {v0, v1}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 1417
     iget-object v0, p0, Lcom/android/server/BackupManagerService$2;->this$0:Lcom/android/server/BackupManagerService;
 
     invoke-static {p2}, Lcom/android/internal/backup/IBackupTransport$Stub;->asInterface(Landroid/os/IBinder;)Lcom/android/internal/backup/IBackupTransport;
@@ -52,7 +59,7 @@
 
     iput-object v1, v0, Lcom/android/server/BackupManagerService;->mGoogleTransport:Lcom/android/internal/backup/IBackupTransport;
 
-    .line 1385
+    .line 1418
     iget-object v0, p0, Lcom/android/server/BackupManagerService$2;->this$0:Lcom/android/server/BackupManagerService;
 
     invoke-virtual {p1}, Landroid/content/ComponentName;->flattenToShortString()Ljava/lang/String;
@@ -64,9 +71,9 @@
     iget-object v2, v2, Lcom/android/server/BackupManagerService;->mGoogleTransport:Lcom/android/internal/backup/IBackupTransport;
 
     #calls: Lcom/android/server/BackupManagerService;->registerTransport(Ljava/lang/String;Lcom/android/internal/backup/IBackupTransport;)V
-    invoke-static {v0, v1, v2}, Lcom/android/server/BackupManagerService;->access$400(Lcom/android/server/BackupManagerService;Ljava/lang/String;Lcom/android/internal/backup/IBackupTransport;)V
+    invoke-static {v0, v1, v2}, Lcom/android/server/BackupManagerService;->access$800(Lcom/android/server/BackupManagerService;Ljava/lang/String;Lcom/android/internal/backup/IBackupTransport;)V
 
-    .line 1386
+    .line 1419
     return-void
 .end method
 
@@ -77,12 +84,19 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 1390
+    .line 1422
+    const-string v0, "BackupManagerService"
+
+    const-string v1, "Disconnected from Google transport"
+
+    invoke-static {v0, v1}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 1423
     iget-object v0, p0, Lcom/android/server/BackupManagerService$2;->this$0:Lcom/android/server/BackupManagerService;
 
     iput-object v2, v0, Lcom/android/server/BackupManagerService;->mGoogleTransport:Lcom/android/internal/backup/IBackupTransport;
 
-    .line 1391
+    .line 1424
     iget-object v0, p0, Lcom/android/server/BackupManagerService$2;->this$0:Lcom/android/server/BackupManagerService;
 
     invoke-virtual {p1}, Landroid/content/ComponentName;->flattenToShortString()Ljava/lang/String;
@@ -90,8 +104,8 @@
     move-result-object v1
 
     #calls: Lcom/android/server/BackupManagerService;->registerTransport(Ljava/lang/String;Lcom/android/internal/backup/IBackupTransport;)V
-    invoke-static {v0, v1, v2}, Lcom/android/server/BackupManagerService;->access$400(Lcom/android/server/BackupManagerService;Ljava/lang/String;Lcom/android/internal/backup/IBackupTransport;)V
+    invoke-static {v0, v1, v2}, Lcom/android/server/BackupManagerService;->access$800(Lcom/android/server/BackupManagerService;Ljava/lang/String;Lcom/android/internal/backup/IBackupTransport;)V
 
-    .line 1392
+    .line 1425
     return-void
 .end method

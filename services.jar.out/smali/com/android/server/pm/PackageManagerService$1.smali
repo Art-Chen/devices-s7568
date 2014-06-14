@@ -17,39 +17,12 @@
 .end annotation
 
 
-# instance fields
-.field final synthetic this$0:Lcom/android/server/pm/PackageManagerService;
-
-.field final synthetic val$freeStorageSize:J
-
-.field final synthetic val$observer:Landroid/content/pm/IPackageDataObserver;
-
-
 # direct methods
 .method constructor <init>()V
     .locals 0
 
     .prologue
     .line 487
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-.method constructor <init>(Lcom/android/server/pm/PackageManagerService;JLandroid/content/pm/IPackageDataObserver;)V
-    .locals 0
-    .parameter
-    .parameter
-    .parameter
-
-    .prologue
-    .line 1700
-    iput-object p1, p0, Lcom/android/server/pm/PackageManagerService$1;->this$0:Lcom/android/server/pm/PackageManagerService;
-
-    iput-wide p2, p0, Lcom/android/server/pm/PackageManagerService$1;->val$freeStorageSize:J
-
-    iput-object p4, p0, Lcom/android/server/pm/PackageManagerService$1;->val$observer:Landroid/content/pm/IPackageDataObserver;
-
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -417,6 +390,17 @@
     aget-object v2, v10, v11
 
     const-string v3, "OrangeSetupWizard.apk"
+
+    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_0
+
+    .line 640
+    aget-object v2, v4, v11
+
+    const-string v3, "SecSetupWizard.apk"
 
     invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

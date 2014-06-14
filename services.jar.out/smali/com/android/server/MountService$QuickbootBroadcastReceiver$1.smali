@@ -156,6 +156,7 @@
 
     iget-object v9, v9, Lcom/android/server/MountService$QuickbootBroadcastReceiver;->this$0:Lcom/android/server/MountService;
 
+    #calls: Lcom/android/server/MountService;->doMountVolume(Ljava/lang/String;)I
     invoke-static {v9, v4}, Lcom/android/server/MountService;->access$801(Lcom/android/server/MountService;Ljava/lang/String;)I
 
     move-result v6
@@ -278,6 +279,7 @@
 
     iget-object v9, v9, Lcom/android/server/MountService$QuickbootBroadcastReceiver;->this$0:Lcom/android/server/MountService;
 
+    #getter for: Lcom/android/server/MountService;->mEmulateExternalStorage:Z
     invoke-static {v9}, Lcom/android/server/MountService;->access$901(Lcom/android/server/MountService;)Z
 
     move-result v9

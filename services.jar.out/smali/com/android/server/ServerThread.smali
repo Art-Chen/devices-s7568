@@ -889,10 +889,11 @@
 
     invoke-static {v3, v9}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    :goto_c
-    invoke-static {v4}, Lcom/baidu/service/YiServiceLoader;->main(Landroid/content/Context;)V
     :try_end_c
     .catch Ljava/lang/RuntimeException; {:try_start_c .. :try_end_c} :catch_4
+
+    :goto_c
+    invoke-static {v4}, Lcom/baidu/service/YiServiceLoader;->main(Landroid/content/Context;)V
 
     move-object/from16 v76, v77
 

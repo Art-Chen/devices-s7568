@@ -1,5 +1,5 @@
 .class Lcom/android/server/MountService$3;
-.super Ljava/lang/Thread;
+.super Ljava/lang/Object;
 .source "MountService.java"
 
 # interfaces
@@ -24,8 +24,6 @@
 
 .field final synthetic val$cooked:[Ljava/lang/String;
 
-.field final synthetic val$path:Ljava/lang/String;
-
 .field final synthetic val$raw:Ljava/lang/String;
 
 
@@ -47,23 +45,7 @@
 
     iput-object p4, p0, Lcom/android/server/MountService$3;->val$cooked:[Ljava/lang/String;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Thread;-><init>()V
-
-    return-void
-.end method
-
-.method constructor <init>(Lcom/android/server/MountService;Ljava/lang/String;)V
-    .locals 0
-    .parameter
-    .parameter
-
-    .prologue
-    .line 725
-    iput-object p1, p0, Lcom/android/server/MountService$3;->this$0:Lcom/android/server/MountService;
-
-    iput-object p2, p0, Lcom/android/server/MountService$3;->val$path:Ljava/lang/String;
-
-    invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method

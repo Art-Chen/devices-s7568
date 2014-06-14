@@ -109,6 +109,7 @@
 
     iget-object v9, v9, Lcom/android/server/BackupManagerService;->mActiveRestoreSession:Lcom/android/server/BackupManagerService$ActiveRestoreSession;
 
+    #getter for: Lcom/android/server/BackupManagerService$ActiveRestoreSession;->mPackageName:Ljava/lang/String;
     invoke-static {v9}, Lcom/android/server/BackupManagerService$ActiveRestoreSession;->access$2400(Lcom/android/server/BackupManagerService$ActiveRestoreSession;)Ljava/lang/String;
 
     move-result-object v9
@@ -228,6 +229,7 @@
     .line 6012
     iget-object v9, p0, Lcom/android/server/BackupManagerService$EDMBackupRestoreReceiver;->this$0:Lcom/android/server/BackupManagerService;
 
+    #getter for: Lcom/android/server/BackupManagerService;->mContext:Landroid/content/Context;
     invoke-static {v9}, Lcom/android/server/BackupManagerService;->access$300(Lcom/android/server/BackupManagerService;)Landroid/content/Context;
 
     move-result-object v9
@@ -334,6 +336,7 @@
     .line 6026
     iget-object v9, p0, Lcom/android/server/BackupManagerService$EDMBackupRestoreReceiver;->this$0:Lcom/android/server/BackupManagerService;
 
+    #getter for: Lcom/android/server/BackupManagerService;->mContext:Landroid/content/Context;
     invoke-static {v9}, Lcom/android/server/BackupManagerService;->access$300(Lcom/android/server/BackupManagerService;)Landroid/content/Context;
 
     move-result-object v9
@@ -455,6 +458,7 @@
 
     const/4 v10, -0x3
 
+    #calls: Lcom/android/server/BackupManagerService;->resetEdmRestoreTags(I)V
     invoke-static {v9, v10}, Lcom/android/server/BackupManagerService;->access$200(Lcom/android/server/BackupManagerService;I)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
@@ -476,6 +480,7 @@
     :try_start_2
     iget-object v9, p0, Lcom/android/server/BackupManagerService$EDMBackupRestoreReceiver;->this$0:Lcom/android/server/BackupManagerService;
 
+    #getter for: Lcom/android/server/BackupManagerService;->mContext:Landroid/content/Context;
     invoke-static {v9}, Lcom/android/server/BackupManagerService;->access$300(Lcom/android/server/BackupManagerService;)Landroid/content/Context;
 
     move-result-object v9
@@ -508,6 +513,7 @@
 
     const/4 v10, -0x3
 
+    #calls: Lcom/android/server/BackupManagerService;->resetEdmRestoreTags(I)V
     invoke-static {v9, v10}, Lcom/android/server/BackupManagerService;->access$200(Lcom/android/server/BackupManagerService;I)V
 
     .line 6067
@@ -552,6 +558,7 @@
 
     const/4 v10, -0x3
 
+    #calls: Lcom/android/server/BackupManagerService;->resetEdmRestoreTags(I)V
     invoke-static {v9, v10}, Lcom/android/server/BackupManagerService;->access$200(Lcom/android/server/BackupManagerService;I)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1

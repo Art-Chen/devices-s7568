@@ -6,7 +6,7 @@
 # instance fields
 .field private mClipExMgr:Landroid/sec/clipboard/ClipboardExManager;
 
-.field private mPasteEvent:Landroid/widget/TextView$IClipboardDataPasteEventImpl;
+.field public mPasteEvent:Landroid/widget/TextView$IClipboardDataPasteEventImpl;
 
 
 # direct methods
