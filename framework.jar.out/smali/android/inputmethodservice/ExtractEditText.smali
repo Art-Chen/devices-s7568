@@ -144,6 +144,13 @@
     return-void
 .end method
 
+.method public setCursorColor(I)V
+    .locals 0
+
+    .prologue
+    return-void
+.end method
+
 .method public isFocused()Z
     .locals 1
 

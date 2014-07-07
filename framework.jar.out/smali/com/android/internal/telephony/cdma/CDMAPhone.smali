@@ -2532,6 +2532,18 @@
     return-object v0
 .end method
 
+.method public getForegroundCall()Lcom/android/internal/telephony/cdma/CdmaCall;
+    .locals 1
+
+    .prologue
+    .line 507
+    iget-object v0, p0, Lcom/android/internal/telephony/cdma/CDMAPhone;->mCT:Lcom/android/internal/telephony/cdma/CdmaCallTracker;
+
+    iget-object v0, v0, Lcom/android/internal/telephony/cdma/CdmaCallTracker;->foregroundCall:Lcom/android/internal/telephony/cdma/CdmaCall;
+
+    return-object v0
+.end method
+
 .method public getHandsetInfo(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
     .parameter "ID"

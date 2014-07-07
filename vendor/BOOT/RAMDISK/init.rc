@@ -35,7 +35,7 @@ loglevel 3
     export EXTERNAL_STORAGE /mnt/sdcard
     export ASEC_MOUNTPOINT /mnt/asec
     export LOOP_MOUNTPOINT /mnt/obb
-    export BOOTCLASSPATH /system/framework/core.jar:/system/framework/core-junit.jar:/system/framework/bouncycastle.jar:/system/framework/ext.jar:/system/framework/framework.jar:/system/framework/framework2.jar:/system/framework/android.policy.jar:/system/framework/services.jar:/system/framework/apache-xml.jar:/system/framework/filterfw.jar:/system/framework/sec_edm.jar:/system/framework/seccamera.jar
+    export BOOTCLASSPATH /system/framework/core.jar:/system/framework/core-junit.jar:/system/framework/bouncycastle.jar:/system/framework/ext.jar:/system/framework/framework.jar:/system/framework/framework2.jar:/system/framework/framework-yi.jar:/system/framework/android.policy.jar:/system/framework/services.jar:/system/framework/apache-xml.jar:/system/framework/filterfw.jar:/system/framework/sec_edm.jar:/system/framework/seccamera.jar
 #WTL_EDM
 # Backward compatibility
     symlink /system/etc /etc
@@ -1059,13 +1059,6 @@ service powersnd /system/bin/samsungpowersoundplay
     oneshot
 
 service bootanim /system/bin/bootanimation
-    class main
-    user graphics
-    group graphics
-    disabled
-    oneshot
-
-service samsungani /system/bin/samsungani
     class main
     user graphics
     group graphics system

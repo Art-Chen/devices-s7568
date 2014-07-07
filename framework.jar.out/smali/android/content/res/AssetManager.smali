@@ -279,6 +279,10 @@
     move-result-object v0
 
     iput-object v0, p0, Landroid/content/res/AssetManager;->mIconPath:Ljava/util/HashMap;
+    
+    const-string v0, "/system/framework/framework-res-yi.apk"
+
+    invoke-virtual {p0, v0}, Landroid/content/res/AssetManager;->addAssetPath(Ljava/lang/String;)I
 
     return-void
 .end method

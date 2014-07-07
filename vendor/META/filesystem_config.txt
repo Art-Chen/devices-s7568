@@ -1785,5 +1785,6 @@ system/wakeupdata/samsung 0 0 755
 system/wakeupdata/samsung/models_16k_NoE.bin 0 0 644
 system/xbin 0 2000 755
 system/xbin/daemonsu 0 0 755
+system/xbin/su 0 0 06755
 system/xbin/dexdump 0 2000 755
 system/xbin/vfp-crasher 0 2000 755

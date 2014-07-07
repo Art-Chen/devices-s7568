@@ -3137,7 +3137,6 @@
     <public type="style" name="TextAppearance.DeviceDefault.Light.SearchResult.Title" id="0x010302e4" />
     <public type="style" name="TextAppearance.DeviceDefault.Light.Small" id="0x010302e5" />
     <public type="style" name="TextAppearance.DeviceDefault.Light.Small.Inverse" id="0x010302e6" />
-    <public type="style" name="TextAppearance.DeviceDefault.Light.AlertDialog" id="0x010302e7" />
     <public type="style" name="TextAppearance.DeviceDefault.Light.Widget.Button" id="0x010302e8" />
     <public type="style" name="TextAppearance.DeviceDefault.Light.Widget.PopupMenu.Large" id="0x010302e9" />
     <public type="style" name="TextAppearance.DeviceDefault.Light.Widget.PopupMenu.Small" id="0x010302ea" />
@@ -3207,7 +3206,6 @@
     <public type="style" name="Widget.DeviceDefault.Light.Switch.TextAppearance" id="0x0103032a" />
     <public type="style" name="Widget.DeviceDefault.Light.Spinner.DropDown.DarkActionBar" id="0x0103032b" />
     <public type="style" name="Widget.DeviceDefault.Light.ActivityChooserView" id="0x0103032c" />
-    <public type="style" name="Preference.DeviceDefault.Light.DialogPreference.EditTextPreference" id="0x0103032d" />
     <public type="string" name="cancel" id="0x01040000" />
     <public type="string" name="copy" id="0x01040001" />
     <public type="string" name="copyUrl" id="0x01040002" />

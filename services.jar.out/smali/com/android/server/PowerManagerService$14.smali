@@ -40,6 +40,19 @@
     return-void
 .end method
 
+.method constructor <init>(Lcom/android/server/PowerManagerService;)V
+    .locals 0
+    .parameter
+
+    .prologue
+    .line 3020
+    iput-object p1, p0, Lcom/android/server/PowerManagerService$14;->this$0:Lcom/android/server/PowerManagerService;
+
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
 
 # virtual methods
 .method public run()V
