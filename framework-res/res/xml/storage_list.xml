@@ -2,5 +2,7 @@
 <StorageList
   xmlns:android="http://schemas.android.com/apk/res/android">
     <storage android:mountPoint="/mnt/extSdCard" android:storageDescription="@string/external_sd" android:primary="false" android:removable="true" android:subsystem="sd" />
+    <storage_auto android:mountPoint="/mnt/extSdCard" android:storageDescription="@string/external_sd" android:primary="false" android:removable="true" android:subsystem="sd" />
+    <storage_auto android:mountPoint="/mnt/sdcard" android:storageDescription="@string/internal_sd" android:primary="true" android:emulated="true" android:mtpReserve="100" android:subsystem="fuse" />
     <storage android:mountPoint="/mnt/sdcard" android:storageDescription="@string/internal_sd" android:primary="true" android:emulated="true" android:mtpReserve="100" android:subsystem="fuse" />
 </StorageList>
