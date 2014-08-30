@@ -82,10 +82,10 @@
     <bool name="config_mirrorLinkDockEnablesAccelerometer">false</bool>
     <bool name="config_bluetooth_hid_capable">true</bool>
     <bool name="lockscreen_isPortrait">true</bool>
-    <bool name="config_wakeup_by_volume_key">false</bool>
+    <bool name="config_wakeup_by_volume_key">true</bool>
     <bool name="config_pbap_support">true</bool>
     <bool name="config_global_action_reboot">false</bool>
     <bool name="config_quickbootSupport">false</bool>
-    <bool name="config_poweron_by_twice_press">false</bool>
+    <bool name="config_poweron_by_twice_press">true</bool>
     <bool name="config_close_button_backlight">false</bool>
 </resources>

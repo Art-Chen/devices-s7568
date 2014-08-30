@@ -63,14 +63,27 @@
     .parameter "isRtlRun"
 
     .prologue
-    .line 11500
+    if-eqz p2, :cond_0
+
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
 
     move-result v0
 
-    div-int/lit8 v0, v0, 0x2
+    mul-int/lit8 v0, v0, 0x3
 
+    div-int/lit8 v0, v0, 0x4
+
+    :goto_0
     return v0
+
+    :cond_0
+    invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
+
+    move-result v0
+
+    div-int/lit8 v0, v0, 0x4
+
+    goto :goto_0
 .end method
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z

@@ -553,7 +553,7 @@
     move-object/from16 v19, v0
 
     #getter for: Landroid/view/View;->mContext:Landroid/content/Context;
-    invoke-static/range {v19 .. v19}, Landroid/widget/TextView;->access$6300(Landroid/widget/TextView;)Landroid/content/Context;
+    invoke-static/range {v19 .. v19}, Landroid/widget/TextView;->access$10100(Landroid/widget/TextView;)Landroid/content/Context;
 
     move-result-object v19
 
@@ -968,7 +968,7 @@
     move-object/from16 v19, v0
 
     #getter for: Landroid/view/View;->mContext:Landroid/content/Context;
-    invoke-static/range {v19 .. v19}, Landroid/widget/TextView;->access$6800(Landroid/widget/TextView;)Landroid/content/Context;
+    invoke-static/range {v19 .. v19}, Landroid/widget/TextView;->access$10100(Landroid/widget/TextView;)Landroid/content/Context;
 
     move-result-object v19
 
@@ -1120,7 +1120,7 @@
     iget-object v1, p0, Landroid/widget/TextView$ActionPopupWindow;->this$0:Landroid/widget/TextView;
 
     #getter for: Landroid/view/View;->mContext:Landroid/content/Context;
-    invoke-static {v1}, Landroid/widget/TextView;->access$5600(Landroid/widget/TextView;)Landroid/content/Context;
+    invoke-static {v1}, Landroid/widget/TextView;->access$10100(Landroid/widget/TextView;)Landroid/content/Context;
 
     move-result-object v1
 
@@ -1300,7 +1300,7 @@
     iget-object v1, p0, Landroid/widget/TextView$ActionPopupWindow;->this$0:Landroid/widget/TextView;
 
     #getter for: Landroid/view/View;->mContext:Landroid/content/Context;
-    invoke-static {v1}, Landroid/widget/TextView;->access$6200(Landroid/widget/TextView;)Landroid/content/Context;
+    invoke-static {v1}, Landroid/widget/TextView;->access$10100(Landroid/widget/TextView;)Landroid/content/Context;
 
     move-result-object v1
 
@@ -1427,7 +1427,7 @@
     iget-object v3, p0, Landroid/widget/TextView$ActionPopupWindow;->this$0:Landroid/widget/TextView;
 
     #getter for: Landroid/view/View;->mContext:Landroid/content/Context;
-    invoke-static {v3}, Landroid/widget/TextView;->access$5700(Landroid/widget/TextView;)Landroid/content/Context;
+    invoke-static {v3}, Landroid/widget/TextView;->access$10100(Landroid/widget/TextView;)Landroid/content/Context;
 
     move-result-object v3
 

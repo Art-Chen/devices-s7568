@@ -73,14 +73,27 @@
     .parameter "isRtlRun"
 
     .prologue
-    .line 11363
+    if-eqz p2, :cond_0
+
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
 
     move-result v0
 
-    div-int/lit8 v0, v0, 0x2
+    div-int/lit8 v0, v0, 0x4
 
+    :goto_0
     return v0
+
+    :cond_0
+    invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
+
+    move-result v0
+
+    mul-int/lit8 v0, v0, 0x3
+
+    div-int/lit8 v0, v0, 0x4
+
+    goto :goto_0
 .end method
 
 .method protected isVisible()Z
@@ -142,228 +155,48 @@
 .end method
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
-    .locals 10
+    .locals 3
     .parameter "ev"
 
     .prologue
-    .line 11376
-    iget v4, p0, Landroid/widget/TextView$HandleView;->mIdealVerticalOffset:F
+    invoke-super {p0, p1}, Landroid/widget/TextView$HandleView;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
-    .line 11377
-    .local v4, previousVerticalOffset:F
-    const/4 v8, 0x2
+    move-result v0
 
+    .local v0, result:Z
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getActionMasked()I
 
-    move-result v9
+    move-result v1
 
-    if-ne v8, v9, :cond_2
+    packed-switch v1, :pswitch_data_0
 
-    .line 11378
-    invoke-virtual {p1}, Landroid/view/MotionEvent;->getRawX()F
-
-    move-result v5
-
-    .line 11379
-    .local v5, rawX:F
-    invoke-virtual {p1}, Landroid/view/MotionEvent;->getRawY()F
-
-    move-result v6
-
-    .line 11382
-    .local v6, rawY:F
-    iget v8, p0, Landroid/widget/TextView$HandleView;->mPositionY:I
-
-    iget v9, p0, Landroid/widget/TextView$HandleView;->mLastParentY:I
-
-    add-int/2addr v8, v9
-
-    iget-object v9, p0, Landroid/widget/TextView$HandleView;->mDrawable:Landroid/graphics/drawable/Drawable;
-
-    invoke-virtual {v9}, Landroid/graphics/drawable/Drawable;->getIntrinsicHeight()I
-
-    move-result v9
-
-    add-int/2addr v8, v9
-
-    int-to-float v8, v8
-
-    sub-float v0, v8, v6
-
-    .line 11386
-    .local v0, currentVerticalOffset:F
-    iget v8, p0, Landroid/widget/TextView$HandleView;->mIdealVerticalOffset:F
-
-    cmpg-float v8, v4, v8
-
-    if-gez v8, :cond_1
-
-    .line 11387
-    iget v8, p0, Landroid/widget/TextView$HandleView;->mIdealVerticalOffset:F
-
-    invoke-static {v0, v8}, Ljava/lang/Math;->min(FF)F
-
-    move-result v3
-
-    .line 11388
-    .local v3, newVerticalOffset:F
-    invoke-static {v3, v4}, Ljava/lang/Math;->max(FF)F
-
-    move-result v3
-
-    .line 11397
     :goto_0
-    iget v8, p0, Landroid/widget/TextView$HandleView;->mTouchToWindowOffsetX:F
+    return v0
 
-    sub-float v8, v5, v8
-
-    iget v9, p0, Landroid/widget/TextView$HandleView;->mHotspotX:I
-
-    int-to-float v9, v9
-
-    add-float v1, v8, v9
-
-    .line 11398
-    .local v1, newPosX:F
-    iget v8, p0, Landroid/widget/TextView$HandleView;->mLastParentY:I
-
-    int-to-float v8, v8
-
-    sub-float v8, v6, v8
-
-    add-float/2addr v8, v3
-
-    iget v9, p0, Landroid/widget/TextView$HandleView;->mTouchOffsetY:F
-
-    sub-float v2, v8, v9
-
-    .line 11405
-    .local v2, newPosY:F
-    invoke-virtual {p0, v1, v2}, Landroid/widget/TextView$SelectionStartHandleView;->updatePosition(FF)V
-
-    .line 11407
-    iget-object v8, p0, Landroid/widget/TextView$SelectionStartHandleView;->this$0:Landroid/widget/TextView;
-
-    #getter for: Landroid/widget/TextView;->mMagnifierController:Landroid/widget/TextView$MagnifierController;
-    invoke-static {v8}, Landroid/widget/TextView;->access$7200(Landroid/widget/TextView;)Landroid/widget/TextView$MagnifierController;
-
-    move-result-object v8
-
-    if-eqz v8, :cond_0
-
-    .line 11408
-    iget-object v8, p0, Landroid/widget/TextView$SelectionStartHandleView;->this$0:Landroid/widget/TextView;
-
-    #getter for: Landroid/widget/TextView;->mMagnifierController:Landroid/widget/TextView$MagnifierController;
-    invoke-static {v8}, Landroid/widget/TextView;->access$7200(Landroid/widget/TextView;)Landroid/widget/TextView$MagnifierController;
-
-    move-result-object v8
-
-    iget v9, p0, Landroid/widget/TextView$HandleView;->mCursorType:I
-
-    invoke-virtual {v8, v9}, Landroid/widget/TextView$MagnifierController;->update(I)V
-
-    .line 11411
-    :cond_0
-    const/4 v7, 0x1
-
-    .line 11429
-    .end local v0           #currentVerticalOffset:F
-    .end local v1           #newPosX:F
-    .end local v2           #newPosY:F
-    .end local v3           #newVerticalOffset:F
-    .end local v5           #rawX:F
-    .end local v6           #rawY:F
-    :goto_1
-    return v7
-
-    .line 11390
-    .restart local v0       #currentVerticalOffset:F
-    .restart local v5       #rawX:F
-    .restart local v6       #rawY:F
-    :cond_1
-    iget v8, p0, Landroid/widget/TextView$HandleView;->mIdealVerticalOffset:F
-
-    invoke-static {v0, v8}, Ljava/lang/Math;->max(FF)F
-
-    move-result v3
-
-    .line 11391
-    .restart local v3       #newVerticalOffset:F
-    invoke-static {v3, v4}, Ljava/lang/Math;->min(FF)F
-
-    move-result v3
+    :pswitch_0
+    invoke-virtual {p0}, Landroid/widget/TextView$HandleView;->dismissActionPopupWindow()V
 
     goto :goto_0
 
-    .line 11413
-    .end local v0           #currentVerticalOffset:F
-    .end local v3           #newVerticalOffset:F
-    .end local v5           #rawX:F
-    .end local v6           #rawY:F
-    :cond_2
-    invoke-super {p0, p1}, Landroid/widget/TextView$HandleView;->onTouchEvent(Landroid/view/MotionEvent;)Z
-
-    move-result v7
-
-    .line 11415
-    .local v7, result:Z
-    invoke-virtual {p1}, Landroid/view/MotionEvent;->getActionMasked()I
-
-    move-result v8
-
-    packed-switch v8, :pswitch_data_0
-
-    goto :goto_1
-
-    .line 11417
-    :pswitch_0
-    iget v8, p0, Landroid/widget/TextView$HandleView;->mPositionY:I
-
-    iget v9, p0, Landroid/widget/TextView$HandleView;->mLastParentY:I
-
-    add-int/2addr v8, v9
-
-    iget-object v9, p0, Landroid/widget/TextView$HandleView;->mDrawable:Landroid/graphics/drawable/Drawable;
-
-    invoke-virtual {v9}, Landroid/graphics/drawable/Drawable;->getIntrinsicHeight()I
-
-    move-result v9
-
-    add-int/2addr v8, v9
-
-    int-to-float v8, v8
-
-    invoke-virtual {p1}, Landroid/view/MotionEvent;->getRawY()F
-
-    move-result v9
-
-    sub-float v4, v8, v9
-
-    .line 11418
-    invoke-virtual {p0}, Landroid/widget/TextView$SelectionStartHandleView;->dismissActionPopupWindow()V
-
-    goto :goto_1
-
-    .line 11421
     :pswitch_1
-    iget-object v8, p0, Landroid/widget/TextView$HandleView;->mActionPopupWindow:Landroid/widget/TextView$ActionPopupWindow;
+    iget-object v1, p0, Landroid/widget/TextView$HandleView;->mActionPopupWindow:Landroid/widget/TextView$ActionPopupWindow;
 
-    if-eqz v8, :cond_3
+    if-eqz v1, :cond_0
 
-    iget-object v8, p0, Landroid/widget/TextView$HandleView;->mActionPopupWindow:Landroid/widget/TextView$ActionPopupWindow;
+    iget-object v1, p0, Landroid/widget/TextView$HandleView;->mActionPopupWindow:Landroid/widget/TextView$ActionPopupWindow;
 
-    iget v9, p0, Landroid/widget/TextView$HandleView;->mCursorType:I
+    iget v2, p0, Landroid/widget/TextView$HandleView;->mCursorType:I
 
-    invoke-virtual {v8, v9}, Landroid/widget/TextView$ActionPopupWindow;->updatePositionFlag(I)V
+    invoke-virtual {v1, v2}, Landroid/widget/TextView$ActionPopupWindow;->updatePositionFlag(I)V
 
-    .line 11422
-    :cond_3
-    const/16 v8, 0xc8
+    :cond_0
+    const/16 v1, 0xc8
 
-    invoke-virtual {p0, v8}, Landroid/widget/TextView$SelectionStartHandleView;->showActionPopupWindow(I)V
+    invoke-virtual {p0, v1}, Landroid/widget/TextView$HandleView;->showActionPopupWindow(I)V
 
-    goto :goto_1
+    goto :goto_0
+
+    nop
 
     .line 11415
     :pswitch_data_0
@@ -494,11 +327,9 @@
 
     move-result v0
 
-    .line 11483
     :cond_0
-    invoke-virtual {p0, v0, v3}, Landroid/widget/TextView$SelectionStartHandleView;->positionAtCursorOffset(IZ)Z
+    invoke-virtual {p0, v0, v3}, Landroid/widget/TextView$HandleView;->positionAtCursorOffset(IZ)Z
 
-    .line 11484
     return-void
 .end method
 

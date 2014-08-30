@@ -104,7 +104,7 @@
 
     .line 10917
     #getter for: Landroid/view/View;->mContext:Landroid/content/Context;
-    invoke-static {p1}, Landroid/widget/TextView;->access$6900(Landroid/widget/TextView;)Landroid/content/Context;
+    invoke-static {p1}, Landroid/widget/TextView;->access$10100(Landroid/widget/TextView;)Landroid/content/Context;
 
     move-result-object v2
 
@@ -139,7 +139,7 @@
     new-instance v2, Landroid/widget/PopupWindow;
 
     #getter for: Landroid/view/View;->mContext:Landroid/content/Context;
-    invoke-static {p1}, Landroid/widget/TextView;->access$7000(Landroid/widget/TextView;)Landroid/content/Context;
+    invoke-static {p1}, Landroid/widget/TextView;->access$10100(Landroid/widget/TextView;)Landroid/content/Context;
 
     move-result-object v3
 
@@ -184,7 +184,7 @@
 
     .line 10931
     #getter for: Landroid/view/View;->mContext:Landroid/content/Context;
-    invoke-static {p1}, Landroid/widget/TextView;->access$7100(Landroid/widget/TextView;)Landroid/content/Context;
+    invoke-static {p1}, Landroid/widget/TextView;->access$10100(Landroid/widget/TextView;)Landroid/content/Context;
 
     move-result-object v2
 
@@ -1081,7 +1081,7 @@
     iget-object v3, p0, Landroid/widget/TextView$HandleView;->this$0:Landroid/widget/TextView;
 
     #getter for: Landroid/view/View;->mContext:Landroid/content/Context;
-    invoke-static {v3}, Landroid/widget/TextView;->access$7500(Landroid/widget/TextView;)Landroid/content/Context;
+    invoke-static {v3}, Landroid/widget/TextView;->access$10100(Landroid/widget/TextView;)Landroid/content/Context;
 
     move-result-object v3
 

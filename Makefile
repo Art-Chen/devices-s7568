@@ -2,12 +2,6 @@
 # Please use this file as the project Makefile reference
 
 ##############################################################################
-# This value defines which base this project should choose, only for baidu internal.
-# Support values: S710, JRD77SS, YINS, YIGN
-#-----------------------------------------------------------------------------
-BAIDU_BASE_DEVICE := YINS
-
-##############################################################################
 # Default DALVIK_VM_BUILD setting is 27
 # Only used for odex, if not, ignore...
 #-----------------------------------------------------------------------------
@@ -84,7 +78,7 @@ vendor_saved_apps := BluetoothAvrcp BluetoothMap BluetoothTest SecBluetooth MtpA
 # you need decode android.policy.jar to the project directory (use apktool d android.policy.jar) first
 # then you can make it by:   make android.policy
 #-----------------------------------------------------------------------------
-vendor_modify_jars := framework framework2 services twframework
+vendor_modify_jars := framework framework2 services twframework android.policy
 
 ##############################################################################
 # Directorys which you want to saved in baidu directory
@@ -111,7 +105,7 @@ baidu_modify_apps := SystemUI
 # baidu_modify_jars: which base the baidu's jar
 # just append *.smali.part
 #-----------------------------------------------------------------------------
-baidu_modify_jars := android.policy
+#baidu_modify_jars := android.policy
 
 ##############################################################################
 # override_property: this property will override the build.prop
@@ -127,6 +121,12 @@ baidu_modify_jars := android.policy
 # remove_property += \
 #    dev.defaultwallpaper
 
+##############################################################################
+# override_property: this property will override the build.prop
+#-----------------------------------------------------------------------------
+override_property += \
+    ro.baidu.romer=啦啦_请叫我琛
+
 ################### Auto Patch Constants Definition #########################
 # Current ROM version and the new version to be ugraded.
 # These two are useful for ROM upgrading.
@@ -136,11 +136,29 @@ baidu_modify_jars := android.policy
 # UPGRADE_VERSION := ROM38
 
 ##############################################################################
+# Defaul NO_SYSTEM_IMG is true
+# If you want generate an system.img, set it to false
+#-----------------------------------------------------------------------------
+NO_SYSTEM_IMG := true
+
+##############################################################################
 # Porting commits from a reference device automatically.
 # These two are useful for ROM porting.
 #-----------------------------------------------------------------------------
 # PORTING_FROM_DEVICE := lt26i
 # PORTING_FROM_BRANCH := smali-4.0
+
+##############################################################################
+# The FORMAT_PARAM_NUM is used to define format function's parameters number,
+# which was in the META-INF/com/google/android/updater-script.
+#
+# If FORMAT_PARAM_NUM is 4, the format function may like this:
+# format("ext4", "EMMC", "/dev/block/platform/hi_mci.1/by-name/system", "0");
+#
+# Otherwise if FORMAT_PARAM_NUM is 5:
+# format("ext4", "EMMC", "/dev/block/platform/hi_mci.1/by-name/system", "0", "/system");
+#-----------------------------------------------------------------------------
+FORMAT_PARAM_NUM := 4
 
 ################### Auto Patch Constants Definition #########################
 
