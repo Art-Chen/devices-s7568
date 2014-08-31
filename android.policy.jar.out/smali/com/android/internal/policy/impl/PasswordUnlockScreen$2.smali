@@ -3,7 +3,7 @@
 .source "PasswordUnlockScreen.java"
 
 # interfaces
-.implements Landroid/view/View$OnLongClickListener;
+.implements Landroid/view/View$OnClickListener;
 
 
 # annotations
@@ -27,35 +27,31 @@
     .parameter
 
     .prologue
-    .line 177
+    .line 194
     iput-object p1, p0, Lcom/android/internal/policy/impl/PasswordUnlockScreen$2;->this$0:Lcom/android/internal/policy/impl/PasswordUnlockScreen;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onLongClick(Landroid/view/View;)Z
-    .locals 2
+.method public onClick(Landroid/view/View;)V
+    .locals 1
     .parameter "v"
 
     .prologue
-    .line 181
+    .line 197
     iget-object v0, p0, Lcom/android/internal/policy/impl/PasswordUnlockScreen$2;->this$0:Lcom/android/internal/policy/impl/PasswordUnlockScreen;
 
-    #getter for: Lcom/android/internal/policy/impl/PasswordUnlockScreen;->mPasswordEntry:Landroid/widget/EditText;
-    invoke-static {v0}, Lcom/android/internal/policy/impl/PasswordUnlockScreen;->access$100(Lcom/android/internal/policy/impl/PasswordUnlockScreen;)Landroid/widget/EditText;
+    #getter for: Lcom/android/internal/policy/impl/PasswordUnlockScreen;->mKeyboardHelper:Lcom/android/internal/widget/PasswordEntryKeyboardHelper;
+    invoke-static {v0}, Lcom/android/internal/policy/impl/PasswordUnlockScreen;->access$300(Lcom/android/internal/policy/impl/PasswordUnlockScreen;)Lcom/android/internal/widget/PasswordEntryKeyboardHelper;
 
     move-result-object v0
 
-    const-string v1, ""
+    invoke-virtual {v0}, Lcom/android/internal/widget/PasswordEntryKeyboardHelper;->handleBackspace()V
 
-    invoke-virtual {v0, v1}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
-
-    .line 182
-    const/4 v0, 0x0
-
-    return v0
+    .line 198
+    return-void
 .end method

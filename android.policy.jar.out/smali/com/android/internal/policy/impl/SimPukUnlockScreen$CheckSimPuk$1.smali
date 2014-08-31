@@ -30,12 +30,12 @@
     .parameter
 
     .prologue
-    .line 243
+    .line 170
     iput-object p1, p0, Lcom/android/internal/policy/impl/SimPukUnlockScreen$CheckSimPuk$1;->this$1:Lcom/android/internal/policy/impl/SimPukUnlockScreen$CheckSimPuk;
 
     iput-boolean p2, p0, Lcom/android/internal/policy/impl/SimPukUnlockScreen$CheckSimPuk$1;->val$result:Z
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -46,13 +46,13 @@
     .locals 2
 
     .prologue
-    .line 245
+    .line 172
     iget-object v0, p0, Lcom/android/internal/policy/impl/SimPukUnlockScreen$CheckSimPuk$1;->this$1:Lcom/android/internal/policy/impl/SimPukUnlockScreen$CheckSimPuk;
 
     iget-boolean v1, p0, Lcom/android/internal/policy/impl/SimPukUnlockScreen$CheckSimPuk$1;->val$result:Z
 
     invoke-virtual {v0, v1}, Lcom/android/internal/policy/impl/SimPukUnlockScreen$CheckSimPuk;->onSimLockChangedResponse(Z)V
 
-    .line 246
+    .line 173
     return-void
 .end method

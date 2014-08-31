@@ -33,21 +33,21 @@
     .parameter "health"
 
     .prologue
-    .line 218
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    .line 179
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 219
+    .line 180
     iput p1, p0, Lcom/android/internal/policy/impl/KeyguardUpdateMonitor$BatteryStatus;->status:I
 
-    .line 220
+    .line 181
     iput p2, p0, Lcom/android/internal/policy/impl/KeyguardUpdateMonitor$BatteryStatus;->level:I
 
-    .line 221
+    .line 182
     iput p3, p0, Lcom/android/internal/policy/impl/KeyguardUpdateMonitor$BatteryStatus;->plugged:I
 
-    .line 222
+    .line 183
     iput p4, p0, Lcom/android/internal/policy/impl/KeyguardUpdateMonitor$BatteryStatus;->health:I
 
-    .line 223
+    .line 184
     return-void
 .end method

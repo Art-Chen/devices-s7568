@@ -27,10 +27,10 @@
     .parameter
 
     .prologue
-    .line 1053
+    .line 823
     iput-object p1, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$7;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -38,33 +38,15 @@
 
 # virtual methods
 .method public run()V
-    .locals 3
+    .locals 1
 
     .prologue
-    .line 1055
-    new-instance v0, Landroid/content/Intent;
+    .line 825
+    iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$7;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
-    const-string v1, "android.intent.action.SCREENRECORDER"
+    #calls: Lcom/android/internal/policy/impl/PhoneWindowManager;->takeScreenshot()V
+    invoke-static {v0}, Lcom/android/internal/policy/impl/PhoneWindowManager;->access$200(Lcom/android/internal/policy/impl/PhoneWindowManager;)V
 
-    const/4 v2, 0x0
-
-    invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
-
-    .line 1056
-    .local v0, intent:Landroid/content/Intent;
-    iget-object v1, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$7;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
-
-    iget-object v1, v1, Lcom/android/internal/policy/impl/PhoneWindowManager;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v1, v0}, Landroid/content/Context;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
-
-    .line 1057
-    const-string v1, "WindowManager"
-
-    const-string v2, "mScreenrecordChordLongPress - startService(ACTION_SCREEN_RECORDER)"
-
-    invoke-static {v1, v2}, Landroid/util/safelog/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 1058
+    .line 826
     return-void
 .end method

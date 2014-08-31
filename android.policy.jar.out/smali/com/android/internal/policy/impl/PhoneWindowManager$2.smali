@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 516
+    .line 445
     iput-object p1, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$2;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
     invoke-direct {p0}, Lcom/android/internal/view/BaseInputHandler;-><init>()V
@@ -35,102 +35,71 @@
 
 # virtual methods
 .method public handleMotion(Landroid/view/MotionEvent;Landroid/view/InputQueue$FinishedCallback;)V
-    .locals 6
+    .locals 3
     .parameter "event"
     .parameter "finishedCallback"
 
     .prologue
-    const/4 v1, 0x1
-
-    const/4 v2, 0x0
-
-    .line 519
+    .line 448
     const/4 v0, 0x0
 
-    .line 521
+    .line 450
     .local v0, handled:Z
     :try_start_0
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getSource()I
 
-    move-result v3
+    move-result v1
 
-    and-int/lit8 v3, v3, 0x2
+    and-int/lit8 v1, v1, 0x2
 
-    if-eqz v3, :cond_1
+    if-eqz v1, :cond_1
 
-    .line 522
-    iget-object v3, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$2;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
+    .line 451
+    iget-object v1, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$2;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
-    iget-object v4, v3, Lcom/android/internal/policy/impl/PhoneWindowManager;->mLock:Ljava/lang/Object;
+    iget-object v2, v1, Lcom/android/internal/policy/impl/PhoneWindowManager;->mLock:Ljava/lang/Object;
 
-    monitor-enter v4
+    monitor-enter v2
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 523
+    .line 452
     :try_start_1
-    iget-object v3, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$2;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
+    iget-object v1, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$2;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
-    iget-object v3, v3, Lcom/android/internal/policy/impl/PhoneWindowManager;->mSPenGestureCroppingView:Lcom/android/internal/widget/SPenGestureCroppingView;
-
-    if-eqz v3, :cond_2
-
-    move v3, v1
-
-    :goto_0
-    iget-object v5, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$2;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
-
-    invoke-virtual {v5}, Lcom/android/internal/policy/impl/PhoneWindowManager;->keyguardOn()Z
-
-    move-result v5
-
-    if-nez v5, :cond_3
-
-    :goto_1
-    and-int/2addr v1, v3
+    iget-object v1, v1, Lcom/android/internal/policy/impl/PhoneWindowManager;->mPointerLocationView:Lcom/android/internal/widget/PointerLocationView;
 
     if-eqz v1, :cond_0
 
-    .line 524
+    .line 453
     iget-object v1, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$2;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
-    iget-object v1, v1, Lcom/android/internal/policy/impl/PhoneWindowManager;->mSPenGestureCroppingView:Lcom/android/internal/widget/SPenGestureCroppingView;
+    iget-object v1, v1, Lcom/android/internal/policy/impl/PhoneWindowManager;->mPointerLocationView:Lcom/android/internal/widget/PointerLocationView;
 
-    invoke-virtual {v1, p1}, Lcom/android/internal/widget/SPenGestureCroppingView;->addPointerEvent(Landroid/view/MotionEvent;)V
+    invoke-virtual {v1, p1}, Lcom/android/internal/widget/PointerLocationView;->addPointerEvent(Landroid/view/MotionEvent;)V
 
-    .line 525
+    .line 454
     const/4 v0, 0x1
 
-    .line 527
+    .line 456
     :cond_0
-    monitor-exit v4
+    monitor-exit v2
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 530
+    .line 459
     :cond_1
     invoke-virtual {p2, v0}, Landroid/view/InputQueue$FinishedCallback;->finished(Z)V
 
-    .line 532
+    .line 461
     return-void
 
-    :cond_2
-    move v3, v2
-
-    .line 523
-    goto :goto_0
-
-    :cond_3
-    move v1, v2
-
-    goto :goto_1
-
-    .line 527
+    .line 456
     :catchall_0
     move-exception v1
 
     :try_start_2
-    monitor-exit v4
+    monitor-exit v2
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -139,7 +108,7 @@
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
-    .line 530
+    .line 459
     :catchall_1
     move-exception v1
 

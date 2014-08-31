@@ -3,12 +3,12 @@
 .source "GlobalActions.java"
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnDismissListener;
+.implements Ljava/lang/Runnable;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/internal/policy/impl/GlobalActions;->prepareDialog()Z
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/android/internal/policy/impl/GlobalActions;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -27,45 +27,80 @@
     .parameter
 
     .prologue
-    .line 494
+    .line 330
     iput-object p1, p0, Lcom/android/internal/policy/impl/GlobalActions$7;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onDismiss(Landroid/content/DialogInterface;)V
+.method public run()V
     .locals 3
-    .parameter "dialog"
 
     .prologue
-    .line 496
+    .line 332
     iget-object v0, p0, Lcom/android/internal/policy/impl/GlobalActions$7;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
 
-    invoke-virtual {v0, p1}, Lcom/android/internal/policy/impl/GlobalActions;->onDismissAction(Landroid/content/DialogInterface;)V
+    #getter for: Lcom/android/internal/policy/impl/GlobalActions;->mScreenshotLock:Ljava/lang/Object;
+    invoke-static {v0}, Lcom/android/internal/policy/impl/GlobalActions;->access$700(Lcom/android/internal/policy/impl/GlobalActions;)Ljava/lang/Object;
 
-    .line 497
+    move-result-object v1
+
+    monitor-enter v1
+
+    .line 333
+    :try_start_0
     iget-object v0, p0, Lcom/android/internal/policy/impl/GlobalActions$7;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
 
-    iget-object v1, p0, Lcom/android/internal/policy/impl/GlobalActions$7;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
+    #getter for: Lcom/android/internal/policy/impl/GlobalActions;->mScreenshotConnection:Landroid/content/ServiceConnection;
+    invoke-static {v0}, Lcom/android/internal/policy/impl/GlobalActions;->access$900(Lcom/android/internal/policy/impl/GlobalActions;)Landroid/content/ServiceConnection;
 
-    #getter for: Lcom/android/internal/policy/impl/GlobalActions;->mKeyguardShowing:Z
-    invoke-static {v1}, Lcom/android/internal/policy/impl/GlobalActions;->access$900(Lcom/android/internal/policy/impl/GlobalActions;)Z
+    move-result-object v0
 
-    move-result v1
+    if-eqz v0, :cond_0
+
+    .line 334
+    iget-object v0, p0, Lcom/android/internal/policy/impl/GlobalActions$7;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
+
+    #getter for: Lcom/android/internal/policy/impl/GlobalActions;->mContext:Landroid/content/Context;
+    invoke-static {v0}, Lcom/android/internal/policy/impl/GlobalActions;->access$100(Lcom/android/internal/policy/impl/GlobalActions;)Landroid/content/Context;
+
+    move-result-object v0
 
     iget-object v2, p0, Lcom/android/internal/policy/impl/GlobalActions$7;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
 
-    #getter for: Lcom/android/internal/policy/impl/GlobalActions;->mDeviceProvisioned:Z
-    invoke-static {v2}, Lcom/android/internal/policy/impl/GlobalActions;->access$1000(Lcom/android/internal/policy/impl/GlobalActions;)Z
+    #getter for: Lcom/android/internal/policy/impl/GlobalActions;->mScreenshotConnection:Landroid/content/ServiceConnection;
+    invoke-static {v2}, Lcom/android/internal/policy/impl/GlobalActions;->access$900(Lcom/android/internal/policy/impl/GlobalActions;)Landroid/content/ServiceConnection;
 
-    move-result v2
+    move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/internal/policy/impl/GlobalActions;->showDialog(ZZ)V
+    invoke-virtual {v0, v2}, Landroid/content/Context;->unbindService(Landroid/content/ServiceConnection;)V
 
-    .line 498
+    .line 335
+    iget-object v0, p0, Lcom/android/internal/policy/impl/GlobalActions$7;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
+
+    const/4 v2, 0x0
+
+    #setter for: Lcom/android/internal/policy/impl/GlobalActions;->mScreenshotConnection:Landroid/content/ServiceConnection;
+    invoke-static {v0, v2}, Lcom/android/internal/policy/impl/GlobalActions;->access$902(Lcom/android/internal/policy/impl/GlobalActions;Landroid/content/ServiceConnection;)Landroid/content/ServiceConnection;
+
+    .line 337
+    :cond_0
+    monitor-exit v1
+
+    .line 338
     return-void
+
+    .line 337
+    :catchall_0
+    move-exception v0
+
+    monitor-exit v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v0
 .end method

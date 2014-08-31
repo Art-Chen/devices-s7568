@@ -30,16 +30,16 @@
     .parameter "messageResId"
 
     .prologue
-    .line 714
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    .line 464
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 715
+    .line 465
     iput p1, p0, Lcom/android/internal/policy/impl/GlobalActions$SinglePressAction;->mIconResId:I
 
-    .line 716
+    .line 466
     iput p2, p0, Lcom/android/internal/policy/impl/GlobalActions$SinglePressAction;->mMessageResId:I
 
-    .line 717
+    .line 467
     return-void
 .end method
 
@@ -53,7 +53,7 @@
     .parameter "inflater"
 
     .prologue
-    .line 727
+    .line 477
     const v3, 0x1090046
 
     const/4 v4, 0x0
@@ -62,7 +62,7 @@
 
     move-result-object v2
 
-    .line 729
+    .line 479
     .local v2, v:Landroid/view/View;
     const v3, 0x1020006
 
@@ -72,7 +72,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    .line 730
+    .line 480
     .local v0, icon:Landroid/widget/ImageView;
     const v3, 0x102000b
 
@@ -82,7 +82,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    .line 732
+    .line 482
     .local v1, messageView:Landroid/widget/TextView;
     const v3, 0x1020296
 
@@ -94,7 +94,7 @@
 
     invoke-virtual {v3, v4}, Landroid/view/View;->setVisibility(I)V
 
-    .line 734
+    .line 484
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
@@ -107,17 +107,12 @@
 
     invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 735
+    .line 485
     iget v3, p0, Lcom/android/internal/policy/impl/GlobalActions$SinglePressAction;->mMessageResId:I
 
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setText(I)V
 
-    .line 736
-    const/4 v3, 0x1
-
-    invoke-virtual {v1, v3}, Landroid/widget/TextView;->setEnabled(Z)V
-
-    .line 737
+    .line 487
     return-object v2
 .end method
 
@@ -125,7 +120,7 @@
     .locals 1
 
     .prologue
-    .line 720
+    .line 470
     const/4 v0, 0x1
 
     return v0

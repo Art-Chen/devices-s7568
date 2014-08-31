@@ -23,7 +23,7 @@
     .locals 1
 
     .prologue
-    .line 223
+    .line 191
     const-string v0, "window"
 
     invoke-static {v0}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
@@ -43,8 +43,8 @@
     .locals 0
 
     .prologue
-    .line 222
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    .line 190
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method

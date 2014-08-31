@@ -7,8 +7,8 @@
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/internal/policy/impl/PhoneWindowManager;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/android/internal/policy/impl/PhoneWindowManager;->showOrHideRecentAppsDialog(I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,17 +20,22 @@
 # instance fields
 .field final synthetic this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
+.field final synthetic val$behavior:I
+
 
 # direct methods
-.method constructor <init>(Lcom/android/internal/policy/impl/PhoneWindowManager;)V
+.method constructor <init>(Lcom/android/internal/policy/impl/PhoneWindowManager;I)V
     .locals 0
+    .parameter
     .parameter
 
     .prologue
-    .line 1201
+    .line 985
     iput-object p1, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$10;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    iput p2, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$10;->val$behavior:I
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -38,121 +43,132 @@
 
 # virtual methods
 .method public run()V
-    .locals 5
+    .locals 3
 
     .prologue
-    const/4 v4, 0x1
+    .line 988
+    iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$10;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
-    .line 1204
-    const/4 v1, 0x1
+    iget-object v0, v0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mRecentAppsDialog:Lcom/android/internal/policy/impl/RecentApplicationsDialog;
 
-    .line 1206
-    .local v1, isScreenCaptureEnabled:Z
+    if-nez v0, :cond_0
+
+    .line 989
+    iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$10;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
+
+    new-instance v1, Lcom/android/internal/policy/impl/RecentApplicationsDialog;
+
     iget-object v2, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$10;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
-    iget-boolean v2, v2, Lcom/android/internal/policy/impl/PhoneWindowManager;->mScreenCaptureOn:Z
+    iget-object v2, v2, Lcom/android/internal/policy/impl/PhoneWindowManager;->mContext:Landroid/content/Context;
 
-    if-eq v2, v4, :cond_0
+    invoke-direct {v1, v2}, Lcom/android/internal/policy/impl/RecentApplicationsDialog;-><init>(Landroid/content/Context;)V
 
-    .line 1229
+    iput-object v1, v0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mRecentAppsDialog:Lcom/android/internal/policy/impl/RecentApplicationsDialog;
+
+    .line 991
+    :cond_0
+    iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$10;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
+
+    iget-object v0, v0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mRecentAppsDialog:Lcom/android/internal/policy/impl/RecentApplicationsDialog;
+
+    invoke-virtual {v0}, Landroid/app/Dialog;->isShowing()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 992
+    iget v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$10;->val$behavior:I
+
+    packed-switch v0, :pswitch_data_0
+
+    .line 1020
     :goto_0
+    :pswitch_0
     return-void
 
-    .line 1208
-    :cond_0
-    iget-object v2, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$10;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
+    .line 994
+    :pswitch_1
+    iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$10;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
-    iget-object v2, v2, Lcom/android/internal/policy/impl/PhoneWindowManager;->mStatusBarService:Lcom/android/internal/statusbar/IStatusBarService;
+    iget-object v0, v0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mRecentAppsDialog:Lcom/android/internal/policy/impl/RecentApplicationsDialog;
 
-    if-nez v2, :cond_1
+    invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
 
-    .line 1209
-    iget-object v2, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$10;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
+    goto :goto_0
 
-    const-string v3, "statusbar"
+    .line 997
+    :pswitch_2
+    iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$10;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
-    invoke-static {v3}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
+    iget-object v0, v0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mRecentAppsDialog:Lcom/android/internal/policy/impl/RecentApplicationsDialog;
 
-    move-result-object v3
+    invoke-virtual {v0}, Lcom/android/internal/policy/impl/RecentApplicationsDialog;->dismissAndSwitch()V
 
-    invoke-static {v3}, Lcom/android/internal/statusbar/IStatusBarService$Stub;->asInterface(Landroid/os/IBinder;)Lcom/android/internal/statusbar/IStatusBarService;
+    goto :goto_0
 
-    move-result-object v3
-
-    iput-object v3, v2, Lcom/android/internal/policy/impl/PhoneWindowManager;->mStatusBarService:Lcom/android/internal/statusbar/IStatusBarService;
-
-    .line 1212
+    .line 1004
     :cond_1
-    iget-object v2, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$10;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
+    iget v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$10;->val$behavior:I
 
-    iget-object v2, v2, Lcom/android/internal/policy/impl/PhoneWindowManager;->mStatusBarService:Lcom/android/internal/statusbar/IStatusBarService;
+    packed-switch v0, :pswitch_data_1
 
-    if-eqz v2, :cond_2
+    goto :goto_0
 
-    .line 1214
+    .line 1006
+    :pswitch_3
+    iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$10;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
+
+    iget-object v0, v0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mRecentAppsDialog:Lcom/android/internal/policy/impl/RecentApplicationsDialog;
+
+    invoke-virtual {v0}, Landroid/app/Dialog;->show()V
+
+    goto :goto_0
+
+    .line 1010
+    :pswitch_4
     :try_start_0
-    iget-object v2, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$10;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
+    iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$10;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
-    iget-object v2, v2, Lcom/android/internal/policy/impl/PhoneWindowManager;->mStatusBarService:Lcom/android/internal/statusbar/IStatusBarService;
+    iget-object v0, v0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mWindowManager:Landroid/view/IWindowManager;
 
-    invoke-interface {v2}, Lcom/android/internal/statusbar/IStatusBarService;->isScreenCaptureEnabled()Z
+    const/4 v1, 0x0
+
+    invoke-interface {v0, v1}, Landroid/view/IWindowManager;->setInTouchMode(Z)V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    move-result v1
-
-    .line 1221
-    :cond_2
+    .line 1013
     :goto_1
-    if-eqz v1, :cond_3
+    iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$10;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
-    .line 1223
-    const-string v2, "WindowManager"
+    iget-object v0, v0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mRecentAppsDialog:Lcom/android/internal/policy/impl/RecentApplicationsDialog;
 
-    const-string v3, "take screen shot"
-
-    invoke-static {v2, v3}, Landroid/util/safelog/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 1224
-    iget-object v2, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$10;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
-
-    #calls: Lcom/android/internal/policy/impl/PhoneWindowManager;->takeScreenshot(I)V
-    invoke-static {v2, v4}, Lcom/android/internal/policy/impl/PhoneWindowManager;->access$700(Lcom/android/internal/policy/impl/PhoneWindowManager;I)V
+    invoke-virtual {v0}, Landroid/app/Dialog;->show()V
 
     goto :goto_0
 
-    .line 1215
+    .line 1011
     :catch_0
     move-exception v0
 
-    .line 1216
-    .local v0, e:Landroid/os/RemoteException;
-    const-string v2, "WindowManager"
-
-    const-string v3, "StatusBarService RemoteException"
-
-    invoke-static {v2, v3}, Landroid/util/safelog/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 1217
-    iget-object v2, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$10;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
-
-    const/4 v3, 0x0
-
-    iput-object v3, v2, Lcom/android/internal/policy/impl/PhoneWindowManager;->mStatusBarService:Lcom/android/internal/statusbar/IStatusBarService;
-
-    .line 1218
-    const/4 v1, 0x1
-
     goto :goto_1
 
-    .line 1227
-    .end local v0           #e:Landroid/os/RemoteException;
-    :cond_3
-    const-string v2, "WindowManager"
+    .line 992
+    nop
 
-    const-string v3, "not captured"
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+        :pswitch_2
+    .end packed-switch
 
-    invoke-static {v2, v3}, Landroid/util/safelog/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    goto :goto_0
+    .line 1004
+    :pswitch_data_1
+    .packed-switch 0x0
+        :pswitch_3
+        :pswitch_4
+    .end packed-switch
 .end method

@@ -30,12 +30,12 @@
     .parameter
 
     .prologue
-    .line 312
+    .line 307
     iput-object p1, p0, Lcom/android/internal/policy/impl/KeyguardViewManager$2;->this$0:Lcom/android/internal/policy/impl/KeyguardViewManager;
 
     iput-object p2, p0, Lcom/android/internal/policy/impl/KeyguardViewManager$2;->val$lastView:Lcom/android/internal/policy/impl/KeyguardViewBase;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -46,18 +46,18 @@
     .locals 3
 
     .prologue
-    .line 314
+    .line 309
     iget-object v1, p0, Lcom/android/internal/policy/impl/KeyguardViewManager$2;->this$0:Lcom/android/internal/policy/impl/KeyguardViewManager;
 
     monitor-enter v1
 
-    .line 315
+    .line 310
     :try_start_0
     iget-object v0, p0, Lcom/android/internal/policy/impl/KeyguardViewManager$2;->val$lastView:Lcom/android/internal/policy/impl/KeyguardViewBase;
 
     invoke-virtual {v0}, Lcom/android/internal/policy/impl/KeyguardViewBase;->cleanUp()V
 
-    .line 316
+    .line 311
     iget-object v0, p0, Lcom/android/internal/policy/impl/KeyguardViewManager$2;->this$0:Lcom/android/internal/policy/impl/KeyguardViewManager;
 
     #getter for: Lcom/android/internal/policy/impl/KeyguardViewManager;->mKeyguardHost:Landroid/widget/FrameLayout;
@@ -67,15 +67,15 @@
 
     iget-object v2, p0, Lcom/android/internal/policy/impl/KeyguardViewManager$2;->val$lastView:Lcom/android/internal/policy/impl/KeyguardViewBase;
 
-    invoke-virtual {v0, v2}, Landroid/widget/FrameLayout;->removeView(Landroid/view/View;)V
+    invoke-virtual {v0, v2}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
 
-    .line 317
+    .line 312
     monitor-exit v1
 
-    .line 318
+    .line 313
     return-void
 
-    .line 317
+    .line 312
     :catchall_0
     move-exception v0
 

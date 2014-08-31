@@ -23,7 +23,7 @@
     .locals 3
 
     .prologue
-    .line 122
+    .line 117
     invoke-static {}, Lcom/android/internal/policy/impl/PatternUnlockScreen$FooterMode;->values()[Lcom/android/internal/policy/impl/PatternUnlockScreen$FooterMode;
 
     move-result-object v0
@@ -39,7 +39,7 @@
 
     sget-object v1, Lcom/android/internal/policy/impl/PatternUnlockScreen$FooterMode;->Normal:Lcom/android/internal/policy/impl/PatternUnlockScreen$FooterMode;
 
-    invoke-virtual {v1}, Lcom/android/internal/policy/impl/PatternUnlockScreen$FooterMode;->ordinal()I
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     move-result v1
 
@@ -55,7 +55,7 @@
 
     sget-object v1, Lcom/android/internal/policy/impl/PatternUnlockScreen$FooterMode;->ForgotLockPattern:Lcom/android/internal/policy/impl/PatternUnlockScreen$FooterMode;
 
-    invoke-virtual {v1}, Lcom/android/internal/policy/impl/PatternUnlockScreen$FooterMode;->ordinal()I
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     move-result v1
 
@@ -71,7 +71,7 @@
 
     sget-object v1, Lcom/android/internal/policy/impl/PatternUnlockScreen$FooterMode;->VerifyUnlocked:Lcom/android/internal/policy/impl/PatternUnlockScreen$FooterMode;
 
-    invoke-virtual {v1}, Lcom/android/internal/policy/impl/PatternUnlockScreen$FooterMode;->ordinal()I
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     move-result v1
 

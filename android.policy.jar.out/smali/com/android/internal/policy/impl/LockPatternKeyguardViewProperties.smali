@@ -20,7 +20,7 @@
 
     .prologue
     .line 40
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 41
     iput-object p1, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardViewProperties;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
@@ -37,53 +37,33 @@
 
     .prologue
     .line 57
-    invoke-static {}, Lcom/android/internal/policy/impl/SamsungLockScreenProperties;->isDualDevice()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    .line 58
-    invoke-static {}, Lcom/android/internal/policy/impl/DualModeUtils;->getPINPUKRequest()Z
-
-    move-result v1
-
-    .line 62
-    :goto_0
-    return v1
-
-    .line 61
-    :cond_0
     iget-object v1, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardViewProperties;->mUpdateMonitor:Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;
 
     invoke-virtual {v1}, Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;->getSimState()Lcom/android/internal/telephony/IccCard$State;
 
     move-result-object v0
 
-    .line 62
+    .line 58
     .local v0, simState:Lcom/android/internal/telephony/IccCard$State;
     sget-object v1, Lcom/android/internal/telephony/IccCard$State;->PIN_REQUIRED:Lcom/android/internal/telephony/IccCard$State;
 
-    if-eq v0, v1, :cond_1
+    if-eq v0, v1, :cond_0
 
     sget-object v1, Lcom/android/internal/telephony/IccCard$State;->PUK_REQUIRED:Lcom/android/internal/telephony/IccCard$State;
 
-    if-eq v0, v1, :cond_1
-
-    sget-object v1, Lcom/android/internal/telephony/IccCard$State;->ABSENT:Lcom/android/internal/telephony/IccCard$State;
-
-    if-eq v0, v1, :cond_1
+    if-eq v0, v1, :cond_0
 
     sget-object v1, Lcom/android/internal/telephony/IccCard$State;->PERM_DISABLED:Lcom/android/internal/telephony/IccCard$State;
 
-    if-ne v0, v1, :cond_2
+    if-ne v0, v1, :cond_1
 
-    :cond_1
+    :cond_0
     const/4 v1, 0x1
 
-    goto :goto_0
+    :goto_0
+    return v1
 
-    :cond_2
+    :cond_1
     const/4 v1, 0x0
 
     goto :goto_0

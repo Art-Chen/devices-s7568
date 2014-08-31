@@ -25,13 +25,13 @@
     .parameter "context"
 
     .prologue
-    .line 831
+    .line 610
     iput-object p1, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$MyOrientationListener;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
-    .line 832
+    .line 611
     invoke-direct {p0, p2}, Landroid/view/WindowOrientationListener;-><init>(Landroid/content/Context;)V
 
-    .line 833
+    .line 612
     return-void
 .end method
 
@@ -42,13 +42,13 @@
     .parameter "rotation"
 
     .prologue
-    .line 838
+    .line 617
     iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$MyOrientationListener;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/android/internal/policy/impl/PhoneWindowManager;->updateRotation(Z)V
 
-    .line 839
+    .line 618
     return-void
 .end method

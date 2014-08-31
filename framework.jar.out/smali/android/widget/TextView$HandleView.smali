@@ -104,7 +104,7 @@
 
     .line 10917
     #getter for: Landroid/view/View;->mContext:Landroid/content/Context;
-    invoke-static {p1}, Landroid/widget/TextView;->access$10100(Landroid/widget/TextView;)Landroid/content/Context;
+    invoke-static {p1}, Landroid/widget/TextView;->access$6900(Landroid/widget/TextView;)Landroid/content/Context;
 
     move-result-object v2
 
@@ -139,7 +139,7 @@
     new-instance v2, Landroid/widget/PopupWindow;
 
     #getter for: Landroid/view/View;->mContext:Landroid/content/Context;
-    invoke-static {p1}, Landroid/widget/TextView;->access$10100(Landroid/widget/TextView;)Landroid/content/Context;
+    invoke-static {p1}, Landroid/widget/TextView;->access$7000(Landroid/widget/TextView;)Landroid/content/Context;
 
     move-result-object v3
 
@@ -184,7 +184,7 @@
 
     .line 10931
     #getter for: Landroid/view/View;->mContext:Landroid/content/Context;
-    invoke-static {p1}, Landroid/widget/TextView;->access$10100(Landroid/widget/TextView;)Landroid/content/Context;
+    invoke-static {p1}, Landroid/widget/TextView;->access$7100(Landroid/widget/TextView;)Landroid/content/Context;
 
     move-result-object v2
 
@@ -411,7 +411,7 @@
 
     iget-object v1, p0, Landroid/widget/TextView$HandleView;->mActionPopupShower:Ljava/lang/Runnable;
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->removeCallbacks(Ljava/lang/Runnable;)Z
+    invoke-virtual {v0, v1}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
 
     .line 11052
     :cond_0
@@ -457,7 +457,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/widget/TextView$MagnifierController;->dismiss()V
+    invoke-virtual {v0}, Landroid/widget/TextView$PopupWindowView;->dismiss()V
 
     .line 11016
     :cond_0
@@ -494,7 +494,7 @@
 
     iget-object v1, p0, Landroid/widget/TextView$HandleView;->mActionPopupShower:Ljava/lang/Runnable;
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->removeCallbacks(Ljava/lang/Runnable;)Z
+    invoke-virtual {v0, v1}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
 
     .line 11042
     :cond_0
@@ -505,7 +505,7 @@
     .line 11043
     iget-object v0, p0, Landroid/widget/TextView$HandleView;->mActionPopupWindow:Landroid/widget/TextView$ActionPopupWindow;
 
-    invoke-virtual {v0}, Landroid/widget/TextView$ActionPopupWindow;->hide()V
+    invoke-virtual {v0}, Landroid/widget/TextView$PinnedPopupWindow;->hide()V
 
     .line 11045
     :cond_1
@@ -681,7 +681,7 @@
 
     move-result v1
 
-    invoke-virtual {p0, v0, v1}, Landroid/widget/TextView$HandleView;->setMeasuredDimension(II)V
+    invoke-virtual {p0, v0, v1}, Landroid/view/View;->setMeasuredDimension(II)V
 
     .line 10992
     return-void
@@ -936,7 +936,7 @@
 
     move-result-object v8
 
-    invoke-virtual {v8}, Landroid/widget/TextView$MagnifierController;->hideDelayed()V
+    invoke-virtual {v8}, Landroid/widget/TextView$PopupWindowView;->hideDelayed()V
 
     goto/16 :goto_0
 
@@ -1081,7 +1081,7 @@
     iget-object v3, p0, Landroid/widget/TextView$HandleView;->this$0:Landroid/widget/TextView;
 
     #getter for: Landroid/view/View;->mContext:Landroid/content/Context;
-    invoke-static {v3}, Landroid/widget/TextView;->access$10100(Landroid/widget/TextView;)Landroid/content/Context;
+    invoke-static {v3}, Landroid/widget/TextView;->access$7500(Landroid/widget/TextView;)Landroid/content/Context;
 
     move-result-object v3
 
@@ -1250,7 +1250,7 @@
 
     int-to-long v2, p1
 
-    invoke-virtual {v0, v1, v2, v3}, Landroid/widget/TextView;->postDelayed(Ljava/lang/Runnable;J)Z
+    invoke-virtual {v0, v1, v2, v3}, Landroid/view/View;->postDelayed(Ljava/lang/Runnable;J)Z
 
     .line 11036
     return-void
@@ -1261,7 +1261,7 @@
 
     iget-object v1, p0, Landroid/widget/TextView$HandleView;->mActionPopupShower:Ljava/lang/Runnable;
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->removeCallbacks(Ljava/lang/Runnable;)Z
+    invoke-virtual {v0, v1}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
 
     goto :goto_0
 .end method

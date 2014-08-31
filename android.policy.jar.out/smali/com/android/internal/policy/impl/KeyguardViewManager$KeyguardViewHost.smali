@@ -25,13 +25,13 @@
     .parameter "callback"
 
     .prologue
-    .line 92
+    .line 105
     invoke-direct {p0, p1}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
 
-    .line 93
+    .line 106
     iput-object p2, p0, Lcom/android/internal/policy/impl/KeyguardViewManager$KeyguardViewHost;->mCallback:Lcom/android/internal/policy/impl/KeyguardViewCallback;
 
-    .line 94
+    .line 107
     return-void
 .end method
 
@@ -42,7 +42,7 @@
     .parameter "x2"
 
     .prologue
-    .line 88
+    .line 101
     invoke-direct {p0, p1, p2}, Lcom/android/internal/policy/impl/KeyguardViewManager$KeyguardViewHost;-><init>(Landroid/content/Context;Lcom/android/internal/policy/impl/KeyguardViewCallback;)V
 
     return-void
@@ -55,14 +55,14 @@
     .parameter "canvas"
 
     .prologue
-    .line 98
-    invoke-super {p0, p1}, Landroid/widget/FrameLayout;->dispatchDraw(Landroid/graphics/Canvas;)V
+    .line 111
+    invoke-super {p0, p1}, Landroid/view/ViewGroup;->dispatchDraw(Landroid/graphics/Canvas;)V
 
-    .line 99
+    .line 112
     iget-object v0, p0, Lcom/android/internal/policy/impl/KeyguardViewManager$KeyguardViewHost;->mCallback:Lcom/android/internal/policy/impl/KeyguardViewCallback;
 
     invoke-interface {v0}, Lcom/android/internal/policy/impl/KeyguardViewCallback;->keyguardDoneDrawing()V
 
-    .line 100
+    .line 113
     return-void
 .end method

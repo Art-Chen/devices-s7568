@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 5067
+    .line 3718
     iput-object p1, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$20;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -35,18 +35,58 @@
 
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
-    .locals 1
+    .locals 2
     .parameter "context"
     .parameter "intent"
 
     .prologue
-    .line 5069
+    .line 3720
+    const-string v0, "yi.intent.action.box.RUN"
+
+    invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 3721
     iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$20;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
-    iget-object v0, v0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mBroadcastWakeLock:Landroid/os/PowerManager$WakeLock;
+    const/4 v1, 0x1
 
-    invoke-virtual {v0}, Landroid/os/PowerManager$WakeLock;->release()V
+    #setter for: Lcom/android/internal/policy/impl/PhoneWindowManager;->mBoxRunning:Z
+    invoke-static {v0, v1}, Lcom/android/internal/policy/impl/PhoneWindowManager;->access$302(Lcom/android/internal/policy/impl/PhoneWindowManager;Z)Z
 
-    .line 5070
+    .line 3725
+    :cond_0
+    :goto_0
     return-void
+
+    .line 3722
+    :cond_1
+    const-string v0, "yi.intent.action.box.EXIT"
+
+    invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 3723
+    iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$20;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
+
+    const/4 v1, 0x0
+
+    #setter for: Lcom/android/internal/policy/impl/PhoneWindowManager;->mBoxRunning:Z
+    invoke-static {v0, v1}, Lcom/android/internal/policy/impl/PhoneWindowManager;->access$302(Lcom/android/internal/policy/impl/PhoneWindowManager;Z)Z
+
+    goto :goto_0
 .end method

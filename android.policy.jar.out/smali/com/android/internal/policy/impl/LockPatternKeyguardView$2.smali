@@ -3,7 +3,7 @@
 .source "LockPatternKeyguardView.java"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lcom/android/internal/widget/LockScreenWidgetCallback;
 
 
 # annotations
@@ -27,41 +27,108 @@
     .parameter
 
     .prologue
-    .line 317
+    .line 249
     iput-object p1, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardView$2;->this$0:Lcom/android/internal/policy/impl/LockPatternKeyguardView;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public run()V
-    .locals 3
+.method public isVisible(Landroid/view/View;)Z
+    .locals 1
+    .parameter "self"
 
     .prologue
-    .line 319
+    .line 287
+    invoke-virtual {p1}, Landroid/view/View;->getVisibility()I
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    const/4 v0, 0x1
+
+    :goto_0
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_0
+.end method
+
+.method public requestHide(Landroid/view/View;)V
+    .locals 2
+    .parameter "view"
+
+    .prologue
+    .line 275
+    const/16 v0, 0x8
+
+    invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
+
+    .line 278
     iget-object v0, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardView$2;->this$0:Lcom/android/internal/policy/impl/LockPatternKeyguardView;
 
-    iget-object v1, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardView$2;->this$0:Lcom/android/internal/policy/impl/LockPatternKeyguardView;
+    #getter for: Lcom/android/internal/policy/impl/LockPatternKeyguardView;->mUpdateMonitor:Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;
+    invoke-static {v0}, Lcom/android/internal/policy/impl/LockPatternKeyguardView;->access$400(Lcom/android/internal/policy/impl/LockPatternKeyguardView;)Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;
 
-    #calls: Lcom/android/internal/policy/impl/LockPatternKeyguardView;->getInitialMode()Lcom/android/internal/policy/impl/LockPatternKeyguardView$Mode;
-    invoke-static {v1}, Lcom/android/internal/policy/impl/LockPatternKeyguardView;->access$200(Lcom/android/internal/policy/impl/LockPatternKeyguardView;)Lcom/android/internal/policy/impl/LockPatternKeyguardView$Mode;
+    move-result-object v0
 
-    move-result-object v1
+    const/4 v1, 0x1
 
-    const/4 v2, 0x1
+    invoke-virtual {v0, v1}, Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;->reportClockVisible(Z)V
 
-    #calls: Lcom/android/internal/policy/impl/LockPatternKeyguardView;->updateScreen(Lcom/android/internal/policy/impl/LockPatternKeyguardView$Mode;Z)V
-    invoke-static {v0, v1, v2}, Lcom/android/internal/policy/impl/LockPatternKeyguardView;->access$300(Lcom/android/internal/policy/impl/LockPatternKeyguardView;Lcom/android/internal/policy/impl/LockPatternKeyguardView$Mode;Z)V
-
-    .line 320
+    .line 279
     iget-object v0, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardView$2;->this$0:Lcom/android/internal/policy/impl/LockPatternKeyguardView;
 
-    #calls: Lcom/android/internal/policy/impl/LockPatternKeyguardView;->restoreWidgetState()V
-    invoke-static {v0}, Lcom/android/internal/policy/impl/LockPatternKeyguardView;->access$400(Lcom/android/internal/policy/impl/LockPatternKeyguardView;)V
+    invoke-virtual {v0}, Lcom/android/internal/policy/impl/KeyguardViewBase;->resetBackground()V
 
-    .line 321
+    .line 280
+    return-void
+.end method
+
+.method public requestShow(Landroid/view/View;)V
+    .locals 2
+    .parameter "view"
+
+    .prologue
+    const/4 v1, 0x0
+
+    .line 256
+    invoke-virtual {p1, v1}, Landroid/view/View;->setVisibility(I)V
+
+    .line 259
+    iget-object v0, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardView$2;->this$0:Lcom/android/internal/policy/impl/LockPatternKeyguardView;
+
+    #getter for: Lcom/android/internal/policy/impl/LockPatternKeyguardView;->mUpdateMonitor:Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;
+    invoke-static {v0}, Lcom/android/internal/policy/impl/LockPatternKeyguardView;->access$400(Lcom/android/internal/policy/impl/LockPatternKeyguardView;)Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v1}, Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;->reportClockVisible(Z)V
+
+    .line 271
+    return-void
+.end method
+
+.method public userActivity(Landroid/view/View;)V
+    .locals 2
+    .parameter "self"
+
+    .prologue
+    .line 251
+    iget-object v0, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardView$2;->this$0:Lcom/android/internal/policy/impl/LockPatternKeyguardView;
+
+    iget-object v0, v0, Lcom/android/internal/policy/impl/LockPatternKeyguardView;->mKeyguardScreenCallback:Lcom/android/internal/policy/impl/KeyguardScreenCallback;
+
+    const/16 v1, 0x2710
+
+    invoke-interface {v0, v1}, Lcom/android/internal/policy/impl/KeyguardScreenCallback;->pokeWakelock(I)V
+
+    .line 252
     return-void
 .end method

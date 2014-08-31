@@ -3,12 +3,12 @@
 .source "PhoneWindowManager.java"
 
 # interfaces
-.implements Landroid/view/WindowManagerPolicy$OnKeyguardExitResult;
+.implements Ljava/lang/Runnable;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/internal/policy/impl/PhoneWindowManager;->launchHomeFromHotKey()V
+    value = Lcom/android/internal/policy/impl/PhoneWindowManager;->finishAnimationLw()I
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -27,62 +27,43 @@
     .parameter
 
     .prologue
-    .line 3075
+    .line 2892
     iput-object p1, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$14;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onKeyguardExitResult(Z)V
-    .locals 2
-    .parameter "success"
+.method public run()V
+    .locals 1
 
     .prologue
-    .line 3077
-    if-eqz p1, :cond_0
+    .line 2893
+    iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$14;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
-    .line 3079
+    iget-object v0, v0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mStatusBarService:Lcom/android/internal/statusbar/IStatusBarService;
+
+    if-eqz v0, :cond_0
+
+    .line 2895
     :try_start_0
-    invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
+    iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$14;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
-    move-result-object v0
+    iget-object v0, v0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mStatusBarService:Lcom/android/internal/statusbar/IStatusBarService;
 
-    invoke-interface {v0}, Landroid/app/IActivityManager;->stopAppSwitches()V
+    invoke-interface {v0}, Lcom/android/internal/statusbar/IStatusBarService;->collapse()V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 3082
+    .line 2898
+    :cond_0
     :goto_0
-    iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$14;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
-
-    const-string v1, "homekey"
-
-    invoke-virtual {v0, v1}, Lcom/android/internal/policy/impl/PhoneWindowManager;->sendCloseSystemWindows(Ljava/lang/String;)V
-
-    .line 3083
-    iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$14;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
-
-    invoke-virtual {v0}, Lcom/android/internal/policy/impl/PhoneWindowManager;->startDockOrHome()V
-
-    .line 3088
-    :goto_1
     return-void
 
-    .line 3086
-    :cond_0
-    const-string v0, "WindowManager"
-
-    const-string v1, "Disabled Home Launching Case #2"
-
-    invoke-static {v0, v1}, Landroid/util/safelog/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    goto :goto_1
-
-    .line 3080
+    .line 2896
     :catch_0
     move-exception v0
 

@@ -103,7 +103,7 @@
     .line 56
     .local v3, prefix:Ljava/lang/String;
     :try_start_0
-    invoke-virtual {p0, p1, v3, p2}, Lcom/android/internal/policy/impl/PhoneLayoutInflater;->createView(Ljava/lang/String;Ljava/lang/String;Landroid/util/AttributeSet;)Landroid/view/View;
+    invoke-virtual {p0, p1, v3, p2}, Landroid/view/LayoutInflater;->createView(Ljava/lang/String;Ljava/lang/String;Landroid/util/AttributeSet;)Landroid/view/View;
     :try_end_0
     .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 

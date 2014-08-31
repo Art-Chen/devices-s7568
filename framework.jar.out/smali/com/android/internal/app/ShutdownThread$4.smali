@@ -1,116 +1,83 @@
-.class final Lcom/android/internal/app/ShutdownThread$4;
-.super Landroid/app/ProgressDialog;
+.class Lcom/android/internal/app/ShutdownThread$4;
+.super Landroid/os/storage/IMountShutdownObserver$Stub;
 .source "ShutdownThread.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/internal/app/ShutdownThread;->beginShutdownSequence(Landroid/content/Context;)V
+    value = Lcom/android/internal/app/ShutdownThread;->run()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x0
     name = null
 .end annotation
 
 
+# instance fields
+.field final synthetic this$0:Lcom/android/internal/app/ShutdownThread;
+
+
 # direct methods
-.method constructor <init>(Landroid/content/Context;)V
+.method constructor <init>(Lcom/android/internal/app/ShutdownThread;)V
     .locals 0
-    .parameter "x0"
+    .parameter
 
     .prologue
-    .line 403
-    invoke-direct {p0, p1}, Landroid/app/ProgressDialog;-><init>(Landroid/content/Context;)V
+    .line 348
+    iput-object p1, p0, Lcom/android/internal/app/ShutdownThread$4;->this$0:Lcom/android/internal/app/ShutdownThread;
+
+    invoke-direct {p0}, Landroid/os/storage/IMountShutdownObserver$Stub;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method protected onCreate(Landroid/os/Bundle;)V
-    .locals 4
-    .parameter "savedInstanceState"
+.method public onShutDownComplete(I)V
+    .locals 3
+    .parameter "statusCode"
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
 
     .prologue
-    const/4 v3, 0x1
+    .line 350
+    const-string v0, "ShutdownThread"
 
-    .line 406
-    invoke-super {p0, p1}, Landroid/app/ProgressDialog;->onCreate(Landroid/os/Bundle;)V
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    .line 409
-    :try_start_0
-    invoke-virtual {p0}, Lcom/android/internal/app/ShutdownThread$4;->getWindow()Landroid/view/Window;
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    move-result-object v2
+    const-string v2, "Result code "
 
-    invoke-virtual {v2}, Landroid/view/Window;->getAttributes()Landroid/view/WindowManager$LayoutParams;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v1
 
-    .line 410
-    .local v0, l:Landroid/view/WindowManager$LayoutParams;
-    new-instance v1, Landroid/view/WindowManager$LayoutParams;
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-direct {v1}, Landroid/view/WindowManager$LayoutParams;-><init>()V
+    move-result-object v1
 
-    .line 411
-    .local v1, nl:Landroid/view/WindowManager$LayoutParams;
-    invoke-virtual {v1, v0}, Landroid/view/WindowManager$LayoutParams;->copyFrom(Landroid/view/WindowManager$LayoutParams;)I
+    const-string v2, " from MountService.shutdown"
 
-    .line 412
-    invoke-virtual {p0}, Lcom/android/internal/app/ShutdownThread$4;->getContext()Landroid/content/Context;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v2
+    move-result-object v1
 
-    invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v1
 
-    invoke-virtual {v2}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
+    invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    move-result-object v2
+    .line 351
+    iget-object v0, p0, Lcom/android/internal/app/ShutdownThread$4;->this$0:Lcom/android/internal/app/ShutdownThread;
 
-    iget v2, v2, Landroid/content/res/Configuration;->orientation:I
+    invoke-virtual {v0}, Lcom/android/internal/app/ShutdownThread;->actionDone()V
 
-    if-ne v2, v3, :cond_0
-
-    .line 413
-    const/4 v2, 0x1
-
-    iput v2, v1, Landroid/view/WindowManager$LayoutParams;->screenOrientation:I
-
-    .line 416
-    :goto_0
-    invoke-virtual {p0}, Lcom/android/internal/app/ShutdownThread$4;->getWindow()Landroid/view/Window;
-
-    move-result-object v2
-
-    invoke-virtual {v2, v1}, Landroid/view/Window;->setAttributes(Landroid/view/WindowManager$LayoutParams;)V
-
-    .line 420
-    .end local v0           #l:Landroid/view/WindowManager$LayoutParams;
-    .end local v1           #nl:Landroid/view/WindowManager$LayoutParams;
-    :goto_1
+    .line 352
     return-void
-
-    .line 415
-    .restart local v0       #l:Landroid/view/WindowManager$LayoutParams;
-    .restart local v1       #nl:Landroid/view/WindowManager$LayoutParams;
-    :cond_0
-    const/4 v2, 0x0
-
-    iput v2, v1, Landroid/view/WindowManager$LayoutParams;->screenOrientation:I
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_0
-
-    .line 417
-    .end local v0           #l:Landroid/view/WindowManager$LayoutParams;
-    .end local v1           #nl:Landroid/view/WindowManager$LayoutParams;
-    :catch_0
-    move-exception v2
-
-    goto :goto_1
 .end method

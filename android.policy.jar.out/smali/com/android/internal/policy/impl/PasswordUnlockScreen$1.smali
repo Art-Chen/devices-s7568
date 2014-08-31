@@ -27,10 +27,10 @@
     .parameter
 
     .prologue
-    .line 171
+    .line 169
     iput-object p1, p0, Lcom/android/internal/policy/impl/PasswordUnlockScreen$1;->this$0:Lcom/android/internal/policy/impl/PasswordUnlockScreen;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -38,20 +38,54 @@
 
 # virtual methods
 .method public onClick(Landroid/view/View;)V
-    .locals 1
+    .locals 3
     .parameter "v"
 
     .prologue
-    .line 174
-    iget-object v0, p0, Lcom/android/internal/policy/impl/PasswordUnlockScreen$1;->this$0:Lcom/android/internal/policy/impl/PasswordUnlockScreen;
+    .line 172
+    iget-object v1, p0, Lcom/android/internal/policy/impl/PasswordUnlockScreen$1;->this$0:Lcom/android/internal/policy/impl/PasswordUnlockScreen;
 
-    #getter for: Lcom/android/internal/policy/impl/PasswordUnlockScreen;->mKeyboardHelper:Lcom/android/internal/widget/PasswordEntryKeyboardHelper;
-    invoke-static {v0}, Lcom/android/internal/policy/impl/PasswordUnlockScreen;->access$000(Lcom/android/internal/policy/impl/PasswordUnlockScreen;)Lcom/android/internal/widget/PasswordEntryKeyboardHelper;
+    #getter for: Lcom/android/internal/policy/impl/PasswordUnlockScreen;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
+    invoke-static {v1}, Lcom/android/internal/policy/impl/PasswordUnlockScreen;->access$000(Lcom/android/internal/policy/impl/PasswordUnlockScreen;)Lcom/android/internal/widget/LockPatternUtils;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/android/internal/widget/LockPatternUtils;->isTactileFeedbackEnabled()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    .line 173
+    iget-object v1, p0, Lcom/android/internal/policy/impl/PasswordUnlockScreen$1;->this$0:Lcom/android/internal/policy/impl/PasswordUnlockScreen;
+
+    #getter for: Landroid/view/View;->mContext:Landroid/content/Context;
+    invoke-static {v1}, Lcom/android/internal/policy/impl/PasswordUnlockScreen;->access$100(Lcom/android/internal/policy/impl/PasswordUnlockScreen;)Landroid/content/Context;
+
+    move-result-object v1
+
+    const-string v2, "vibrator"
+
+    invoke-virtual {v1, v2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/internal/widget/PasswordEntryKeyboardHelper;->handleBackspace()V
+    check-cast v0, Landroid/os/Vibrator;
 
-    .line 175
+    .line 174
+    .local v0, vibrator:Landroid/os/Vibrator;
+    const-wide/16 v1, 0x14
+
+    invoke-virtual {v0, v1, v2}, Landroid/os/Vibrator;->vibrate(J)V
+
+    .line 176
+    .end local v0           #vibrator:Landroid/os/Vibrator;
+    :cond_0
+    iget-object v1, p0, Lcom/android/internal/policy/impl/PasswordUnlockScreen$1;->this$0:Lcom/android/internal/policy/impl/PasswordUnlockScreen;
+
+    #calls: Lcom/android/internal/policy/impl/PasswordUnlockScreen;->verifyPasswordAndUnlock()V
+    invoke-static {v1}, Lcom/android/internal/policy/impl/PasswordUnlockScreen;->access$200(Lcom/android/internal/policy/impl/PasswordUnlockScreen;)V
+
+    .line 177
     return-void
 .end method

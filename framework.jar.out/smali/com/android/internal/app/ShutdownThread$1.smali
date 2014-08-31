@@ -17,13 +17,20 @@
 .end annotation
 
 
+# instance fields
+.field final synthetic val$context:Landroid/content/Context;
+
+
 # direct methods
-.method constructor <init>()V
+.method constructor <init>(Landroid/content/Context;)V
     .locals 0
+    .parameter
 
     .prologue
-    .line 221
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    .line 114
+    iput-object p1, p0, Lcom/android/internal/app/ShutdownThread$1;->val$context:Landroid/content/Context;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -31,24 +38,17 @@
 
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
-    .locals 2
+    .locals 1
     .parameter "dialog"
     .parameter "which"
 
     .prologue
-    const/4 v1, 0x0
+    .line 116
+    iget-object v0, p0, Lcom/android/internal/app/ShutdownThread$1;->val$context:Landroid/content/Context;
 
-    .line 223
-    invoke-static {v1}, Lcom/android/internal/app/ShutdownThread;->access$002(Z)Z
+    #calls: Lcom/android/internal/app/ShutdownThread;->beginShutdownSequence(Landroid/content/Context;)V
+    invoke-static {v0}, Lcom/android/internal/app/ShutdownThread;->access$000(Landroid/content/Context;)V
 
-    .line 224
-    const-string v0, ""
-
-    invoke-static {v0}, Lcom/android/internal/app/ShutdownThread;->access$102(Ljava/lang/String;)Ljava/lang/String;
-
-    .line 225
-    invoke-static {v1}, Lcom/android/internal/app/ShutdownThread;->access$202(Z)Z
-
-    .line 226
+    .line 117
     return-void
 .end method

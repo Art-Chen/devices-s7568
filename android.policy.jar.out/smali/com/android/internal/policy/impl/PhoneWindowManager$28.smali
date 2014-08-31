@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/internal/policy/impl/PhoneWindowManager;->screenTurningOn(Landroid/view/WindowManagerPolicy$ScreenOnListener;)V
+    value = Lcom/android/internal/policy/impl/PhoneWindowManager;->hideBootMessages()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -27,10 +27,10 @@
     .parameter
 
     .prologue
-    .line 5269
+    .line 4209
     iput-object p1, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$28;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -41,20 +41,28 @@
     .locals 2
 
     .prologue
-    .line 5271
-    const-string v0, "WindowManager"
+    .line 4211
+    iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$28;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
-    const-string v1, "mUnSetIgnorePWR"
+    iget-object v0, v0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mBootMsgDialog:Landroid/app/ProgressDialog;
 
-    invoke-static {v0, v1}, Landroid/util/safelog/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    if-eqz v0, :cond_0
 
-    .line 5272
+    .line 4212
+    iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$28;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
+
+    iget-object v0, v0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mBootMsgDialog:Landroid/app/ProgressDialog;
+
+    invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
+
+    .line 4213
     iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$28;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
     const/4 v1, 0x0
 
-    iput-boolean v1, v0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mSetIgnorePowerKey:Z
+    iput-object v1, v0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mBootMsgDialog:Landroid/app/ProgressDialog;
 
-    .line 5273
+    .line 4215
+    :cond_0
     return-void
 .end method

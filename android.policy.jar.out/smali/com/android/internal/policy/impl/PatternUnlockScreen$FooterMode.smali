@@ -44,7 +44,7 @@
 
     const/4 v2, 0x0
 
-    .line 108
+    .line 103
     new-instance v0, Lcom/android/internal/policy/impl/PatternUnlockScreen$FooterMode;
 
     const-string v1, "Normal"
@@ -53,7 +53,7 @@
 
     sput-object v0, Lcom/android/internal/policy/impl/PatternUnlockScreen$FooterMode;->Normal:Lcom/android/internal/policy/impl/PatternUnlockScreen$FooterMode;
 
-    .line 109
+    .line 104
     new-instance v0, Lcom/android/internal/policy/impl/PatternUnlockScreen$FooterMode;
 
     const-string v1, "ForgotLockPattern"
@@ -62,7 +62,7 @@
 
     sput-object v0, Lcom/android/internal/policy/impl/PatternUnlockScreen$FooterMode;->ForgotLockPattern:Lcom/android/internal/policy/impl/PatternUnlockScreen$FooterMode;
 
-    .line 110
+    .line 105
     new-instance v0, Lcom/android/internal/policy/impl/PatternUnlockScreen$FooterMode;
 
     const-string v1, "VerifyUnlocked"
@@ -71,7 +71,7 @@
 
     sput-object v0, Lcom/android/internal/policy/impl/PatternUnlockScreen$FooterMode;->VerifyUnlocked:Lcom/android/internal/policy/impl/PatternUnlockScreen$FooterMode;
 
-    .line 107
+    .line 102
     const/4 v0, 0x3
 
     new-array v0, v0, [Lcom/android/internal/policy/impl/PatternUnlockScreen$FooterMode;
@@ -104,7 +104,7 @@
     .end annotation
 
     .prologue
-    .line 107
+    .line 102
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -115,7 +115,7 @@
     .parameter "name"
 
     .prologue
-    .line 107
+    .line 102
     const-class v0, Lcom/android/internal/policy/impl/PatternUnlockScreen$FooterMode;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -131,10 +131,10 @@
     .locals 1
 
     .prologue
-    .line 107
+    .line 102
     sget-object v0, Lcom/android/internal/policy/impl/PatternUnlockScreen$FooterMode;->$VALUES:[Lcom/android/internal/policy/impl/PatternUnlockScreen$FooterMode;
 
-    invoke-virtual {v0}, [Lcom/android/internal/policy/impl/PatternUnlockScreen$FooterMode;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     move-result-object v0
 

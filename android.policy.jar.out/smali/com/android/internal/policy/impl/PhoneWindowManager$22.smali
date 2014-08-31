@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 5091
+    .line 3760
     iput-object p1, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$22;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -35,54 +35,64 @@
 
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
-    .locals 3
+    .locals 4
     .parameter "context"
     .parameter "intent"
 
     .prologue
-    .line 5093
+    .line 3762
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 5094
+    .line 3763
     .local v0, action:Ljava/lang/String;
-    const-string v1, "android.intent.action.SINGLE_SCREEN_CAPTURE_ON"
+    const-string v1, "WindowManager"
 
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    move-result v1
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    if-eqz v1, :cond_1
+    const-string v3, "Receive the flashlight changed boradcast: "
 
-    .line 5095
-    iget-object v1, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$22;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const/4 v2, 0x1
+    move-result-object v2
 
-    iput-boolean v2, v1, Lcom/android/internal/policy/impl/PhoneWindowManager;->mScreenCaptureOn:Z
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 5099
-    :cond_0
-    :goto_0
-    return-void
+    move-result-object v2
 
-    .line 5096
-    :cond_1
-    const-string v1, "android.intent.action.SINGLE_SCREEN_CAPTURE_OFF"
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    move-result-object v2
+
+    invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 3764
+    const-string v1, "com.baidu.action.FLASHLIGHT_STATE_CHANGED"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 5097
+    .line 3765
     iget-object v1, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$22;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
-    const/4 v2, 0x0
+    const-string v2, "state"
 
-    iput-boolean v2, v1, Lcom/android/internal/policy/impl/PhoneWindowManager;->mScreenCaptureOn:Z
+    const/4 v3, 0x0
 
-    goto :goto_0
+    invoke-virtual {p2, v2, v3}, Landroid/content/Intent;->getBooleanExtra(Ljava/lang/String;Z)Z
+
+    move-result v2
+
+    #setter for: Lcom/android/internal/policy/impl/PhoneWindowManager;->mIsFlashlightOn:Z
+    invoke-static {v1, v2}, Lcom/android/internal/policy/impl/PhoneWindowManager;->access$402(Lcom/android/internal/policy/impl/PhoneWindowManager;Z)Z
+
+    .line 3767
+    :cond_0
+    return-void
 .end method

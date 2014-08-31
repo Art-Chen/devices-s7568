@@ -75,7 +75,7 @@
     const/4 v6, -0x1
 
     .line 69
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 54
     iput v6, p0, Lcom/android/internal/policy/impl/IconUtilities;->mIconWidth:I
@@ -333,10 +333,10 @@
 
     .line 120
     .local v6, painter:Landroid/graphics/drawable/PaintDrawable;
-    invoke-virtual {v6, v13}, Landroid/graphics/drawable/PaintDrawable;->setIntrinsicWidth(I)V
+    invoke-virtual {v6, v13}, Landroid/graphics/drawable/ShapeDrawable;->setIntrinsicWidth(I)V
 
     .line 121
-    invoke-virtual {v6, v4}, Landroid/graphics/drawable/PaintDrawable;->setIntrinsicHeight(I)V
+    invoke-virtual {v6, v4}, Landroid/graphics/drawable/ShapeDrawable;->setIntrinsicHeight(I)V
 
     .line 130
     .end local v6           #painter:Landroid/graphics/drawable/PaintDrawable;
@@ -700,7 +700,7 @@
 
     iget v3, p0, Lcom/android/internal/policy/impl/IconUtilities;->mIconTextureHeight:I
 
-    invoke-virtual {v0, v5, v5, v2, v3}, Landroid/graphics/drawable/StateListDrawable;->setBounds(IIII)V
+    invoke-virtual {v0, v5, v5, v2, v3}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
     .line 107
     return-object v0

@@ -1,5 +1,5 @@
 .class Lcom/android/internal/policy/impl/PhoneWindowManager$1;
-.super Lcom/android/internal/view/BaseInputHandler;
+.super Landroid/os/Handler;
 .source "PhoneWindowManager.java"
 
 
@@ -24,95 +24,79 @@
     .parameter
 
     .prologue
-    .line 497
+    .line 421
     iput-object p1, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$1;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
-    invoke-direct {p0}, Lcom/android/internal/view/BaseInputHandler;-><init>()V
+    invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public handleMotion(Landroid/view/MotionEvent;Landroid/view/InputQueue$FinishedCallback;)V
+.method public handleMessage(Landroid/os/Message;)V
     .locals 3
-    .parameter "event"
-    .parameter "finishedCallback"
+    .parameter "msg"
 
     .prologue
-    .line 500
-    const/4 v0, 0x0
+    const/4 v2, 0x1
 
-    .line 502
-    .local v0, handled:Z
-    :try_start_0
-    invoke-virtual {p1}, Landroid/view/MotionEvent;->getSource()I
+    .line 424
+    iget v0, p1, Landroid/os/Message;->what:I
 
-    move-result v1
+    packed-switch v0, :pswitch_data_0
 
-    and-int/lit8 v1, v1, 0x2
-
-    if-eqz v1, :cond_1
-
-    .line 503
-    iget-object v1, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$1;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
-
-    iget-object v2, v1, Lcom/android/internal/policy/impl/PhoneWindowManager;->mLock:Ljava/lang/Object;
-
-    monitor-enter v2
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_1
-
-    .line 504
-    :try_start_1
-    iget-object v1, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$1;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
-
-    iget-object v1, v1, Lcom/android/internal/policy/impl/PhoneWindowManager;->mPointerLocationView:Lcom/android/internal/widget/PointerLocationView;
-
-    if-eqz v1, :cond_0
-
-    .line 505
-    iget-object v1, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$1;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
-
-    iget-object v1, v1, Lcom/android/internal/policy/impl/PhoneWindowManager;->mPointerLocationView:Lcom/android/internal/widget/PointerLocationView;
-
-    invoke-virtual {v1, p1}, Lcom/android/internal/widget/PointerLocationView;->addPointerEvent(Landroid/view/MotionEvent;)V
-
-    .line 506
-    const/4 v0, 0x1
-
-    .line 508
-    :cond_0
-    monitor-exit v2
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 511
-    :cond_1
-    invoke-virtual {p2, v0}, Landroid/view/InputQueue$FinishedCallback;->finished(Z)V
-
-    .line 513
+    .line 436
+    :goto_0
     return-void
 
-    .line 508
-    :catchall_0
-    move-exception v1
+    .line 426
+    :pswitch_0
+    iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$1;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
-    :try_start_2
-    monitor-exit v2
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+    iput-boolean v2, v0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mIsLongPress:Z
 
-    :try_start_3
-    throw v1
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_1
+    .line 427
+    iget-object v1, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$1;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
-    .line 511
-    :catchall_1
-    move-exception v1
+    iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    invoke-virtual {p2, v0}, Landroid/view/InputQueue$FinishedCallback;->finished(Z)V
+    check-cast v0, Landroid/view/KeyEvent;
 
-    throw v1
+    invoke-virtual {v1, v0}, Lcom/android/internal/policy/impl/PhoneWindowManager;->dispatchMediaKeyWithWakeLockToAudioService(Landroid/view/KeyEvent;)V
+
+    .line 428
+    iget-object v1, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$1;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
+
+    iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
+
+    check-cast v0, Landroid/view/KeyEvent;
+
+    invoke-static {v0, v2}, Landroid/view/KeyEvent;->changeAction(Landroid/view/KeyEvent;I)Landroid/view/KeyEvent;
+
+    move-result-object v0
+
+    invoke-virtual {v1, v0}, Lcom/android/internal/policy/impl/PhoneWindowManager;->dispatchMediaKeyWithWakeLockToAudioService(Landroid/view/KeyEvent;)V
+
+    goto :goto_0
+
+    .line 431
+    :pswitch_1
+    iget-object v1, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$1;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
+
+    iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
+
+    check-cast v0, Landroid/app/PendingIntent;
+
+    #setter for: Lcom/android/internal/policy/impl/PhoneWindowManager;->mClientIntent:Landroid/app/PendingIntent;
+    invoke-static {v1, v0}, Lcom/android/internal/policy/impl/PhoneWindowManager;->access$002(Lcom/android/internal/policy/impl/PhoneWindowManager;Landroid/app/PendingIntent;)Landroid/app/PendingIntent;
+
+    goto :goto_0
+
+    .line 424
+    :pswitch_data_0
+    .packed-switch 0x3e9
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

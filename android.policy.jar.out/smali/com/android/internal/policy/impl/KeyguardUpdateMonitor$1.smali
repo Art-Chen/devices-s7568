@@ -1,14 +1,11 @@
 .class Lcom/android/internal/policy/impl/KeyguardUpdateMonitor$1;
-.super Ljava/lang/Object;
+.super Landroid/os/Handler;
 .source "KeyguardUpdateMonitor.java"
-
-# interfaces
-.implements Landroid/hardware/scontext/SContextListener;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;-><init>(Landroid/content/Context;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -27,74 +24,149 @@
     .parameter
 
     .prologue
-    .line 156
+    .line 191
     iput-object p1, p0, Lcom/android/internal/policy/impl/KeyguardUpdateMonitor$1;->this$0:Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onSContextChanged(Landroid/hardware/scontext/SContextEvent;)V
-    .locals 3
-    .parameter "event"
+.method public handleMessage(Landroid/os/Message;)V
+    .locals 2
+    .parameter "msg"
 
     .prologue
-    .line 158
+    .line 194
+    iget v0, p1, Landroid/os/Message;->what:I
+
+    sparse-switch v0, :sswitch_data_0
+
+    .line 226
+    :goto_0
+    return-void
+
+    .line 196
+    :sswitch_0
     iget-object v0, p0, Lcom/android/internal/policy/impl/KeyguardUpdateMonitor$1;->this$0:Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;
 
-    #getter for: Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;->mHandler:Landroid/os/Handler;
-    invoke-static {v0}, Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;->access$000(Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;)Landroid/os/Handler;
+    #calls: Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;->handleTimeUpdate()V
+    invoke-static {v0}, Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;->access$000(Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;)V
 
-    move-result-object v0
+    goto :goto_0
 
+    .line 199
+    :sswitch_1
     iget-object v1, p0, Lcom/android/internal/policy/impl/KeyguardUpdateMonitor$1;->this$0:Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;
 
-    #getter for: Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;->mHandler:Landroid/os/Handler;
-    invoke-static {v1}, Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;->access$000(Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;)Landroid/os/Handler;
+    iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    move-result-object v1
+    check-cast v0, Lcom/android/internal/policy/impl/KeyguardUpdateMonitor$BatteryStatus;
 
-    const/16 v2, 0x191
+    #calls: Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;->handleBatteryUpdate(Lcom/android/internal/policy/impl/KeyguardUpdateMonitor$BatteryStatus;)V
+    invoke-static {v1, v0}, Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;->access$100(Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;Lcom/android/internal/policy/impl/KeyguardUpdateMonitor$BatteryStatus;)V
 
-    invoke-virtual {v1, v2}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    goto :goto_0
 
-    move-result-object v1
+    .line 202
+    :sswitch_2
+    iget-object v0, p0, Lcom/android/internal/policy/impl/KeyguardUpdateMonitor$1;->this$0:Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;
 
-    invoke-virtual {v0, v1}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
+    #calls: Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;->handleCarrierInfoUpdate()V
+    invoke-static {v0}, Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;->access$200(Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;)V
 
-    .line 159
-    const-string v0, "KeyguardUpdateMonitor"
+    goto :goto_0
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    .line 205
+    :sswitch_3
+    iget-object v1, p0, Lcom/android/internal/policy/impl/KeyguardUpdateMonitor$1;->this$0:Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;
 
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    const-string v2, "onSContextChanged()"
+    check-cast v0, Lcom/android/internal/policy/impl/KeyguardUpdateMonitor$SimArgs;
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    #calls: Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;->handleSimStateChange(Lcom/android/internal/policy/impl/KeyguardUpdateMonitor$SimArgs;)V
+    invoke-static {v1, v0}, Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;->access$300(Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;Lcom/android/internal/policy/impl/KeyguardUpdateMonitor$SimArgs;)V
 
-    move-result-object v1
+    goto :goto_0
 
-    iget-object v2, p0, Lcom/android/internal/policy/impl/KeyguardUpdateMonitor$1;->this$0:Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;
+    .line 208
+    :sswitch_4
+    iget-object v0, p0, Lcom/android/internal/policy/impl/KeyguardUpdateMonitor$1;->this$0:Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;
 
-    #getter for: Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;->mDeviceProvisioned:Z
-    invoke-static {v2}, Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;->access$100(Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;)Z
+    iget v1, p1, Landroid/os/Message;->arg1:I
 
-    move-result v2
+    invoke-virtual {v0, v1}, Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;->handleRingerModeChange(I)V
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    goto :goto_0
 
-    move-result-object v1
+    .line 211
+    :sswitch_5
+    iget-object v1, p0, Lcom/android/internal/policy/impl/KeyguardUpdateMonitor$1;->this$0:Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    move-result-object v1
+    check-cast v0, Ljava/lang/String;
 
-    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-virtual {v1, v0}, Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;->handlePhoneStateChanged(Ljava/lang/String;)V
 
-    .line 160
-    return-void
+    goto :goto_0
+
+    .line 214
+    :sswitch_6
+    iget-object v0, p0, Lcom/android/internal/policy/impl/KeyguardUpdateMonitor$1;->this$0:Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;
+
+    #calls: Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;->handleClockVisibilityChanged()V
+    invoke-static {v0}, Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;->access$400(Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;)V
+
+    goto :goto_0
+
+    .line 217
+    :sswitch_7
+    iget-object v0, p0, Lcom/android/internal/policy/impl/KeyguardUpdateMonitor$1;->this$0:Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;
+
+    invoke-virtual {v0}, Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;->handleDeviceProvisioned()V
+
+    goto :goto_0
+
+    .line 220
+    :sswitch_8
+    iget-object v1, p0, Lcom/android/internal/policy/impl/KeyguardUpdateMonitor$1;->this$0:Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;
+
+    iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
+
+    check-cast v0, Ljava/lang/Integer;
+
+    invoke-virtual {v1, v0}, Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;->handleMultithemLockscreenEnalbe(Ljava/lang/Integer;)V
+
+    goto :goto_0
+
+    .line 223
+    :sswitch_9
+    iget-object v1, p0, Lcom/android/internal/policy/impl/KeyguardUpdateMonitor$1;->this$0:Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;
+
+    iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
+
+    check-cast v0, Ljava/lang/Boolean;
+
+    invoke-virtual {v1, v0}, Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;->handleStatubarExpandEnalbe(Ljava/lang/Boolean;)V
+
+    goto :goto_0
+
+    .line 194
+    :sswitch_data_0
+    .sparse-switch
+        0x12d -> :sswitch_0
+        0x12e -> :sswitch_1
+        0x12f -> :sswitch_2
+        0x130 -> :sswitch_3
+        0x131 -> :sswitch_4
+        0x132 -> :sswitch_5
+        0x133 -> :sswitch_6
+        0x134 -> :sswitch_7
+        0x135 -> :sswitch_8
+        0x1f5 -> :sswitch_9
+    .end sparse-switch
 .end method

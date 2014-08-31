@@ -37,11 +37,11 @@
     iget-object v0, v0, Landroid/widget/TextView$SuggestionsPopupWindow;->this$0:Landroid/widget/TextView;
 
     #getter for: Landroid/view/View;->mContext:Landroid/content/Context;
-    invoke-static {v0}, Landroid/widget/TextView;->access$10100(Landroid/widget/TextView;)Landroid/content/Context;
+    invoke-static {v0}, Landroid/widget/TextView;->access$3900(Landroid/widget/TextView;)Landroid/content/Context;
 
     move-result-object v0
 
-    const-string/jumbo v1, "layout_inflater"
+    const-string v1, "layout_inflater"
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -177,7 +177,7 @@
     if-ne v2, v3, :cond_1
 
     .line 9952
-    const v2, 0x108039a
+    const v2, 0x1080443
 
     invoke-virtual {v1, v2, v4, v4, v4}, Landroid/widget/TextView;->setCompoundDrawablesWithIntrinsicBounds(IIII)V
 
@@ -194,7 +194,7 @@
     if-ne v2, v3, :cond_2
 
     .line 9955
-    const v2, 0x108039b
+    const v2, 0x1080444
 
     invoke-virtual {v1, v2, v4, v4, v4}, Landroid/widget/TextView;->setCompoundDrawablesWithIntrinsicBounds(IIII)V
 

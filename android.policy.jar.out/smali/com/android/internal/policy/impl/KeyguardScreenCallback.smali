@@ -22,16 +22,10 @@
 .method public abstract isSecure()Z
 .end method
 
-.method public abstract isShowingAndNotHidden()Z
-.end method
-
 .method public abstract isVerifyUnlockOnly()Z
 .end method
 
 .method public abstract recreateMe(Landroid/content/res/Configuration;)V
-.end method
-
-.method public abstract reportDeviceWipe(I)V
 .end method
 
 .method public abstract reportFailedUnlockAttempt()V
@@ -40,11 +34,5 @@
 .method public abstract reportSuccessfulUnlockAttempt()V
 .end method
 
-.method public abstract setLockScreenReady()V
-.end method
-
 .method public abstract takeEmergencyCallAction()V
-.end method
-
-.method public abstract takeEmergencyCallList()V
 .end method

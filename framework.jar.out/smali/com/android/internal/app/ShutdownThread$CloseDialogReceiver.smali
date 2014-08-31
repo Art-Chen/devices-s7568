@@ -29,72 +29,41 @@
     .parameter "context"
 
     .prologue
-    .line 260
+    .line 135
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
-    .line 261
+    .line 136
     iput-object p1, p0, Lcom/android/internal/app/ShutdownThread$CloseDialogReceiver;->mContext:Landroid/content/Context;
 
-    .line 262
+    .line 137
     new-instance v0, Landroid/content/IntentFilter;
 
-    const-string v1, "android.intent.action.SCREEN_OFF"
+    const-string v1, "android.intent.action.CLOSE_SYSTEM_DIALOGS"
 
     invoke-direct {v0, v1}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
 
-    .line 263
+    .line 138
     .local v0, filter:Landroid/content/IntentFilter;
     invoke-virtual {p1, p0, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    .line 264
+    .line 139
     return-void
 .end method
 
 
 # virtual methods
 .method public onDismiss(Landroid/content/DialogInterface;)V
-    .locals 2
+    .locals 1
     .parameter "unused"
 
     .prologue
-    .line 272
+    .line 147
     iget-object v0, p0, Lcom/android/internal/app/ShutdownThread$CloseDialogReceiver;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0, p0}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
-    .line 273
-    invoke-static {}, Lcom/android/internal/app/ShutdownThread;->access$700()Ljava/lang/Object;
-
-    move-result-object v1
-
-    monitor-enter v1
-
-    .line 274
-    const/4 v0, 0x0
-
-    :try_start_0
-    invoke-static {v0}, Lcom/android/internal/app/ShutdownThread;->access$802(Z)Z
-
-    .line 275
-    const/4 v0, 0x0
-
-    invoke-static {v0}, Lcom/android/internal/app/ShutdownThread;->access$002(Z)Z
-
-    .line 276
-    monitor-exit v1
-
-    .line 277
+    .line 148
     return-void
-
-    .line 276
-    :catchall_0
-    move-exception v0
-
-    monitor-exit v1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw v0
 .end method
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
@@ -103,11 +72,11 @@
     .parameter "intent"
 
     .prologue
-    .line 268
+    .line 143
     iget-object v0, p0, Lcom/android/internal/app/ShutdownThread$CloseDialogReceiver;->dialog:Landroid/app/Dialog;
 
     invoke-virtual {v0}, Landroid/app/Dialog;->cancel()V
 
-    .line 269
+    .line 144
     return-void
 .end method

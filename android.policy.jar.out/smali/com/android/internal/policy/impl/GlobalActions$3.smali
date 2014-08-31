@@ -26,7 +26,7 @@
     .parameter "x1"
 
     .prologue
-    .line 349
+    .line 198
     iput-object p1, p0, Lcom/android/internal/policy/impl/GlobalActions$3;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
 
     invoke-direct {p0, p2, p3}, Lcom/android/internal/policy/impl/GlobalActions$SinglePressAction;-><init>(II)V
@@ -37,102 +37,42 @@
 
 # virtual methods
 .method public onPress()V
-    .locals 2
+    .locals 3
 
     .prologue
-    .line 352
-    iget-object v1, p0, Lcom/android/internal/policy/impl/GlobalActions$3;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
-
-    #calls: Lcom/android/internal/policy/impl/GlobalActions;->isMtpRunning()Z
-    invoke-static {v1}, Lcom/android/internal/policy/impl/GlobalActions;->access$700(Lcom/android/internal/policy/impl/GlobalActions;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    .line 358
-    :goto_0
-    return-void
-
-    .line 355
-    :cond_0
-    new-instance v0, Landroid/content/Intent;
-
-    const-string v1, "android.settings.ACCESSIBILITY_SETTINGS"
-
-    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
-
-    .line 356
-    .local v0, intent:Landroid/content/Intent;
-    const v1, 0x10008000
-
-    invoke-virtual {v0, v1}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
-
-    .line 357
-    iget-object v1, p0, Lcom/android/internal/policy/impl/GlobalActions$3;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
+    .line 201
+    iget-object v0, p0, Lcom/android/internal/policy/impl/GlobalActions$3;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
 
     #getter for: Lcom/android/internal/policy/impl/GlobalActions;->mContext:Landroid/content/Context;
-    invoke-static {v1}, Lcom/android/internal/policy/impl/GlobalActions;->access$200(Lcom/android/internal/policy/impl/GlobalActions;)Landroid/content/Context;
+    invoke-static {v0}, Lcom/android/internal/policy/impl/GlobalActions;->access$100(Lcom/android/internal/policy/impl/GlobalActions;)Landroid/content/Context;
 
-    move-result-object v1
+    move-result-object v0
 
-    invoke-virtual {v1, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
+    const/4 v1, 0x0
 
-    goto :goto_0
+    const/4 v2, 0x1
+
+    invoke-static {v0, v1, v2}, Lcom/android/internal/app/ShutdownThread;->reboot(Landroid/content/Context;Ljava/lang/String;Z)V
+
+    .line 202
+    return-void
 .end method
 
 .method public showBeforeProvisioning()Z
     .locals 1
 
     .prologue
-    .line 365
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public showConditional()Z
-    .locals 4
-
-    .prologue
+    .line 207
     const/4 v0, 0x1
 
-    const/4 v1, 0x0
-
-    .line 369
-    iget-object v2, p0, Lcom/android/internal/policy/impl/GlobalActions$3;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
-
-    #getter for: Lcom/android/internal/policy/impl/GlobalActions;->mContext:Landroid/content/Context;
-    invoke-static {v2}, Lcom/android/internal/policy/impl/GlobalActions;->access$200(Lcom/android/internal/policy/impl/GlobalActions;)Landroid/content/Context;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v2
-
-    const-string v3, "power_key_hold"
-
-    invoke-static {v2, v3, v1}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
-
-    move-result v2
-
-    if-ne v2, v0, :cond_0
-
-    :goto_0
     return v0
-
-    :cond_0
-    move v0, v1
-
-    goto :goto_0
 .end method
 
 .method public showDuringKeyguard()Z
     .locals 1
 
     .prologue
-    .line 361
+    .line 204
     const/4 v0, 0x1
 
     return v0

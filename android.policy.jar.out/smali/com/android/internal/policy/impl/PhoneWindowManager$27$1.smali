@@ -1,11 +1,11 @@
 .class Lcom/android/internal/policy/impl/PhoneWindowManager$27$1;
-.super Landroid/os/IRemoteCallback$Stub;
+.super Landroid/app/ProgressDialog;
 .source "PhoneWindowManager.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/internal/policy/impl/PhoneWindowManager$27;->onShown(Landroid/os/IBinder;)V
+    value = Lcom/android/internal/policy/impl/PhoneWindowManager$27;->run()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -19,72 +19,84 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/android/internal/policy/impl/PhoneWindowManager$27;)V
+.method constructor <init>(Lcom/android/internal/policy/impl/PhoneWindowManager$27;Landroid/content/Context;)V
     .locals 0
     .parameter
+    .parameter "x0"
 
     .prologue
-    .line 5237
+    .line 4164
     iput-object p1, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$27$1;->this$1:Lcom/android/internal/policy/impl/PhoneWindowManager$27;
 
-    invoke-direct {p0}, Landroid/os/IRemoteCallback$Stub;-><init>()V
+    invoke-direct {p0, p2}, Landroid/app/ProgressDialog;-><init>(Landroid/content/Context;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public sendResult(Landroid/os/Bundle;)V
-    .locals 3
-    .parameter "data"
+.method public dispatchGenericMotionEvent(Landroid/view/MotionEvent;)Z
+    .locals 1
+    .parameter "ev"
 
     .prologue
-    .line 5239
-    const-string v0, "WindowManager"
+    .line 4180
+    const/4 v0, 0x1
 
-    const-string v1, "Lock screen displayed!"
+    return v0
+.end method
 
-    invoke-static {v0, v1}, Landroid/util/safelog/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
+.method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
+    .locals 1
+    .parameter "event"
 
-    .line 5240
-    iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$27$1;->this$1:Lcom/android/internal/policy/impl/PhoneWindowManager$27;
+    .prologue
+    .line 4168
+    const/4 v0, 0x1
 
-    iget-object v0, v0, Lcom/android/internal/policy/impl/PhoneWindowManager$27;->val$screenOnListener:Landroid/view/WindowManagerPolicy$ScreenOnListener;
+    return v0
+.end method
 
-    invoke-interface {v0}, Landroid/view/WindowManagerPolicy$ScreenOnListener;->onScreenOn()V
+.method public dispatchKeyShortcutEvent(Landroid/view/KeyEvent;)Z
+    .locals 1
+    .parameter "event"
 
-    .line 5241
-    iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$27$1;->this$1:Lcom/android/internal/policy/impl/PhoneWindowManager$27;
+    .prologue
+    .line 4171
+    const/4 v0, 0x1
 
-    iget-object v0, v0, Lcom/android/internal/policy/impl/PhoneWindowManager$27;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
+    return v0
+.end method
 
-    iget-object v1, v0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mLock:Ljava/lang/Object;
+.method public dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)Z
+    .locals 1
+    .parameter "event"
 
-    monitor-enter v1
+    .prologue
+    .line 4184
+    const/4 v0, 0x1
 
-    .line 5242
-    :try_start_0
-    iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$27$1;->this$1:Lcom/android/internal/policy/impl/PhoneWindowManager$27;
+    return v0
+.end method
 
-    iget-object v0, v0, Lcom/android/internal/policy/impl/PhoneWindowManager$27;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
+.method public dispatchTouchEvent(Landroid/view/MotionEvent;)Z
+    .locals 1
+    .parameter "ev"
 
-    const/4 v2, 0x1
+    .prologue
+    .line 4174
+    const/4 v0, 0x1
 
-    iput-boolean v2, v0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mScreenOnFully:Z
+    return v0
+.end method
 
-    .line 5243
-    monitor-exit v1
+.method public dispatchTrackballEvent(Landroid/view/MotionEvent;)Z
+    .locals 1
+    .parameter "ev"
 
-    .line 5244
-    return-void
+    .prologue
+    .line 4177
+    const/4 v0, 0x1
 
-    .line 5243
-    :catchall_0
-    move-exception v0
-
-    monitor-exit v1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw v0
+    return v0
 .end method

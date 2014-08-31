@@ -63,8 +63,10 @@
     .parameter "isRtlRun"
 
     .prologue
+    .line 11428
     if-eqz p2, :cond_0
 
+    .line 11429
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
 
     move-result v0
@@ -73,6 +75,7 @@
 
     div-int/lit8 v0, v0, 0x4
 
+    .line 11431
     :goto_0
     return v0
 
@@ -110,7 +113,7 @@
 
     .line 11517
     :pswitch_0
-    invoke-virtual {p0}, Landroid/widget/TextView$SelectionEndHandleView;->dismissActionPopupWindow()V
+    invoke-virtual {p0}, Landroid/widget/TextView$HandleView;->dismissActionPopupWindow()V
 
     goto :goto_0
 
@@ -130,7 +133,7 @@
     :cond_0
     const/16 v1, 0xc8
 
-    invoke-virtual {p0, v1}, Landroid/widget/TextView$SelectionEndHandleView;->showActionPopupWindow(I)V
+    invoke-virtual {p0, v1}, Landroid/widget/TextView$HandleView;->showActionPopupWindow(I)V
 
     goto :goto_0
 
@@ -202,7 +205,7 @@
     :cond_0
     const/4 v2, 0x0
 
-    invoke-virtual {p0, v0, v2}, Landroid/widget/TextView$SelectionEndHandleView;->positionAtCursorOffset(IZ)Z
+    invoke-virtual {p0, v0, v2}, Landroid/widget/TextView$HandleView;->positionAtCursorOffset(IZ)Z
 
     .line 11552
     return-void
@@ -232,7 +235,7 @@
     invoke-static {v0, v1, p1}, Landroid/text/Selection;->setSelection(Landroid/text/Spannable;II)V
 
     .line 11540
-    invoke-virtual {p0}, Landroid/widget/TextView$SelectionEndHandleView;->updateDrawable()V
+    invoke-virtual {p0}, Landroid/widget/TextView$HandleView;->updateDrawable()V
 
     .line 11541
     return-void

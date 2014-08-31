@@ -18,7 +18,7 @@
 
 
 # static fields
-.field private static final POPUP_TEXT_LAYOUT:I = 0x10900e3
+.field private static final POPUP_TEXT_LAYOUT:I = 0x10900bf
 
 
 # instance fields
@@ -76,7 +76,7 @@
     iget-object v1, p0, Landroid/widget/TextView$EasyEditPopupWindow;->this$0:Landroid/widget/TextView;
 
     #getter for: Landroid/view/View;->mContext:Landroid/content/Context;
-    invoke-static {v1}, Landroid/widget/TextView;->access$10100(Landroid/widget/TextView;)Landroid/content/Context;
+    invoke-static {v1}, Landroid/widget/TextView;->access$1100(Landroid/widget/TextView;)Landroid/content/Context;
 
     move-result-object v1
 
@@ -159,7 +159,7 @@
 
     iget-object v3, p0, Landroid/widget/TextView$EasyEditPopupWindow;->this$0:Landroid/widget/TextView;
 
-    invoke-virtual {v3}, Landroid/widget/TextView;->getContext()Landroid/content/Context;
+    invoke-virtual {v3}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v3
 
@@ -177,19 +177,19 @@
     .line 8055
     iget-object v3, p0, Landroid/widget/TextView$PinnedPopupWindow;->mContentView:Landroid/view/ViewGroup;
 
-    const v4, 0x1080748
+    const v4, 0x10806e9
 
-    invoke-virtual {v3, v4}, Landroid/view/ViewGroup;->setBackgroundResource(I)V
+    invoke-virtual {v3, v4}, Landroid/view/View;->setBackgroundResource(I)V
 
     .line 8058
     iget-object v3, p0, Landroid/widget/TextView$EasyEditPopupWindow;->this$0:Landroid/widget/TextView;
 
     #getter for: Landroid/view/View;->mContext:Landroid/content/Context;
-    invoke-static {v3}, Landroid/widget/TextView;->access$10100(Landroid/widget/TextView;)Landroid/content/Context;
+    invoke-static {v3}, Landroid/widget/TextView;->access$1200(Landroid/widget/TextView;)Landroid/content/Context;
 
     move-result-object v3
 
-    const-string/jumbo v4, "layout_inflater"
+    const-string v4, "layout_inflater"
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -205,7 +205,7 @@
 
     .line 8064
     .local v2, wrapContent:Landroid/view/ViewGroup$LayoutParams;
-    const v3, 0x10900e3
+    const v3, 0x10900bf
 
     const/4 v4, 0x0
 
@@ -220,19 +220,19 @@
     .line 8065
     iget-object v3, p0, Landroid/widget/TextView$EasyEditPopupWindow;->mDeleteTextView:Landroid/widget/TextView;
 
-    invoke-virtual {v3, v2}, Landroid/widget/TextView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v3, v2}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 8066
     iget-object v3, p0, Landroid/widget/TextView$EasyEditPopupWindow;->mDeleteTextView:Landroid/widget/TextView;
 
-    const v4, 0x104047c
+    const v4, 0x1040394
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(I)V
 
     .line 8067
     iget-object v3, p0, Landroid/widget/TextView$EasyEditPopupWindow;->mDeleteTextView:Landroid/widget/TextView;
 
-    invoke-virtual {v3, p0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v3, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 8068
     iget-object v3, p0, Landroid/widget/TextView$PinnedPopupWindow;->mContentView:Landroid/view/ViewGroup;

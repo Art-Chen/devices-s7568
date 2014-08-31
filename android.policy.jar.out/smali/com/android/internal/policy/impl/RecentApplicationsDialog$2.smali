@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 356
+    .line 335
     iput-object p1, p0, Lcom/android/internal/policy/impl/RecentApplicationsDialog$2;->this$0:Lcom/android/internal/policy/impl/RecentApplicationsDialog;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -40,12 +40,12 @@
     .parameter "intent"
 
     .prologue
-    .line 359
+    .line 338
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 360
+    .line 339
     .local v0, action:Ljava/lang/String;
     const-string v2, "android.intent.action.CLOSE_SYSTEM_DIALOGS"
 
@@ -55,14 +55,14 @@
 
     if-eqz v2, :cond_0
 
-    .line 361
+    .line 340
     const-string v2, "reason"
 
     invoke-virtual {p2, v2}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 362
+    .line 341
     .local v1, reason:Ljava/lang/String;
     const-string v2, "recentapps"
 
@@ -72,12 +72,12 @@
 
     if-nez v2, :cond_0
 
-    .line 363
+    .line 342
     iget-object v2, p0, Lcom/android/internal/policy/impl/RecentApplicationsDialog$2;->this$0:Lcom/android/internal/policy/impl/RecentApplicationsDialog;
 
-    invoke-virtual {v2}, Lcom/android/internal/policy/impl/RecentApplicationsDialog;->dismiss()V
+    invoke-virtual {v2}, Landroid/app/Dialog;->dismiss()V
 
-    .line 366
+    .line 345
     .end local v1           #reason:Ljava/lang/String;
     :cond_0
     return-void

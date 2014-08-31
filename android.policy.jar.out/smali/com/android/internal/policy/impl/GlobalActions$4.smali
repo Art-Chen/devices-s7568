@@ -26,7 +26,7 @@
     .parameter "x1"
 
     .prologue
-    .line 375
+    .line 218
     iput-object p1, p0, Lcom/android/internal/policy/impl/GlobalActions$4;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
 
     invoke-direct {p0, p2, p3}, Lcom/android/internal/policy/impl/GlobalActions$SinglePressAction;-><init>(II)V
@@ -37,22 +37,47 @@
 
 # virtual methods
 .method public onPress()V
-    .locals 2
+    .locals 4
 
     .prologue
-    .line 382
+    .line 222
     iget-object v0, p0, Lcom/android/internal/policy/impl/GlobalActions$4;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
 
-    #getter for: Lcom/android/internal/policy/impl/GlobalActions;->mContext:Landroid/content/Context;
-    invoke-static {v0}, Lcom/android/internal/policy/impl/GlobalActions;->access$200(Lcom/android/internal/policy/impl/GlobalActions;)Landroid/content/Context;
+    #getter for: Lcom/android/internal/policy/impl/GlobalActions;->mDialog:Landroid/app/AlertDialog;
+    invoke-static {v0}, Lcom/android/internal/policy/impl/GlobalActions;->access$400(Lcom/android/internal/policy/impl/GlobalActions;)Landroid/app/AlertDialog;
 
     move-result-object v0
 
-    const/4 v1, 0x1
+    if-eqz v0, :cond_0
 
-    invoke-static {v0, v1}, Lcom/android/internal/app/ShutdownThread;->shutdown(Landroid/content/Context;Z)V
+    .line 223
+    iget-object v0, p0, Lcom/android/internal/policy/impl/GlobalActions$4;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
 
-    .line 383
+    #getter for: Lcom/android/internal/policy/impl/GlobalActions;->mDialog:Landroid/app/AlertDialog;
+    invoke-static {v0}, Lcom/android/internal/policy/impl/GlobalActions;->access$400(Lcom/android/internal/policy/impl/GlobalActions;)Landroid/app/AlertDialog;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
+
+    .line 226
+    :cond_0
+    iget-object v0, p0, Lcom/android/internal/policy/impl/GlobalActions$4;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
+
+    #getter for: Lcom/android/internal/policy/impl/GlobalActions;->mScreenshotHandler:Landroid/os/Handler;
+    invoke-static {v0}, Lcom/android/internal/policy/impl/GlobalActions;->access$500(Lcom/android/internal/policy/impl/GlobalActions;)Landroid/os/Handler;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/android/internal/policy/impl/GlobalActions$4;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
+
+    iget-object v1, v1, Lcom/android/internal/policy/impl/GlobalActions;->mTakeScreenshot:Ljava/lang/Runnable;
+
+    const-wide/16 v2, 0x190
+
+    invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
+
+    .line 227
     return-void
 .end method
 
@@ -60,17 +85,7 @@
     .locals 1
 
     .prologue
-    .line 390
-    const/4 v0, 0x1
-
-    return v0
-.end method
-
-.method public showConditional()Z
-    .locals 1
-
-    .prologue
-    .line 394
+    .line 234
     const/4 v0, 0x1
 
     return v0
@@ -80,7 +95,7 @@
     .locals 1
 
     .prologue
-    .line 386
+    .line 230
     const/4 v0, 0x1
 
     return v0

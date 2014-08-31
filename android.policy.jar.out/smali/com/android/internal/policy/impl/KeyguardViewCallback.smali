@@ -4,9 +4,6 @@
 
 
 # virtual methods
-.method public abstract isShowingAndNotHidden()Z
-.end method
-
 .method public abstract keyguardDone(Z)V
 .end method
 
