@@ -72,7 +72,7 @@ vendor_saved_apps := BluetoothAvrcp BluetoothMap SecBluetooth MtpApplication Sam
 # You need to decode android.policy.jar to the project directory (use apktool d android.policy.jar) first,
 # and then you can make it by:   make android.policy
 #-----------------------------------------------------------------------------
-vendor_modify_jars := android.policy framework framework2 pm services twframework
+vendor_modify_jars := android.policy framework framework2 services twframework
 
 ##############################################################################
 # The value decides which baidu system directory you want to save.
@@ -106,6 +106,7 @@ vendor_modify_jars := android.policy framework framework2 pm services twframewor
 # and then use "idtoname other/TMP/framework-res/res/values/public_master.xml XXXX/smali"(XXXX is the directory where you decode baidu system apk).
 #-----------------------------------------------------------------------------
 baidu_modify_apps := Phone
+
 ##############################################################################
 # The value decides which jar you want to modify, when the jar is based on the baidu framework jar.
 # The default value is nothing.
@@ -208,6 +209,11 @@ override_property += \
 #-----------------------------------------------------------------------------
 FORMAT_PARAM_NUM := 4
 
+# property to show/hide feature of defaultWrite Settings
+override_property += \
+       ro.baidu.home.wakeup=true \
+       persist.sys.baidu.default_write=first_storage \
+       ro.baidu.2nd_storage.format=enable
 
 include $(PORT_BUILD)/main.mk
 include $(PORT_BUILD)/autopatch.mk
