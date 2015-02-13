@@ -47,7 +47,7 @@ vendor_remove_dirs := app vendor/operator/app preload T9DB
 # The default value is nothing.
 # You can configure the file name which relative to the vendor/system directory.
 #-----------------------------------------------------------------------------
-vendor_remove_files := bin/samsungani
+vendor_remove_files := bin/samsungani media/audio/ui/PowerOn.ogg media/bootsamsung.qmg media/bootsamsungloop.qmg media/video/shutdown/shutdown.qmg 
 
 ##############################################################################
 # The value decides the vendor apk which you want to save in the vendor directory for the ota package.
