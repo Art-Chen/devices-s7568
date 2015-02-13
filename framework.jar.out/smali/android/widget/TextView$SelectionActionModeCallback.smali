@@ -30,7 +30,7 @@
     .line 10503
     iput-object p1, p0, Landroid/widget/TextView$SelectionActionModeCallback;->this$0:Landroid/widget/TextView;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -131,7 +131,7 @@
     .local v2, styledAttributes:Landroid/content/res/TypedArray;
     iget-object v3, p0, Landroid/widget/TextView$SelectionActionModeCallback;->this$0:Landroid/widget/TextView;
 
-    invoke-virtual {v3}, Landroid/view/View;->getContext()Landroid/content/Context;
+    invoke-virtual {v3}, Landroid/widget/TextView;->getContext()Landroid/content/Context;
 
     move-result-object v3
 
@@ -139,7 +139,7 @@
 
     move-result-object v3
 
-    const v7, 0x1110030
+    const v7, 0x1110039
 
     invoke-virtual {v3, v7}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -156,7 +156,7 @@
 
     move-result-object v3
 
-    const v7, 0x1040395
+    const v7, 0x104047d
 
     invoke-virtual {v3, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

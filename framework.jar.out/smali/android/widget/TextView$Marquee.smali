@@ -84,7 +84,7 @@
     iput-byte v1, p0, Landroid/widget/TextView$Marquee;->mStatus:B
 
     .line 7517
-    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
+    invoke-virtual {p1}, Landroid/widget/TextView;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -133,7 +133,7 @@
     .line 7573
     iget-object v1, p0, Landroid/widget/TextView$Marquee;->mView:Ljava/lang/ref/WeakReference;
 
-    invoke-virtual {v1}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+    invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -143,7 +143,7 @@
     .local v0, textView:Landroid/widget/TextView;
     if-eqz v0, :cond_0
 
-    invoke-virtual {v0}, Landroid/view/View;->invalidate()V
+    invoke-virtual {v0}, Landroid/widget/TextView;->invalidate()V
 
     .line 7575
     :cond_0
@@ -352,7 +352,7 @@
     .line 7583
     iget-object v4, p0, Landroid/widget/TextView$Marquee;->mView:Ljava/lang/ref/WeakReference;
 
-    invoke-virtual {v4}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+    invoke-virtual {v4}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
     move-result-object v2
 
@@ -375,7 +375,7 @@
     iput v4, p0, Landroid/widget/TextView$Marquee;->mScroll:F
 
     .line 7587
-    invoke-virtual {v2}, Landroid/view/View;->getWidth()I
+    invoke-virtual {v2}, Landroid/widget/TextView;->getWidth()I
 
     move-result v4
 
@@ -454,12 +454,12 @@
     iput v4, p0, Landroid/widget/TextView$Marquee;->mMaxFadeScroll:F
 
     .line 7597
-    invoke-virtual {v2}, Landroid/view/View;->invalidate()V
+    invoke-virtual {v2}, Landroid/widget/TextView;->invalidate()V
 
     .line 7598
     const-wide/16 v4, 0x4b0
 
-    invoke-virtual {p0, v6, v4, v5}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
+    invoke-virtual {p0, v6, v4, v5}, Landroid/widget/TextView$Marquee;->sendEmptyMessageDelayed(IJ)Z
 
     goto :goto_0
 .end method
@@ -476,17 +476,17 @@
     .line 7565
     const/4 v0, 0x1
 
-    invoke-virtual {p0, v0}, Landroid/os/Handler;->removeMessages(I)V
+    invoke-virtual {p0, v0}, Landroid/widget/TextView$Marquee;->removeMessages(I)V
 
     .line 7566
     const/4 v0, 0x3
 
-    invoke-virtual {p0, v0}, Landroid/os/Handler;->removeMessages(I)V
+    invoke-virtual {p0, v0}, Landroid/widget/TextView$Marquee;->removeMessages(I)V
 
     .line 7567
     const/4 v0, 0x2
 
-    invoke-virtual {p0, v0}, Landroid/os/Handler;->removeMessages(I)V
+    invoke-virtual {p0, v0}, Landroid/widget/TextView$Marquee;->removeMessages(I)V
 
     .line 7568
     invoke-direct {p0}, Landroid/widget/TextView$Marquee;->resetScroll()V
@@ -513,12 +513,12 @@
 
     .line 7548
     :cond_1
-    invoke-virtual {p0, v3}, Landroid/os/Handler;->removeMessages(I)V
+    invoke-virtual {p0, v3}, Landroid/widget/TextView$Marquee;->removeMessages(I)V
 
     .line 7550
     iget-object v1, p0, Landroid/widget/TextView$Marquee;->mView:Ljava/lang/ref/WeakReference;
 
-    invoke-virtual {v1}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+    invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -528,13 +528,13 @@
     .local v0, textView:Landroid/widget/TextView;
     if-eqz v0, :cond_0
 
-    invoke-virtual {v0}, Landroid/view/View;->isFocused()Z
+    invoke-virtual {v0}, Landroid/widget/TextView;->isFocused()Z
 
     move-result v1
 
     if-nez v1, :cond_2
 
-    invoke-virtual {v0}, Landroid/view/View;->isSelected()Z
+    invoke-virtual {v0}, Landroid/widget/TextView;->isSelected()Z
 
     move-result v1
 
@@ -569,11 +569,11 @@
 
     const-wide/16 v2, 0x4b0
 
-    invoke-virtual {p0, v1, v2, v3}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
+    invoke-virtual {p0, v1, v2, v3}, Landroid/widget/TextView$Marquee;->sendEmptyMessageDelayed(IJ)Z
 
     .line 7559
     :goto_1
-    invoke-virtual {v0}, Landroid/view/View;->invalidate()V
+    invoke-virtual {v0}, Landroid/widget/TextView;->invalidate()V
 
     goto :goto_0
 
@@ -581,7 +581,7 @@
     :cond_3
     const-wide/16 v1, 0x21
 
-    invoke-virtual {p0, v3, v1, v2}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
+    invoke-virtual {p0, v3, v1, v2}, Landroid/widget/TextView$Marquee;->sendEmptyMessageDelayed(IJ)Z
 
     goto :goto_1
 .end method

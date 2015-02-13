@@ -3,8 +3,8 @@
 .source "TextView.java"
 
 # interfaces
-.implements Landroid/text/SpanWatcher;
 .implements Landroid/text/TextWatcher;
+.implements Landroid/text/SpanWatcher;
 
 
 # annotations
@@ -35,7 +35,7 @@
     .line 8113
     iput-object p1, p0, Landroid/widget/TextView$ChangeWatcher;->this$0:Landroid/widget/TextView;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 8114
     new-instance v0, Landroid/widget/TextView$EasyEditSpanController;
@@ -312,7 +312,7 @@
 
     iget-object v0, p0, Landroid/widget/TextView$ChangeWatcher;->this$0:Landroid/widget/TextView;
 
-    invoke-virtual {v0}, Landroid/view/View;->isFocused()Z
+    invoke-virtual {v0}, Landroid/widget/TextView;->isFocused()Z
 
     move-result v0
 
@@ -320,7 +320,7 @@
 
     iget-object v0, p0, Landroid/widget/TextView$ChangeWatcher;->this$0:Landroid/widget/TextView;
 
-    invoke-virtual {v0}, Landroid/view/View;->isSelected()Z
+    invoke-virtual {v0}, Landroid/widget/TextView;->isSelected()Z
 
     move-result v0
 
@@ -328,7 +328,7 @@
 
     iget-object v0, p0, Landroid/widget/TextView$ChangeWatcher;->this$0:Landroid/widget/TextView;
 
-    invoke-virtual {v0}, Landroid/view/View;->isShown()Z
+    invoke-virtual {v0}, Landroid/widget/TextView;->isShown()Z
 
     move-result v0
 

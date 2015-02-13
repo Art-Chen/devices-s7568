@@ -65,7 +65,7 @@
 
     iget v1, p0, Landroid/widget/TextView$ErrorPopup;->mPopupInlineErrorBackgroundId:I
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setBackgroundResource(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setBackgroundResource(I)V
 
     .line 4050
     return-void
@@ -83,7 +83,7 @@
     .line 4070
     iget-object v1, p0, Landroid/widget/TextView$ErrorPopup;->mView:Landroid/widget/TextView;
 
-    invoke-virtual {v1}, Landroid/view/View;->getContext()Landroid/content/Context;
+    invoke-virtual {v1}, Landroid/widget/TextView;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -143,7 +143,7 @@
     iget v0, p0, Landroid/widget/TextView$ErrorPopup;->mPopupInlineErrorAboveBackgroundId:I
 
     :goto_1
-    invoke-virtual {v1, v0}, Landroid/view/View;->setBackgroundResource(I)V
+    invoke-virtual {v1, v0}, Landroid/widget/TextView;->setBackgroundResource(I)V
 
     .line 4066
     return-void
@@ -182,7 +182,7 @@
     invoke-super/range {p0 .. p5}, Landroid/widget/PopupWindow;->update(IIIIZ)V
 
     .line 4082
-    invoke-virtual {p0}, Landroid/widget/PopupWindow;->isAboveAnchor()Z
+    invoke-virtual {p0}, Landroid/widget/TextView$ErrorPopup;->isAboveAnchor()Z
 
     move-result v0
 

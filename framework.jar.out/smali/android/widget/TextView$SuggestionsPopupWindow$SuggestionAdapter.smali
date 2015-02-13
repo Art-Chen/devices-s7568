@@ -41,7 +41,7 @@
 
     move-result-object v0
 
-    const-string v1, "layout_inflater"
+    const-string/jumbo v1, "layout_inflater"
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -177,7 +177,7 @@
     if-ne v2, v3, :cond_1
 
     .line 9952
-    const v2, 0x1080443
+    const v2, 0x108039a
 
     invoke-virtual {v1, v2, v4, v4, v4}, Landroid/widget/TextView;->setCompoundDrawablesWithIntrinsicBounds(IIII)V
 
@@ -194,7 +194,7 @@
     if-ne v2, v3, :cond_2
 
     .line 9955
-    const v2, 0x1080444
+    const v2, 0x108039b
 
     invoke-virtual {v1, v2, v4, v4, v4}, Landroid/widget/TextView;->setCompoundDrawablesWithIntrinsicBounds(IIII)V
 

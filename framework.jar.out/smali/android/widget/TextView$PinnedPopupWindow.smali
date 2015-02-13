@@ -42,7 +42,7 @@
     .line 9716
     iput-object p1, p0, Landroid/widget/TextView$PinnedPopupWindow;->this$0:Landroid/widget/TextView;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 9708
     const/4 v1, 0x1
@@ -81,7 +81,7 @@
     .local v0, wrapContent:Landroid/view/ViewGroup$LayoutParams;
     iget-object v1, p0, Landroid/widget/TextView$PinnedPopupWindow;->mContentView:Landroid/view/ViewGroup;
 
-    invoke-virtual {v1, v0}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v1, v0}, Landroid/view/ViewGroup;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 9729
     iget-object v1, p0, Landroid/widget/TextView$PinnedPopupWindow;->mPopupWindow:Landroid/widget/PopupWindow;
@@ -104,7 +104,7 @@
     .line 9756
     iget-object v3, p0, Landroid/widget/TextView$PinnedPopupWindow;->mContentView:Landroid/view/ViewGroup;
 
-    invoke-virtual {v3}, Landroid/view/View;->getMeasuredWidth()I
+    invoke-virtual {v3}, Landroid/view/ViewGroup;->getMeasuredWidth()I
 
     move-result v2
 
@@ -233,7 +233,7 @@
 
     iget-object v3, p0, Landroid/widget/TextView$PinnedPopupWindow;->mContentView:Landroid/view/ViewGroup;
 
-    invoke-virtual {v3}, Landroid/view/View;->getMeasuredHeight()I
+    invoke-virtual {v3}, Landroid/view/ViewGroup;->getMeasuredHeight()I
 
     move-result v3
 
@@ -301,7 +301,7 @@
     .local v1, displayMetrics:Landroid/util/DisplayMetrics;
     iget-object v5, p0, Landroid/widget/TextView$PinnedPopupWindow;->mContentView:Landroid/view/ViewGroup;
 
-    invoke-virtual {v5}, Landroid/view/View;->getMeasuredWidth()I
+    invoke-virtual {v5}, Landroid/view/ViewGroup;->getMeasuredWidth()I
 
     move-result v4
 
@@ -451,7 +451,7 @@
 
     move-result v3
 
-    invoke-virtual {v1, v2, v3}, Landroid/view/View;->measure(II)V
+    invoke-virtual {v1, v2, v3}, Landroid/view/ViewGroup;->measure(II)V
 
     .line 9748
     return-void

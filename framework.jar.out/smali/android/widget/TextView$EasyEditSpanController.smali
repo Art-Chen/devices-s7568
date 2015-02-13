@@ -37,7 +37,7 @@
     .line 7910
     iput-object p1, p0, Landroid/widget/TextView$EasyEditSpanController;->this$0:Landroid/widget/TextView;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -177,14 +177,14 @@
     .line 7922
     iget-object v0, p0, Landroid/widget/TextView$EasyEditSpanController;->mPopupWindow:Landroid/widget/TextView$EasyEditPopupWindow;
 
-    invoke-virtual {v0}, Landroid/widget/TextView$PinnedPopupWindow;->hide()V
+    invoke-virtual {v0}, Landroid/widget/TextView$EasyEditPopupWindow;->hide()V
 
     .line 7923
     iget-object v0, p0, Landroid/widget/TextView$EasyEditSpanController;->this$0:Landroid/widget/TextView;
 
     iget-object v1, p0, Landroid/widget/TextView$EasyEditSpanController;->mHidePopup:Ljava/lang/Runnable;
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->removeCallbacks(Ljava/lang/Runnable;)Z
 
     .line 7925
     :cond_0
@@ -287,7 +287,7 @@
     .line 7938
     iget-object v1, p0, Landroid/widget/TextView$EasyEditSpanController;->this$0:Landroid/widget/TextView;
 
-    invoke-virtual {v1}, Landroid/view/View;->getWindowVisibility()I
+    invoke-virtual {v1}, Landroid/widget/TextView;->getWindowVisibility()I
 
     move-result v1
 
@@ -373,7 +373,7 @@
 
     iget-object v1, p0, Landroid/widget/TextView$EasyEditSpanController;->mPopupWindow:Landroid/widget/TextView$EasyEditPopupWindow;
 
-    invoke-virtual {v1}, Landroid/widget/TextView$PinnedPopupWindow;->isShowing()Z
+    invoke-virtual {v1}, Landroid/widget/TextView$EasyEditPopupWindow;->isShowing()Z
 
     move-result v1
 
@@ -382,7 +382,7 @@
     .line 7965
     iget-object v1, p0, Landroid/widget/TextView$EasyEditSpanController;->mPopupWindow:Landroid/widget/TextView$EasyEditPopupWindow;
 
-    invoke-virtual {v1}, Landroid/widget/TextView$PinnedPopupWindow;->hide()V
+    invoke-virtual {v1}, Landroid/widget/TextView$EasyEditPopupWindow;->hide()V
 
     .line 7969
     :cond_5
@@ -439,7 +439,7 @@
 
     iget-object v2, p0, Landroid/widget/TextView$EasyEditSpanController;->mHidePopup:Ljava/lang/Runnable;
 
-    invoke-virtual {v1, v2}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->removeCallbacks(Ljava/lang/Runnable;)Z
 
     .line 7983
     iget-object v1, p0, Landroid/widget/TextView$EasyEditSpanController;->this$0:Landroid/widget/TextView;
@@ -448,7 +448,7 @@
 
     const-wide/16 v3, 0xbb8
 
-    invoke-virtual {v1, v2, v3, v4}, Landroid/view/View;->postDelayed(Ljava/lang/Runnable;J)Z
+    invoke-virtual {v1, v2, v3, v4}, Landroid/widget/TextView;->postDelayed(Ljava/lang/Runnable;J)Z
 
     goto/16 :goto_0
 .end method

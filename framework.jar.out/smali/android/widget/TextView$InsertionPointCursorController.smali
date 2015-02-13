@@ -32,7 +32,7 @@
     .line 11880
     iput-object p1, p0, Landroid/widget/TextView$InsertionPointCursorController;->this$0:Landroid/widget/TextView;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -144,7 +144,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/widget/TextView$PopupWindowView;->dismiss()V
+    invoke-virtual {v0}, Landroid/widget/TextView$MagnifierController;->dismiss()V
 
     .line 11897
     :cond_0
@@ -155,7 +155,7 @@
     .line 11898
     iget-object v0, p0, Landroid/widget/TextView$InsertionPointCursorController;->mHandle:Landroid/widget/TextView$InsertionHandleView;
 
-    invoke-virtual {v0}, Landroid/widget/TextView$HandleView;->hide()V
+    invoke-virtual {v0}, Landroid/widget/TextView$InsertionHandleView;->hide()V
 
     .line 11900
     :cond_1
@@ -169,7 +169,7 @@
     .line 11921
     iget-object v1, p0, Landroid/widget/TextView$InsertionPointCursorController;->this$0:Landroid/widget/TextView;
 
-    invoke-virtual {v1}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
+    invoke-virtual {v1}, Landroid/widget/TextView;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
 
     move-result-object v0
 

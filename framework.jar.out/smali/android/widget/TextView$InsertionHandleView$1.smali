@@ -30,7 +30,7 @@
     .line 11268
     iput-object p1, p0, Landroid/widget/TextView$InsertionHandleView$1;->this$1:Landroid/widget/TextView$InsertionHandleView;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -44,7 +44,7 @@
     .line 11270
     iget-object v0, p0, Landroid/widget/TextView$InsertionHandleView$1;->this$1:Landroid/widget/TextView$InsertionHandleView;
 
-    invoke-virtual {v0}, Landroid/widget/TextView$HandleView;->hide()V
+    invoke-virtual {v0}, Landroid/widget/TextView$InsertionHandleView;->hide()V
 
     .line 11271
     return-void

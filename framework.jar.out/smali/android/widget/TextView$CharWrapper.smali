@@ -3,9 +3,9 @@
 .source "TextView.java"
 
 # interfaces
+.implements Ljava/lang/CharSequence;
 .implements Landroid/text/GetChars;
 .implements Landroid/text/GraphicsOperations;
-.implements Ljava/lang/CharSequence;
 
 
 # annotations
@@ -36,7 +36,7 @@
 
     .prologue
     .line 3377
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 3378
     iput-object p1, p0, Landroid/widget/TextView$CharWrapper;->mChars:[C

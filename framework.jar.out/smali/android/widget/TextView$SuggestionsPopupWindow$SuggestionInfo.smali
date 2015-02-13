@@ -39,7 +39,7 @@
     .line 9911
     iput-object p1, p0, Landroid/widget/TextView$SuggestionsPopupWindow$SuggestionInfo;->this$1:Landroid/widget/TextView$SuggestionsPopupWindow;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 9915
     new-instance v0, Landroid/text/SpannableStringBuilder;

@@ -734,11 +734,11 @@
 
     move-object/from16 v25, v0
 
-    invoke-virtual/range {v25 .. v25}, Landroid/view/View;->getContext()Landroid/content/Context;
+    invoke-virtual/range {v25 .. v25}, Landroid/widget/TextView;->getContext()Landroid/content/Context;
 
     move-result-object v25
 
-    const v26, 0x1040396
+    const v26, 0x104047e
 
     invoke-virtual/range {v25 .. v26}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -845,11 +845,11 @@
 
     move-object/from16 v25, v0
 
-    invoke-virtual/range {v25 .. v25}, Landroid/view/View;->getContext()Landroid/content/Context;
+    invoke-virtual/range {v25 .. v25}, Landroid/widget/TextView;->getContext()Landroid/content/Context;
 
     move-result-object v25
 
-    const v26, 0x1040397
+    const v26, 0x104047f
 
     invoke-virtual/range {v25 .. v26}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -977,7 +977,7 @@
 
     move-object/from16 v22, v0
 
-    invoke-virtual/range {v22 .. v22}, Landroid/widget/BaseAdapter;->notifyDataSetChanged()V
+    invoke-virtual/range {v22 .. v22}, Landroid/widget/TextView$SuggestionsPopupWindow$SuggestionAdapter;->notifyDataSetChanged()V
 
     .line 10161
     return-void
@@ -1042,7 +1042,7 @@
     .line 10061
     iget-object v2, p0, Landroid/widget/TextView$PinnedPopupWindow;->mContentView:Landroid/view/ViewGroup;
 
-    invoke-virtual {v2}, Landroid/view/View;->getMeasuredHeight()I
+    invoke-virtual {v2}, Landroid/view/ViewGroup;->getMeasuredHeight()I
 
     move-result v1
 
@@ -1174,7 +1174,7 @@
 
     iget-object v2, p0, Landroid/widget/TextView$SuggestionsPopupWindow;->this$0:Landroid/widget/TextView;
 
-    invoke-virtual {v2}, Landroid/view/View;->getContext()Landroid/content/Context;
+    invoke-virtual {v2}, Landroid/widget/TextView;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -1194,7 +1194,7 @@
     invoke-virtual {v1, v2}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
     .line 9893
-    invoke-virtual {v1, p0}, Landroid/widget/AdapterView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
+    invoke-virtual {v1, p0}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
     .line 9894
     iput-object v1, p0, Landroid/widget/TextView$PinnedPopupWindow;->mContentView:Landroid/view/ViewGroup;
@@ -1347,7 +1347,7 @@
 
     move-result v8
 
-    invoke-virtual {v7, v8, v4}, Landroid/view/View;->measure(II)V
+    invoke-virtual {v7, v8, v4}, Landroid/view/ViewGroup;->measure(II)V
 
     .line 10040
     iget-object v7, p0, Landroid/widget/TextView$PinnedPopupWindow;->mPopupWindow:Landroid/widget/PopupWindow;
@@ -1669,7 +1669,7 @@
     invoke-virtual {v5, v0, v9}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 10216
-    const-string v25, "locale"
+    const-string/jumbo v25, "locale"
 
     move-object/from16 v0, p0
 
@@ -1711,7 +1711,7 @@
 
     move-object/from16 v25, v0
 
-    invoke-virtual/range {v25 .. v25}, Landroid/view/View;->getContext()Landroid/content/Context;
+    invoke-virtual/range {v25 .. v25}, Landroid/widget/TextView;->getContext()Landroid/content/Context;
 
     move-result-object v25
 

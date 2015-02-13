@@ -79,7 +79,7 @@
 
     const-wide/16 v2, 0xfa0
 
-    invoke-virtual {v0, v1, v2, v3}, Landroid/view/View;->postDelayed(Ljava/lang/Runnable;J)Z
+    invoke-virtual {v0, v1, v2, v3}, Landroid/widget/TextView;->postDelayed(Ljava/lang/Runnable;J)Z
 
     .line 11275
     return-void
@@ -99,7 +99,7 @@
 
     iget-object v1, p0, Landroid/widget/TextView$InsertionHandleView;->mHider:Ljava/lang/Runnable;
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->removeCallbacks(Ljava/lang/Runnable;)Z
 
     .line 11281
     :cond_0
@@ -208,7 +208,7 @@
 
     .line 11299
     :pswitch_2
-    invoke-virtual {p0}, Landroid/widget/TextView$HandleView;->offsetHasBeenChanged()Z
+    invoke-virtual {p0}, Landroid/widget/TextView$InsertionHandleView;->offsetHasBeenChanged()Z
 
     move-result v4
 
@@ -263,7 +263,7 @@
 
     iget-object v4, p0, Landroid/widget/TextView$HandleView;->mActionPopupWindow:Landroid/widget/TextView$ActionPopupWindow;
 
-    invoke-virtual {v4}, Landroid/widget/TextView$PinnedPopupWindow;->isShowing()Z
+    invoke-virtual {v4}, Landroid/widget/TextView$ActionPopupWindow;->isShowing()Z
 
     move-result v4
 
@@ -272,7 +272,7 @@
     .line 11306
     iget-object v4, p0, Landroid/widget/TextView$HandleView;->mActionPopupWindow:Landroid/widget/TextView$ActionPopupWindow;
 
-    invoke-virtual {v4}, Landroid/widget/TextView$PinnedPopupWindow;->hide()V
+    invoke-virtual {v4}, Landroid/widget/TextView$ActionPopupWindow;->hide()V
 
     .line 11312
     .end local v0           #deltaX:F
@@ -355,7 +355,7 @@
     :cond_0
     const/4 v2, 0x0
 
-    invoke-virtual {p0, v2}, Landroid/widget/TextView$HandleView;->showActionPopupWindow(I)V
+    invoke-virtual {p0, v2}, Landroid/widget/TextView$InsertionHandleView;->showActionPopupWindow(I)V
 
     .line 11256
     :cond_1
@@ -387,7 +387,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Landroid/widget/TextView$HandleView;->showActionPopupWindow(I)V
+    invoke-virtual {p0, v0}, Landroid/widget/TextView$InsertionHandleView;->showActionPopupWindow(I)V
 
     .line 11263
     return-void
@@ -408,7 +408,7 @@
 
     const/4 v1, 0x0
 
-    invoke-virtual {p0, v0, v1}, Landroid/widget/TextView$HandleView;->positionAtCursorOffset(IZ)Z
+    invoke-virtual {p0, v0, v1}, Landroid/widget/TextView$InsertionHandleView;->positionAtCursorOffset(IZ)Z
 
     .line 11339
     return-void

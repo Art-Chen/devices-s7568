@@ -274,7 +274,7 @@
     const/4 v2, 0x0
 
     .line 2922
-    invoke-super {p0, p1, p2}, Landroid/view/AbsSavedState;->writeToParcel(Landroid/os/Parcel;I)V
+    invoke-super {p0, p1, p2}, Landroid/view/View$BaseSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
     .line 2923
     iget v0, p0, Landroid/widget/TextView$SavedState;->selStart:I

@@ -48,7 +48,7 @@
     .line 9558
     iput-object p1, p0, Landroid/widget/TextView$PositionListener;->this$0:Landroid/widget/TextView;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 9561
     iput v1, p0, Landroid/widget/TextView$PositionListener;->MAXIMUM_NUMBER_OF_LISTENERS:I
@@ -98,7 +98,7 @@
 
     iget-object v3, v3, Landroid/widget/TextView;->mTempCoords:[I
 
-    invoke-virtual {v0, v3}, Landroid/view/View;->getLocationInWindow([I)V
+    invoke-virtual {v0, v3}, Landroid/widget/TextView;->getLocationInWindow([I)V
 
     .line 9637
     iget-object v0, p0, Landroid/widget/TextView$PositionListener;->this$0:Landroid/widget/TextView;
@@ -174,7 +174,7 @@
     .line 9574
     iget-object v4, p0, Landroid/widget/TextView$PositionListener;->this$0:Landroid/widget/TextView;
 
-    invoke-virtual {v4}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
+    invoke-virtual {v4}, Landroid/widget/TextView;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
 
     move-result-object v3
 
@@ -397,7 +397,7 @@
     .line 9603
     iget-object v2, p0, Landroid/widget/TextView$PositionListener;->this$0:Landroid/widget/TextView;
 
-    invoke-virtual {v2}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
+    invoke-virtual {v2}, Landroid/widget/TextView;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
 
     move-result-object v1
 

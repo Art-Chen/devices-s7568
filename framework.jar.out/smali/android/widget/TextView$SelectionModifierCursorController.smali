@@ -48,7 +48,7 @@
     .line 11940
     iput-object p1, p0, Landroid/widget/TextView$SelectionModifierCursorController;->this$0:Landroid/widget/TextView;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 11937
     const-wide/16 v0, 0x0
@@ -225,19 +225,19 @@
     :cond_1
     iget-object v0, p0, Landroid/widget/TextView$SelectionModifierCursorController;->mStartHandle:Landroid/widget/TextView$SelectionStartHandleView;
 
-    invoke-virtual {v0}, Landroid/widget/TextView$HandleView;->show()V
+    invoke-virtual {v0}, Landroid/widget/TextView$SelectionStartHandleView;->show()V
 
     .line 11974
     iget-object v0, p0, Landroid/widget/TextView$SelectionModifierCursorController;->mEndHandle:Landroid/widget/TextView$SelectionEndHandleView;
 
-    invoke-virtual {v0}, Landroid/widget/TextView$HandleView;->show()V
+    invoke-virtual {v0}, Landroid/widget/TextView$SelectionEndHandleView;->show()V
 
     .line 11978
     iget-object v0, p0, Landroid/widget/TextView$SelectionModifierCursorController;->mStartHandle:Landroid/widget/TextView$SelectionStartHandleView;
 
     const/16 v1, 0xc8
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView$HandleView;->showActionPopupWindow(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/TextView$SelectionStartHandleView;->showActionPopupWindow(I)V
 
     .line 11979
     iget-object v0, p0, Landroid/widget/TextView$SelectionModifierCursorController;->mEndHandle:Landroid/widget/TextView$SelectionEndHandleView;
@@ -397,7 +397,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/widget/TextView$PopupWindowView;->dismiss()V
+    invoke-virtual {v0}, Landroid/widget/TextView$MagnifierController;->dismiss()V
 
     .line 11990
     :cond_0
@@ -407,7 +407,7 @@
 
     iget-object v0, p0, Landroid/widget/TextView$SelectionModifierCursorController;->mStartHandle:Landroid/widget/TextView$SelectionStartHandleView;
 
-    invoke-virtual {v0}, Landroid/widget/TextView$HandleView;->hide()V
+    invoke-virtual {v0}, Landroid/widget/TextView$SelectionStartHandleView;->hide()V
 
     .line 11991
     :cond_1
@@ -417,7 +417,7 @@
 
     iget-object v0, p0, Landroid/widget/TextView$SelectionModifierCursorController;->mEndHandle:Landroid/widget/TextView$SelectionEndHandleView;
 
-    invoke-virtual {v0}, Landroid/widget/TextView$HandleView;->hide()V
+    invoke-virtual {v0}, Landroid/widget/TextView$SelectionEndHandleView;->hide()V
 
     .line 11992
     :cond_2
@@ -435,7 +435,7 @@
 
     iget-object v0, p0, Landroid/widget/TextView$SelectionModifierCursorController;->mStartHandle:Landroid/widget/TextView$SelectionStartHandleView;
 
-    invoke-virtual {v0}, Landroid/widget/TextView$HandleView;->isDragging()Z
+    invoke-virtual {v0}, Landroid/widget/TextView$SelectionStartHandleView;->isDragging()Z
 
     move-result v0
 
@@ -459,7 +459,7 @@
     .line 12087
     iget-object v1, p0, Landroid/widget/TextView$SelectionModifierCursorController;->this$0:Landroid/widget/TextView;
 
-    invoke-virtual {v1}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
+    invoke-virtual {v1}, Landroid/widget/TextView;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
 
     move-result-object v0
 
@@ -474,7 +474,7 @@
 
     iget-object v1, p0, Landroid/widget/TextView$SelectionModifierCursorController;->mStartHandle:Landroid/widget/TextView$SelectionStartHandleView;
 
-    invoke-virtual {v1}, Landroid/widget/TextView$HandleView;->onDetached()V
+    invoke-virtual {v1}, Landroid/widget/TextView$SelectionStartHandleView;->onDetached()V
 
     .line 12091
     :cond_0
@@ -484,7 +484,7 @@
 
     iget-object v1, p0, Landroid/widget/TextView$SelectionModifierCursorController;->mEndHandle:Landroid/widget/TextView$SelectionEndHandleView;
 
-    invoke-virtual {v1}, Landroid/widget/TextView$HandleView;->onDetached()V
+    invoke-virtual {v1}, Landroid/widget/TextView$SelectionEndHandleView;->onDetached()V
 
     .line 12092
     :cond_1
