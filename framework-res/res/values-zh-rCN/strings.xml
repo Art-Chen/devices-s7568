@@ -7,8 +7,8 @@
     <string name="defaultVoiceMailAlphaTag">语音信箱</string>
     <string name="defaultMsisdnAlphaTag">MSISDN1</string>
     <string name="emptyPhoneNumber">（无电话号码）</string>
-    <string name="httpErrorBadUrl">无法打开页面。无效URL</string>
-    <string name="httpErrorUnsupportedScheme">该协议不受支持</string>
+    <string name="httpErrorBadUrl">无法打开网页，因为该网址是无效的。</string>
+    <string name="httpErrorUnsupportedScheme">不支持该协议。</string>
     <string name="no">取消</string>
     <string name="ok">确定</string>
     <string name="paste">粘贴</string>
@@ -17,12 +17,12 @@
     <string name="unknownName">(未知)</string>
     <string name="untitled">&lt;无标题></string>
     <string name="VideoView_error_button">确定</string>
-    <string name="VideoView_error_text_unknown">抱歉，该视频无法播放</string>
-    <string name="VideoView_error_title">无法播放视频</string>
+    <string name="VideoView_error_text_unknown">无法播放此视频。</string>
+    <string name="VideoView_error_title">视频问题</string>
     <string name="yes">确定</string>
     <string name="dialog_alert_title">注意</string>
-    <string name="VideoView_error_text_invalid_progressive_playback">抱歉，该视频无法流入本设备。</string>
-    <string name="selectTextMode">选择文字...</string>
+    <string name="VideoView_error_text_invalid_progressive_playback">抱歉，该视频不适合在此设备上播放。</string>
+    <string name="selectTextMode">选择文字</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="sd_encrypt_notify_title">需要 SD 卡加密</string>
     <string name="sd_encrypt_notify_text">单击此处以启用</string>
