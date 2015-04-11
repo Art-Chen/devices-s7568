@@ -71,6 +71,14 @@
     .end annotation
 .end method
 
+.method public abstract openSession()Landroid/net/INetworkStatsSession;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
 .method public abstract setUidForeground(IZ)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
